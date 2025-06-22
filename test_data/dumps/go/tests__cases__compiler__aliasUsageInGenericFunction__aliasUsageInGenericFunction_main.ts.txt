@@ -1,0 +1,68 @@
+KindSourceFile [0, 388), i=1, next=0
+  NodeList [0, 386), i=2, next=0
+    KindImportEqualsDeclaration [0, 68), i=3, next=7
+      KindIdentifier "Backbone" [6, 15), i=4, next=5
+      KindExternalModuleReference [17, 67), i=5, next=0
+        KindStringLiteral "./aliasUsageInGenericFunction_backbone" [26, 66), i=6, next=0
+    KindImportEqualsDeclaration [68, 136), i=7, next=11
+      KindIdentifier "moduleA" [76, 84), i=8, next=9
+      KindExternalModuleReference [86, 135), i=9, next=0
+        KindStringLiteral "./aliasUsageInGenericFunction_moduleA" [95, 134), i=10, next=0
+    KindInterfaceDeclaration [136, 223), i=11, next=20
+      KindIdentifier "IHasVisualizationModel" [147, 170), i=12, next=13
+      NodeList [172, 220), i=13, next=0
+        KindPropertySignature [172, 220), i=14, next=0
+          KindIdentifier "VisualizationModel" [172, 196), i=15, next=16
+          KindTypeQuery [197, 219), i=16, next=0
+            KindQualifiedName [204, 219), i=17, next=0
+              KindIdentifier "Backbone" [204, 213), i=18, next=19
+              KindIdentifier "Model" [214, 219), i=19, next=0
+    KindFunctionDeclaration [223, 304), i=20, next=40
+      KindIdentifier "foo" [233, 237), i=21, next=22
+      NodeList [238, 277), i=22, next=31
+        KindTypeParameter [238, 277), i=23, next=0
+          KindIdentifier "T" [238, 239), i=24, next=25
+          KindTypeLiteral [247, 277), i=25, next=0
+            NodeList [249, 275), i=26, next=0
+              KindPropertySignature [249, 275), i=27, next=0
+                KindIdentifier "a" [249, 251), i=28, next=29
+                KindTypeReference [252, 275), i=29, next=0
+                  KindIdentifier "IHasVisualizationModel" [252, 275), i=30, next=0
+      NodeList [279, 283), i=31, next=36
+        KindParameter [279, 283), i=32, next=0
+          KindIdentifier "x" [279, 280), i=33, next=34
+          KindTypeReference [281, 283), i=34, next=0
+            KindIdentifier "T" [281, 283), i=35, next=0
+      KindBlock [284, 304), i=36, next=0
+        NodeList [286, 301), i=37, next=0
+          KindReturnStatement [286, 301), i=38, next=0
+            KindIdentifier "x" [298, 300), i=39, next=0
+    KindVariableStatement [304, 334), i=40, next=53
+      KindVariableDeclarationList [304, 333), i=41, next=0
+        NodeList [309, 333), i=42, next=0
+          KindVariableDeclaration [309, 333), i=43, next=0
+            KindIdentifier "r" [309, 311), i=44, next=45
+            KindCallExpression [313, 333), i=45, next=0
+              KindIdentifier "foo" [313, 317), i=46, next=47
+              NodeList [318, 332), i=47, next=0
+                KindObjectLiteralExpression [318, 332), i=48, next=0
+                  NodeList [319, 330), i=49, next=0
+                    KindPropertyAssignment [319, 330), i=50, next=0
+                      KindIdentifier "a" [319, 321), i=51, next=52
+                      KindIdentifier "moduleA" [322, 330), i=52, next=0
+    KindVariableStatement [334, 386), i=53, next=0
+      KindVariableDeclarationList [334, 385), i=54, next=0
+        NodeList [339, 385), i=55, next=0
+          KindVariableDeclaration [339, 385), i=56, next=0
+            KindIdentifier "r2" [339, 342), i=57, next=58
+            KindCallExpression [344, 385), i=58, next=0
+              KindIdentifier "foo" [344, 348), i=59, next=60
+              NodeList [349, 384), i=60, next=0
+                KindObjectLiteralExpression [349, 384), i=61, next=0
+                  NodeList [350, 382), i=62, next=0
+                    KindPropertyAssignment [350, 382), i=63, next=0
+                      KindIdentifier "a" [350, 352), i=64, next=65
+                      KindTypeAssertionExpression [353, 382), i=65, next=0
+                        KindTypeReference [355, 377), i=66, next=68
+                          KindIdentifier "IHasVisualizationModel" [355, 377), i=67, next=0
+                        KindNullKeyword [378, 382), i=68, next=0

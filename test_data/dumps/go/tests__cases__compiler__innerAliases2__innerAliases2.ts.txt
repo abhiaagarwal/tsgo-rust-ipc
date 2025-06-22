@@ -1,0 +1,56 @@
+KindSourceFile [0, 538), i=1, next=0
+  NodeList [0, 534), i=2, next=0
+    KindModuleDeclaration [0, 167), i=3, next=17
+      KindIdentifier "_provider" [6, 16), i=4, next=5
+      KindModuleBlock [16, 167), i=5, next=0
+        NodeList [18, 164), i=6, next=0
+          KindClassDeclaration [18, 164), i=7, next=0
+            NodeList [18, 42), i=8, next=10
+              KindExportKeyword [18, 42), i=9, next=0
+            KindIdentifier "UsefulClass" [48, 60), i=10, next=11
+            NodeList [62, 145), i=11, next=0
+              KindMethodDeclaration [62, 145), i=12, next=0
+                NodeList [62, 102), i=13, next=15
+                  KindPublicKeyword [62, 102), i=14, next=0
+                KindIdentifier "foo" [102, 106), i=15, next=16
+                KindBlock [108, 145), i=16, next=0
+    KindModuleDeclaration [167, 534), i=17, next=0
+      KindIdentifier "consumer" [177, 186), i=18, next=19
+      KindModuleBlock [186, 534), i=19, next=0
+        NodeList [188, 531), i=20, next=0
+          KindImportEqualsDeclaration [188, 234), i=21, next=24
+            KindIdentifier "provider" [212, 221), i=22, next=23
+            KindIdentifier "_provider" [223, 233), i=23, next=0
+          KindVariableStatement [234, 303), i=24, next=34
+            KindVariableDeclarationList [234, 302), i=25, next=0
+              NodeList [273, 302), i=26, next=0
+                KindVariableDeclaration [273, 302), i=27, next=0
+                  KindIdentifier "g" [273, 275), i=28, next=29
+                  KindTypeReference [276, 296), i=29, next=33
+                    KindQualifiedName [276, 296), i=30, next=0
+                      KindIdentifier "provider" [276, 284), i=31, next=32
+                      KindIdentifier "UsefulClass" [285, 296), i=32, next=0
+                  KindNullKeyword [297, 302), i=33, next=0
+          KindFunctionDeclaration [303, 531), i=34, next=0
+            KindIdentifier "use" [347, 351), i=35, next=36
+            KindTypeReference [354, 374), i=36, next=40
+              KindQualifiedName [354, 374), i=37, next=0
+                KindIdentifier "provider" [354, 362), i=38, next=39
+                KindIdentifier "UsefulClass" [363, 374), i=39, next=0
+            KindBlock [374, 531), i=40, next=0
+              NodeList [376, 511), i=41, next=0
+                KindVariableStatement [376, 467), i=42, next=55
+                  KindVariableDeclarationList [376, 466), i=43, next=0
+                    NodeList [414, 466), i=44, next=0
+                      KindVariableDeclaration [414, 466), i=45, next=0
+                        KindIdentifier "p2" [414, 417), i=46, next=47
+                        KindTypeReference [418, 438), i=47, next=51
+                          KindQualifiedName [418, 438), i=48, next=0
+                            KindIdentifier "provider" [418, 426), i=49, next=50
+                            KindIdentifier "UsefulClass" [427, 438), i=50, next=0
+                        KindNewExpression [439, 466), i=51, next=0
+                          KindPropertyAccessExpression [443, 464), i=52, next=0
+                            KindIdentifier "provider" [443, 452), i=53, next=54
+                            KindIdentifier "UsefulClass" [453, 464), i=54, next=0
+                KindReturnStatement [467, 511), i=55, next=0
+                  KindIdentifier "p2" [507, 510), i=56, next=0

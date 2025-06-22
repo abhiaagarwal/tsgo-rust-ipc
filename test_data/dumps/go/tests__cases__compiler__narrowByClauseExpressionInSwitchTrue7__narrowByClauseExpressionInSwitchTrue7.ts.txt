@@ -1,0 +1,277 @@
+KindSourceFile [0, 1944), i=1, next=0
+  NodeList [0, 1943), i=2, next=0
+    KindClassDeclaration [0, 38), i=3, next=10
+      KindIdentifier "Base" [5, 10), i=4, next=5
+      NodeList [12, 36), i=5, next=0
+        KindPropertyDeclaration [12, 36), i=6, next=0
+          KindIdentifier "basey" [12, 22), i=7, next=8
+          KindStringKeyword [23, 30), i=8, next=9
+          KindStringLiteral "" [32, 35), i=9, next=0
+    KindClassDeclaration [38, 91), i=10, next=22
+      KindIdentifier "Derived1" [45, 54), i=11, next=12
+      NodeList [54, 67), i=12, next=17
+        KindHeritageClause [54, 67), i=13, next=0
+          NodeList [62, 67), i=14, next=0
+            KindExpressionWithTypeArguments [62, 67), i=15, next=0
+              KindIdentifier "Base" [62, 67), i=16, next=0
+      NodeList [69, 89), i=17, next=0
+        KindPropertyDeclaration [69, 89), i=18, next=0
+          KindIdentifier "d" [69, 75), i=19, next=20
+          KindStringKeyword [76, 83), i=20, next=21
+          KindStringLiteral "" [85, 88), i=21, next=0
+    KindClassDeclaration [91, 168), i=22, next=38
+      KindIdentifier "Derived2" [98, 107), i=23, next=24
+      NodeList [107, 120), i=24, next=29
+        KindHeritageClause [107, 120), i=25, next=0
+          NodeList [115, 120), i=26, next=0
+            KindExpressionWithTypeArguments [115, 120), i=27, next=0
+              KindIdentifier "Base" [115, 120), i=28, next=0
+      NodeList [122, 166), i=29, next=0
+        KindPropertyDeclaration [122, 142), i=30, next=34
+          KindIdentifier "d" [122, 128), i=31, next=32
+          KindStringKeyword [129, 136), i=32, next=33
+          KindStringLiteral "" [138, 141), i=33, next=0
+        KindPropertyDeclaration [142, 166), i=34, next=0
+          KindIdentifier "other" [142, 152), i=35, next=36
+          KindStringKeyword [153, 160), i=36, next=37
+          KindStringLiteral "" [162, 165), i=37, next=0
+    KindFunctionDeclaration [168, 1943), i=38, next=0
+      KindIdentifier "classy" [178, 185), i=39, next=40
+      NodeList [186, 230), i=40, next=53
+        KindParameter [186, 196), i=41, next=45
+          KindIdentifier "base" [186, 190), i=42, next=43
+          KindTypeReference [191, 196), i=43, next=0
+            KindIdentifier "Base" [191, 196), i=44, next=0
+        KindParameter [197, 230), i=45, next=0
+          KindIdentifier "someDerived" [197, 209), i=46, next=47
+          KindUnionType [210, 230), i=47, next=0
+            NodeList [210, 230), i=48, next=0
+              KindTypeReference [210, 219), i=49, next=51
+                KindIdentifier "Derived1" [210, 219), i=50, next=0
+              KindTypeReference [221, 230), i=51, next=0
+                KindIdentifier "Derived2" [221, 230), i=52, next=0
+      KindBlock [231, 1943), i=53, next=0
+        NodeList [233, 1940), i=54, next=0
+          KindSwitchStatement [233, 384), i=55, next=75
+            KindTrueKeyword [246, 250), i=56, next=57
+            KindCaseBlock [251, 384), i=57, next=0
+              NodeList [253, 378), i=58, next=0
+                KindCaseClause [253, 311), i=59, next=69
+                  KindBinaryExpression [266, 291), i=60, next=64
+                    KindIdentifier "base" [266, 271), i=61, next=62
+                    KindInstanceOfKeyword [271, 282), i=62, next=63
+                    KindIdentifier "Derived1" [282, 291), i=63, next=0
+                  NodeList [292, 311), i=64, next=0
+                    KindExpressionStatement [292, 311), i=65, next=0
+                      KindPropertyAccessExpression [292, 311), i=66, next=0
+                        KindIdentifier "base" [292, 309), i=67, next=68
+                        KindIdentifier "d" [310, 311), i=68, next=0
+                KindDefaultClause [311, 378), i=69, next=0
+                  NodeList [355, 378), i=70, next=0
+                    KindExpressionStatement [355, 378), i=71, next=0
+                      KindPropertyAccessExpression [355, 378), i=72, next=0
+                        KindIdentifier "base" [355, 372), i=73, next=74
+                        KindIdentifier "basey" [373, 378), i=74, next=0
+          KindSwitchStatement [384, 655), i=75, next=110
+            KindTrueKeyword [398, 402), i=76, next=77
+            KindCaseBlock [403, 655), i=77, next=0
+              NodeList [405, 649), i=78, next=0
+                KindCaseClause [405, 496), i=79, next=90
+                  KindBinaryExpression [418, 450), i=80, next=84
+                    KindIdentifier "someDerived" [418, 430), i=81, next=82
+                    KindInstanceOfKeyword [430, 441), i=82, next=83
+                    KindIdentifier "Derived1" [441, 450), i=83, next=0
+                  NodeList [451, 496), i=84, next=0
+                    KindExpressionStatement [451, 477), i=85, next=89
+                      KindPropertyAccessExpression [451, 477), i=86, next=0
+                        KindIdentifier "someDerived" [451, 475), i=87, next=88
+                        KindIdentifier "d" [476, 477), i=88, next=0
+                    KindBreakStatement [477, 496), i=89, next=0
+                KindCaseClause [496, 586), i=90, next=101
+                  KindBinaryExpression [509, 541), i=91, next=95
+                    KindIdentifier "someDerived" [509, 521), i=92, next=93
+                    KindInstanceOfKeyword [521, 532), i=93, next=94
+                    KindIdentifier "Derived2" [532, 541), i=94, next=0
+                  NodeList [542, 586), i=95, next=0
+                    KindExpressionStatement [542, 568), i=96, next=100
+                      KindPropertyAccessExpression [542, 568), i=97, next=0
+                        KindIdentifier "someDerived" [542, 566), i=98, next=99
+                        KindIdentifier "d" [567, 568), i=99, next=0
+                    KindBreakStatement [568, 586), i=100, next=0
+                KindDefaultClause [586, 649), i=101, next=0
+                  NodeList [603, 649), i=102, next=0
+                    KindVariableStatement [603, 649), i=103, next=0
+                      KindVariableDeclarationList [603, 648), i=104, next=0
+                        NodeList [621, 648), i=105, next=0
+                          KindVariableDeclaration [621, 648), i=106, next=0
+                            KindIdentifier "never" [621, 627), i=107, next=108
+                            KindNeverKeyword [628, 634), i=108, next=109
+                            KindIdentifier "someDerived" [636, 648), i=109, next=0
+          KindSwitchStatement [655, 934), i=110, next=144
+            KindTrueKeyword [669, 673), i=111, next=112
+            KindCaseBlock [674, 934), i=112, next=0
+              NodeList [676, 928), i=113, next=0
+                KindCaseClause [676, 748), i=114, next=124
+                  KindBinaryExpression [689, 721), i=115, next=119
+                    KindIdentifier "someDerived" [689, 701), i=116, next=117
+                    KindInstanceOfKeyword [701, 712), i=117, next=118
+                    KindIdentifier "Derived1" [712, 721), i=118, next=0
+                  NodeList [722, 748), i=119, next=0
+                    KindExpressionStatement [722, 748), i=120, next=0
+                      KindPropertyAccessExpression [722, 748), i=121, next=0
+                        KindIdentifier "someDerived" [722, 746), i=122, next=123
+                        KindIdentifier "d" [747, 748), i=123, next=0
+                KindCaseClause [748, 865), i=124, next=135
+                  KindBinaryExpression [788, 820), i=125, next=129
+                    KindIdentifier "someDerived" [788, 800), i=126, next=127
+                    KindInstanceOfKeyword [800, 811), i=127, next=128
+                    KindIdentifier "Derived2" [811, 820), i=128, next=0
+                  NodeList [821, 865), i=129, next=0
+                    KindExpressionStatement [821, 847), i=130, next=134
+                      KindPropertyAccessExpression [821, 847), i=131, next=0
+                        KindIdentifier "someDerived" [821, 845), i=132, next=133
+                        KindIdentifier "d" [846, 847), i=133, next=0
+                    KindBreakStatement [847, 865), i=134, next=0
+                KindDefaultClause [865, 928), i=135, next=0
+                  NodeList [882, 928), i=136, next=0
+                    KindVariableStatement [882, 928), i=137, next=0
+                      KindVariableDeclarationList [882, 927), i=138, next=0
+                        NodeList [900, 927), i=139, next=0
+                          KindVariableDeclaration [900, 927), i=140, next=0
+                            KindIdentifier "never" [900, 906), i=141, next=142
+                            KindNeverKeyword [907, 913), i=142, next=143
+                            KindIdentifier "someDerived" [915, 927), i=143, next=0
+          KindSwitchStatement [934, 1250), i=144, next=186
+            KindTrueKeyword [948, 952), i=145, next=146
+            KindCaseBlock [953, 1250), i=146, next=0
+              NodeList [955, 1244), i=147, next=0
+                KindDefaultClause [955, 1018), i=148, next=157
+                  NodeList [972, 1018), i=149, next=0
+                    KindVariableStatement [972, 1018), i=150, next=0
+                      KindVariableDeclarationList [972, 1017), i=151, next=0
+                        NodeList [990, 1017), i=152, next=0
+                          KindVariableDeclaration [990, 1017), i=153, next=0
+                            KindIdentifier "never" [990, 996), i=154, next=155
+                            KindNeverKeyword [997, 1003), i=155, next=156
+                            KindIdentifier "someDerived" [1005, 1017), i=156, next=0
+                KindCaseClause [1018, 1140), i=157, next=172
+                  KindBinaryExpression [1031, 1063), i=158, next=162
+                    KindIdentifier "someDerived" [1031, 1043), i=159, next=160
+                    KindInstanceOfKeyword [1043, 1054), i=160, next=161
+                    KindIdentifier "Derived1" [1054, 1063), i=161, next=0
+                  NodeList [1064, 1140), i=162, next=0
+                    KindExpressionStatement [1064, 1091), i=163, next=167
+                      KindPropertyAccessExpression [1064, 1090), i=164, next=0
+                        KindIdentifier "someDerived" [1064, 1088), i=165, next=166
+                        KindIdentifier "d" [1089, 1090), i=166, next=0
+                    KindExpressionStatement [1091, 1122), i=167, next=171
+                      KindPropertyAccessExpression [1091, 1121), i=168, next=0
+                        KindIdentifier "someDerived" [1091, 1115), i=169, next=170
+                        KindIdentifier "basey" [1116, 1121), i=170, next=0
+                    KindBreakStatement [1122, 1140), i=171, next=0
+                KindCaseClause [1140, 1244), i=172, next=0
+                  KindBinaryExpression [1153, 1185), i=173, next=177
+                    KindIdentifier "someDerived" [1153, 1165), i=174, next=175
+                    KindInstanceOfKeyword [1165, 1176), i=175, next=176
+                    KindIdentifier "Derived2" [1176, 1185), i=176, next=0
+                  NodeList [1186, 1244), i=177, next=0
+                    KindExpressionStatement [1186, 1213), i=178, next=182
+                      KindPropertyAccessExpression [1186, 1212), i=179, next=0
+                        KindIdentifier "someDerived" [1186, 1210), i=180, next=181
+                        KindIdentifier "d" [1211, 1212), i=181, next=0
+                    KindExpressionStatement [1213, 1244), i=182, next=0
+                      KindPropertyAccessExpression [1213, 1243), i=183, next=0
+                        KindIdentifier "someDerived" [1213, 1237), i=184, next=185
+                        KindIdentifier "other" [1238, 1243), i=185, next=0
+          KindSwitchStatement [1250, 1566), i=186, next=228
+            KindTrueKeyword [1264, 1268), i=187, next=188
+            KindCaseBlock [1269, 1566), i=188, next=0
+              NodeList [1271, 1560), i=189, next=0
+                KindCaseClause [1271, 1393), i=190, next=205
+                  KindBinaryExpression [1284, 1316), i=191, next=195
+                    KindIdentifier "someDerived" [1284, 1296), i=192, next=193
+                    KindInstanceOfKeyword [1296, 1307), i=193, next=194
+                    KindIdentifier "Derived1" [1307, 1316), i=194, next=0
+                  NodeList [1317, 1393), i=195, next=0
+                    KindExpressionStatement [1317, 1344), i=196, next=200
+                      KindPropertyAccessExpression [1317, 1343), i=197, next=0
+                        KindIdentifier "someDerived" [1317, 1341), i=198, next=199
+                        KindIdentifier "d" [1342, 1343), i=199, next=0
+                    KindExpressionStatement [1344, 1375), i=200, next=204
+                      KindPropertyAccessExpression [1344, 1374), i=201, next=0
+                        KindIdentifier "someDerived" [1344, 1368), i=202, next=203
+                        KindIdentifier "basey" [1369, 1374), i=203, next=0
+                    KindBreakStatement [1375, 1393), i=204, next=0
+                KindDefaultClause [1393, 1456), i=205, next=214
+                  NodeList [1410, 1456), i=206, next=0
+                    KindVariableStatement [1410, 1456), i=207, next=0
+                      KindVariableDeclarationList [1410, 1455), i=208, next=0
+                        NodeList [1428, 1455), i=209, next=0
+                          KindVariableDeclaration [1428, 1455), i=210, next=0
+                            KindIdentifier "never" [1428, 1434), i=211, next=212
+                            KindNeverKeyword [1435, 1441), i=212, next=213
+                            KindIdentifier "someDerived" [1443, 1455), i=213, next=0
+                KindCaseClause [1456, 1560), i=214, next=0
+                  KindBinaryExpression [1469, 1501), i=215, next=219
+                    KindIdentifier "someDerived" [1469, 1481), i=216, next=217
+                    KindInstanceOfKeyword [1481, 1492), i=217, next=218
+                    KindIdentifier "Derived2" [1492, 1501), i=218, next=0
+                  NodeList [1502, 1560), i=219, next=0
+                    KindExpressionStatement [1502, 1529), i=220, next=224
+                      KindPropertyAccessExpression [1502, 1528), i=221, next=0
+                        KindIdentifier "someDerived" [1502, 1526), i=222, next=223
+                        KindIdentifier "d" [1527, 1528), i=223, next=0
+                    KindExpressionStatement [1529, 1560), i=224, next=0
+                      KindPropertyAccessExpression [1529, 1559), i=225, next=0
+                        KindIdentifier "someDerived" [1529, 1553), i=226, next=227
+                        KindIdentifier "other" [1554, 1559), i=227, next=0
+          KindSwitchStatement [1566, 1940), i=228, next=0
+            KindTrueKeyword [1580, 1584), i=229, next=230
+            KindCaseBlock [1585, 1940), i=230, next=0
+              NodeList [1587, 1934), i=231, next=0
+                KindCaseClause [1587, 1709), i=232, next=247
+                  KindBinaryExpression [1600, 1632), i=233, next=237
+                    KindIdentifier "someDerived" [1600, 1612), i=234, next=235
+                    KindInstanceOfKeyword [1612, 1623), i=235, next=236
+                    KindIdentifier "Derived1" [1623, 1632), i=236, next=0
+                  NodeList [1633, 1709), i=237, next=0
+                    KindExpressionStatement [1633, 1660), i=238, next=242
+                      KindPropertyAccessExpression [1633, 1659), i=239, next=0
+                        KindIdentifier "someDerived" [1633, 1657), i=240, next=241
+                        KindIdentifier "d" [1658, 1659), i=241, next=0
+                    KindExpressionStatement [1660, 1691), i=242, next=246
+                      KindPropertyAccessExpression [1660, 1690), i=243, next=0
+                        KindIdentifier "someDerived" [1660, 1684), i=244, next=245
+                        KindIdentifier "basey" [1685, 1690), i=245, next=0
+                    KindBreakStatement [1691, 1709), i=246, next=0
+                KindCaseClause [1709, 1813), i=247, next=5
+                  KindBinaryExpression [1722, 1754), i=248, next=252
+                    KindIdentifier "someDerived" [1722, 1734), i=249, next=250
+                    KindInstanceOfKeyword [1734, 1745), i=250, next=251
+                    KindIdentifier "Derived2" [1745, 1754), i=251, next=0
+                  NodeList [1755, 1813), i=252, next=0
+                    KindExpressionStatement [1755, 1782), i=253, next=1
+                      KindPropertyAccessExpression [1755, 1781), i=254, next=0
+                        KindIdentifier "someDerived" [1755, 1779), i=255, next=0
+                        KindIdentifier "d" [1780, 1781), i=256, next=0
+                    KindExpressionStatement [1782, 1813), i=257, next=0
+                      KindPropertyAccessExpression [1782, 1812), i=258, next=0
+                        KindIdentifier "someDerived" [1782, 1806), i=259, next=4
+                        KindIdentifier "other" [1807, 1812), i=260, next=0
+                KindDefaultClause [1813, 1934), i=261, next=0
+                  NodeList [1830, 1934), i=262, next=0
+                    KindExpressionStatement [1830, 1857), i=263, next=11
+                      KindPropertyAccessExpression [1830, 1856), i=264, next=0
+                        KindIdentifier "someDerived" [1830, 1854), i=265, next=10
+                        KindIdentifier "d" [1855, 1856), i=266, next=0
+                    KindExpressionStatement [1857, 1888), i=267, next=15
+                      KindPropertyAccessExpression [1857, 1887), i=268, next=0
+                        KindIdentifier "someDerived" [1857, 1881), i=269, next=14
+                        KindIdentifier "other" [1882, 1887), i=270, next=0
+                    KindVariableStatement [1888, 1934), i=271, next=0
+                      KindVariableDeclarationList [1888, 1933), i=272, next=0
+                        NodeList [1906, 1933), i=273, next=0
+                          KindVariableDeclaration [1906, 1933), i=274, next=0
+                            KindIdentifier "never" [1906, 1912), i=275, next=20
+                            KindNeverKeyword [1913, 1919), i=276, next=21
+                            KindIdentifier "someDerived" [1921, 1933), i=277, next=0

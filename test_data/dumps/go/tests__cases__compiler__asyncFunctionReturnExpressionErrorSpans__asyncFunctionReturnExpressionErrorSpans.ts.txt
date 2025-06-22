@@ -1,0 +1,49 @@
+KindSourceFile [0, 338), i=1, next=0
+  NodeList [0, 338), i=2, next=0
+    KindInterfaceDeclaration [0, 132), i=3, next=21
+      KindIdentifier "Foo" [9, 13), i=4, next=5
+      NodeList [15, 129), i=5, next=0
+        KindPropertySignature [15, 129), i=6, next=0
+          KindIdentifier "bar" [15, 24), i=7, next=8
+          KindTypeLiteral [25, 129), i=8, next=0
+            NodeList [27, 122), i=9, next=0
+              KindPropertySignature [27, 122), i=10, next=0
+                KindIdentifier "baz" [27, 40), i=11, next=12
+                KindTypeLiteral [41, 122), i=12, next=0
+                  NodeList [43, 111), i=13, next=0
+                    KindPropertySignature [43, 111), i=14, next=0
+                      KindIdentifier "inner" [43, 62), i=15, next=16
+                      KindTypeLiteral [63, 111), i=16, next=0
+                        NodeList [65, 96), i=17, next=0
+                          KindPropertySignature [65, 96), i=18, next=0
+                            KindIdentifier "thing" [65, 88), i=19, next=20
+                            KindStringKeyword [89, 96), i=20, next=0
+    KindFunctionDeclaration [132, 338), i=21, next=0
+      NodeList [132, 141), i=22, next=24
+        KindAsyncKeyword [132, 141), i=23, next=0
+      KindIdentifier "asyncFoo" [150, 159), i=24, next=25
+      KindTypeReference [162, 175), i=25, next=30
+        KindIdentifier "Promise" [162, 170), i=26, next=27
+        NodeList [171, 174), i=27, next=0
+          KindTypeReference [171, 174), i=28, next=0
+            KindIdentifier "Foo" [171, 174), i=29, next=0
+      KindBlock [175, 338), i=30, next=0
+        NodeList [177, 335), i=31, next=0
+          KindReturnStatement [177, 335), i=32, next=0
+            KindObjectLiteralExpression [189, 335), i=33, next=0
+              NodeList [191, 328), i=34, next=0
+                KindPropertyAssignment [191, 328), i=35, next=0
+                  KindIdentifier "bar" [191, 204), i=36, next=37
+                  KindObjectLiteralExpression [205, 328), i=37, next=0
+                    NodeList [207, 317), i=38, next=0
+                      KindPropertyAssignment [207, 317), i=39, next=0
+                        KindIdentifier "baz" [207, 224), i=40, next=41
+                        KindObjectLiteralExpression [225, 317), i=41, next=0
+                          NodeList [227, 302), i=42, next=0
+                            KindPropertyAssignment [227, 302), i=43, next=0
+                              KindIdentifier "inner" [227, 250), i=44, next=45
+                              KindObjectLiteralExpression [251, 302), i=45, next=0
+                                NodeList [253, 283), i=46, next=0
+                                  KindPropertyAssignment [253, 283), i=47, next=0
+                                    KindIdentifier "thing" [253, 280), i=48, next=49
+                                    KindNumericLiteral [281, 283), i=49, next=0

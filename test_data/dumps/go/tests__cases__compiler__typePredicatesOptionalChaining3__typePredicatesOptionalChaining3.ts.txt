@@ -1,0 +1,105 @@
+KindSourceFile [0, 504), i=1, next=0
+  NodeList [0, 503), i=2, next=0
+    KindInterfaceDeclaration [0, 37), i=3, next=11
+      KindIdentifier "Animal" [9, 16), i=4, next=5
+      NodeList [18, 35), i=5, next=0
+        KindPropertySignature [18, 35), i=6, next=0
+          KindIdentifier "breed" [18, 26), i=7, next=8
+          KindQuestionToken [26, 27), i=8, next=9
+          KindTypeReference [28, 34), i=9, next=0
+            KindIdentifier "Breed" [28, 34), i=10, next=0
+    KindInterfaceDeclaration [37, 74), i=11, next=18
+      KindIdentifier "Breed" [47, 53), i=12, next=13
+      NodeList [55, 72), i=13, next=0
+        KindPropertySignature [55, 72), i=14, next=0
+          KindIdentifier "size" [55, 62), i=15, next=16
+          KindQuestionToken [62, 63), i=16, next=17
+          KindStringKeyword [64, 71), i=17, next=0
+    KindFunctionDeclaration [74, 142), i=18, next=33
+      NodeList [74, 83), i=19, next=21
+        KindDeclareKeyword [74, 83), i=20, next=0
+      KindIdentifier "isNil" [92, 98), i=21, next=22
+      NodeList [99, 113), i=22, next=26
+        KindParameter [99, 113), i=23, next=0
+          KindIdentifier "value" [99, 104), i=24, next=25
+          KindUnknownKeyword [105, 113), i=25, next=0
+      KindTypePredicate [115, 141), i=26, next=0
+        KindIdentifier "value" [115, 121), i=27, next=28
+        KindUnionType [124, 141), i=28, next=0
+          NodeList [124, 141), i=29, next=0
+            KindUndefinedKeyword [124, 134), i=30, next=31
+            KindLiteralType [136, 141), i=31, next=0
+              KindNullKeyword [136, 141), i=32, next=0
+    KindFunctionDeclaration [142, 324), i=33, next=69
+      KindIdentifier "getBreedSizeWithoutFunction" [152, 180), i=34, next=35
+      NodeList [181, 195), i=35, next=40
+        KindParameter [181, 195), i=36, next=0
+          KindIdentifier "animal" [181, 187), i=37, next=38
+          KindTypeReference [188, 195), i=38, next=0
+            KindIdentifier "Animal" [188, 195), i=39, next=0
+      KindUnionType [197, 216), i=40, next=44
+        NodeList [197, 216), i=41, next=0
+          KindStringKeyword [197, 204), i=42, next=43
+          KindUndefinedKeyword [206, 216), i=43, next=0
+      KindBlock [216, 324), i=44, next=0
+        NodeList [218, 322), i=45, next=0
+          KindIfStatement [218, 322), i=46, next=0
+            KindBinaryExpression [225, 252), i=47, next=57
+              KindPropertyAccessExpression [225, 244), i=48, next=55
+                KindPropertyAccessExpression [225, 238), i=49, next=53
+                  KindIdentifier "animal" [225, 231), i=50, next=51
+                  KindQuestionDotToken [231, 233), i=51, next=52
+                  KindIdentifier "breed" [233, 238), i=52, next=0
+                KindQuestionDotToken [238, 240), i=53, next=54
+                KindIdentifier "size" [240, 244), i=54, next=0
+              KindExclamationEqualsToken [244, 247), i=55, next=56
+              KindNullKeyword [247, 252), i=56, next=0
+            KindBlock [253, 289), i=57, next=65
+              NodeList [255, 285), i=58, next=0
+                KindReturnStatement [255, 285), i=59, next=0
+                  KindPropertyAccessExpression [266, 284), i=60, next=0
+                    KindPropertyAccessExpression [266, 279), i=61, next=64
+                      KindIdentifier "animal" [266, 273), i=62, next=63
+                      KindIdentifier "breed" [274, 279), i=63, next=0
+                    KindIdentifier "size" [280, 284), i=64, next=0
+            KindBlock [294, 322), i=65, next=0
+              NodeList [296, 318), i=66, next=0
+                KindReturnStatement [296, 318), i=67, next=0
+                  KindIdentifier "undefined" [307, 317), i=68, next=0
+    KindFunctionDeclaration [324, 503), i=69, next=0
+      KindIdentifier "getBreedSizeWithFunction" [334, 359), i=70, next=71
+      NodeList [360, 374), i=71, next=76
+        KindParameter [360, 374), i=72, next=0
+          KindIdentifier "animal" [360, 366), i=73, next=74
+          KindTypeReference [367, 374), i=74, next=0
+            KindIdentifier "Animal" [367, 374), i=75, next=0
+      KindUnionType [376, 395), i=76, next=80
+        NodeList [376, 395), i=77, next=0
+          KindStringKeyword [376, 383), i=78, next=79
+          KindUndefinedKeyword [385, 395), i=79, next=0
+      KindBlock [395, 503), i=80, next=0
+        NodeList [397, 501), i=81, next=0
+          KindIfStatement [397, 501), i=82, next=0
+            KindPrefixUnaryExpression [404, 431), i=83, next=94
+              KindCallExpression [405, 431), i=84, next=0
+                KindIdentifier "isNil" [405, 410), i=85, next=86
+                NodeList [411, 430), i=86, next=0
+                  KindPropertyAccessExpression [411, 430), i=87, next=0
+                    KindPropertyAccessExpression [411, 424), i=88, next=92
+                      KindIdentifier "animal" [411, 417), i=89, next=90
+                      KindQuestionDotToken [417, 419), i=90, next=91
+                      KindIdentifier "breed" [419, 424), i=91, next=0
+                    KindQuestionDotToken [424, 426), i=92, next=93
+                    KindIdentifier "size" [426, 430), i=93, next=0
+            KindBlock [432, 468), i=94, next=102
+              NodeList [434, 464), i=95, next=0
+                KindReturnStatement [434, 464), i=96, next=0
+                  KindPropertyAccessExpression [445, 463), i=97, next=0
+                    KindPropertyAccessExpression [445, 458), i=98, next=101
+                      KindIdentifier "animal" [445, 452), i=99, next=100
+                      KindIdentifier "breed" [453, 458), i=100, next=0
+                    KindIdentifier "size" [459, 463), i=101, next=0
+            KindBlock [473, 501), i=102, next=0
+              NodeList [475, 497), i=103, next=0
+                KindReturnStatement [475, 497), i=104, next=0
+                  KindIdentifier "undefined" [486, 496), i=105, next=0

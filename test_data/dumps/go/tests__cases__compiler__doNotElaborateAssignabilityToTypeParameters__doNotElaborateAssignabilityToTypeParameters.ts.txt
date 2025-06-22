@@ -1,0 +1,60 @@
+KindSourceFile [0, 209), i=1, next=0
+  NodeList [0, 208), i=2, next=0
+    KindFunctionDeclaration [0, 101), i=3, next=34
+      NodeList [0, 5), i=4, next=6
+        KindAsyncKeyword [0, 5), i=5, next=0
+      KindIdentifier "foo" [14, 18), i=6, next=7
+      NodeList [19, 20), i=7, next=10
+        KindTypeParameter [19, 20), i=8, next=0
+          KindIdentifier "T" [19, 20), i=9, next=0
+      NodeList [22, 26), i=10, next=15
+        KindParameter [22, 26), i=11, next=0
+          KindIdentifier "x" [22, 23), i=12, next=13
+          KindTypeReference [24, 26), i=13, next=0
+            KindIdentifier "T" [24, 26), i=14, next=0
+      KindTypeReference [28, 39), i=15, next=20
+        KindIdentifier "Promise" [28, 36), i=16, next=17
+        NodeList [37, 38), i=17, next=0
+          KindTypeReference [37, 38), i=18, next=0
+            KindIdentifier "T" [37, 38), i=19, next=0
+      KindBlock [39, 101), i=20, next=0
+        NodeList [41, 99), i=21, next=0
+          KindVariableStatement [41, 80), i=22, next=32
+            KindVariableDeclarationList [41, 79), i=23, next=0
+              NodeList [47, 79), i=24, next=0
+                KindVariableDeclaration [47, 79), i=25, next=0
+                  KindIdentifier "yaddable" [47, 56), i=26, next=27
+                  KindAwaitExpression [58, 79), i=27, next=0
+                    KindCallExpression [64, 79), i=28, next=0
+                      KindIdentifier "getXOrYadda" [64, 76), i=29, next=30
+                      NodeList [77, 78), i=30, next=0
+                        KindIdentifier "x" [77, 78), i=31, next=0
+          KindReturnStatement [80, 99), i=32, next=0
+            KindIdentifier "yaddable" [89, 98), i=33, next=0
+    KindInterfaceDeclaration [101, 157), i=34, next=43
+      KindIdentifier "Yadda" [112, 118), i=35, next=36
+      NodeList [120, 155), i=36, next=0
+        KindPropertySignature [120, 137), i=37, next=40
+          KindIdentifier "stuff" [120, 128), i=38, next=39
+          KindStringKeyword [129, 136), i=39, next=0
+        KindPropertySignature [137, 155), i=40, next=0
+          KindIdentifier "things" [137, 146), i=41, next=42
+          KindStringKeyword [147, 154), i=42, next=0
+    KindFunctionDeclaration [157, 208), i=43, next=0
+      NodeList [157, 166), i=44, next=46
+        KindDeclareKeyword [157, 166), i=45, next=0
+      KindIdentifier "getXOrYadda" [175, 187), i=46, next=47
+      NodeList [188, 189), i=47, next=50
+        KindTypeParameter [188, 189), i=48, next=0
+          KindIdentifier "T" [188, 189), i=49, next=0
+      NodeList [191, 195), i=50, next=55
+        KindParameter [191, 195), i=51, next=0
+          KindIdentifier "x" [191, 192), i=52, next=53
+          KindTypeReference [193, 195), i=53, next=0
+            KindIdentifier "T" [193, 195), i=54, next=0
+      KindUnionType [197, 207), i=55, next=0
+        NodeList [197, 207), i=56, next=0
+          KindTypeReference [197, 199), i=57, next=59
+            KindIdentifier "T" [197, 199), i=58, next=0
+          KindTypeReference [201, 207), i=59, next=0
+            KindIdentifier "Yadda" [201, 207), i=60, next=0

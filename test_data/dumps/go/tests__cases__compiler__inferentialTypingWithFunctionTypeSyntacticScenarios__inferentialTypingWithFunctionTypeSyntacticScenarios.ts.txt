@@ -1,0 +1,168 @@
+KindSourceFile [0, 666), i=1, next=0
+  NodeList [0, 666), i=2, next=0
+    KindFunctionDeclaration [0, 59), i=3, next=29
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "map" [16, 20), i=6, next=7
+      NodeList [21, 25), i=7, next=12
+        KindTypeParameter [21, 22), i=8, next=10
+          KindIdentifier "T" [21, 22), i=9, next=0
+        KindTypeParameter [23, 25), i=10, next=0
+          KindIdentifier "U" [23, 25), i=11, next=0
+      NodeList [27, 54), i=12, next=27
+        KindParameter [27, 35), i=13, next=17
+          KindIdentifier "array" [27, 32), i=14, next=15
+          KindTypeReference [33, 35), i=15, next=0
+            KindIdentifier "T" [33, 35), i=16, next=0
+        KindParameter [36, 54), i=17, next=0
+          KindIdentifier "func" [36, 41), i=18, next=19
+          KindFunctionType [42, 54), i=19, next=0
+            NodeList [44, 48), i=20, next=25
+              KindParameter [44, 48), i=21, next=0
+                KindIdentifier "x" [44, 45), i=22, next=23
+                KindTypeReference [46, 48), i=23, next=0
+                  KindIdentifier "T" [46, 48), i=24, next=0
+            KindTypeReference [52, 54), i=25, next=0
+              KindIdentifier "U" [52, 54), i=26, next=0
+      KindTypeReference [56, 58), i=27, next=0
+        KindIdentifier "U" [56, 58), i=28, next=0
+    KindFunctionDeclaration [59, 99), i=29, next=43
+      NodeList [59, 68), i=30, next=32
+        KindDeclareKeyword [59, 68), i=31, next=0
+      KindIdentifier "identity" [77, 86), i=32, next=33
+      NodeList [87, 88), i=33, next=36
+        KindTypeParameter [87, 88), i=34, next=0
+          KindIdentifier "V" [87, 88), i=35, next=0
+      NodeList [90, 94), i=36, next=41
+        KindParameter [90, 94), i=37, next=0
+          KindIdentifier "y" [90, 91), i=38, next=39
+          KindTypeReference [92, 94), i=39, next=0
+            KindIdentifier "V" [92, 94), i=40, next=0
+      KindTypeReference [96, 98), i=41, next=0
+        KindIdentifier "V" [96, 98), i=42, next=0
+    KindVariableStatement [99, 115), i=43, next=49
+      KindVariableDeclarationList [99, 114), i=44, next=0
+        NodeList [104, 114), i=45, next=0
+          KindVariableDeclaration [104, 114), i=46, next=0
+            KindIdentifier "s" [104, 106), i=47, next=48
+            KindStringKeyword [107, 114), i=48, next=0
+    KindVariableStatement [115, 172), i=49, next=59
+      KindVariableDeclarationList [115, 171), i=50, next=0
+        NodeList [138, 171), i=51, next=0
+          KindVariableDeclaration [138, 171), i=52, next=0
+            KindIdentifier "dottedIdentity" [138, 153), i=53, next=54
+            KindObjectLiteralExpression [155, 171), i=54, next=0
+              NodeList [157, 169), i=55, next=0
+                KindPropertyAssignment [157, 169), i=56, next=0
+                  KindIdentifier "x" [157, 159), i=57, next=58
+                  KindIdentifier "identity" [160, 169), i=58, next=0
+    KindExpressionStatement [172, 204), i=59, next=70
+      KindBinaryExpression [172, 203), i=60, next=0
+        KindIdentifier "s" [172, 175), i=61, next=62
+        KindEqualsToken [175, 177), i=62, next=63
+        KindCallExpression [177, 203), i=63, next=0
+          KindIdentifier "map" [177, 181), i=64, next=65
+          NodeList [182, 202), i=65, next=0
+            KindStringLiteral "" [182, 184), i=66, next=67
+            KindPropertyAccessExpression [185, 202), i=67, next=0
+              KindIdentifier "dottedIdentity" [185, 200), i=68, next=69
+              KindIdentifier "x" [201, 202), i=69, next=0
+    KindExpressionStatement [204, 262), i=70, next=81
+      KindBinaryExpression [204, 261), i=71, next=0
+        KindIdentifier "s" [204, 230), i=72, next=73
+        KindEqualsToken [230, 232), i=73, next=74
+        KindCallExpression [232, 261), i=74, next=0
+          KindIdentifier "map" [232, 236), i=75, next=76
+          NodeList [237, 260), i=76, next=0
+            KindStringLiteral "" [237, 239), i=77, next=78
+            KindElementAccessExpression [240, 260), i=78, next=0
+              KindIdentifier "dottedIdentity" [240, 255), i=79, next=80
+              KindStringLiteral "x" [256, 259), i=80, next=0
+    KindExpressionStatement [262, 316), i=81, next=94
+      KindBinaryExpression [262, 315), i=82, next=0
+        KindIdentifier "s" [262, 285), i=83, next=84
+        KindEqualsToken [285, 287), i=84, next=85
+        KindCallExpression [287, 315), i=85, next=0
+          KindIdentifier "map" [287, 291), i=86, next=87
+          NodeList [292, 314), i=87, next=0
+            KindStringLiteral "" [292, 294), i=88, next=89
+            KindCallExpression [295, 314), i=89, next=0
+              KindParenthesizedExpression [295, 312), i=90, next=0
+                KindArrowFunction [297, 311), i=91, next=0
+                  KindEqualsGreaterThanToken [299, 302), i=92, next=93
+                  KindIdentifier "identity" [302, 311), i=93, next=0
+    KindInterfaceDeclaration [316, 398), i=94, next=100
+      KindIdentifier "IdentityConstructor" [343, 363), i=95, next=96
+      NodeList [365, 395), i=96, next=0
+        KindConstructSignature [365, 395), i=97, next=0
+          KindTypeQuery [378, 394), i=98, next=0
+            KindIdentifier "identity" [385, 394), i=99, next=0
+    KindVariableStatement [398, 428), i=100, next=107
+      KindVariableDeclarationList [398, 427), i=101, next=0
+        NodeList [403, 427), i=102, next=0
+          KindVariableDeclaration [403, 427), i=103, next=0
+            KindIdentifier "ic" [403, 406), i=104, next=105
+            KindTypeReference [407, 427), i=105, next=0
+              KindIdentifier "IdentityConstructor" [407, 427), i=106, next=0
+    KindExpressionStatement [428, 452), i=107, next=117
+      KindBinaryExpression [428, 451), i=108, next=0
+        KindIdentifier "s" [428, 431), i=109, next=110
+        KindEqualsToken [431, 433), i=110, next=111
+        KindCallExpression [433, 451), i=111, next=0
+          KindIdentifier "map" [433, 437), i=112, next=113
+          NodeList [438, 450), i=113, next=0
+            KindStringLiteral "" [438, 440), i=114, next=115
+            KindNewExpression [441, 450), i=115, next=0
+              KindIdentifier "ic" [445, 448), i=116, next=0
+    KindVariableStatement [452, 477), i=117, next=122
+      KindVariableDeclarationList [452, 476), i=118, next=0
+        NodeList [474, 476), i=119, next=0
+          KindVariableDeclaration [474, 476), i=120, next=0
+            KindIdentifier "t" [474, 476), i=121, next=0
+    KindExpressionStatement [477, 505), i=122, next=134
+      KindBinaryExpression [477, 504), i=123, next=0
+        KindIdentifier "s" [477, 480), i=124, next=125
+        KindEqualsToken [480, 482), i=125, next=126
+        KindCallExpression [482, 504), i=126, next=0
+          KindIdentifier "map" [482, 486), i=127, next=128
+          NodeList [487, 503), i=128, next=0
+            KindStringLiteral "" [487, 489), i=129, next=130
+            KindBinaryExpression [490, 503), i=130, next=0
+              KindIdentifier "t" [490, 492), i=131, next=132
+              KindEqualsToken [492, 494), i=132, next=133
+              KindIdentifier "identity" [494, 503), i=133, next=0
+    KindExpressionStatement [505, 567), i=134, next=146
+      KindBinaryExpression [505, 566), i=135, next=0
+        KindIdentifier "s" [505, 529), i=136, next=137
+        KindEqualsToken [529, 531), i=137, next=138
+        KindCallExpression [531, 566), i=138, next=0
+          KindIdentifier "map" [531, 535), i=139, next=140
+          NodeList [536, 565), i=140, next=0
+            KindStringLiteral "" [536, 538), i=141, next=142
+            KindTypeAssertionExpression [539, 565), i=142, next=0
+              KindTypeQuery [541, 556), i=143, next=145
+                KindIdentifier "identity" [547, 556), i=144, next=0
+              KindIdentifier "identity" [557, 565), i=145, next=0
+    KindExpressionStatement [567, 624), i=146, next=156
+      KindBinaryExpression [567, 623), i=147, next=0
+        KindIdentifier "s" [567, 601), i=148, next=149
+        KindEqualsToken [601, 603), i=149, next=150
+        KindCallExpression [603, 623), i=150, next=0
+          KindIdentifier "map" [603, 607), i=151, next=152
+          NodeList [608, 622), i=152, next=0
+            KindStringLiteral "" [608, 610), i=153, next=154
+            KindParenthesizedExpression [611, 622), i=154, next=0
+              KindIdentifier "identity" [613, 621), i=155, next=0
+    KindExpressionStatement [624, 666), i=156, next=0
+      KindBinaryExpression [624, 665), i=157, next=0
+        KindIdentifier "s" [624, 639), i=158, next=159
+        KindEqualsToken [639, 641), i=159, next=160
+        KindCallExpression [641, 665), i=160, next=0
+          KindIdentifier "map" [641, 645), i=161, next=162
+          NodeList [646, 664), i=162, next=0
+            KindStringLiteral "" [646, 648), i=163, next=164
+            KindParenthesizedExpression [649, 664), i=164, next=0
+              KindBinaryExpression [651, 663), i=165, next=0
+                KindStringLiteral "" [651, 653), i=166, next=167
+                KindCommaToken [653, 654), i=167, next=168
+                KindIdentifier "identity" [654, 663), i=168, next=0

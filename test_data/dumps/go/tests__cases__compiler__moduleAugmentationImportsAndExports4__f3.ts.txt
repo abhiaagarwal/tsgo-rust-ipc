@@ -1,0 +1,80 @@
+KindSourceFile [0, 339), i=1, next=0
+  NodeList [0, 338), i=2, next=0
+    KindImportDeclaration [0, 23), i=3, next=10
+      KindImportClause [6, 10), i=4, next=9
+        KindNamedImports [6, 10), i=5, next=0
+          NodeList [8, 9), i=6, next=0
+            KindImportSpecifier [8, 9), i=7, next=0
+              KindIdentifier "A" [8, 9), i=8, next=0
+      KindStringLiteral "./f1" [15, 22), i=9, next=0
+    KindImportDeclaration [23, 47), i=10, next=17
+      KindImportClause [30, 34), i=11, next=16
+        KindNamedImports [30, 34), i=12, next=0
+          NodeList [32, 33), i=13, next=0
+            KindImportSpecifier [32, 33), i=14, next=0
+              KindIdentifier "B" [32, 33), i=15, next=0
+      KindStringLiteral "./f2" [39, 46), i=16, next=0
+    KindExpressionStatement [47, 100), i=17, next=30
+      KindBinaryExpression [47, 100), i=18, next=0
+        KindPropertyAccessExpression [47, 64), i=19, next=24
+          KindPropertyAccessExpression [47, 60), i=20, next=23
+            KindIdentifier "A" [47, 50), i=21, next=22
+            KindIdentifier "prototype" [51, 60), i=22, next=0
+          KindIdentifier "foo" [61, 64), i=23, next=0
+        KindEqualsToken [64, 66), i=24, next=25
+        KindFunctionExpression [66, 100), i=25, next=0
+          KindBlock [78, 100), i=26, next=0
+            NodeList [80, 98), i=27, next=0
+              KindReturnStatement [80, 98), i=28, next=0
+                KindIdentifier "undefined" [87, 97), i=29, next=0
+    KindModuleDeclaration [100, 197), i=30, next=50
+      KindIdentifier "N" [111, 113), i=31, next=32
+      KindModuleBlock [113, 197), i=32, next=0
+        NodeList [115, 195), i=33, next=0
+          KindInterfaceDeclaration [115, 155), i=34, next=42
+            NodeList [115, 126), i=35, next=37
+              KindExportKeyword [115, 126), i=36, next=0
+            KindIdentifier "Ifc" [136, 140), i=37, next=38
+            NodeList [142, 153), i=38, next=0
+              KindPropertySignature [142, 153), i=39, next=0
+                KindIdentifier "a" [142, 144), i=40, next=41
+                KindNumberKeyword [145, 152), i=41, next=0
+          KindInterfaceDeclaration [155, 195), i=42, next=0
+            NodeList [155, 166), i=43, next=45
+              KindExportKeyword [155, 166), i=44, next=0
+            KindIdentifier "Cls" [176, 180), i=45, next=46
+            NodeList [182, 193), i=46, next=0
+              KindPropertySignature [182, 193), i=47, next=0
+                KindIdentifier "b" [182, 184), i=48, next=49
+                KindNumberKeyword [185, 192), i=49, next=0
+    KindImportEqualsDeclaration [197, 215), i=50, next=55
+      KindIdentifier "I" [204, 206), i=51, next=52
+      KindQualifiedName [208, 214), i=52, next=0
+        KindIdentifier "N" [208, 210), i=53, next=54
+        KindIdentifier "Ifc" [211, 214), i=54, next=0
+    KindImportEqualsDeclaration [215, 233), i=55, next=60
+      KindIdentifier "C" [222, 224), i=56, next=57
+      KindQualifiedName [226, 232), i=57, next=0
+        KindIdentifier "N" [226, 228), i=58, next=59
+        KindIdentifier "Cls" [229, 232), i=59, next=0
+    KindModuleDeclaration [233, 338), i=60, next=0
+      NodeList [233, 242), i=61, next=63
+        KindDeclareKeyword [233, 242), i=62, next=0
+      KindStringLiteral "./f1" [249, 256), i=63, next=64
+      KindModuleBlock [256, 338), i=64, next=0
+        NodeList [258, 336), i=65, next=0
+          KindInterfaceDeclaration [258, 336), i=66, next=0
+            KindIdentifier "A" [272, 274), i=67, next=68
+            NodeList [276, 330), i=68, next=0
+              KindMethodSignature [276, 294), i=69, next=73
+                KindIdentifier "foo" [276, 288), i=70, next=71
+                KindTypeReference [291, 293), i=71, next=0
+                  KindIdentifier "B" [291, 293), i=72, next=0
+              KindMethodSignature [294, 312), i=73, next=77
+                KindIdentifier "bar" [294, 306), i=74, next=75
+                KindTypeReference [309, 311), i=75, next=0
+                  KindIdentifier "I" [309, 311), i=76, next=0
+              KindMethodSignature [312, 330), i=77, next=0
+                KindIdentifier "baz" [312, 324), i=78, next=79
+                KindTypeReference [327, 329), i=79, next=0
+                  KindIdentifier "C" [327, 329), i=80, next=0

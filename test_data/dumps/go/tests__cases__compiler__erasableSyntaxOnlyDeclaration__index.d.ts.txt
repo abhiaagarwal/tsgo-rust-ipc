@@ -1,0 +1,111 @@
+KindSourceFile [0, 844), i=1, next=0
+  NodeList [0, 841), i=2, next=0
+    KindModuleDeclaration [0, 66), i=3, next=15
+      KindIdentifier "IllegalBecauseInstantiated" [9, 36), i=4, next=5
+      KindModuleBlock [36, 66), i=5, next=0
+        NodeList [38, 63), i=6, next=0
+          KindVariableStatement [38, 63), i=7, next=0
+            NodeList [38, 50), i=8, next=10
+              KindExportKeyword [38, 50), i=9, next=0
+            KindVariableDeclarationList [50, 62), i=10, next=0
+              NodeList [56, 62), i=11, next=0
+                KindVariableDeclaration [56, 62), i=12, next=0
+                  KindIdentifier "m" [56, 58), i=13, next=14
+                  KindNumericLiteral [60, 62), i=14, next=0
+    KindModuleDeclaration [66, 150), i=15, next=21
+      KindIdentifier "AlsoIllegalBecauseInstantiated" [79, 110), i=16, next=17
+      KindModuleBlock [110, 150), i=17, next=0
+        NodeList [112, 147), i=18, next=0
+          KindClassDeclaration [112, 147), i=19, next=0
+            KindIdentifier "PrivateClass" [123, 136), i=20, next=0
+    KindEnumDeclaration [150, 187), i=21, next=27
+      KindIdentifier "NotLegalEnum" [158, 171), i=22, next=23
+      NodeList [173, 184), i=23, next=0
+        KindEnumMember [173, 184), i=24, next=0
+          KindIdentifier "B" [173, 180), i=25, next=26
+          KindNumericLiteral [182, 184), i=26, next=0
+    KindImportEqualsDeclaration [187, 227), i=27, next=32
+      KindIdentifier "NoGoodAlias" [197, 209), i=28, next=29
+      KindQualifiedName [211, 226), i=29, next=0
+        KindIdentifier "NotLegalEnum" [211, 224), i=30, next=31
+        KindIdentifier "B" [225, 226), i=31, next=0
+    KindEnumDeclaration [227, 275), i=32, next=40
+      NodeList [227, 236), i=33, next=35
+        KindConstKeyword [227, 236), i=34, next=0
+      KindIdentifier "NotLegalConstEnum" [241, 259), i=35, next=36
+      NodeList [261, 272), i=36, next=0
+        KindEnumMember [261, 272), i=37, next=0
+          KindIdentifier "C" [261, 268), i=38, next=39
+          KindNumericLiteral [270, 272), i=39, next=0
+    KindClassDeclaration [275, 398), i=40, next=48
+      KindIdentifier "MyClassOk" [315, 325), i=41, next=42
+      NodeList [327, 395), i=42, next=0
+        KindConstructor [327, 395), i=43, next=0
+          NodeList [382, 393), i=44, next=0
+            KindParameter [382, 393), i=45, next=0
+              KindIdentifier "foo" [382, 385), i=46, next=47
+              KindStringKeyword [386, 393), i=47, next=0
+    KindModuleDeclaration [398, 507), i=48, next=61
+      KindIdentifier "NotInstantiated" [409, 425), i=49, next=50
+      KindModuleBlock [425, 507), i=50, next=0
+        NodeList [427, 504), i=51, next=0
+          KindInterfaceDeclaration [427, 463), i=52, next=56
+            NodeList [427, 439), i=53, next=55
+              KindExportKeyword [427, 439), i=54, next=0
+            KindIdentifier "JustAType" [449, 459), i=55, next=0
+          KindTypeAliasDeclaration [463, 504), i=56, next=0
+            NodeList [463, 475), i=57, next=59
+              KindExportKeyword [463, 475), i=58, next=0
+            KindIdentifier "ATypeInANamespace" [480, 498), i=59, next=60
+            KindTypeLiteral [500, 503), i=60, next=0
+    KindModuleDeclaration [507, 588), i=61, next=75
+      NodeList [507, 516), i=62, next=64
+        KindDeclareKeyword [507, 516), i=63, next=0
+      KindIdentifier "AmbientIsNotInstantiated" [526, 551), i=64, next=65
+      KindModuleBlock [551, 588), i=65, next=0
+        NodeList [553, 585), i=66, next=0
+          KindVariableStatement [553, 585), i=67, next=0
+            NodeList [553, 565), i=68, next=70
+              KindExportKeyword [553, 565), i=69, next=0
+            KindVariableDeclarationList [565, 584), i=70, next=0
+              NodeList [571, 584), i=71, next=0
+                KindVariableDeclaration [571, 584), i=72, next=0
+                  KindIdentifier "stillOk" [571, 579), i=73, next=74
+                  KindNumericLiteral [581, 584), i=74, next=0
+    KindEnumDeclaration [588, 630), i=75, next=83
+      NodeList [588, 599), i=76, next=78
+        KindDeclareKeyword [588, 599), i=77, next=0
+      KindIdentifier "LegalEnum" [604, 614), i=78, next=79
+      NodeList [616, 627), i=79, next=0
+        KindEnumMember [616, 627), i=80, next=0
+          KindIdentifier "A" [616, 623), i=81, next=82
+          KindNumericLiteral [625, 627), i=82, next=0
+    KindModuleDeclaration [630, 841), i=83, next=0
+      NodeList [630, 641), i=84, next=86
+        KindDeclareKeyword [630, 641), i=85, next=0
+      KindIdentifier "AmbientStuff" [651, 664), i=86, next=87
+      KindModuleBlock [664, 841), i=87, next=0
+        NodeList [666, 838), i=88, next=0
+          KindModuleDeclaration [666, 733), i=89, next=101
+            KindIdentifier "Nested" [681, 688), i=90, next=91
+            KindModuleBlock [688, 733), i=91, next=0
+              NodeList [690, 726), i=92, next=0
+                KindVariableStatement [690, 726), i=93, next=0
+                  NodeList [690, 706), i=94, next=96
+                    KindExportKeyword [690, 706), i=95, next=0
+                  KindVariableDeclarationList [706, 725), i=96, next=0
+                    NodeList [712, 725), i=97, next=0
+                      KindVariableDeclaration [712, 725), i=98, next=0
+                        KindIdentifier "stillOk" [712, 720), i=99, next=100
+                        KindNumericLiteral [722, 725), i=100, next=0
+          KindEnumDeclaration [733, 788), i=101, next=107
+            KindIdentifier "EnumInAmbientContext" [743, 764), i=102, next=103
+            NodeList [766, 781), i=103, next=0
+              KindEnumMember [766, 781), i=104, next=0
+                KindIdentifier "B" [766, 777), i=105, next=106
+                KindNumericLiteral [779, 781), i=106, next=0
+          KindImportEqualsDeclaration [788, 838), i=107, next=0
+            KindIdentifier "FineAlias" [802, 812), i=108, next=109
+            KindQualifiedName [814, 837), i=109, next=0
+              KindIdentifier "EnumInAmbientContext" [814, 835), i=110, next=111
+              KindIdentifier "B" [836, 837), i=111, next=0

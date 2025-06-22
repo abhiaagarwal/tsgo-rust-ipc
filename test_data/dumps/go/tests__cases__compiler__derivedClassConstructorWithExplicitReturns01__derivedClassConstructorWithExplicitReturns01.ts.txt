@@ -1,0 +1,89 @@
+KindSourceFile [0, 639), i=1, next=0
+  NodeList [0, 639), i=2, next=0
+    KindClassDeclaration [0, 269), i=3, next=34
+      KindIdentifier "C" [5, 7), i=4, next=5
+      NodeList [9, 266), i=5, next=0
+        KindPropertyDeclaration [9, 26), i=6, next=9
+          KindIdentifier "cProp" [9, 20), i=7, next=8
+          KindNumericLiteral [22, 25), i=8, next=0
+        KindMethodDeclaration [26, 75), i=9, next=15
+          KindIdentifier "foo" [26, 37), i=10, next=11
+          KindBlock [39, 75), i=11, next=0
+            NodeList [41, 73), i=12, next=0
+              KindReturnStatement [41, 73), i=13, next=0
+                KindStringLiteral "this never gets used." [48, 72), i=14, next=0
+        KindConstructor [75, 266), i=15, next=0
+          NodeList [95, 108), i=16, next=20
+            KindParameter [95, 108), i=17, next=0
+              KindIdentifier "value" [95, 100), i=18, next=19
+              KindNumberKeyword [101, 108), i=19, next=0
+          KindBlock [109, 266), i=20, next=0
+            NodeList [111, 259), i=21, next=0
+              KindReturnStatement [111, 259), i=22, next=0
+                KindObjectLiteralExpression [127, 259), i=23, next=0
+                  NodeList [129, 248), i=24, next=0
+                    KindPropertyAssignment [129, 155), i=25, next=28
+                      KindIdentifier "cProp" [129, 148), i=26, next=27
+                      KindIdentifier "value" [149, 155), i=27, next=0
+                    KindMethodDeclaration [156, 248), i=28, next=0
+                      KindIdentifier "foo" [156, 173), i=29, next=30
+                      KindBlock [175, 248), i=30, next=0
+                        NodeList [177, 233), i=31, next=0
+                          KindReturnStatement [177, 233), i=32, next=0
+                            KindStringLiteral "well this looks kinda C-ish." [201, 232), i=33, next=0
+    KindClassDeclaration [269, 639), i=34, next=0
+      KindIdentifier "D" [278, 280), i=35, next=36
+      NodeList [280, 290), i=36, next=41
+        KindHeritageClause [280, 290), i=37, next=0
+          NodeList [288, 290), i=38, next=0
+            KindExpressionWithTypeArguments [288, 290), i=39, next=0
+              KindIdentifier "C" [288, 290), i=40, next=0
+      NodeList [292, 636), i=41, next=0
+        KindPropertyDeclaration [292, 317), i=42, next=47
+          KindIdentifier "dProp" [292, 303), i=43, next=44
+          KindArrowFunction [305, 316), i=44, next=0
+            KindEqualsGreaterThanToken [308, 311), i=45, next=46
+            KindThisKeyword [311, 316), i=46, next=0
+        KindConstructor [317, 636), i=47, next=0
+          NodeList [337, 344), i=48, next=52
+            KindParameter [337, 344), i=49, next=0
+              KindIdentifier "a" [337, 338), i=50, next=51
+              KindNumericLiteral [340, 344), i=51, next=0
+          KindBlock [345, 636), i=52, next=0
+            NodeList [347, 629), i=53, next=0
+              KindExpressionStatement [347, 366), i=54, next=59
+                KindCallExpression [347, 365), i=55, next=0
+                  KindSuperKeyword [347, 362), i=56, next=57
+                  NodeList [363, 364), i=57, next=0
+                    KindIdentifier "a" [363, 364), i=58, next=0
+              KindIfStatement [366, 629), i=59, next=0
+                KindBinaryExpression [382, 401), i=60, next=67
+                  KindCallExpression [382, 395), i=61, next=65
+                    KindPropertyAccessExpression [382, 393), i=62, next=0
+                      KindIdentifier "Math" [382, 386), i=63, next=64
+                      KindIdentifier "random" [387, 393), i=64, next=0
+                  KindLessThanToken [395, 397), i=65, next=66
+                  KindNumericLiteral [397, 401), i=66, next=0
+                KindBlock [402, 589), i=67, next=88
+                  NodeList [404, 578), i=68, next=0
+                    KindExpressionStatement [404, 428), i=69, next=71
+                      KindStringLiteral "You win!" [404, 428), i=70, next=0
+                    KindReturnStatement [428, 578), i=71, next=0
+                      KindObjectLiteralExpression [448, 577), i=72, next=0
+                        NodeList [450, 562), i=73, next=0
+                          KindPropertyAssignment [450, 476), i=74, next=77
+                            KindIdentifier "cProp" [450, 473), i=75, next=76
+                            KindNumericLiteral [474, 476), i=76, next=0
+                          KindPropertyAssignment [477, 512), i=77, next=82
+                            KindIdentifier "dProp" [477, 500), i=78, next=79
+                            KindArrowFunction [501, 512), i=79, next=0
+                              KindEqualsGreaterThanToken [504, 507), i=80, next=81
+                              KindThisKeyword [507, 512), i=81, next=0
+                          KindMethodDeclaration [513, 562), i=82, next=0
+                            KindIdentifier "foo" [513, 534), i=83, next=84
+                            KindBlock [536, 562), i=84, next=0
+                              NodeList [538, 560), i=85, next=0
+                                KindReturnStatement [538, 560), i=86, next=0
+                                  KindStringLiteral "You win!!!!!" [545, 560), i=87, next=0
+                KindReturnStatement [603, 629), i=88, next=0
+                  KindNullKeyword [623, 628), i=89, next=0

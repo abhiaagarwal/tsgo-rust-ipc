@@ -1,0 +1,57 @@
+KindSourceFile [0, 278), i=1, next=0
+  NodeList [0, 278), i=2, next=0
+    KindFunctionDeclaration [0, 51), i=3, next=14
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "assert" [16, 23), i=6, next=7
+      NodeList [24, 34), i=7, next=11
+        KindParameter [24, 34), i=8, next=0
+          KindIdentifier "value" [24, 29), i=9, next=10
+          KindAnyKeyword [30, 34), i=10, next=0
+      KindTypePredicate [36, 50), i=11, next=0
+        KindAssertsKeyword [36, 44), i=12, next=13
+        KindIdentifier "value" [44, 50), i=13, next=0
+    KindFunctionDeclaration [51, 278), i=14, next=0
+      KindIdentifier "foo2" [63, 68), i=15, next=16
+      NodeList [69, 101), i=16, next=25
+        KindParameter [69, 101), i=17, next=0
+          KindIdentifier "param" [69, 74), i=18, next=19
+          KindUnionType [75, 101), i=19, next=0
+            NodeList [75, 101), i=20, next=0
+              KindNumberKeyword [75, 82), i=21, next=22
+              KindLiteralType [84, 89), i=22, next=24
+                KindNullKeyword [84, 89), i=23, next=0
+              KindUndefinedKeyword [91, 101), i=24, next=0
+      KindUnionType [103, 117), i=25, next=30
+        NodeList [103, 117), i=26, next=0
+          KindNumberKeyword [103, 110), i=27, next=28
+          KindLiteralType [112, 117), i=28, next=0
+            KindNullKeyword [112, 117), i=29, next=0
+      KindBlock [117, 278), i=30, next=0
+        NodeList [119, 220), i=31, next=0
+          KindVariableStatement [119, 157), i=32, next=41
+            KindVariableDeclarationList [119, 156), i=33, next=0
+              NodeList [130, 156), i=34, next=0
+                KindVariableDeclaration [130, 156), i=35, next=0
+                  KindIdentifier "val" [130, 134), i=36, next=37
+                  KindBinaryExpression [136, 156), i=37, next=0
+                    KindIdentifier "param" [136, 142), i=38, next=39
+                    KindExclamationEqualsEqualsToken [142, 146), i=39, next=40
+                    KindIdentifier "undefined" [146, 156), i=40, next=0
+          KindReturnStatement [157, 220), i=41, next=0
+            KindConditionalExpression [169, 219), i=42, next=0
+              KindIdentifier "val" [169, 173), i=43, next=44
+              KindQuestionToken [173, 175), i=44, next=45
+              KindParenthesizedExpression [175, 212), i=45, next=56
+                KindBinaryExpression [177, 211), i=46, next=0
+                  KindCallExpression [177, 204), i=47, next=54
+                    KindIdentifier "assert" [177, 183), i=48, next=49
+                    NodeList [184, 203), i=49, next=0
+                      KindBinaryExpression [184, 203), i=50, next=0
+                        KindIdentifier "param" [184, 189), i=51, next=52
+                        KindExclamationEqualsEqualsToken [189, 193), i=52, next=53
+                        KindIdentifier "undefined" [193, 203), i=53, next=0
+                  KindCommaToken [204, 205), i=54, next=55
+                  KindIdentifier "param" [205, 211), i=55, next=0
+              KindColonToken [212, 214), i=56, next=57
+              KindNullKeyword [214, 219), i=57, next=0

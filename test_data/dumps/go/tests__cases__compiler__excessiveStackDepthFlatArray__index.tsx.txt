@@ -1,0 +1,249 @@
+KindSourceFile [0, 1175), i=1, next=0
+  NodeList [0, 1174), i=2, next=0
+    KindInterfaceDeclaration [0, 48), i=3, next=16
+      KindIdentifier "MiddlewareArray" [9, 25), i=4, next=5
+      NodeList [26, 27), i=5, next=8
+        KindTypeParameter [26, 27), i=6, next=0
+          KindIdentifier "T" [26, 27), i=7, next=0
+      NodeList [28, 45), i=8, next=0
+        KindHeritageClause [28, 45), i=9, next=0
+          NodeList [36, 45), i=10, next=0
+            KindExpressionWithTypeArguments [36, 45), i=11, next=0
+              KindIdentifier "Array" [36, 42), i=12, next=13
+              NodeList [43, 44), i=13, next=0
+                KindTypeReference [43, 44), i=14, next=0
+                  KindIdentifier "T" [43, 44), i=15, next=0
+    KindFunctionDeclaration [48, 134), i=16, next=32
+      NodeList [48, 56), i=17, next=19
+        KindDeclareKeyword [48, 56), i=18, next=0
+      KindIdentifier "configureStore" [65, 80), i=19, next=20
+      NodeList [81, 126), i=20, next=31
+        KindParameter [81, 126), i=21, next=0
+          KindIdentifier "options" [81, 88), i=22, next=23
+          KindTypeLiteral [89, 126), i=23, next=0
+            NodeList [91, 124), i=24, next=0
+              KindPropertySignature [91, 124), i=25, next=0
+                KindIdentifier "middleware" [91, 102), i=26, next=27
+                KindTypeReference [103, 124), i=27, next=0
+                  KindIdentifier "MiddlewareArray" [103, 119), i=28, next=29
+                  NodeList [120, 123), i=29, next=0
+                    KindAnyKeyword [120, 123), i=30, next=0
+      KindVoidKeyword [128, 133), i=31, next=0
+    KindVariableStatement [134, 190), i=32, next=43
+      NodeList [134, 143), i=33, next=35
+        KindDeclareKeyword [134, 143), i=34, next=0
+      KindVariableDeclarationList [143, 189), i=35, next=0
+        NodeList [149, 189), i=36, next=0
+          KindVariableDeclaration [149, 189), i=37, next=0
+            KindIdentifier "defaultMiddleware" [149, 167), i=38, next=39
+            KindTypeReference [168, 189), i=39, next=0
+              KindIdentifier "MiddlewareArray" [168, 184), i=40, next=41
+              NodeList [185, 188), i=41, next=0
+                KindAnyKeyword [185, 188), i=42, next=0
+    KindExpressionStatement [190, 269), i=43, next=55
+      KindCallExpression [190, 268), i=44, next=0
+        KindIdentifier "configureStore" [190, 205), i=45, next=46
+        NodeList [206, 267), i=46, next=0
+          KindObjectLiteralExpression [206, 267), i=47, next=0
+            NodeList [207, 245), i=48, next=0
+              KindPropertyAssignment [207, 244), i=49, next=0
+                KindIdentifier "middleware" [207, 220), i=50, next=51
+                KindArrayLiteralExpression [221, 244), i=51, next=0
+                  NodeList [223, 243), i=52, next=0
+                    KindSpreadElement [223, 243), i=53, next=0
+                      KindIdentifier "defaultMiddleware" [226, 243), i=54, next=0
+    KindModuleDeclaration [269, 664), i=55, next=125
+      NodeList [269, 278), i=56, next=58
+        KindDeclareKeyword [269, 278), i=57, next=0
+      KindIdentifier "React" [288, 294), i=58, next=59
+      KindModuleBlock [294, 664), i=59, next=0
+        NodeList [296, 662), i=60, next=0
+          KindTypeAliasDeclaration [296, 358), i=61, next=75
+            KindIdentifier "DetailedHTMLProps" [303, 321), i=62, next=63
+            NodeList [322, 352), i=63, next=73
+              KindTypeParameter [322, 349), i=64, next=71
+                KindIdentifier "E" [322, 323), i=65, next=66
+                KindTypeReference [331, 349), i=66, next=0
+                  KindIdentifier "HTMLAttributes" [331, 346), i=67, next=68
+                  NodeList [347, 348), i=68, next=0
+                    KindTypeReference [347, 348), i=69, next=0
+                      KindIdentifier "T" [347, 348), i=70, next=0
+              KindTypeParameter [350, 352), i=71, next=0
+                KindIdentifier "T" [350, 352), i=72, next=0
+            KindTypeReference [355, 357), i=73, next=0
+              KindIdentifier "E" [355, 357), i=74, next=0
+          KindInterfaceDeclaration [358, 420), i=75, next=86
+            KindIdentifier "HTMLAttributes" [370, 385), i=76, next=77
+            NodeList [386, 387), i=77, next=80
+              KindTypeParameter [386, 387), i=78, next=0
+                KindIdentifier "T" [386, 387), i=79, next=0
+            NodeList [390, 416), i=80, next=0
+              KindPropertySignature [390, 416), i=81, next=0
+                KindIdentifier "children" [390, 403), i=82, next=83
+                KindQuestionToken [403, 404), i=83, next=84
+                KindTypeReference [405, 415), i=84, next=0
+                  KindIdentifier "ReactNode" [405, 415), i=85, next=0
+          KindTypeAliasDeclaration [420, 496), i=86, next=98
+            KindIdentifier "ReactNode" [427, 437), i=87, next=88
+            KindUnionType [439, 495), i=88, next=0
+              NodeList [439, 495), i=89, next=0
+                KindTypeReference [439, 450), i=90, next=92
+                  KindIdentifier "ReactChild" [439, 450), i=91, next=0
+                KindTypeReference [452, 466), i=92, next=94
+                  KindIdentifier "ReactFragment" [452, 466), i=93, next=0
+                KindBooleanKeyword [468, 476), i=94, next=95
+                KindLiteralType [478, 483), i=95, next=97
+                  KindNullKeyword [478, 483), i=96, next=0
+                KindUndefinedKeyword [485, 495), i=97, next=0
+          KindTypeAliasDeclaration [496, 532), i=98, next=104
+            KindIdentifier "ReactText" [503, 513), i=99, next=100
+            KindUnionType [515, 531), i=100, next=0
+              NodeList [515, 531), i=101, next=0
+                KindStringKeyword [515, 522), i=102, next=103
+                KindNumberKeyword [524, 531), i=103, next=0
+          KindTypeAliasDeclaration [532, 563), i=104, next=108
+            KindIdentifier "ReactChild" [539, 550), i=105, next=106
+            KindTypeReference [552, 562), i=106, next=0
+              KindIdentifier "ReactText" [552, 562), i=107, next=0
+          KindTypeAliasDeclaration [563, 607), i=108, next=115
+            KindIdentifier "ReactFragment" [570, 584), i=109, next=110
+            KindUnionType [586, 606), i=110, next=0
+              NodeList [586, 606), i=111, next=0
+                KindTypeLiteral [586, 589), i=112, next=113
+                KindTypeReference [591, 606), i=113, next=0
+                  KindIdentifier "ReactNodeArray" [591, 606), i=114, next=0
+          KindInterfaceDeclaration [607, 662), i=115, next=0
+            KindIdentifier "ReactNodeArray" [619, 634), i=116, next=117
+            NodeList [634, 659), i=117, next=0
+              KindHeritageClause [634, 659), i=118, next=0
+                NodeList [642, 659), i=119, next=0
+                  KindExpressionWithTypeArguments [642, 659), i=120, next=0
+                    KindIdentifier "Array" [642, 648), i=121, next=122
+                    NodeList [649, 658), i=122, next=0
+                      KindTypeReference [649, 658), i=123, next=0
+                        KindIdentifier "ReactNode" [649, 658), i=124, next=0
+    KindModuleDeclaration [664, 902), i=125, next=166
+      NodeList [664, 672), i=126, next=128
+        KindDeclareKeyword [664, 672), i=127, next=0
+      KindIdentifier "JSX" [682, 686), i=128, next=129
+      KindModuleBlock [686, 902), i=129, next=0
+        NodeList [688, 900), i=130, next=0
+          KindInterfaceDeclaration [688, 900), i=131, next=0
+            KindIdentifier "IntrinsicElements" [700, 718), i=132, next=133
+            NodeList [720, 896), i=133, next=0
+              KindPropertySignature [720, 811), i=134, next=150
+                KindIdentifier "ul" [720, 727), i=135, next=136
+                KindTypeReference [728, 810), i=136, next=0
+                  KindQualifiedName [728, 752), i=137, next=140
+                    KindIdentifier "React" [728, 734), i=138, next=139
+                    KindIdentifier "DetailedHTMLProps" [735, 752), i=139, next=0
+                  NodeList [753, 809), i=140, next=0
+                    KindTypeReference [753, 791), i=141, next=148
+                      KindQualifiedName [753, 773), i=142, next=145
+                        KindIdentifier "React" [753, 758), i=143, next=144
+                        KindIdentifier "HTMLAttributes" [759, 773), i=144, next=0
+                      NodeList [774, 790), i=145, next=0
+                        KindTypeReference [774, 790), i=146, next=0
+                          KindIdentifier "HTMLUListElement" [774, 790), i=147, next=0
+                    KindTypeReference [792, 809), i=148, next=0
+                      KindIdentifier "HTMLUListElement" [792, 809), i=149, next=0
+              KindPropertySignature [811, 896), i=150, next=0
+                KindIdentifier "li" [811, 818), i=151, next=152
+                KindTypeReference [819, 895), i=152, next=0
+                  KindQualifiedName [819, 843), i=153, next=156
+                    KindIdentifier "React" [819, 825), i=154, next=155
+                    KindIdentifier "DetailedHTMLProps" [826, 843), i=155, next=0
+                  NodeList [844, 894), i=156, next=0
+                    KindTypeReference [844, 879), i=157, next=164
+                      KindQualifiedName [844, 864), i=158, next=161
+                        KindIdentifier "React" [844, 849), i=159, next=160
+                        KindIdentifier "HTMLAttributes" [850, 864), i=160, next=0
+                      NodeList [865, 878), i=161, next=0
+                        KindTypeReference [865, 878), i=162, next=0
+                          KindIdentifier "HTMLLIElement" [865, 878), i=163, next=0
+                    KindTypeReference [880, 894), i=164, next=0
+                      KindIdentifier "HTMLLIElement" [880, 894), i=165, next=0
+    KindVariableStatement [902, 926), i=166, next=174
+      NodeList [902, 910), i=167, next=169
+        KindDeclareKeyword [902, 910), i=168, next=0
+      KindVariableDeclarationList [910, 925), i=169, next=0
+        NodeList [914, 925), i=170, next=0
+          KindVariableDeclaration [914, 925), i=171, next=0
+            KindIdentifier "React" [914, 920), i=172, next=173
+            KindAnyKeyword [921, 925), i=173, next=0
+    KindVariableStatement [926, 1166), i=174, next=248
+      KindVariableDeclarationList [926, 1166), i=175, next=0
+        NodeList [933, 1166), i=176, next=0
+          KindVariableDeclaration [933, 1166), i=177, next=0
+            KindIdentifier "Component" [933, 943), i=178, next=179
+            KindArrowFunction [945, 1166), i=179, next=0
+              KindEqualsGreaterThanToken [948, 951), i=180, next=181
+              KindBlock [951, 1166), i=181, next=0
+                NodeList [953, 1166), i=182, next=0
+                  KindVariableStatement [953, 999), i=183, next=192
+                    KindVariableDeclarationList [953, 998), i=184, next=0
+                      NodeList [961, 998), i=185, next=0
+                        KindVariableDeclaration [961, 998), i=186, next=0
+                          KindIdentifier "categories" [961, 972), i=187, next=188
+                          KindArrayLiteralExpression [974, 998), i=188, next=0
+                            NodeList [976, 997), i=189, next=0
+                              KindStringLiteral "Fruit" [976, 983), i=190, next=191
+                              KindStringLiteral "Vegetables" [984, 997), i=191, next=0
+                  KindReturnStatement [999, 1039), i=192, next=204
+                    KindParenthesizedExpression [1009, 1039), i=193, next=0
+                      KindBinaryExpression [1011, 1039), i=194, next=0
+                        KindTypeAssertionExpression [1011, 1034), i=195, next=202
+                          KindTypeReference [1017, 1019), i=196, next=198
+                            KindIdentifier "ul" [1017, 1019), i=197, next=0
+                          KindTypeAssertionExpression [1020, 1034), i=198, next=0
+                            KindTypeReference [1028, 1030), i=199, next=201
+                              KindIdentifier "li" [1028, 1030), i=200, next=0
+                            KindIdentifier "All" [1031, 1034), i=201, next=0
+                        KindLessThanToken [1034, 1035), i=202, next=203
+                        KindRegularExpressionLiteral [1035, 1039), i=203, next=0
+                  KindBlock [1039, 1156), i=204, next=243
+                    NodeList [1047, 1155), i=205, next=0
+                      KindExpressionStatement [1047, 1154), i=206, next=0
+                        KindCallExpression [1047, 1154), i=207, next=0
+                          KindPropertyAccessExpression [1047, 1061), i=208, next=211
+                            KindIdentifier "categories" [1047, 1057), i=209, next=210
+                            KindIdentifier "map" [1058, 1061), i=210, next=0
+                          NodeList [1062, 1146), i=211, next=0
+                            KindArrowFunction [1062, 1129), i=212, next=240
+                              NodeList [1063, 1071), i=213, next=216
+                                KindParameter [1063, 1071), i=214, next=0
+                                  KindIdentifier "category" [1063, 1071), i=215, next=0
+                              KindEqualsGreaterThanToken [1072, 1075), i=216, next=217
+                              KindBinaryExpression [1075, 1129), i=217, next=0
+                                KindParenthesizedExpression [1075, 1093), i=218, next=223
+                                  KindTypeAssertionExpression [1077, 1093), i=219, next=0
+                                    KindTypeReference [1087, 1089), i=220, next=222
+                                      KindIdentifier "li" [1087, 1089), i=221, next=0
+                                    KindIdentifier "key" [1089, 1093), i=222, next=0
+                                KindEqualsToken [1093, 1094), i=223, next=224
+                                KindBinaryExpression [1094, 1129), i=224, next=0
+                                  KindBinaryExpression [1094, 1115), i=225, next=235
+                                    KindObjectLiteralExpression [1094, 1104), i=226, next=230
+                                      NodeList [1095, 1103), i=227, next=0
+                                        KindShorthandPropertyAssignment [1095, 1103), i=228, next=0
+                                          KindIdentifier "category" [1095, 1103), i=229, next=0
+                                    KindGreaterThanToken [1104, 1105), i=230, next=231
+                                    KindObjectLiteralExpression [1105, 1115), i=231, next=0
+                                      NodeList [1106, 1114), i=232, next=0
+                                        KindShorthandPropertyAssignment [1106, 1114), i=233, next=0
+                                          KindIdentifier "category" [1106, 1114), i=234, next=0
+                                  KindLessThanToken [1115, 1116), i=235, next=236
+                                  KindBinaryExpression [1116, 1129), i=236, next=0
+                                    KindRegularExpressionLiteral [1116, 1122), i=237, next=238
+                                    KindSlashToken [1122, 1123), i=238, next=239
+                                    KindIdentifier "Error" [1123, 1129), i=239, next=0
+                            KindIdentifier "about" [1129, 1135), i=240, next=241
+                            KindStringLiteral "key" [1135, 1141), i=241, next=242
+                            KindIdentifier "only" [1141, 1146), i=242, next=0
+                  KindExpressionStatement [1156, 1166), i=243, next=0
+                    KindTypeAssertionExpression [1156, 1166), i=244, next=0
+                      KindTypeReference [1162, 1162), i=245, next=247
+                        KindIdentifier "" [1162, 1162), i=246, next=0
+                      KindRegularExpressionLiteral [1162, 1166), i=247, next=0
+    KindEmptyStatement [1170, 1171), i=248, next=249
+    KindEmptyStatement [1173, 1174), i=249, next=0

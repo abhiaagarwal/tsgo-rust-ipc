@@ -1,0 +1,101 @@
+KindSourceFile [0, 600), i=1, next=0
+  NodeList [0, 579), i=2, next=0
+    KindClassDeclaration [0, 148), i=3, next=27
+      KindIdentifier "A" [5, 7), i=4, next=5
+      NodeList [9, 145), i=5, next=0
+        KindClassStaticBlockDeclaration [9, 76), i=6, next=14
+          KindBlock [21, 76), i=7, next=0
+            NodeList [23, 49), i=8, next=0
+              KindExpressionStatement [23, 49), i=9, next=0
+                KindCallExpression [23, 48), i=10, next=0
+                  KindPropertyAccessExpression [23, 46), i=11, next=0
+                    KindIdentifier "A" [23, 34), i=12, next=13
+                    KindIdentifier "doSomething" [35, 46), i=13, next=0
+        KindMethodDeclaration [76, 145), i=14, next=0
+          NodeList [76, 90), i=15, next=17
+            KindStaticKeyword [76, 90), i=16, next=0
+          KindIdentifier "doSomething" [90, 102), i=17, next=18
+          KindBlock [104, 145), i=18, next=0
+            NodeList [106, 138), i=19, next=0
+              KindExpressionStatement [106, 138), i=20, next=0
+                KindCallExpression [106, 137), i=21, next=0
+                  KindPropertyAccessExpression [106, 126), i=22, next=25
+                    KindIdentifier "console" [106, 122), i=23, next=24
+                    KindIdentifier "log" [123, 126), i=24, next=0
+                  NodeList [127, 136), i=25, next=0
+                    KindStringLiteral "gotcha!" [127, 136), i=26, next=0
+    KindClassDeclaration [148, 234), i=27, next=40
+      KindIdentifier "Baz" [159, 163), i=28, next=29
+      NodeList [165, 231), i=29, next=0
+        KindClassStaticBlockDeclaration [165, 231), i=30, next=0
+          KindBlock [177, 231), i=31, next=0
+            NodeList [179, 206), i=32, next=0
+              KindExpressionStatement [179, 206), i=33, next=0
+                KindCallExpression [179, 205), i=34, next=0
+                  KindPropertyAccessExpression [179, 200), i=35, next=38
+                    KindIdentifier "console" [179, 196), i=36, next=37
+                    KindIdentifier "log" [197, 200), i=37, next=0
+                  NodeList [201, 204), i=38, next=0
+                    KindIdentifier "FOO" [201, 204), i=39, next=0
+    KindVariableStatement [234, 256), i=40, next=46
+      KindVariableDeclarationList [234, 255), i=41, next=0
+        NodeList [243, 255), i=42, next=0
+          KindVariableDeclaration [243, 255), i=43, next=0
+            KindIdentifier "FOO" [243, 247), i=44, next=45
+            KindStringLiteral "FOO" [249, 255), i=45, next=0
+    KindClassDeclaration [256, 340), i=46, next=59
+      KindIdentifier "Bar" [263, 267), i=47, next=48
+      NodeList [269, 337), i=48, next=0
+        KindClassStaticBlockDeclaration [269, 337), i=49, next=0
+          KindBlock [281, 337), i=50, next=0
+            NodeList [283, 310), i=51, next=0
+              KindExpressionStatement [283, 310), i=52, next=0
+                KindCallExpression [283, 309), i=53, next=0
+                  KindPropertyAccessExpression [283, 304), i=54, next=57
+                    KindIdentifier "console" [283, 300), i=55, next=56
+                    KindIdentifier "log" [301, 304), i=56, next=0
+                  NodeList [305, 308), i=57, next=0
+                    KindIdentifier "FOO" [305, 308), i=58, next=0
+    KindVariableStatement [340, 375), i=59, next=72
+      KindVariableDeclarationList [340, 374), i=60, next=0
+        NodeList [347, 374), i=61, next=0
+          KindVariableDeclaration [347, 374), i=62, next=0
+            KindIdentifier "u" [347, 349), i=63, next=64
+            KindAsExpression [351, 374), i=64, next=0
+              KindStringLiteral "FOO" [351, 357), i=65, next=66
+              KindUnionType [360, 374), i=66, next=0
+                NodeList [360, 374), i=67, next=0
+                  KindLiteralType [360, 366), i=68, next=70
+                    KindStringLiteral "FOO" [360, 366), i=69, next=0
+                  KindLiteralType [368, 374), i=70, next=0
+                    KindStringLiteral "BAR" [368, 374), i=71, next=0
+    KindClassDeclaration [375, 573), i=72, next=100
+      KindIdentifier "CFA" [384, 388), i=73, next=74
+      NodeList [390, 570), i=74, next=0
+        KindClassStaticBlockDeclaration [390, 463), i=75, next=85
+          KindBlock [402, 463), i=76, next=0
+            NodeList [404, 436), i=77, next=0
+              KindExpressionStatement [404, 424), i=78, next=83
+                KindBinaryExpression [404, 423), i=79, next=0
+                  KindIdentifier "u" [404, 415), i=80, next=81
+                  KindEqualsToken [415, 417), i=81, next=82
+                  KindStringLiteral "BAR" [417, 423), i=82, next=0
+              KindExpressionStatement [424, 436), i=83, next=0
+                KindIdentifier "u" [424, 435), i=84, next=0
+        KindPropertyDeclaration [463, 484), i=85, next=90
+          NodeList [463, 477), i=86, next=88
+            KindStaticKeyword [463, 477), i=87, next=0
+          KindIdentifier "t" [477, 479), i=88, next=89
+          KindNumericLiteral [481, 483), i=89, next=0
+        KindMethodDeclaration [484, 515), i=90, next=95
+          NodeList [484, 498), i=91, next=93
+            KindStaticKeyword [484, 498), i=92, next=0
+          KindIdentifier "doSomething" [498, 510), i=93, next=94
+          KindBlock [512, 515), i=94, next=0
+        KindClassStaticBlockDeclaration [515, 570), i=95, next=0
+          KindBlock [529, 570), i=96, next=0
+            NodeList [531, 543), i=97, next=0
+              KindExpressionStatement [531, 543), i=98, next=0
+                KindIdentifier "u" [531, 542), i=99, next=0
+    KindExpressionStatement [573, 579), i=100, next=0
+      KindIdentifier "u" [573, 578), i=101, next=0

@@ -1,0 +1,67 @@
+KindSourceFile [0, 265), i=1, next=0
+  NodeList [0, 261), i=2, next=0
+    KindFunctionDeclaration [0, 65), i=3, next=20
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "isFoo" [16, 22), i=6, next=7
+      NodeList [23, 36), i=7, next=11
+        KindParameter [23, 36), i=8, next=0
+          KindIdentifier "value" [23, 28), i=9, next=10
+          KindStringKeyword [29, 36), i=10, next=0
+      KindTypePredicate [39, 64), i=11, next=0
+        KindIdentifier "value" [39, 45), i=12, next=13
+        KindParenthesizedType [48, 64), i=13, next=0
+          KindUnionType [50, 63), i=14, next=0
+            NodeList [50, 63), i=15, next=0
+              KindLiteralType [50, 55), i=16, next=18
+                KindStringLiteral "foo" [50, 55), i=17, next=0
+              KindLiteralType [57, 63), i=18, next=0
+                KindStringLiteral "bar" [57, 63), i=19, next=0
+    KindFunctionDeclaration [65, 119), i=20, next=34
+      NodeList [65, 74), i=21, next=23
+        KindDeclareKeyword [65, 74), i=22, next=0
+      KindIdentifier "doThis" [83, 90), i=23, next=24
+      NodeList [91, 111), i=24, next=33
+        KindParameter [91, 111), i=25, next=0
+          KindIdentifier "value" [91, 96), i=26, next=27
+          KindUnionType [97, 111), i=27, next=0
+            NodeList [97, 111), i=28, next=0
+              KindLiteralType [97, 103), i=29, next=31
+                KindStringLiteral "foo" [97, 103), i=30, next=0
+              KindLiteralType [105, 111), i=31, next=0
+                KindStringLiteral "bar" [105, 111), i=32, next=0
+      KindVoidKeyword [113, 118), i=33, next=0
+    KindFunctionDeclaration [119, 167), i=34, next=43
+      NodeList [119, 128), i=35, next=37
+        KindDeclareKeyword [119, 128), i=36, next=0
+      KindIdentifier "doThat" [137, 144), i=37, next=38
+      NodeList [145, 158), i=38, next=42
+        KindParameter [145, 158), i=39, next=0
+          KindIdentifier "value" [145, 150), i=40, next=41
+          KindStringKeyword [151, 158), i=41, next=0
+      KindVoidKeyword [161, 166), i=42, next=0
+    KindVariableStatement [167, 187), i=43, next=49
+      KindVariableDeclarationList [167, 186), i=44, next=0
+        NodeList [172, 186), i=45, next=0
+          KindVariableDeclaration [172, 186), i=46, next=0
+            KindIdentifier "value" [172, 178), i=47, next=48
+            KindStringKeyword [179, 186), i=48, next=0
+    KindIfStatement [187, 261), i=49, next=0
+      KindCallExpression [193, 205), i=50, next=54
+        KindIdentifier "isFoo" [193, 198), i=51, next=52
+        NodeList [199, 204), i=52, next=0
+          KindIdentifier "value" [199, 204), i=53, next=0
+      KindBlock [206, 231), i=54, next=61
+        NodeList [208, 228), i=55, next=0
+          KindExpressionStatement [208, 228), i=56, next=0
+            KindCallExpression [208, 227), i=57, next=0
+              KindIdentifier "doThis" [208, 220), i=58, next=59
+              NodeList [221, 226), i=59, next=0
+                KindIdentifier "value" [221, 226), i=60, next=0
+      KindBlock [236, 261), i=61, next=0
+        NodeList [238, 258), i=62, next=0
+          KindExpressionStatement [238, 258), i=63, next=0
+            KindCallExpression [238, 257), i=64, next=0
+              KindIdentifier "doThat" [238, 250), i=65, next=66
+              NodeList [251, 256), i=66, next=0
+                KindIdentifier "value" [251, 256), i=67, next=0

@@ -1,0 +1,62 @@
+KindSourceFile [0, 264), i=1, next=0
+  NodeList [0, 262), i=2, next=0
+    KindTypeAliasDeclaration [0, 58), i=3, next=21
+      KindIdentifier "Foo" [4, 8), i=4, next=5
+      NodeList [9, 24), i=5, next=10
+        KindTypeParameter [9, 24), i=6, next=0
+          KindIdentifier "T" [9, 10), i=7, next=8
+          KindArrayType [18, 24), i=8, next=0
+            KindAnyKeyword [18, 22), i=9, next=0
+      KindMappedType [27, 58), i=10, next=0
+        KindTypeParameter [36, 48), i=11, next=16
+          KindIdentifier "P" [36, 37), i=12, next=13
+          KindTypeOperator [40, 48), i=13, next=0
+            KindTypeReference [46, 48), i=14, next=0
+              KindIdentifier "T" [46, 48), i=15, next=0
+        KindIndexedAccessType [50, 55), i=16, next=0
+          KindTypeReference [50, 52), i=17, next=19
+            KindIdentifier "T" [50, 52), i=18, next=0
+          KindTypeReference [53, 54), i=19, next=0
+            KindIdentifier "P" [53, 54), i=20, next=0
+    KindFunctionDeclaration [58, 262), i=21, next=0
+      KindIdentifier "test" [70, 75), i=22, next=23
+      NodeList [76, 91), i=23, next=28
+        KindTypeParameter [76, 91), i=24, next=0
+          KindIdentifier "T" [76, 77), i=25, next=26
+          KindArrayType [85, 91), i=26, next=0
+            KindAnyKeyword [85, 89), i=27, next=0
+      NodeList [93, 122), i=28, next=42
+        KindParameter [93, 122), i=29, next=0
+          KindIdentifier "fn" [93, 95), i=30, next=31
+          KindFunctionType [96, 122), i=31, next=0
+            NodeList [98, 113), i=32, next=41
+              KindParameter [98, 113), i=33, next=0
+                KindDotDotDotToken [98, 101), i=34, next=35
+                KindIdentifier "args" [101, 105), i=35, next=36
+                KindTypeReference [106, 113), i=36, next=0
+                  KindIdentifier "Foo" [106, 110), i=37, next=38
+                  NodeList [111, 112), i=38, next=0
+                    KindTypeReference [111, 112), i=39, next=0
+                      KindIdentifier "T" [111, 112), i=40, next=0
+            KindVoidKeyword [117, 122), i=41, next=0
+      KindBlock [123, 262), i=42, next=0
+        NodeList [125, 176), i=43, next=0
+          KindVariableStatement [125, 160), i=44, next=57
+            KindVariableDeclarationList [125, 160), i=45, next=0
+              NodeList [136, 160), i=46, next=0
+                KindVariableDeclaration [136, 160), i=47, next=0
+                  KindIdentifier "arr" [136, 140), i=48, next=49
+                  KindTypeReference [141, 148), i=49, next=54
+                    KindIdentifier "Foo" [141, 145), i=50, next=51
+                    NodeList [146, 147), i=51, next=0
+                      KindTypeReference [146, 147), i=52, next=0
+                        KindIdentifier "T" [146, 147), i=53, next=0
+                  KindAsExpression [150, 160), i=54, next=0
+                    KindObjectLiteralExpression [150, 153), i=55, next=56
+                    KindAnyKeyword [156, 160), i=56, next=0
+          KindExpressionStatement [160, 176), i=57, next=0
+            KindCallExpression [160, 176), i=58, next=0
+              KindIdentifier "fn" [160, 168), i=59, next=60
+              NodeList [169, 175), i=60, next=0
+                KindSpreadElement [169, 175), i=61, next=0
+                  KindIdentifier "arr" [172, 175), i=62, next=0

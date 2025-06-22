@@ -1,0 +1,259 @@
+KindSourceFile [0, 1303), i=1, next=0
+  NodeList [0, 1301), i=2, next=0
+    KindModuleDeclaration [0, 181), i=3, next=30
+      KindIdentifier "OuterMod" [6, 15), i=4, next=5
+      KindModuleBlock [15, 181), i=5, next=0
+        NodeList [17, 178), i=6, next=0
+          KindFunctionDeclaration [17, 74), i=7, next=16
+            NodeList [17, 26), i=8, next=10
+              KindExportKeyword [17, 26), i=9, next=0
+            KindIdentifier "someExportedOuterFunc" [35, 57), i=10, next=11
+            KindBlock [59, 74), i=11, next=0
+              NodeList [61, 72), i=12, next=0
+                KindReturnStatement [61, 72), i=13, next=0
+                  KindPrefixUnaryExpression [68, 71), i=14, next=0
+                    KindNumericLiteral [70, 71), i=15, next=0
+          KindModuleDeclaration [74, 178), i=16, next=0
+            NodeList [74, 85), i=17, next=19
+              KindExportKeyword [74, 85), i=18, next=0
+            KindIdentifier "OuterInnerMod" [92, 106), i=19, next=20
+            KindModuleBlock [106, 178), i=20, next=0
+              NodeList [108, 174), i=21, next=0
+                KindFunctionDeclaration [108, 174), i=22, next=0
+                  NodeList [108, 118), i=23, next=25
+                    KindExportKeyword [108, 118), i=24, next=0
+                  KindIdentifier "someExportedOuterInnerFunc" [127, 154), i=25, next=26
+                  KindBlock [156, 174), i=26, next=0
+                    NodeList [158, 172), i=27, next=0
+                      KindReturnStatement [158, 172), i=28, next=0
+                        KindStringLiteral "foo" [165, 171), i=29, next=0
+    KindImportEqualsDeclaration [181, 233), i=30, next=35
+      KindIdentifier "OuterInnerAlias" [191, 207), i=31, next=32
+      KindQualifiedName [209, 232), i=32, next=0
+        KindIdentifier "OuterMod" [209, 218), i=33, next=34
+        KindIdentifier "OuterInnerMod" [219, 232), i=34, next=0
+    KindModuleDeclaration [233, 1081), i=35, next=181
+      KindIdentifier "M" [243, 245), i=36, next=37
+      KindModuleBlock [245, 1081), i=37, next=0
+        NodeList [247, 1078), i=38, next=0
+          KindModuleDeclaration [247, 331), i=39, next=52
+            KindIdentifier "InnerMod" [258, 267), i=40, next=41
+            KindModuleBlock [267, 331), i=41, next=0
+              NodeList [269, 327), i=42, next=0
+                KindFunctionDeclaration [269, 327), i=43, next=0
+                  NodeList [269, 279), i=44, next=46
+                    KindExportKeyword [269, 279), i=45, next=0
+                  KindIdentifier "someExportedInnerFunc" [288, 310), i=46, next=47
+                  KindBlock [312, 327), i=47, next=0
+                    NodeList [314, 325), i=48, next=0
+                      KindReturnStatement [314, 325), i=49, next=0
+                        KindPrefixUnaryExpression [321, 324), i=50, next=0
+                          KindNumericLiteral [323, 324), i=51, next=0
+          KindEnumDeclaration [331, 366), i=52, next=61
+            KindIdentifier "E" [340, 342), i=53, next=54
+            NodeList [344, 362), i=54, next=0
+              KindEnumMember [344, 349), i=55, next=57
+                KindIdentifier "A" [344, 349), i=56, next=0
+              KindEnumMember [350, 355), i=57, next=59
+                KindIdentifier "B" [350, 355), i=58, next=0
+              KindEnumMember [356, 361), i=59, next=0
+                KindIdentifier "C" [356, 361), i=60, next=0
+          KindVariableStatement [366, 381), i=61, next=67
+            KindVariableDeclarationList [366, 380), i=62, next=0
+              NodeList [374, 380), i=63, next=0
+                KindVariableDeclaration [374, 380), i=64, next=0
+                  KindIdentifier "x" [374, 376), i=65, next=66
+                  KindNumericLiteral [378, 380), i=66, next=0
+          KindVariableStatement [381, 416), i=67, next=75
+            NodeList [381, 398), i=68, next=71
+              KindExportKeyword [381, 390), i=69, next=70
+              KindDeclareKeyword [390, 398), i=70, next=0
+            KindVariableDeclarationList [398, 415), i=71, next=0
+              NodeList [402, 415), i=72, next=0
+                KindVariableDeclaration [402, 415), i=73, next=0
+                  KindIdentifier "exported_var" [402, 415), i=74, next=0
+          KindVariableStatement [416, 435), i=75, next=84
+            KindVariableDeclarationList [416, 434), i=76, next=0
+              NodeList [424, 434), i=77, next=0
+                KindVariableDeclaration [424, 434), i=78, next=0
+                  KindIdentifier "y" [424, 426), i=79, next=80
+                  KindBinaryExpression [428, 434), i=80, next=0
+                    KindIdentifier "x" [428, 430), i=81, next=82
+                    KindPlusToken [430, 432), i=82, next=83
+                    KindIdentifier "x" [432, 434), i=83, next=0
+          KindInterfaceDeclaration [435, 483), i=84, next=90
+            KindIdentifier "I" [451, 453), i=85, next=86
+            NodeList [455, 479), i=86, next=0
+              KindMethodSignature [455, 479), i=87, next=0
+                KindIdentifier "someMethod" [455, 469), i=88, next=89
+                KindNumberKeyword [472, 478), i=89, next=0
+          KindClassDeclaration [483, 512), i=90, next=98
+            KindIdentifier "B" [494, 496), i=91, next=92
+            NodeList [498, 511), i=92, next=0
+              KindPropertyDeclaration [498, 511), i=93, next=0
+                NodeList [498, 504), i=94, next=96
+                  KindPublicKeyword [498, 504), i=95, next=0
+                KindIdentifier "b" [504, 506), i=96, next=97
+                KindNumericLiteral [508, 510), i=97, next=0
+          KindClassDeclaration [512, 1004), i=98, next=169
+            NodeList [512, 524), i=99, next=101
+              KindExportKeyword [512, 524), i=100, next=0
+            KindIdentifier "C" [530, 532), i=101, next=102
+            NodeList [532, 545), i=102, next=107
+              KindHeritageClause [532, 545), i=103, next=0
+                NodeList [543, 545), i=104, next=0
+                  KindExpressionWithTypeArguments [543, 545), i=105, next=0
+                    KindIdentifier "I" [543, 545), i=106, next=0
+            NodeList [547, 996), i=107, next=0
+              KindMethodDeclaration [547, 647), i=108, next=119
+                NodeList [547, 557), i=109, next=111
+                  KindPublicKeyword [547, 557), i=110, next=0
+                KindIdentifier "someMethodThatCallsAnOuterMethod" [557, 590), i=111, next=112
+                KindBlock [592, 647), i=112, next=0
+                  NodeList [594, 646), i=113, next=0
+                    KindReturnStatement [594, 646), i=114, next=0
+                      KindCallExpression [600, 645), i=115, next=0
+                        KindPropertyAccessExpression [600, 643), i=116, next=0
+                          KindIdentifier "OuterInnerAlias" [600, 616), i=117, next=118
+                          KindIdentifier "someExportedOuterInnerFunc" [617, 643), i=118, next=0
+              KindMethodDeclaration [647, 735), i=119, next=130
+                NodeList [647, 657), i=120, next=122
+                  KindPublicKeyword [647, 657), i=121, next=0
+                KindIdentifier "someMethodThatCallsAnInnerMethod" [657, 690), i=122, next=123
+                KindBlock [692, 735), i=123, next=0
+                  NodeList [694, 734), i=124, next=0
+                    KindReturnStatement [694, 734), i=125, next=0
+                      KindCallExpression [700, 733), i=126, next=0
+                        KindPropertyAccessExpression [700, 731), i=127, next=0
+                          KindIdentifier "InnerMod" [700, 709), i=128, next=129
+                          KindIdentifier "someExportedInnerFunc" [710, 731), i=129, next=0
+              KindMethodDeclaration [735, 828), i=130, next=141
+                NodeList [735, 745), i=131, next=133
+                  KindPublicKeyword [735, 745), i=132, next=0
+                KindIdentifier "someMethodThatCallsAnOuterInnerMethod" [745, 783), i=133, next=134
+                KindBlock [785, 828), i=134, next=0
+                  NodeList [787, 827), i=135, next=0
+                    KindReturnStatement [787, 827), i=136, next=0
+                      KindCallExpression [793, 826), i=137, next=0
+                        KindPropertyAccessExpression [793, 824), i=138, next=0
+                          KindIdentifier "OuterMod" [793, 802), i=139, next=140
+                          KindIdentifier "someExportedOuterFunc" [803, 824), i=140, next=0
+              KindMethodDeclaration [828, 865), i=141, next=149
+                NodeList [828, 838), i=142, next=144
+                  KindPublicKeyword [828, 838), i=143, next=0
+                KindIdentifier "someMethod" [838, 849), i=144, next=145
+                KindBlock [851, 865), i=145, next=0
+                  NodeList [853, 863), i=146, next=0
+                    KindReturnStatement [853, 863), i=147, next=0
+                      KindNumericLiteral [860, 862), i=148, next=0
+              KindPropertyDeclaration [865, 889), i=149, next=154
+                NodeList [865, 875), i=150, next=152
+                  KindPublicKeyword [865, 875), i=151, next=0
+                KindIdentifier "someProp" [875, 884), i=152, next=153
+                KindNumericLiteral [886, 888), i=153, next=0
+              KindConstructor [889, 996), i=154, next=0
+                KindBlock [908, 996), i=155, next=0
+                  NodeList [910, 991), i=156, next=0
+                    KindFunctionDeclaration [910, 956), i=157, next=163
+                      KindIdentifier "someInnerFunc" [926, 940), i=158, next=159
+                      KindBlock [942, 956), i=159, next=0
+                        NodeList [944, 954), i=160, next=0
+                          KindReturnStatement [944, 954), i=161, next=0
+                            KindNumericLiteral [951, 953), i=162, next=0
+                    KindVariableStatement [956, 991), i=163, next=0
+                      KindVariableDeclarationList [956, 990), i=164, next=0
+                        NodeList [973, 990), i=165, next=0
+                          KindVariableDeclaration [973, 990), i=166, next=0
+                            KindIdentifier "someInnerVar" [973, 986), i=167, next=168
+                            KindNumericLiteral [988, 990), i=168, next=0
+          KindVariableStatement [1004, 1031), i=169, next=175
+            KindVariableDeclarationList [1004, 1030), i=170, next=0
+              NodeList [1012, 1030), i=171, next=0
+                KindVariableDeclaration [1012, 1030), i=172, next=0
+                  KindIdentifier "someModuleVar" [1012, 1026), i=173, next=174
+                  KindNumericLiteral [1028, 1030), i=174, next=0
+          KindFunctionDeclaration [1031, 1078), i=175, next=0
+            KindIdentifier "someModuleFunction" [1044, 1063), i=176, next=177
+            KindBlock [1065, 1078), i=177, next=0
+              NodeList [1067, 1077), i=178, next=0
+                KindReturnStatement [1067, 1077), i=179, next=0
+                  KindNumericLiteral [1074, 1076), i=180, next=0
+    KindModuleDeclaration [1081, 1144), i=181, next=205
+      KindIdentifier "M" [1091, 1093), i=182, next=183
+      KindModuleBlock [1093, 1144), i=183, next=0
+        NodeList [1095, 1141), i=184, next=0
+          KindVariableStatement [1095, 1115), i=185, next=193
+            NodeList [1095, 1104), i=186, next=188
+              KindExportKeyword [1095, 1104), i=187, next=0
+            KindVariableDeclarationList [1104, 1114), i=188, next=0
+              NodeList [1108, 1114), i=189, next=0
+                KindVariableDeclaration [1108, 1114), i=190, next=0
+                  KindIdentifier "c" [1108, 1110), i=191, next=192
+                  KindIdentifier "x" [1112, 1114), i=192, next=0
+          KindVariableStatement [1115, 1141), i=193, next=0
+            NodeList [1115, 1124), i=194, next=196
+              KindExportKeyword [1115, 1124), i=195, next=0
+            KindVariableDeclarationList [1124, 1140), i=196, next=0
+              NodeList [1128, 1140), i=197, next=0
+                KindVariableDeclaration [1128, 1140), i=198, next=0
+                  KindIdentifier "meb" [1128, 1132), i=199, next=200
+                  KindPropertyAccessExpression [1134, 1140), i=200, next=0
+                    KindPropertyAccessExpression [1134, 1138), i=201, next=204
+                      KindIdentifier "M" [1134, 1136), i=202, next=203
+                      KindIdentifier "E" [1137, 1138), i=203, next=0
+                    KindIdentifier "B" [1139, 1140), i=204, next=0
+    KindVariableStatement [1144, 1177), i=205, next=220
+      KindVariableDeclarationList [1144, 1176), i=206, next=0
+        NodeList [1151, 1176), i=207, next=0
+          KindVariableDeclaration [1151, 1176), i=208, next=0
+            KindIdentifier "cprime" [1151, 1158), i=209, next=210
+            KindTypeReference [1160, 1164), i=210, next=214
+              KindQualifiedName [1160, 1164), i=211, next=0
+                KindIdentifier "M" [1160, 1162), i=212, next=213
+                KindIdentifier "I" [1163, 1164), i=213, next=0
+            KindTypeAssertionExpression [1166, 1176), i=214, next=0
+              KindTypeReference [1168, 1171), i=215, next=219
+                KindQualifiedName [1168, 1171), i=216, next=0
+                  KindIdentifier "M" [1168, 1169), i=217, next=218
+                  KindIdentifier "I" [1170, 1171), i=218, next=0
+              KindNullKeyword [1172, 1176), i=219, next=0
+    KindVariableStatement [1177, 1199), i=220, next=229
+      KindVariableDeclarationList [1177, 1198), i=221, next=0
+        NodeList [1184, 1198), i=222, next=0
+          KindVariableDeclaration [1184, 1198), i=223, next=0
+            KindIdentifier "c" [1184, 1186), i=224, next=225
+            KindNewExpression [1188, 1198), i=225, next=0
+              KindPropertyAccessExpression [1192, 1196), i=226, next=0
+                KindIdentifier "M" [1192, 1194), i=227, next=228
+                KindIdentifier "C" [1195, 1196), i=228, next=0
+    KindVariableStatement [1199, 1213), i=229, next=237
+      KindVariableDeclarationList [1199, 1212), i=230, next=0
+        NodeList [1204, 1212), i=231, next=0
+          KindVariableDeclaration [1204, 1212), i=232, next=0
+            KindIdentifier "z" [1204, 1206), i=233, next=234
+            KindPropertyAccessExpression [1208, 1212), i=234, next=0
+              KindIdentifier "M" [1208, 1210), i=235, next=236
+              KindIdentifier "x" [1211, 1212), i=236, next=0
+    KindVariableStatement [1213, 1233), i=237, next=247
+      KindVariableDeclarationList [1213, 1232), i=238, next=0
+        NodeList [1218, 1232), i=239, next=0
+          KindVariableDeclaration [1218, 1232), i=240, next=0
+            KindIdentifier "alpha" [1218, 1224), i=241, next=242
+            KindPropertyAccessExpression [1226, 1232), i=242, next=0
+              KindPropertyAccessExpression [1226, 1230), i=243, next=246
+                KindIdentifier "M" [1226, 1228), i=244, next=245
+                KindIdentifier "E" [1229, 1230), i=245, next=0
+              KindIdentifier "A" [1231, 1232), i=246, next=0
+    KindVariableStatement [1233, 1262), i=247, next=255
+      KindVariableDeclarationList [1233, 1261), i=248, next=0
+        NodeList [1238, 1261), i=249, next=0
+          KindVariableDeclaration [1238, 1261), i=250, next=0
+            KindIdentifier "omega" [1238, 1244), i=251, next=252
+            KindPropertyAccessExpression [1246, 1261), i=252, next=0
+              KindIdentifier "M" [1246, 1248), i=253, next=254
+              KindIdentifier "exported_var" [1249, 1261), i=254, next=0
+    KindExpressionStatement [1262, 1301), i=255, next=0
+      KindCallExpression [1262, 1300), i=256, next=0
+        KindPropertyAccessExpression [1262, 1298), i=257, next=0
+          KindIdentifier "c" [1262, 1265), i=258, next=3
+          KindIdentifier "someMethodThatCallsAnOuterMethod" [1266, 1298), i=259, next=0

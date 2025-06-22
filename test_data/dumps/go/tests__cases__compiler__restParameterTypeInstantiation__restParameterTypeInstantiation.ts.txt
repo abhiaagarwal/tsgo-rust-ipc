@@ -1,0 +1,64 @@
+KindSourceFile [0, 195), i=1, next=0
+  NodeList [0, 193), i=2, next=0
+    KindInterfaceDeclaration [0, 52), i=3, next=16
+      KindIdentifier "TestGeneric" [9, 21), i=4, next=5
+      NodeList [22, 24), i=5, next=8
+        KindTypeParameter [22, 24), i=6, next=0
+          KindIdentifier "TG" [22, 24), i=7, next=0
+      NodeList [27, 49), i=8, next=0
+        KindPropertySignature [27, 40), i=9, next=12
+          KindIdentifier "f" [27, 32), i=10, next=11
+          KindStringKeyword [33, 40), i=11, next=0
+        KindPropertySignature [40, 49), i=12, next=0
+          KindIdentifier "g" [40, 45), i=13, next=14
+          KindTypeReference [46, 49), i=14, next=0
+            KindIdentifier "TG" [46, 49), i=15, next=0
+    KindVariableStatement [52, 132), i=16, next=44
+      KindVariableDeclarationList [52, 132), i=17, next=0
+        NodeList [61, 132), i=18, next=0
+          KindVariableDeclaration [61, 132), i=19, next=0
+            KindIdentifier "removeF" [61, 69), i=20, next=21
+            KindArrowFunction [71, 132), i=21, next=0
+              NodeList [73, 75), i=22, next=25
+                KindTypeParameter [73, 75), i=23, next=0
+                  KindIdentifier "TX" [73, 75), i=24, next=0
+              NodeList [77, 108), i=25, next=39
+                KindParameter [77, 108), i=26, next=0
+                  KindObjectBindingPattern [77, 91), i=27, next=34
+                    NodeList [78, 89), i=28, next=0
+                      KindBindingElement [78, 80), i=29, next=31
+                        KindIdentifier "f" [78, 80), i=30, next=0
+                      KindBindingElement [81, 89), i=31, next=0
+                        KindDotDotDotToken [81, 85), i=32, next=33
+                        KindIdentifier "rest" [85, 89), i=33, next=0
+                  KindTypeReference [92, 108), i=34, next=0
+                    KindIdentifier "TestGeneric" [92, 104), i=35, next=36
+                    NodeList [105, 107), i=36, next=0
+                      KindTypeReference [105, 107), i=37, next=0
+                        KindIdentifier "TX" [105, 107), i=38, next=0
+              KindEqualsGreaterThanToken [109, 112), i=39, next=40
+              KindBlock [112, 132), i=40, next=0
+                NodeList [114, 129), i=41, next=0
+                  KindReturnStatement [114, 129), i=42, next=0
+                    KindIdentifier "rest" [124, 129), i=43, next=0
+    KindVariableStatement [132, 193), i=44, next=0
+      KindVariableDeclarationList [132, 193), i=45, next=0
+        NodeList [141, 193), i=46, next=0
+          KindVariableDeclaration [141, 193), i=47, next=0
+            KindIdentifier "result" [141, 148), i=48, next=49
+            KindNumberKeyword [149, 156), i=49, next=50
+            KindPropertyAccessExpression [158, 193), i=50, next=0
+              KindCallExpression [158, 191), i=51, next=64
+                KindIdentifier "removeF" [158, 166), i=52, next=53
+                NodeList [167, 173), i=53, next=55
+                  KindNumberKeyword [167, 173), i=54, next=0
+                NodeList [175, 190), i=55, next=0
+                  KindObjectLiteralExpression [175, 190), i=56, next=0
+                    NodeList [176, 188), i=57, next=0
+                      KindPropertyAssignment [176, 182), i=58, next=61
+                        KindIdentifier "f" [176, 178), i=59, next=60
+                        KindStringLiteral "" [179, 182), i=60, next=0
+                      KindPropertyAssignment [183, 188), i=61, next=0
+                        KindIdentifier "g" [183, 185), i=62, next=63
+                        KindNumericLiteral [186, 188), i=63, next=0
+              KindIdentifier "g" [192, 193), i=64, next=0

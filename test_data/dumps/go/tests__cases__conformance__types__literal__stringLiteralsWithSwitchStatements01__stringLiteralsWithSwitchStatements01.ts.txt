@@ -1,0 +1,38 @@
+KindSourceFile [0, 165), i=1, next=0
+  NodeList [0, 163), i=2, next=0
+    KindVariableStatement [0, 13), i=3, next=10
+      KindVariableDeclarationList [0, 12), i=4, next=0
+        NodeList [3, 12), i=5, next=0
+          KindVariableDeclaration [3, 12), i=6, next=0
+            KindIdentifier "x" [3, 5), i=7, next=8
+            KindLiteralType [6, 12), i=8, next=0
+              KindStringLiteral "foo" [6, 12), i=9, next=0
+    KindVariableStatement [13, 36), i=10, next=21
+      KindVariableDeclarationList [13, 35), i=11, next=0
+        NodeList [18, 35), i=12, next=0
+          KindVariableDeclaration [18, 35), i=13, next=0
+            KindIdentifier "y" [18, 20), i=14, next=15
+            KindUnionType [21, 35), i=15, next=0
+              NodeList [21, 35), i=16, next=0
+                KindLiteralType [21, 27), i=17, next=19
+                  KindStringLiteral "foo" [21, 27), i=18, next=0
+                KindLiteralType [29, 35), i=19, next=0
+                  KindStringLiteral "bar" [29, 35), i=20, next=0
+    KindSwitchStatement [36, 163), i=21, next=0
+      KindIdentifier "x" [49, 50), i=22, next=23
+      KindCaseBlock [51, 163), i=23, next=0
+        NodeList [53, 160), i=24, next=0
+          KindCaseClause [53, 86), i=25, next=29
+            KindStringLiteral "foo" [63, 69), i=26, next=27
+            NodeList [70, 86), i=27, next=0
+              KindBreakStatement [70, 86), i=28, next=0
+          KindCaseClause [86, 119), i=29, next=33
+            KindStringLiteral "bar" [96, 102), i=30, next=31
+            NodeList [103, 119), i=31, next=0
+              KindBreakStatement [103, 119), i=32, next=0
+          KindCaseClause [119, 160), i=33, next=0
+            KindIdentifier "y" [129, 131), i=34, next=35
+            NodeList [132, 160), i=35, next=0
+              KindExpressionStatement [132, 144), i=36, next=38
+                KindIdentifier "y" [132, 143), i=37, next=0
+              KindBreakStatement [144, 160), i=38, next=0

@@ -1,0 +1,40 @@
+KindSourceFile [0, 165), i=1, next=0
+  NodeList [0, 163), i=2, next=0
+    KindImportEqualsDeclaration [0, 56), i=3, next=7
+      KindIdentifier "B" [6, 8), i=4, next=5
+      KindExternalModuleReference [10, 55), i=5, next=0
+        KindStringLiteral "./unusedImportDeclaration_testerB" [19, 54), i=6, next=0
+    KindVariableStatement [56, 92), i=7, next=19
+      KindVariableDeclarationList [56, 91), i=8, next=0
+        NodeList [61, 91), i=9, next=0
+          KindVariableDeclaration [61, 91), i=10, next=0
+            KindIdentifier "thingy" [61, 68), i=11, next=12
+            KindTypeReference [69, 71), i=12, next=14
+              KindIdentifier "B" [69, 71), i=13, next=0
+            KindObjectLiteralExpression [73, 91), i=14, next=0
+              NodeList [75, 88), i=15, next=0
+                KindPropertyAssignment [75, 88), i=16, next=0
+                  KindIdentifier "me" [75, 83), i=17, next=18
+                  KindStringLiteral "A" [84, 88), i=18, next=0
+    KindFunctionDeclaration [92, 132), i=19, next=28
+      NodeList [92, 101), i=20, next=22
+        KindDeclareKeyword [92, 101), i=21, next=0
+      KindIdentifier "foo" [110, 114), i=22, next=23
+      NodeList [115, 124), i=23, next=27
+        KindParameter [115, 124), i=24, next=0
+          KindIdentifier "a" [115, 116), i=25, next=26
+          KindStringKeyword [117, 124), i=26, next=0
+      KindVoidKeyword [126, 131), i=27, next=0
+    KindExpressionStatement [132, 163), i=28, next=0
+      KindCallExpression [132, 162), i=29, next=0
+        KindIdentifier "foo" [132, 137), i=30, next=31
+        NodeList [138, 161), i=31, next=0
+          KindBinaryExpression [138, 161), i=32, next=0
+            KindBinaryExpression [138, 155), i=33, next=39
+              KindStringLiteral "IN " [138, 143), i=34, next=35
+              KindPlusToken [143, 145), i=35, next=36
+              KindPropertyAccessExpression [145, 155), i=36, next=0
+                KindIdentifier "thingy" [145, 152), i=37, next=38
+                KindIdentifier "me" [153, 155), i=38, next=0
+            KindPlusToken [155, 157), i=39, next=40
+            KindStringLiteral "!" [157, 161), i=40, next=0

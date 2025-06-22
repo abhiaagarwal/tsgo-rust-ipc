@@ -1,0 +1,60 @@
+KindSourceFile [0, 190), i=1, next=0
+  NodeList [0, 190), i=2, next=0
+    KindTypeAliasDeclaration [0, 30), i=3, next=11
+      KindIdentifier "Foo" [4, 8), i=4, next=5
+      KindUnionType [10, 29), i=5, next=0
+        NodeList [10, 29), i=6, next=0
+          KindTypeReference [10, 18), i=7, next=9
+            KindIdentifier "FooBase" [10, 18), i=8, next=0
+          KindTypeReference [20, 29), i=9, next=0
+            KindIdentifier "FooArray" [20, 29), i=10, next=0
+    KindTypeAliasDeclaration [30, 62), i=11, next=18
+      KindIdentifier "FooBase" [36, 44), i=12, next=13
+      KindUnionType [46, 61), i=13, next=0
+        NodeList [46, 61), i=14, next=0
+          KindStringKeyword [46, 53), i=15, next=16
+          KindLiteralType [55, 61), i=16, next=0
+            KindFalseKeyword [55, 61), i=17, next=0
+    KindTypeAliasDeclaration [62, 90), i=18, next=23
+      KindIdentifier "FooArray" [68, 77), i=19, next=20
+      KindArrayType [79, 89), i=20, next=0
+        KindTypeReference [79, 87), i=21, next=0
+          KindIdentifier "FooBase" [79, 87), i=22, next=0
+    KindVariableStatement [90, 116), i=23, next=32
+      NodeList [90, 101), i=24, next=26
+        KindDeclareKeyword [90, 101), i=25, next=0
+      KindVariableDeclarationList [101, 115), i=26, next=0
+        NodeList [105, 115), i=27, next=0
+          KindVariableDeclaration [105, 115), i=28, next=0
+            KindIdentifier "foo1" [105, 110), i=29, next=30
+            KindTypeReference [111, 115), i=30, next=0
+              KindIdentifier "Foo" [111, 115), i=31, next=0
+    KindVariableStatement [116, 140), i=32, next=41
+      NodeList [116, 125), i=33, next=35
+        KindDeclareKeyword [116, 125), i=34, next=0
+      KindVariableDeclarationList [125, 139), i=35, next=0
+        NodeList [129, 139), i=36, next=0
+          KindVariableDeclaration [129, 139), i=37, next=0
+            KindIdentifier "foo2" [129, 134), i=38, next=39
+            KindTypeReference [135, 139), i=39, next=0
+              KindIdentifier "Foo" [135, 139), i=40, next=0
+    KindExpressionStatement [140, 190), i=41, next=0
+      KindBinaryExpression [140, 189), i=42, next=0
+        KindIdentifier "foo1" [140, 146), i=43, next=44
+        KindEqualsToken [146, 148), i=44, next=45
+        KindArrayLiteralExpression [148, 189), i=45, next=0
+          NodeList [150, 188), i=46, next=0
+            KindSpreadElement [150, 188), i=47, next=0
+              KindConditionalExpression [153, 188), i=48, next=0
+                KindCallExpression [153, 172), i=49, next=55
+                  KindPropertyAccessExpression [153, 166), i=50, next=53
+                    KindIdentifier "Array" [153, 158), i=51, next=52
+                    KindIdentifier "isArray" [159, 166), i=52, next=0
+                  NodeList [167, 171), i=53, next=0
+                    KindIdentifier "foo2" [167, 171), i=54, next=0
+                KindQuestionToken [172, 174), i=55, next=56
+                KindIdentifier "foo2" [174, 179), i=56, next=57
+                KindColonToken [179, 181), i=57, next=58
+                KindArrayLiteralExpression [181, 188), i=58, next=0
+                  NodeList [183, 187), i=59, next=0
+                    KindIdentifier "foo2" [183, 187), i=60, next=0

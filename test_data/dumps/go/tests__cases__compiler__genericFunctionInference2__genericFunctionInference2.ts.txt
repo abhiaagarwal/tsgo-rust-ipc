@@ -1,0 +1,227 @@
+KindSourceFile [0, 831), i=1, next=0
+  NodeList [0, 829), i=2, next=0
+    KindTypeAliasDeclaration [0, 34), i=3, next=16
+      KindIdentifier "Reducer" [4, 12), i=4, next=5
+      NodeList [13, 14), i=5, next=8
+        KindTypeParameter [13, 14), i=6, next=0
+          KindIdentifier "S" [13, 14), i=7, next=0
+      KindFunctionType [17, 33), i=8, next=0
+        NodeList [19, 27), i=9, next=14
+          KindParameter [19, 27), i=10, next=0
+            KindIdentifier "state" [19, 24), i=11, next=12
+            KindTypeReference [25, 27), i=12, next=0
+              KindIdentifier "S" [25, 27), i=13, next=0
+        KindTypeReference [31, 33), i=14, next=0
+          KindIdentifier "S" [31, 33), i=15, next=0
+    KindFunctionDeclaration [34, 129), i=16, next=45
+      NodeList [34, 43), i=17, next=19
+        KindDeclareKeyword [34, 43), i=18, next=0
+      KindIdentifier "combineReducers" [52, 68), i=19, next=20
+      NodeList [69, 70), i=20, next=23
+        KindTypeParameter [69, 70), i=21, next=0
+          KindIdentifier "S" [69, 70), i=22, next=0
+      NodeList [72, 115), i=23, next=40
+        KindParameter [72, 115), i=24, next=0
+          KindIdentifier "reducers" [72, 80), i=25, next=26
+          KindMappedType [81, 115), i=26, next=0
+            KindTypeParameter [85, 97), i=27, next=32
+              KindIdentifier "K" [85, 86), i=28, next=29
+              KindTypeOperator [89, 97), i=29, next=0
+                KindTypeReference [95, 97), i=30, next=0
+                  KindIdentifier "S" [95, 97), i=31, next=0
+            KindTypeReference [99, 113), i=32, next=0
+              KindIdentifier "Reducer" [99, 107), i=33, next=34
+              NodeList [108, 112), i=34, next=0
+                KindIndexedAccessType [108, 112), i=35, next=0
+                  KindTypeReference [108, 109), i=36, next=38
+                    KindIdentifier "S" [108, 109), i=37, next=0
+                  KindTypeReference [110, 111), i=38, next=0
+                    KindIdentifier "K" [110, 111), i=39, next=0
+      KindTypeReference [117, 128), i=40, next=0
+        KindIdentifier "Reducer" [117, 125), i=41, next=42
+        NodeList [126, 127), i=42, next=0
+          KindTypeReference [126, 127), i=43, next=0
+            KindIdentifier "S" [126, 127), i=44, next=0
+    KindTypeAliasDeclaration [129, 178), i=45, next=56
+      KindIdentifier "MyState" [137, 145), i=46, next=47
+      KindTypeLiteral [147, 177), i=47, next=0
+        NodeList [149, 175), i=48, next=0
+          KindPropertySignature [149, 175), i=49, next=0
+            KindIdentifier "combined" [149, 158), i=50, next=51
+            KindTypeLiteral [159, 175), i=51, next=0
+              NodeList [161, 173), i=52, next=0
+                KindPropertySignature [161, 173), i=53, next=0
+                  KindIdentifier "foo" [161, 165), i=54, next=55
+                  KindNumberKeyword [166, 173), i=55, next=0
+    KindVariableStatement [178, 235), i=56, next=74
+      NodeList [178, 187), i=57, next=59
+        KindDeclareKeyword [178, 187), i=58, next=0
+      KindVariableDeclarationList [187, 234), i=59, next=0
+        NodeList [193, 234), i=60, next=0
+          KindVariableDeclaration [193, 234), i=61, next=0
+            KindIdentifier "foo" [193, 197), i=62, next=63
+            KindTypeReference [198, 234), i=63, next=0
+              KindIdentifier "Reducer" [198, 206), i=64, next=65
+              NodeList [207, 233), i=65, next=0
+                KindIndexedAccessType [207, 233), i=66, next=0
+                  KindIndexedAccessType [207, 226), i=67, next=72
+                    KindTypeReference [207, 214), i=68, next=70
+                      KindIdentifier "MyState" [207, 214), i=69, next=0
+                    KindLiteralType [215, 225), i=70, next=0
+                      KindStringLiteral "combined" [215, 225), i=71, next=0
+                  KindLiteralType [227, 232), i=72, next=0
+                    KindStringLiteral "foo" [227, 232), i=73, next=0
+    KindVariableStatement [235, 339), i=74, next=98
+      KindVariableDeclarationList [235, 338), i=75, next=0
+        NodeList [244, 338), i=76, next=0
+          KindVariableDeclaration [244, 338), i=77, next=0
+            KindIdentifier "myReducer1" [244, 255), i=78, next=79
+            KindTypeReference [256, 273), i=79, next=84
+              KindIdentifier "Reducer" [256, 264), i=80, next=81
+              NodeList [265, 272), i=81, next=0
+                KindTypeReference [265, 272), i=82, next=0
+                  KindIdentifier "MyState" [265, 272), i=83, next=0
+            KindCallExpression [275, 338), i=84, next=0
+              KindIdentifier "combineReducers" [275, 291), i=85, next=86
+              NodeList [292, 337), i=86, next=0
+                KindObjectLiteralExpression [292, 337), i=87, next=0
+                  NodeList [293, 334), i=88, next=0
+                    KindPropertyAssignment [293, 333), i=89, next=0
+                      KindIdentifier "combined" [293, 307), i=90, next=91
+                      KindCallExpression [308, 333), i=91, next=0
+                        KindIdentifier "combineReducers" [308, 324), i=92, next=93
+                        NodeList [325, 332), i=93, next=0
+                          KindObjectLiteralExpression [325, 332), i=94, next=0
+                            NodeList [326, 330), i=95, next=0
+                              KindShorthandPropertyAssignment [326, 330), i=96, next=0
+                                KindIdentifier "foo" [326, 330), i=97, next=0
+    KindVariableStatement [339, 425), i=98, next=117
+      KindVariableDeclarationList [339, 424), i=99, next=0
+        NodeList [348, 424), i=100, next=0
+          KindVariableDeclaration [348, 424), i=101, next=0
+            KindIdentifier "myReducer2" [348, 359), i=102, next=103
+            KindCallExpression [361, 424), i=103, next=0
+              KindIdentifier "combineReducers" [361, 377), i=104, next=105
+              NodeList [378, 423), i=105, next=0
+                KindObjectLiteralExpression [378, 423), i=106, next=0
+                  NodeList [379, 420), i=107, next=0
+                    KindPropertyAssignment [379, 419), i=108, next=0
+                      KindIdentifier "combined" [379, 393), i=109, next=110
+                      KindCallExpression [394, 419), i=110, next=0
+                        KindIdentifier "combineReducers" [394, 410), i=111, next=112
+                        NodeList [411, 418), i=112, next=0
+                          KindObjectLiteralExpression [411, 418), i=113, next=0
+                            NodeList [412, 416), i=114, next=0
+                              KindShorthandPropertyAssignment [412, 416), i=115, next=0
+                                KindIdentifier "foo" [412, 416), i=116, next=0
+    KindFunctionDeclaration [425, 531), i=117, next=138
+      NodeList [425, 460), i=118, next=120
+        KindDeclareKeyword [425, 460), i=119, next=0
+      KindIdentifier "withH" [469, 475), i=120, next=121
+      NodeList [476, 480), i=121, next=126
+        KindTypeParameter [476, 477), i=122, next=124
+          KindIdentifier "T" [476, 477), i=123, next=0
+        KindTypeParameter [478, 480), i=124, next=0
+          KindIdentifier "U" [478, 480), i=125, next=0
+      NodeList [482, 526), i=126, next=136
+        KindParameter [482, 526), i=127, next=0
+          KindIdentifier "handlerCreators" [482, 497), i=128, next=129
+          KindTypeReference [498, 526), i=129, next=0
+            KindIdentifier "HandleCreatorsFactory" [498, 520), i=130, next=131
+            NodeList [521, 525), i=131, next=0
+              KindTypeReference [521, 522), i=132, next=134
+                KindIdentifier "T" [521, 522), i=133, next=0
+              KindTypeReference [523, 525), i=134, next=0
+                KindIdentifier "U" [523, 525), i=135, next=0
+      KindTypeReference [528, 530), i=136, next=0
+        KindIdentifier "U" [528, 530), i=137, next=0
+    KindTypeAliasDeclaration [531, 563), i=138, next=145
+      KindIdentifier "Props" [539, 545), i=139, next=140
+      KindTypeLiteral [547, 563), i=140, next=0
+        NodeList [549, 561), i=141, next=0
+          KindPropertySignature [549, 561), i=142, next=0
+            KindIdentifier "out" [549, 553), i=143, next=144
+            KindNumberKeyword [554, 561), i=144, next=0
+    KindTypeAliasDeclaration [563, 662), i=145, next=175
+      KindIdentifier "HandleCreatorsFactory" [571, 593), i=146, next=147
+      NodeList [594, 598), i=147, next=152
+        KindTypeParameter [594, 595), i=148, next=150
+          KindIdentifier "T" [594, 595), i=149, next=0
+        KindTypeParameter [596, 598), i=150, next=0
+          KindIdentifier "U" [596, 598), i=151, next=0
+      KindFunctionType [601, 661), i=152, next=0
+        NodeList [603, 618), i=153, next=158
+          KindParameter [603, 618), i=154, next=0
+            KindIdentifier "initialProps" [603, 615), i=155, next=156
+            KindTypeReference [616, 618), i=156, next=0
+              KindIdentifier "T" [616, 618), i=157, next=0
+        KindMappedType [622, 661), i=158, next=0
+          KindTypeParameter [626, 638), i=159, next=164
+            KindIdentifier "P" [626, 627), i=160, next=161
+            KindTypeOperator [630, 638), i=161, next=0
+              KindTypeReference [636, 638), i=162, next=0
+                KindIdentifier "U" [636, 638), i=163, next=0
+          KindFunctionType [640, 659), i=164, next=0
+            NodeList [642, 650), i=165, next=170
+              KindParameter [642, 650), i=166, next=0
+                KindIdentifier "props" [642, 647), i=167, next=168
+                KindTypeReference [648, 650), i=168, next=0
+                  KindIdentifier "T" [648, 650), i=169, next=0
+            KindIndexedAccessType [654, 659), i=170, next=0
+              KindTypeReference [654, 656), i=171, next=173
+                KindIdentifier "U" [654, 656), i=172, next=0
+              KindTypeReference [657, 658), i=173, next=0
+                KindIdentifier "P" [657, 658), i=174, next=0
+    KindVariableStatement [662, 800), i=175, next=221
+      KindVariableDeclarationList [662, 799), i=176, next=0
+        NodeList [671, 799), i=177, next=0
+          KindVariableDeclaration [671, 799), i=178, next=0
+            KindIdentifier "enhancer4" [671, 681), i=179, next=180
+            KindCallExpression [683, 799), i=180, next=0
+              KindIdentifier "withH" [683, 689), i=181, next=182
+              NodeList [690, 798), i=182, next=0
+                KindArrowFunction [690, 798), i=183, next=0
+                  NodeList [691, 703), i=184, next=189
+                    KindParameter [691, 703), i=185, next=0
+                      KindIdentifier "props" [691, 696), i=186, next=187
+                      KindTypeReference [697, 703), i=187, next=0
+                        KindIdentifier "Props" [697, 703), i=188, next=0
+                  KindEqualsGreaterThanToken [704, 707), i=189, next=190
+                  KindParenthesizedExpression [707, 798), i=190, next=0
+                    KindObjectLiteralExpression [709, 797), i=191, next=0
+                      NodeList [710, 794), i=192, next=0
+                        KindPropertyAssignment [710, 751), i=193, next=207
+                          KindIdentifier "onChange" [710, 724), i=194, next=195
+                          KindArrowFunction [725, 751), i=195, next=0
+                            NodeList [727, 732), i=196, next=199
+                              KindParameter [727, 732), i=197, next=0
+                                KindIdentifier "props" [727, 732), i=198, next=0
+                            KindEqualsGreaterThanToken [733, 736), i=199, next=200
+                            KindArrowFunction [736, 751), i=200, next=0
+                              NodeList [738, 744), i=201, next=205
+                                KindParameter [738, 744), i=202, next=0
+                                  KindIdentifier "e" [738, 739), i=203, next=204
+                                  KindAnyKeyword [740, 744), i=204, next=0
+                              KindEqualsGreaterThanToken [745, 748), i=205, next=206
+                              KindBlock [748, 751), i=206, next=0
+                        KindPropertyAssignment [752, 793), i=207, next=0
+                          KindIdentifier "onSubmit" [752, 766), i=208, next=209
+                          KindArrowFunction [767, 793), i=209, next=0
+                            NodeList [769, 774), i=210, next=213
+                              KindParameter [769, 774), i=211, next=0
+                                KindIdentifier "props" [769, 774), i=212, next=0
+                            KindEqualsGreaterThanToken [775, 778), i=213, next=214
+                            KindArrowFunction [778, 793), i=214, next=0
+                              NodeList [780, 786), i=215, next=219
+                                KindParameter [780, 786), i=216, next=0
+                                  KindIdentifier "e" [780, 781), i=217, next=218
+                                  KindAnyKeyword [782, 786), i=218, next=0
+                              KindEqualsGreaterThanToken [787, 790), i=219, next=220
+                              KindBlock [790, 793), i=220, next=0
+    KindExpressionStatement [800, 829), i=221, next=0
+      KindCallExpression [800, 828), i=222, next=0
+        KindPropertyAccessExpression [800, 822), i=223, next=226
+          KindIdentifier "enhancer4" [800, 813), i=224, next=225
+          KindIdentifier "onChange" [814, 822), i=225, next=0
+        NodeList [823, 827), i=226, next=0
+          KindNullKeyword [823, 827), i=227, next=0

@@ -1,0 +1,40 @@
+KindSourceFile [0, 185), i=1, next=0
+  NodeList [0, 184), i=2, next=0
+    KindVariableStatement [0, 22), i=3, next=10
+      KindVariableDeclarationList [0, 21), i=4, next=0
+        NodeList [5, 21), i=5, next=0
+          KindVariableDeclaration [5, 21), i=6, next=0
+            KindIdentifier "symb" [5, 10), i=7, next=8
+            KindCallExpression [12, 21), i=8, next=0
+              KindIdentifier "Symbol" [12, 19), i=9, next=0
+    KindInterfaceDeclaration [22, 86), i=10, next=21
+      KindIdentifier "TestSymb" [33, 42), i=11, next=12
+      NodeList [44, 84), i=12, next=0
+        KindCallSignature [44, 56), i=13, next=15
+          KindVoidKeyword [50, 55), i=14, next=0
+        KindPropertySignature [56, 84), i=15, next=0
+          NodeList [56, 67), i=16, next=18
+            KindReadonlyKeyword [56, 67), i=17, next=0
+          KindComputedPropertyName [67, 74), i=18, next=20
+            KindIdentifier "symb" [69, 73), i=19, next=0
+          KindBooleanKeyword [75, 83), i=20, next=0
+    KindFunctionDeclaration [86, 184), i=21, next=0
+      NodeList [86, 94), i=22, next=24
+        KindExportKeyword [86, 94), i=23, next=0
+      KindIdentifier "test" [103, 108), i=24, next=25
+      KindTypeReference [111, 120), i=25, next=27
+        KindIdentifier "TestSymb" [111, 120), i=26, next=0
+      KindBlock [120, 184), i=27, next=0
+        NodeList [122, 182), i=28, next=0
+          KindFunctionDeclaration [122, 144), i=29, next=32
+            KindIdentifier "inner" [133, 139), i=30, next=31
+            KindBlock [141, 144), i=31, next=0
+          KindExpressionStatement [144, 166), i=32, next=39
+            KindBinaryExpression [144, 165), i=33, next=0
+              KindElementAccessExpression [144, 158), i=34, next=37
+                KindIdentifier "inner" [144, 152), i=35, next=36
+                KindIdentifier "symb" [153, 157), i=36, next=0
+              KindEqualsToken [158, 160), i=37, next=38
+              KindTrueKeyword [160, 165), i=38, next=0
+          KindReturnStatement [166, 182), i=39, next=0
+            KindIdentifier "inner" [175, 181), i=40, next=0

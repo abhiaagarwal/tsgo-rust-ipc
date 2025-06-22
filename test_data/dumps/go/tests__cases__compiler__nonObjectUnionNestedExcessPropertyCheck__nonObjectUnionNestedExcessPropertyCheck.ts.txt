@@ -1,0 +1,88 @@
+KindSourceFile [0, 606), i=1, next=0
+  NodeList [0, 604), i=2, next=0
+    KindInterfaceDeclaration [0, 101), i=3, next=19
+      KindIdentifier "IProps" [9, 16), i=4, next=5
+      NodeList [18, 98), i=5, next=0
+        KindPropertySignature [18, 42), i=6, next=10
+          KindIdentifier "iconProp" [18, 32), i=7, next=8
+          KindQuestionToken [32, 33), i=8, next=9
+          KindStringKeyword [34, 41), i=9, next=0
+        KindPropertySignature [42, 98), i=10, next=0
+          KindIdentifier "nestedProp" [42, 58), i=11, next=12
+          KindQuestionToken [58, 59), i=12, next=13
+          KindTypeLiteral [60, 98), i=13, next=0
+            NodeList [62, 91), i=14, next=0
+              KindPropertySignature [62, 91), i=15, next=0
+                KindIdentifier "testBool" [62, 80), i=16, next=17
+                KindQuestionToken [80, 81), i=17, next=18
+                KindBooleanKeyword [82, 90), i=18, next=0
+    KindInterfaceDeclaration [101, 159), i=19, next=27
+      KindIdentifier "INestedProps" [114, 127), i=20, next=21
+      NodeList [129, 156), i=21, next=0
+        KindPropertySignature [129, 156), i=22, next=0
+          KindIdentifier "nestedProps" [129, 146), i=23, next=24
+          KindQuestionToken [146, 147), i=24, next=25
+          KindTypeReference [148, 155), i=25, next=0
+            KindIdentifier "IProps" [148, 155), i=26, next=0
+    KindVariableStatement [159, 287), i=27, next=45
+      KindVariableDeclarationList [159, 286), i=28, next=0
+        NodeList [211, 286), i=29, next=0
+          KindVariableDeclaration [211, 286), i=30, next=0
+            KindIdentifier "propB1" [211, 218), i=31, next=32
+            KindUnionType [219, 235), i=32, next=37
+              NodeList [219, 235), i=33, next=0
+                KindTypeReference [219, 226), i=34, next=36
+                  KindIdentifier "IProps" [219, 226), i=35, next=0
+                KindNumberKeyword [228, 235), i=36, next=0
+            KindObjectLiteralExpression [237, 286), i=37, next=0
+              NodeList [239, 284), i=38, next=0
+                KindPropertyAssignment [239, 266), i=39, next=42
+                  KindIdentifier "INVALID_PROP_NAME" [239, 257), i=40, next=41
+                  KindStringLiteral "share" [258, 266), i=41, next=0
+                KindPropertyAssignment [267, 284), i=42, next=0
+                  KindIdentifier "iconProp" [267, 276), i=43, next=44
+                  KindStringLiteral "test" [277, 284), i=44, next=0
+    KindVariableStatement [287, 442), i=45, next=67
+      KindVariableDeclarationList [287, 441), i=46, next=0
+        NodeList [360, 441), i=47, next=0
+          KindVariableDeclaration [360, 441), i=48, next=0
+            KindIdentifier "propB2" [360, 367), i=49, next=50
+            KindUnionType [368, 384), i=50, next=55
+              NodeList [368, 384), i=51, next=0
+                KindTypeReference [368, 375), i=52, next=54
+                  KindIdentifier "IProps" [368, 375), i=53, next=0
+                KindNumberKeyword [377, 384), i=54, next=0
+            KindObjectLiteralExpression [386, 441), i=55, next=0
+              NodeList [388, 439), i=56, next=0
+                KindPropertyAssignment [388, 421), i=57, next=64
+                  KindIdentifier "nestedProp" [388, 399), i=58, next=59
+                  KindObjectLiteralExpression [400, 421), i=59, next=0
+                    NodeList [402, 419), i=60, next=0
+                      KindPropertyAssignment [402, 419), i=61, next=0
+                        KindIdentifier "asdfasdf" [402, 411), i=62, next=63
+                        KindStringLiteral "test" [412, 419), i=63, next=0
+                KindPropertyAssignment [422, 439), i=64, next=0
+                  KindIdentifier "iconProp" [422, 431), i=65, next=66
+                  KindStringLiteral "test" [432, 439), i=66, next=0
+    KindVariableStatement [442, 604), i=67, next=0
+      KindVariableDeclarationList [442, 603), i=68, next=0
+        NodeList [505, 603), i=69, next=0
+          KindVariableDeclaration [505, 603), i=70, next=0
+            KindIdentifier "propA1" [505, 512), i=71, next=72
+            KindUnionType [513, 535), i=72, next=77
+              NodeList [513, 535), i=73, next=0
+                KindTypeReference [513, 526), i=74, next=76
+                  KindIdentifier "INestedProps" [513, 526), i=75, next=0
+                KindNumberKeyword [528, 535), i=76, next=0
+            KindObjectLiteralExpression [537, 603), i=77, next=0
+              NodeList [539, 601), i=78, next=0
+                KindPropertyAssignment [539, 601), i=79, next=0
+                  KindIdentifier "nestedProps" [539, 551), i=80, next=81
+                  KindObjectLiteralExpression [552, 601), i=81, next=0
+                    NodeList [554, 599), i=82, next=0
+                      KindPropertyAssignment [554, 581), i=83, next=86
+                        KindIdentifier "INVALID_PROP_NAME" [554, 572), i=84, next=85
+                        KindStringLiteral "share" [573, 581), i=85, next=0
+                      KindPropertyAssignment [582, 599), i=86, next=0
+                        KindIdentifier "iconProp" [582, 591), i=87, next=88
+                        KindStringLiteral "test" [592, 599), i=88, next=0

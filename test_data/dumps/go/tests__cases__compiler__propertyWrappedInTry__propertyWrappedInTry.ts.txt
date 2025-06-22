@@ -1,0 +1,26 @@
+KindSourceFile [0, 203), i=1, next=0
+  NodeList [0, 199), i=2, next=0
+    KindClassDeclaration [0, 11), i=3, next=5
+      KindIdentifier "Foo" [5, 9), i=4, next=0
+    KindTryStatement [11, 94), i=5, next=18
+      KindBlock [22, 82), i=6, next=14
+        NodeList [24, 73), i=7, next=0
+          KindExpressionStatement [42, 73), i=8, next=0
+            KindBinaryExpression [42, 72), i=9, next=0
+              KindIdentifier "bar" [42, 46), i=10, next=11
+              KindEqualsToken [46, 48), i=11, next=12
+              KindCallExpression [48, 72), i=12, next=0
+                KindIdentifier "someInitThatMightFail" [48, 70), i=13, next=0
+      KindCatchClause [82, 94), i=14, next=0
+        KindVariableDeclaration [89, 90), i=15, next=17
+          KindIdentifier "e" [89, 90), i=16, next=0
+        KindBlock [91, 94), i=17, next=0
+    KindExpressionStatement [112, 118), i=18, next=21
+      KindCallExpression [112, 118), i=19, next=0
+        KindIdentifier "baz" [112, 116), i=20, next=0
+    KindBlock [118, 194), i=21, next=0
+      NodeList [120, 148), i=22, next=0
+        KindReturnStatement [120, 148), i=23, next=0
+          KindPropertyAccessExpression [138, 147), i=24, next=0
+            KindThisKeyword [138, 143), i=25, next=26
+            KindIdentifier "bar" [144, 147), i=26, next=0

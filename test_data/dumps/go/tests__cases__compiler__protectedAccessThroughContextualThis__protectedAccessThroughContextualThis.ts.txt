@@ -1,0 +1,100 @@
+KindSourceFile [0, 470), i=1, next=0
+  NodeList [0, 470), i=2, next=0
+    KindClassDeclaration [0, 159), i=3, next=37
+      KindIdentifier "Foo" [5, 9), i=4, next=5
+      NodeList [11, 156), i=5, next=0
+        KindPropertyDeclaration [11, 40), i=6, next=11
+          NodeList [11, 24), i=7, next=9
+            KindProtectedKeyword [11, 24), i=8, next=0
+          KindIdentifier "protec" [24, 31), i=9, next=10
+          KindStringLiteral "bar" [33, 39), i=10, next=0
+        KindPropertyDeclaration [40, 64), i=11, next=16
+          NodeList [40, 51), i=12, next=14
+            KindPrivateKeyword [40, 51), i=13, next=0
+          KindIdentifier "privat" [51, 58), i=14, next=15
+          KindStringLiteral "" [60, 63), i=15, next=0
+        KindPropertyDeclaration [64, 81), i=16, next=20
+          KindIdentifier "copy" [64, 72), i=17, next=18
+          KindExclamationToken [72, 73), i=18, next=19
+          KindStringKeyword [74, 81), i=19, next=0
+        KindConstructor [81, 156), i=20, next=0
+          KindBlock [98, 156), i=21, next=0
+            NodeList [100, 151), i=22, next=0
+              KindExpressionStatement [100, 125), i=23, next=30
+                KindCallExpression [100, 125), i=24, next=0
+                  KindPropertyAccessExpression [100, 119), i=25, next=28
+                    KindIdentifier "bindCopy" [100, 114), i=26, next=27
+                    KindIdentifier "call" [115, 119), i=27, next=0
+                  NodeList [120, 124), i=28, next=0
+                    KindThisKeyword [120, 124), i=29, next=0
+              KindExpressionStatement [125, 151), i=30, next=0
+                KindCallExpression [125, 151), i=31, next=0
+                  KindPropertyAccessExpression [125, 145), i=32, next=35
+                    KindIdentifier "bindCopy2" [125, 140), i=33, next=34
+                    KindIdentifier "call" [141, 145), i=34, next=0
+                  NodeList [146, 150), i=35, next=0
+                    KindThisKeyword [146, 150), i=36, next=0
+    KindFunctionDeclaration [159, 282), i=37, next=64
+      KindIdentifier "bindCopy" [171, 180), i=38, next=39
+      NodeList [181, 190), i=39, next=44
+        KindParameter [181, 190), i=40, next=0
+          KindIdentifier "this" [181, 185), i=41, next=42
+          KindTypeReference [186, 190), i=42, next=0
+            KindIdentifier "Foo" [186, 190), i=43, next=0
+      KindBlock [191, 282), i=44, next=0
+        NodeList [193, 263), i=45, next=0
+          KindExpressionStatement [193, 221), i=46, next=55
+            KindBinaryExpression [193, 220), i=47, next=0
+              KindPropertyAccessExpression [193, 206), i=48, next=51
+                KindThisKeyword [193, 201), i=49, next=50
+                KindIdentifier "copy" [202, 206), i=50, next=0
+              KindEqualsToken [206, 208), i=51, next=52
+              KindPropertyAccessExpression [208, 220), i=52, next=0
+                KindThisKeyword [208, 213), i=53, next=54
+                KindIdentifier "protec" [214, 220), i=54, next=0
+          KindExpressionStatement [221, 263), i=55, next=0
+            KindCallExpression [221, 262), i=56, next=0
+              KindPropertyAccessExpression [221, 249), i=57, next=60
+                KindIdentifier "console" [221, 245), i=58, next=59
+                KindIdentifier "log" [246, 249), i=59, next=0
+              NodeList [250, 261), i=60, next=0
+                KindPropertyAccessExpression [250, 261), i=61, next=0
+                  KindThisKeyword [250, 254), i=62, next=63
+                  KindIdentifier "privat" [255, 261), i=63, next=0
+    KindTypeAliasDeclaration [282, 329), i=64, next=73
+      KindIdentifier "BindingFunction" [290, 306), i=65, next=66
+      KindFunctionType [308, 328), i=66, next=0
+        NodeList [310, 319), i=67, next=72
+          KindParameter [310, 319), i=68, next=0
+            KindIdentifier "this" [310, 314), i=69, next=70
+            KindTypeReference [315, 319), i=70, next=0
+              KindIdentifier "Foo" [315, 319), i=71, next=0
+        KindVoidKeyword [323, 328), i=72, next=0
+    KindVariableStatement [329, 470), i=73, next=0
+      KindVariableDeclarationList [329, 470), i=74, next=0
+        NodeList [338, 470), i=75, next=0
+          KindVariableDeclaration [338, 470), i=76, next=0
+            KindIdentifier "bindCopy2" [338, 348), i=77, next=78
+            KindTypeReference [349, 365), i=78, next=80
+              KindIdentifier "BindingFunction" [349, 365), i=79, next=0
+            KindFunctionExpression [367, 470), i=80, next=0
+              KindBlock [379, 470), i=81, next=0
+                NodeList [381, 451), i=82, next=0
+                  KindExpressionStatement [381, 409), i=83, next=92
+                    KindBinaryExpression [381, 408), i=84, next=0
+                      KindPropertyAccessExpression [381, 394), i=85, next=88
+                        KindThisKeyword [381, 389), i=86, next=87
+                        KindIdentifier "copy" [390, 394), i=87, next=0
+                      KindEqualsToken [394, 396), i=88, next=89
+                      KindPropertyAccessExpression [396, 408), i=89, next=0
+                        KindThisKeyword [396, 401), i=90, next=91
+                        KindIdentifier "protec" [402, 408), i=91, next=0
+                  KindExpressionStatement [409, 451), i=92, next=0
+                    KindCallExpression [409, 450), i=93, next=0
+                      KindPropertyAccessExpression [409, 437), i=94, next=97
+                        KindIdentifier "console" [409, 433), i=95, next=96
+                        KindIdentifier "log" [434, 437), i=96, next=0
+                      NodeList [438, 449), i=97, next=0
+                        KindPropertyAccessExpression [438, 449), i=98, next=0
+                          KindThisKeyword [438, 442), i=99, next=100
+                          KindIdentifier "privat" [443, 449), i=100, next=0

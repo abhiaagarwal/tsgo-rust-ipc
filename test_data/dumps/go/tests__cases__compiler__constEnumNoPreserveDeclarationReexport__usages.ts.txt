@@ -1,0 +1,29 @@
+KindSourceFile [0, 170), i=1, next=0
+  NodeList [0, 168), i=2, next=0
+    KindImportDeclaration [0, 40), i=3, next=10
+      KindImportClause [6, 20), i=4, next=9
+        KindNamedImports [6, 20), i=5, next=0
+          NodeList [8, 19), i=6, next=0
+            KindImportSpecifier [8, 19), i=7, next=0
+              KindIdentifier "MyConstEnum" [8, 19), i=8, next=0
+      KindStringLiteral "./ConstEnum" [25, 39), i=9, next=0
+    KindImportDeclaration [40, 80), i=10, next=14
+      KindImportClause [48, 57), i=11, next=13
+        KindIdentifier "AlsoEnum" [48, 57), i=12, next=0
+      KindStringLiteral "./ImportExport" [62, 79), i=13, next=0
+    KindImportDeclaration [80, 117), i=14, next=18
+      KindImportClause [88, 98), i=15, next=17
+        KindIdentifier "StillEnum" [88, 98), i=16, next=0
+      KindStringLiteral "./ReExport" [103, 116), i=17, next=0
+    KindExpressionStatement [117, 137), i=18, next=22
+      KindPropertyAccessExpression [117, 136), i=19, next=0
+        KindIdentifier "MyConstEnum" [117, 132), i=20, next=21
+        KindIdentifier "Foo" [133, 136), i=21, next=0
+    KindExpressionStatement [137, 152), i=22, next=26
+      KindPropertyAccessExpression [137, 151), i=23, next=0
+        KindIdentifier "AlsoEnum" [137, 147), i=24, next=25
+        KindIdentifier "Foo" [148, 151), i=25, next=0
+    KindExpressionStatement [152, 168), i=26, next=0
+      KindPropertyAccessExpression [152, 167), i=27, next=0
+        KindIdentifier "StillEnum" [152, 163), i=28, next=29
+        KindIdentifier "Foo" [164, 167), i=29, next=0

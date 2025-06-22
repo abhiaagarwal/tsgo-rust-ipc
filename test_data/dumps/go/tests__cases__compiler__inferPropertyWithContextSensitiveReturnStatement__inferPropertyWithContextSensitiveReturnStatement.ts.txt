@@ -1,0 +1,54 @@
+KindSourceFile [0, 167), i=1, next=0
+  NodeList [0, 166), i=2, next=0
+    KindFunctionDeclaration [0, 99), i=3, next=30
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "repro" [16, 22), i=6, next=7
+      NodeList [23, 24), i=7, next=10
+        KindTypeParameter [23, 24), i=8, next=0
+          KindIdentifier "T" [23, 24), i=9, next=0
+      NodeList [26, 91), i=10, next=29
+        KindParameter [26, 91), i=11, next=0
+          KindIdentifier "config" [26, 32), i=12, next=13
+          KindTypeLiteral [33, 91), i=13, next=0
+            NodeList [35, 89), i=14, next=0
+              KindPropertySignature [35, 48), i=15, next=19
+                KindIdentifier "params" [35, 44), i=16, next=17
+                KindTypeReference [45, 47), i=17, next=0
+                  KindIdentifier "T" [45, 47), i=18, next=0
+              KindPropertySignature [48, 89), i=19, next=0
+                KindIdentifier "callback" [48, 59), i=20, next=21
+                KindFunctionType [60, 88), i=21, next=0
+                  KindFunctionType [66, 88), i=22, next=0
+                    NodeList [68, 77), i=23, next=28
+                      KindParameter [68, 77), i=24, next=0
+                        KindIdentifier "params" [68, 74), i=25, next=26
+                        KindTypeReference [75, 77), i=26, next=0
+                          KindIdentifier "T" [75, 77), i=27, next=0
+                    KindNumberKeyword [81, 88), i=28, next=0
+      KindVoidKeyword [93, 98), i=29, next=0
+    KindExpressionStatement [99, 166), i=30, next=0
+      KindCallExpression [99, 165), i=31, next=0
+        KindIdentifier "repro" [99, 106), i=32, next=33
+        NodeList [107, 164), i=33, next=0
+          KindObjectLiteralExpression [107, 164), i=34, next=0
+            NodeList [108, 162), i=35, next=0
+              KindPropertyAssignment [108, 120), i=36, next=39
+                KindIdentifier "params" [108, 117), i=37, next=38
+                KindNumericLiteral [118, 120), i=38, next=0
+              KindPropertyAssignment [121, 161), i=39, next=0
+                KindIdentifier "callback" [121, 132), i=40, next=41
+                KindArrowFunction [133, 161), i=41, next=0
+                  KindEqualsGreaterThanToken [136, 139), i=42, next=43
+                  KindBlock [139, 161), i=43, next=0
+                    NodeList [141, 159), i=44, next=0
+                      KindReturnStatement [141, 159), i=45, next=0
+                        KindArrowFunction [148, 159), i=46, next=0
+                          NodeList [148, 150), i=47, next=50
+                            KindParameter [148, 150), i=48, next=0
+                              KindIdentifier "a" [148, 150), i=49, next=0
+                          KindEqualsGreaterThanToken [150, 153), i=50, next=51
+                          KindBinaryExpression [153, 159), i=51, next=0
+                            KindIdentifier "a" [153, 155), i=52, next=53
+                            KindPlusToken [155, 157), i=53, next=54
+                            KindNumericLiteral [157, 159), i=54, next=0

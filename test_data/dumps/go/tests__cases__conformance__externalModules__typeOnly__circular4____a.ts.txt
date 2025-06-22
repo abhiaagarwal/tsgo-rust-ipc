@@ -1,0 +1,31 @@
+KindSourceFile [0, 123), i=1, next=0
+  NodeList [0, 122), i=2, next=0
+    KindImportDeclaration [0, 31), i=3, next=10
+      KindImportClause [6, 19), i=4, next=9
+        KindNamedImports [11, 19), i=5, next=0
+          NodeList [13, 17), i=6, next=0
+            KindImportSpecifier [13, 17), i=7, next=0
+              KindIdentifier "ns2" [13, 17), i=8, next=0
+      KindStringLiteral "./b" [24, 30), i=9, next=0
+    KindModuleDeclaration [31, 122), i=10, next=0
+      NodeList [31, 38), i=11, next=13
+        KindExportKeyword [31, 38), i=12, next=0
+      KindIdentifier "ns1" [48, 52), i=13, next=14
+      KindModuleBlock [52, 122), i=14, next=0
+        NodeList [54, 120), i=15, next=0
+          KindModuleDeclaration [54, 120), i=16, next=0
+            NodeList [54, 63), i=17, next=19
+              KindExportKeyword [54, 63), i=18, next=0
+            KindIdentifier "nested" [73, 80), i=19, next=20
+            KindModuleBlock [80, 120), i=20, next=0
+              NodeList [82, 116), i=21, next=0
+                KindTypeAliasDeclaration [82, 116), i=22, next=0
+                  NodeList [82, 93), i=23, next=25
+                    KindExportKeyword [82, 93), i=24, next=0
+                  KindIdentifier "T" [98, 100), i=25, next=26
+                  KindTypeReference [102, 115), i=26, next=0
+                    KindQualifiedName [102, 115), i=27, next=0
+                      KindQualifiedName [102, 113), i=28, next=31
+                        KindIdentifier "ns2" [102, 106), i=29, next=30
+                        KindIdentifier "nested" [107, 113), i=30, next=0
+                      KindIdentifier "T" [114, 115), i=31, next=0

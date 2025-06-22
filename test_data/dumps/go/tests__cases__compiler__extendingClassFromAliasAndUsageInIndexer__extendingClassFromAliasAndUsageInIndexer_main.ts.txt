@@ -1,0 +1,70 @@
+KindSourceFile [0, 587), i=1, next=0
+  NodeList [0, 587), i=2, next=0
+    KindImportEqualsDeclaration [0, 81), i=3, next=7
+      KindIdentifier "Backbone" [6, 15), i=4, next=5
+      KindExternalModuleReference [17, 80), i=5, next=0
+        KindStringLiteral "./extendingClassFromAliasAndUsageInIndexer_backbone" [26, 79), i=6, next=0
+    KindImportEqualsDeclaration [81, 162), i=7, next=11
+      KindIdentifier "moduleA" [89, 97), i=8, next=9
+      KindExternalModuleReference [99, 161), i=9, next=0
+        KindStringLiteral "./extendingClassFromAliasAndUsageInIndexer_moduleA" [108, 160), i=10, next=0
+    KindImportEqualsDeclaration [162, 243), i=11, next=15
+      KindIdentifier "moduleB" [170, 178), i=12, next=13
+      KindExternalModuleReference [180, 242), i=13, next=0
+        KindStringLiteral "./extendingClassFromAliasAndUsageInIndexer_moduleB" [189, 241), i=14, next=0
+    KindInterfaceDeclaration [243, 330), i=15, next=24
+      KindIdentifier "IHasVisualizationModel" [254, 277), i=16, next=17
+      NodeList [279, 327), i=17, next=0
+        KindPropertySignature [279, 327), i=18, next=0
+          KindIdentifier "VisualizationModel" [279, 303), i=19, next=20
+          KindTypeQuery [304, 326), i=20, next=0
+            KindQualifiedName [311, 326), i=21, next=0
+              KindIdentifier "Backbone" [311, 320), i=22, next=23
+              KindIdentifier "Model" [321, 326), i=23, next=0
+    KindVariableStatement [330, 383), i=24, next=32
+      KindVariableDeclarationList [330, 382), i=25, next=0
+        NodeList [335, 382), i=26, next=0
+          KindVariableDeclaration [335, 382), i=27, next=0
+            KindIdentifier "moduleATyped" [335, 348), i=28, next=29
+            KindTypeReference [349, 372), i=29, next=31
+              KindIdentifier "IHasVisualizationModel" [349, 372), i=30, next=0
+            KindIdentifier "moduleA" [374, 382), i=31, next=0
+    KindVariableStatement [383, 498), i=32, next=54
+      KindVariableDeclarationList [383, 497), i=33, next=0
+        NodeList [388, 497), i=34, next=0
+          KindVariableDeclaration [388, 497), i=35, next=0
+            KindIdentifier "moduleMap" [388, 398), i=36, next=37
+            KindTypeLiteral [399, 441), i=37, next=46
+              NodeList [401, 439), i=38, next=0
+                KindIndexSignature [401, 439), i=39, next=0
+                  NodeList [403, 414), i=40, next=44
+                    KindParameter [403, 414), i=41, next=0
+                      KindIdentifier "key" [403, 406), i=42, next=43
+                      KindStringKeyword [407, 414), i=43, next=0
+                  KindTypeReference [416, 439), i=44, next=0
+                    KindIdentifier "IHasVisualizationModel" [416, 439), i=45, next=0
+            KindObjectLiteralExpression [443, 497), i=46, next=0
+              NodeList [445, 494), i=47, next=0
+                KindPropertyAssignment [445, 469), i=48, next=51
+                  KindStringLiteral "moduleA" [445, 460), i=49, next=50
+                  KindIdentifier "moduleA" [461, 469), i=50, next=0
+                KindPropertyAssignment [470, 494), i=51, next=0
+                  KindStringLiteral "moduleB" [470, 485), i=52, next=53
+                  KindIdentifier "moduleB" [486, 494), i=53, next=0
+    KindVariableStatement [498, 523), i=54, next=60
+      KindVariableDeclarationList [498, 522), i=55, next=0
+        NodeList [503, 522), i=56, next=0
+          KindVariableDeclaration [503, 522), i=57, next=0
+            KindIdentifier "moduleName" [503, 514), i=58, next=59
+            KindStringKeyword [515, 522), i=59, next=0
+    KindVariableStatement [523, 587), i=60, next=0
+      KindVariableDeclarationList [523, 586), i=61, next=0
+        NodeList [528, 586), i=62, next=0
+          KindVariableDeclaration [528, 586), i=63, next=0
+            KindIdentifier "visModel" [528, 537), i=64, next=65
+            KindNewExpression [539, 586), i=65, next=0
+              KindPropertyAccessExpression [543, 584), i=66, next=0
+                KindElementAccessExpression [543, 565), i=67, next=70
+                  KindIdentifier "moduleMap" [543, 553), i=68, next=69
+                  KindIdentifier "moduleName" [554, 564), i=69, next=0
+                KindIdentifier "VisualizationModel" [566, 584), i=70, next=0

@@ -1,0 +1,105 @@
+KindSourceFile [0, 418), i=1, next=0
+  NodeList [0, 416), i=2, next=0
+    KindFunctionDeclaration [0, 75), i=3, next=28
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "useState" [16, 25), i=6, next=7
+      NodeList [26, 27), i=7, next=10
+        KindTypeParameter [26, 27), i=8, next=0
+          KindIdentifier "S" [26, 27), i=9, next=0
+      NodeList [29, 52), i=10, next=17
+        KindParameter [29, 52), i=11, next=0
+          KindIdentifier "initialState" [29, 41), i=12, next=13
+          KindParenthesizedType [42, 52), i=13, next=0
+            KindFunctionType [44, 51), i=14, next=0
+              KindTypeReference [49, 51), i=15, next=0
+                KindIdentifier "S" [49, 51), i=16, next=0
+      KindTupleType [54, 74), i=17, next=0
+        NodeList [56, 73), i=18, next=0
+          KindTypeReference [56, 57), i=19, next=21
+            KindIdentifier "S" [56, 57), i=20, next=0
+          KindFunctionType [58, 73), i=21, next=0
+            NodeList [60, 64), i=22, next=27
+              KindParameter [60, 64), i=23, next=0
+                KindIdentifier "s" [60, 61), i=24, next=25
+                KindTypeReference [62, 64), i=25, next=0
+                  KindIdentifier "S" [62, 64), i=26, next=0
+            KindVoidKeyword [68, 73), i=27, next=0
+    KindTypeAliasDeclaration [75, 186), i=28, next=54
+      KindIdentifier "Data" [83, 88), i=29, next=30
+      KindTypeReference [90, 185), i=30, next=0
+        KindIdentifier "Readonly" [90, 99), i=31, next=32
+        NodeList [100, 184), i=32, next=0
+          KindTypeLiteral [100, 184), i=33, next=0
+            NodeList [101, 181), i=34, next=0
+              KindPropertySignature [101, 121), i=35, next=38
+                KindIdentifier "value" [101, 112), i=36, next=37
+                KindNumberKeyword [113, 120), i=37, next=0
+              KindPropertySignature [121, 151), i=38, next=46
+                KindIdentifier "foo" [121, 130), i=39, next=40
+                KindFunctionType [131, 150), i=40, next=0
+                  NodeList [133, 141), i=41, next=45
+                    KindParameter [133, 141), i=42, next=0
+                      KindIdentifier "arg" [133, 136), i=43, next=44
+                      KindAnyKeyword [137, 141), i=44, next=0
+                  KindVoidKeyword [145, 150), i=45, next=0
+              KindPropertySignature [151, 181), i=46, next=0
+                KindIdentifier "bar" [151, 160), i=47, next=48
+                KindFunctionType [161, 180), i=48, next=0
+                  NodeList [163, 171), i=49, next=53
+                    KindParameter [163, 171), i=50, next=0
+                      KindIdentifier "arg" [163, 166), i=51, next=52
+                      KindAnyKeyword [167, 171), i=52, next=0
+                  KindVoidKeyword [175, 180), i=53, next=0
+    KindFunctionDeclaration [186, 416), i=54, next=0
+      NodeList [186, 196), i=55, next=57
+        KindExportKeyword [186, 196), i=56, next=0
+      KindIdentifier "Component" [205, 215), i=57, next=58
+      KindBlock [217, 416), i=58, next=0
+        NodeList [219, 413), i=59, next=0
+          KindVariableStatement [219, 413), i=60, next=0
+            KindVariableDeclarationList [219, 412), i=61, next=0
+              NodeList [230, 412), i=62, next=0
+                KindVariableDeclaration [230, 412), i=63, next=0
+                  KindArrayBindingPattern [230, 248), i=64, next=70
+                    NodeList [232, 247), i=65, next=0
+                      KindBindingElement [232, 237), i=66, next=68
+                        KindIdentifier "state" [232, 237), i=67, next=0
+                      KindBindingElement [238, 247), i=68, next=0
+                        KindIdentifier "setState" [238, 247), i=69, next=0
+                  KindCallExpression [250, 412), i=70, next=0
+                    KindIdentifier "useState" [250, 259), i=71, next=72
+                    NodeList [260, 264), i=72, next=75
+                      KindTypeReference [260, 264), i=73, next=0
+                        KindIdentifier "Data" [260, 264), i=74, next=0
+                    NodeList [266, 411), i=75, next=0
+                      KindArrowFunction [266, 411), i=76, next=0
+                        KindEqualsGreaterThanToken [268, 271), i=77, next=78
+                        KindParenthesizedExpression [271, 411), i=78, next=0
+                          KindObjectLiteralExpression [273, 410), i=79, next=0
+                            NodeList [274, 403), i=80, next=0
+                              KindPropertyAssignment [274, 299), i=81, next=84
+                                KindIdentifier "value" [274, 289), i=82, next=83
+                                KindStringLiteral "string" [290, 299), i=83, next=0
+                              KindPropertyAssignment [300, 364), i=84, next=95
+                                KindIdentifier "foo" [300, 340), i=85, next=86
+                                KindArrowFunction [341, 364), i=86, next=0
+                                  NodeList [343, 346), i=87, next=90
+                                    KindParameter [343, 346), i=88, next=0
+                                      KindIdentifier "arg" [343, 346), i=89, next=0
+                                  KindEqualsGreaterThanToken [347, 350), i=90, next=91
+                                  KindCallExpression [350, 364), i=91, next=0
+                                    KindIdentifier "setState" [350, 359), i=92, next=93
+                                    NodeList [360, 363), i=93, next=0
+                                      KindIdentifier "arg" [360, 363), i=94, next=0
+                              KindPropertyAssignment [365, 402), i=95, next=0
+                                KindIdentifier "bar" [365, 378), i=96, next=97
+                                KindArrowFunction [379, 402), i=97, next=0
+                                  NodeList [381, 384), i=98, next=101
+                                    KindParameter [381, 384), i=99, next=0
+                                      KindIdentifier "arg" [381, 384), i=100, next=0
+                                  KindEqualsGreaterThanToken [385, 388), i=101, next=102
+                                  KindCallExpression [388, 402), i=102, next=0
+                                    KindIdentifier "setState" [388, 397), i=103, next=104
+                                    NodeList [398, 401), i=104, next=0
+                                      KindIdentifier "arg" [398, 401), i=105, next=0

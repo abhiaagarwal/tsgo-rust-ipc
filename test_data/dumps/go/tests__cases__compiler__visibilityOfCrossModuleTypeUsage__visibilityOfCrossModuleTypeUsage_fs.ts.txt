@@ -1,0 +1,32 @@
+KindSourceFile [0, 227), i=1, next=0
+  NodeList [0, 227), i=2, next=0
+    KindImportEqualsDeclaration [0, 73), i=3, next=7
+      KindIdentifier "commands" [6, 15), i=4, next=5
+      KindExternalModuleReference [17, 72), i=5, next=0
+        KindStringLiteral "./visibilityOfCrossModuleTypeUsage_commands" [26, 71), i=6, next=0
+    KindFunctionDeclaration [73, 227), i=7, next=0
+      KindIdentifier "run" [83, 87), i=8, next=9
+      NodeList [88, 126), i=9, next=16
+        KindParameter [88, 126), i=10, next=0
+          KindIdentifier "configuration" [88, 101), i=11, next=12
+          KindTypeReference [102, 126), i=12, next=0
+            KindQualifiedName [102, 126), i=13, next=0
+              KindIdentifier "commands" [102, 111), i=14, next=15
+              KindIdentifier "IConfiguration" [112, 126), i=15, next=0
+      KindBlock [127, 227), i=16, next=0
+        NodeList [129, 224), i=17, next=0
+          KindVariableStatement [129, 224), i=18, next=0
+            KindVariableDeclarationList [129, 223), i=19, next=0
+              NodeList [138, 223), i=20, next=0
+                KindVariableDeclaration [138, 223), i=21, next=0
+                  KindIdentifier "absoluteWorkspacePath" [138, 160), i=22, next=23
+                  KindCallExpression [162, 223), i=23, next=0
+                    KindPropertyAccessExpression [162, 201), i=24, next=29
+                      KindPropertyAccessExpression [162, 186), i=25, next=28
+                        KindIdentifier "configuration" [162, 176), i=26, next=27
+                        KindIdentifier "workspace" [177, 186), i=27, next=0
+                      KindIdentifier "toAbsolutePath" [187, 201), i=28, next=0
+                    NodeList [202, 222), i=29, next=0
+                      KindPropertyAccessExpression [202, 222), i=30, next=0
+                        KindIdentifier "configuration" [202, 215), i=31, next=32
+                        KindIdentifier "server" [216, 222), i=32, next=0

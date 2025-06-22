@@ -1,0 +1,128 @@
+KindSourceFile [0, 649), i=1, next=0
+  NodeList [0, 627), i=2, next=0
+    KindInterfaceDeclaration [0, 32), i=3, next=13
+      KindIdentifier "Box" [9, 13), i=4, next=5
+      NodeList [14, 15), i=5, next=8
+        KindTypeParameter [14, 15), i=6, next=0
+          KindIdentifier "T" [14, 15), i=7, next=0
+      NodeList [18, 29), i=8, next=0
+        KindPropertySignature [18, 29), i=9, next=0
+          KindIdentifier "v" [18, 25), i=10, next=11
+          KindTypeReference [26, 28), i=11, next=0
+            KindIdentifier "T" [26, 28), i=12, next=0
+    KindInterfaceDeclaration [32, 88), i=13, next=22
+      KindIdentifier "ErrorResult" [45, 57), i=14, next=15
+      NodeList [59, 85), i=15, next=0
+        KindPropertySignature [59, 85), i=16, next=0
+          NodeList [59, 73), i=17, next=19
+            KindReadonlyKeyword [59, 73), i=18, next=0
+          KindIdentifier "error" [73, 79), i=19, next=20
+          KindLiteralType [80, 85), i=20, next=0
+            KindTrueKeyword [80, 85), i=21, next=0
+    KindInterfaceDeclaration [88, 263), i=22, next=55
+      KindIdentifier "AsyncLoaderProps" [101, 118), i=23, next=24
+      NodeList [119, 137), i=24, next=28
+        KindTypeParameter [119, 137), i=25, next=0
+          KindIdentifier "TResult" [119, 126), i=26, next=27
+          KindTypeLiteral [134, 137), i=27, next=0
+      NodeList [140, 260), i=28, next=0
+        KindPropertySignature [140, 185), i=29, next=39
+          NodeList [140, 154), i=30, next=32
+            KindReadonlyKeyword [140, 154), i=31, next=0
+          KindIdentifier "asyncLoad" [154, 164), i=32, next=33
+          KindFunctionType [165, 184), i=33, next=0
+            KindTypeReference [171, 184), i=34, next=0
+              KindIdentifier "Box" [171, 175), i=35, next=36
+              NodeList [176, 183), i=36, next=0
+                KindTypeReference [176, 183), i=37, next=0
+                  KindIdentifier "TResult" [176, 183), i=38, next=0
+        KindPropertySignature [185, 260), i=39, next=0
+          NodeList [185, 199), i=40, next=42
+            KindReadonlyKeyword [185, 199), i=41, next=0
+          KindIdentifier "children" [199, 208), i=42, next=43
+          KindFunctionType [209, 259), i=43, next=0
+            NodeList [211, 248), i=44, next=54
+              KindParameter [211, 248), i=45, next=0
+                KindIdentifier "result" [211, 217), i=46, next=47
+                KindTypeReference [218, 248), i=47, next=0
+                  KindIdentifier "Exclude" [218, 226), i=48, next=49
+                  NodeList [227, 247), i=49, next=0
+                    KindTypeReference [227, 234), i=50, next=52
+                      KindIdentifier "TResult" [227, 234), i=51, next=0
+                    KindTypeReference [235, 247), i=52, next=0
+                      KindIdentifier "ErrorResult" [235, 247), i=53, next=0
+            KindStringKeyword [252, 259), i=54, next=0
+    KindClassDeclaration [263, 444), i=55, next=87
+      KindIdentifier "AsyncLoader" [272, 284), i=56, next=57
+      NodeList [285, 303), i=57, next=61
+        KindTypeParameter [285, 303), i=58, next=0
+          KindIdentifier "TResult" [285, 292), i=59, next=60
+          KindTypeLiteral [300, 303), i=60, next=0
+      NodeList [306, 441), i=61, next=0
+        KindConstructor [306, 353), i=62, next=70
+          NodeList [324, 351), i=63, next=0
+            KindParameter [324, 337), i=64, next=67
+              KindIdentifier "props" [324, 329), i=65, next=66
+              KindStringKeyword [330, 337), i=66, next=0
+            KindParameter [338, 351), i=67, next=0
+              KindIdentifier "context" [338, 346), i=68, next=69
+              KindAnyKeyword [347, 351), i=69, next=0
+        KindConstructor [353, 405), i=70, next=79
+          NodeList [371, 403), i=71, next=0
+            KindParameter [371, 403), i=72, next=0
+              KindIdentifier "props" [371, 376), i=73, next=74
+              KindTypeReference [377, 403), i=74, next=0
+                KindIdentifier "AsyncLoaderProps" [377, 394), i=75, next=76
+                NodeList [395, 402), i=76, next=0
+                  KindTypeReference [395, 402), i=77, next=0
+                    KindIdentifier "TResult" [395, 402), i=78, next=0
+        KindConstructor [405, 441), i=79, next=0
+          NodeList [423, 437), i=80, next=86
+            KindParameter [423, 437), i=81, next=0
+              KindDotDotDotToken [423, 426), i=82, next=83
+              KindIdentifier "args" [426, 430), i=83, next=84
+              KindArrayType [431, 437), i=84, next=0
+                KindAnyKeyword [431, 435), i=85, next=0
+          KindBlock [438, 441), i=86, next=0
+    KindFunctionDeclaration [444, 531), i=87, next=108
+      KindIdentifier "load" [456, 461), i=88, next=89
+      KindTypeReference [464, 501), i=89, next=102
+        KindIdentifier "Box" [464, 468), i=90, next=91
+        NodeList [469, 500), i=91, next=0
+          KindUnionType [469, 500), i=92, next=0
+            NodeList [469, 500), i=93, next=0
+              KindTypeLiteral [469, 486), i=94, next=100
+                NodeList [470, 484), i=95, next=0
+                  KindPropertySignature [470, 484), i=96, next=0
+                    KindIdentifier "success" [470, 478), i=97, next=98
+                    KindLiteralType [479, 484), i=98, next=0
+                      KindTrueKeyword [479, 484), i=99, next=0
+              KindTypeReference [488, 500), i=100, next=0
+                KindIdentifier "ErrorResult" [488, 500), i=101, next=0
+      KindBlock [501, 531), i=102, next=0
+        NodeList [503, 528), i=103, next=0
+          KindReturnStatement [503, 528), i=104, next=0
+            KindAsExpression [515, 527), i=105, next=0
+              KindNullKeyword [515, 520), i=106, next=107
+              KindAnyKeyword [523, 527), i=107, next=0
+    KindExpressionStatement [531, 627), i=108, next=0
+      KindNewExpression [531, 626), i=109, next=0
+        KindIdentifier "AsyncLoader" [538, 550), i=110, next=111
+        NodeList [551, 625), i=111, next=0
+          KindObjectLiteralExpression [551, 625), i=112, next=0
+            NodeList [552, 622), i=113, next=0
+              KindPropertyAssignment [552, 573), i=114, next=117
+                KindIdentifier "asyncLoad" [552, 567), i=115, next=116
+                KindIdentifier "load" [568, 573), i=116, next=0
+              KindPropertyAssignment [574, 621), i=117, next=0
+                KindIdentifier "children" [574, 588), i=118, next=119
+                KindArrowFunction [589, 621), i=119, next=0
+                  NodeList [589, 596), i=120, next=123
+                    KindParameter [589, 596), i=121, next=0
+                      KindIdentifier "result" [589, 596), i=122, next=0
+                  KindEqualsGreaterThanToken [596, 599), i=123, next=124
+                  KindAsExpression [599, 621), i=124, next=0
+                    KindPropertyAccessExpression [599, 614), i=125, next=128
+                      KindIdentifier "result" [599, 606), i=126, next=127
+                      KindIdentifier "success" [607, 614), i=127, next=0
+                    KindAnyKeyword [617, 621), i=128, next=0

@@ -1,0 +1,140 @@
+KindSourceFile [0, 541), i=1, next=0
+  NodeList [0, 504), i=2, next=0
+    KindInterfaceDeclaration [0, 25), i=3, next=9
+      KindIdentifier "X" [9, 11), i=4, next=5
+      NodeList [13, 23), i=5, next=0
+        KindPropertySignature [13, 23), i=6, next=0
+          KindIdentifier "x" [13, 15), i=7, next=8
+          KindStringKeyword [16, 23), i=8, next=0
+    KindInterfaceDeclaration [25, 51), i=9, next=15
+      KindIdentifier "Y" [35, 37), i=10, next=11
+      NodeList [39, 49), i=11, next=0
+        KindPropertySignature [39, 49), i=12, next=0
+          KindIdentifier "y" [39, 41), i=13, next=14
+          KindNumberKeyword [42, 49), i=14, next=0
+    KindInterfaceDeclaration [51, 79), i=15, next=22
+      KindIdentifier "Z" [61, 63), i=16, next=17
+      NodeList [65, 77), i=17, next=0
+        KindPropertySignature [65, 77), i=18, next=0
+          KindIdentifier "z" [65, 67), i=19, next=20
+          KindQuestionToken [67, 68), i=20, next=21
+          KindBooleanKeyword [69, 77), i=21, next=0
+    KindTypeAliasDeclaration [79, 97), i=22, next=30
+      KindIdentifier "XY" [85, 88), i=23, next=24
+      KindIntersectionType [90, 96), i=24, next=0
+        NodeList [90, 96), i=25, next=0
+          KindTypeReference [90, 92), i=26, next=28
+            KindIdentifier "X" [90, 92), i=27, next=0
+          KindTypeReference [94, 96), i=28, next=0
+            KindIdentifier "Y" [94, 96), i=29, next=0
+    KindVariableStatement [97, 129), i=30, next=45
+      KindVariableDeclarationList [97, 128), i=31, next=0
+        NodeList [103, 128), i=32, next=0
+          KindVariableDeclaration [103, 128), i=33, next=0
+            KindIdentifier "xy" [103, 106), i=34, next=35
+            KindTypeReference [107, 110), i=35, next=37
+              KindIdentifier "XY" [107, 110), i=36, next=0
+            KindObjectLiteralExpression [112, 128), i=37, next=0
+              NodeList [114, 127), i=38, next=0
+                KindPropertyAssignment [114, 120), i=39, next=42
+                  KindIdentifier "x" [114, 115), i=40, next=41
+                  KindStringLiteral "x" [116, 120), i=41, next=0
+                KindPropertyAssignment [121, 127), i=42, next=0
+                  KindIdentifier "y" [121, 123), i=43, next=44
+                  KindNumericLiteral [124, 127), i=44, next=0
+    KindVariableStatement [129, 148), i=45, next=53
+      KindVariableDeclarationList [129, 147), i=46, next=0
+        NodeList [136, 147), i=47, next=0
+          KindVariableDeclaration [136, 147), i=48, next=0
+            KindIdentifier "z1" [136, 139), i=49, next=50
+            KindTypeReference [140, 142), i=50, next=52
+              KindIdentifier "Z" [140, 142), i=51, next=0
+            KindIdentifier "xy" [144, 147), i=52, next=0
+    KindInterfaceDeclaration [148, 254), i=53, next=62
+      KindIdentifier "ViewStyle" [200, 210), i=54, next=55
+      NodeList [212, 252), i=55, next=0
+        KindPropertySignature [212, 229), i=56, next=59
+          KindIdentifier "view" [212, 221), i=57, next=58
+          KindNumberKeyword [222, 229), i=58, next=0
+        KindPropertySignature [229, 252), i=59, next=0
+          KindIdentifier "styleMedia" [229, 244), i=60, next=61
+          KindStringKeyword [245, 252), i=61, next=0
+    KindTypeAliasDeclaration [254, 294), i=62, next=76
+      KindIdentifier "Brand" [259, 265), i=63, next=64
+      NodeList [266, 267), i=64, next=67
+        KindTypeParameter [266, 267), i=65, next=0
+          KindIdentifier "T" [266, 267), i=66, next=0
+      KindIntersectionType [270, 294), i=67, next=0
+        NodeList [270, 294), i=68, next=0
+          KindNumberKeyword [270, 277), i=69, next=70
+          KindTypeLiteral [279, 294), i=70, next=0
+            NodeList [281, 292), i=71, next=0
+              KindPropertySignature [281, 292), i=72, next=0
+                KindIdentifier "__brand" [281, 289), i=73, next=74
+                KindTypeReference [290, 292), i=74, next=0
+                  KindIdentifier "T" [290, 292), i=75, next=0
+    KindFunctionDeclaration [294, 401), i=76, next=111
+      NodeList [294, 302), i=77, next=79
+        KindDeclareKeyword [294, 302), i=78, next=0
+      KindIdentifier "create" [311, 318), i=79, next=80
+      NodeList [319, 355), i=80, next=92
+        KindTypeParameter [319, 355), i=81, next=0
+          KindIdentifier "T" [319, 320), i=82, next=83
+          KindTypeLiteral [328, 355), i=83, next=0
+            NodeList [330, 353), i=84, next=0
+              KindIndexSignature [330, 353), i=85, next=0
+                NodeList [332, 341), i=86, next=90
+                  KindParameter [332, 341), i=87, next=0
+                    KindIdentifier "s" [332, 333), i=88, next=89
+                    KindStringKeyword [334, 341), i=89, next=0
+                KindTypeReference [343, 353), i=90, next=0
+                  KindIdentifier "ViewStyle" [343, 353), i=91, next=0
+      NodeList [357, 366), i=92, next=97
+        KindParameter [357, 366), i=93, next=0
+          KindIdentifier "styles" [357, 363), i=94, next=95
+          KindTypeReference [364, 366), i=95, next=0
+            KindIdentifier "T" [364, 366), i=96, next=0
+      KindMappedType [368, 400), i=97, next=0
+        KindTypeParameter [372, 384), i=98, next=103
+          KindIdentifier "P" [372, 373), i=99, next=100
+          KindTypeOperator [376, 384), i=100, next=0
+            KindTypeReference [382, 384), i=101, next=0
+              KindIdentifier "T" [382, 384), i=102, next=0
+        KindTypeReference [386, 398), i=103, next=0
+          KindIdentifier "Brand" [386, 392), i=104, next=105
+          NodeList [393, 397), i=105, next=0
+            KindIndexedAccessType [393, 397), i=106, next=0
+              KindTypeReference [393, 394), i=107, next=109
+                KindIdentifier "T" [393, 394), i=108, next=0
+              KindTypeReference [395, 396), i=109, next=0
+                KindIdentifier "P" [395, 396), i=110, next=0
+    KindVariableStatement [401, 468), i=111, next=131
+      KindVariableDeclarationList [401, 467), i=112, next=0
+        NodeList [407, 467), i=113, next=0
+          KindVariableDeclaration [407, 467), i=114, next=0
+            KindIdentifier "wrapped" [407, 415), i=115, next=116
+            KindCallExpression [417, 467), i=116, next=0
+              KindIdentifier "create" [417, 424), i=117, next=118
+              NodeList [425, 466), i=118, next=0
+                KindObjectLiteralExpression [425, 466), i=119, next=0
+                  NodeList [426, 464), i=120, next=0
+                    KindPropertyAssignment [426, 464), i=121, next=0
+                      KindIdentifier "first" [426, 432), i=122, next=123
+                      KindObjectLiteralExpression [433, 464), i=123, next=0
+                        NodeList [435, 462), i=124, next=0
+                          KindPropertyAssignment [435, 443), i=125, next=128
+                            KindIdentifier "view" [435, 440), i=126, next=127
+                            KindNumericLiteral [441, 443), i=127, next=0
+                          KindPropertyAssignment [444, 462), i=128, next=0
+                            KindIdentifier "styleMedia" [444, 455), i=129, next=130
+                            KindStringLiteral "???" [456, 462), i=130, next=0
+    KindVariableStatement [468, 504), i=131, next=0
+      KindVariableDeclarationList [468, 504), i=132, next=0
+        NodeList [474, 504), i=133, next=0
+          KindVariableDeclaration [474, 504), i=134, next=0
+            KindIdentifier "vs" [474, 477), i=135, next=136
+            KindTypeReference [478, 488), i=136, next=138
+              KindIdentifier "ViewStyle" [478, 488), i=137, next=0
+            KindPropertyAccessExpression [490, 504), i=138, next=0
+              KindIdentifier "wrapped" [490, 498), i=139, next=140
+              KindIdentifier "first" [499, 504), i=140, next=0

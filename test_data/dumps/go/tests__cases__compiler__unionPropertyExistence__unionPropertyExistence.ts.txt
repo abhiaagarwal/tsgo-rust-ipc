@@ -1,0 +1,136 @@
+KindSourceFile [0, 487), i=1, next=0
+  NodeList [0, 486), i=2, next=0
+    KindInterfaceDeclaration [0, 74), i=3, next=15
+      KindIdentifier "A" [9, 11), i=4, next=5
+      NodeList [13, 72), i=5, next=0
+        KindPropertySignature [13, 32), i=6, next=9
+          KindIdentifier "inAll" [13, 23), i=7, next=8
+          KindStringKeyword [24, 31), i=8, next=0
+        KindPropertySignature [32, 52), i=9, next=12
+          KindIdentifier "notInB" [32, 43), i=10, next=11
+          KindStringKeyword [44, 51), i=11, next=0
+        KindPropertySignature [52, 72), i=12, next=0
+          KindIdentifier "notInC" [52, 63), i=13, next=14
+          KindStringKeyword [64, 71), i=14, next=0
+    KindInterfaceDeclaration [74, 152), i=15, next=27
+      KindIdentifier "B" [85, 87), i=16, next=17
+      NodeList [89, 150), i=17, next=0
+        KindPropertySignature [89, 109), i=18, next=21
+          KindIdentifier "inAll" [89, 99), i=19, next=20
+          KindBooleanKeyword [100, 108), i=20, next=0
+        KindPropertySignature [109, 130), i=21, next=24
+          KindIdentifier "onlyInB" [109, 121), i=22, next=23
+          KindNumberKeyword [122, 129), i=23, next=0
+        KindPropertySignature [130, 150), i=24, next=0
+          KindIdentifier "notInC" [130, 141), i=25, next=26
+          KindStringKeyword [142, 149), i=26, next=0
+    KindInterfaceDeclaration [152, 208), i=27, next=36
+      KindIdentifier "C" [163, 165), i=28, next=29
+      NodeList [167, 206), i=29, next=0
+        KindPropertySignature [167, 186), i=30, next=33
+          KindIdentifier "inAll" [167, 177), i=31, next=32
+          KindNumberKeyword [178, 185), i=32, next=0
+        KindPropertySignature [186, 206), i=33, next=0
+          KindIdentifier "notInB" [186, 197), i=34, next=35
+          KindStringKeyword [198, 205), i=35, next=0
+    KindTypeAliasDeclaration [208, 226), i=36, next=44
+      KindIdentifier "AB" [214, 217), i=37, next=38
+      KindUnionType [219, 225), i=38, next=0
+        NodeList [219, 225), i=39, next=0
+          KindTypeReference [219, 221), i=40, next=42
+            KindIdentifier "A" [219, 221), i=41, next=0
+          KindTypeReference [223, 225), i=42, next=0
+            KindIdentifier "B" [223, 225), i=43, next=0
+    KindTypeAliasDeclaration [226, 245), i=44, next=52
+      KindIdentifier "ABC" [231, 235), i=45, next=46
+      KindUnionType [237, 244), i=46, next=0
+        NodeList [237, 244), i=47, next=0
+          KindTypeReference [237, 239), i=48, next=50
+            KindIdentifier "C" [237, 239), i=49, next=0
+          KindTypeReference [241, 244), i=50, next=0
+            KindIdentifier "AB" [241, 244), i=51, next=0
+    KindVariableStatement [245, 258), i=52, next=59
+      KindVariableDeclarationList [245, 257), i=53, next=0
+        NodeList [250, 257), i=54, next=0
+          KindVariableDeclaration [250, 257), i=55, next=0
+            KindIdentifier "ab" [250, 253), i=56, next=57
+            KindTypeReference [254, 257), i=57, next=0
+              KindIdentifier "AB" [254, 257), i=58, next=0
+    KindVariableStatement [258, 272), i=59, next=66
+      KindVariableDeclarationList [258, 271), i=60, next=0
+        NodeList [262, 271), i=61, next=0
+          KindVariableDeclaration [262, 271), i=62, next=0
+            KindIdentifier "abc" [262, 266), i=63, next=64
+            KindTypeReference [267, 271), i=64, next=0
+              KindIdentifier "ABC" [267, 271), i=65, next=0
+    KindVariableStatement [272, 305), i=66, next=79
+      NodeList [272, 281), i=67, next=69
+        KindDeclareKeyword [272, 281), i=68, next=0
+      KindVariableDeclarationList [281, 304), i=69, next=0
+        NodeList [287, 304), i=70, next=0
+          KindVariableDeclaration [287, 304), i=71, next=0
+            KindIdentifier "x" [287, 289), i=72, next=73
+            KindUnionType [290, 304), i=73, next=0
+              NodeList [290, 304), i=74, next=0
+                KindLiteralType [290, 296), i=75, next=77
+                  KindStringLiteral "foo" [290, 296), i=76, next=0
+                KindLiteralType [298, 304), i=77, next=0
+                  KindStringLiteral "bar" [298, 304), i=78, next=0
+    KindVariableStatement [305, 336), i=79, next=92
+      NodeList [305, 313), i=80, next=82
+        KindDeclareKeyword [305, 313), i=81, next=0
+      KindVariableDeclarationList [313, 335), i=82, next=0
+        NodeList [319, 335), i=83, next=0
+          KindVariableDeclaration [319, 335), i=84, next=0
+            KindIdentifier "bFoo" [319, 324), i=85, next=86
+            KindUnionType [325, 335), i=86, next=0
+              NodeList [325, 335), i=87, next=0
+                KindTypeReference [325, 327), i=88, next=90
+                  KindIdentifier "B" [325, 327), i=89, next=0
+                KindLiteralType [329, 335), i=90, next=0
+                  KindStringLiteral "foo" [329, 335), i=91, next=0
+    KindExpressionStatement [336, 347), i=92, next=97
+      KindCallExpression [336, 346), i=93, next=0
+        KindPropertyAccessExpression [336, 344), i=94, next=0
+          KindIdentifier "x" [336, 339), i=95, next=96
+          KindIdentifier "nope" [340, 344), i=96, next=0
+    KindExpressionStatement [347, 361), i=97, next=101
+      KindPropertyAccessExpression [347, 360), i=98, next=0
+        KindIdentifier "bFoo" [347, 352), i=99, next=100
+        KindIdentifier "onlyInB" [353, 360), i=100, next=0
+    KindExpressionStatement [361, 371), i=101, next=105
+      KindPropertyAccessExpression [361, 370), i=102, next=0
+        KindIdentifier "x" [361, 363), i=103, next=104
+        KindIdentifier "length" [364, 370), i=104, next=0
+    KindExpressionStatement [371, 390), i=105, next=109
+      KindPropertyAccessExpression [371, 389), i=106, next=0
+        KindIdentifier "bFoo" [371, 382), i=107, next=108
+        KindIdentifier "length" [383, 389), i=108, next=0
+    KindExpressionStatement [390, 403), i=109, next=113
+      KindPropertyAccessExpression [390, 402), i=110, next=0
+        KindIdentifier "ab" [390, 394), i=111, next=112
+        KindIdentifier "onlyInB" [395, 402), i=112, next=0
+    KindExpressionStatement [403, 415), i=113, next=117
+      KindPropertyAccessExpression [403, 414), i=114, next=0
+        KindIdentifier "ab" [403, 407), i=115, next=116
+        KindIdentifier "notInC" [408, 414), i=116, next=0
+    KindExpressionStatement [415, 433), i=117, next=121
+      KindPropertyAccessExpression [415, 432), i=118, next=0
+        KindIdentifier "abc" [415, 425), i=119, next=120
+        KindIdentifier "notInC" [426, 432), i=120, next=0
+    KindExpressionStatement [433, 444), i=121, next=125
+      KindPropertyAccessExpression [433, 443), i=122, next=0
+        KindIdentifier "ab" [433, 436), i=123, next=124
+        KindIdentifier "notInB" [437, 443), i=124, next=0
+    KindExpressionStatement [444, 456), i=125, next=129
+      KindPropertyAccessExpression [444, 455), i=126, next=0
+        KindIdentifier "abc" [444, 448), i=127, next=128
+        KindIdentifier "notInB" [449, 455), i=128, next=0
+    KindExpressionStatement [456, 468), i=129, next=133
+      KindPropertyAccessExpression [456, 467), i=130, next=0
+        KindIdentifier "abc" [456, 461), i=131, next=132
+        KindIdentifier "inAll" [462, 467), i=132, next=0
+    KindExpressionStatement [468, 486), i=133, next=0
+      KindPropertyAccessExpression [468, 485), i=134, next=0
+        KindIdentifier "abc" [468, 478), i=135, next=136
+        KindIdentifier "inNone" [479, 485), i=136, next=0

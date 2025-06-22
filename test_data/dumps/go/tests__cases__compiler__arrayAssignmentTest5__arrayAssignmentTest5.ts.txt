@@ -1,0 +1,167 @@
+KindSourceFile [0, 1106), i=1, next=0
+  NodeList [0, 1104), i=2, next=0
+    KindModuleDeclaration [0, 1104), i=3, next=0
+      KindIdentifier "Test" [6, 11), i=4, next=5
+      KindModuleBlock [11, 1104), i=5, next=0
+        NodeList [13, 1101), i=6, next=0
+          KindInterfaceDeclaration [13, 44), i=7, next=9
+            KindIdentifier "IState" [28, 35), i=8, next=0
+          KindInterfaceDeclaration [44, 104), i=9, next=15
+            KindIdentifier "IToken" [59, 66), i=10, next=11
+            NodeList [68, 97), i=11, next=0
+              KindPropertySignature [68, 97), i=12, next=0
+                KindIdentifier "startIndex" [68, 88), i=13, next=14
+                KindNumberKeyword [89, 96), i=14, next=0
+          KindInterfaceDeclaration [104, 179), i=15, next=27
+            KindIdentifier "IStateToken" [119, 131), i=16, next=17
+            NodeList [131, 146), i=17, next=22
+              KindHeritageClause [131, 146), i=18, next=0
+                NodeList [139, 146), i=19, next=0
+                  KindExpressionWithTypeArguments [139, 146), i=20, next=0
+                    KindIdentifier "IToken" [139, 146), i=21, next=0
+            NodeList [148, 172), i=22, next=0
+              KindPropertySignature [148, 172), i=23, next=0
+                KindIdentifier "state" [148, 163), i=24, next=25
+                KindTypeReference [164, 171), i=25, next=0
+                  KindIdentifier "IState" [164, 171), i=26, next=0
+          KindInterfaceDeclaration [179, 269), i=27, next=39
+            KindIdentifier "ILineTokens" [194, 206), i=28, next=29
+            NodeList [208, 262), i=29, next=0
+              KindPropertySignature [208, 235), i=30, next=35
+                KindIdentifier "tokens" [208, 224), i=31, next=32
+                KindArrayType [225, 234), i=32, next=0
+                  KindTypeReference [225, 232), i=33, next=0
+                    KindIdentifier "IToken" [225, 232), i=34, next=0
+              KindPropertySignature [235, 262), i=35, next=0
+                KindIdentifier "endState" [235, 253), i=36, next=37
+                KindTypeReference [254, 261), i=37, next=0
+                  KindIdentifier "IState" [254, 261), i=38, next=0
+          KindInterfaceDeclaration [269, 301), i=39, next=41
+            KindIdentifier "IAction" [284, 292), i=40, next=0
+          KindInterfaceDeclaration [301, 480), i=41, next=74
+            KindIdentifier "IMode" [316, 322), i=42, next=43
+            NodeList [324, 473), i=43, next=0
+              KindMethodSignature [324, 392), i=44, next=59
+                KindIdentifier "onEnter" [324, 341), i=45, next=46
+                NodeList [342, 382), i=46, next=57
+                  KindParameter [342, 353), i=47, next=50
+                    KindIdentifier "line" [342, 346), i=48, next=49
+                    KindStringKeyword [347, 353), i=49, next=0
+                  KindParameter [354, 367), i=50, next=54
+                    KindIdentifier "state" [354, 360), i=51, next=52
+                    KindTypeReference [361, 367), i=52, next=0
+                      KindIdentifier "IState" [361, 367), i=53, next=0
+                  KindParameter [368, 382), i=54, next=0
+                    KindIdentifier "offset" [368, 375), i=55, next=56
+                    KindNumberKeyword [376, 382), i=56, next=0
+                KindTypeReference [384, 391), i=57, next=0
+                  KindIdentifier "IAction" [384, 391), i=58, next=0
+              KindMethodSignature [392, 473), i=59, next=0
+                KindIdentifier "tokenize" [392, 410), i=60, next=61
+                NodeList [411, 459), i=61, next=72
+                  KindParameter [411, 422), i=62, next=65
+                    KindIdentifier "line" [411, 415), i=63, next=64
+                    KindStringKeyword [416, 422), i=64, next=0
+                  KindParameter [423, 436), i=65, next=69
+                    KindIdentifier "state" [423, 429), i=66, next=67
+                    KindTypeReference [430, 436), i=67, next=0
+                      KindIdentifier "IState" [430, 436), i=68, next=0
+                  KindParameter [437, 459), i=69, next=0
+                    KindIdentifier "includeStates" [437, 451), i=70, next=71
+                    KindBooleanKeyword [452, 459), i=71, next=0
+                KindTypeReference [461, 472), i=72, next=0
+                  KindIdentifier "ILineTokens" [461, 472), i=73, next=0
+          KindClassDeclaration [480, 1101), i=74, next=0
+            NodeList [480, 492), i=75, next=77
+              KindExportKeyword [480, 492), i=76, next=0
+            KindIdentifier "Bug" [498, 502), i=77, next=78
+            NodeList [502, 519), i=78, next=83
+              KindHeritageClause [502, 519), i=79, next=0
+                NodeList [513, 519), i=80, next=0
+                  KindExpressionWithTypeArguments [513, 519), i=81, next=0
+                    KindIdentifier "IMode" [513, 519), i=82, next=0
+            NodeList [521, 1094), i=83, next=0
+              KindMethodDeclaration [521, 968), i=84, next=147
+                NodeList [521, 537), i=85, next=87
+                  KindPublicKeyword [521, 537), i=86, next=0
+                KindIdentifier "onEnter" [537, 545), i=87, next=88
+                NodeList [546, 586), i=88, next=99
+                  KindParameter [546, 557), i=89, next=92
+                    KindIdentifier "line" [546, 550), i=90, next=91
+                    KindStringKeyword [551, 557), i=91, next=0
+                  KindParameter [558, 571), i=92, next=96
+                    KindIdentifier "state" [558, 564), i=93, next=94
+                    KindTypeReference [565, 571), i=94, next=0
+                      KindIdentifier "IState" [565, 571), i=95, next=0
+                  KindParameter [572, 586), i=96, next=0
+                    KindIdentifier "offset" [572, 579), i=97, next=98
+                    KindNumberKeyword [580, 586), i=98, next=0
+                KindTypeReference [588, 595), i=99, next=101
+                  KindIdentifier "IAction" [588, 595), i=100, next=0
+                KindBlock [595, 968), i=101, next=0
+                  NodeList [597, 957), i=102, next=0
+                    KindVariableStatement [597, 672), i=103, next=118
+                      KindVariableDeclarationList [597, 671), i=104, next=0
+                        NodeList [614, 671), i=105, next=0
+                          KindVariableDeclaration [614, 671), i=106, next=0
+                            KindIdentifier "lineTokens" [614, 625), i=107, next=108
+                            KindTypeReference [626, 637), i=108, next=110
+                              KindIdentifier "ILineTokens" [626, 637), i=109, next=0
+                            KindCallExpression [638, 671), i=110, next=0
+                              KindPropertyAccessExpression [638, 652), i=111, next=114
+                                KindThisKeyword [638, 643), i=112, next=113
+                                KindIdentifier "tokenize" [644, 652), i=113, next=0
+                              NodeList [653, 670), i=114, next=0
+                                KindIdentifier "line" [653, 657), i=115, next=116
+                                KindIdentifier "state" [658, 664), i=116, next=117
+                                KindTrueKeyword [665, 670), i=117, next=0
+                    KindVariableStatement [672, 730), i=118, next=129
+                      KindVariableDeclarationList [672, 729), i=119, next=0
+                        NodeList [689, 729), i=120, next=0
+                          KindVariableDeclaration [689, 729), i=121, next=0
+                            KindIdentifier "tokens" [689, 696), i=122, next=123
+                            KindArrayType [697, 710), i=123, next=126
+                              KindTypeReference [697, 708), i=124, next=0
+                                KindIdentifier "IStateToken" [697, 708), i=125, next=0
+                            KindPropertyAccessExpression [711, 729), i=126, next=0
+                              KindIdentifier "lineTokens" [711, 722), i=127, next=128
+                              KindIdentifier "tokens" [723, 729), i=128, next=0
+                    KindIfStatement [730, 957), i=129, next=0
+                      KindBinaryExpression [748, 767), i=130, next=136
+                        KindPropertyAccessExpression [748, 761), i=131, next=134
+                          KindIdentifier "tokens" [748, 754), i=132, next=133
+                          KindIdentifier "length" [755, 761), i=133, next=0
+                        KindEqualsEqualsEqualsToken [761, 765), i=134, next=135
+                        KindNumericLiteral [765, 767), i=135, next=0
+                      KindBlock [768, 957), i=136, next=0
+                        NodeList [770, 830), i=137, next=0
+                          KindReturnStatement [770, 830), i=138, next=0
+                            KindCallExpression [794, 829), i=139, next=0
+                              KindPropertyAccessExpression [794, 807), i=140, next=143
+                                KindThisKeyword [794, 799), i=141, next=142
+                                KindIdentifier "onEnter" [800, 807), i=142, next=0
+                              NodeList [808, 828), i=143, next=0
+                                KindIdentifier "line" [808, 812), i=144, next=145
+                                KindIdentifier "tokens" [813, 820), i=145, next=146
+                                KindIdentifier "offset" [821, 828), i=146, next=0
+              KindMethodDeclaration [968, 1094), i=147, next=0
+                NodeList [968, 984), i=148, next=150
+                  KindPublicKeyword [968, 984), i=149, next=0
+                KindIdentifier "tokenize" [984, 993), i=150, next=151
+                NodeList [994, 1042), i=151, next=162
+                  KindParameter [994, 1005), i=152, next=155
+                    KindIdentifier "line" [994, 998), i=153, next=154
+                    KindStringKeyword [999, 1005), i=154, next=0
+                  KindParameter [1006, 1019), i=155, next=159
+                    KindIdentifier "state" [1006, 1012), i=156, next=157
+                    KindTypeReference [1013, 1019), i=157, next=0
+                      KindIdentifier "IState" [1013, 1019), i=158, next=0
+                  KindParameter [1020, 1042), i=159, next=0
+                    KindIdentifier "includeStates" [1020, 1034), i=160, next=161
+                    KindBooleanKeyword [1035, 1042), i=161, next=0
+                KindTypeReference [1044, 1055), i=162, next=164
+                  KindIdentifier "ILineTokens" [1044, 1055), i=163, next=0
+                KindBlock [1055, 1094), i=164, next=0
+                  NodeList [1057, 1083), i=165, next=0
+                    KindReturnStatement [1057, 1083), i=166, next=0
+                      KindNullKeyword [1077, 1082), i=167, next=0

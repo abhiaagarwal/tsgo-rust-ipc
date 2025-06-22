@@ -1,0 +1,174 @@
+KindSourceFile [0, 984), i=1, next=0
+  NodeList [0, 982), i=2, next=0
+    KindInterfaceDeclaration [0, 76), i=3, next=21
+      KindIdentifier "MsgConstructor" [9, 24), i=4, next=5
+      NodeList [25, 42), i=5, next=10
+        KindTypeParameter [25, 42), i=6, next=0
+          KindIdentifier "T" [25, 26), i=7, next=8
+          KindTypeReference [34, 42), i=8, next=0
+            KindIdentifier "Message" [34, 42), i=9, next=0
+      NodeList [45, 73), i=10, next=0
+        KindConstructSignature [45, 73), i=11, next=0
+          NodeList [53, 68), i=12, next=19
+            KindParameter [53, 68), i=13, next=0
+              KindIdentifier "data" [53, 57), i=14, next=15
+              KindTypeReference [58, 68), i=15, next=0
+                KindIdentifier "Array" [58, 64), i=16, next=17
+                NodeList [65, 67), i=17, next=0
+                  KindTypeLiteral [65, 67), i=18, next=0
+          KindTypeReference [70, 72), i=19, next=0
+            KindIdentifier "T" [70, 72), i=20, next=0
+    KindClassDeclaration [76, 138), i=21, next=31
+      KindIdentifier "Message" [83, 91), i=22, next=23
+      NodeList [93, 135), i=23, next=0
+        KindMethodDeclaration [93, 135), i=24, next=0
+          KindIdentifier "clone" [93, 102), i=25, next=26
+          KindThisType [105, 110), i=26, next=27
+          KindBlock [110, 135), i=27, next=0
+            NodeList [112, 130), i=28, next=0
+              KindReturnStatement [112, 130), i=29, next=0
+                KindThisKeyword [124, 129), i=30, next=0
+    KindInterfaceDeclaration [138, 232), i=31, next=49
+      KindIdentifier "MessageList" [149, 161), i=32, next=33
+      NodeList [162, 179), i=33, next=38
+        KindTypeParameter [162, 179), i=34, next=0
+          KindIdentifier "T" [162, 163), i=35, next=36
+          KindTypeReference [171, 179), i=36, next=0
+            KindIdentifier "Message" [171, 179), i=37, next=0
+      NodeList [180, 196), i=38, next=43
+        KindHeritageClause [180, 196), i=39, next=0
+          NodeList [188, 196), i=40, next=0
+            KindExpressionWithTypeArguments [188, 196), i=41, next=0
+              KindIdentifier "Message" [188, 196), i=42, next=0
+      NodeList [198, 229), i=43, next=0
+        KindMethodSignature [198, 229), i=44, next=0
+          KindIdentifier "methodOnMessageList" [198, 221), i=45, next=46
+          KindArrayType [224, 228), i=46, next=0
+            KindTypeReference [224, 226), i=47, next=0
+              KindIdentifier "T" [224, 226), i=48, next=0
+    KindFunctionDeclaration [232, 327), i=49, next=71
+      KindIdentifier "fetchMsg" [244, 253), i=50, next=51
+      NodeList [254, 271), i=51, next=56
+        KindTypeParameter [254, 271), i=52, next=0
+          KindIdentifier "V" [254, 255), i=53, next=54
+          KindTypeReference [263, 271), i=54, next=0
+            KindIdentifier "Message" [263, 271), i=55, next=0
+      NodeList [273, 301), i=56, next=64
+        KindParameter [273, 301), i=57, next=0
+          KindIdentifier "protoCtor" [273, 282), i=58, next=59
+          KindTypeReference [283, 301), i=59, next=0
+            KindIdentifier "MsgConstructor" [283, 298), i=60, next=61
+            NodeList [299, 300), i=61, next=0
+              KindTypeReference [299, 300), i=62, next=0
+                KindIdentifier "V" [299, 300), i=63, next=0
+      KindTypeReference [303, 305), i=64, next=66
+        KindIdentifier "V" [303, 305), i=65, next=0
+      KindBlock [305, 327), i=66, next=0
+        NodeList [307, 324), i=67, next=0
+          KindReturnStatement [307, 324), i=68, next=0
+            KindNonNullExpression [317, 323), i=69, next=0
+              KindNullKeyword [317, 322), i=70, next=0
+    KindClassDeclaration [327, 641), i=71, next=129
+      KindIdentifier "DataProvider" [336, 349), i=72, next=73
+      NodeList [350, 393), i=73, next=85
+        KindTypeParameter [350, 367), i=74, next=78
+          KindIdentifier "T" [350, 351), i=75, next=76
+          KindTypeReference [359, 367), i=76, next=0
+            KindIdentifier "Message" [359, 367), i=77, next=0
+        KindTypeParameter [368, 393), i=78, next=0
+          KindIdentifier "U" [368, 370), i=79, next=80
+          KindTypeReference [378, 393), i=80, next=0
+            KindIdentifier "MessageList" [378, 390), i=81, next=82
+            NodeList [391, 392), i=82, next=0
+              KindTypeReference [391, 392), i=83, next=0
+                KindIdentifier "T" [391, 392), i=84, next=0
+      NodeList [396, 638), i=85, next=0
+        KindConstructor [396, 525), i=86, next=109
+          NodeList [412, 516), i=87, next=108
+            KindParameter [412, 461), i=88, next=98
+              NodeList [412, 434), i=89, next=92
+                KindPrivateKeyword [412, 425), i=90, next=91
+                KindReadonlyKeyword [425, 434), i=91, next=0
+              KindIdentifier "message" [434, 442), i=92, next=93
+              KindTypeReference [443, 461), i=93, next=0
+                KindIdentifier "MsgConstructor" [443, 458), i=94, next=95
+                NodeList [459, 460), i=95, next=0
+                  KindTypeReference [459, 460), i=96, next=0
+                    KindIdentifier "T" [459, 460), i=97, next=0
+            KindParameter [462, 515), i=98, next=0
+              NodeList [462, 484), i=99, next=102
+                KindPrivateKeyword [462, 475), i=100, next=101
+                KindReadonlyKeyword [475, 484), i=101, next=0
+              KindIdentifier "messageList" [484, 496), i=102, next=103
+              KindTypeReference [497, 515), i=103, next=0
+                KindIdentifier "MsgConstructor" [497, 512), i=104, next=105
+                NodeList [513, 514), i=105, next=0
+                  KindTypeReference [513, 514), i=106, next=0
+                    KindIdentifier "U" [513, 514), i=107, next=0
+          KindBlock [521, 525), i=108, next=0
+        KindMethodDeclaration [525, 638), i=109, next=0
+          KindIdentifier "fetch" [525, 536), i=110, next=111
+          KindBlock [538, 638), i=111, next=0
+            NodeList [540, 633), i=112, next=0
+              KindVariableStatement [540, 593), i=113, next=124
+                KindVariableDeclarationList [540, 592), i=114, next=0
+                  NodeList [551, 592), i=115, next=0
+                    KindVariableDeclaration [551, 592), i=116, next=0
+                      KindIdentifier "messageList" [551, 563), i=117, next=118
+                      KindCallExpression [565, 592), i=118, next=0
+                        KindIdentifier "fetchMsg" [565, 574), i=119, next=120
+                        NodeList [575, 591), i=120, next=0
+                          KindPropertyAccessExpression [575, 591), i=121, next=0
+                            KindThisKeyword [575, 579), i=122, next=123
+                            KindIdentifier "messageList" [580, 591), i=123, next=0
+              KindExpressionStatement [593, 633), i=124, next=0
+                KindCallExpression [593, 632), i=125, next=0
+                  KindPropertyAccessExpression [593, 630), i=126, next=0
+                    KindIdentifier "messageList" [593, 610), i=127, next=128
+                    KindIdentifier "methodOnMessageList" [611, 630), i=128, next=0
+    KindFunctionDeclaration [641, 982), i=129, next=0
+      KindIdentifier "f" [795, 797), i=130, next=131
+      NodeList [798, 857), i=131, next=147
+        KindTypeParameter [798, 835), i=132, next=143
+          KindIdentifier "U" [798, 803), i=133, next=134
+          KindTypeLiteral [811, 835), i=134, next=0
+            NodeList [813, 834), i=135, next=0
+              KindPropertySignature [813, 834), i=136, next=0
+                KindIdentifier "TType" [813, 818), i=137, next=138
+                KindTypeReference [819, 834), i=138, next=0
+                  KindIdentifier "MessageList" [819, 831), i=139, next=140
+                  NodeList [832, 833), i=140, next=0
+                    KindTypeReference [832, 833), i=141, next=0
+                      KindIdentifier "T" [832, 833), i=142, next=0
+        KindTypeParameter [836, 857), i=143, next=0
+          KindIdentifier "T" [836, 841), i=144, next=145
+          KindTypeReference [849, 857), i=145, next=0
+            KindIdentifier "Message" [849, 857), i=146, next=0
+      NodeList [861, 928), i=147, next=165
+        KindParameter [861, 887), i=148, next=155
+          KindIdentifier "message" [861, 868), i=149, next=150
+          KindTypeReference [869, 887), i=150, next=0
+            KindIdentifier "MsgConstructor" [869, 884), i=151, next=152
+            NodeList [885, 886), i=152, next=0
+              KindTypeReference [885, 886), i=153, next=0
+                KindIdentifier "T" [885, 886), i=154, next=0
+        KindParameter [888, 928), i=155, next=0
+          KindIdentifier "messageList" [888, 900), i=156, next=157
+          KindTypeReference [901, 928), i=157, next=0
+            KindIdentifier "MsgConstructor" [901, 916), i=158, next=159
+            NodeList [917, 927), i=159, next=0
+              KindIndexedAccessType [917, 927), i=160, next=0
+                KindTypeReference [917, 918), i=161, next=163
+                  KindIdentifier "U" [917, 918), i=162, next=0
+                KindLiteralType [919, 926), i=163, next=0
+                  KindStringLiteral "TType" [919, 926), i=164, next=0
+      KindBlock [929, 982), i=165, next=0
+        NodeList [931, 979), i=166, next=0
+          KindExpressionStatement [931, 979), i=167, next=0
+            KindCallExpression [931, 978), i=168, next=0
+              KindPropertyAccessExpression [931, 976), i=169, next=0
+                KindCallExpression [931, 956), i=170, next=174
+                  KindIdentifier "fetchMsg" [931, 943), i=171, next=172
+                  NodeList [944, 955), i=172, next=0
+                    KindIdentifier "messageList" [944, 955), i=173, next=0
+                KindIdentifier "methodOnMessageList" [957, 976), i=174, next=0

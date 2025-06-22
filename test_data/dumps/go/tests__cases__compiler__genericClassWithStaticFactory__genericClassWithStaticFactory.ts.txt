@@ -1,0 +1,782 @@
+KindSourceFile [0, 3928), i=1, next=0
+  NodeList [0, 3928), i=2, next=0
+    KindModuleDeclaration [0, 3928), i=3, next=0
+      KindIdentifier "Editor" [6, 13), i=4, next=5
+      KindModuleBlock [13, 3928), i=5, next=0
+        NodeList [15, 3926), i=6, next=0
+          KindClassDeclaration [15, 3050), i=7, next=97
+            NodeList [15, 27), i=8, next=10
+              KindExportKeyword [15, 27), i=9, next=0
+            KindIdentifier "List" [33, 38), i=10, next=11
+            NodeList [39, 40), i=11, next=14
+              KindTypeParameter [39, 40), i=12, next=0
+                KindIdentifier "T" [39, 40), i=13, next=0
+            NodeList [43, 3044), i=14, next=0
+              KindPropertyDeclaration [43, 73), i=15, next=24
+                NodeList [43, 58), i=16, next=18
+                  KindPublicKeyword [43, 58), i=17, next=0
+                KindIdentifier "next" [58, 63), i=18, next=19
+                KindTypeReference [64, 72), i=19, next=0
+                  KindIdentifier "List" [64, 69), i=20, next=21
+                  NodeList [70, 71), i=21, next=0
+                    KindTypeReference [70, 71), i=22, next=0
+                      KindIdentifier "T" [70, 71), i=23, next=0
+              KindPropertyDeclaration [73, 103), i=24, next=33
+                NodeList [73, 88), i=25, next=27
+                  KindPublicKeyword [73, 88), i=26, next=0
+                KindIdentifier "prev" [88, 93), i=27, next=28
+                KindTypeReference [94, 102), i=28, next=0
+                  KindIdentifier "List" [94, 99), i=29, next=30
+                  NodeList [100, 101), i=30, next=0
+                    KindTypeReference [100, 101), i=31, next=0
+                      KindIdentifier "T" [100, 101), i=32, next=0
+              KindPropertyDeclaration [103, 148), i=33, next=42
+                NodeList [103, 119), i=34, next=36
+                  KindPrivateKeyword [103, 119), i=35, next=0
+                KindIdentifier "listFactory" [119, 131), i=36, next=37
+                KindTypeReference [132, 147), i=37, next=0
+                  KindIdentifier "ListFactory" [132, 144), i=38, next=39
+                  NodeList [145, 146), i=39, next=0
+                    KindTypeReference [145, 146), i=40, next=0
+                      KindIdentifier "T" [145, 146), i=41, next=0
+              KindConstructor [148, 286), i=42, next=68
+                NodeList [170, 208), i=43, next=55
+                  KindParameter [170, 192), i=44, next=49
+                    NodeList [170, 176), i=45, next=47
+                      KindPublicKeyword [170, 176), i=46, next=0
+                    KindIdentifier "isHead" [176, 183), i=47, next=48
+                    KindBooleanKeyword [184, 192), i=48, next=0
+                  KindParameter [193, 208), i=49, next=0
+                    NodeList [193, 200), i=50, next=52
+                      KindPublicKeyword [193, 200), i=51, next=0
+                    KindIdentifier "data" [200, 205), i=52, next=53
+                    KindTypeReference [206, 208), i=53, next=0
+                      KindIdentifier "T" [206, 208), i=54, next=0
+                KindBlock [209, 286), i=55, next=0
+                  NodeList [211, 264), i=56, next=0
+                    KindExpressionStatement [211, 264), i=57, next=0
+                      KindBinaryExpression [211, 263), i=58, next=0
+                        KindPropertyAccessExpression [211, 240), i=59, next=62
+                          KindThisKeyword [211, 228), i=60, next=61
+                          KindIdentifier "listFactory" [229, 240), i=61, next=0
+                        KindEqualsToken [240, 242), i=62, next=63
+                        KindNewExpression [242, 263), i=63, next=0
+                          KindIdentifier "ListFactory" [246, 258), i=64, next=65
+                          NodeList [259, 260), i=65, next=0
+                            KindTypeReference [259, 260), i=66, next=0
+                              KindIdentifier "T" [259, 260), i=67, next=0
+              KindMethodDeclaration [286, 567), i=68, next=131
+                NodeList [286, 302), i=69, next=71
+                  KindPublicKeyword [286, 302), i=70, next=0
+                KindIdentifier "add" [302, 306), i=71, next=72
+                NodeList [307, 314), i=72, next=77
+                  KindParameter [307, 314), i=73, next=0
+                    KindIdentifier "data" [307, 311), i=74, next=75
+                    KindTypeReference [312, 314), i=75, next=0
+                      KindIdentifier "T" [312, 314), i=76, next=0
+                KindTypeReference [316, 324), i=77, next=82
+                  KindIdentifier "List" [316, 321), i=78, next=79
+                  NodeList [322, 323), i=79, next=0
+                    KindTypeReference [322, 323), i=80, next=0
+                      KindIdentifier "T" [322, 323), i=81, next=0
+                KindBlock [324, 567), i=82, next=0
+                  NodeList [326, 557), i=83, next=0
+                    KindVariableStatement [326, 384), i=84, next=97
+                      KindVariableDeclarationList [326, 383), i=85, next=0
+                        NodeList [342, 383), i=86, next=0
+                          KindVariableDeclaration [342, 383), i=87, next=0
+                            KindIdentifier "entry" [342, 348), i=88, next=89
+                            KindCallExpression [350, 383), i=89, next=0
+                              KindPropertyAccessExpression [350, 377), i=90, next=95
+                                KindPropertyAccessExpression [350, 367), i=91, next=94
+                                  KindThisKeyword [350, 355), i=92, next=93
+                                  KindIdentifier "listFactory" [356, 367), i=93, next=0
+                                KindIdentifier "MakeEntry" [368, 377), i=94, next=0
+                              NodeList [378, 382), i=95, next=0
+                                KindIdentifier "data" [378, 382), i=96, next=0
+                    KindExpressionStatement [384, 433), i=97, next=106
+                      KindBinaryExpression [384, 432), i=98, next=0
+                        KindPropertyAccessExpression [384, 424), i=99, next=104
+                          KindPropertyAccessExpression [384, 419), i=100, next=103
+                            KindThisKeyword [384, 414), i=101, next=102
+                            KindIdentifier "prev" [415, 419), i=102, next=0
+                          KindIdentifier "next" [420, 424), i=103, next=0
+                        KindEqualsToken [424, 426), i=104, next=105
+                        KindIdentifier "entry" [426, 432), i=105, next=0
+                    KindExpressionStatement [433, 464), i=106, next=113
+                      KindBinaryExpression [433, 463), i=107, next=0
+                        KindPropertyAccessExpression [433, 456), i=108, next=111
+                          KindIdentifier "entry" [433, 451), i=109, next=110
+                          KindIdentifier "next" [452, 456), i=110, next=0
+                        KindEqualsToken [456, 458), i=111, next=112
+                        KindThisKeyword [458, 463), i=112, next=0
+                    KindExpressionStatement [464, 500), i=113, next=122
+                      KindBinaryExpression [464, 499), i=114, next=0
+                        KindPropertyAccessExpression [464, 487), i=115, next=118
+                          KindIdentifier "entry" [464, 482), i=116, next=117
+                          KindIdentifier "prev" [483, 487), i=117, next=0
+                        KindEqualsToken [487, 489), i=118, next=119
+                        KindPropertyAccessExpression [489, 499), i=119, next=0
+                          KindThisKeyword [489, 494), i=120, next=121
+                          KindIdentifier "prev" [495, 499), i=121, next=0
+                    KindExpressionStatement [500, 531), i=122, next=129
+                      KindBinaryExpression [500, 530), i=123, next=0
+                        KindPropertyAccessExpression [500, 522), i=124, next=127
+                          KindThisKeyword [500, 517), i=125, next=126
+                          KindIdentifier "prev" [518, 522), i=126, next=0
+                        KindEqualsToken [522, 524), i=127, next=128
+                        KindIdentifier "entry" [524, 530), i=128, next=0
+                    KindReturnStatement [531, 557), i=129, next=0
+                      KindIdentifier "entry" [550, 556), i=130, next=0
+              KindMethodDeclaration [567, 825), i=131, next=185
+                NodeList [567, 583), i=132, next=134
+                  KindPublicKeyword [567, 583), i=133, next=0
+                KindIdentifier "count" [583, 589), i=134, next=135
+                KindNumberKeyword [592, 599), i=135, next=136
+                KindBlock [599, 825), i=136, next=0
+                  NodeList [601, 815), i=137, next=0
+                    KindVariableStatement [601, 633), i=138, next=148
+                      KindVariableDeclarationList [601, 632), i=139, next=0
+                        NodeList [617, 632), i=140, next=0
+                          KindVariableDeclaration [617, 632), i=141, next=0
+                            KindIdentifier "entry" [617, 623), i=142, next=143
+                            KindTypeReference [624, 632), i=143, next=0
+                              KindIdentifier "List" [624, 629), i=144, next=145
+                              NodeList [630, 631), i=145, next=0
+                                KindTypeReference [630, 631), i=146, next=0
+                                  KindIdentifier "T" [630, 631), i=147, next=0
+                    KindVariableStatement [633, 660), i=148, next=154
+                      KindVariableDeclarationList [633, 659), i=149, next=0
+                        NodeList [649, 659), i=150, next=0
+                          KindVariableDeclaration [649, 659), i=151, next=0
+                            KindIdentifier "i" [649, 651), i=152, next=153
+                            KindNumberKeyword [652, 659), i=153, next=0
+                    KindExpressionStatement [660, 692), i=154, next=161
+                      KindBinaryExpression [660, 691), i=155, next=0
+                        KindIdentifier "entry" [660, 679), i=156, next=157
+                        KindEqualsToken [679, 681), i=157, next=158
+                        KindPropertyAccessExpression [681, 691), i=158, next=0
+                          KindThisKeyword [681, 686), i=159, next=160
+                          KindIdentifier "next" [687, 691), i=160, next=0
+                    KindForStatement [692, 790), i=161, next=182
+                      KindBinaryExpression [710, 715), i=162, next=166
+                        KindIdentifier "i" [710, 711), i=163, next=164
+                        KindEqualsToken [711, 713), i=164, next=165
+                        KindNumericLiteral [713, 715), i=165, next=0
+                      KindPrefixUnaryExpression [716, 732), i=166, next=171
+                        KindParenthesizedExpression [718, 732), i=167, next=0
+                          KindPropertyAccessExpression [719, 731), i=168, next=0
+                            KindIdentifier "entry" [719, 724), i=169, next=170
+                            KindIdentifier "isHead" [725, 731), i=170, next=0
+                      KindPostfixUnaryExpression [733, 737), i=171, next=173
+                        KindIdentifier "i" [733, 735), i=172, next=0
+                      KindBlock [738, 790), i=173, next=0
+                        NodeList [740, 776), i=174, next=0
+                          KindExpressionStatement [740, 776), i=175, next=0
+                            KindBinaryExpression [740, 775), i=176, next=0
+                              KindIdentifier "entry" [740, 762), i=177, next=178
+                              KindEqualsToken [762, 764), i=178, next=179
+                              KindPropertyAccessExpression [764, 775), i=179, next=0
+                                KindIdentifier "entry" [764, 770), i=180, next=181
+                                KindIdentifier "next" [771, 775), i=181, next=0
+                    KindReturnStatement [790, 815), i=182, next=0
+                      KindParenthesizedExpression [810, 814), i=183, next=0
+                        KindIdentifier "i" [812, 813), i=184, next=0
+              KindMethodDeclaration [825, 912), i=185, next=200
+                NodeList [825, 841), i=186, next=188
+                  KindPublicKeyword [825, 841), i=187, next=0
+                KindIdentifier "isEmpty" [841, 849), i=188, next=189
+                KindBooleanKeyword [852, 860), i=189, next=190
+                KindBlock [860, 912), i=190, next=0
+                  NodeList [862, 902), i=191, next=0
+                    KindReturnStatement [862, 902), i=192, next=0
+                      KindParenthesizedExpression [881, 901), i=193, next=0
+                        KindBinaryExpression [883, 900), i=194, next=0
+                          KindPropertyAccessExpression [883, 892), i=195, next=198
+                            KindThisKeyword [883, 887), i=196, next=197
+                            KindIdentifier "next" [888, 892), i=197, next=0
+                          KindEqualsEqualsToken [892, 895), i=198, next=199
+                          KindThisKeyword [895, 900), i=199, next=0
+              KindMethodDeclaration [912, 1112), i=200, next=225
+                NodeList [912, 928), i=201, next=203
+                  KindPublicKeyword [912, 928), i=202, next=0
+                KindIdentifier "first" [928, 934), i=203, next=204
+                KindTypeReference [937, 939), i=204, next=206
+                  KindIdentifier "T" [937, 939), i=205, next=0
+                KindBlock [939, 1112), i=206, next=0
+                  NodeList [941, 1102), i=207, next=0
+                    KindIfStatement [941, 1102), i=208, next=0
+                      KindCallExpression [958, 972), i=209, next=213
+                        KindPropertyAccessExpression [958, 970), i=210, next=0
+                          KindThisKeyword [958, 962), i=211, next=212
+                          KindIdentifier "isEmpty" [963, 970), i=212, next=0
+                      KindBlock [973, 1040), i=213, next=221
+                        NodeList [987, 1026), i=214, next=0
+                          KindReturnStatement [987, 1026), i=215, next=0
+                            KindPropertyAccessExpression [1010, 1025), i=216, next=0
+                              KindPropertyAccessExpression [1010, 1020), i=217, next=220
+                                KindThisKeyword [1010, 1015), i=218, next=219
+                                KindIdentifier "next" [1016, 1020), i=219, next=0
+                              KindIdentifier "data" [1021, 1025), i=220, next=0
+                      KindBlock [1057, 1102), i=221, next=0
+                        NodeList [1059, 1088), i=222, next=0
+                          KindReturnStatement [1059, 1088), i=223, next=0
+                            KindNullKeyword [1082, 1087), i=224, next=0
+              KindMethodDeclaration [1112, 1413), i=225, next=23
+                NodeList [1112, 1128), i=226, next=228
+                  KindPublicKeyword [1112, 1128), i=227, next=0
+                KindIdentifier "pushEntry" [1128, 1138), i=228, next=229
+                NodeList [1139, 1153), i=229, next=237
+                  KindParameter [1139, 1153), i=230, next=0
+                    KindIdentifier "entry" [1139, 1144), i=231, next=232
+                    KindTypeReference [1145, 1153), i=232, next=0
+                      KindIdentifier "List" [1145, 1150), i=233, next=234
+                      NodeList [1151, 1152), i=234, next=0
+                        KindTypeReference [1151, 1152), i=235, next=0
+                          KindIdentifier "T" [1151, 1152), i=236, next=0
+                KindVoidKeyword [1155, 1160), i=237, next=238
+                KindBlock [1160, 1413), i=238, next=0
+                  NodeList [1162, 1331), i=239, next=0
+                    KindExpressionStatement [1162, 1196), i=240, next=247
+                      KindBinaryExpression [1162, 1195), i=241, next=0
+                        KindPropertyAccessExpression [1162, 1187), i=242, next=245
+                          KindIdentifier "entry" [1162, 1180), i=243, next=244
+                          KindIdentifier "isHead" [1181, 1187), i=244, next=0
+                        KindEqualsToken [1187, 1189), i=245, next=246
+                        KindFalseKeyword [1189, 1195), i=246, next=0
+                    KindExpressionStatement [1196, 1232), i=247, next=0
+                      KindBinaryExpression [1196, 1231), i=248, next=0
+                        KindPropertyAccessExpression [1196, 1219), i=249, next=252
+                          KindIdentifier "entry" [1196, 1214), i=250, next=251
+                          KindIdentifier "next" [1215, 1219), i=251, next=0
+                        KindEqualsToken [1219, 1221), i=252, next=253
+                        KindPropertyAccessExpression [1221, 1231), i=253, next=0
+                          KindThisKeyword [1221, 1226), i=254, next=255
+                          KindIdentifier "next" [1227, 1231), i=255, next=0
+                    KindExpressionStatement [1232, 1263), i=256, next=7
+                      KindBinaryExpression [1232, 1262), i=257, next=0
+                        KindPropertyAccessExpression [1232, 1255), i=258, next=5
+                          KindIdentifier "entry" [1232, 1250), i=259, next=4
+                          KindIdentifier "prev" [1251, 1255), i=260, next=0
+                        KindEqualsToken [1255, 1257), i=261, next=6
+                        KindThisKeyword [1257, 1262), i=262, next=0
+                    KindExpressionStatement [1263, 1294), i=263, next=14
+                      KindBinaryExpression [1263, 1293), i=264, next=0
+                        KindPropertyAccessExpression [1263, 1285), i=265, next=12
+                          KindThisKeyword [1263, 1280), i=266, next=11
+                          KindIdentifier "next" [1281, 1285), i=267, next=0
+                        KindEqualsToken [1285, 1287), i=268, next=13
+                        KindIdentifier "entry" [1287, 1293), i=269, next=0
+                    KindExpressionStatement [1294, 1331), i=270, next=0
+                      KindBinaryExpression [1294, 1330), i=271, next=0
+                        KindPropertyAccessExpression [1294, 1322), i=272, next=21
+                          KindPropertyAccessExpression [1294, 1317), i=273, next=20
+                            KindIdentifier "entry" [1294, 1312), i=274, next=19
+                            KindIdentifier "next" [1313, 1317), i=275, next=0
+                          KindIdentifier "prev" [1318, 1322), i=276, next=0
+                        KindEqualsToken [1322, 1324), i=277, next=22
+                        KindIdentifier "entry" [1324, 1330), i=278, next=0
+              KindMethodDeclaration [1413, 1792), i=279, next=94
+                NodeList [1413, 1429), i=280, next=26
+                  KindPublicKeyword [1413, 1429), i=281, next=0
+                KindIdentifier "push" [1429, 1434), i=282, next=27
+                NodeList [1435, 1442), i=283, next=32
+                  KindParameter [1435, 1442), i=284, next=0
+                    KindIdentifier "data" [1435, 1439), i=285, next=30
+                    KindTypeReference [1440, 1442), i=286, next=0
+                      KindIdentifier "T" [1440, 1442), i=287, next=0
+                KindVoidKeyword [1444, 1449), i=288, next=33
+                KindBlock [1449, 1792), i=289, next=0
+                  NodeList [1451, 1709), i=290, next=0
+                    KindVariableStatement [1451, 1509), i=291, next=48
+                      KindVariableDeclarationList [1451, 1508), i=292, next=0
+                        NodeList [1467, 1508), i=293, next=0
+                          KindVariableDeclaration [1467, 1508), i=294, next=0
+                            KindIdentifier "entry" [1467, 1473), i=295, next=40
+                            KindCallExpression [1475, 1508), i=296, next=0
+                              KindPropertyAccessExpression [1475, 1502), i=297, next=46
+                                KindPropertyAccessExpression [1475, 1492), i=298, next=45
+                                  KindThisKeyword [1475, 1480), i=299, next=44
+                                  KindIdentifier "listFactory" [1481, 1492), i=300, next=0
+                                KindIdentifier "MakeEntry" [1493, 1502), i=301, next=0
+                              NodeList [1503, 1507), i=302, next=0
+                                KindIdentifier "data" [1503, 1507), i=303, next=0
+                    KindExpressionStatement [1509, 1540), i=304, next=55
+                      KindBinaryExpression [1509, 1539), i=305, next=0
+                        KindPropertyAccessExpression [1509, 1532), i=306, next=53
+                          KindIdentifier "entry" [1509, 1527), i=307, next=52
+                          KindIdentifier "data" [1528, 1532), i=308, next=0
+                        KindEqualsToken [1532, 1534), i=309, next=54
+                        KindIdentifier "data" [1534, 1539), i=310, next=0
+                    KindExpressionStatement [1540, 1574), i=311, next=62
+                      KindBinaryExpression [1540, 1573), i=312, next=0
+                        KindPropertyAccessExpression [1540, 1565), i=313, next=60
+                          KindIdentifier "entry" [1540, 1558), i=314, next=59
+                          KindIdentifier "isHead" [1559, 1565), i=315, next=0
+                        KindEqualsToken [1565, 1567), i=316, next=61
+                        KindFalseKeyword [1567, 1573), i=317, next=0
+                    KindExpressionStatement [1574, 1610), i=318, next=71
+                      KindBinaryExpression [1574, 1609), i=319, next=0
+                        KindPropertyAccessExpression [1574, 1597), i=320, next=67
+                          KindIdentifier "entry" [1574, 1592), i=321, next=66
+                          KindIdentifier "next" [1593, 1597), i=322, next=0
+                        KindEqualsToken [1597, 1599), i=323, next=68
+                        KindPropertyAccessExpression [1599, 1609), i=324, next=0
+                          KindThisKeyword [1599, 1604), i=325, next=70
+                          KindIdentifier "next" [1605, 1609), i=326, next=0
+                    KindExpressionStatement [1610, 1641), i=327, next=78
+                      KindBinaryExpression [1610, 1640), i=328, next=0
+                        KindPropertyAccessExpression [1610, 1633), i=329, next=76
+                          KindIdentifier "entry" [1610, 1628), i=330, next=75
+                          KindIdentifier "prev" [1629, 1633), i=331, next=0
+                        KindEqualsToken [1633, 1635), i=332, next=77
+                        KindThisKeyword [1635, 1640), i=333, next=0
+                    KindExpressionStatement [1641, 1672), i=334, next=85
+                      KindBinaryExpression [1641, 1671), i=335, next=0
+                        KindPropertyAccessExpression [1641, 1663), i=336, next=83
+                          KindThisKeyword [1641, 1658), i=337, next=82
+                          KindIdentifier "next" [1659, 1663), i=338, next=0
+                        KindEqualsToken [1663, 1665), i=339, next=84
+                        KindIdentifier "entry" [1665, 1671), i=340, next=0
+                    KindExpressionStatement [1672, 1709), i=341, next=0
+                      KindBinaryExpression [1672, 1708), i=342, next=0
+                        KindPropertyAccessExpression [1672, 1700), i=343, next=92
+                          KindPropertyAccessExpression [1672, 1695), i=344, next=91
+                            KindIdentifier "entry" [1672, 1690), i=345, next=90
+                            KindIdentifier "next" [1691, 1695), i=346, next=0
+                          KindIdentifier "prev" [1696, 1700), i=347, next=0
+                        KindEqualsToken [1700, 1702), i=348, next=93
+                        KindIdentifier "entry" [1702, 1708), i=349, next=0
+              KindMethodDeclaration [1792, 2029), i=350, next=136
+                NodeList [1792, 1808), i=351, next=97
+                  KindPublicKeyword [1792, 1808), i=352, next=0
+                KindIdentifier "popEntry" [1808, 1817), i=353, next=98
+                NodeList [1818, 1831), i=354, next=106
+                  KindParameter [1818, 1831), i=355, next=0
+                    KindIdentifier "head" [1818, 1822), i=356, next=101
+                    KindTypeReference [1823, 1831), i=357, next=0
+                      KindIdentifier "List" [1823, 1828), i=358, next=103
+                      NodeList [1829, 1830), i=359, next=0
+                        KindTypeReference [1829, 1830), i=360, next=0
+                          KindIdentifier "T" [1829, 1830), i=361, next=0
+                KindTypeReference [1833, 1841), i=362, next=111
+                  KindIdentifier "List" [1833, 1838), i=363, next=108
+                  NodeList [1839, 1840), i=364, next=0
+                    KindTypeReference [1839, 1840), i=365, next=0
+                      KindIdentifier "T" [1839, 1840), i=366, next=0
+                KindBlock [1841, 2029), i=367, next=0
+                  NodeList [1843, 2019), i=368, next=0
+                    KindIfStatement [1843, 2019), i=369, next=0
+                      KindPropertyAccessExpression [1860, 1876), i=370, next=119
+                        KindPropertyAccessExpression [1860, 1869), i=371, next=118
+                          KindThisKeyword [1860, 1864), i=372, next=117
+                          KindIdentifier "next" [1865, 1869), i=373, next=0
+                        KindIdentifier "isHead" [1870, 1876), i=374, next=0
+                      KindBlock [1877, 1922), i=375, next=123
+                        NodeList [1879, 1908), i=376, next=0
+                          KindReturnStatement [1879, 1908), i=377, next=0
+                            KindNullKeyword [1902, 1907), i=378, next=0
+                      KindBlock [1939, 2019), i=379, next=0
+                        NodeList [1941, 2005), i=380, next=0
+                          KindReturnStatement [1941, 2005), i=381, next=0
+                            KindCallExpression [1964, 2004), i=382, next=0
+                              KindPropertyAccessExpression [1964, 1993), i=383, next=132
+                                KindPropertyAccessExpression [1964, 1981), i=384, next=131
+                                  KindThisKeyword [1964, 1969), i=385, next=130
+                                  KindIdentifier "listFactory" [1970, 1981), i=386, next=0
+                                KindIdentifier "RemoveEntry" [1982, 1993), i=387, next=0
+                              NodeList [1994, 2003), i=388, next=0
+                                KindPropertyAccessExpression [1994, 2003), i=389, next=0
+                                  KindThisKeyword [1994, 1998), i=390, next=135
+                                  KindIdentifier "next" [1999, 2003), i=391, next=0
+              KindMethodDeclaration [2029, 2288), i=392, next=196
+                NodeList [2029, 2045), i=393, next=139
+                  KindPublicKeyword [2029, 2045), i=394, next=0
+                KindIdentifier "insertEntry" [2045, 2057), i=395, next=140
+                NodeList [2058, 2072), i=396, next=148
+                  KindParameter [2058, 2072), i=397, next=0
+                    KindIdentifier "entry" [2058, 2063), i=398, next=143
+                    KindTypeReference [2064, 2072), i=399, next=0
+                      KindIdentifier "List" [2064, 2069), i=400, next=145
+                      NodeList [2070, 2071), i=401, next=0
+                        KindTypeReference [2070, 2071), i=402, next=0
+                          KindIdentifier "T" [2070, 2071), i=403, next=0
+                KindTypeReference [2074, 2082), i=404, next=153
+                  KindIdentifier "List" [2074, 2079), i=405, next=150
+                  NodeList [2080, 2081), i=406, next=0
+                    KindTypeReference [2080, 2081), i=407, next=0
+                      KindIdentifier "T" [2080, 2081), i=408, next=0
+                KindBlock [2082, 2288), i=409, next=0
+                  NodeList [2084, 2278), i=410, next=0
+                    KindExpressionStatement [2084, 2118), i=411, next=162
+                      KindBinaryExpression [2084, 2117), i=412, next=0
+                        KindPropertyAccessExpression [2084, 2109), i=413, next=160
+                          KindIdentifier "entry" [2084, 2102), i=414, next=159
+                          KindIdentifier "isHead" [2103, 2109), i=415, next=0
+                        KindEqualsToken [2109, 2111), i=416, next=161
+                        KindFalseKeyword [2111, 2117), i=417, next=0
+                    KindExpressionStatement [2118, 2154), i=418, next=171
+                      KindBinaryExpression [2118, 2153), i=419, next=0
+                        KindPropertyAccessExpression [2118, 2145), i=420, next=169
+                          KindPropertyAccessExpression [2118, 2140), i=421, next=168
+                            KindThisKeyword [2118, 2135), i=422, next=167
+                            KindIdentifier "prev" [2136, 2140), i=423, next=0
+                          KindIdentifier "next" [2141, 2145), i=424, next=0
+                        KindEqualsToken [2145, 2147), i=425, next=170
+                        KindIdentifier "entry" [2147, 2153), i=426, next=0
+                    KindExpressionStatement [2154, 2185), i=427, next=178
+                      KindBinaryExpression [2154, 2184), i=428, next=0
+                        KindPropertyAccessExpression [2154, 2177), i=429, next=176
+                          KindIdentifier "entry" [2154, 2172), i=430, next=175
+                          KindIdentifier "next" [2173, 2177), i=431, next=0
+                        KindEqualsToken [2177, 2179), i=432, next=177
+                        KindThisKeyword [2179, 2184), i=433, next=0
+                    KindExpressionStatement [2185, 2221), i=434, next=187
+                      KindBinaryExpression [2185, 2220), i=435, next=0
+                        KindPropertyAccessExpression [2185, 2208), i=436, next=183
+                          KindIdentifier "entry" [2185, 2203), i=437, next=182
+                          KindIdentifier "prev" [2204, 2208), i=438, next=0
+                        KindEqualsToken [2208, 2210), i=439, next=184
+                        KindPropertyAccessExpression [2210, 2220), i=440, next=0
+                          KindThisKeyword [2210, 2215), i=441, next=186
+                          KindIdentifier "prev" [2216, 2220), i=442, next=0
+                    KindExpressionStatement [2221, 2252), i=443, next=194
+                      KindBinaryExpression [2221, 2251), i=444, next=0
+                        KindPropertyAccessExpression [2221, 2243), i=445, next=192
+                          KindThisKeyword [2221, 2238), i=446, next=191
+                          KindIdentifier "prev" [2239, 2243), i=447, next=0
+                        KindEqualsToken [2243, 2245), i=448, next=193
+                        KindIdentifier "entry" [2245, 2251), i=449, next=0
+                    KindReturnStatement [2252, 2278), i=450, next=0
+                      KindIdentifier "entry" [2271, 2277), i=451, next=0
+              KindMethodDeclaration [2288, 2645), i=452, next=8
+                NodeList [2288, 2304), i=453, next=199
+                  KindPublicKeyword [2288, 2304), i=454, next=0
+                KindIdentifier "insertAfter" [2304, 2316), i=455, next=200
+                NodeList [2317, 2324), i=456, next=205
+                  KindParameter [2317, 2324), i=457, next=0
+                    KindIdentifier "data" [2317, 2321), i=458, next=203
+                    KindTypeReference [2322, 2324), i=459, next=0
+                      KindIdentifier "T" [2322, 2324), i=460, next=0
+                KindTypeReference [2326, 2334), i=461, next=210
+                  KindIdentifier "List" [2326, 2331), i=462, next=207
+                  NodeList [2332, 2333), i=463, next=0
+                    KindTypeReference [2332, 2333), i=464, next=0
+                      KindIdentifier "T" [2332, 2333), i=465, next=0
+                KindBlock [2334, 2645), i=466, next=0
+                  NodeList [2336, 2635), i=467, next=0
+                    KindVariableStatement [2336, 2403), i=468, next=230
+                      KindVariableDeclarationList [2336, 2402), i=469, next=0
+                        NodeList [2352, 2402), i=470, next=0
+                          KindVariableDeclaration [2352, 2402), i=471, next=0
+                            KindIdentifier "entry" [2352, 2358), i=472, next=217
+                            KindTypeReference [2359, 2367), i=473, next=222
+                              KindIdentifier "List" [2359, 2364), i=474, next=219
+                              NodeList [2365, 2366), i=475, next=0
+                                KindTypeReference [2365, 2366), i=476, next=0
+                                  KindIdentifier "T" [2365, 2366), i=477, next=0
+                            KindCallExpression [2369, 2402), i=478, next=0
+                              KindPropertyAccessExpression [2369, 2396), i=479, next=228
+                                KindPropertyAccessExpression [2369, 2386), i=480, next=227
+                                  KindThisKeyword [2369, 2374), i=481, next=226
+                                  KindIdentifier "listFactory" [2375, 2386), i=482, next=0
+                                KindIdentifier "MakeEntry" [2387, 2396), i=483, next=0
+                              NodeList [2397, 2401), i=484, next=0
+                                KindIdentifier "data" [2397, 2401), i=485, next=0
+                    KindExpressionStatement [2403, 2439), i=486, next=239
+                      KindBinaryExpression [2403, 2438), i=487, next=0
+                        KindPropertyAccessExpression [2403, 2426), i=488, next=235
+                          KindIdentifier "entry" [2403, 2421), i=489, next=234
+                          KindIdentifier "next" [2422, 2426), i=490, next=0
+                        KindEqualsToken [2426, 2428), i=491, next=236
+                        KindPropertyAccessExpression [2428, 2438), i=492, next=0
+                          KindThisKeyword [2428, 2433), i=493, next=238
+                          KindIdentifier "next" [2434, 2438), i=494, next=0
+                    KindExpressionStatement [2439, 2470), i=495, next=246
+                      KindBinaryExpression [2439, 2469), i=496, next=0
+                        KindPropertyAccessExpression [2439, 2462), i=497, next=244
+                          KindIdentifier "entry" [2439, 2457), i=498, next=243
+                          KindIdentifier "prev" [2458, 2462), i=499, next=0
+                        KindEqualsToken [2462, 2464), i=500, next=245
+                        KindThisKeyword [2464, 2469), i=501, next=0
+                    KindExpressionStatement [2470, 2501), i=502, next=253
+                      KindBinaryExpression [2470, 2500), i=503, next=0
+                        KindPropertyAccessExpression [2470, 2492), i=504, next=251
+                          KindThisKeyword [2470, 2487), i=505, next=250
+                          KindIdentifier "next" [2488, 2492), i=506, next=0
+                        KindEqualsToken [2492, 2494), i=507, next=252
+                        KindIdentifier "entry" [2494, 2500), i=508, next=0
+                    KindExpressionStatement [2501, 2538), i=509, next=6
+                      KindBinaryExpression [2501, 2537), i=510, next=0
+                        KindPropertyAccessExpression [2501, 2529), i=511, next=4
+                          KindPropertyAccessExpression [2501, 2524), i=512, next=3
+                            KindIdentifier "entry" [2501, 2519), i=513, next=2
+                            KindIdentifier "next" [2520, 2524), i=514, next=0
+                          KindIdentifier "prev" [2525, 2529), i=515, next=0
+                        KindEqualsToken [2529, 2531), i=516, next=5
+                        KindIdentifier "entry" [2531, 2537), i=517, next=0
+                    KindReturnStatement [2538, 2635), i=518, next=0
+                      KindIdentifier "entry" [2628, 2634), i=519, next=0
+              KindMethodDeclaration [2645, 2877), i=520, next=61
+                NodeList [2645, 2661), i=521, next=11
+                  KindPublicKeyword [2645, 2661), i=522, next=0
+                KindIdentifier "insertEntryBefore" [2661, 2679), i=523, next=12
+                NodeList [2680, 2694), i=524, next=20
+                  KindParameter [2680, 2694), i=525, next=0
+                    KindIdentifier "entry" [2680, 2685), i=526, next=15
+                    KindTypeReference [2686, 2694), i=527, next=0
+                      KindIdentifier "List" [2686, 2691), i=528, next=17
+                      NodeList [2692, 2693), i=529, next=0
+                        KindTypeReference [2692, 2693), i=530, next=0
+                          KindIdentifier "T" [2692, 2693), i=531, next=0
+                KindTypeReference [2696, 2704), i=532, next=25
+                  KindIdentifier "List" [2696, 2701), i=533, next=22
+                  NodeList [2702, 2703), i=534, next=0
+                    KindTypeReference [2702, 2703), i=535, next=0
+                      KindIdentifier "T" [2702, 2703), i=536, next=0
+                KindBlock [2704, 2877), i=537, next=0
+                  NodeList [2706, 2867), i=538, next=0
+                    KindExpressionStatement [2706, 2742), i=539, next=36
+                      KindBinaryExpression [2706, 2741), i=540, next=0
+                        KindPropertyAccessExpression [2706, 2733), i=541, next=34
+                          KindPropertyAccessExpression [2706, 2728), i=542, next=33
+                            KindThisKeyword [2706, 2723), i=543, next=32
+                            KindIdentifier "prev" [2724, 2728), i=544, next=0
+                          KindIdentifier "next" [2729, 2733), i=545, next=0
+                        KindEqualsToken [2733, 2735), i=546, next=35
+                        KindIdentifier "entry" [2735, 2741), i=547, next=0
+                    KindExpressionStatement [2742, 2774), i=548, next=43
+                      KindBinaryExpression [2742, 2773), i=549, next=0
+                        KindPropertyAccessExpression [2742, 2766), i=550, next=41
+                          KindIdentifier "entry" [2742, 2761), i=551, next=40
+                          KindIdentifier "next" [2762, 2766), i=552, next=0
+                        KindEqualsToken [2766, 2768), i=553, next=42
+                        KindThisKeyword [2768, 2773), i=554, next=0
+                    KindExpressionStatement [2774, 2810), i=555, next=52
+                      KindBinaryExpression [2774, 2809), i=556, next=0
+                        KindPropertyAccessExpression [2774, 2797), i=557, next=48
+                          KindIdentifier "entry" [2774, 2792), i=558, next=47
+                          KindIdentifier "prev" [2793, 2797), i=559, next=0
+                        KindEqualsToken [2797, 2799), i=560, next=49
+                        KindPropertyAccessExpression [2799, 2809), i=561, next=0
+                          KindThisKeyword [2799, 2804), i=562, next=51
+                          KindIdentifier "prev" [2805, 2809), i=563, next=0
+                    KindExpressionStatement [2810, 2841), i=564, next=59
+                      KindBinaryExpression [2810, 2840), i=565, next=0
+                        KindPropertyAccessExpression [2810, 2832), i=566, next=57
+                          KindThisKeyword [2810, 2827), i=567, next=56
+                          KindIdentifier "prev" [2828, 2832), i=568, next=0
+                        KindEqualsToken [2832, 2834), i=569, next=58
+                        KindIdentifier "entry" [2834, 2840), i=570, next=0
+                    KindReturnStatement [2841, 2867), i=571, next=0
+                      KindIdentifier "entry" [2860, 2866), i=572, next=0
+              KindMethodDeclaration [2877, 3044), i=573, next=0
+                NodeList [2877, 2893), i=574, next=64
+                  KindPublicKeyword [2877, 2893), i=575, next=0
+                KindIdentifier "insertBefore" [2893, 2906), i=576, next=65
+                NodeList [2907, 2914), i=577, next=70
+                  KindParameter [2907, 2914), i=578, next=0
+                    KindIdentifier "data" [2907, 2911), i=579, next=68
+                    KindTypeReference [2912, 2914), i=580, next=0
+                      KindIdentifier "T" [2912, 2914), i=581, next=0
+                KindTypeReference [2916, 2924), i=582, next=75
+                  KindIdentifier "List" [2916, 2921), i=583, next=72
+                  NodeList [2922, 2923), i=584, next=0
+                    KindTypeReference [2922, 2923), i=585, next=0
+                      KindIdentifier "T" [2922, 2923), i=586, next=0
+                KindBlock [2924, 3044), i=587, next=0
+                  NodeList [2926, 3034), i=588, next=0
+                    KindVariableStatement [2926, 2984), i=589, next=90
+                      KindVariableDeclarationList [2926, 2983), i=590, next=0
+                        NodeList [2942, 2983), i=591, next=0
+                          KindVariableDeclaration [2942, 2983), i=592, next=0
+                            KindIdentifier "entry" [2942, 2948), i=593, next=82
+                            KindCallExpression [2950, 2983), i=594, next=0
+                              KindPropertyAccessExpression [2950, 2977), i=595, next=88
+                                KindPropertyAccessExpression [2950, 2967), i=596, next=87
+                                  KindThisKeyword [2950, 2955), i=597, next=86
+                                  KindIdentifier "listFactory" [2956, 2967), i=598, next=0
+                                KindIdentifier "MakeEntry" [2968, 2977), i=599, next=0
+                              NodeList [2978, 2982), i=600, next=0
+                                KindIdentifier "data" [2978, 2982), i=601, next=0
+                    KindReturnStatement [2984, 3034), i=602, next=0
+                      KindCallExpression [3003, 3033), i=603, next=0
+                        KindPropertyAccessExpression [3003, 3026), i=604, next=95
+                          KindThisKeyword [3003, 3008), i=605, next=94
+                          KindIdentifier "insertEntryBefore" [3009, 3026), i=606, next=0
+                        NodeList [3027, 3032), i=607, next=0
+                          KindIdentifier "entry" [3027, 3032), i=608, next=0
+          KindClassDeclaration [3050, 3926), i=609, next=0
+            NodeList [3050, 3062), i=610, next=100
+              KindExportKeyword [3050, 3062), i=611, next=0
+            KindIdentifier "ListFactory" [3068, 3080), i=612, next=101
+            NodeList [3081, 3082), i=613, next=104
+              KindTypeParameter [3081, 3082), i=614, next=0
+                KindIdentifier "T" [3081, 3082), i=615, next=0
+            NodeList [3085, 3920), i=616, next=0
+              KindMethodDeclaration [3085, 3284), i=617, next=153
+                NodeList [3085, 3101), i=618, next=108
+                  KindPublicKeyword [3085, 3101), i=619, next=0
+                KindIdentifier "MakeHead" [3101, 3110), i=620, next=109
+                NodeList [3111, 3112), i=621, next=112
+                  KindTypeParameter [3111, 3112), i=622, next=0
+                    KindIdentifier "T" [3111, 3112), i=623, next=0
+                KindTypeReference [3116, 3124), i=624, next=117
+                  KindIdentifier "List" [3116, 3121), i=625, next=114
+                  NodeList [3122, 3123), i=626, next=0
+                    KindTypeReference [3122, 3123), i=627, next=0
+                      KindIdentifier "T" [3122, 3123), i=628, next=0
+                KindBlock [3124, 3284), i=629, next=0
+                  NodeList [3126, 3274), i=630, next=0
+                    KindVariableStatement [3126, 3184), i=631, next=137
+                      KindVariableDeclarationList [3126, 3183), i=632, next=0
+                        NodeList [3142, 3183), i=633, next=0
+                          KindVariableDeclaration [3142, 3183), i=634, next=0
+                            KindIdentifier "entry" [3142, 3148), i=635, next=124
+                            KindTypeReference [3149, 3157), i=636, next=129
+                              KindIdentifier "List" [3149, 3154), i=637, next=126
+                              NodeList [3155, 3156), i=638, next=0
+                                KindTypeReference [3155, 3156), i=639, next=0
+                                  KindIdentifier "T" [3155, 3156), i=640, next=0
+                            KindNewExpression [3159, 3183), i=641, next=0
+                              KindIdentifier "List" [3163, 3168), i=642, next=131
+                              NodeList [3169, 3170), i=643, next=134
+                                KindTypeReference [3169, 3170), i=644, next=0
+                                  KindIdentifier "T" [3169, 3170), i=645, next=0
+                              NodeList [3172, 3182), i=646, next=0
+                                KindTrueKeyword [3172, 3176), i=647, next=136
+                                KindNullKeyword [3177, 3182), i=648, next=0
+                    KindExpressionStatement [3184, 3216), i=649, next=144
+                      KindBinaryExpression [3184, 3215), i=650, next=0
+                        KindPropertyAccessExpression [3184, 3207), i=651, next=142
+                          KindIdentifier "entry" [3184, 3202), i=652, next=141
+                          KindIdentifier "prev" [3203, 3207), i=653, next=0
+                        KindEqualsToken [3207, 3209), i=654, next=143
+                        KindIdentifier "entry" [3209, 3215), i=655, next=0
+                    KindExpressionStatement [3216, 3248), i=656, next=151
+                      KindBinaryExpression [3216, 3247), i=657, next=0
+                        KindPropertyAccessExpression [3216, 3239), i=658, next=149
+                          KindIdentifier "entry" [3216, 3234), i=659, next=148
+                          KindIdentifier "next" [3235, 3239), i=660, next=0
+                        KindEqualsToken [3239, 3241), i=661, next=150
+                        KindIdentifier "entry" [3241, 3247), i=662, next=0
+                    KindReturnStatement [3248, 3274), i=663, next=0
+                      KindIdentifier "entry" [3267, 3273), i=664, next=0
+              KindMethodDeclaration [3284, 3492), i=665, next=206
+                NodeList [3284, 3300), i=666, next=156
+                  KindPublicKeyword [3284, 3300), i=667, next=0
+                KindIdentifier "MakeEntry" [3300, 3310), i=668, next=157
+                NodeList [3311, 3312), i=669, next=160
+                  KindTypeParameter [3311, 3312), i=670, next=0
+                    KindIdentifier "T" [3311, 3312), i=671, next=0
+                NodeList [3314, 3321), i=672, next=165
+                  KindParameter [3314, 3321), i=673, next=0
+                    KindIdentifier "data" [3314, 3318), i=674, next=163
+                    KindTypeReference [3319, 3321), i=675, next=0
+                      KindIdentifier "T" [3319, 3321), i=676, next=0
+                KindTypeReference [3323, 3331), i=677, next=170
+                  KindIdentifier "List" [3323, 3328), i=678, next=167
+                  NodeList [3329, 3330), i=679, next=0
+                    KindTypeReference [3329, 3330), i=680, next=0
+                      KindIdentifier "T" [3329, 3330), i=681, next=0
+                KindBlock [3331, 3492), i=682, next=0
+                  NodeList [3333, 3482), i=683, next=0
+                    KindVariableStatement [3333, 3392), i=684, next=190
+                      KindVariableDeclarationList [3333, 3391), i=685, next=0
+                        NodeList [3349, 3391), i=686, next=0
+                          KindVariableDeclaration [3349, 3391), i=687, next=0
+                            KindIdentifier "entry" [3349, 3355), i=688, next=177
+                            KindTypeReference [3356, 3364), i=689, next=182
+                              KindIdentifier "List" [3356, 3361), i=690, next=179
+                              NodeList [3362, 3363), i=691, next=0
+                                KindTypeReference [3362, 3363), i=692, next=0
+                                  KindIdentifier "T" [3362, 3363), i=693, next=0
+                            KindNewExpression [3366, 3391), i=694, next=0
+                              KindIdentifier "List" [3370, 3375), i=695, next=184
+                              NodeList [3376, 3377), i=696, next=187
+                                KindTypeReference [3376, 3377), i=697, next=0
+                                  KindIdentifier "T" [3376, 3377), i=698, next=0
+                              NodeList [3379, 3390), i=699, next=0
+                                KindFalseKeyword [3379, 3384), i=700, next=189
+                                KindIdentifier "data" [3385, 3390), i=701, next=0
+                    KindExpressionStatement [3392, 3424), i=702, next=197
+                      KindBinaryExpression [3392, 3423), i=703, next=0
+                        KindPropertyAccessExpression [3392, 3415), i=704, next=195
+                          KindIdentifier "entry" [3392, 3410), i=705, next=194
+                          KindIdentifier "prev" [3411, 3415), i=706, next=0
+                        KindEqualsToken [3415, 3417), i=707, next=196
+                        KindIdentifier "entry" [3417, 3423), i=708, next=0
+                    KindExpressionStatement [3424, 3456), i=709, next=204
+                      KindBinaryExpression [3424, 3455), i=710, next=0
+                        KindPropertyAccessExpression [3424, 3447), i=711, next=202
+                          KindIdentifier "entry" [3424, 3442), i=712, next=201
+                          KindIdentifier "next" [3443, 3447), i=713, next=0
+                        KindEqualsToken [3447, 3449), i=714, next=203
+                        KindIdentifier "entry" [3449, 3455), i=715, next=0
+                    KindReturnStatement [3456, 3482), i=716, next=0
+                      KindIdentifier "entry" [3475, 3481), i=717, next=0
+              KindMethodDeclaration [3492, 3920), i=718, next=0
+                NodeList [3492, 3508), i=719, next=209
+                  KindPublicKeyword [3492, 3508), i=720, next=0
+                KindIdentifier "RemoveEntry" [3508, 3520), i=721, next=210
+                NodeList [3521, 3522), i=722, next=213
+                  KindTypeParameter [3521, 3522), i=723, next=0
+                    KindIdentifier "T" [3521, 3522), i=724, next=0
+                NodeList [3524, 3538), i=725, next=221
+                  KindParameter [3524, 3538), i=726, next=0
+                    KindIdentifier "entry" [3524, 3529), i=727, next=216
+                    KindTypeReference [3530, 3538), i=728, next=0
+                      KindIdentifier "List" [3530, 3535), i=729, next=218
+                      NodeList [3536, 3537), i=730, next=0
+                        KindTypeReference [3536, 3537), i=731, next=0
+                          KindIdentifier "T" [3536, 3537), i=732, next=0
+                KindTypeReference [3540, 3548), i=733, next=226
+                  KindIdentifier "List" [3540, 3545), i=734, next=223
+                  NodeList [3546, 3547), i=735, next=0
+                    KindTypeReference [3546, 3547), i=736, next=0
+                      KindIdentifier "T" [3546, 3547), i=737, next=0
+                KindBlock [3548, 3920), i=738, next=0
+                  NodeList [3550, 3910), i=739, next=0
+                    KindIfStatement [3550, 3910), i=740, next=0
+                      KindBinaryExpression [3567, 3580), i=741, next=233
+                        KindIdentifier "entry" [3567, 3572), i=742, next=231
+                        KindEqualsEqualsToken [3572, 3575), i=743, next=232
+                        KindNullKeyword [3575, 3580), i=744, next=0
+                      KindBlock [3581, 3626), i=745, next=237
+                        NodeList [3583, 3612), i=746, next=0
+                          KindReturnStatement [3583, 3612), i=747, next=0
+                            KindNullKeyword [3606, 3611), i=748, next=0
+                      KindIfStatement [3643, 3910), i=749, next=0
+                        KindPropertyAccessExpression [3648, 3660), i=750, next=241
+                          KindIdentifier "entry" [3648, 3653), i=751, next=240
+                          KindIdentifier "isHead" [3654, 3660), i=752, next=0
+                        KindBlock [3661, 3754), i=753, next=245
+                          NodeList [3663, 3740), i=754, next=0
+                            KindReturnStatement [3663, 3740), i=755, next=0
+                              KindNullKeyword [3734, 3739), i=756, next=0
+                        KindBlock [3771, 3910), i=757, next=0
+                          NodeList [3773, 3896), i=758, next=0
+                            KindExpressionStatement [3773, 3819), i=759, next=2
+                              KindBinaryExpression [3773, 3818), i=760, next=0
+                                KindPropertyAccessExpression [3773, 3805), i=761, next=254
+                                  KindPropertyAccessExpression [3773, 3800), i=762, next=253
+                                    KindIdentifier "entry" [3773, 3795), i=763, next=252
+                                    KindIdentifier "next" [3796, 3800), i=764, next=0
+                                  KindIdentifier "prev" [3801, 3805), i=765, next=0
+                                KindEqualsToken [3805, 3807), i=766, next=255
+                                KindPropertyAccessExpression [3807, 3818), i=767, next=0
+                                  KindIdentifier "entry" [3807, 3813), i=768, next=1
+                                  KindIdentifier "prev" [3814, 3818), i=769, next=0
+                            KindExpressionStatement [3819, 3865), i=770, next=13
+                              KindBinaryExpression [3819, 3864), i=771, next=0
+                                KindPropertyAccessExpression [3819, 3851), i=772, next=9
+                                  KindPropertyAccessExpression [3819, 3846), i=773, next=8
+                                    KindIdentifier "entry" [3819, 3841), i=774, next=7
+                                    KindIdentifier "prev" [3842, 3846), i=775, next=0
+                                  KindIdentifier "next" [3847, 3851), i=776, next=0
+                                KindEqualsToken [3851, 3853), i=777, next=10
+                                KindPropertyAccessExpression [3853, 3864), i=778, next=0
+                                  KindIdentifier "entry" [3853, 3859), i=779, next=12
+                                  KindIdentifier "next" [3860, 3864), i=780, next=0
+                            KindReturnStatement [3865, 3896), i=781, next=0
+                              KindIdentifier "entry" [3889, 3895), i=782, next=0

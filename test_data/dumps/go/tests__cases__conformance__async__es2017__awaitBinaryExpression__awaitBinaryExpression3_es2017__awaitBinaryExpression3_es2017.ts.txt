@@ -1,0 +1,57 @@
+KindSourceFile [0, 212), i=1, next=0
+  NodeList [0, 212), i=2, next=0
+    KindVariableStatement [0, 22), i=3, next=11
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindVariableDeclarationList [7, 21), i=6, next=0
+        NodeList [11, 21), i=7, next=0
+          KindVariableDeclaration [11, 21), i=8, next=0
+            KindIdentifier "a" [11, 13), i=9, next=10
+            KindNumberKeyword [14, 21), i=10, next=0
+    KindVariableStatement [22, 54), i=11, next=22
+      NodeList [22, 30), i=12, next=14
+        KindDeclareKeyword [22, 30), i=13, next=0
+      KindVariableDeclarationList [30, 53), i=14, next=0
+        NodeList [34, 53), i=15, next=0
+          KindVariableDeclaration [34, 53), i=16, next=0
+            KindIdentifier "p" [34, 36), i=17, next=18
+            KindTypeReference [37, 53), i=18, next=0
+              KindIdentifier "Promise" [37, 45), i=19, next=20
+              NodeList [46, 52), i=20, next=0
+                KindNumberKeyword [46, 52), i=21, next=0
+    KindFunctionDeclaration [54, 87), i=22, next=27
+      NodeList [54, 62), i=23, next=25
+        KindDeclareKeyword [54, 62), i=24, next=0
+      KindIdentifier "before" [71, 78), i=25, next=26
+      KindVoidKeyword [81, 86), i=26, next=0
+    KindFunctionDeclaration [87, 119), i=27, next=32
+      NodeList [87, 95), i=28, next=30
+        KindDeclareKeyword [87, 95), i=29, next=0
+      KindIdentifier "after" [104, 110), i=30, next=31
+      KindVoidKeyword [113, 118), i=31, next=0
+    KindFunctionDeclaration [119, 212), i=32, next=0
+      NodeList [119, 125), i=33, next=35
+        KindAsyncKeyword [119, 125), i=34, next=0
+      KindIdentifier "func" [134, 139), i=35, next=36
+      KindTypeReference [142, 156), i=36, next=40
+        KindIdentifier "Promise" [142, 150), i=37, next=38
+        NodeList [151, 155), i=38, next=0
+          KindVoidKeyword [151, 155), i=39, next=0
+      KindBlock [156, 212), i=40, next=0
+        NodeList [158, 210), i=41, next=0
+          KindExpressionStatement [158, 172), i=42, next=45
+            KindCallExpression [158, 171), i=43, next=0
+              KindIdentifier "before" [158, 169), i=44, next=0
+          KindVariableStatement [172, 197), i=45, next=55
+            KindVariableDeclarationList [172, 196), i=46, next=0
+              NodeList [180, 196), i=47, next=0
+                KindVariableDeclaration [180, 196), i=48, next=0
+                  KindIdentifier "b" [180, 182), i=49, next=50
+                  KindBinaryExpression [184, 196), i=50, next=0
+                    KindAwaitExpression [184, 192), i=51, next=53
+                      KindIdentifier "p" [190, 192), i=52, next=0
+                    KindPlusToken [192, 194), i=53, next=54
+                    KindIdentifier "a" [194, 196), i=54, next=0
+          KindExpressionStatement [197, 210), i=55, next=0
+            KindCallExpression [197, 209), i=56, next=0
+              KindIdentifier "after" [197, 207), i=57, next=0

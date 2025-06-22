@@ -1,0 +1,55 @@
+KindSourceFile [0, 280), i=1, next=0
+  NodeList [0, 278), i=2, next=0
+    KindInterfaceDeclaration [0, 58), i=3, next=14
+      KindIdentifier "MyComponentProps" [9, 26), i=4, next=5
+      NodeList [28, 55), i=5, next=0
+        KindPropertySignature [28, 55), i=6, next=0
+          KindIdentifier "color" [28, 39), i=7, next=8
+          KindUnionType [40, 55), i=8, next=0
+            NodeList [40, 55), i=9, next=0
+              KindLiteralType [40, 46), i=10, next=12
+                KindStringLiteral "red" [40, 46), i=11, next=0
+              KindLiteralType [48, 55), i=12, next=0
+                KindStringLiteral "blue" [48, 55), i=13, next=0
+    KindInterfaceDeclaration [58, 144), i=14, next=30
+      KindIdentifier "StatelessComponent" [71, 90), i=15, next=16
+      NodeList [91, 92), i=16, next=19
+        KindTypeParameter [91, 92), i=17, next=0
+          KindIdentifier "P" [91, 92), i=18, next=0
+      NodeList [95, 141), i=19, next=0
+        KindCallSignature [95, 109), i=20, next=22
+          KindAnyKeyword [104, 108), i=21, next=0
+        KindPropertySignature [109, 141), i=22, next=0
+          KindIdentifier "defaultProps" [109, 127), i=23, next=24
+          KindQuestionToken [127, 128), i=24, next=25
+          KindTypeReference [129, 140), i=25, next=0
+            KindIdentifier "Partial" [129, 137), i=26, next=27
+            NodeList [138, 139), i=27, next=0
+              KindTypeReference [138, 139), i=28, next=0
+                KindIdentifier "P" [138, 139), i=29, next=0
+    KindVariableStatement [144, 224), i=30, next=45
+      KindVariableDeclarationList [144, 223), i=31, next=0
+        NodeList [153, 223), i=32, next=0
+          KindVariableDeclaration [153, 223), i=33, next=0
+            KindIdentifier "MyComponent" [153, 165), i=34, next=35
+            KindTypeReference [166, 203), i=35, next=40
+              KindIdentifier "StatelessComponent" [166, 185), i=36, next=37
+              NodeList [186, 202), i=37, next=0
+                KindTypeReference [186, 202), i=38, next=0
+                  KindIdentifier "MyComponentProps" [186, 202), i=39, next=0
+            KindArrowFunction [205, 223), i=40, next=0
+              KindEqualsGreaterThanToken [208, 211), i=41, next=42
+              KindAsExpression [211, 223), i=42, next=0
+                KindNullKeyword [211, 216), i=43, next=44
+                KindAnyKeyword [219, 223), i=44, next=0
+    KindExpressionStatement [224, 278), i=45, next=0
+      KindBinaryExpression [224, 277), i=46, next=0
+        KindPropertyAccessExpression [224, 252), i=47, next=50
+          KindIdentifier "MyComponent" [224, 239), i=48, next=49
+          KindIdentifier "defaultProps" [240, 252), i=49, next=0
+        KindEqualsToken [252, 254), i=50, next=51
+        KindObjectLiteralExpression [254, 277), i=51, next=0
+          NodeList [256, 274), i=52, next=0
+            KindPropertyAssignment [256, 274), i=53, next=0
+              KindIdentifier "color" [256, 267), i=54, next=55
+              KindStringLiteral "red" [268, 274), i=55, next=0

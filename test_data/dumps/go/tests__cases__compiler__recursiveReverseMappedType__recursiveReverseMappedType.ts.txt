@@ -1,0 +1,104 @@
+KindSourceFile [0, 287), i=1, next=0
+  NodeList [0, 285), i=2, next=0
+    KindTypeAliasDeclaration [0, 116), i=3, next=44
+      KindIdentifier "Recur" [4, 10), i=4, next=5
+      NodeList [11, 12), i=5, next=8
+        KindTypeParameter [11, 12), i=6, next=0
+          KindIdentifier "T" [11, 12), i=7, next=0
+      KindUnionType [15, 115), i=8, next=0
+        NodeList [15, 115), i=9, next=0
+          KindParenthesizedType [15, 87), i=10, next=33
+            KindConditionalType [17, 84), i=11, next=0
+              KindTypeReference [17, 24), i=12, next=14
+                KindIdentifier "T" [17, 24), i=13, next=0
+              KindParenthesizedType [32, 44), i=14, next=17
+                KindArrayType [34, 43), i=15, next=0
+                  KindUnknownKeyword [34, 41), i=16, next=0
+              KindTypeLiteral [46, 49), i=17, next=18
+              KindMappedType [51, 84), i=18, next=0
+                KindTypeParameter [55, 67), i=19, next=24
+                  KindIdentifier "K" [55, 56), i=20, next=21
+                  KindTypeOperator [59, 67), i=21, next=0
+                    KindTypeReference [65, 67), i=22, next=0
+                      KindIdentifier "T" [65, 67), i=23, next=0
+                KindQuestionToken [68, 69), i=24, next=25
+                KindTypeReference [70, 82), i=25, next=0
+                  KindIdentifier "Recur" [70, 76), i=26, next=27
+                  NodeList [77, 81), i=27, next=0
+                    KindIndexedAccessType [77, 81), i=28, next=0
+                      KindTypeReference [77, 78), i=29, next=31
+                        KindIdentifier "T" [77, 78), i=30, next=0
+                      KindTypeReference [79, 80), i=31, next=0
+                        KindIdentifier "K" [79, 80), i=32, next=0
+          KindTupleType [89, 115), i=33, next=0
+            NodeList [91, 114), i=34, next=0
+              KindLiteralType [91, 99), i=35, next=37
+                KindStringLiteral "marker" [91, 99), i=36, next=0
+              KindRestType [100, 114), i=37, next=0
+                KindArrayType [104, 114), i=38, next=0
+                  KindTypeReference [104, 112), i=39, next=0
+                    KindIdentifier "Recur" [104, 109), i=40, next=41
+                    NodeList [110, 111), i=41, next=0
+                      KindTypeReference [110, 111), i=42, next=0
+                        KindIdentifier "T" [110, 111), i=43, next=0
+    KindFunctionDeclaration [116, 196), i=44, next=71
+      KindIdentifier "join" [128, 133), i=45, next=46
+      NodeList [134, 135), i=46, next=49
+        KindTypeParameter [134, 135), i=47, next=0
+          KindIdentifier "T" [134, 135), i=48, next=0
+      NodeList [137, 150), i=49, next=58
+        KindParameter [137, 150), i=50, next=0
+          KindIdentifier "l" [137, 138), i=51, next=52
+          KindArrayType [139, 150), i=52, next=0
+            KindTypeReference [139, 148), i=53, next=0
+              KindIdentifier "Recur" [139, 145), i=54, next=55
+              NodeList [146, 147), i=55, next=0
+                KindTypeReference [146, 147), i=56, next=0
+                  KindIdentifier "T" [146, 147), i=57, next=0
+      KindTypeReference [152, 161), i=58, next=63
+        KindIdentifier "Recur" [152, 158), i=59, next=60
+        NodeList [159, 160), i=60, next=0
+          KindTypeReference [159, 160), i=61, next=0
+            KindIdentifier "T" [159, 160), i=62, next=0
+      KindBlock [161, 196), i=63, next=0
+        NodeList [163, 193), i=64, next=0
+          KindReturnStatement [163, 193), i=65, next=0
+            KindArrayLiteralExpression [175, 192), i=66, next=0
+              NodeList [177, 191), i=67, next=0
+                KindStringLiteral "marker" [177, 185), i=68, next=69
+                KindSpreadElement [186, 191), i=69, next=0
+                  KindIdentifier "l" [190, 191), i=70, next=0
+    KindFunctionDeclaration [196, 285), i=71, next=0
+      KindIdentifier "a" [208, 210), i=72, next=73
+      NodeList [211, 212), i=73, next=76
+        KindTypeParameter [211, 212), i=74, next=0
+          KindIdentifier "T" [211, 212), i=75, next=0
+      NodeList [214, 227), i=76, next=85
+        KindParameter [214, 227), i=77, next=0
+          KindIdentifier "l" [214, 215), i=78, next=79
+          KindArrayType [216, 227), i=79, next=0
+            KindTypeReference [216, 225), i=80, next=0
+              KindIdentifier "Recur" [216, 222), i=81, next=82
+              NodeList [223, 224), i=82, next=0
+                KindTypeReference [223, 224), i=83, next=0
+                  KindIdentifier "T" [223, 224), i=84, next=0
+      KindVoidKeyword [229, 234), i=85, next=86
+      KindBlock [234, 285), i=86, next=0
+        NodeList [236, 282), i=87, next=0
+          KindVariableStatement [236, 282), i=88, next=0
+            KindVariableDeclarationList [236, 281), i=89, next=0
+              NodeList [247, 281), i=90, next=0
+                KindVariableDeclaration [247, 281), i=91, next=0
+                  KindIdentifier "x" [247, 249), i=92, next=93
+                  KindUnionType [250, 271), i=93, next=101
+                    NodeList [250, 271), i=94, next=0
+                      KindTypeReference [250, 259), i=95, next=100
+                        KindIdentifier "Recur" [250, 256), i=96, next=97
+                        NodeList [257, 258), i=97, next=0
+                          KindTypeReference [257, 258), i=98, next=0
+                            KindIdentifier "T" [257, 258), i=99, next=0
+                      KindUndefinedKeyword [261, 271), i=100, next=0
+                  KindCallExpression [273, 281), i=101, next=0
+                    KindIdentifier "join" [273, 278), i=102, next=103
+                    NodeList [279, 280), i=103, next=0
+                      KindIdentifier "l" [279, 280), i=104, next=0

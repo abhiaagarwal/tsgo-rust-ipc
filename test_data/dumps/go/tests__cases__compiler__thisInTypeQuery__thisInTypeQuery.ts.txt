@@ -1,0 +1,107 @@
+KindSourceFile [0, 518), i=1, next=0
+  NodeList [0, 516), i=2, next=0
+    KindFunctionDeclaration [0, 117), i=3, next=22
+      KindIdentifier "assert" [8, 15), i=4, next=5
+      NodeList [16, 34), i=5, next=9
+        KindParameter [16, 34), i=6, next=0
+          KindIdentifier "condition" [16, 25), i=7, next=8
+          KindUnknownKeyword [26, 34), i=8, next=0
+      KindTypePredicate [36, 54), i=9, next=12
+        KindAssertsKeyword [36, 44), i=10, next=11
+        KindIdentifier "condition" [44, 54), i=11, next=0
+      KindBlock [54, 117), i=12, next=0
+        NodeList [56, 114), i=13, next=0
+          KindIfStatement [56, 114), i=14, next=0
+            KindPrefixUnaryExpression [66, 76), i=15, next=17
+              KindIdentifier "condition" [67, 76), i=16, next=0
+            KindBlock [77, 114), i=17, next=0
+              NodeList [79, 107), i=18, next=0
+                KindThrowStatement [79, 107), i=19, next=0
+                  KindNewExpression [94, 106), i=20, next=0
+                    KindIdentifier "Error" [98, 104), i=21, next=0
+    KindClassDeclaration [117, 410), i=22, next=85
+      KindIdentifier "MyClass" [126, 134), i=23, next=24
+      NodeList [136, 407), i=24, next=0
+        KindPropertyDeclaration [136, 198), i=25, next=34
+          NodeList [136, 149), i=26, next=28
+            KindPrivateKeyword [136, 149), i=27, next=0
+          KindIdentifier "map" [149, 153), i=28, next=29
+          KindObjectLiteralExpression [155, 197), i=29, next=0
+            NodeList [157, 190), i=30, next=0
+              KindPropertyAssignment [157, 190), i=31, next=0
+                KindIdentifier "my_key" [157, 173), i=32, next=33
+                KindStringLiteral "example_value" [174, 190), i=33, next=0
+        KindMethodDeclaration [198, 407), i=34, next=0
+          KindIdentifier "runTypeFails" [198, 218), i=35, next=36
+          KindBlock [220, 407), i=36, next=0
+            NodeList [222, 400), i=37, next=0
+              KindVariableStatement [222, 292), i=38, next=60
+                KindVariableDeclarationList [222, 291), i=39, next=0
+                  NodeList [237, 291), i=40, next=0
+                    KindVariableDeclaration [237, 291), i=41, next=0
+                      KindIdentifier "params" [237, 244), i=42, next=43
+                      KindAsExpression [246, 291), i=43, next=0
+                        KindAsExpression [246, 258), i=44, next=47
+                          KindNullKeyword [246, 251), i=45, next=46
+                          KindAnyKeyword [254, 258), i=46, next=0
+                        KindUnionType [261, 291), i=47, next=0
+                          NodeList [261, 291), i=48, next=0
+                            KindTypeLiteral [261, 284), i=49, next=58
+                              NodeList [263, 282), i=50, next=0
+                                KindPropertySignature [263, 282), i=51, next=0
+                                  KindIdentifier "a" [263, 265), i=52, next=53
+                                  KindTypeLiteral [266, 282), i=53, next=0
+                                    NodeList [268, 280), i=54, next=0
+                                      KindPropertySignature [268, 280), i=55, next=0
+                                        KindIdentifier "key" [268, 272), i=56, next=57
+                                        KindStringKeyword [273, 280), i=57, next=0
+                            KindLiteralType [286, 291), i=58, next=0
+                              KindNullKeyword [286, 291), i=59, next=0
+              KindExpressionStatement [292, 317), i=60, next=65
+                KindCallExpression [292, 316), i=61, next=0
+                  KindIdentifier "assert" [292, 308), i=62, next=63
+                  NodeList [309, 315), i=63, next=0
+                    KindIdentifier "params" [309, 315), i=64, next=0
+              KindTypeAliasDeclaration [317, 360), i=65, next=72
+                KindIdentifier "Key" [331, 335), i=66, next=67
+                KindTypeOperator [337, 359), i=67, next=0
+                  KindTypeQuery [343, 359), i=68, next=0
+                    KindQualifiedName [350, 359), i=69, next=0
+                      KindIdentifier "this" [350, 355), i=70, next=71
+                      KindIdentifier "map" [356, 359), i=71, next=0
+              KindExpressionStatement [360, 400), i=72, next=0
+                KindElementAccessExpression [360, 399), i=73, next=0
+                  KindPropertyAccessExpression [360, 378), i=74, next=77
+                    KindThisKeyword [360, 374), i=75, next=76
+                    KindIdentifier "map" [375, 378), i=76, next=0
+                  KindAsExpression [379, 398), i=77, next=0
+                    KindPropertyAccessExpression [379, 391), i=78, next=83
+                      KindPropertyAccessExpression [379, 387), i=79, next=82
+                        KindIdentifier "params" [379, 385), i=80, next=81
+                        KindIdentifier "a" [386, 387), i=81, next=0
+                      KindIdentifier "key" [388, 391), i=82, next=0
+                    KindTypeReference [394, 398), i=83, next=0
+                      KindIdentifier "Key" [394, 398), i=84, next=0
+    KindClassDeclaration [410, 516), i=85, next=0
+      KindIdentifier "C" [419, 421), i=86, next=87
+      NodeList [423, 513), i=87, next=0
+        KindMethodDeclaration [423, 513), i=88, next=0
+          KindIdentifier "foo" [423, 430), i=89, next=90
+          KindBlock [432, 513), i=90, next=0
+            NodeList [434, 508), i=91, next=0
+              KindVariableStatement [434, 457), i=92, next=100
+                KindVariableDeclarationList [434, 456), i=93, next=0
+                  NodeList [445, 456), i=94, next=0
+                    KindVariableDeclaration [445, 456), i=95, next=0
+                      KindIdentifier "x" [445, 447), i=96, next=97
+                      KindPrefixUnaryExpression [449, 456), i=97, next=0
+                        KindPrefixUnaryExpression [451, 456), i=98, next=0
+                          KindTrueKeyword [452, 456), i=99, next=0
+              KindIfStatement [457, 508), i=100, next=0
+                KindIdentifier "x" [467, 468), i=101, next=102
+                KindBlock [469, 508), i=102, next=0
+                  NodeList [471, 501), i=103, next=0
+                    KindTypeAliasDeclaration [471, 501), i=104, next=0
+                      KindIdentifier "T0" [483, 486), i=105, next=106
+                      KindTypeQuery [488, 500), i=106, next=0
+                        KindIdentifier "this" [495, 500), i=107, next=0

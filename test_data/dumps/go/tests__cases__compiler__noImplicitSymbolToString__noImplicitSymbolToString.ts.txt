@@ -1,0 +1,225 @@
+KindSourceFile [0, 790), i=1, next=0
+  NodeList [0, 789), i=2, next=0
+    KindVariableStatement [0, 20), i=3, next=10
+      KindVariableDeclarationList [0, 19), i=4, next=0
+        NodeList [3, 19), i=5, next=0
+          KindVariableDeclaration [3, 19), i=6, next=0
+            KindIdentifier "symbol" [3, 10), i=7, next=8
+            KindExclamationToken [10, 11), i=8, next=9
+            KindSymbolKeyword [12, 19), i=9, next=0
+    KindVariableStatement [20, 40), i=10, next=16
+      KindVariableDeclarationList [20, 39), i=11, next=0
+        NodeList [24, 39), i=12, next=0
+          KindVariableDeclaration [24, 39), i=13, next=0
+            KindIdentifier "str" [24, 28), i=14, next=15
+            KindStringLiteral "hello " [30, 39), i=15, next=0
+    KindVariableStatement [40, 80), i=16, next=27
+      KindVariableDeclarationList [40, 79), i=17, next=0
+        NodeList [47, 79), i=18, next=0
+          KindVariableDeclaration [47, 79), i=19, next=0
+            KindIdentifier "templateStr" [47, 59), i=20, next=21
+            KindTemplateExpression [61, 79), i=21, next=0
+              KindTemplateHead [61, 71), i=22, next=23
+              NodeList [71, 79), i=23, next=0
+                KindTemplateSpan [71, 79), i=24, next=0
+                  KindIdentifier "symbol" [71, 77), i=25, next=26
+                  KindTemplateTail [77, 79), i=26, next=0
+    KindVariableStatement [80, 117), i=27, next=36
+      KindVariableDeclarationList [80, 116), i=28, next=0
+        NodeList [86, 116), i=29, next=0
+          KindVariableDeclaration [86, 116), i=30, next=0
+            KindIdentifier "appendStr" [86, 96), i=31, next=32
+            KindBinaryExpression [98, 116), i=32, next=0
+              KindStringLiteral "hello " [98, 107), i=33, next=34
+              KindPlusToken [107, 109), i=34, next=35
+              KindIdentifier "symbol" [109, 116), i=35, next=0
+    KindExpressionStatement [117, 132), i=36, next=41
+      KindBinaryExpression [117, 131), i=37, next=0
+        KindIdentifier "str" [117, 121), i=38, next=39
+        KindPlusEqualsToken [121, 124), i=39, next=40
+        KindIdentifier "symbol" [124, 131), i=40, next=0
+    KindVariableStatement [132, 174), i=41, next=51
+      KindVariableDeclarationList [132, 173), i=42, next=0
+        NodeList [137, 173), i=43, next=0
+          KindVariableDeclaration [137, 173), i=44, next=0
+            KindIdentifier "symbolUnionNumber" [137, 155), i=45, next=46
+            KindExclamationToken [155, 156), i=46, next=47
+            KindUnionType [157, 173), i=47, next=0
+              NodeList [157, 173), i=48, next=0
+                KindSymbolKeyword [157, 164), i=49, next=50
+                KindNumberKeyword [166, 173), i=50, next=0
+    KindVariableStatement [174, 215), i=51, next=61
+      KindVariableDeclarationList [174, 214), i=52, next=0
+        NodeList [178, 214), i=53, next=0
+          KindVariableDeclaration [178, 214), i=54, next=0
+            KindIdentifier "symbolUnionString" [178, 196), i=55, next=56
+            KindExclamationToken [196, 197), i=56, next=57
+            KindUnionType [198, 214), i=57, next=0
+              NodeList [198, 214), i=58, next=0
+                KindSymbolKeyword [198, 205), i=59, next=60
+                KindStringKeyword [207, 214), i=60, next=0
+    KindVariableStatement [215, 326), i=61, next=75
+      KindVariableDeclarationList [215, 325), i=62, next=0
+        NodeList [222, 325), i=63, next=0
+          KindVariableDeclaration [222, 325), i=64, next=0
+            KindIdentifier "templateStrUnion" [222, 239), i=65, next=66
+            KindTemplateExpression [241, 325), i=66, next=0
+              KindTemplateHead [241, 263), i=67, next=68
+              NodeList [263, 325), i=68, next=0
+                KindTemplateSpan [263, 306), i=69, next=72
+                  KindIdentifier "symbolUnionNumber" [263, 280), i=70, next=71
+                  KindTemplateMiddle [280, 306), i=71, next=0
+                KindTemplateSpan [306, 325), i=72, next=0
+                  KindIdentifier "symbolUnionString" [306, 323), i=73, next=74
+                  KindTemplateTail [323, 325), i=74, next=0
+    KindTypeAliasDeclaration [326, 382), i=75, next=81
+      KindIdentifier "StringOrSymbol" [348, 363), i=76, next=77
+      KindUnionType [365, 381), i=77, next=0
+        NodeList [365, 381), i=78, next=0
+          KindStringKeyword [365, 372), i=79, next=80
+          KindSymbolKeyword [374, 381), i=80, next=0
+    KindFunctionDeclaration [382, 469), i=81, next=102
+      KindIdentifier "getKey" [392, 399), i=82, next=83
+      NodeList [400, 424), i=83, next=88
+        KindTypeParameter [400, 424), i=84, next=0
+          KindIdentifier "S" [400, 401), i=85, next=86
+          KindTypeReference [409, 424), i=86, next=0
+            KindIdentifier "StringOrSymbol" [409, 424), i=87, next=0
+      NodeList [426, 432), i=88, next=93
+        KindParameter [426, 432), i=89, next=0
+          KindIdentifier "key" [426, 429), i=90, next=91
+          KindTypeReference [430, 432), i=91, next=0
+            KindIdentifier "S" [430, 432), i=92, next=0
+      KindBlock [433, 469), i=93, next=0
+        NodeList [435, 467), i=94, next=0
+          KindReturnStatement [435, 467), i=95, next=0
+            KindTemplateExpression [446, 466), i=96, next=0
+              KindTemplateHead [446, 450), i=97, next=98
+              NodeList [450, 466), i=98, next=0
+                KindTemplateSpan [450, 466), i=99, next=0
+                  KindIdentifier "key" [450, 453), i=100, next=101
+                  KindTemplateTail [453, 466), i=101, next=0
+    KindFunctionDeclaration [469, 629), i=102, next=164
+      KindIdentifier "getKey1" [479, 487), i=103, next=104
+      NodeList [488, 504), i=104, next=108
+        KindTypeParameter [488, 504), i=105, next=0
+          KindIdentifier "S" [488, 489), i=106, next=107
+          KindSymbolKeyword [497, 504), i=107, next=0
+      NodeList [506, 512), i=108, next=113
+        KindParameter [506, 512), i=109, next=0
+          KindIdentifier "key" [506, 509), i=110, next=111
+          KindTypeReference [510, 512), i=111, next=0
+            KindIdentifier "S" [510, 512), i=112, next=0
+      KindBlock [513, 629), i=113, next=0
+        NodeList [515, 627), i=114, next=0
+          KindVariableStatement [515, 531), i=115, next=123
+            KindVariableDeclarationList [515, 530), i=116, next=0
+              NodeList [523, 530), i=117, next=0
+                KindVariableDeclaration [523, 530), i=118, next=0
+                  KindIdentifier "s1" [523, 526), i=119, next=120
+                  KindExclamationToken [526, 527), i=120, next=121
+                  KindTypeReference [528, 530), i=121, next=0
+                    KindIdentifier "S" [528, 530), i=122, next=0
+          KindExpressionStatement [531, 544), i=123, next=130
+            KindTemplateExpression [531, 543), i=124, next=0
+              KindTemplateHead [531, 539), i=125, next=126
+              NodeList [539, 543), i=126, next=0
+                KindTemplateSpan [539, 543), i=127, next=0
+                  KindIdentifier "s1" [539, 541), i=128, next=129
+                  KindTemplateTail [541, 543), i=129, next=0
+          KindExpressionStatement [544, 557), i=130, next=135
+            KindBinaryExpression [544, 556), i=131, next=0
+              KindIdentifier "s1" [544, 551), i=132, next=133
+              KindPlusToken [551, 553), i=133, next=134
+              KindStringLiteral "" [553, 556), i=134, next=0
+          KindExpressionStatement [557, 566), i=135, next=138
+            KindPrefixUnaryExpression [557, 565), i=136, next=0
+              KindIdentifier "s1" [563, 565), i=137, next=0
+          KindVariableStatement [566, 592), i=138, next=149
+            KindVariableDeclarationList [566, 591), i=139, next=0
+              NodeList [575, 591), i=140, next=0
+                KindVariableDeclaration [575, 591), i=141, next=0
+                  KindIdentifier "s2" [575, 578), i=142, next=143
+                  KindExclamationToken [578, 579), i=143, next=144
+                  KindUnionType [580, 591), i=144, next=0
+                    NodeList [580, 591), i=145, next=0
+                      KindTypeReference [580, 582), i=146, next=148
+                        KindIdentifier "S" [580, 582), i=147, next=0
+                      KindStringKeyword [584, 591), i=148, next=0
+          KindExpressionStatement [592, 605), i=149, next=156
+            KindTemplateExpression [592, 604), i=150, next=0
+              KindTemplateHead [592, 600), i=151, next=152
+              NodeList [600, 604), i=152, next=0
+                KindTemplateSpan [600, 604), i=153, next=0
+                  KindIdentifier "s2" [600, 602), i=154, next=155
+                  KindTemplateTail [602, 604), i=155, next=0
+          KindExpressionStatement [605, 618), i=156, next=161
+            KindBinaryExpression [605, 617), i=157, next=0
+              KindIdentifier "s2" [605, 612), i=158, next=159
+              KindPlusToken [612, 614), i=159, next=160
+              KindStringLiteral "" [614, 617), i=160, next=0
+          KindExpressionStatement [618, 627), i=161, next=0
+            KindPrefixUnaryExpression [618, 626), i=162, next=0
+              KindIdentifier "s2" [624, 626), i=163, next=0
+    KindFunctionDeclaration [629, 789), i=164, next=0
+      KindIdentifier "getKey2" [639, 647), i=165, next=166
+      NodeList [648, 664), i=166, next=170
+        KindTypeParameter [648, 664), i=167, next=0
+          KindIdentifier "S" [648, 649), i=168, next=169
+          KindStringKeyword [657, 664), i=169, next=0
+      NodeList [666, 672), i=170, next=175
+        KindParameter [666, 672), i=171, next=0
+          KindIdentifier "key" [666, 669), i=172, next=173
+          KindTypeReference [670, 672), i=173, next=0
+            KindIdentifier "S" [670, 672), i=174, next=0
+      KindBlock [673, 789), i=175, next=0
+        NodeList [675, 787), i=176, next=0
+          KindVariableStatement [675, 691), i=177, next=185
+            KindVariableDeclarationList [675, 690), i=178, next=0
+              NodeList [683, 690), i=179, next=0
+                KindVariableDeclaration [683, 690), i=180, next=0
+                  KindIdentifier "s1" [683, 686), i=181, next=182
+                  KindExclamationToken [686, 687), i=182, next=183
+                  KindTypeReference [688, 690), i=183, next=0
+                    KindIdentifier "S" [688, 690), i=184, next=0
+          KindExpressionStatement [691, 704), i=185, next=192
+            KindTemplateExpression [691, 703), i=186, next=0
+              KindTemplateHead [691, 699), i=187, next=188
+              NodeList [699, 703), i=188, next=0
+                KindTemplateSpan [699, 703), i=189, next=0
+                  KindIdentifier "s1" [699, 701), i=190, next=191
+                  KindTemplateTail [701, 703), i=191, next=0
+          KindExpressionStatement [704, 717), i=192, next=197
+            KindBinaryExpression [704, 716), i=193, next=0
+              KindIdentifier "s1" [704, 711), i=194, next=195
+              KindPlusToken [711, 713), i=195, next=196
+              KindStringLiteral "" [713, 716), i=196, next=0
+          KindExpressionStatement [717, 726), i=197, next=200
+            KindPrefixUnaryExpression [717, 725), i=198, next=0
+              KindIdentifier "s1" [723, 725), i=199, next=0
+          KindVariableStatement [726, 752), i=200, next=211
+            KindVariableDeclarationList [726, 751), i=201, next=0
+              NodeList [735, 751), i=202, next=0
+                KindVariableDeclaration [735, 751), i=203, next=0
+                  KindIdentifier "s2" [735, 738), i=204, next=205
+                  KindExclamationToken [738, 739), i=205, next=206
+                  KindUnionType [740, 751), i=206, next=0
+                    NodeList [740, 751), i=207, next=0
+                      KindTypeReference [740, 742), i=208, next=210
+                        KindIdentifier "S" [740, 742), i=209, next=0
+                      KindSymbolKeyword [744, 751), i=210, next=0
+          KindExpressionStatement [752, 765), i=211, next=218
+            KindTemplateExpression [752, 764), i=212, next=0
+              KindTemplateHead [752, 760), i=213, next=214
+              NodeList [760, 764), i=214, next=0
+                KindTemplateSpan [760, 764), i=215, next=0
+                  KindIdentifier "s2" [760, 762), i=216, next=217
+                  KindTemplateTail [762, 764), i=217, next=0
+          KindExpressionStatement [765, 778), i=218, next=223
+            KindBinaryExpression [765, 777), i=219, next=0
+              KindIdentifier "s2" [765, 772), i=220, next=221
+              KindPlusToken [772, 774), i=221, next=222
+              KindStringLiteral "" [774, 777), i=222, next=0
+          KindExpressionStatement [778, 787), i=223, next=0
+            KindPrefixUnaryExpression [778, 786), i=224, next=0
+              KindIdentifier "s2" [784, 786), i=225, next=0

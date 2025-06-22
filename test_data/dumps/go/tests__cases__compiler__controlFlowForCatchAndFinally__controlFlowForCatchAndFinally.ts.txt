@@ -1,0 +1,212 @@
+KindSourceFile [0, 1171), i=1, next=0
+  NodeList [0, 1171), i=2, next=0
+    KindTypeAliasDeclaration [0, 65), i=3, next=19
+      KindIdentifier "Page" [4, 9), i=4, next=5
+      KindTypeLiteral [11, 64), i=5, next=0
+        NodeList [13, 63), i=6, next=0
+          KindMethodSignature [13, 36), i=7, next=13
+            KindIdentifier "close" [13, 18), i=8, next=9
+            KindTypeReference [21, 35), i=9, next=0
+              KindIdentifier "Promise" [21, 29), i=10, next=11
+              NodeList [30, 34), i=11, next=0
+                KindVoidKeyword [30, 34), i=12, next=0
+          KindMethodSignature [36, 63), i=13, next=0
+            KindIdentifier "content" [36, 44), i=14, next=15
+            KindTypeReference [47, 63), i=15, next=0
+              KindIdentifier "Promise" [47, 55), i=16, next=17
+              NodeList [56, 62), i=17, next=0
+                KindStringKeyword [56, 62), i=18, next=0
+    KindTypeAliasDeclaration [65, 107), i=19, next=29
+      KindIdentifier "Browser" [71, 79), i=20, next=21
+      KindTypeLiteral [81, 106), i=21, next=0
+        NodeList [83, 105), i=22, next=0
+          KindMethodSignature [83, 105), i=23, next=0
+            KindIdentifier "close" [83, 88), i=24, next=25
+            KindTypeReference [91, 105), i=25, next=0
+              KindIdentifier "Promise" [91, 99), i=26, next=27
+              NodeList [100, 104), i=27, next=0
+                KindVoidKeyword [100, 104), i=28, next=0
+    KindFunctionDeclaration [107, 152), i=29, next=38
+      NodeList [107, 116), i=30, next=32
+        KindDeclareKeyword [107, 116), i=31, next=0
+      KindIdentifier "test1" [125, 131), i=32, next=33
+      KindTypeReference [134, 151), i=33, next=0
+        KindIdentifier "Promise" [134, 142), i=34, next=35
+        NodeList [143, 150), i=35, next=0
+          KindTypeReference [143, 150), i=36, next=0
+            KindIdentifier "Browser" [143, 150), i=37, next=0
+    KindFunctionDeclaration [152, 206), i=38, next=52
+      NodeList [152, 161), i=39, next=41
+        KindDeclareKeyword [152, 161), i=40, next=0
+      KindIdentifier "test2" [170, 176), i=41, next=42
+      NodeList [177, 189), i=42, next=47
+        KindParameter [177, 189), i=43, next=0
+          KindIdentifier "obj" [177, 180), i=44, next=45
+          KindTypeReference [181, 189), i=45, next=0
+            KindIdentifier "Browser" [181, 189), i=46, next=0
+      KindTypeReference [191, 205), i=47, next=0
+        KindIdentifier "Promise" [191, 199), i=48, next=49
+        NodeList [200, 204), i=49, next=0
+          KindTypeReference [200, 204), i=50, next=0
+            KindIdentifier "Page" [200, 204), i=51, next=0
+    KindFunctionDeclaration [206, 643), i=52, next=132
+      NodeList [206, 213), i=53, next=55
+        KindAsyncKeyword [206, 213), i=54, next=0
+      KindIdentifier "test" [222, 227), i=55, next=56
+      KindTypeReference [230, 246), i=56, next=60
+        KindIdentifier "Promise" [230, 238), i=57, next=58
+        NodeList [239, 245), i=58, next=0
+          KindStringKeyword [239, 245), i=59, next=0
+      KindBlock [246, 643), i=60, next=0
+        NodeList [248, 640), i=61, next=0
+          KindVariableStatement [248, 299), i=62, next=73
+            KindVariableDeclarationList [248, 298), i=63, next=0
+              NodeList [257, 298), i=64, next=0
+                KindVariableDeclaration [257, 298), i=65, next=0
+                  KindIdentifier "browser" [257, 265), i=66, next=67
+                  KindUnionType [266, 286), i=67, next=72
+                    NodeList [266, 286), i=68, next=0
+                      KindTypeReference [266, 274), i=69, next=71
+                        KindIdentifier "Browser" [266, 274), i=70, next=0
+                      KindUndefinedKeyword [276, 286), i=71, next=0
+                  KindIdentifier "undefined" [288, 298), i=72, next=0
+          KindVariableStatement [299, 344), i=73, next=84
+            KindVariableDeclarationList [299, 343), i=74, next=0
+              NodeList [308, 343), i=75, next=0
+                KindVariableDeclaration [308, 343), i=76, next=0
+                  KindIdentifier "page" [308, 313), i=77, next=78
+                  KindUnionType [314, 331), i=78, next=83
+                    NodeList [314, 331), i=79, next=0
+                      KindTypeReference [314, 319), i=80, next=82
+                        KindIdentifier "Page" [314, 319), i=81, next=0
+                      KindUndefinedKeyword [321, 331), i=82, next=0
+                  KindIdentifier "undefined" [333, 343), i=83, next=0
+          KindTryStatement [344, 640), i=84, next=0
+            KindBlock [353, 473), i=85, next=110
+              NodeList [355, 466), i=86, next=0
+                KindExpressionStatement [355, 389), i=87, next=94
+                  KindBinaryExpression [355, 388), i=88, next=0
+                    KindIdentifier "browser" [355, 372), i=89, next=90
+                    KindEqualsToken [372, 374), i=90, next=91
+                    KindAwaitExpression [374, 388), i=91, next=0
+                      KindCallExpression [380, 388), i=92, next=0
+                        KindIdentifier "test1" [380, 386), i=93, next=0
+                KindExpressionStatement [389, 427), i=94, next=103
+                  KindBinaryExpression [389, 426), i=95, next=0
+                    KindIdentifier "page" [389, 403), i=96, next=97
+                    KindEqualsToken [403, 405), i=97, next=98
+                    KindAwaitExpression [405, 426), i=98, next=0
+                      KindCallExpression [411, 426), i=99, next=0
+                        KindIdentifier "test2" [411, 417), i=100, next=101
+                        NodeList [418, 425), i=101, next=0
+                          KindIdentifier "browser" [418, 425), i=102, next=0
+                KindReturnStatement [427, 465), i=103, next=109
+                  KindAwaitExpression [443, 464), i=104, next=0
+                    KindCallExpression [449, 464), i=105, next=0
+                      KindPropertyAccessExpression [449, 462), i=106, next=0
+                        KindIdentifier "page" [449, 454), i=107, next=108
+                        KindIdentifier "content" [455, 462), i=108, next=0
+                KindEmptyStatement [465, 466), i=109, next=0
+            KindBlock [481, 640), i=110, next=0
+              NodeList [483, 633), i=111, next=0
+                KindIfStatement [483, 554), i=112, next=122
+                  KindIdentifier "page" [497, 501), i=113, next=114
+                  KindBlock [502, 554), i=114, next=0
+                    NodeList [504, 537), i=115, next=0
+                      KindExpressionStatement [504, 537), i=116, next=0
+                        KindAwaitExpression [504, 536), i=117, next=0
+                          KindCallExpression [523, 536), i=118, next=0
+                            KindPropertyAccessExpression [523, 534), i=119, next=0
+                              KindIdentifier "page" [523, 528), i=120, next=121
+                              KindIdentifier "close" [529, 534), i=121, next=0
+                KindIfStatement [554, 633), i=122, next=0
+                  KindIdentifier "browser" [570, 577), i=123, next=124
+                  KindBlock [578, 633), i=124, next=0
+                    NodeList [580, 616), i=125, next=0
+                      KindExpressionStatement [580, 616), i=126, next=0
+                        KindAwaitExpression [580, 615), i=127, next=0
+                          KindCallExpression [599, 615), i=128, next=0
+                            KindPropertyAccessExpression [599, 613), i=129, next=0
+                              KindIdentifier "browser" [599, 607), i=130, next=131
+                              KindIdentifier "close" [608, 613), i=131, next=0
+    KindClassDeclaration [643, 686), i=132, next=140
+      NodeList [643, 654), i=133, next=135
+        KindDeclareKeyword [643, 654), i=134, next=0
+      KindIdentifier "Aborter" [660, 668), i=135, next=136
+      NodeList [670, 684), i=136, next=0
+        KindMethodDeclaration [670, 684), i=137, next=0
+          KindIdentifier "abort" [670, 676), i=138, next=139
+          KindVoidKeyword [679, 684), i=139, next=0
+    KindEmptyStatement [686, 687), i=140, next=141
+    KindClassDeclaration [687, 1171), i=141, next=0
+      KindIdentifier "Foo" [694, 698), i=142, next=143
+      NodeList [700, 1168), i=143, next=0
+        KindPropertyDeclaration [700, 755), i=144, next=152
+          KindIdentifier "abortController" [700, 721), i=145, next=146
+          KindUnionType [722, 742), i=146, next=151
+            NodeList [722, 742), i=147, next=0
+              KindTypeReference [722, 730), i=148, next=150
+                KindIdentifier "Aborter" [722, 730), i=149, next=0
+              KindUndefinedKeyword [732, 742), i=150, next=0
+          KindIdentifier "undefined" [744, 754), i=151, next=0
+        KindMethodDeclaration [755, 1168), i=152, next=0
+          NodeList [755, 768), i=153, next=155
+            KindAsyncKeyword [755, 768), i=154, next=0
+          KindIdentifier "operation" [768, 778), i=155, next=156
+          KindBlock [780, 1168), i=156, next=0
+            NodeList [782, 1161), i=157, next=0
+              KindIfStatement [782, 934), i=158, next=181
+                KindBinaryExpression [796, 830), i=159, next=165
+                  KindPropertyAccessExpression [796, 816), i=160, next=163
+                    KindThisKeyword [796, 800), i=161, next=162
+                    KindIdentifier "abortController" [801, 816), i=162, next=0
+                  KindExclamationEqualsEqualsToken [816, 820), i=163, next=164
+                  KindIdentifier "undefined" [820, 830), i=164, next=0
+                KindBlock [831, 934), i=165, next=0
+                  NodeList [833, 923), i=166, next=0
+                    KindExpressionStatement [833, 876), i=167, next=174
+                      KindCallExpression [833, 875), i=168, next=0
+                        KindPropertyAccessExpression [833, 873), i=169, next=0
+                          KindPropertyAccessExpression [833, 867), i=170, next=173
+                            KindThisKeyword [833, 851), i=171, next=172
+                            KindIdentifier "abortController" [852, 867), i=172, next=0
+                          KindIdentifier "abort" [868, 873), i=173, next=0
+                    KindExpressionStatement [876, 923), i=174, next=0
+                      KindBinaryExpression [876, 922), i=175, next=0
+                        KindPropertyAccessExpression [876, 910), i=176, next=179
+                          KindThisKeyword [876, 894), i=177, next=178
+                          KindIdentifier "abortController" [895, 910), i=178, next=0
+                        KindEqualsToken [910, 912), i=179, next=180
+                        KindIdentifier "undefined" [912, 922), i=180, next=0
+              KindTryStatement [934, 1161), i=181, next=0
+                KindBlock [947, 1011), i=182, next=192
+                  NodeList [949, 1000), i=183, next=0
+                    KindExpressionStatement [949, 1000), i=184, next=0
+                      KindBinaryExpression [949, 999), i=185, next=0
+                        KindPropertyAccessExpression [949, 983), i=186, next=189
+                          KindThisKeyword [949, 967), i=187, next=188
+                          KindIdentifier "abortController" [968, 983), i=188, next=0
+                        KindEqualsToken [983, 985), i=189, next=190
+                        KindNewExpression [985, 999), i=190, next=0
+                          KindIdentifier "Aborter" [989, 997), i=191, next=0
+                KindCatchClause [1011, 1161), i=192, next=0
+                  KindVariableDeclaration [1019, 1024), i=193, next=195
+                    KindIdentifier "error" [1019, 1024), i=194, next=0
+                  KindBlock [1025, 1161), i=195, next=0
+                    NodeList [1027, 1150), i=196, next=0
+                      KindIfStatement [1027, 1150), i=197, next=0
+                        KindBinaryExpression [1045, 1079), i=198, next=204
+                          KindPropertyAccessExpression [1045, 1065), i=199, next=202
+                            KindThisKeyword [1045, 1049), i=200, next=201
+                            KindIdentifier "abortController" [1050, 1065), i=201, next=0
+                          KindExclamationEqualsEqualsToken [1065, 1069), i=202, next=203
+                          KindIdentifier "undefined" [1069, 1079), i=203, next=0
+                        KindBlock [1080, 1150), i=204, next=0
+                          NodeList [1082, 1129), i=205, next=0
+                            KindExpressionStatement [1082, 1129), i=206, next=0
+                              KindCallExpression [1082, 1128), i=207, next=0
+                                KindPropertyAccessExpression [1082, 1126), i=208, next=0
+                                  KindPropertyAccessExpression [1082, 1120), i=209, next=212
+                                    KindThisKeyword [1082, 1104), i=210, next=211
+                                    KindIdentifier "abortController" [1105, 1120), i=211, next=0
+                                  KindIdentifier "abort" [1121, 1126), i=212, next=0

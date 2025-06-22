@@ -1,0 +1,74 @@
+KindSourceFile [0, 375), i=1, next=0
+  NodeList [0, 375), i=2, next=0
+    KindClassDeclaration [0, 375), i=3, next=0
+      KindIdentifier "ConstantIterator" [5, 22), i=4, next=5
+      NodeList [23, 24), i=5, next=8
+        KindTypeParameter [23, 24), i=6, next=0
+          KindIdentifier "T" [23, 24), i=7, next=0
+      NodeList [25, 74), i=8, next=22
+        KindHeritageClause [25, 74), i=9, next=0
+          NodeList [36, 74), i=10, next=0
+            KindExpressionWithTypeArguments [36, 74), i=11, next=0
+              KindIdentifier "AsyncIterator" [36, 50), i=12, next=13
+              NodeList [51, 73), i=13, next=0
+                KindTypeReference [51, 52), i=14, next=16
+                  KindIdentifier "T" [51, 52), i=15, next=0
+                KindVoidKeyword [53, 58), i=16, next=17
+                KindUnionType [59, 73), i=17, next=0
+                  NodeList [59, 73), i=18, next=0
+                    KindTypeReference [59, 61), i=19, next=21
+                      KindIdentifier "T" [59, 61), i=20, next=0
+                    KindUndefinedKeyword [63, 73), i=21, next=0
+      NodeList [76, 372), i=22, next=0
+        KindConstructor [76, 123), i=23, next=32
+          NodeList [94, 113), i=24, next=31
+            KindParameter [94, 113), i=25, next=0
+              NodeList [94, 101), i=26, next=28
+                KindPrivateKeyword [94, 101), i=27, next=0
+              KindIdentifier "constant" [101, 110), i=28, next=29
+              KindTypeReference [111, 113), i=29, next=0
+                KindIdentifier "T" [111, 113), i=30, next=0
+          KindBlock [114, 123), i=31, next=0
+        KindMethodDeclaration [123, 372), i=32, next=0
+          NodeList [123, 134), i=33, next=35
+            KindAsyncKeyword [123, 134), i=34, next=0
+          KindIdentifier "next" [134, 139), i=35, next=36
+          NodeList [140, 149), i=36, next=42
+            KindParameter [140, 149), i=37, next=0
+              KindIdentifier "value" [140, 145), i=38, next=39
+              KindQuestionToken [145, 146), i=39, next=40
+              KindTypeReference [147, 149), i=40, next=0
+                KindIdentifier "T" [147, 149), i=41, next=0
+          KindTypeReference [151, 178), i=42, next=50
+            KindIdentifier "Promise" [151, 159), i=43, next=44
+            NodeList [160, 177), i=44, next=0
+              KindTypeReference [160, 177), i=45, next=0
+                KindIdentifier "IteratorResult" [160, 174), i=46, next=47
+                NodeList [175, 176), i=47, next=0
+                  KindTypeReference [175, 176), i=48, next=0
+                    KindIdentifier "T" [175, 176), i=49, next=0
+          KindBlock [178, 372), i=50, next=0
+            NodeList [180, 365), i=51, next=0
+              KindIfStatement [180, 310), i=52, next=64
+                KindBinaryExpression [194, 207), i=53, next=57
+                  KindIdentifier "value" [194, 199), i=54, next=55
+                  KindExclamationEqualsToken [199, 202), i=55, next=56
+                  KindNullKeyword [202, 207), i=56, next=0
+                KindBlock [208, 310), i=57, next=0
+                  NodeList [210, 299), i=58, next=0
+                    KindThrowStatement [210, 299), i=59, next=0
+                      KindNewExpression [229, 298), i=60, next=0
+                        KindIdentifier "Error" [233, 239), i=61, next=62
+                        NodeList [240, 297), i=62, next=0
+                          KindStringLiteral "ConstantIterator.prototype.next may not take any values" [240, 297), i=63, next=0
+              KindReturnStatement [310, 365), i=64, next=0
+                KindObjectLiteralExpression [326, 364), i=65, next=0
+                  NodeList [328, 362), i=66, next=0
+                    KindPropertyAssignment [328, 349), i=67, next=72
+                      KindIdentifier "value" [328, 334), i=68, next=69
+                      KindPropertyAccessExpression [335, 349), i=69, next=0
+                        KindThisKeyword [335, 340), i=70, next=71
+                        KindIdentifier "constant" [341, 349), i=71, next=0
+                    KindPropertyAssignment [350, 362), i=72, next=0
+                      KindIdentifier "done" [350, 355), i=73, next=74
+                      KindFalseKeyword [356, 362), i=74, next=0

@@ -1,0 +1,79 @@
+KindSourceFile [0, 364), i=1, next=0
+  NodeList [0, 364), i=2, next=0
+    KindInterfaceDeclaration [0, 57), i=3, next=13
+      KindIdentifier "ComplicatedTypeBase" [9, 29), i=4, next=5
+      NodeList [31, 55), i=5, next=0
+        KindIndexSignature [31, 55), i=6, next=0
+          NodeList [37, 46), i=7, next=11
+            KindParameter [37, 46), i=8, next=0
+              KindIdentifier "s" [37, 38), i=9, next=10
+              KindStringKeyword [39, 46), i=10, next=0
+          KindTypeReference [48, 54), i=11, next=0
+            KindIdentifier "ABase" [48, 54), i=12, next=0
+    KindInterfaceDeclaration [57, 121), i=13, next=23
+      KindIdentifier "ComplicatedTypeDerived" [67, 90), i=14, next=15
+      NodeList [92, 119), i=15, next=0
+        KindIndexSignature [92, 119), i=16, next=0
+          NodeList [98, 107), i=17, next=21
+            KindParameter [98, 107), i=18, next=0
+              KindIdentifier "s" [98, 99), i=19, next=20
+              KindStringKeyword [100, 107), i=20, next=0
+          KindTypeReference [109, 118), i=21, next=0
+            KindIdentifier "ADerived" [109, 118), i=22, next=0
+    KindInterfaceDeclaration [121, 156), i=23, next=29
+      KindIdentifier "ABase" [131, 137), i=24, next=25
+      NodeList [139, 154), i=25, next=0
+        KindPropertySignature [139, 154), i=26, next=0
+          KindIdentifier "a" [139, 145), i=27, next=28
+          KindStringKeyword [146, 153), i=28, next=0
+    KindInterfaceDeclaration [156, 194), i=29, next=35
+      KindIdentifier "ADerived" [166, 175), i=30, next=31
+      NodeList [177, 192), i=31, next=0
+        KindPropertySignature [177, 192), i=32, next=0
+          KindIdentifier "b" [177, 183), i=33, next=34
+          KindStringKeyword [184, 191), i=34, next=0
+    KindClassDeclaration [194, 240), i=35, next=43
+      KindIdentifier "Base" [200, 205), i=36, next=37
+      NodeList [207, 238), i=37, next=0
+        KindPropertyDeclaration [207, 238), i=38, next=0
+          KindIdentifier "foo" [207, 215), i=39, next=40
+          KindExclamationToken [215, 216), i=40, next=41
+          KindTypeReference [217, 237), i=41, next=0
+            KindIdentifier "ComplicatedTypeBase" [217, 237), i=42, next=0
+    KindVariableStatement [240, 315), i=43, next=61
+      KindVariableDeclarationList [240, 315), i=44, next=0
+        NodeList [246, 315), i=45, next=0
+          KindVariableDeclaration [246, 315), i=46, next=0
+            KindIdentifier "x" [246, 248), i=47, next=48
+            KindClassExpression [250, 315), i=48, next=0
+              KindIdentifier "Derived" [256, 264), i=49, next=50
+              NodeList [264, 277), i=50, next=55
+                KindHeritageClause [264, 277), i=51, next=0
+                  NodeList [272, 277), i=52, next=0
+                    KindExpressionWithTypeArguments [272, 277), i=53, next=0
+                      KindIdentifier "Base" [272, 277), i=54, next=0
+              NodeList [279, 313), i=55, next=0
+                KindPropertyDeclaration [279, 313), i=56, next=0
+                  KindIdentifier "foo" [279, 287), i=57, next=58
+                  KindExclamationToken [287, 288), i=58, next=59
+                  KindTypeReference [289, 312), i=59, next=0
+                    KindIdentifier "ComplicatedTypeDerived" [289, 312), i=60, next=0
+    KindVariableStatement [315, 356), i=61, next=76
+      KindVariableDeclarationList [315, 355), i=62, next=0
+        NodeList [319, 355), i=63, next=0
+          KindVariableDeclaration [319, 355), i=64, next=0
+            KindIdentifier "obj" [319, 323), i=65, next=66
+            KindTypeLiteral [324, 338), i=66, next=71
+              NodeList [326, 336), i=67, next=0
+                KindPropertySignature [326, 336), i=68, next=0
+                  KindNumericLiteral [326, 328), i=69, next=70
+                  KindStringKeyword [329, 336), i=70, next=0
+            KindObjectLiteralExpression [340, 355), i=71, next=0
+              NodeList [342, 353), i=72, next=0
+                KindPropertyAssignment [342, 353), i=73, next=0
+                  KindNumericLiteral [342, 344), i=74, next=75
+                  KindStringLiteral "three" [345, 353), i=75, next=0
+    KindExpressionStatement [356, 364), i=76, next=0
+      KindElementAccessExpression [356, 363), i=77, next=0
+        KindIdentifier "obj" [356, 360), i=78, next=79
+        KindIdentifier "x" [361, 362), i=79, next=0

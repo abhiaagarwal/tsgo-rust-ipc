@@ -1,0 +1,988 @@
+KindSourceFile [0, 5569), i=1, next=0
+  NodeList [0, 5569), i=2, next=0
+    KindEnumDeclaration [0, 134), i=3, next=14
+      NodeList [0, 6), i=4, next=6
+        KindExportKeyword [0, 6), i=5, next=0
+      KindIdentifier "PubSubRecordIsStoredInRedisAsA" [11, 42), i=6, next=7
+      NodeList [44, 129), i=7, next=0
+        KindEnumMember [44, 73), i=8, next=11
+          KindIdentifier "redisHash" [44, 59), i=9, next=10
+          KindStringLiteral "redisHash" [61, 73), i=10, next=0
+        KindEnumMember [74, 129), i=11, next=0
+          KindIdentifier "jsonEncodedRedisString" [74, 102), i=12, next=13
+          KindStringLiteral "jsonEncodedRedisString" [104, 129), i=13, next=0
+    KindInterfaceDeclaration [134, 399), i=14, next=51
+      NodeList [134, 148), i=15, next=17
+        KindExportKeyword [134, 148), i=16, next=0
+      KindIdentifier "PubSubRecord" [158, 171), i=17, next=18
+      NodeList [172, 235), i=18, next=31
+        KindTypeParameter [172, 191), i=19, next=22
+          KindIdentifier "NAME" [172, 176), i=20, next=21
+          KindStringKeyword [184, 191), i=21, next=0
+        KindTypeParameter [192, 199), i=22, next=24
+          KindIdentifier "RECORD" [192, 199), i=23, next=0
+        KindTypeParameter [200, 235), i=24, next=0
+          KindIdentifier "IDENTIFIER" [200, 211), i=25, next=26
+          KindTypeReference [219, 235), i=26, next=0
+            KindIdentifier "Partial" [219, 227), i=27, next=28
+            NodeList [228, 234), i=28, next=0
+              KindTypeReference [228, 234), i=29, next=0
+                KindIdentifier "RECORD" [228, 234), i=30, next=0
+      NodeList [238, 394), i=31, next=0
+        KindPropertySignature [238, 255), i=32, next=36
+          KindIdentifier "name" [238, 248), i=33, next=34
+          KindTypeReference [249, 254), i=34, next=0
+            KindIdentifier "NAME" [249, 254), i=35, next=0
+        KindPropertySignature [255, 276), i=36, next=40
+          KindIdentifier "record" [255, 267), i=37, next=38
+          KindTypeReference [268, 275), i=38, next=0
+            KindIdentifier "RECORD" [268, 275), i=39, next=0
+        KindPropertySignature [276, 305), i=40, next=44
+          KindIdentifier "identifier" [276, 292), i=41, next=42
+          KindTypeReference [293, 304), i=42, next=0
+            KindIdentifier "IDENTIFIER" [293, 304), i=43, next=0
+        KindPropertySignature [305, 352), i=44, next=48
+          KindIdentifier "storedAs" [305, 319), i=45, next=46
+          KindTypeReference [320, 351), i=46, next=0
+            KindIdentifier "PubSubRecordIsStoredInRedisAsA" [320, 351), i=47, next=0
+        KindPropertySignature [352, 394), i=48, next=0
+          KindIdentifier "maxMsToWaitBeforePublishing" [352, 385), i=49, next=50
+          KindNumberKeyword [386, 393), i=50, next=0
+    KindTypeAliasDeclaration [399, 568), i=51, next=92
+      KindIdentifier "NameFieldConstructor" [411, 432), i=52, next=53
+      NodeList [433, 439), i=53, next=56
+        KindTypeParameter [433, 439), i=54, next=0
+          KindIdentifier "SO_FAR" [433, 439), i=55, next=0
+      KindConditionalType [442, 568), i=56, next=0
+        KindTypeReference [442, 454), i=57, next=59
+          KindIdentifier "SO_FAR" [442, 454), i=58, next=0
+        KindTypeLiteral [462, 474), i=59, next=64
+          NodeList [464, 473), i=60, next=0
+            KindPropertySignature [464, 473), i=61, next=0
+              KindIdentifier "name" [464, 468), i=62, next=63
+              KindAnyKeyword [469, 473), i=63, next=0
+        KindTypeLiteral [476, 479), i=64, next=65
+        KindTypeLiteral [481, 568), i=65, next=0
+          NodeList [483, 561), i=66, next=0
+            KindPropertySignature [483, 561), i=67, next=0
+              KindIdentifier "name" [483, 495), i=68, next=69
+              KindFunctionType [496, 561), i=69, next=0
+                NodeList [498, 502), i=70, next=73
+                  KindTypeParameter [498, 502), i=71, next=0
+                    KindIdentifier "TYPE" [498, 502), i=72, next=0
+                NodeList [504, 512), i=73, next=79
+                  KindParameter [504, 512), i=74, next=0
+                    KindIdentifier "t" [504, 505), i=75, next=76
+                    KindQuestionToken [505, 506), i=76, next=77
+                    KindTypeReference [507, 512), i=77, next=0
+                      KindIdentifier "TYPE" [507, 512), i=78, next=0
+                KindTypeReference [516, 561), i=79, next=0
+                  KindIdentifier "BuildPubSubRecordType" [516, 538), i=80, next=81
+                  NodeList [539, 560), i=81, next=0
+                    KindIntersectionType [539, 560), i=82, next=0
+                      NodeList [539, 560), i=83, next=0
+                        KindTypeReference [539, 545), i=84, next=86
+                          KindIdentifier "SO_FAR" [539, 545), i=85, next=0
+                        KindTypeLiteral [547, 560), i=86, next=0
+                          NodeList [549, 559), i=87, next=0
+                            KindPropertySignature [549, 559), i=88, next=0
+                              KindIdentifier "name" [549, 553), i=89, next=90
+                              KindTypeReference [554, 559), i=90, next=0
+                                KindIdentifier "TYPE" [554, 559), i=91, next=0
+    KindVariableStatement [568, 888), i=92, next=174
+      KindVariableDeclarationList [568, 887), i=93, next=0
+        NodeList [581, 887), i=94, next=0
+          KindVariableDeclaration [581, 887), i=95, next=0
+            KindIdentifier "buildNameFieldConstructor" [581, 607), i=96, next=97
+            KindArrowFunction [609, 887), i=97, next=0
+              NodeList [611, 617), i=98, next=101
+                KindTypeParameter [611, 617), i=99, next=0
+                  KindIdentifier "SO_FAR" [611, 617), i=100, next=0
+              NodeList [619, 632), i=101, next=106
+                KindParameter [619, 632), i=102, next=0
+                  KindIdentifier "soFar" [619, 624), i=103, next=104
+                  KindTypeReference [625, 632), i=104, next=0
+                    KindIdentifier "SO_FAR" [625, 632), i=105, next=0
+              KindEqualsGreaterThanToken [633, 636), i=106, next=107
+              KindParenthesizedExpression [636, 887), i=107, next=0
+                KindConditionalExpression [638, 882), i=108, next=0
+                  KindBinaryExpression [638, 659), i=109, next=113
+                    KindStringLiteral "name" [638, 650), i=110, next=111
+                    KindInKeyword [650, 653), i=111, next=112
+                    KindIdentifier "soFar" [653, 659), i=112, next=0
+                  KindQuestionToken [659, 661), i=113, next=114
+                  KindObjectLiteralExpression [661, 664), i=114, next=115
+                  KindColonToken [664, 666), i=115, next=116
+                  KindObjectLiteralExpression [666, 882), i=116, next=0
+                    NodeList [668, 875), i=117, next=0
+                      KindPropertyAssignment [668, 875), i=118, next=0
+                        KindIdentifier "name" [668, 680), i=119, next=120
+                        KindArrowFunction [681, 875), i=120, next=0
+                          NodeList [683, 687), i=121, next=124
+                            KindTypeParameter [683, 687), i=122, next=0
+                              KindIdentifier "TYPE" [683, 687), i=123, next=0
+                          NodeList [689, 715), i=124, next=130
+                            KindParameter [689, 715), i=125, next=0
+                              KindIdentifier "instance" [689, 697), i=126, next=127
+                              KindTypeReference [698, 703), i=127, next=129
+                                KindIdentifier "TYPE" [698, 703), i=128, next=0
+                              KindIdentifier "undefined" [705, 715), i=129, next=0
+                          KindEqualsGreaterThanToken [716, 719), i=130, next=131
+                          KindAsExpression [719, 875), i=131, next=0
+                            KindCallExpression [719, 827), i=132, next=161
+                              KindIdentifier "buildPubSubRecordType" [719, 750), i=133, next=134
+                              NodeList [751, 826), i=134, next=0
+                                KindAsExpression [751, 826), i=135, next=0
+                                  KindCallExpression [751, 801), i=136, next=151
+                                    KindPropertyAccessExpression [751, 764), i=137, next=140
+                                      KindIdentifier "Object" [751, 757), i=138, next=139
+                                      KindIdentifier "assign" [758, 764), i=139, next=0
+                                    NodeList [765, 800), i=140, next=0
+                                      KindObjectLiteralExpression [765, 767), i=141, next=142
+                                      KindIdentifier "soFar" [768, 774), i=142, next=143
+                                      KindObjectLiteralExpression [775, 800), i=143, next=0
+                                        NodeList [777, 799), i=144, next=0
+                                          KindPropertyAssignment [777, 799), i=145, next=0
+                                            KindIdentifier "name" [777, 781), i=146, next=147
+                                            KindAsExpression [782, 799), i=147, next=0
+                                              KindIdentifier "instance" [782, 791), i=148, next=149
+                                              KindTypeReference [794, 799), i=149, next=0
+                                                KindIdentifier "TYPE" [794, 799), i=150, next=0
+                                  KindIntersectionType [804, 826), i=151, next=0
+                                    NodeList [804, 826), i=152, next=0
+                                      KindTypeReference [804, 811), i=153, next=155
+                                        KindIdentifier "SO_FAR" [804, 811), i=154, next=0
+                                      KindTypeLiteral [813, 826), i=155, next=0
+                                        NodeList [815, 825), i=156, next=0
+                                          KindPropertySignature [815, 825), i=157, next=0
+                                            KindIdentifier "name" [815, 819), i=158, next=159
+                                            KindTypeReference [820, 825), i=159, next=0
+                                              KindIdentifier "TYPE" [820, 825), i=160, next=0
+                            KindTypeReference [830, 875), i=161, next=0
+                              KindIdentifier "BuildPubSubRecordType" [830, 852), i=162, next=163
+                              NodeList [853, 874), i=163, next=0
+                                KindIntersectionType [853, 874), i=164, next=0
+                                  NodeList [853, 874), i=165, next=0
+                                    KindTypeReference [853, 859), i=166, next=168
+                                      KindIdentifier "SO_FAR" [853, 859), i=167, next=0
+                                    KindTypeLiteral [861, 874), i=168, next=0
+                                      NodeList [863, 873), i=169, next=0
+                                        KindPropertySignature [863, 873), i=170, next=0
+                                          KindIdentifier "name" [863, 867), i=171, next=172
+                                          KindTypeReference [868, 873), i=172, next=0
+                                            KindIdentifier "TYPE" [868, 873), i=173, next=0
+    KindTypeAliasDeclaration [888, 1242), i=174, next=226
+      KindIdentifier "StoredAsConstructor" [900, 920), i=175, next=176
+      NodeList [921, 927), i=176, next=179
+        KindTypeParameter [921, 927), i=177, next=0
+          KindIdentifier "SO_FAR" [921, 927), i=178, next=0
+      KindConditionalType [930, 1242), i=179, next=0
+        KindTypeReference [930, 942), i=180, next=182
+          KindIdentifier "SO_FAR" [930, 942), i=181, next=0
+        KindTypeLiteral [950, 966), i=182, next=187
+          NodeList [952, 965), i=183, next=0
+            KindPropertySignature [952, 965), i=184, next=0
+              KindIdentifier "storedAs" [952, 960), i=185, next=186
+              KindAnyKeyword [961, 965), i=186, next=0
+        KindTypeLiteral [968, 971), i=187, next=188
+        KindTypeLiteral [973, 1242), i=188, next=0
+          NodeList [975, 1235), i=189, next=0
+            KindPropertySignature [975, 1119), i=190, next=208
+              KindIdentifier "storedAsJsonEncodedRedisString" [975, 1013), i=191, next=192
+              KindFunctionType [1014, 1118), i=192, next=0
+                KindTypeReference [1020, 1118), i=193, next=0
+                  KindIdentifier "BuildPubSubRecordType" [1020, 1042), i=194, next=195
+                  NodeList [1043, 1117), i=195, next=0
+                    KindIntersectionType [1043, 1117), i=196, next=0
+                      NodeList [1043, 1117), i=197, next=0
+                        KindTypeReference [1043, 1049), i=198, next=200
+                          KindIdentifier "SO_FAR" [1043, 1049), i=199, next=0
+                        KindTypeLiteral [1051, 1117), i=200, next=0
+                          NodeList [1053, 1116), i=201, next=0
+                            KindPropertySignature [1053, 1116), i=202, next=0
+                              KindIdentifier "storedAs" [1053, 1061), i=203, next=204
+                              KindTypeReference [1062, 1116), i=204, next=0
+                                KindQualifiedName [1062, 1116), i=205, next=0
+                                  KindIdentifier "PubSubRecordIsStoredInRedisAsA" [1062, 1093), i=206, next=207
+                                  KindIdentifier "jsonEncodedRedisString" [1094, 1116), i=207, next=0
+            KindPropertySignature [1119, 1235), i=208, next=0
+              KindIdentifier "storedRedisHash" [1119, 1142), i=209, next=210
+              KindFunctionType [1143, 1234), i=210, next=0
+                KindTypeReference [1149, 1234), i=211, next=0
+                  KindIdentifier "BuildPubSubRecordType" [1149, 1171), i=212, next=213
+                  NodeList [1172, 1233), i=213, next=0
+                    KindIntersectionType [1172, 1233), i=214, next=0
+                      NodeList [1172, 1233), i=215, next=0
+                        KindTypeReference [1172, 1178), i=216, next=218
+                          KindIdentifier "SO_FAR" [1172, 1178), i=217, next=0
+                        KindTypeLiteral [1180, 1233), i=218, next=0
+                          NodeList [1182, 1232), i=219, next=0
+                            KindPropertySignature [1182, 1232), i=220, next=0
+                              KindIdentifier "storedAs" [1182, 1190), i=221, next=222
+                              KindTypeReference [1191, 1232), i=222, next=0
+                                KindQualifiedName [1191, 1232), i=223, next=0
+                                  KindIdentifier "PubSubRecordIsStoredInRedisAsA" [1191, 1222), i=224, next=225
+                                  KindIdentifier "redisHash" [1223, 1232), i=225, next=0
+    KindVariableStatement [1242, 1883), i=226, next=70
+      KindVariableDeclarationList [1242, 1882), i=227, next=0
+        NodeList [1255, 1882), i=228, next=0
+          KindVariableDeclaration [1255, 1882), i=229, next=0
+            KindIdentifier "buildStoredAsConstructor" [1255, 1280), i=230, next=231
+            KindArrowFunction [1282, 1882), i=231, next=0
+              NodeList [1284, 1290), i=232, next=235
+                KindTypeParameter [1284, 1290), i=233, next=0
+                  KindIdentifier "SO_FAR" [1284, 1290), i=234, next=0
+              NodeList [1292, 1305), i=235, next=240
+                KindParameter [1292, 1305), i=236, next=0
+                  KindIdentifier "soFar" [1292, 1297), i=237, next=238
+                  KindTypeReference [1298, 1305), i=238, next=0
+                    KindIdentifier "SO_FAR" [1298, 1305), i=239, next=0
+              KindEqualsGreaterThanToken [1306, 1309), i=240, next=241
+              KindParenthesizedExpression [1309, 1882), i=241, next=0
+                KindConditionalExpression [1311, 1877), i=242, next=0
+                  KindBinaryExpression [1311, 1336), i=243, next=247
+                    KindStringLiteral "storedAs" [1311, 1327), i=244, next=245
+                    KindInKeyword [1327, 1330), i=245, next=246
+                    KindIdentifier "soFar" [1330, 1336), i=246, next=0
+                  KindQuestionToken [1336, 1338), i=247, next=248
+                  KindObjectLiteralExpression [1338, 1341), i=248, next=249
+                  KindColonToken [1341, 1343), i=249, next=250
+                  KindObjectLiteralExpression [1343, 1877), i=250, next=0
+                    NodeList [1345, 1870), i=251, next=0
+                      KindPropertyAssignment [1345, 1626), i=252, next=33
+                        KindIdentifier "storedAsJsonEncodedRedisString" [1345, 1383), i=253, next=254
+                        KindArrowFunction [1384, 1626), i=254, next=0
+                          KindEqualsGreaterThanToken [1387, 1390), i=255, next=0
+                          KindAsExpression [1390, 1626), i=256, next=0
+                            KindCallExpression [1390, 1514), i=257, next=18
+                              KindIdentifier "buildPubSubRecordType" [1390, 1421), i=258, next=3
+                              NodeList [1422, 1513), i=259, next=0
+                                KindCallExpression [1422, 1513), i=260, next=0
+                                  KindPropertyAccessExpression [1422, 1435), i=261, next=8
+                                    KindIdentifier "Object" [1422, 1428), i=262, next=7
+                                    KindIdentifier "assign" [1429, 1435), i=263, next=0
+                                  NodeList [1436, 1512), i=264, next=0
+                                    KindObjectLiteralExpression [1436, 1438), i=265, next=10
+                                    KindIdentifier "soFar" [1439, 1445), i=266, next=11
+                                    KindObjectLiteralExpression [1446, 1512), i=267, next=0
+                                      NodeList [1448, 1511), i=268, next=0
+                                        KindPropertyAssignment [1448, 1511), i=269, next=0
+                                          KindIdentifier "storedAs" [1448, 1456), i=270, next=15
+                                          KindPropertyAccessExpression [1457, 1511), i=271, next=0
+                                            KindIdentifier "PubSubRecordIsStoredInRedisAsA" [1457, 1488), i=272, next=17
+                                            KindIdentifier "jsonEncodedRedisString" [1489, 1511), i=273, next=0
+                            KindTypeReference [1517, 1626), i=274, next=0
+                              KindIdentifier "BuildPubSubRecordType" [1517, 1550), i=275, next=20
+                              NodeList [1551, 1625), i=276, next=0
+                                KindIntersectionType [1551, 1625), i=277, next=0
+                                  NodeList [1551, 1625), i=278, next=0
+                                    KindTypeReference [1551, 1557), i=279, next=25
+                                      KindIdentifier "SO_FAR" [1551, 1557), i=280, next=0
+                                    KindTypeLiteral [1559, 1625), i=281, next=0
+                                      NodeList [1561, 1624), i=282, next=0
+                                        KindPropertySignature [1561, 1624), i=283, next=0
+                                          KindIdentifier "storedAs" [1561, 1569), i=284, next=29
+                                          KindTypeReference [1570, 1624), i=285, next=0
+                                            KindQualifiedName [1570, 1624), i=286, next=0
+                                              KindIdentifier "PubSubRecordIsStoredInRedisAsA" [1570, 1601), i=287, next=32
+                                              KindIdentifier "jsonEncodedRedisString" [1602, 1624), i=288, next=0
+                      KindPropertyAssignment [1627, 1869), i=289, next=0
+                        KindIdentifier "storedAsRedisHash" [1627, 1652), i=290, next=35
+                        KindArrowFunction [1653, 1869), i=291, next=0
+                          KindEqualsGreaterThanToken [1656, 1659), i=292, next=37
+                          KindAsExpression [1659, 1869), i=293, next=0
+                            KindCallExpression [1659, 1770), i=294, next=55
+                              KindIdentifier "buildPubSubRecordType" [1659, 1690), i=295, next=40
+                              NodeList [1691, 1769), i=296, next=0
+                                KindCallExpression [1691, 1769), i=297, next=0
+                                  KindPropertyAccessExpression [1691, 1704), i=298, next=45
+                                    KindIdentifier "Object" [1691, 1697), i=299, next=44
+                                    KindIdentifier "assign" [1698, 1704), i=300, next=0
+                                  NodeList [1705, 1768), i=301, next=0
+                                    KindObjectLiteralExpression [1705, 1707), i=302, next=47
+                                    KindIdentifier "soFar" [1708, 1714), i=303, next=48
+                                    KindObjectLiteralExpression [1715, 1768), i=304, next=0
+                                      NodeList [1717, 1767), i=305, next=0
+                                        KindPropertyAssignment [1717, 1767), i=306, next=0
+                                          KindIdentifier "storedAs" [1717, 1725), i=307, next=52
+                                          KindPropertyAccessExpression [1726, 1767), i=308, next=0
+                                            KindIdentifier "PubSubRecordIsStoredInRedisAsA" [1726, 1757), i=309, next=54
+                                            KindIdentifier "redisHash" [1758, 1767), i=310, next=0
+                            KindTypeReference [1773, 1869), i=311, next=0
+                              KindIdentifier "BuildPubSubRecordType" [1773, 1806), i=312, next=57
+                              NodeList [1807, 1868), i=313, next=0
+                                KindIntersectionType [1807, 1868), i=314, next=0
+                                  NodeList [1807, 1868), i=315, next=0
+                                    KindTypeReference [1807, 1813), i=316, next=62
+                                      KindIdentifier "SO_FAR" [1807, 1813), i=317, next=0
+                                    KindTypeLiteral [1815, 1868), i=318, next=0
+                                      NodeList [1817, 1867), i=319, next=0
+                                        KindPropertySignature [1817, 1867), i=320, next=0
+                                          KindIdentifier "storedAs" [1817, 1825), i=321, next=66
+                                          KindTypeReference [1826, 1867), i=322, next=0
+                                            KindQualifiedName [1826, 1867), i=323, next=0
+                                              KindIdentifier "PubSubRecordIsStoredInRedisAsA" [1826, 1857), i=324, next=69
+                                              KindIdentifier "redisHash" [1858, 1867), i=325, next=0
+    KindTypeAliasDeclaration [1883, 2151), i=326, next=128
+      KindIdentifier "IdentifierFieldConstructor" [1895, 1922), i=327, next=72
+      NodeList [1923, 1929), i=328, next=75
+        KindTypeParameter [1923, 1929), i=329, next=0
+          KindIdentifier "SO_FAR" [1923, 1929), i=330, next=0
+      KindConditionalType [1932, 2151), i=331, next=0
+        KindTypeReference [1932, 1944), i=332, next=78
+          KindIdentifier "SO_FAR" [1932, 1944), i=333, next=0
+        KindTypeLiteral [1952, 1970), i=334, next=83
+          NodeList [1954, 1969), i=335, next=0
+            KindPropertySignature [1954, 1969), i=336, next=0
+              KindIdentifier "identifier" [1954, 1964), i=337, next=82
+              KindAnyKeyword [1965, 1969), i=338, next=0
+        KindTypeLiteral [1972, 1975), i=339, next=84
+        KindConditionalType [1977, 2151), i=340, next=0
+          KindTypeReference [1977, 1989), i=341, next=87
+            KindIdentifier "SO_FAR" [1977, 1989), i=342, next=0
+          KindTypeLiteral [1997, 2011), i=343, next=92
+            NodeList [1999, 2010), i=344, next=0
+              KindPropertySignature [1999, 2010), i=345, next=0
+                KindIdentifier "record" [1999, 2005), i=346, next=91
+                KindAnyKeyword [2006, 2010), i=347, next=0
+          KindTypeLiteral [2013, 2146), i=348, next=127
+            NodeList [2015, 2139), i=349, next=0
+              KindPropertySignature [2015, 2139), i=350, next=0
+                KindIdentifier "identifier" [2015, 2033), i=351, next=96
+                KindFunctionType [2034, 2139), i=352, next=0
+                  NodeList [2036, 2074), i=353, next=108
+                    KindTypeParameter [2036, 2074), i=354, next=0
+                      KindIdentifier "TYPE" [2036, 2040), i=355, next=100
+                      KindTypeReference [2048, 2074), i=356, next=0
+                        KindIdentifier "Partial" [2048, 2056), i=357, next=102
+                        NodeList [2057, 2073), i=358, next=0
+                          KindIndexedAccessType [2057, 2073), i=359, next=0
+                            KindTypeReference [2057, 2063), i=360, next=106
+                              KindIdentifier "SO_FAR" [2057, 2063), i=361, next=0
+                            KindLiteralType [2064, 2072), i=362, next=0
+                              KindStringLiteral "record" [2064, 2072), i=363, next=0
+                  NodeList [2076, 2084), i=364, next=114
+                    KindParameter [2076, 2084), i=365, next=0
+                      KindIdentifier "t" [2076, 2077), i=366, next=111
+                      KindQuestionToken [2077, 2078), i=367, next=112
+                      KindTypeReference [2079, 2084), i=368, next=0
+                        KindIdentifier "TYPE" [2079, 2084), i=369, next=0
+                  KindTypeReference [2088, 2139), i=370, next=0
+                    KindIdentifier "BuildPubSubRecordType" [2088, 2110), i=371, next=116
+                    NodeList [2111, 2138), i=372, next=0
+                      KindIntersectionType [2111, 2138), i=373, next=0
+                        NodeList [2111, 2138), i=374, next=0
+                          KindTypeReference [2111, 2117), i=375, next=121
+                            KindIdentifier "SO_FAR" [2111, 2117), i=376, next=0
+                          KindTypeLiteral [2119, 2138), i=377, next=0
+                            NodeList [2121, 2137), i=378, next=0
+                              KindPropertySignature [2121, 2137), i=379, next=0
+                                KindIdentifier "identifier" [2121, 2131), i=380, next=125
+                                KindTypeReference [2132, 2137), i=381, next=0
+                                  KindIdentifier "TYPE" [2132, 2137), i=382, next=0
+          KindTypeLiteral [2148, 2151), i=383, next=0
+    KindVariableStatement [2151, 2533), i=384, next=219
+      KindVariableDeclarationList [2151, 2532), i=385, next=0
+        NodeList [2164, 2532), i=386, next=0
+          KindVariableDeclaration [2164, 2532), i=387, next=0
+            KindIdentifier "buildIdentifierFieldConstructor" [2164, 2196), i=388, next=133
+            KindArrowFunction [2198, 2532), i=389, next=0
+              NodeList [2200, 2206), i=390, next=137
+                KindTypeParameter [2200, 2206), i=391, next=0
+                  KindIdentifier "SO_FAR" [2200, 2206), i=392, next=0
+              NodeList [2208, 2221), i=393, next=142
+                KindParameter [2208, 2221), i=394, next=0
+                  KindIdentifier "soFar" [2208, 2213), i=395, next=140
+                  KindTypeReference [2214, 2221), i=396, next=0
+                    KindIdentifier "SO_FAR" [2214, 2221), i=397, next=0
+              KindEqualsGreaterThanToken [2222, 2225), i=398, next=143
+              KindParenthesizedExpression [2225, 2532), i=399, next=0
+                KindConditionalExpression [2227, 2527), i=400, next=0
+                  KindBinaryExpression [2227, 2280), i=401, next=158
+                    KindBinaryExpression [2227, 2254), i=402, next=150
+                      KindStringLiteral "identifier" [2227, 2245), i=403, next=148
+                      KindInKeyword [2245, 2248), i=404, next=149
+                      KindIdentifier "soFar" [2248, 2254), i=405, next=0
+                    KindBarBarToken [2254, 2257), i=406, next=151
+                    KindParenthesizedExpression [2257, 2280), i=407, next=0
+                      KindPrefixUnaryExpression [2259, 2279), i=408, next=0
+                        KindParenthesizedExpression [2260, 2279), i=409, next=0
+                          KindBinaryExpression [2261, 2278), i=410, next=0
+                            KindStringLiteral "record" [2261, 2269), i=411, next=156
+                            KindInKeyword [2269, 2272), i=412, next=157
+                            KindIdentifier "soFar" [2272, 2278), i=413, next=0
+                  KindQuestionToken [2280, 2282), i=414, next=159
+                  KindObjectLiteralExpression [2282, 2285), i=415, next=160
+                  KindColonToken [2285, 2287), i=416, next=161
+                  KindObjectLiteralExpression [2287, 2527), i=417, next=0
+                    NodeList [2289, 2520), i=418, next=0
+                      KindPropertyAssignment [2289, 2520), i=419, next=0
+                        KindIdentifier "identifier" [2289, 2307), i=420, next=165
+                        KindArrowFunction [2308, 2520), i=421, next=0
+                          NodeList [2310, 2314), i=422, next=169
+                            KindTypeParameter [2310, 2314), i=423, next=0
+                              KindIdentifier "TYPE" [2310, 2314), i=424, next=0
+                          NodeList [2316, 2342), i=425, next=175
+                            KindParameter [2316, 2342), i=426, next=0
+                              KindIdentifier "instance" [2316, 2324), i=427, next=172
+                              KindTypeReference [2325, 2330), i=428, next=174
+                                KindIdentifier "TYPE" [2325, 2330), i=429, next=0
+                              KindIdentifier "undefined" [2332, 2342), i=430, next=0
+                          KindEqualsGreaterThanToken [2343, 2346), i=431, next=176
+                          KindAsExpression [2346, 2520), i=432, next=0
+                            KindCallExpression [2346, 2466), i=433, next=206
+                              KindIdentifier "buildPubSubRecordType" [2346, 2377), i=434, next=179
+                              NodeList [2378, 2465), i=435, next=0
+                                KindAsExpression [2378, 2465), i=436, next=0
+                                  KindCallExpression [2378, 2434), i=437, next=196
+                                    KindPropertyAccessExpression [2378, 2391), i=438, next=185
+                                      KindIdentifier "Object" [2378, 2384), i=439, next=184
+                                      KindIdentifier "assign" [2385, 2391), i=440, next=0
+                                    NodeList [2392, 2433), i=441, next=0
+                                      KindObjectLiteralExpression [2392, 2394), i=442, next=187
+                                      KindIdentifier "soFar" [2395, 2401), i=443, next=188
+                                      KindObjectLiteralExpression [2402, 2433), i=444, next=0
+                                        NodeList [2404, 2432), i=445, next=0
+                                          KindPropertyAssignment [2404, 2432), i=446, next=0
+                                            KindIdentifier "identifier" [2404, 2414), i=447, next=192
+                                            KindAsExpression [2415, 2432), i=448, next=0
+                                              KindIdentifier "instance" [2415, 2424), i=449, next=194
+                                              KindTypeReference [2427, 2432), i=450, next=0
+                                                KindIdentifier "TYPE" [2427, 2432), i=451, next=0
+                                  KindIntersectionType [2437, 2465), i=452, next=0
+                                    NodeList [2437, 2465), i=453, next=0
+                                      KindTypeReference [2437, 2444), i=454, next=200
+                                        KindIdentifier "SO_FAR" [2437, 2444), i=455, next=0
+                                      KindTypeLiteral [2446, 2465), i=456, next=0
+                                        NodeList [2448, 2464), i=457, next=0
+                                          KindPropertySignature [2448, 2464), i=458, next=0
+                                            KindIdentifier "identifier" [2448, 2458), i=459, next=204
+                                            KindTypeReference [2459, 2464), i=460, next=0
+                                              KindIdentifier "TYPE" [2459, 2464), i=461, next=0
+                            KindTypeReference [2469, 2520), i=462, next=0
+                              KindIdentifier "BuildPubSubRecordType" [2469, 2491), i=463, next=208
+                              NodeList [2492, 2519), i=464, next=0
+                                KindIntersectionType [2492, 2519), i=465, next=0
+                                  NodeList [2492, 2519), i=466, next=0
+                                    KindTypeReference [2492, 2498), i=467, next=213
+                                      KindIdentifier "SO_FAR" [2492, 2498), i=468, next=0
+                                    KindTypeLiteral [2500, 2519), i=469, next=0
+                                      NodeList [2502, 2518), i=470, next=0
+                                        KindPropertySignature [2502, 2518), i=471, next=0
+                                          KindIdentifier "identifier" [2502, 2512), i=472, next=217
+                                          KindTypeReference [2513, 2518), i=473, next=0
+                                            KindIdentifier "TYPE" [2513, 2518), i=474, next=0
+    KindTypeAliasDeclaration [2533, 2710), i=475, next=4
+      KindIdentifier "RecordFieldConstructor" [2545, 2568), i=476, next=221
+      NodeList [2569, 2575), i=477, next=224
+        KindTypeParameter [2569, 2575), i=478, next=0
+          KindIdentifier "SO_FAR" [2569, 2575), i=479, next=0
+      KindConditionalType [2578, 2710), i=480, next=0
+        KindTypeReference [2578, 2590), i=481, next=227
+          KindIdentifier "SO_FAR" [2578, 2590), i=482, next=0
+        KindTypeLiteral [2598, 2612), i=483, next=232
+          NodeList [2600, 2611), i=484, next=0
+            KindPropertySignature [2600, 2611), i=485, next=0
+              KindIdentifier "record" [2600, 2606), i=486, next=231
+              KindAnyKeyword [2607, 2611), i=487, next=0
+        KindTypeLiteral [2614, 2617), i=488, next=233
+        KindTypeLiteral [2619, 2710), i=489, next=0
+          NodeList [2621, 2703), i=490, next=0
+            KindPropertySignature [2621, 2703), i=491, next=0
+              KindIdentifier "record" [2621, 2635), i=492, next=237
+              KindFunctionType [2636, 2703), i=493, next=0
+                NodeList [2638, 2642), i=494, next=241
+                  KindTypeParameter [2638, 2642), i=495, next=0
+                    KindIdentifier "TYPE" [2638, 2642), i=496, next=0
+                NodeList [2644, 2652), i=497, next=247
+                  KindParameter [2644, 2652), i=498, next=0
+                    KindIdentifier "t" [2644, 2645), i=499, next=244
+                    KindQuestionToken [2645, 2646), i=500, next=245
+                    KindTypeReference [2647, 2652), i=501, next=0
+                      KindIdentifier "TYPE" [2647, 2652), i=502, next=0
+                KindTypeReference [2656, 2703), i=503, next=0
+                  KindIdentifier "BuildPubSubRecordType" [2656, 2678), i=504, next=249
+                  NodeList [2679, 2702), i=505, next=0
+                    KindIntersectionType [2679, 2702), i=506, next=0
+                      NodeList [2679, 2702), i=507, next=0
+                        KindTypeReference [2679, 2685), i=508, next=254
+                          KindIdentifier "SO_FAR" [2679, 2685), i=509, next=0
+                        KindTypeLiteral [2687, 2702), i=510, next=0
+                          NodeList [2689, 2701), i=511, next=0
+                            KindPropertySignature [2689, 2701), i=512, next=0
+                              KindIdentifier "record" [2689, 2695), i=513, next=2
+                              KindTypeReference [2696, 2701), i=514, next=0
+                                KindIdentifier "TYPE" [2696, 2701), i=515, next=0
+    KindVariableStatement [2710, 3042), i=516, next=86
+      KindVariableDeclarationList [2710, 3041), i=517, next=0
+        NodeList [2723, 3041), i=518, next=0
+          KindVariableDeclaration [2723, 3041), i=519, next=0
+            KindIdentifier "buildRecordFieldConstructor" [2723, 2751), i=520, next=9
+            KindArrowFunction [2753, 3041), i=521, next=0
+              NodeList [2755, 2761), i=522, next=13
+                KindTypeParameter [2755, 2761), i=523, next=0
+                  KindIdentifier "SO_FAR" [2755, 2761), i=524, next=0
+              NodeList [2763, 2776), i=525, next=18
+                KindParameter [2763, 2776), i=526, next=0
+                  KindIdentifier "soFar" [2763, 2768), i=527, next=16
+                  KindTypeReference [2769, 2776), i=528, next=0
+                    KindIdentifier "SO_FAR" [2769, 2776), i=529, next=0
+              KindEqualsGreaterThanToken [2777, 2780), i=530, next=19
+              KindParenthesizedExpression [2780, 3041), i=531, next=0
+                KindConditionalExpression [2782, 3036), i=532, next=0
+                  KindBinaryExpression [2782, 2805), i=533, next=25
+                    KindStringLiteral "record" [2782, 2796), i=534, next=23
+                    KindInKeyword [2796, 2799), i=535, next=24
+                    KindIdentifier "soFar" [2799, 2805), i=536, next=0
+                  KindQuestionToken [2805, 2807), i=537, next=26
+                  KindObjectLiteralExpression [2807, 2810), i=538, next=27
+                  KindColonToken [2810, 2812), i=539, next=28
+                  KindObjectLiteralExpression [2812, 3036), i=540, next=0
+                    NodeList [2814, 3029), i=541, next=0
+                      KindPropertyAssignment [2814, 3029), i=542, next=0
+                        KindIdentifier "record" [2814, 2828), i=543, next=32
+                        KindArrowFunction [2829, 3029), i=544, next=0
+                          NodeList [2831, 2835), i=545, next=36
+                            KindTypeParameter [2831, 2835), i=546, next=0
+                              KindIdentifier "TYPE" [2831, 2835), i=547, next=0
+                          NodeList [2837, 2863), i=548, next=42
+                            KindParameter [2837, 2863), i=549, next=0
+                              KindIdentifier "instance" [2837, 2845), i=550, next=39
+                              KindTypeReference [2846, 2851), i=551, next=41
+                                KindIdentifier "TYPE" [2846, 2851), i=552, next=0
+                              KindIdentifier "undefined" [2853, 2863), i=553, next=0
+                          KindEqualsGreaterThanToken [2864, 2867), i=554, next=43
+                          KindAsExpression [2867, 3029), i=555, next=0
+                            KindCallExpression [2867, 2979), i=556, next=73
+                              KindIdentifier "buildPubSubRecordType" [2867, 2898), i=557, next=46
+                              NodeList [2899, 2978), i=558, next=0
+                                KindAsExpression [2899, 2978), i=559, next=0
+                                  KindCallExpression [2899, 2951), i=560, next=63
+                                    KindPropertyAccessExpression [2899, 2912), i=561, next=52
+                                      KindIdentifier "Object" [2899, 2905), i=562, next=51
+                                      KindIdentifier "assign" [2906, 2912), i=563, next=0
+                                    NodeList [2913, 2950), i=564, next=0
+                                      KindObjectLiteralExpression [2913, 2915), i=565, next=54
+                                      KindIdentifier "soFar" [2916, 2922), i=566, next=55
+                                      KindObjectLiteralExpression [2923, 2950), i=567, next=0
+                                        NodeList [2925, 2949), i=568, next=0
+                                          KindPropertyAssignment [2925, 2949), i=569, next=0
+                                            KindIdentifier "record" [2925, 2931), i=570, next=59
+                                            KindAsExpression [2932, 2949), i=571, next=0
+                                              KindIdentifier "instance" [2932, 2941), i=572, next=61
+                                              KindTypeReference [2944, 2949), i=573, next=0
+                                                KindIdentifier "TYPE" [2944, 2949), i=574, next=0
+                                  KindIntersectionType [2954, 2978), i=575, next=0
+                                    NodeList [2954, 2978), i=576, next=0
+                                      KindTypeReference [2954, 2961), i=577, next=67
+                                        KindIdentifier "SO_FAR" [2954, 2961), i=578, next=0
+                                      KindTypeLiteral [2963, 2978), i=579, next=0
+                                        NodeList [2965, 2977), i=580, next=0
+                                          KindPropertySignature [2965, 2977), i=581, next=0
+                                            KindIdentifier "record" [2965, 2971), i=582, next=71
+                                            KindTypeReference [2972, 2977), i=583, next=0
+                                              KindIdentifier "TYPE" [2972, 2977), i=584, next=0
+                            KindTypeReference [2982, 3029), i=585, next=0
+                              KindIdentifier "BuildPubSubRecordType" [2982, 3004), i=586, next=75
+                              NodeList [3005, 3028), i=587, next=0
+                                KindIntersectionType [3005, 3028), i=588, next=0
+                                  NodeList [3005, 3028), i=589, next=0
+                                    KindTypeReference [3005, 3011), i=590, next=80
+                                      KindIdentifier "SO_FAR" [3005, 3011), i=591, next=0
+                                    KindTypeLiteral [3013, 3028), i=592, next=0
+                                      NodeList [3015, 3027), i=593, next=0
+                                        KindPropertySignature [3015, 3027), i=594, next=0
+                                          KindIdentifier "record" [3015, 3021), i=595, next=84
+                                          KindTypeReference [3022, 3027), i=596, next=0
+                                            KindIdentifier "TYPE" [3022, 3027), i=597, next=0
+    KindTypeAliasDeclaration [3042, 3402), i=598, next=137
+      KindIdentifier "MaxMsToWaitBeforePublishingFieldConstructor" [3054, 3098), i=599, next=88
+      NodeList [3099, 3105), i=600, next=91
+        KindTypeParameter [3099, 3105), i=601, next=0
+          KindIdentifier "SO_FAR" [3099, 3105), i=602, next=0
+      KindConditionalType [3108, 3402), i=603, next=0
+        KindTypeReference [3108, 3120), i=604, next=94
+          KindIdentifier "SO_FAR" [3108, 3120), i=605, next=0
+        KindTypeLiteral [3128, 3163), i=606, next=99
+          NodeList [3130, 3162), i=607, next=0
+            KindPropertySignature [3130, 3162), i=608, next=0
+              KindIdentifier "maxMsToWaitBeforePublishing" [3130, 3157), i=609, next=98
+              KindAnyKeyword [3158, 3162), i=610, next=0
+        KindTypeLiteral [3165, 3168), i=611, next=100
+        KindTypeLiteral [3170, 3402), i=612, next=0
+          NodeList [3172, 3395), i=613, next=0
+            KindPropertySignature [3172, 3294), i=614, next=121
+              KindIdentifier "maxMsToWaitBeforePublishing" [3172, 3207), i=615, next=104
+              KindFunctionType [3208, 3293), i=616, next=0
+                NodeList [3210, 3219), i=617, next=109
+                  KindParameter [3210, 3219), i=618, next=0
+                    KindIdentifier "t" [3210, 3211), i=619, next=108
+                    KindNumberKeyword [3212, 3219), i=620, next=0
+                KindTypeReference [3223, 3293), i=621, next=0
+                  KindIdentifier "BuildPubSubRecordType" [3223, 3245), i=622, next=111
+                  NodeList [3246, 3292), i=623, next=0
+                    KindIntersectionType [3246, 3292), i=624, next=0
+                      NodeList [3246, 3292), i=625, next=0
+                        KindTypeReference [3246, 3252), i=626, next=116
+                          KindIdentifier "SO_FAR" [3246, 3252), i=627, next=0
+                        KindTypeLiteral [3254, 3292), i=628, next=0
+                          NodeList [3256, 3291), i=629, next=0
+                            KindPropertySignature [3256, 3291), i=630, next=0
+                              KindIdentifier "maxMsToWaitBeforePublishing" [3256, 3283), i=631, next=120
+                              KindNumberKeyword [3284, 3291), i=632, next=0
+            KindPropertySignature [3294, 3395), i=633, next=0
+              KindIdentifier "neverDelayPublishing" [3294, 3322), i=634, next=123
+              KindFunctionType [3323, 3394), i=635, next=0
+                KindTypeReference [3329, 3394), i=636, next=0
+                  KindIdentifier "BuildPubSubRecordType" [3329, 3351), i=637, next=126
+                  NodeList [3352, 3393), i=638, next=0
+                    KindIntersectionType [3352, 3393), i=639, next=0
+                      NodeList [3352, 3393), i=640, next=0
+                        KindTypeReference [3352, 3358), i=641, next=131
+                          KindIdentifier "SO_FAR" [3352, 3358), i=642, next=0
+                        KindTypeLiteral [3360, 3393), i=643, next=0
+                          NodeList [3362, 3392), i=644, next=0
+                            KindPropertySignature [3362, 3392), i=645, next=0
+                              KindIdentifier "maxMsToWaitBeforePublishing" [3362, 3389), i=646, next=135
+                              KindLiteralType [3390, 3392), i=647, next=0
+                                KindNumericLiteral [3390, 3392), i=648, next=0
+    KindVariableStatement [3402, 4098), i=649, next=244
+      KindVariableDeclarationList [3402, 4097), i=650, next=0
+        NodeList [3415, 4097), i=651, next=0
+          KindVariableDeclaration [3415, 4097), i=652, next=0
+            KindIdentifier "buildMaxMsToWaitBeforePublishingFieldConstructor" [3415, 3464), i=653, next=142
+            KindArrowFunction [3466, 4097), i=654, next=0
+              NodeList [3468, 3474), i=655, next=146
+                KindTypeParameter [3468, 3474), i=656, next=0
+                  KindIdentifier "SO_FAR" [3468, 3474), i=657, next=0
+              NodeList [3476, 3489), i=658, next=151
+                KindParameter [3476, 3489), i=659, next=0
+                  KindIdentifier "soFar" [3476, 3481), i=660, next=149
+                  KindTypeReference [3482, 3489), i=661, next=0
+                    KindIdentifier "SO_FAR" [3482, 3489), i=662, next=0
+              KindTypeReference [3491, 3543), i=663, next=156
+                KindIdentifier "MaxMsToWaitBeforePublishingFieldConstructor" [3491, 3535), i=664, next=153
+                NodeList [3536, 3542), i=665, next=0
+                  KindTypeReference [3536, 3542), i=666, next=0
+                    KindIdentifier "SO_FAR" [3536, 3542), i=667, next=0
+              KindEqualsGreaterThanToken [3543, 3546), i=668, next=157
+              KindAsExpression [3546, 4097), i=669, next=0
+                KindParenthesizedExpression [3546, 4042), i=670, next=239
+                  KindConditionalExpression [3548, 4037), i=671, next=0
+                    KindBinaryExpression [3548, 3592), i=672, next=164
+                      KindStringLiteral "maxMsToWaitBeforePublishing" [3548, 3583), i=673, next=162
+                      KindInKeyword [3583, 3586), i=674, next=163
+                      KindIdentifier "soFar" [3586, 3592), i=675, next=0
+                    KindQuestionToken [3592, 3594), i=676, next=165
+                    KindObjectLiteralExpression [3594, 3597), i=677, next=166
+                    KindColonToken [3597, 3599), i=678, next=167
+                    KindObjectLiteralExpression [3599, 4037), i=679, next=0
+                      NodeList [3601, 4030), i=680, next=0
+                        KindPropertyAssignment [3601, 3834), i=681, next=206
+                          KindIdentifier "maxMsToWaitBeforePublishing" [3601, 3636), i=682, next=171
+                          KindArrowFunction [3637, 3834), i=683, next=0
+                            NodeList [3639, 3659), i=684, next=177
+                              KindParameter [3639, 3659), i=685, next=0
+                                KindIdentifier "instance" [3639, 3647), i=686, next=175
+                                KindNumberKeyword [3648, 3655), i=687, next=176
+                                KindNumericLiteral [3657, 3659), i=688, next=0
+                            KindEqualsGreaterThanToken [3660, 3663), i=689, next=178
+                            KindAsExpression [3663, 3834), i=690, next=0
+                              KindCallExpression [3663, 3761), i=691, next=194
+                                KindIdentifier "buildPubSubRecordType" [3663, 3694), i=692, next=181
+                                NodeList [3695, 3760), i=693, next=0
+                                  KindCallExpression [3695, 3760), i=694, next=0
+                                    KindPropertyAccessExpression [3695, 3708), i=695, next=186
+                                      KindIdentifier "Object" [3695, 3701), i=696, next=185
+                                      KindIdentifier "assign" [3702, 3708), i=697, next=0
+                                    NodeList [3709, 3759), i=698, next=0
+                                      KindObjectLiteralExpression [3709, 3711), i=699, next=188
+                                      KindIdentifier "soFar" [3712, 3718), i=700, next=189
+                                      KindObjectLiteralExpression [3719, 3759), i=701, next=0
+                                        NodeList [3721, 3758), i=702, next=0
+                                          KindPropertyAssignment [3721, 3758), i=703, next=0
+                                            KindIdentifier "maxMsToWaitBeforePublishing" [3721, 3748), i=704, next=193
+                                            KindIdentifier "instance" [3749, 3758), i=705, next=0
+                              KindTypeReference [3764, 3834), i=706, next=0
+                                KindIdentifier "BuildPubSubRecordType" [3764, 3786), i=707, next=196
+                                NodeList [3787, 3833), i=708, next=0
+                                  KindIntersectionType [3787, 3833), i=709, next=0
+                                    NodeList [3787, 3833), i=710, next=0
+                                      KindTypeReference [3787, 3793), i=711, next=201
+                                        KindIdentifier "SO_FAR" [3787, 3793), i=712, next=0
+                                      KindTypeLiteral [3795, 3833), i=713, next=0
+                                        NodeList [3797, 3832), i=714, next=0
+                                          KindPropertySignature [3797, 3832), i=715, next=0
+                                            KindIdentifier "maxMsToWaitBeforePublishing" [3797, 3824), i=716, next=205
+                                            KindNumberKeyword [3825, 3832), i=717, next=0
+                        KindPropertyAssignment [3835, 4029), i=718, next=0
+                          KindIdentifier "neverDelayPublishing" [3835, 3863), i=719, next=208
+                          KindArrowFunction [3864, 4029), i=720, next=0
+                            KindEqualsGreaterThanToken [3867, 3870), i=721, next=210
+                            KindAsExpression [3870, 4029), i=722, next=0
+                              KindCallExpression [3870, 3961), i=723, next=226
+                                KindIdentifier "buildPubSubRecordType" [3870, 3901), i=724, next=213
+                                NodeList [3902, 3960), i=725, next=0
+                                  KindCallExpression [3902, 3960), i=726, next=0
+                                    KindPropertyAccessExpression [3902, 3915), i=727, next=218
+                                      KindIdentifier "Object" [3902, 3908), i=728, next=217
+                                      KindIdentifier "assign" [3909, 3915), i=729, next=0
+                                    NodeList [3916, 3959), i=730, next=0
+                                      KindObjectLiteralExpression [3916, 3918), i=731, next=220
+                                      KindIdentifier "soFar" [3919, 3925), i=732, next=221
+                                      KindObjectLiteralExpression [3926, 3959), i=733, next=0
+                                        NodeList [3928, 3958), i=734, next=0
+                                          KindPropertyAssignment [3928, 3958), i=735, next=0
+                                            KindIdentifier "maxMsToWaitBeforePublishing" [3928, 3955), i=736, next=225
+                                            KindNumericLiteral [3956, 3958), i=737, next=0
+                              KindTypeReference [3964, 4029), i=738, next=0
+                                KindIdentifier "BuildPubSubRecordType" [3964, 3986), i=739, next=228
+                                NodeList [3987, 4028), i=740, next=0
+                                  KindIntersectionType [3987, 4028), i=741, next=0
+                                    NodeList [3987, 4028), i=742, next=0
+                                      KindTypeReference [3987, 3993), i=743, next=233
+                                        KindIdentifier "SO_FAR" [3987, 3993), i=744, next=0
+                                      KindTypeLiteral [3995, 4028), i=745, next=0
+                                        NodeList [3997, 4027), i=746, next=0
+                                          KindPropertySignature [3997, 4027), i=747, next=0
+                                            KindIdentifier "maxMsToWaitBeforePublishing" [3997, 4024), i=748, next=237
+                                            KindLiteralType [4025, 4027), i=749, next=0
+                                              KindNumericLiteral [4025, 4027), i=750, next=0
+                KindTypeReference [4045, 4097), i=751, next=0
+                  KindIdentifier "MaxMsToWaitBeforePublishingFieldConstructor" [4045, 4089), i=752, next=241
+                  NodeList [4090, 4096), i=753, next=0
+                    KindTypeReference [4090, 4096), i=754, next=0
+                      KindIdentifier "SO_FAR" [4090, 4096), i=755, next=0
+    KindTypeAliasDeclaration [4098, 4421), i=756, next=42
+      KindIdentifier "TypeConstructor" [4110, 4126), i=757, next=246
+      NodeList [4127, 4133), i=758, next=249
+        KindTypeParameter [4127, 4133), i=759, next=0
+          KindIdentifier "SO_FAR" [4127, 4133), i=760, next=0
+      KindConditionalType [4136, 4421), i=761, next=0
+        KindTypeReference [4136, 4148), i=762, next=252
+          KindIdentifier "SO_FAR" [4136, 4148), i=763, next=0
+        KindTypeLiteral [4156, 4266), i=764, next=11
+          NodeList [4158, 4265), i=765, next=0
+            KindPropertySignature [4158, 4174), i=766, next=1
+              KindIdentifier "identifier" [4158, 4168), i=767, next=0
+              KindAnyKeyword [4169, 4173), i=768, next=0
+            KindPropertySignature [4174, 4187), i=769, next=4
+              KindIdentifier "record" [4174, 4181), i=770, next=3
+              KindAnyKeyword [4182, 4186), i=771, next=0
+            KindPropertySignature [4187, 4224), i=772, next=7
+              KindIdentifier "maxMsToWaitBeforePublishing" [4187, 4215), i=773, next=6
+              KindNumberKeyword [4216, 4223), i=774, next=0
+            KindPropertySignature [4224, 4265), i=775, next=0
+              KindIdentifier "storedAs" [4224, 4233), i=776, next=9
+              KindTypeReference [4234, 4265), i=777, next=0
+                KindIdentifier "PubSubRecordIsStoredInRedisAsA" [4234, 4265), i=778, next=0
+        KindTypeLiteral [4268, 4416), i=779, next=41
+          NodeList [4270, 4409), i=780, next=0
+            KindPropertySignature [4270, 4291), i=781, next=17
+              KindIdentifier "type" [4270, 4282), i=782, next=15
+              KindTypeReference [4283, 4290), i=783, next=0
+                KindIdentifier "SO_FAR" [4283, 4290), i=784, next=0
+            KindPropertySignature [4291, 4325), i=785, next=25
+              KindIdentifier "fields" [4291, 4305), i=786, next=19
+              KindTypeReference [4306, 4324), i=787, next=0
+                KindIdentifier "Set" [4306, 4310), i=788, next=21
+                NodeList [4311, 4323), i=789, next=0
+                  KindTypeOperator [4311, 4323), i=790, next=0
+                    KindTypeReference [4316, 4323), i=791, next=0
+                      KindIdentifier "SO_FAR" [4316, 4323), i=792, next=0
+            KindPropertySignature [4325, 4409), i=793, next=0
+              KindIdentifier "hasField" [4325, 4341), i=794, next=27
+              KindFunctionType [4342, 4409), i=795, next=0
+                NodeList [4344, 4379), i=796, next=36
+                  KindParameter [4344, 4379), i=797, next=0
+                    KindIdentifier "fieldName" [4344, 4353), i=798, next=31
+                    KindUnionType [4354, 4379), i=799, next=0
+                      NodeList [4354, 4379), i=800, next=0
+                        KindStringKeyword [4354, 4361), i=801, next=34
+                        KindNumberKeyword [4363, 4370), i=802, next=35
+                        KindSymbolKeyword [4372, 4379), i=803, next=0
+                KindTypePredicate [4383, 4409), i=804, next=0
+                  KindIdentifier "fieldName" [4383, 4393), i=805, next=38
+                  KindTypeOperator [4396, 4409), i=806, next=0
+                    KindTypeReference [4402, 4409), i=807, next=0
+                      KindIdentifier "SO_FAR" [4402, 4409), i=808, next=0
+        KindTypeLiteral [4418, 4421), i=809, next=0
+    KindVariableStatement [4421, 4799), i=810, next=124
+      KindVariableDeclarationList [4421, 4798), i=811, next=0
+        NodeList [4434, 4798), i=812, next=0
+          KindVariableDeclaration [4434, 4798), i=813, next=0
+            KindIdentifier "buildType" [4434, 4444), i=814, next=47
+            KindArrowFunction [4446, 4798), i=815, next=0
+              NodeList [4448, 4454), i=816, next=51
+                KindTypeParameter [4448, 4454), i=817, next=0
+                  KindIdentifier "SO_FAR" [4448, 4454), i=818, next=0
+              NodeList [4456, 4469), i=819, next=56
+                KindParameter [4456, 4469), i=820, next=0
+                  KindIdentifier "soFar" [4456, 4461), i=821, next=54
+                  KindTypeReference [4462, 4469), i=822, next=0
+                    KindIdentifier "SO_FAR" [4462, 4469), i=823, next=0
+              KindEqualsGreaterThanToken [4470, 4473), i=824, next=57
+              KindParenthesizedExpression [4473, 4798), i=825, next=0
+                KindConditionalExpression [4475, 4793), i=826, next=0
+                  KindBinaryExpression [4475, 4610), i=827, next=81
+                    KindBinaryExpression [4475, 4565), i=828, next=76
+                      KindBinaryExpression [4475, 4523), i=829, next=71
+                        KindBinaryExpression [4475, 4502), i=830, next=66
+                          KindStringLiteral "identifier" [4475, 4493), i=831, next=64
+                          KindInKeyword [4493, 4496), i=832, next=65
+                          KindIdentifier "soFar" [4496, 4502), i=833, next=0
+                        KindAmpersandAmpersandToken [4502, 4505), i=834, next=67
+                        KindBinaryExpression [4505, 4523), i=835, next=0
+                          KindStringLiteral "object" [4505, 4514), i=836, next=69
+                          KindInKeyword [4514, 4517), i=837, next=70
+                          KindIdentifier "soFar" [4517, 4523), i=838, next=0
+                      KindAmpersandAmpersandToken [4523, 4526), i=839, next=72
+                      KindBinaryExpression [4526, 4565), i=840, next=0
+                        KindStringLiteral "maxMsToWaitBeforePublishing" [4526, 4556), i=841, next=74
+                        KindInKeyword [4556, 4559), i=842, next=75
+                        KindIdentifier "soFar" [4559, 4565), i=843, next=0
+                    KindAmpersandAmpersandToken [4565, 4568), i=844, next=77
+                    KindBinaryExpression [4568, 4610), i=845, next=0
+                      KindStringLiteral "PubSubRecordIsStoredInRedisAsA" [4568, 4601), i=846, next=79
+                      KindInKeyword [4601, 4604), i=847, next=80
+                      KindIdentifier "soFar" [4604, 4610), i=848, next=0
+                  KindQuestionToken [4610, 4612), i=849, next=82
+                  KindObjectLiteralExpression [4612, 4615), i=850, next=83
+                  KindColonToken [4615, 4617), i=851, next=84
+                  KindObjectLiteralExpression [4617, 4793), i=852, next=0
+                    NodeList [4619, 4786), i=853, next=0
+                      KindPropertyAssignment [4619, 4638), i=854, next=89
+                        KindIdentifier "type" [4619, 4631), i=855, next=88
+                        KindIdentifier "soFar" [4632, 4638), i=856, next=0
+                      KindPropertyAssignment [4639, 4708), i=857, next=108
+                        KindIdentifier "fields" [4639, 4653), i=858, next=91
+                        KindArrowFunction [4654, 4708), i=859, next=0
+                          KindEqualsGreaterThanToken [4657, 4660), i=860, next=93
+                          KindNewExpression [4660, 4708), i=861, next=0
+                            KindIdentifier "Set" [4664, 4668), i=862, next=95
+                            NodeList [4669, 4707), i=863, next=0
+                              KindAsExpression [4669, 4707), i=864, next=0
+                                KindCallExpression [4669, 4687), i=865, next=103
+                                  KindPropertyAccessExpression [4669, 4680), i=866, next=101
+                                    KindIdentifier "Object" [4669, 4675), i=867, next=100
+                                    KindIdentifier "keys" [4676, 4680), i=868, next=0
+                                  NodeList [4681, 4686), i=869, next=0
+                                    KindIdentifier "soFar" [4681, 4686), i=870, next=0
+                                KindArrayType [4690, 4707), i=871, next=0
+                                  KindParenthesizedType [4690, 4705), i=872, next=0
+                                    KindTypeOperator [4692, 4704), i=873, next=0
+                                      KindTypeReference [4697, 4704), i=874, next=0
+                                        KindIdentifier "SO_FAR" [4697, 4704), i=875, next=0
+                      KindPropertyAssignment [4709, 4786), i=876, next=0
+                        KindIdentifier "hasField" [4709, 4725), i=877, next=110
+                        KindArrowFunction [4726, 4786), i=878, next=0
+                          NodeList [4728, 4763), i=879, next=119
+                            KindParameter [4728, 4763), i=880, next=0
+                              KindIdentifier "fieldName" [4728, 4737), i=881, next=114
+                              KindUnionType [4738, 4763), i=882, next=0
+                                NodeList [4738, 4763), i=883, next=0
+                                  KindStringKeyword [4738, 4745), i=884, next=117
+                                  KindNumberKeyword [4747, 4754), i=885, next=118
+                                  KindSymbolKeyword [4756, 4763), i=886, next=0
+                          KindEqualsGreaterThanToken [4764, 4767), i=887, next=120
+                          KindBinaryExpression [4767, 4786), i=888, next=0
+                            KindIdentifier "fieldName" [4767, 4777), i=889, next=122
+                            KindInKeyword [4777, 4780), i=890, next=123
+                            KindIdentifier "soFar" [4780, 4786), i=891, next=0
+    KindTypeAliasDeclaration [4799, 5140), i=892, next=161
+      KindIdentifier "BuildPubSubRecordType" [4811, 4833), i=893, next=126
+      NodeList [4834, 4840), i=894, next=129
+        KindTypeParameter [4834, 4840), i=895, next=0
+          KindIdentifier "SO_FAR" [4834, 4840), i=896, next=0
+      KindIntersectionType [4843, 5140), i=897, next=0
+        NodeList [4843, 5140), i=898, next=0
+          KindTypeReference [4843, 4877), i=899, next=136
+            KindIdentifier "NameFieldConstructor" [4843, 4869), i=900, next=133
+            NodeList [4870, 4876), i=901, next=0
+              KindTypeReference [4870, 4876), i=902, next=0
+                KindIdentifier "SO_FAR" [4870, 4876), i=903, next=0
+          KindTypeReference [4879, 4919), i=904, next=141
+            KindIdentifier "IdentifierFieldConstructor" [4879, 4911), i=905, next=138
+            NodeList [4912, 4918), i=906, next=0
+              KindTypeReference [4912, 4918), i=907, next=0
+                KindIdentifier "SO_FAR" [4912, 4918), i=908, next=0
+          KindTypeReference [4921, 4957), i=909, next=146
+            KindIdentifier "RecordFieldConstructor" [4921, 4949), i=910, next=143
+            NodeList [4950, 4956), i=911, next=0
+              KindTypeReference [4950, 4956), i=912, next=0
+                KindIdentifier "SO_FAR" [4950, 4956), i=913, next=0
+          KindTypeReference [4959, 4992), i=914, next=151
+            KindIdentifier "StoredAsConstructor" [4959, 4984), i=915, next=148
+            NodeList [4985, 4991), i=916, next=0
+              KindTypeReference [4985, 4991), i=917, next=0
+                KindIdentifier "SO_FAR" [4985, 4991), i=918, next=0
+          KindTypeReference [4994, 5109), i=919, next=156
+            KindIdentifier "MaxMsToWaitBeforePublishingFieldConstructor" [4994, 5101), i=920, next=153
+            NodeList [5102, 5108), i=921, next=0
+              KindTypeReference [5102, 5108), i=922, next=0
+                KindIdentifier "SO_FAR" [5102, 5108), i=923, next=0
+          KindTypeReference [5111, 5140), i=924, next=0
+            KindIdentifier "TypeConstructor" [5111, 5132), i=925, next=158
+            NodeList [5133, 5139), i=926, next=0
+              KindTypeReference [5133, 5139), i=927, next=0
+                KindIdentifier "SO_FAR" [5133, 5139), i=928, next=0
+    KindVariableStatement [5140, 5514), i=929, next=212
+      KindVariableDeclarationList [5140, 5513), i=930, next=0
+        NodeList [5153, 5513), i=931, next=0
+          KindVariableDeclaration [5153, 5513), i=932, next=0
+            KindIdentifier "buildPubSubRecordType" [5153, 5175), i=933, next=166
+            KindArrowFunction [5177, 5513), i=934, next=0
+              NodeList [5179, 5185), i=935, next=170
+                KindTypeParameter [5179, 5185), i=936, next=0
+                  KindIdentifier "SO_FAR" [5179, 5185), i=937, next=0
+              NodeList [5187, 5200), i=938, next=175
+                KindParameter [5187, 5200), i=939, next=0
+                  KindIdentifier "soFar" [5187, 5192), i=940, next=173
+                  KindTypeReference [5193, 5200), i=941, next=0
+                    KindIdentifier "SO_FAR" [5193, 5200), i=942, next=0
+              KindEqualsGreaterThanToken [5201, 5204), i=943, next=176
+              KindAsExpression [5204, 5513), i=944, next=0
+                KindCallExpression [5204, 5480), i=945, next=207
+                  KindPropertyAccessExpression [5204, 5218), i=946, next=181
+                    KindIdentifier "Object" [5204, 5211), i=947, next=180
+                    KindIdentifier "assign" [5212, 5218), i=948, next=0
+                  NodeList [5219, 5475), i=949, next=0
+                    KindObjectLiteralExpression [5219, 5227), i=950, next=183
+                    KindCallExpression [5228, 5266), i=951, next=187
+                      KindIdentifier "buildNameFieldConstructor" [5228, 5259), i=952, next=185
+                      NodeList [5260, 5265), i=953, next=0
+                        KindIdentifier "soFar" [5260, 5265), i=954, next=0
+                    KindCallExpression [5267, 5311), i=955, next=191
+                      KindIdentifier "buildIdentifierFieldConstructor" [5267, 5304), i=956, next=189
+                      NodeList [5305, 5310), i=957, next=0
+                        KindIdentifier "soFar" [5305, 5310), i=958, next=0
+                    KindCallExpression [5312, 5352), i=959, next=195
+                      KindIdentifier "buildRecordFieldConstructor" [5312, 5345), i=960, next=193
+                      NodeList [5346, 5351), i=961, next=0
+                        KindIdentifier "soFar" [5346, 5351), i=962, next=0
+                    KindCallExpression [5353, 5390), i=963, next=199
+                      KindIdentifier "buildStoredAsConstructor" [5353, 5383), i=964, next=197
+                      NodeList [5384, 5389), i=965, next=0
+                        KindIdentifier "soFar" [5384, 5389), i=966, next=0
+                    KindCallExpression [5391, 5452), i=967, next=203
+                      KindIdentifier "buildMaxMsToWaitBeforePublishingFieldConstructor" [5391, 5445), i=968, next=201
+                      NodeList [5446, 5451), i=969, next=0
+                        KindIdentifier "soFar" [5446, 5451), i=970, next=0
+                    KindCallExpression [5453, 5475), i=971, next=0
+                      KindIdentifier "buildType" [5453, 5468), i=972, next=205
+                      NodeList [5469, 5474), i=973, next=0
+                        KindIdentifier "soFar" [5469, 5474), i=974, next=0
+                KindTypeReference [5483, 5513), i=975, next=0
+                  KindIdentifier "BuildPubSubRecordType" [5483, 5505), i=976, next=209
+                  NodeList [5506, 5512), i=977, next=0
+                    KindTypeReference [5506, 5512), i=978, next=0
+                      KindIdentifier "SO_FAR" [5506, 5512), i=979, next=0
+    KindVariableStatement [5514, 5569), i=980, next=0
+      KindVariableDeclarationList [5514, 5568), i=981, next=0
+        NodeList [5523, 5568), i=982, next=0
+          KindVariableDeclaration [5523, 5568), i=983, next=0
+            KindIdentifier "PubSubRecordType" [5523, 5540), i=984, next=217
+            KindCallExpression [5542, 5568), i=985, next=0
+              KindIdentifier "buildPubSubRecordType" [5542, 5564), i=986, next=219
+              NodeList [5565, 5567), i=987, next=0
+                KindObjectLiteralExpression [5565, 5567), i=988, next=0

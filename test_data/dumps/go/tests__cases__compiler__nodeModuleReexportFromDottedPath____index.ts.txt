@@ -1,0 +1,46 @@
+KindSourceFile [0, 262), i=1, next=0
+  NodeList [0, 260), i=2, next=0
+    KindImportDeclaration [0, 46), i=3, next=10
+      KindImportClause [6, 23), i=4, next=9
+        KindNamedImports [6, 23), i=5, next=0
+          NodeList [8, 21), i=6, next=0
+            KindImportSpecifier [8, 21), i=7, next=0
+              KindIdentifier "PrismaClient" [8, 21), i=8, next=0
+      KindStringLiteral "@prisma/client" [28, 45), i=9, next=0
+    KindVariableStatement [46, 169), i=10, next=35
+      NodeList [46, 55), i=11, next=13
+        KindDeclareKeyword [46, 55), i=12, next=0
+      KindVariableDeclarationList [55, 168), i=13, next=0
+        NodeList [61, 168), i=14, next=0
+          KindVariableDeclaration [61, 168), i=15, next=0
+            KindIdentifier "enhancePrisma" [61, 75), i=16, next=17
+            KindFunctionType [76, 168), i=17, next=0
+              NodeList [78, 95), i=18, next=21
+                KindTypeParameter [78, 95), i=19, next=0
+                  KindIdentifier "TPrismaClientCtor" [78, 95), i=20, next=0
+              NodeList [97, 122), i=21, next=26
+                KindParameter [97, 122), i=22, next=0
+                  KindIdentifier "client" [97, 103), i=23, next=24
+                  KindTypeReference [104, 122), i=24, next=0
+                    KindIdentifier "TPrismaClientCtor" [104, 122), i=25, next=0
+              KindIntersectionType [126, 168), i=26, next=0
+                NodeList [126, 168), i=27, next=0
+                  KindTypeReference [126, 144), i=28, next=30
+                    KindIdentifier "TPrismaClientCtor" [126, 144), i=29, next=0
+                  KindTypeLiteral [146, 168), i=30, next=0
+                    NodeList [148, 166), i=31, next=0
+                      KindPropertySignature [148, 166), i=32, next=0
+                        KindIdentifier "enhanced" [148, 157), i=33, next=34
+                        KindUnknownKeyword [158, 166), i=34, next=0
+    KindVariableStatement [169, 222), i=35, next=44
+      KindVariableDeclarationList [169, 221), i=36, next=0
+        NodeList [176, 221), i=37, next=0
+          KindVariableDeclaration [176, 221), i=38, next=0
+            KindIdentifier "EnhancedPrisma" [176, 191), i=39, next=40
+            KindCallExpression [193, 221), i=40, next=0
+              KindIdentifier "enhancePrisma" [193, 207), i=41, next=42
+              NodeList [208, 220), i=42, next=0
+                KindIdentifier "PrismaClient" [208, 220), i=43, next=0
+    KindExportAssignment [222, 260), i=44, next=0
+      KindNewExpression [238, 259), i=45, next=0
+        KindIdentifier "EnhancedPrisma" [242, 257), i=46, next=0

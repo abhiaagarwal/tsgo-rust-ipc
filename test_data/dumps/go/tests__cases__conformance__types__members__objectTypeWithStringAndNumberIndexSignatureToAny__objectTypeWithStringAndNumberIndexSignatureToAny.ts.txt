@@ -1,0 +1,335 @@
+KindSourceFile [0, 1583), i=1, next=0
+  NodeList [0, 1583), i=2, next=0
+    KindInterfaceDeclaration [0, 45), i=3, next=16
+      KindIdentifier "StringTo" [9, 18), i=4, next=5
+      NodeList [19, 20), i=5, next=8
+        KindTypeParameter [19, 20), i=6, next=0
+          KindIdentifier "T" [19, 20), i=7, next=0
+      NodeList [23, 43), i=8, next=0
+        KindIndexSignature [23, 43), i=9, next=0
+          NodeList [29, 38), i=10, next=14
+            KindParameter [29, 38), i=11, next=0
+              KindIdentifier "x" [29, 30), i=12, next=13
+              KindStringKeyword [31, 38), i=13, next=0
+          KindTypeReference [40, 42), i=14, next=0
+            KindIdentifier "T" [40, 42), i=15, next=0
+    KindInterfaceDeclaration [45, 92), i=16, next=29
+      KindIdentifier "NumberTo" [56, 65), i=17, next=18
+      NodeList [66, 67), i=18, next=21
+        KindTypeParameter [66, 67), i=19, next=0
+          KindIdentifier "T" [66, 67), i=20, next=0
+      NodeList [70, 90), i=21, next=0
+        KindIndexSignature [70, 90), i=22, next=0
+          NodeList [76, 85), i=23, next=27
+            KindParameter [76, 85), i=24, next=0
+              KindIdentifier "x" [76, 77), i=25, next=26
+              KindNumberKeyword [78, 85), i=26, next=0
+          KindTypeReference [87, 89), i=27, next=0
+            KindIdentifier "T" [87, 89), i=28, next=0
+    KindInterfaceDeclaration [92, 161), i=29, next=47
+      KindIdentifier "StringAndNumberTo" [103, 121), i=30, next=31
+      NodeList [122, 123), i=31, next=34
+        KindTypeParameter [122, 123), i=32, next=0
+          KindIdentifier "T" [122, 123), i=33, next=0
+      NodeList [124, 157), i=34, next=0
+        KindHeritageClause [124, 157), i=35, next=0
+          NodeList [132, 157), i=36, next=0
+            KindExpressionWithTypeArguments [132, 144), i=37, next=42
+              KindIdentifier "StringTo" [132, 141), i=38, next=39
+              NodeList [142, 143), i=39, next=0
+                KindTypeReference [142, 143), i=40, next=0
+                  KindIdentifier "T" [142, 143), i=41, next=0
+            KindExpressionWithTypeArguments [145, 157), i=42, next=0
+              KindIdentifier "NumberTo" [145, 154), i=43, next=44
+              NodeList [155, 156), i=44, next=0
+                KindTypeReference [155, 156), i=45, next=0
+                  KindIdentifier "T" [155, 156), i=46, next=0
+    KindInterfaceDeclaration [161, 218), i=47, next=56
+      KindIdentifier "Obj" [172, 176), i=48, next=49
+      NodeList [178, 216), i=49, next=0
+        KindPropertySignature [178, 197), i=50, next=53
+          KindIdentifier "hello" [178, 188), i=51, next=52
+          KindStringKeyword [189, 196), i=52, next=0
+        KindPropertySignature [197, 216), i=53, next=0
+          KindIdentifier "world" [197, 207), i=54, next=55
+          KindNumberKeyword [208, 215), i=55, next=0
+    KindFunctionDeclaration [218, 609), i=56, next=143
+      KindIdentifier "f1" [228, 231), i=57, next=58
+      NodeList [232, 325), i=58, next=81
+        KindParameter [232, 253), i=59, next=65
+          KindIdentifier "sToAny" [232, 238), i=60, next=61
+          KindTypeReference [239, 253), i=61, next=0
+            KindIdentifier "StringTo" [239, 248), i=62, next=63
+            NodeList [249, 252), i=63, next=0
+              KindAnyKeyword [249, 252), i=64, next=0
+        KindParameter [254, 276), i=65, next=71
+          KindIdentifier "nToAny" [254, 261), i=66, next=67
+          KindTypeReference [262, 276), i=67, next=0
+            KindIdentifier "NumberTo" [262, 271), i=68, next=69
+            NodeList [272, 275), i=69, next=0
+              KindAnyKeyword [272, 275), i=70, next=0
+        KindParameter [277, 311), i=71, next=77
+          KindIdentifier "bothToAny" [277, 287), i=72, next=73
+          KindTypeReference [288, 311), i=73, next=0
+            KindIdentifier "StringAndNumberTo" [288, 306), i=74, next=75
+            NodeList [307, 310), i=75, next=0
+              KindAnyKeyword [307, 310), i=76, next=0
+        KindParameter [312, 325), i=77, next=0
+          KindIdentifier "someObj" [312, 320), i=78, next=79
+          KindTypeReference [321, 325), i=79, next=0
+            KindIdentifier "Obj" [321, 325), i=80, next=0
+      KindBlock [326, 609), i=81, next=0
+        NodeList [328, 607), i=82, next=0
+          KindExpressionStatement [328, 349), i=83, next=88
+            KindBinaryExpression [328, 348), i=84, next=0
+              KindIdentifier "sToAny" [328, 339), i=85, next=86
+              KindEqualsToken [339, 341), i=86, next=87
+              KindIdentifier "nToAny" [341, 348), i=87, next=0
+          KindExpressionStatement [349, 373), i=88, next=93
+            KindBinaryExpression [349, 372), i=89, next=0
+              KindIdentifier "sToAny" [349, 360), i=90, next=91
+              KindEqualsToken [360, 362), i=91, next=92
+              KindIdentifier "bothToAny" [362, 372), i=92, next=0
+          KindExpressionStatement [373, 395), i=93, next=98
+            KindBinaryExpression [373, 394), i=94, next=0
+              KindIdentifier "sToAny" [373, 384), i=95, next=96
+              KindEqualsToken [384, 386), i=96, next=97
+              KindIdentifier "someObj" [386, 394), i=97, next=0
+          KindExpressionStatement [395, 417), i=98, next=103
+            KindBinaryExpression [395, 416), i=99, next=0
+              KindIdentifier "nToAny" [395, 407), i=100, next=101
+              KindEqualsToken [407, 409), i=101, next=102
+              KindIdentifier "sToAny" [409, 416), i=102, next=0
+          KindExpressionStatement [417, 441), i=103, next=108
+            KindBinaryExpression [417, 440), i=104, next=0
+              KindIdentifier "nToAny" [417, 428), i=105, next=106
+              KindEqualsToken [428, 430), i=106, next=107
+              KindIdentifier "bothToAny" [430, 440), i=107, next=0
+          KindExpressionStatement [441, 463), i=108, next=113
+            KindBinaryExpression [441, 462), i=109, next=0
+              KindIdentifier "nToAny" [441, 452), i=110, next=111
+              KindEqualsToken [452, 454), i=111, next=112
+              KindIdentifier "someObj" [454, 462), i=112, next=0
+          KindExpressionStatement [463, 488), i=113, next=118
+            KindBinaryExpression [463, 487), i=114, next=0
+              KindIdentifier "bothToAny" [463, 478), i=115, next=116
+              KindEqualsToken [478, 480), i=116, next=117
+              KindIdentifier "sToAny" [480, 487), i=117, next=0
+          KindExpressionStatement [488, 512), i=118, next=123
+            KindBinaryExpression [488, 511), i=119, next=0
+              KindIdentifier "bothToAny" [488, 502), i=120, next=121
+              KindEqualsToken [502, 504), i=121, next=122
+              KindIdentifier "nToAny" [504, 511), i=122, next=0
+          KindExpressionStatement [512, 537), i=123, next=128
+            KindBinaryExpression [512, 536), i=124, next=0
+              KindIdentifier "bothToAny" [512, 526), i=125, next=126
+              KindEqualsToken [526, 528), i=126, next=127
+              KindIdentifier "someObj" [528, 536), i=127, next=0
+          KindExpressionStatement [537, 560), i=128, next=133
+            KindBinaryExpression [537, 559), i=129, next=0
+              KindIdentifier "someObj" [537, 550), i=130, next=131
+              KindEqualsToken [550, 552), i=131, next=132
+              KindIdentifier "sToAny" [552, 559), i=132, next=0
+          KindExpressionStatement [560, 582), i=133, next=138
+            KindBinaryExpression [560, 581), i=134, next=0
+              KindIdentifier "someObj" [560, 572), i=135, next=136
+              KindEqualsToken [572, 574), i=136, next=137
+              KindIdentifier "nToAny" [574, 581), i=137, next=0
+          KindExpressionStatement [582, 607), i=138, next=0
+            KindBinaryExpression [582, 606), i=139, next=0
+              KindIdentifier "someObj" [582, 594), i=140, next=141
+              KindEqualsToken [594, 596), i=141, next=142
+              KindIdentifier "bothToAny" [596, 606), i=142, next=0
+    KindFunctionDeclaration [609, 1007), i=143, next=236
+      KindIdentifier "f2" [619, 622), i=144, next=145
+      NodeList [623, 723), i=145, next=174
+        KindParameter [623, 644), i=146, next=152
+          KindIdentifier "sToAny" [623, 629), i=147, next=148
+          KindTypeReference [630, 644), i=148, next=0
+            KindIdentifier "StringTo" [630, 639), i=149, next=150
+            NodeList [640, 643), i=150, next=0
+              KindAnyKeyword [640, 643), i=151, next=0
+        KindParameter [645, 667), i=152, next=158
+          KindIdentifier "nToAny" [645, 652), i=153, next=154
+          KindTypeReference [653, 667), i=154, next=0
+            KindIdentifier "NumberTo" [653, 662), i=155, next=156
+            NodeList [663, 666), i=156, next=0
+              KindAnyKeyword [663, 666), i=157, next=0
+        KindParameter [668, 709), i=158, next=170
+          KindIdentifier "bothToAny" [668, 678), i=159, next=160
+          KindIntersectionType [679, 709), i=160, next=0
+            NodeList [679, 709), i=161, next=0
+              KindTypeReference [679, 693), i=162, next=166
+                KindIdentifier "StringTo" [679, 688), i=163, next=164
+                NodeList [689, 692), i=164, next=0
+                  KindAnyKeyword [689, 692), i=165, next=0
+              KindTypeReference [695, 709), i=166, next=0
+                KindIdentifier "NumberTo" [695, 704), i=167, next=168
+                NodeList [705, 708), i=168, next=0
+                  KindAnyKeyword [705, 708), i=169, next=0
+        KindParameter [710, 723), i=170, next=0
+          KindIdentifier "someObj" [710, 718), i=171, next=172
+          KindTypeReference [719, 723), i=172, next=0
+            KindIdentifier "Obj" [719, 723), i=173, next=0
+      KindBlock [724, 1007), i=174, next=0
+        NodeList [726, 1005), i=175, next=0
+          KindExpressionStatement [726, 747), i=176, next=181
+            KindBinaryExpression [726, 746), i=177, next=0
+              KindIdentifier "sToAny" [726, 737), i=178, next=179
+              KindEqualsToken [737, 739), i=179, next=180
+              KindIdentifier "nToAny" [739, 746), i=180, next=0
+          KindExpressionStatement [747, 771), i=181, next=186
+            KindBinaryExpression [747, 770), i=182, next=0
+              KindIdentifier "sToAny" [747, 758), i=183, next=184
+              KindEqualsToken [758, 760), i=184, next=185
+              KindIdentifier "bothToAny" [760, 770), i=185, next=0
+          KindExpressionStatement [771, 793), i=186, next=191
+            KindBinaryExpression [771, 792), i=187, next=0
+              KindIdentifier "sToAny" [771, 782), i=188, next=189
+              KindEqualsToken [782, 784), i=189, next=190
+              KindIdentifier "someObj" [784, 792), i=190, next=0
+          KindExpressionStatement [793, 815), i=191, next=196
+            KindBinaryExpression [793, 814), i=192, next=0
+              KindIdentifier "nToAny" [793, 805), i=193, next=194
+              KindEqualsToken [805, 807), i=194, next=195
+              KindIdentifier "sToAny" [807, 814), i=195, next=0
+          KindExpressionStatement [815, 839), i=196, next=201
+            KindBinaryExpression [815, 838), i=197, next=0
+              KindIdentifier "nToAny" [815, 826), i=198, next=199
+              KindEqualsToken [826, 828), i=199, next=200
+              KindIdentifier "bothToAny" [828, 838), i=200, next=0
+          KindExpressionStatement [839, 861), i=201, next=206
+            KindBinaryExpression [839, 860), i=202, next=0
+              KindIdentifier "nToAny" [839, 850), i=203, next=204
+              KindEqualsToken [850, 852), i=204, next=205
+              KindIdentifier "someObj" [852, 860), i=205, next=0
+          KindExpressionStatement [861, 886), i=206, next=211
+            KindBinaryExpression [861, 885), i=207, next=0
+              KindIdentifier "bothToAny" [861, 876), i=208, next=209
+              KindEqualsToken [876, 878), i=209, next=210
+              KindIdentifier "sToAny" [878, 885), i=210, next=0
+          KindExpressionStatement [886, 910), i=211, next=216
+            KindBinaryExpression [886, 909), i=212, next=0
+              KindIdentifier "bothToAny" [886, 900), i=213, next=214
+              KindEqualsToken [900, 902), i=214, next=215
+              KindIdentifier "nToAny" [902, 909), i=215, next=0
+          KindExpressionStatement [910, 935), i=216, next=221
+            KindBinaryExpression [910, 934), i=217, next=0
+              KindIdentifier "bothToAny" [910, 924), i=218, next=219
+              KindEqualsToken [924, 926), i=219, next=220
+              KindIdentifier "someObj" [926, 934), i=220, next=0
+          KindExpressionStatement [935, 958), i=221, next=226
+            KindBinaryExpression [935, 957), i=222, next=0
+              KindIdentifier "someObj" [935, 948), i=223, next=224
+              KindEqualsToken [948, 950), i=224, next=225
+              KindIdentifier "sToAny" [950, 957), i=225, next=0
+          KindExpressionStatement [958, 980), i=226, next=231
+            KindBinaryExpression [958, 979), i=227, next=0
+              KindIdentifier "someObj" [958, 970), i=228, next=229
+              KindEqualsToken [970, 972), i=229, next=230
+              KindIdentifier "nToAny" [972, 979), i=230, next=0
+          KindExpressionStatement [980, 1005), i=231, next=0
+            KindBinaryExpression [980, 1004), i=232, next=0
+              KindIdentifier "someObj" [980, 992), i=233, next=234
+              KindEqualsToken [992, 994), i=234, next=235
+              KindIdentifier "bothToAny" [994, 1004), i=235, next=0
+    KindTypeAliasDeclaration [1007, 1048), i=236, next=242
+      KindIdentifier "NumberToNumber" [1013, 1028), i=237, next=238
+      KindTypeReference [1030, 1047), i=238, next=0
+        KindIdentifier "NumberTo" [1030, 1039), i=239, next=240
+        NodeList [1040, 1046), i=240, next=0
+          KindNumberKeyword [1040, 1046), i=241, next=0
+    KindInterfaceDeclaration [1048, 1127), i=242, next=253
+      KindIdentifier "StringToAnyNumberToNumber" [1059, 1085), i=243, next=244
+      NodeList [1085, 1123), i=244, next=0
+        KindHeritageClause [1085, 1123), i=245, next=0
+          NodeList [1093, 1123), i=246, next=0
+            KindExpressionWithTypeArguments [1093, 1107), i=247, next=251
+              KindIdentifier "StringTo" [1093, 1102), i=248, next=249
+              NodeList [1103, 1106), i=249, next=0
+                KindAnyKeyword [1103, 1106), i=250, next=0
+            KindExpressionWithTypeArguments [1108, 1123), i=251, next=0
+              KindIdentifier "NumberToNumber" [1108, 1123), i=252, next=0
+    KindFunctionDeclaration [1127, 1583), i=253, next=0
+      KindIdentifier "f3" [1137, 1140), i=254, next=255
+      NodeList [1141, 1248), i=255, next=18
+        KindParameter [1141, 1162), i=256, next=6
+          KindIdentifier "sToAny" [1141, 1147), i=257, next=2
+          KindTypeReference [1148, 1162), i=258, next=0
+            KindIdentifier "StringTo" [1148, 1157), i=259, next=4
+            NodeList [1158, 1161), i=260, next=0
+              KindAnyKeyword [1158, 1161), i=261, next=0
+        KindParameter [1163, 1189), i=262, next=10
+          KindIdentifier "nToNumber" [1163, 1173), i=263, next=8
+          KindTypeReference [1174, 1189), i=264, next=0
+            KindIdentifier "NumberToNumber" [1174, 1189), i=265, next=0
+        KindParameter [1190, 1234), i=266, next=14
+          KindIdentifier "strToAnyNumToNum" [1190, 1207), i=267, next=12
+          KindTypeReference [1208, 1234), i=268, next=0
+            KindIdentifier "StringToAnyNumberToNumber" [1208, 1234), i=269, next=0
+        KindParameter [1235, 1248), i=270, next=0
+          KindIdentifier "someObj" [1235, 1243), i=271, next=16
+          KindTypeReference [1244, 1248), i=272, next=0
+            KindIdentifier "Obj" [1244, 1248), i=273, next=0
+      KindBlock [1249, 1583), i=274, next=0
+        NodeList [1251, 1581), i=275, next=0
+          KindExpressionStatement [1251, 1275), i=276, next=25
+            KindBinaryExpression [1251, 1274), i=277, next=0
+              KindIdentifier "sToAny" [1251, 1262), i=278, next=23
+              KindEqualsToken [1262, 1264), i=279, next=24
+              KindIdentifier "nToNumber" [1264, 1274), i=280, next=0
+          KindExpressionStatement [1275, 1306), i=281, next=30
+            KindBinaryExpression [1275, 1305), i=282, next=0
+              KindIdentifier "sToAny" [1275, 1286), i=283, next=28
+              KindEqualsToken [1286, 1288), i=284, next=29
+              KindIdentifier "strToAnyNumToNum" [1288, 1305), i=285, next=0
+          KindExpressionStatement [1306, 1328), i=286, next=35
+            KindBinaryExpression [1306, 1327), i=287, next=0
+              KindIdentifier "sToAny" [1306, 1317), i=288, next=33
+              KindEqualsToken [1317, 1319), i=289, next=34
+              KindIdentifier "someObj" [1319, 1327), i=290, next=0
+          KindExpressionStatement [1328, 1353), i=291, next=40
+            KindBinaryExpression [1328, 1352), i=292, next=0
+              KindIdentifier "nToNumber" [1328, 1343), i=293, next=38
+              KindEqualsToken [1343, 1345), i=294, next=39
+              KindIdentifier "sToAny" [1345, 1352), i=295, next=0
+          KindExpressionStatement [1353, 1387), i=296, next=45
+            KindBinaryExpression [1353, 1386), i=297, next=0
+              KindIdentifier "nToNumber" [1353, 1367), i=298, next=43
+              KindEqualsToken [1367, 1369), i=299, next=44
+              KindIdentifier "strToAnyNumToNum" [1369, 1386), i=300, next=0
+          KindExpressionStatement [1387, 1412), i=301, next=50
+            KindBinaryExpression [1387, 1411), i=302, next=0
+              KindIdentifier "nToNumber" [1387, 1401), i=303, next=48
+              KindEqualsToken [1401, 1403), i=304, next=49
+              KindIdentifier "someObj" [1403, 1411), i=305, next=0
+          KindExpressionStatement [1412, 1444), i=306, next=55
+            KindBinaryExpression [1412, 1443), i=307, next=0
+              KindIdentifier "strToAnyNumToNum" [1412, 1434), i=308, next=53
+              KindEqualsToken [1434, 1436), i=309, next=54
+              KindIdentifier "sToAny" [1436, 1443), i=310, next=0
+          KindExpressionStatement [1444, 1478), i=311, next=60
+            KindBinaryExpression [1444, 1477), i=312, next=0
+              KindIdentifier "strToAnyNumToNum" [1444, 1465), i=313, next=58
+              KindEqualsToken [1465, 1467), i=314, next=59
+              KindIdentifier "nToNumber" [1467, 1477), i=315, next=0
+          KindExpressionStatement [1478, 1510), i=316, next=65
+            KindBinaryExpression [1478, 1509), i=317, next=0
+              KindIdentifier "strToAnyNumToNum" [1478, 1499), i=318, next=63
+              KindEqualsToken [1499, 1501), i=319, next=64
+              KindIdentifier "someObj" [1501, 1509), i=320, next=0
+          KindExpressionStatement [1510, 1533), i=321, next=70
+            KindBinaryExpression [1510, 1532), i=322, next=0
+              KindIdentifier "someObj" [1510, 1523), i=323, next=68
+              KindEqualsToken [1523, 1525), i=324, next=69
+              KindIdentifier "sToAny" [1525, 1532), i=325, next=0
+          KindExpressionStatement [1533, 1558), i=326, next=75
+            KindBinaryExpression [1533, 1557), i=327, next=0
+              KindIdentifier "someObj" [1533, 1545), i=328, next=73
+              KindEqualsToken [1545, 1547), i=329, next=74
+              KindIdentifier "nToNumber" [1547, 1557), i=330, next=0
+          KindExpressionStatement [1558, 1581), i=331, next=0
+            KindBinaryExpression [1558, 1580), i=332, next=0
+              KindIdentifier "someObj" [1558, 1570), i=333, next=78
+              KindEqualsToken [1570, 1572), i=334, next=79
+              KindIdentifier "someObj" [1572, 1580), i=335, next=0

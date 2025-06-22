@@ -1,0 +1,100 @@
+KindSourceFile [0, 388), i=1, next=0
+  NodeList [0, 388), i=2, next=0
+    KindTypeAliasDeclaration [0, 43), i=3, next=13
+      KindIdentifier "AnyFunction" [4, 16), i=4, next=5
+      KindFunctionType [18, 42), i=5, next=0
+        NodeList [20, 34), i=6, next=12
+          KindParameter [20, 34), i=7, next=0
+            KindDotDotDotToken [20, 23), i=8, next=9
+            KindIdentifier "args" [23, 27), i=9, next=10
+            KindArrayType [28, 34), i=10, next=0
+              KindAnyKeyword [28, 32), i=11, next=0
+        KindAnyKeyword [38, 42), i=12, next=0
+    KindTypeAliasDeclaration [43, 98), i=13, next=28
+      KindIdentifier "Params" [49, 56), i=14, next=15
+      NodeList [57, 58), i=15, next=18
+        KindTypeParameter [57, 58), i=16, next=0
+          KindIdentifier "T" [57, 58), i=17, next=0
+      KindTypeReference [61, 97), i=18, next=0
+        KindIdentifier "Parameters" [61, 72), i=19, next=20
+        NodeList [73, 96), i=20, next=0
+          KindTypeReference [73, 96), i=21, next=0
+            KindIdentifier "Extract" [73, 80), i=22, next=23
+            NodeList [81, 95), i=23, next=0
+              KindTypeReference [81, 82), i=24, next=26
+                KindIdentifier "T" [81, 82), i=25, next=0
+              KindTypeReference [83, 95), i=26, next=0
+                KindIdentifier "AnyFunction" [83, 95), i=27, next=0
+    KindInterfaceDeclaration [98, 193), i=28, next=59
+      KindIdentifier "Wrapper" [111, 119), i=29, next=30
+      NodeList [120, 121), i=30, next=33
+        KindTypeParameter [120, 121), i=31, next=0
+          KindIdentifier "T" [120, 121), i=32, next=0
+      NodeList [124, 190), i=33, next=0
+        KindMethodSignature [124, 190), i=34, next=0
+          KindIdentifier "call" [124, 131), i=35, next=36
+          NodeList [132, 149), i=36, next=42
+            KindTypeParameter [132, 149), i=37, next=0
+              KindIdentifier "K" [132, 133), i=38, next=39
+              KindTypeOperator [141, 149), i=39, next=0
+                KindTypeReference [147, 149), i=40, next=0
+                  KindIdentifier "T" [147, 149), i=41, next=0
+          NodeList [151, 182), i=42, next=58
+            KindParameter [151, 159), i=43, next=47
+              KindIdentifier "event" [151, 156), i=44, next=45
+              KindTypeReference [157, 159), i=45, next=0
+                KindIdentifier "K" [157, 159), i=46, next=0
+            KindParameter [160, 182), i=47, next=0
+              KindDotDotDotToken [160, 164), i=48, next=49
+              KindIdentifier "args" [164, 168), i=49, next=50
+              KindTypeReference [169, 182), i=50, next=0
+                KindIdentifier "Params" [169, 176), i=51, next=52
+                NodeList [177, 181), i=52, next=0
+                  KindIndexedAccessType [177, 181), i=53, next=0
+                    KindTypeReference [177, 178), i=54, next=56
+                      KindIdentifier "T" [177, 178), i=55, next=0
+                    KindTypeReference [179, 180), i=56, next=0
+                      KindIdentifier "K" [179, 180), i=57, next=0
+          KindVoidKeyword [184, 189), i=58, next=0
+    KindInterfaceDeclaration [193, 235), i=59, next=65
+      KindIdentifier "AWrapped" [206, 215), i=60, next=61
+      NodeList [217, 232), i=61, next=0
+        KindMethodSignature [217, 232), i=62, next=0
+          KindIdentifier "foo" [217, 223), i=63, next=64
+          KindVoidKeyword [226, 231), i=64, next=0
+    KindClassDeclaration [235, 277), i=65, next=75
+      KindIdentifier "A" [244, 246), i=66, next=67
+      NodeList [248, 274), i=67, next=0
+        KindPropertyDeclaration [248, 274), i=68, next=0
+          KindIdentifier "foo" [248, 254), i=69, next=70
+          KindTypeReference [255, 273), i=70, next=0
+            KindIdentifier "Wrapper" [255, 263), i=71, next=72
+            NodeList [264, 272), i=72, next=0
+              KindTypeReference [264, 272), i=73, next=0
+                KindIdentifier "AWrapped" [264, 272), i=74, next=0
+    KindInterfaceDeclaration [277, 336), i=75, next=86
+      KindIdentifier "BWrapped" [290, 299), i=76, next=77
+      NodeList [299, 316), i=77, next=82
+        KindHeritageClause [299, 316), i=78, next=0
+          NodeList [307, 316), i=79, next=0
+            KindExpressionWithTypeArguments [307, 316), i=80, next=0
+              KindIdentifier "AWrapped" [307, 316), i=81, next=0
+      NodeList [318, 333), i=82, next=0
+        KindMethodSignature [318, 333), i=83, next=0
+          KindIdentifier "bar" [318, 324), i=84, next=85
+          KindVoidKeyword [327, 332), i=85, next=0
+    KindClassDeclaration [336, 388), i=86, next=0
+      KindIdentifier "B" [345, 347), i=87, next=88
+      NodeList [347, 357), i=88, next=93
+        KindHeritageClause [347, 357), i=89, next=0
+          NodeList [355, 357), i=90, next=0
+            KindExpressionWithTypeArguments [355, 357), i=91, next=0
+              KindIdentifier "A" [355, 357), i=92, next=0
+      NodeList [359, 385), i=93, next=0
+        KindPropertyDeclaration [359, 385), i=94, next=0
+          KindIdentifier "foo" [359, 365), i=95, next=96
+          KindTypeReference [366, 384), i=96, next=0
+            KindIdentifier "Wrapper" [366, 374), i=97, next=98
+            NodeList [375, 383), i=98, next=0
+              KindTypeReference [375, 383), i=99, next=0
+                KindIdentifier "BWrapped" [375, 383), i=100, next=0

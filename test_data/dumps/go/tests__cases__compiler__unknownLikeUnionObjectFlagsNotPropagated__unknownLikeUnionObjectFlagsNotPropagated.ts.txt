@@ -1,0 +1,69 @@
+KindSourceFile [0, 269), i=1, next=0
+  NodeList [0, 268), i=2, next=0
+    KindTypeAliasDeclaration [0, 36), i=3, next=11
+      KindIdentifier "MyType" [4, 11), i=4, next=5
+      KindUnionType [13, 35), i=5, next=0
+        NodeList [13, 35), i=6, next=0
+          KindTypeLiteral [13, 16), i=7, next=8
+          KindLiteralType [18, 23), i=8, next=10
+            KindNullKeyword [18, 23), i=9, next=0
+          KindUndefinedKeyword [25, 35), i=10, next=0
+    KindVariableStatement [36, 75), i=11, next=22
+      KindVariableDeclarationList [36, 74), i=12, next=0
+        NodeList [43, 74), i=13, next=0
+          KindVariableDeclaration [43, 74), i=14, next=0
+            KindIdentifier "myVar" [43, 49), i=15, next=16
+            KindTypeReference [50, 57), i=16, next=18
+              KindIdentifier "MyType" [50, 57), i=17, next=0
+            KindAsExpression [59, 74), i=18, next=0
+              KindNullKeyword [59, 64), i=19, next=20
+              KindTypeReference [67, 74), i=20, next=0
+                KindIdentifier "MyType" [67, 74), i=21, next=0
+    KindExpressionStatement [75, 99), i=22, next=27
+      KindPropertyAccessExpression [75, 98), i=23, next=0
+        KindIdentifier "myVar" [75, 82), i=24, next=25
+        KindQuestionDotToken [82, 84), i=25, next=26
+        KindIdentifier "toLocaleString" [84, 98), i=26, next=0
+    KindExpressionStatement [99, 106), i=27, next=29
+      KindIdentifier "myVar" [99, 105), i=28, next=0
+    KindFunctionDeclaration [106, 268), i=29, next=0
+      NodeList [106, 113), i=30, next=32
+        KindAsyncKeyword [106, 113), i=31, next=0
+      KindIdentifier "myUnusedFunction" [122, 139), i=32, next=33
+      KindBlock [141, 268), i=33, next=0
+        NodeList [143, 266), i=34, next=0
+          KindVariableStatement [143, 199), i=35, next=49
+            KindVariableDeclarationList [143, 198), i=36, next=0
+              NodeList [153, 198), i=37, next=0
+                KindVariableDeclaration [153, 198), i=38, next=0
+                  KindIdentifier "fetch1" [153, 160), i=39, next=40
+                  KindCallExpression [162, 198), i=40, next=0
+                    KindPropertyAccessExpression [162, 178), i=41, next=44
+                      KindIdentifier "Promise" [162, 170), i=42, next=43
+                      KindIdentifier "resolve" [171, 178), i=43, next=0
+                    NodeList [179, 197), i=44, next=0
+                      KindArrayLiteralExpression [179, 197), i=45, next=0
+                        NodeList [180, 196), i=46, next=0
+                          KindStringLiteral "hello" [180, 187), i=47, next=48
+                          KindStringLiteral "world" [188, 196), i=48, next=0
+          KindVariableStatement [199, 248), i=49, next=66
+            KindVariableDeclarationList [199, 247), i=50, next=0
+              NodeList [209, 247), i=51, next=0
+                KindVariableDeclaration [209, 247), i=52, next=0
+                  KindArrayBindingPattern [209, 217), i=53, next=57
+                    NodeList [211, 216), i=54, next=0
+                      KindBindingElement [211, 216), i=55, next=0
+                        KindIdentifier "data1" [211, 216), i=56, next=0
+                  KindAwaitExpression [219, 247), i=57, next=0
+                    KindCallExpression [225, 247), i=58, next=0
+                      KindPropertyAccessExpression [225, 237), i=59, next=62
+                        KindIdentifier "Promise" [225, 233), i=60, next=61
+                        KindIdentifier "all" [234, 237), i=61, next=0
+                      NodeList [238, 246), i=62, next=0
+                        KindArrayLiteralExpression [238, 246), i=63, next=0
+                          NodeList [239, 245), i=64, next=0
+                            KindIdentifier "fetch1" [239, 245), i=65, next=0
+          KindExpressionStatement [248, 266), i=66, next=0
+            KindPropertyAccessExpression [248, 265), i=67, next=0
+              KindIdentifier "data1" [248, 258), i=68, next=69
+              KindIdentifier "length" [259, 265), i=69, next=0

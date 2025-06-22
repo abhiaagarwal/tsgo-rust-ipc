@@ -1,0 +1,77 @@
+KindSourceFile [0, 361), i=1, next=0
+  NodeList [0, 359), i=2, next=0
+    KindInterfaceDeclaration [0, 55), i=3, next=17
+      KindIdentifier "IObservable" [9, 21), i=4, next=5
+      NodeList [22, 23), i=5, next=8
+        KindTypeParameter [22, 23), i=6, next=0
+          KindIdentifier "T" [22, 23), i=7, next=0
+      NodeList [26, 52), i=8, next=0
+        KindPropertySignature [26, 52), i=9, next=0
+          KindIdentifier "n" [26, 33), i=10, next=11
+          KindTypeReference [34, 51), i=11, next=0
+            KindIdentifier "IObservable" [34, 46), i=12, next=13
+            NodeList [47, 50), i=13, next=0
+              KindArrayType [47, 50), i=14, next=0
+                KindTypeReference [47, 48), i=15, next=0
+                  KindIdentifier "T" [47, 48), i=16, next=0
+    KindInterfaceDeclaration [55, 105), i=17, next=30
+      KindIdentifier "ISubject" [66, 75), i=18, next=19
+      NodeList [76, 77), i=19, next=22
+        KindTypeParameter [76, 77), i=20, next=0
+          KindIdentifier "T" [76, 77), i=21, next=0
+      NodeList [78, 101), i=22, next=0
+        KindHeritageClause [78, 101), i=23, next=0
+          NodeList [86, 101), i=24, next=0
+            KindExpressionWithTypeArguments [86, 101), i=25, next=0
+              KindIdentifier "IObservable" [86, 98), i=26, next=27
+              NodeList [99, 100), i=27, next=0
+                KindTypeReference [99, 100), i=28, next=0
+                  KindIdentifier "T" [99, 100), i=29, next=0
+    KindFunctionDeclaration [105, 180), i=30, next=47
+      NodeList [105, 116), i=31, next=33
+        KindDeclareKeyword [105, 116), i=32, next=0
+      KindIdentifier "combineLatest" [125, 139), i=33, next=34
+      NodeList [140, 146), i=34, next=37
+        KindTypeParameter [140, 146), i=35, next=0
+          KindIdentifier "TOther" [140, 146), i=36, next=0
+      NodeList [148, 172), i=37, next=46
+        KindParameter [148, 172), i=38, next=0
+          KindIdentifier "x" [148, 149), i=39, next=40
+          KindArrayType [150, 172), i=40, next=0
+            KindTypeReference [150, 170), i=41, next=0
+              KindIdentifier "IObservable" [150, 162), i=42, next=43
+              NodeList [163, 169), i=43, next=0
+                KindTypeReference [163, 169), i=44, next=0
+                  KindIdentifier "TOther" [163, 169), i=45, next=0
+      KindVoidKeyword [174, 179), i=46, next=0
+    KindFunctionDeclaration [180, 221), i=47, next=52
+      NodeList [180, 189), i=48, next=50
+        KindDeclareKeyword [180, 189), i=49, next=0
+      KindIdentifier "combineLatest" [198, 212), i=50, next=51
+      KindVoidKeyword [215, 220), i=51, next=0
+    KindFunctionDeclaration [221, 359), i=52, next=0
+      KindIdentifier "fn" [233, 236), i=53, next=54
+      NodeList [237, 238), i=54, next=57
+        KindTypeParameter [237, 238), i=55, next=0
+          KindIdentifier "T" [237, 238), i=56, next=0
+      KindBlock [241, 359), i=57, next=0
+        NodeList [243, 356), i=58, next=0
+          KindVariableStatement [243, 282), i=59, next=70
+            KindVariableDeclarationList [243, 281), i=60, next=0
+              NodeList [252, 281), i=61, next=0
+                KindVariableDeclaration [252, 281), i=62, next=0
+                  KindIdentifier "values" [252, 259), i=63, next=64
+                  KindArrayType [260, 276), i=64, next=69
+                    KindTypeReference [260, 274), i=65, next=0
+                      KindIdentifier "ISubject" [260, 269), i=66, next=67
+                      NodeList [270, 273), i=67, next=0
+                        KindAnyKeyword [270, 273), i=68, next=0
+                  KindArrayLiteralExpression [278, 281), i=69, next=0
+          KindExpressionStatement [282, 356), i=70, next=0
+            KindCallExpression [282, 355), i=71, next=0
+              KindIdentifier "combineLatest" [282, 344), i=72, next=73
+              NodeList [345, 346), i=73, next=76
+                KindTypeReference [345, 346), i=74, next=0
+                  KindIdentifier "T" [345, 346), i=75, next=0
+              NodeList [348, 354), i=76, next=0
+                KindIdentifier "values" [348, 354), i=77, next=0

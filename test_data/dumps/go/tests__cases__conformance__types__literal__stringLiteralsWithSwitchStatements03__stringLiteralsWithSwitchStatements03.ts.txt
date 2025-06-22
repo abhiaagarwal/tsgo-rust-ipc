@@ -1,0 +1,119 @@
+KindSourceFile [0, 514), i=1, next=0
+  NodeList [0, 512), i=2, next=0
+    KindVariableStatement [0, 13), i=3, next=10
+      KindVariableDeclarationList [0, 12), i=4, next=0
+        NodeList [3, 12), i=5, next=0
+          KindVariableDeclaration [3, 12), i=6, next=0
+            KindIdentifier "x" [3, 5), i=7, next=8
+            KindLiteralType [6, 12), i=8, next=0
+              KindStringLiteral "foo" [6, 12), i=9, next=0
+    KindVariableStatement [13, 36), i=10, next=21
+      KindVariableDeclarationList [13, 35), i=11, next=0
+        NodeList [18, 35), i=12, next=0
+          KindVariableDeclaration [18, 35), i=13, next=0
+            KindIdentifier "y" [18, 20), i=14, next=15
+            KindUnionType [21, 35), i=15, next=0
+              NodeList [21, 35), i=16, next=0
+                KindLiteralType [21, 27), i=17, next=19
+                  KindStringLiteral "foo" [21, 27), i=18, next=0
+                KindLiteralType [29, 35), i=19, next=0
+                  KindStringLiteral "bar" [29, 35), i=20, next=0
+    KindVariableStatement [36, 52), i=21, next=28
+      KindVariableDeclarationList [36, 51), i=22, next=0
+        NodeList [42, 51), i=23, next=0
+          KindVariableDeclaration [42, 51), i=24, next=0
+            KindIdentifier "z" [42, 44), i=25, next=26
+            KindLiteralType [45, 51), i=26, next=0
+              KindStringLiteral "bar" [45, 51), i=27, next=0
+    KindFunctionDeclaration [52, 93), i=28, next=33
+      NodeList [52, 63), i=29, next=31
+        KindDeclareKeyword [52, 63), i=30, next=0
+      KindIdentifier "randBool" [72, 81), i=31, next=32
+      KindBooleanKeyword [84, 92), i=32, next=0
+    KindSwitchStatement [93, 512), i=33, next=0
+      KindIdentifier "x" [105, 106), i=34, next=35
+      KindCaseBlock [107, 512), i=35, next=0
+        NodeList [109, 509), i=36, next=0
+          KindCaseClause [109, 163), i=37, next=47
+            KindConditionalExpression [119, 146), i=38, next=45
+              KindCallExpression [119, 130), i=39, next=41
+                KindIdentifier "randBool" [119, 128), i=40, next=0
+              KindQuestionToken [130, 132), i=41, next=42
+              KindStringLiteral "foo" [132, 138), i=42, next=43
+              KindColonToken [138, 140), i=43, next=44
+              KindStringLiteral "baz" [140, 146), i=44, next=0
+            NodeList [147, 163), i=45, next=0
+              KindBreakStatement [147, 163), i=46, next=0
+          KindCaseClause [163, 237), i=47, next=64
+            KindParenthesizedExpression [173, 220), i=48, next=62
+              KindConditionalExpression [175, 219), i=49, next=0
+                KindCallExpression [175, 185), i=50, next=52
+                  KindIdentifier "randBool" [175, 183), i=51, next=0
+                KindQuestionToken [185, 187), i=52, next=53
+                KindParenthesizedExpression [187, 195), i=53, next=55
+                  KindStringLiteral "bar" [189, 194), i=54, next=0
+                KindColonToken [195, 197), i=55, next=56
+                KindConditionalExpression [197, 219), i=56, next=0
+                  KindStringLiteral "baz" [197, 203), i=57, next=58
+                  KindQuestionToken [203, 205), i=58, next=59
+                  KindStringLiteral "bar" [205, 211), i=59, next=60
+                  KindColonToken [211, 213), i=60, next=61
+                  KindStringLiteral "baz" [213, 219), i=61, next=0
+            NodeList [221, 237), i=62, next=0
+              KindBreakStatement [221, 237), i=63, next=0
+          KindCaseClause [237, 274), i=64, next=70
+            KindParenthesizedExpression [247, 257), i=65, next=68
+              KindParenthesizedExpression [249, 256), i=66, next=0
+                KindStringLiteral "bar" [250, 255), i=67, next=0
+            NodeList [258, 274), i=68, next=0
+              KindBreakStatement [258, 274), i=69, next=0
+          KindCaseClause [274, 341), i=70, next=86
+            KindParenthesizedExpression [284, 300), i=71, next=80
+              KindBinaryExpression [286, 299), i=72, next=0
+                KindBinaryExpression [286, 290), i=73, next=77
+                  KindIdentifier "x" [286, 287), i=74, next=75
+                  KindCommaToken [287, 288), i=75, next=76
+                  KindIdentifier "y" [288, 290), i=76, next=0
+                KindCommaToken [290, 291), i=77, next=78
+                KindParenthesizedExpression [291, 299), i=78, next=0
+                  KindStringLiteral "baz" [293, 298), i=79, next=0
+            NodeList [301, 341), i=80, next=0
+              KindExpressionStatement [301, 313), i=81, next=83
+                KindIdentifier "x" [301, 312), i=82, next=0
+              KindExpressionStatement [313, 325), i=83, next=85
+                KindIdentifier "y" [313, 324), i=84, next=0
+              KindBreakStatement [325, 341), i=85, next=0
+          KindCaseClause [341, 389), i=86, next=96
+            KindParenthesizedExpression [351, 372), i=87, next=94
+              KindParenthesizedExpression [353, 371), i=88, next=0
+                KindBinaryExpression [354, 370), i=89, next=0
+                  KindStringLiteral "foo" [354, 359), i=90, next=91
+                  KindBarBarToken [359, 362), i=91, next=92
+                  KindParenthesizedExpression [362, 370), i=92, next=0
+                    KindStringLiteral "bar" [364, 369), i=93, next=0
+            NodeList [373, 389), i=94, next=0
+              KindBreakStatement [373, 389), i=95, next=0
+          KindCaseClause [389, 437), i=96, next=106
+            KindParenthesizedExpression [399, 420), i=97, next=104
+              KindParenthesizedExpression [401, 419), i=98, next=0
+                KindBinaryExpression [402, 418), i=99, next=0
+                  KindStringLiteral "bar" [402, 407), i=100, next=101
+                  KindBarBarToken [407, 410), i=101, next=102
+                  KindParenthesizedExpression [410, 418), i=102, next=0
+                    KindStringLiteral "baz" [412, 417), i=103, next=0
+            NodeList [421, 437), i=104, next=0
+              KindBreakStatement [421, 437), i=105, next=0
+          KindCaseClause [437, 459), i=106, next=111
+            KindBinaryExpression [447, 458), i=107, next=0
+              KindIdentifier "z" [447, 449), i=108, next=109
+              KindBarBarToken [449, 452), i=109, next=110
+              KindStringLiteral "baz" [452, 458), i=110, next=0
+          KindCaseClause [459, 509), i=111, next=0
+            KindBinaryExpression [469, 480), i=112, next=116
+              KindStringLiteral "baz" [469, 475), i=113, next=114
+              KindBarBarToken [475, 478), i=114, next=115
+              KindIdentifier "z" [478, 480), i=115, next=0
+            NodeList [481, 509), i=116, next=0
+              KindExpressionStatement [481, 493), i=117, next=119
+                KindIdentifier "z" [481, 492), i=118, next=0
+              KindBreakStatement [493, 509), i=119, next=0

@@ -1,0 +1,51 @@
+KindSourceFile [0, 236), i=1, next=0
+  NodeList [0, 234), i=2, next=0
+    KindInterfaceDeclaration [0, 48), i=3, next=9
+      KindIdentifier "MyInterface" [9, 21), i=4, next=5
+      NodeList [23, 45), i=5, next=0
+        KindPropertySignature [23, 45), i=6, next=0
+          KindIdentifier "something" [23, 36), i=7, next=8
+          KindNumberKeyword [37, 44), i=8, next=0
+    KindClassDeclaration [48, 123), i=9, next=28
+      KindIdentifier "MyClass" [57, 65), i=10, next=11
+      NodeList [66, 87), i=11, next=16
+        KindTypeParameter [66, 87), i=12, next=0
+          KindIdentifier "T" [66, 67), i=13, next=14
+          KindTypeReference [75, 87), i=14, next=0
+            KindIdentifier "MyInterface" [75, 87), i=15, next=0
+      NodeList [90, 120), i=16, next=0
+        KindMethodDeclaration [90, 120), i=17, next=0
+          KindIdentifier "doIt" [90, 98), i=18, next=19
+          NodeList [99, 116), i=19, next=27
+            KindParameter [99, 116), i=20, next=0
+              KindIdentifier "data" [99, 103), i=21, next=22
+              KindTypeReference [105, 116), i=22, next=0
+                KindIdentifier "Partial" [105, 113), i=23, next=24
+                NodeList [114, 115), i=24, next=0
+                  KindTypeReference [114, 115), i=25, next=0
+                    KindIdentifier "T" [114, 115), i=26, next=0
+          KindBlock [117, 120), i=27, next=0
+    KindClassDeclaration [123, 175), i=28, next=38
+      KindIdentifier "MySubClass" [132, 143), i=29, next=30
+      NodeList [143, 172), i=30, next=0
+        KindHeritageClause [143, 172), i=31, next=0
+          NodeList [151, 172), i=32, next=0
+            KindExpressionWithTypeArguments [151, 172), i=33, next=0
+              KindIdentifier "MyClass" [151, 159), i=34, next=35
+              NodeList [160, 171), i=35, next=0
+                KindTypeReference [160, 171), i=36, next=0
+                  KindIdentifier "MyInterface" [160, 171), i=37, next=0
+    KindFunctionDeclaration [175, 214), i=38, next=46
+      KindIdentifier "fn" [187, 190), i=39, next=40
+      NodeList [191, 210), i=40, next=45
+        KindParameter [191, 210), i=41, next=0
+          KindIdentifier "arg" [191, 194), i=42, next=43
+          KindTypeQuery [195, 210), i=43, next=0
+            KindIdentifier "MyClass" [202, 210), i=44, next=0
+      KindBlock [211, 214), i=45, next=0
+    KindEmptyStatement [214, 215), i=46, next=47
+    KindExpressionStatement [215, 234), i=47, next=0
+      KindCallExpression [215, 233), i=48, next=0
+        KindIdentifier "fn" [215, 221), i=49, next=50
+        NodeList [222, 232), i=50, next=0
+          KindIdentifier "MySubClass" [222, 232), i=51, next=0

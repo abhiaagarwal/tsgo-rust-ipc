@@ -1,0 +1,34 @@
+KindSourceFile [0, 197), i=1, next=0
+  NodeList [0, 196), i=2, next=0
+    KindImportDeclaration [0, 47), i=3, next=10
+      KindImportClause [6, 26), i=4, next=9
+        KindNamedImports [6, 26), i=5, next=0
+          NodeList [8, 24), i=6, next=0
+            KindImportSpecifier [8, 24), i=7, next=0
+              KindIdentifier "MyExtendedClass" [8, 24), i=8, next=0
+      KindStringLiteral "./FinalClass" [31, 46), i=9, next=0
+    KindImportDeclaration [47, 87), i=10, next=17
+      KindImportClause [54, 66), i=11, next=16
+        KindNamedImports [54, 66), i=12, next=0
+          NodeList [56, 64), i=13, next=0
+            KindImportSpecifier [56, 64), i=14, next=0
+              KindIdentifier "MyMixin" [56, 64), i=15, next=0
+      KindStringLiteral "./MixinClass" [71, 86), i=16, next=0
+    KindVariableStatement [87, 143), i=17, next=26
+      KindVariableDeclarationList [87, 142), i=18, next=0
+        NodeList [94, 142), i=19, next=0
+          KindVariableDeclaration [94, 142), i=20, next=0
+            KindIdentifier "myExtendedClass" [94, 110), i=21, next=22
+            KindNewExpression [112, 142), i=22, next=0
+              KindIdentifier "MyExtendedClass" [116, 132), i=23, next=24
+              NodeList [133, 141), i=24, next=0
+                KindStringLiteral "string" [133, 141), i=25, next=0
+    KindVariableStatement [143, 196), i=26, next=0
+      KindVariableDeclarationList [143, 195), i=27, next=0
+        NodeList [150, 195), i=28, next=0
+          KindVariableDeclaration [150, 195), i=29, next=0
+            KindIdentifier "AnotherMixedClass" [150, 168), i=30, next=31
+            KindCallExpression [170, 195), i=31, next=0
+              KindIdentifier "MyMixin" [170, 178), i=32, next=33
+              NodeList [179, 194), i=33, next=0
+                KindIdentifier "MyExtendedClass" [179, 194), i=34, next=0

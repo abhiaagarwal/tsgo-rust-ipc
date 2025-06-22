@@ -1,0 +1,51 @@
+KindSourceFile [0, 239), i=1, next=0
+  NodeList [0, 238), i=2, next=0
+    KindModuleDeclaration [0, 238), i=3, next=0
+      KindIdentifier "Test" [9, 14), i=4, next=5
+      KindModuleBlock [14, 238), i=5, next=0
+        NodeList [16, 236), i=6, next=0
+          KindInterfaceDeclaration [16, 46), i=7, next=11
+            NodeList [16, 24), i=8, next=10
+              KindExportKeyword [16, 24), i=9, next=0
+            KindIdentifier "IFace" [34, 40), i=10, next=0
+          KindClassDeclaration [46, 94), i=11, next=20
+            NodeList [46, 55), i=12, next=14
+              KindExportKeyword [46, 55), i=13, next=0
+            KindIdentifier "SomeClass" [61, 71), i=14, next=15
+            NodeList [71, 88), i=15, next=0
+              KindHeritageClause [71, 88), i=16, next=0
+                NodeList [82, 88), i=17, next=0
+                  KindExpressionWithTypeArguments [82, 88), i=18, next=0
+                    KindIdentifier "IFace" [82, 88), i=19, next=0
+          KindClassDeclaration [94, 149), i=20, next=33
+            NodeList [94, 103), i=21, next=23
+              KindExportKeyword [94, 103), i=22, next=0
+            KindIdentifier "Derived" [109, 117), i=23, next=24
+            NodeList [117, 143), i=24, next=0
+              KindHeritageClause [117, 143), i=25, next=0
+                NodeList [125, 143), i=26, next=0
+                  KindExpressionWithTypeArguments [125, 143), i=27, next=0
+                    KindCallExpression [125, 143), i=28, next=0
+                      KindIdentifier "getClass" [125, 134), i=29, next=30
+                      NodeList [135, 140), i=30, next=0
+                        KindTypeReference [135, 140), i=31, next=0
+                          KindIdentifier "IFace" [135, 140), i=32, next=0
+          KindFunctionDeclaration [149, 236), i=33, next=0
+            NodeList [149, 158), i=34, next=36
+              KindExportKeyword [149, 158), i=35, next=0
+            KindIdentifier "getClass" [167, 176), i=36, next=37
+            NodeList [177, 178), i=37, next=40
+              KindTypeParameter [177, 178), i=38, next=0
+                KindIdentifier "T" [177, 178), i=39, next=0
+            KindConstructorType [183, 194), i=40, next=43
+              KindTypeReference [192, 194), i=41, next=0
+                KindIdentifier "T" [192, 194), i=42, next=0
+            KindBlock [194, 236), i=43, next=0
+              NodeList [197, 233), i=44, next=0
+                KindReturnStatement [197, 233), i=45, next=0
+                  KindAsExpression [206, 232), i=46, next=0
+                    KindIdentifier "SomeClass" [206, 216), i=47, next=48
+                    KindParenthesizedType [219, 232), i=48, next=0
+                      KindConstructorType [221, 231), i=49, next=0
+                        KindTypeReference [229, 231), i=50, next=0
+                          KindIdentifier "T" [229, 231), i=51, next=0

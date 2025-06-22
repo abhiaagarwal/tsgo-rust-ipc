@@ -1,0 +1,50 @@
+KindSourceFile [0, 164), i=1, next=0
+  NodeList [0, 163), i=2, next=0
+    KindFunctionDeclaration [0, 54), i=3, next=20
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "dearray" [16, 24), i=6, next=7
+      NodeList [25, 26), i=7, next=10
+        KindTypeParameter [25, 26), i=8, next=0
+          KindIdentifier "T" [25, 26), i=9, next=0
+      NodeList [28, 49), i=10, next=18
+        KindParameter [28, 49), i=11, next=0
+          KindIdentifier "ara" [28, 31), i=12, next=13
+          KindTypeReference [32, 49), i=13, next=0
+            KindIdentifier "ReadonlyArray" [32, 46), i=14, next=15
+            NodeList [47, 48), i=15, next=0
+              KindTypeReference [47, 48), i=16, next=0
+                KindIdentifier "T" [47, 48), i=17, next=0
+      KindTypeReference [51, 53), i=18, next=0
+        KindIdentifier "T" [51, 53), i=19, next=0
+    KindTypeAliasDeclaration [54, 88), i=20, next=28
+      KindIdentifier "LiteralType" [59, 71), i=21, next=22
+      KindUnionType [73, 87), i=22, next=0
+        NodeList [73, 87), i=23, next=0
+          KindLiteralType [73, 79), i=24, next=26
+            KindStringLiteral "foo" [73, 79), i=25, next=0
+          KindLiteralType [81, 87), i=26, next=0
+            KindStringLiteral "bar" [81, 87), i=27, next=0
+    KindVariableStatement [88, 125), i=28, next=40
+      NodeList [88, 96), i=29, next=31
+        KindDeclareKeyword [88, 96), i=30, next=0
+      KindVariableDeclarationList [96, 124), i=31, next=0
+        NodeList [100, 124), i=32, next=0
+          KindVariableDeclaration [100, 124), i=33, next=0
+            KindIdentifier "alt" [100, 104), i=34, next=35
+            KindTypeReference [105, 124), i=35, next=0
+              KindIdentifier "Array" [105, 111), i=36, next=37
+              NodeList [112, 123), i=37, next=0
+                KindTypeReference [112, 123), i=38, next=0
+                  KindIdentifier "LiteralType" [112, 123), i=39, next=0
+    KindVariableStatement [125, 163), i=40, next=0
+      KindVariableDeclarationList [125, 162), i=41, next=0
+        NodeList [130, 162), i=42, next=0
+          KindVariableDeclaration [130, 162), i=43, next=0
+            KindIdentifier "foo" [130, 134), i=44, next=45
+            KindTypeReference [135, 147), i=45, next=47
+              KindIdentifier "LiteralType" [135, 147), i=46, next=0
+            KindCallExpression [149, 162), i=47, next=0
+              KindIdentifier "dearray" [149, 157), i=48, next=49
+              NodeList [158, 161), i=49, next=0
+                KindIdentifier "alt" [158, 161), i=50, next=0

@@ -1,0 +1,127 @@
+KindSourceFile [0, 481), i=1, next=0
+  NodeList [0, 480), i=2, next=0
+    KindTypeAliasDeclaration [0, 70), i=3, next=19
+      KindIdentifier "Request" [4, 12), i=4, next=5
+      NodeList [13, 35), i=5, next=10
+        KindTypeParameter [13, 35), i=6, next=0
+          KindIdentifier "TSchema" [13, 20), i=7, next=8
+          KindTypeReference [28, 35), i=8, next=0
+            KindIdentifier "Schema" [28, 35), i=9, next=0
+      KindTypeLiteral [38, 69), i=10, next=0
+        NodeList [40, 67), i=11, next=0
+          KindPropertySignature [40, 67), i=12, next=0
+            KindIdentifier "query" [40, 48), i=13, next=14
+            KindIndexedAccessType [49, 66), i=14, next=0
+              KindTypeReference [49, 57), i=15, next=17
+                KindIdentifier "TSchema" [49, 57), i=16, next=0
+              KindLiteralType [58, 65), i=17, next=0
+                KindStringLiteral "query" [58, 65), i=18, next=0
+    KindTypeAliasDeclaration [70, 122), i=19, next=31
+      KindIdentifier "Schema" [76, 83), i=20, next=21
+      KindTypeLiteral [85, 121), i=21, next=0
+        NodeList [87, 119), i=22, next=0
+          KindPropertySignature [87, 104), i=23, next=27
+            KindIdentifier "query" [87, 93), i=24, next=25
+            KindQuestionToken [93, 94), i=25, next=26
+            KindUnknownKeyword [95, 103), i=26, next=0
+          KindPropertySignature [104, 119), i=27, next=0
+            KindIdentifier "body" [104, 109), i=28, next=29
+            KindQuestionToken [109, 110), i=29, next=30
+            KindUnknownKeyword [111, 119), i=30, next=0
+    KindFunctionDeclaration [122, 278), i=31, next=71
+      NodeList [122, 131), i=32, next=34
+        KindDeclareKeyword [122, 131), i=33, next=0
+      KindIdentifier "route" [140, 146), i=34, next=35
+      NodeList [147, 169), i=35, next=40
+        KindTypeParameter [147, 169), i=36, next=0
+          KindIdentifier "TSchema" [147, 154), i=37, next=38
+          KindTypeReference [162, 169), i=38, next=0
+            KindIdentifier "Schema" [162, 169), i=39, next=0
+      NodeList [171, 270), i=40, next=70
+        KindParameter [171, 270), i=41, next=0
+          KindIdentifier "obj" [171, 174), i=42, next=43
+          KindTypeLiteral [175, 270), i=43, next=0
+            NodeList [177, 268), i=44, next=0
+              KindPropertySignature [177, 206), i=45, next=54
+                KindIdentifier "pre" [177, 183), i=46, next=47
+                KindFunctionType [184, 205), i=47, next=0
+                  NodeList [186, 196), i=48, next=53
+                    KindParameter [186, 196), i=49, next=0
+                      KindIdentifier "a" [186, 187), i=50, next=51
+                      KindTypeReference [188, 196), i=51, next=0
+                        KindIdentifier "TSchema" [188, 196), i=52, next=0
+                  KindVoidKeyword [200, 205), i=53, next=0
+              KindPropertySignature [206, 225), i=54, next=58
+                KindIdentifier "schema" [206, 215), i=55, next=56
+                KindTypeReference [216, 224), i=56, next=0
+                  KindIdentifier "TSchema" [216, 224), i=57, next=0
+              KindPropertySignature [225, 268), i=58, next=0
+                KindIdentifier "handle" [225, 234), i=59, next=60
+                KindFunctionType [235, 267), i=60, next=0
+                  NodeList [237, 258), i=61, next=69
+                    KindParameter [237, 258), i=62, next=0
+                      KindIdentifier "req" [237, 240), i=63, next=64
+                      KindTypeReference [241, 258), i=64, next=0
+                        KindIdentifier "Request" [241, 249), i=65, next=66
+                        NodeList [250, 257), i=66, next=0
+                          KindTypeReference [250, 257), i=67, next=0
+                            KindIdentifier "TSchema" [250, 257), i=68, next=0
+                  KindVoidKeyword [262, 267), i=69, next=0
+      KindVoidKeyword [272, 277), i=70, next=0
+    KindVariableStatement [278, 344), i=71, next=92
+      KindVariableDeclarationList [278, 343), i=72, next=0
+        NodeList [285, 343), i=73, next=0
+          KindVariableDeclaration [285, 343), i=74, next=0
+            KindIdentifier "validate" [285, 294), i=75, next=76
+            KindArrowFunction [296, 343), i=76, next=0
+              NodeList [298, 336), i=77, next=90
+                KindParameter [298, 336), i=78, next=0
+                  KindIdentifier "_" [298, 299), i=79, next=80
+                  KindTypeLiteral [300, 336), i=80, next=0
+                    NodeList [302, 334), i=81, next=0
+                      KindPropertySignature [302, 319), i=82, next=86
+                        KindIdentifier "query" [302, 308), i=83, next=84
+                        KindQuestionToken [308, 309), i=84, next=85
+                        KindUnknownKeyword [310, 318), i=85, next=0
+                      KindPropertySignature [319, 334), i=86, next=0
+                        KindIdentifier "body" [319, 324), i=87, next=88
+                        KindQuestionToken [324, 325), i=88, next=89
+                        KindUnknownKeyword [326, 334), i=89, next=0
+              KindEqualsGreaterThanToken [337, 340), i=90, next=91
+              KindBlock [340, 343), i=91, next=0
+    KindExpressionStatement [344, 468), i=92, next=126
+      KindCallExpression [344, 467), i=93, next=0
+        KindIdentifier "route" [344, 351), i=94, next=95
+        NodeList [352, 466), i=95, next=0
+          KindObjectLiteralExpression [352, 466), i=96, next=0
+            NodeList [353, 464), i=97, next=0
+              KindPropertyAssignment [353, 369), i=98, next=101
+                KindIdentifier "pre" [353, 359), i=99, next=100
+                KindIdentifier "validate" [360, 369), i=100, next=0
+              KindPropertyAssignment [370, 401), i=101, next=108
+                KindIdentifier "schema" [370, 379), i=102, next=103
+                KindObjectLiteralExpression [380, 401), i=103, next=0
+                  NodeList [382, 397), i=104, next=0
+                    KindPropertyAssignment [382, 396), i=105, next=0
+                      KindIdentifier "query" [382, 392), i=106, next=107
+                      KindStringLiteral "" [393, 396), i=107, next=0
+              KindPropertyAssignment [402, 463), i=108, next=0
+                KindIdentifier "handle" [402, 411), i=109, next=110
+                KindArrowFunction [412, 463), i=110, next=0
+                  NodeList [414, 417), i=111, next=114
+                    KindParameter [414, 417), i=112, next=0
+                      KindIdentifier "req" [414, 417), i=113, next=0
+                  KindEqualsGreaterThanToken [418, 421), i=114, next=115
+                  KindBlock [421, 463), i=115, next=0
+                    NodeList [423, 459), i=116, next=0
+                      KindVariableStatement [423, 459), i=117, next=0
+                        KindVariableDeclarationList [423, 458), i=118, next=0
+                          NodeList [433, 458), i=119, next=0
+                            KindVariableDeclaration [433, 458), i=120, next=0
+                              KindIdentifier "test" [433, 438), i=121, next=122
+                              KindStringKeyword [439, 446), i=122, next=123
+                              KindPropertyAccessExpression [448, 458), i=123, next=0
+                                KindIdentifier "req" [448, 452), i=124, next=125
+                                KindIdentifier "query" [453, 458), i=125, next=0
+    KindExportDeclaration [468, 480), i=126, next=0
+      KindNamedExports [476, 479), i=127, next=0

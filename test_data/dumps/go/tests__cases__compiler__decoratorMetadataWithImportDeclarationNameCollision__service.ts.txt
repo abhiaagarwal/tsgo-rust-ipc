@@ -1,0 +1,55 @@
+KindSourceFile [0, 241), i=1, next=0
+  NodeList [0, 240), i=2, next=0
+    KindImportDeclaration [0, 24), i=3, next=10
+      KindImportClause [6, 11), i=4, next=9
+        KindNamedImports [6, 11), i=5, next=0
+          NodeList [8, 10), i=6, next=0
+            KindImportSpecifier [8, 10), i=7, next=0
+              KindIdentifier "db" [8, 10), i=8, next=0
+      KindStringLiteral "./db" [16, 23), i=9, next=0
+    KindFunctionDeclaration [24, 81), i=10, next=19
+      KindIdentifier "someDecorator" [34, 48), i=11, next=12
+      NodeList [49, 55), i=12, next=15
+        KindParameter [49, 55), i=13, next=0
+          KindIdentifier "target" [49, 55), i=14, next=0
+      KindBlock [56, 81), i=15, next=0
+        NodeList [58, 78), i=16, next=0
+          KindReturnStatement [58, 78), i=17, next=0
+            KindIdentifier "target" [70, 77), i=18, next=0
+    KindClassDeclaration [81, 221), i=19, next=51
+      NodeList [81, 97), i=20, next=23
+        KindDecorator [81, 97), i=21, next=0
+          KindIdentifier "someDecorator" [84, 97), i=22, next=0
+      KindIdentifier "MyClass" [104, 112), i=23, next=24
+      NodeList [114, 218), i=24, next=0
+        KindPropertyDeclaration [114, 127), i=25, next=29
+          KindIdentifier "db" [114, 122), i=26, next=27
+          KindTypeReference [123, 126), i=27, next=0
+            KindIdentifier "db" [123, 126), i=28, next=0
+        KindConstructor [127, 218), i=29, next=0
+          NodeList [147, 153), i=30, next=35
+            KindParameter [147, 153), i=31, next=0
+              KindIdentifier "db" [147, 149), i=32, next=33
+              KindTypeReference [150, 153), i=33, next=0
+                KindIdentifier "db" [150, 153), i=34, next=0
+          KindBlock [154, 218), i=35, next=0
+            NodeList [156, 211), i=36, next=0
+              KindExpressionStatement [156, 179), i=37, next=44
+                KindBinaryExpression [156, 178), i=38, next=0
+                  KindPropertyAccessExpression [156, 173), i=39, next=42
+                    KindThisKeyword [156, 170), i=40, next=41
+                    KindIdentifier "db" [171, 173), i=41, next=0
+                  KindEqualsToken [173, 175), i=42, next=43
+                  KindIdentifier "db" [175, 178), i=43, next=0
+              KindExpressionStatement [179, 211), i=44, next=0
+                KindCallExpression [179, 210), i=45, next=0
+                  KindPropertyAccessExpression [179, 208), i=46, next=0
+                    KindPropertyAccessExpression [179, 196), i=47, next=50
+                      KindThisKeyword [179, 193), i=48, next=49
+                      KindIdentifier "db" [194, 196), i=49, next=0
+                    KindIdentifier "doSomething" [197, 208), i=50, next=0
+    KindExportDeclaration [221, 240), i=51, next=0
+      KindNamedExports [229, 239), i=52, next=0
+        NodeList [231, 238), i=53, next=0
+          KindExportSpecifier [231, 238), i=54, next=0
+            KindIdentifier "MyClass" [231, 238), i=55, next=0

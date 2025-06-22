@@ -1,0 +1,73 @@
+KindSourceFile [0, 440), i=1, next=0
+  NodeList [0, 440), i=2, next=0
+    KindInterfaceDeclaration [0, 26), i=3, next=5
+      KindIdentifier "Interface" [9, 19), i=4, next=0
+    KindClassDeclaration [26, 52), i=5, next=7
+      KindIdentifier "SomeClass" [35, 45), i=6, next=0
+    KindTypeAliasDeclaration [52, 95), i=7, next=11
+      KindIdentifier "TypeAliasForSomeClass" [60, 82), i=8, next=9
+      KindTypeReference [84, 94), i=9, next=0
+        KindIdentifier "SomeClass" [84, 94), i=10, next=0
+    KindTypeAliasDeclaration [95, 127), i=11, next=18
+      KindIdentifier "someType" [101, 110), i=12, next=13
+      KindTypeLiteral [112, 126), i=13, next=0
+        NodeList [114, 124), i=14, next=0
+          KindPropertySignature [114, 124), i=15, next=0
+            KindIdentifier "x" [114, 116), i=16, next=17
+            KindNumberKeyword [117, 124), i=17, next=0
+    KindFunctionDeclaration [127, 175), i=18, next=26
+      KindIdentifier "acceptsSomeType" [139, 155), i=19, next=20
+      NodeList [156, 167), i=20, next=25
+        KindParameter [156, 167), i=21, next=0
+          KindIdentifier "a" [156, 157), i=22, next=23
+          KindTypeReference [158, 167), i=23, next=0
+            KindIdentifier "someType" [158, 167), i=24, next=0
+      KindBlock [168, 175), i=25, next=0
+    KindVariableStatement [175, 199), i=26, next=32
+      KindVariableDeclarationList [175, 198), i=27, next=0
+        NodeList [182, 198), i=28, next=0
+          KindVariableDeclaration [182, 198), i=29, next=0
+            KindIdentifier "one" [182, 186), i=30, next=31
+            KindIdentifier "Interface" [188, 198), i=31, next=0
+    KindVariableStatement [199, 229), i=32, next=38
+      KindVariableDeclarationList [199, 228), i=33, next=0
+        NodeList [204, 228), i=34, next=0
+          KindVariableDeclaration [204, 228), i=35, next=0
+            KindIdentifier "two" [204, 208), i=36, next=37
+            KindIdentifier "InterfaceNotFound" [210, 228), i=37, next=0
+    KindVariableStatement [229, 265), i=38, next=44
+      KindVariableDeclarationList [229, 264), i=39, next=0
+        NodeList [234, 264), i=40, next=0
+          KindVariableDeclaration [234, 264), i=41, next=0
+            KindIdentifier "three" [234, 240), i=42, next=43
+            KindIdentifier "TypeAliasForSomeClass" [242, 264), i=43, next=0
+    KindVariableStatement [265, 306), i=44, next=51
+      KindVariableDeclarationList [265, 305), i=45, next=0
+        NodeList [270, 305), i=46, next=0
+          KindVariableDeclaration [270, 305), i=47, next=0
+            KindIdentifier "four" [270, 275), i=48, next=49
+            KindNewExpression [277, 305), i=49, next=0
+              KindIdentifier "TypeAliasForSomeClass" [281, 303), i=50, next=0
+    KindVariableStatement [306, 355), i=51, next=58
+      KindVariableDeclarationList [306, 354), i=52, next=0
+        NodeList [311, 354), i=53, next=0
+          KindVariableDeclaration [311, 354), i=54, next=0
+            KindIdentifier "five" [311, 316), i=55, next=56
+            KindNewExpression [318, 354), i=56, next=0
+              KindIdentifier "TypeAliasForSomeClassNotFound" [322, 352), i=57, next=0
+    KindVariableStatement [355, 376), i=58, next=64
+      KindVariableDeclarationList [355, 375), i=59, next=0
+        NodeList [360, 375), i=60, next=0
+          KindVariableDeclaration [360, 375), i=61, next=0
+            KindIdentifier "six" [360, 364), i=62, next=63
+            KindIdentifier "someType" [366, 375), i=63, next=0
+    KindExpressionStatement [376, 404), i=64, next=69
+      KindCallExpression [376, 403), i=65, next=0
+        KindIdentifier "acceptsSomeType" [376, 393), i=66, next=67
+        NodeList [394, 402), i=67, next=0
+          KindIdentifier "someType" [394, 402), i=68, next=0
+    KindExpressionStatement [404, 440), i=69, next=0
+      KindCallExpression [404, 439), i=70, next=0
+        KindIdentifier "acceptsSomeType" [404, 421), i=71, next=72
+        NodeList [422, 438), i=72, next=0
+          KindIdentifier "someTypeNotFound" [422, 438), i=73, next=0

@@ -1,0 +1,206 @@
+KindSourceFile [0, 892), i=1, next=0
+  NodeList [0, 890), i=2, next=0
+    KindVariableStatement [0, 54), i=3, next=19
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindVariableDeclarationList [7, 54), i=6, next=0
+        NodeList [11, 54), i=7, next=0
+          KindVariableDeclaration [11, 54), i=8, next=0
+            KindIdentifier "console" [11, 19), i=9, next=10
+            KindTypeLiteral [20, 54), i=10, next=0
+              NodeList [22, 51), i=11, next=0
+                KindMethodSignature [22, 51), i=12, next=0
+                  KindIdentifier "log" [22, 31), i=13, next=14
+                  NodeList [32, 43), i=14, next=18
+                    KindParameter [32, 43), i=15, next=0
+                      KindIdentifier "msg" [32, 35), i=16, next=17
+                      KindStringKeyword [36, 43), i=17, next=0
+                  KindVoidKeyword [45, 50), i=18, next=0
+    KindInterfaceDeclaration [54, 172), i=19, next=35
+      KindIdentifier "Robot" [65, 71), i=20, next=21
+      NodeList [73, 169), i=21, next=0
+        KindPropertySignature [73, 92), i=22, next=25
+          KindIdentifier "name" [73, 83), i=23, next=24
+          KindStringKeyword [84, 91), i=24, next=0
+        KindPropertySignature [92, 169), i=25, next=0
+          KindIdentifier "skills" [92, 104), i=26, next=27
+          KindTypeLiteral [105, 168), i=27, next=0
+            NodeList [107, 161), i=28, next=0
+              KindPropertySignature [107, 133), i=29, next=32
+                KindIdentifier "primary" [107, 124), i=30, next=31
+                KindStringKeyword [125, 132), i=31, next=0
+              KindPropertySignature [133, 161), i=32, next=0
+                KindIdentifier "secondary" [133, 152), i=33, next=34
+                KindStringKeyword [153, 160), i=34, next=0
+    KindVariableStatement [172, 262), i=35, next=57
+      KindVariableDeclarationList [172, 261), i=36, next=0
+        NodeList [177, 261), i=37, next=0
+          KindVariableDeclaration [177, 261), i=38, next=0
+            KindIdentifier "robotA" [177, 184), i=39, next=40
+            KindTypeReference [185, 191), i=40, next=42
+              KindIdentifier "Robot" [185, 191), i=41, next=0
+            KindObjectLiteralExpression [193, 261), i=42, next=0
+              NodeList [195, 259), i=43, next=0
+                KindPropertyAssignment [195, 209), i=44, next=47
+                  KindIdentifier "name" [195, 200), i=45, next=46
+                  KindStringLiteral "mower" [201, 209), i=46, next=0
+                KindPropertyAssignment [210, 259), i=47, next=0
+                  KindIdentifier "skills" [210, 217), i=48, next=49
+                  KindObjectLiteralExpression [218, 259), i=49, next=0
+                    NodeList [220, 257), i=50, next=0
+                      KindPropertyAssignment [220, 238), i=51, next=54
+                        KindIdentifier "primary" [220, 228), i=52, next=53
+                        KindStringLiteral "mowing" [229, 238), i=53, next=0
+                      KindPropertyAssignment [239, 257), i=54, next=0
+                        KindIdentifier "secondary" [239, 249), i=55, next=56
+                        KindStringLiteral "none" [250, 257), i=56, next=0
+    KindFunctionDeclaration [262, 377), i=57, next=84
+      KindIdentifier "foo1" [274, 279), i=58, next=59
+      NodeList [280, 343), i=59, next=75
+        KindParameter [280, 343), i=60, next=0
+          KindObjectBindingPattern [280, 336), i=61, next=73
+            NodeList [281, 334), i=62, next=0
+              KindBindingElement [281, 334), i=63, next=0
+                KindIdentifier "skills" [281, 288), i=64, next=65
+                KindObjectBindingPattern [289, 334), i=65, next=0
+                  NodeList [291, 332), i=66, next=0
+                    KindBindingElement [291, 309), i=67, next=70
+                      KindIdentifier "primary" [291, 299), i=68, next=69
+                      KindIdentifier "primaryA" [300, 309), i=69, next=0
+                    KindBindingElement [310, 332), i=70, next=0
+                      KindIdentifier "secondary" [310, 320), i=71, next=72
+                      KindIdentifier "secondaryA" [321, 332), i=72, next=0
+          KindTypeReference [337, 343), i=73, next=0
+            KindIdentifier "Robot" [337, 343), i=74, next=0
+      KindBlock [344, 377), i=75, next=0
+        NodeList [346, 374), i=76, next=0
+          KindExpressionStatement [346, 374), i=77, next=0
+            KindCallExpression [346, 373), i=78, next=0
+              KindPropertyAccessExpression [346, 363), i=79, next=82
+                KindIdentifier "console" [346, 359), i=80, next=81
+                KindIdentifier "log" [360, 363), i=81, next=0
+              NodeList [364, 372), i=82, next=0
+                KindIdentifier "primaryA" [364, 372), i=83, next=0
+    KindFunctionDeclaration [377, 505), i=84, next=114
+      KindIdentifier "foo2" [387, 392), i=85, next=86
+      NodeList [393, 469), i=86, next=105
+        KindParameter [393, 469), i=87, next=0
+          KindObjectBindingPattern [393, 462), i=88, next=103
+            NodeList [394, 460), i=89, next=0
+              KindBindingElement [394, 406), i=90, next=93
+                KindIdentifier "name" [394, 399), i=91, next=92
+                KindIdentifier "nameC" [400, 406), i=92, next=0
+              KindBindingElement [407, 460), i=93, next=0
+                KindIdentifier "skills" [407, 414), i=94, next=95
+                KindObjectBindingPattern [415, 460), i=95, next=0
+                  NodeList [417, 458), i=96, next=0
+                    KindBindingElement [417, 435), i=97, next=100
+                      KindIdentifier "primary" [417, 425), i=98, next=99
+                      KindIdentifier "primaryB" [426, 435), i=99, next=0
+                    KindBindingElement [436, 458), i=100, next=0
+                      KindIdentifier "secondary" [436, 446), i=101, next=102
+                      KindIdentifier "secondaryB" [447, 458), i=102, next=0
+          KindTypeReference [463, 469), i=103, next=0
+            KindIdentifier "Robot" [463, 469), i=104, next=0
+      KindBlock [470, 505), i=105, next=0
+        NodeList [472, 502), i=106, next=0
+          KindExpressionStatement [472, 502), i=107, next=0
+            KindCallExpression [472, 501), i=108, next=0
+              KindPropertyAccessExpression [472, 489), i=109, next=112
+                KindIdentifier "console" [472, 485), i=110, next=111
+                KindIdentifier "log" [486, 489), i=111, next=0
+              NodeList [490, 500), i=112, next=0
+                KindIdentifier "secondaryB" [490, 500), i=113, next=0
+    KindFunctionDeclaration [505, 578), i=114, next=135
+      KindIdentifier "foo3" [515, 520), i=115, next=116
+      NodeList [521, 538), i=116, next=124
+        KindParameter [521, 538), i=117, next=0
+          KindObjectBindingPattern [521, 531), i=118, next=122
+            NodeList [522, 529), i=119, next=0
+              KindBindingElement [522, 529), i=120, next=0
+                KindIdentifier "skills" [522, 529), i=121, next=0
+          KindTypeReference [532, 538), i=122, next=0
+            KindIdentifier "Robot" [532, 538), i=123, next=0
+      KindBlock [539, 578), i=124, next=0
+        NodeList [541, 575), i=125, next=0
+          KindExpressionStatement [541, 575), i=126, next=0
+            KindCallExpression [541, 574), i=127, next=0
+              KindPropertyAccessExpression [541, 558), i=128, next=131
+                KindIdentifier "console" [541, 554), i=129, next=130
+                KindIdentifier "log" [555, 558), i=130, next=0
+              NodeList [559, 573), i=131, next=0
+                KindPropertyAccessExpression [559, 573), i=132, next=0
+                  KindIdentifier "skills" [559, 565), i=133, next=134
+                  KindIdentifier "primary" [566, 573), i=134, next=0
+    KindExpressionStatement [578, 595), i=135, next=140
+      KindCallExpression [578, 594), i=136, next=0
+        KindIdentifier "foo1" [578, 586), i=137, next=138
+        NodeList [587, 593), i=138, next=0
+          KindIdentifier "robotA" [587, 593), i=139, next=0
+    KindExpressionStatement [595, 682), i=140, next=159
+      KindCallExpression [595, 681), i=141, next=0
+        KindIdentifier "foo1" [595, 601), i=142, next=143
+        NodeList [602, 680), i=143, next=0
+          KindObjectLiteralExpression [602, 680), i=144, next=0
+            NodeList [603, 678), i=145, next=0
+              KindPropertyAssignment [603, 617), i=146, next=149
+                KindIdentifier "name" [603, 608), i=147, next=148
+                KindStringLiteral "Edger" [609, 617), i=148, next=0
+              KindPropertyAssignment [618, 678), i=149, next=0
+                KindIdentifier "skills" [618, 625), i=150, next=151
+                KindObjectLiteralExpression [626, 678), i=151, next=0
+                  NodeList [628, 676), i=152, next=0
+                    KindPropertyAssignment [628, 646), i=153, next=156
+                      KindIdentifier "primary" [628, 636), i=154, next=155
+                      KindStringLiteral "edging" [637, 646), i=155, next=0
+                    KindPropertyAssignment [647, 676), i=156, next=0
+                      KindIdentifier "secondary" [647, 657), i=157, next=158
+                      KindStringLiteral "branch trimming" [658, 676), i=158, next=0
+    KindExpressionStatement [682, 699), i=159, next=164
+      KindCallExpression [682, 698), i=160, next=0
+        KindIdentifier "foo2" [682, 690), i=161, next=162
+        NodeList [691, 697), i=162, next=0
+          KindIdentifier "robotA" [691, 697), i=163, next=0
+    KindExpressionStatement [699, 786), i=164, next=183
+      KindCallExpression [699, 785), i=165, next=0
+        KindIdentifier "foo2" [699, 705), i=166, next=167
+        NodeList [706, 784), i=167, next=0
+          KindObjectLiteralExpression [706, 784), i=168, next=0
+            NodeList [707, 782), i=169, next=0
+              KindPropertyAssignment [707, 721), i=170, next=173
+                KindIdentifier "name" [707, 712), i=171, next=172
+                KindStringLiteral "Edger" [713, 721), i=172, next=0
+              KindPropertyAssignment [722, 782), i=173, next=0
+                KindIdentifier "skills" [722, 729), i=174, next=175
+                KindObjectLiteralExpression [730, 782), i=175, next=0
+                  NodeList [732, 780), i=176, next=0
+                    KindPropertyAssignment [732, 750), i=177, next=180
+                      KindIdentifier "primary" [732, 740), i=178, next=179
+                      KindStringLiteral "edging" [741, 750), i=179, next=0
+                    KindPropertyAssignment [751, 780), i=180, next=0
+                      KindIdentifier "secondary" [751, 761), i=181, next=182
+                      KindStringLiteral "branch trimming" [762, 780), i=182, next=0
+    KindExpressionStatement [786, 803), i=183, next=188
+      KindCallExpression [786, 802), i=184, next=0
+        KindIdentifier "foo3" [786, 794), i=185, next=186
+        NodeList [795, 801), i=186, next=0
+          KindIdentifier "robotA" [795, 801), i=187, next=0
+    KindExpressionStatement [803, 890), i=188, next=0
+      KindCallExpression [803, 889), i=189, next=0
+        KindIdentifier "foo3" [803, 809), i=190, next=191
+        NodeList [810, 888), i=191, next=0
+          KindObjectLiteralExpression [810, 888), i=192, next=0
+            NodeList [811, 886), i=193, next=0
+              KindPropertyAssignment [811, 825), i=194, next=197
+                KindIdentifier "name" [811, 816), i=195, next=196
+                KindStringLiteral "Edger" [817, 825), i=196, next=0
+              KindPropertyAssignment [826, 886), i=197, next=0
+                KindIdentifier "skills" [826, 833), i=198, next=199
+                KindObjectLiteralExpression [834, 886), i=199, next=0
+                  NodeList [836, 884), i=200, next=0
+                    KindPropertyAssignment [836, 854), i=201, next=204
+                      KindIdentifier "primary" [836, 844), i=202, next=203
+                      KindStringLiteral "edging" [845, 854), i=203, next=0
+                    KindPropertyAssignment [855, 884), i=204, next=0
+                      KindIdentifier "secondary" [855, 865), i=205, next=206
+                      KindStringLiteral "branch trimming" [866, 884), i=206, next=0

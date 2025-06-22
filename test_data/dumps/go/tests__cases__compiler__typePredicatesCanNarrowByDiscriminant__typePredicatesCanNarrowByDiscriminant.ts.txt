@@ -1,0 +1,132 @@
+KindSourceFile [0, 447), i=1, next=0
+  NodeList [0, 447), i=2, next=0
+    KindVariableStatement [0, 79), i=3, next=30
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindVariableDeclarationList [7, 79), i=6, next=0
+        NodeList [13, 79), i=7, next=0
+          KindVariableDeclaration [13, 79), i=8, next=0
+            KindIdentifier "fruit" [13, 19), i=9, next=10
+            KindUnionType [20, 79), i=10, next=0
+              NodeList [20, 79), i=11, next=0
+                KindTypeLiteral [20, 37), i=12, next=18
+                  NodeList [22, 36), i=13, next=0
+                    KindPropertySignature [22, 36), i=14, next=0
+                      KindIdentifier "kind" [22, 27), i=15, next=16
+                      KindLiteralType [28, 36), i=16, next=0
+                        KindStringLiteral "apple" [28, 36), i=17, next=0
+                KindTypeLiteral [39, 58), i=18, next=24
+                  NodeList [41, 56), i=19, next=0
+                    KindPropertySignature [41, 56), i=20, next=0
+                      KindIdentifier "kind" [41, 46), i=21, next=22
+                      KindLiteralType [47, 56), i=22, next=0
+                        KindStringLiteral "banana" [47, 56), i=23, next=0
+                KindTypeLiteral [60, 79), i=24, next=0
+                  NodeList [62, 77), i=25, next=0
+                    KindPropertySignature [62, 77), i=26, next=0
+                      KindIdentifier "kind" [62, 67), i=27, next=28
+                      KindLiteralType [68, 77), i=28, next=0
+                        KindStringLiteral "cherry" [68, 77), i=29, next=0
+    KindFunctionDeclaration [79, 164), i=30, next=56
+      NodeList [79, 90), i=31, next=33
+        KindDeclareKeyword [79, 90), i=32, next=0
+      KindIdentifier "isOneOf" [99, 107), i=33, next=34
+      NodeList [108, 122), i=34, next=41
+        KindTypeParameter [108, 109), i=35, next=37
+          KindIdentifier "T" [108, 109), i=36, next=0
+        KindTypeParameter [110, 122), i=37, next=0
+          KindIdentifier "U" [110, 112), i=38, next=39
+          KindTypeReference [120, 122), i=39, next=0
+            KindIdentifier "T" [120, 122), i=40, next=0
+      NodeList [124, 152), i=41, next=52
+        KindParameter [124, 131), i=42, next=46
+          KindIdentifier "item" [124, 128), i=43, next=44
+          KindTypeReference [129, 131), i=44, next=0
+            KindIdentifier "T" [129, 131), i=45, next=0
+        KindParameter [132, 152), i=46, next=0
+          KindIdentifier "array" [132, 138), i=47, next=48
+          KindTypeOperator [139, 152), i=48, next=0
+            KindArrayType [148, 152), i=49, next=0
+              KindTypeReference [148, 150), i=50, next=0
+                KindIdentifier "U" [148, 150), i=51, next=0
+      KindTypePredicate [154, 164), i=52, next=0
+        KindIdentifier "item" [154, 159), i=53, next=54
+        KindTypeReference [162, 164), i=54, next=0
+          KindIdentifier "U" [162, 164), i=55, next=0
+    KindIfStatement [164, 252), i=56, next=78
+      KindCallExpression [170, 219), i=57, next=70
+        KindIdentifier "isOneOf" [170, 177), i=58, next=59
+        NodeList [178, 218), i=59, next=0
+          KindPropertyAccessExpression [178, 188), i=60, next=63
+            KindIdentifier "fruit" [178, 183), i=61, next=62
+            KindIdentifier "kind" [184, 188), i=62, next=0
+          KindAsExpression [189, 218), i=63, next=0
+            KindArrayLiteralExpression [189, 209), i=64, next=68
+              NodeList [191, 208), i=65, next=0
+                KindStringLiteral "apple" [191, 198), i=66, next=67
+                KindStringLiteral "banana" [199, 208), i=67, next=0
+            KindTypeReference [212, 218), i=68, next=0
+              KindIdentifier "const" [212, 218), i=69, next=0
+      KindBlock [220, 252), i=70, next=0
+        NodeList [222, 249), i=71, next=0
+          KindExpressionStatement [222, 238), i=72, next=76
+            KindPropertyAccessExpression [222, 238), i=73, next=0
+              KindIdentifier "fruit" [222, 233), i=74, next=75
+              KindIdentifier "kind" [234, 238), i=75, next=0
+          KindExpressionStatement [238, 249), i=76, next=0
+            KindIdentifier "fruit" [238, 249), i=77, next=0
+    KindVariableStatement [252, 336), i=78, next=105
+      NodeList [252, 263), i=79, next=81
+        KindDeclareKeyword [252, 263), i=80, next=0
+      KindVariableDeclarationList [263, 336), i=81, next=0
+        NodeList [269, 336), i=82, next=0
+          KindVariableDeclaration [269, 336), i=83, next=0
+            KindIdentifier "fruit2" [269, 276), i=84, next=85
+            KindUnionType [277, 336), i=85, next=0
+              NodeList [277, 336), i=86, next=0
+                KindTypeLiteral [277, 294), i=87, next=93
+                  NodeList [279, 293), i=88, next=0
+                    KindPropertySignature [279, 293), i=89, next=0
+                      KindIdentifier "kind" [279, 284), i=90, next=91
+                      KindLiteralType [285, 293), i=91, next=0
+                        KindStringLiteral "apple" [285, 293), i=92, next=0
+                KindTypeLiteral [296, 315), i=93, next=99
+                  NodeList [298, 313), i=94, next=0
+                    KindPropertySignature [298, 313), i=95, next=0
+                      KindIdentifier "kind" [298, 303), i=96, next=97
+                      KindLiteralType [304, 313), i=97, next=0
+                        KindStringLiteral "banana" [304, 313), i=98, next=0
+                KindTypeLiteral [317, 336), i=99, next=0
+                  NodeList [319, 334), i=100, next=0
+                    KindPropertySignature [319, 334), i=101, next=0
+                      KindIdentifier "kind" [319, 324), i=102, next=103
+                      KindLiteralType [325, 334), i=103, next=0
+                        KindStringLiteral "cherry" [325, 334), i=104, next=0
+    KindVariableStatement [336, 363), i=105, next=113
+      KindVariableDeclarationList [336, 362), i=106, next=0
+        NodeList [343, 362), i=107, next=0
+          KindVariableDeclaration [343, 362), i=108, next=0
+            KindIdentifier "kind" [343, 348), i=109, next=110
+            KindPropertyAccessExpression [350, 362), i=110, next=0
+              KindIdentifier "fruit2" [350, 357), i=111, next=112
+              KindIdentifier "kind" [358, 362), i=112, next=0
+    KindIfStatement [363, 447), i=113, next=0
+      KindCallExpression [369, 412), i=114, next=125
+        KindIdentifier "isOneOf" [369, 376), i=115, next=116
+        NodeList [377, 411), i=116, next=0
+          KindIdentifier "kind" [377, 381), i=117, next=118
+          KindAsExpression [382, 411), i=118, next=0
+            KindArrayLiteralExpression [382, 402), i=119, next=123
+              NodeList [384, 401), i=120, next=0
+                KindStringLiteral "apple" [384, 391), i=121, next=122
+                KindStringLiteral "banana" [392, 401), i=122, next=0
+            KindTypeReference [405, 411), i=123, next=0
+              KindIdentifier "const" [405, 411), i=124, next=0
+      KindBlock [413, 447), i=125, next=0
+        NodeList [415, 444), i=126, next=0
+          KindExpressionStatement [415, 432), i=127, next=131
+            KindPropertyAccessExpression [415, 432), i=128, next=0
+              KindIdentifier "fruit2" [415, 427), i=129, next=130
+              KindIdentifier "kind" [428, 432), i=130, next=0
+          KindExpressionStatement [432, 444), i=131, next=0
+            KindIdentifier "fruit2" [432, 444), i=132, next=0

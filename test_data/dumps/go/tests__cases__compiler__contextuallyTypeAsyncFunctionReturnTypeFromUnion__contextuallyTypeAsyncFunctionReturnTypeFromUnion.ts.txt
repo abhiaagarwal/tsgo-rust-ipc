@@ -1,0 +1,201 @@
+KindSourceFile [0, 861), i=1, next=0
+  NodeList [0, 861), i=2, next=0
+    KindClassDeclaration [0, 59), i=3, next=20
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "StateMachine" [13, 26), i=6, next=7
+      NodeList [27, 28), i=7, next=10
+        KindTypeParameter [27, 28), i=8, next=0
+          KindIdentifier "T" [27, 28), i=9, next=0
+      NodeList [31, 57), i=10, next=0
+        KindPropertyDeclaration [31, 57), i=11, next=0
+          KindIdentifier "onDone" [31, 40), i=12, next=13
+          KindFunctionType [41, 56), i=13, next=0
+            NodeList [43, 47), i=14, next=19
+              KindParameter [43, 47), i=15, next=0
+                KindIdentifier "a" [43, 44), i=16, next=17
+                KindTypeReference [45, 47), i=17, next=0
+                  KindIdentifier "T" [45, 47), i=18, next=0
+            KindVoidKeyword [51, 56), i=19, next=0
+    KindFunctionDeclaration [59, 187), i=20, next=52
+      NodeList [59, 68), i=21, next=23
+        KindDeclareKeyword [59, 68), i=22, next=0
+      KindIdentifier "createMachine" [77, 91), i=23, next=24
+      NodeList [92, 93), i=24, next=27
+        KindTypeParameter [92, 93), i=25, next=0
+          KindIdentifier "T" [92, 93), i=26, next=0
+      NodeList [95, 179), i=27, next=51
+        KindParameter [95, 179), i=28, next=0
+          KindIdentifier "implementations" [95, 110), i=29, next=30
+          KindTypeLiteral [111, 179), i=30, next=0
+            NodeList [113, 177), i=31, next=0
+              KindPropertySignature [113, 177), i=32, next=0
+                KindIdentifier "services" [113, 124), i=33, next=34
+                KindTypeReference [125, 176), i=34, next=0
+                  KindIdentifier "Record" [125, 132), i=35, next=36
+                  NodeList [133, 175), i=36, next=0
+                    KindStringKeyword [133, 139), i=37, next=38
+                    KindFunctionType [140, 175), i=38, next=0
+                      KindUnionType [146, 175), i=39, next=0
+                        NodeList [146, 175), i=40, next=0
+                          KindTypeReference [146, 157), i=41, next=46
+                            KindIdentifier "Promise" [146, 154), i=42, next=43
+                            NodeList [155, 156), i=43, next=0
+                              KindTypeReference [155, 156), i=44, next=0
+                                KindIdentifier "T" [155, 156), i=45, next=0
+                          KindTypeReference [159, 175), i=46, next=0
+                            KindIdentifier "StateMachine" [159, 172), i=47, next=48
+                            NodeList [173, 174), i=48, next=0
+                              KindTypeReference [173, 174), i=49, next=0
+                                KindIdentifier "T" [173, 174), i=50, next=0
+      KindVoidKeyword [181, 186), i=51, next=0
+    KindExpressionStatement [187, 364), i=52, next=93
+      KindCallExpression [187, 363), i=53, next=0
+        KindIdentifier "createMachine" [187, 202), i=54, next=55
+        NodeList [203, 220), i=55, next=61
+          KindTypeLiteral [203, 220), i=56, next=0
+            NodeList [204, 218), i=57, next=0
+              KindPropertySignature [204, 218), i=58, next=0
+                KindIdentifier "count" [204, 210), i=59, next=60
+                KindNumberKeyword [211, 218), i=60, next=0
+        NodeList [222, 362), i=61, next=0
+          KindObjectLiteralExpression [222, 362), i=62, next=0
+            NodeList [223, 360), i=63, next=0
+              KindPropertyAssignment [223, 359), i=64, next=0
+                KindIdentifier "services" [223, 234), i=65, next=66
+                KindObjectLiteralExpression [235, 359), i=66, next=0
+                  NodeList [237, 355), i=67, next=0
+                    KindPropertyAssignment [237, 286), i=68, next=80
+                      KindIdentifier "test" [237, 246), i=69, next=70
+                      KindArrowFunction [247, 286), i=70, next=0
+                        NodeList [247, 253), i=71, next=73
+                          KindAsyncKeyword [247, 253), i=72, next=0
+                        KindEqualsGreaterThanToken [256, 259), i=73, next=74
+                        KindCallExpression [259, 286), i=74, next=0
+                          KindPropertyAccessExpression [259, 274), i=75, next=78
+                            KindIdentifier "Promise" [259, 267), i=76, next=77
+                            KindIdentifier "reject" [268, 274), i=77, next=0
+                          NodeList [275, 285), i=78, next=0
+                            KindStringLiteral "some err" [275, 285), i=79, next=0
+                    KindMethodDeclaration [287, 354), i=80, next=0
+                      NodeList [287, 297), i=81, next=83
+                        KindAsyncKeyword [287, 297), i=82, next=0
+                      KindIdentifier "test2" [297, 303), i=83, next=84
+                      KindBlock [305, 354), i=84, next=0
+                        NodeList [307, 348), i=85, next=0
+                          KindReturnStatement [307, 348), i=86, next=0
+                            KindCallExpression [320, 347), i=87, next=0
+                              KindPropertyAccessExpression [320, 335), i=88, next=91
+                                KindIdentifier "Promise" [320, 328), i=89, next=90
+                                KindIdentifier "reject" [329, 335), i=90, next=0
+                              NodeList [336, 346), i=91, next=0
+                                KindStringLiteral "some err" [336, 346), i=92, next=0
+    KindFunctionDeclaration [364, 500), i=93, next=127
+      KindIdentifier "fn1" [374, 378), i=94, next=95
+      KindFunctionType [381, 448), i=95, next=114
+        KindUnionType [387, 448), i=96, next=0
+          NodeList [387, 448), i=97, next=0
+            KindTypeReference [387, 414), i=98, next=106
+              KindIdentifier "Promise" [387, 395), i=99, next=100
+              NodeList [396, 413), i=100, next=0
+                KindTypeLiteral [396, 413), i=101, next=0
+                  NodeList [397, 411), i=102, next=0
+                    KindPropertySignature [397, 411), i=103, next=0
+                      KindIdentifier "count" [397, 403), i=104, next=105
+                      KindNumberKeyword [404, 411), i=105, next=0
+            KindTypeReference [416, 448), i=106, next=0
+              KindIdentifier "StateMachine" [416, 429), i=107, next=108
+              NodeList [430, 447), i=108, next=0
+                KindTypeLiteral [430, 447), i=109, next=0
+                  NodeList [431, 445), i=110, next=0
+                    KindPropertySignature [431, 445), i=111, next=0
+                      KindIdentifier "count" [431, 437), i=112, next=113
+                      KindNumberKeyword [438, 445), i=113, next=0
+      KindBlock [448, 500), i=114, next=0
+        NodeList [450, 498), i=115, next=0
+          KindReturnStatement [450, 498), i=116, next=0
+            KindArrowFunction [459, 498), i=117, next=0
+              NodeList [459, 465), i=118, next=120
+                KindAsyncKeyword [459, 465), i=119, next=0
+              KindEqualsGreaterThanToken [468, 471), i=120, next=121
+              KindCallExpression [471, 498), i=121, next=0
+                KindPropertyAccessExpression [471, 486), i=122, next=125
+                  KindIdentifier "Promise" [471, 479), i=123, next=124
+                  KindIdentifier "reject" [480, 486), i=124, next=0
+                NodeList [487, 497), i=125, next=0
+                  KindStringLiteral "some err" [487, 497), i=126, next=0
+    KindFunctionDeclaration [500, 585), i=127, next=135
+      NodeList [500, 550), i=128, next=130
+        KindDeclareKeyword [500, 550), i=129, next=0
+      KindIdentifier "load" [559, 564), i=130, next=131
+      KindTypeReference [567, 584), i=131, next=0
+        KindIdentifier "Promise" [567, 575), i=132, next=133
+        NodeList [576, 583), i=133, next=0
+          KindBooleanKeyword [576, 583), i=134, next=0
+    KindTypeAliasDeclaration [585, 639), i=135, next=145
+      KindIdentifier "LoadCallback" [591, 604), i=136, next=137
+      KindFunctionType [606, 638), i=137, next=0
+        KindUnionType [612, 638), i=138, next=0
+          NodeList [612, 638), i=139, next=0
+            KindTypeReference [612, 629), i=140, next=144
+              KindIdentifier "Promise" [612, 620), i=141, next=142
+              NodeList [621, 628), i=142, next=0
+                KindBooleanKeyword [621, 628), i=143, next=0
+            KindStringKeyword [631, 638), i=144, next=0
+    KindVariableStatement [639, 762), i=145, next=168
+      KindVariableDeclarationList [639, 761), i=146, next=0
+        NodeList [709, 761), i=147, next=0
+          KindVariableDeclaration [709, 761), i=148, next=0
+            KindIdentifier "cb1" [709, 713), i=149, next=150
+            KindTypeReference [714, 727), i=150, next=152
+              KindIdentifier "LoadCallback" [714, 727), i=151, next=0
+            KindArrowFunction [729, 761), i=152, next=0
+              NodeList [729, 735), i=153, next=155
+                KindAsyncKeyword [729, 735), i=154, next=0
+              KindEqualsGreaterThanToken [738, 741), i=155, next=156
+              KindCallExpression [741, 761), i=156, next=0
+                KindPropertyAccessExpression [741, 753), i=157, next=161
+                  KindCallExpression [741, 748), i=158, next=160
+                    KindIdentifier "load" [741, 746), i=159, next=0
+                  KindIdentifier "then" [749, 753), i=160, next=0
+                NodeList [754, 760), i=161, next=0
+                  KindArrowFunction [754, 760), i=162, next=0
+                    NodeList [754, 755), i=163, next=166
+                      KindParameter [754, 755), i=164, next=0
+                        KindIdentifier "m" [754, 755), i=165, next=0
+                    KindEqualsGreaterThanToken [755, 758), i=166, next=167
+                    KindIdentifier "m" [758, 760), i=167, next=0
+    KindVariableStatement [762, 808), i=168, next=181
+      KindVariableDeclarationList [762, 807), i=169, next=0
+        NodeList [768, 807), i=170, next=0
+          KindVariableDeclaration [768, 807), i=171, next=0
+            KindIdentifier "cb2" [768, 772), i=172, next=173
+            KindTypeReference [773, 786), i=173, next=175
+              KindIdentifier "LoadCallback" [773, 786), i=174, next=0
+            KindArrowFunction [788, 807), i=175, next=0
+              NodeList [788, 794), i=176, next=178
+                KindAsyncKeyword [788, 794), i=177, next=0
+              KindEqualsGreaterThanToken [797, 800), i=178, next=179
+              KindCallExpression [800, 807), i=179, next=0
+                KindIdentifier "load" [800, 805), i=180, next=0
+    KindVariableStatement [808, 861), i=181, next=0
+      KindVariableDeclarationList [808, 860), i=182, next=0
+        NodeList [814, 860), i=183, next=0
+          KindVariableDeclaration [814, 860), i=184, next=0
+            KindIdentifier "cb3" [814, 818), i=185, next=186
+            KindTypeReference [819, 832), i=186, next=188
+              KindIdentifier "LoadCallback" [819, 832), i=187, next=0
+            KindArrowFunction [834, 860), i=188, next=0
+              KindEqualsGreaterThanToken [837, 840), i=189, next=190
+              KindCallExpression [840, 860), i=190, next=0
+                KindPropertyAccessExpression [840, 852), i=191, next=195
+                  KindCallExpression [840, 847), i=192, next=194
+                    KindIdentifier "load" [840, 845), i=193, next=0
+                  KindIdentifier "then" [848, 852), i=194, next=0
+                NodeList [853, 859), i=195, next=0
+                  KindArrowFunction [853, 859), i=196, next=0
+                    NodeList [853, 854), i=197, next=200
+                      KindParameter [853, 854), i=198, next=0
+                        KindIdentifier "m" [853, 854), i=199, next=0
+                    KindEqualsGreaterThanToken [854, 857), i=200, next=201
+                    KindIdentifier "m" [857, 859), i=201, next=0

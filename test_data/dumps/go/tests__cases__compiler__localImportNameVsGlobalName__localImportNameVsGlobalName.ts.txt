@@ -1,0 +1,60 @@
+KindSourceFile [0, 212), i=1, next=0
+  NodeList [0, 212), i=2, next=0
+    KindModuleDeclaration [0, 65), i=3, next=20
+      KindIdentifier "Keyboard" [6, 15), i=4, next=5
+      KindModuleBlock [15, 65), i=5, next=0
+        NodeList [17, 62), i=6, next=0
+          KindEnumDeclaration [17, 62), i=7, next=0
+            NodeList [17, 27), i=8, next=10
+              KindExportKeyword [17, 27), i=9, next=0
+            KindIdentifier "Key" [32, 36), i=10, next=11
+            NodeList [38, 60), i=11, next=0
+              KindEnumMember [38, 41), i=12, next=14
+                KindIdentifier "UP" [38, 41), i=13, next=0
+              KindEnumMember [42, 47), i=14, next=16
+                KindIdentifier "DOWN" [42, 47), i=15, next=0
+              KindEnumMember [48, 53), i=16, next=18
+                KindIdentifier "LEFT" [48, 53), i=17, next=0
+              KindEnumMember [54, 60), i=18, next=0
+                KindIdentifier "RIGHT" [54, 60), i=19, next=0
+    KindModuleDeclaration [65, 212), i=20, next=0
+      KindIdentifier "App" [75, 79), i=21, next=22
+      KindModuleBlock [79, 212), i=22, next=0
+        NodeList [81, 209), i=23, next=0
+          KindImportEqualsDeclaration [81, 111), i=24, next=29
+            KindIdentifier "Key" [91, 95), i=25, next=26
+            KindQualifiedName [97, 110), i=26, next=0
+              KindIdentifier "Keyboard" [97, 106), i=27, next=28
+              KindIdentifier "Key" [107, 110), i=28, next=0
+          KindFunctionDeclaration [111, 155), i=29, next=40
+            NodeList [111, 123), i=30, next=32
+              KindExportKeyword [111, 123), i=31, next=0
+            KindIdentifier "foo" [132, 136), i=32, next=33
+            NodeList [137, 145), i=33, next=38
+              KindParameter [137, 145), i=34, next=0
+                KindIdentifier "key" [137, 140), i=35, next=36
+                KindTypeReference [141, 145), i=36, next=0
+                  KindIdentifier "Key" [141, 145), i=37, next=0
+            KindVoidKeyword [147, 152), i=38, next=39
+            KindBlock [152, 155), i=39, next=0
+          KindExpressionStatement [155, 173), i=40, next=47
+            KindCallExpression [155, 172), i=41, next=0
+              KindIdentifier "foo" [155, 164), i=42, next=43
+              NodeList [165, 171), i=43, next=0
+                KindPropertyAccessExpression [165, 171), i=44, next=0
+                  KindIdentifier "Key" [165, 168), i=45, next=46
+                  KindIdentifier "UP" [169, 171), i=46, next=0
+          KindExpressionStatement [173, 191), i=47, next=54
+            KindCallExpression [173, 190), i=48, next=0
+              KindIdentifier "foo" [173, 180), i=49, next=50
+              NodeList [181, 189), i=50, next=0
+                KindPropertyAccessExpression [181, 189), i=51, next=0
+                  KindIdentifier "Key" [181, 184), i=52, next=53
+                  KindIdentifier "DOWN" [185, 189), i=53, next=0
+          KindExpressionStatement [191, 209), i=54, next=0
+            KindCallExpression [191, 208), i=55, next=0
+              KindIdentifier "foo" [191, 198), i=56, next=57
+              NodeList [199, 207), i=57, next=0
+                KindPropertyAccessExpression [199, 207), i=58, next=0
+                  KindIdentifier "Key" [199, 202), i=59, next=60
+                  KindIdentifier "LEFT" [203, 207), i=60, next=0

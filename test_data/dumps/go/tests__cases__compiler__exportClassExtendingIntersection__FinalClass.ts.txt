@@ -1,0 +1,34 @@
+KindSourceFile [0, 188), i=1, next=0
+  NodeList [0, 188), i=2, next=0
+    KindImportDeclaration [0, 42), i=3, next=10
+      KindImportClause [6, 22), i=4, next=9
+        KindNamedImports [6, 22), i=5, next=0
+          NodeList [8, 20), i=6, next=0
+            KindImportSpecifier [8, 20), i=7, next=0
+              KindIdentifier "MyBaseClass" [8, 20), i=8, next=0
+      KindStringLiteral "./BaseClass" [27, 41), i=9, next=0
+    KindImportDeclaration [42, 82), i=10, next=17
+      KindImportClause [49, 61), i=11, next=16
+        KindNamedImports [49, 61), i=12, next=0
+          NodeList [51, 59), i=13, next=0
+            KindImportSpecifier [51, 59), i=14, next=0
+              KindIdentifier "MyMixin" [51, 59), i=15, next=0
+      KindStringLiteral "./MixinClass" [66, 81), i=16, next=0
+    KindClassDeclaration [82, 188), i=17, next=0
+      NodeList [82, 90), i=18, next=20
+        KindExportKeyword [82, 90), i=19, next=0
+      KindIdentifier "MyExtendedClass" [96, 112), i=20, next=21
+      NodeList [112, 149), i=21, next=31
+        KindHeritageClause [112, 149), i=22, next=0
+          NodeList [120, 149), i=23, next=0
+            KindExpressionWithTypeArguments [120, 149), i=24, next=0
+              KindCallExpression [120, 141), i=25, next=29
+                KindIdentifier "MyMixin" [120, 128), i=26, next=27
+                NodeList [129, 140), i=27, next=0
+                  KindIdentifier "MyBaseClass" [129, 140), i=28, next=0
+              NodeList [142, 148), i=29, next=0
+                KindStringKeyword [142, 148), i=30, next=0
+      NodeList [151, 186), i=31, next=0
+        KindPropertyDeclaration [151, 186), i=32, next=0
+          KindIdentifier "extendedClassProperty" [151, 177), i=33, next=34
+          KindNumberKeyword [178, 185), i=34, next=0

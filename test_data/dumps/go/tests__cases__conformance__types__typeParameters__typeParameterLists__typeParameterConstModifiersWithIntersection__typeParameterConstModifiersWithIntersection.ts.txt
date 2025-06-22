@@ -1,0 +1,83 @@
+KindSourceFile [0, 324), i=1, next=0
+  NodeList [0, 324), i=2, next=0
+    KindInterfaceDeclaration [0, 62), i=3, next=18
+      KindIdentifier "Config" [9, 16), i=4, next=5
+      NodeList [17, 44), i=5, next=13
+        KindTypeParameter [17, 44), i=6, next=0
+          KindIdentifier "T1" [17, 19), i=7, next=8
+          KindTypeLiteral [27, 44), i=8, next=0
+            NodeList [29, 42), i=9, next=0
+              KindPropertySignature [29, 42), i=10, next=0
+                KindIdentifier "type" [29, 34), i=11, next=12
+                KindStringKeyword [35, 42), i=12, next=0
+      NodeList [47, 60), i=13, next=0
+        KindPropertySignature [47, 60), i=14, next=0
+          KindIdentifier "useIt" [47, 55), i=15, next=16
+          KindTypeReference [56, 59), i=16, next=0
+            KindIdentifier "T1" [56, 59), i=17, next=0
+    KindFunctionDeclaration [62, 205), i=18, next=54
+      NodeList [62, 71), i=19, next=21
+        KindDeclareKeyword [62, 71), i=20, next=0
+      KindIdentifier "test" [80, 85), i=21, next=22
+      NodeList [86, 153), i=22, next=39
+        KindTypeParameter [86, 116), i=23, next=30
+          KindIdentifier "T1" [86, 91), i=24, next=25
+          KindTypeLiteral [99, 116), i=25, next=0
+            NodeList [101, 114), i=26, next=0
+              KindPropertySignature [101, 114), i=27, next=0
+                KindIdentifier "type" [101, 106), i=28, next=29
+                KindStringKeyword [107, 114), i=29, next=0
+        KindTypeParameter [117, 152), i=30, next=0
+          NodeList [117, 125), i=31, next=33
+            KindConstKeyword [117, 125), i=32, next=0
+          KindIdentifier "TConfig" [125, 133), i=33, next=34
+          KindTypeReference [141, 152), i=34, next=0
+            KindIdentifier "Config" [141, 148), i=35, next=36
+            NodeList [149, 151), i=36, next=0
+              KindTypeReference [149, 151), i=37, next=0
+                KindIdentifier "T1" [149, 151), i=38, next=0
+      NodeList [156, 194), i=39, next=52
+        KindParameter [156, 194), i=40, next=0
+          KindIdentifier "config" [156, 162), i=41, next=42
+          KindIntersectionType [163, 194), i=42, next=0
+            NodeList [163, 194), i=43, next=0
+              KindTypeLiteral [163, 184), i=44, next=50
+                NodeList [165, 182), i=45, next=0
+                  KindPropertySignature [165, 182), i=46, next=0
+                    KindIdentifier "produceThing" [165, 178), i=47, next=48
+                    KindTypeReference [179, 182), i=48, next=0
+                      KindIdentifier "T1" [179, 182), i=49, next=0
+              KindTypeReference [186, 194), i=50, next=0
+                KindIdentifier "TConfig" [186, 194), i=51, next=0
+      KindTypeReference [196, 204), i=52, next=0
+        KindIdentifier "TConfig" [196, 204), i=53, next=0
+    KindVariableStatement [205, 324), i=54, next=0
+      KindVariableDeclarationList [205, 323), i=55, next=0
+        NodeList [212, 323), i=56, next=0
+          KindVariableDeclaration [212, 323), i=57, next=0
+            KindIdentifier "result" [212, 219), i=58, next=59
+            KindCallExpression [221, 323), i=59, next=0
+              KindIdentifier "test" [221, 226), i=60, next=61
+              NodeList [227, 322), i=61, next=0
+                KindObjectLiteralExpression [227, 322), i=62, next=0
+                  NodeList [228, 320), i=63, next=0
+                    KindPropertyAssignment [228, 273), i=64, next=74
+                      KindIdentifier "produceThing" [228, 243), i=65, next=66
+                      KindAsExpression [244, 273), i=66, next=0
+                        KindObjectLiteralExpression [244, 247), i=67, next=68
+                        KindTypeLiteral [250, 273), i=68, next=0
+                          NodeList [252, 269), i=69, next=0
+                            KindPropertySignature [252, 269), i=70, next=0
+                              KindIdentifier "type" [252, 261), i=71, next=72
+                              KindLiteralType [262, 268), i=72, next=0
+                                KindStringLiteral "foo" [262, 268), i=73, next=0
+                    KindPropertyAssignment [274, 306), i=74, next=81
+                      KindIdentifier "useIt" [274, 282), i=75, next=76
+                      KindObjectLiteralExpression [283, 306), i=76, next=0
+                        NodeList [285, 302), i=77, next=0
+                          KindPropertyAssignment [285, 301), i=78, next=0
+                            KindIdentifier "type" [285, 294), i=79, next=80
+                            KindStringLiteral "foo" [295, 301), i=80, next=0
+                    KindPropertyAssignment [307, 319), i=81, next=0
+                      KindIdentifier "extra" [307, 315), i=82, next=83
+                      KindNumericLiteral [316, 319), i=83, next=0

@@ -1,0 +1,85 @@
+KindSourceFile [0, 462), i=1, next=0
+  NodeList [0, 460), i=2, next=0
+    KindInterfaceDeclaration [0, 120), i=3, next=21
+      KindIdentifier "Animal" [9, 16), i=4, next=5
+      NodeList [18, 117), i=5, next=0
+        KindPropertySignature [18, 37), i=6, next=9
+          KindIdentifier "name" [18, 28), i=7, next=8
+          KindStringKeyword [29, 36), i=8, next=0
+        KindPropertySignature [37, 56), i=9, next=12
+          KindIdentifier "kind" [37, 47), i=10, next=11
+          KindStringKeyword [48, 55), i=11, next=0
+        KindPropertySignature [56, 74), i=12, next=15
+          KindIdentifier "age" [56, 65), i=13, next=14
+          KindNumberKeyword [66, 73), i=14, next=0
+        KindPropertySignature [74, 97), i=15, next=18
+          KindIdentifier "location" [74, 88), i=16, next=17
+          KindStringKeyword [89, 96), i=17, next=0
+        KindPropertySignature [97, 117), i=18, next=0
+          KindIdentifier "owner" [97, 108), i=19, next=20
+          KindObjectKeyword [109, 116), i=20, next=0
+    KindFunctionDeclaration [120, 281), i=21, next=53
+      KindIdentifier "clonePet" [132, 141), i=22, next=23
+      NodeList [142, 173), i=23, next=32
+        KindParameter [142, 153), i=24, next=28
+          KindIdentifier "pet" [142, 145), i=25, next=26
+          KindTypeReference [146, 153), i=26, next=0
+            KindIdentifier "Animal" [146, 153), i=27, next=0
+        KindParameter [154, 173), i=28, next=0
+          KindIdentifier "fullCopy" [154, 163), i=29, next=30
+          KindQuestionToken [163, 164), i=30, next=31
+          KindBooleanKeyword [165, 173), i=31, next=0
+      KindBlock [174, 281), i=32, next=0
+        NodeList [176, 278), i=33, next=0
+          KindReturnStatement [176, 278), i=34, next=0
+            KindObjectLiteralExpression [188, 278), i=35, next=0
+              NodeList [190, 271), i=36, next=0
+                KindPropertyAssignment [190, 214), i=37, next=42
+                  KindIdentifier "name" [190, 204), i=38, next=39
+                  KindPropertyAccessExpression [205, 214), i=39, next=0
+                    KindIdentifier "pet" [205, 209), i=40, next=41
+                    KindIdentifier "name" [210, 214), i=41, next=0
+                KindPropertyAssignment [215, 239), i=42, next=47
+                  KindIdentifier "kind" [215, 229), i=43, next=44
+                  KindPropertyAccessExpression [230, 239), i=44, next=0
+                    KindIdentifier "pet" [230, 234), i=45, next=46
+                    KindIdentifier "kind" [235, 239), i=46, next=0
+                KindSpreadAssignment [240, 270), i=47, next=0
+                  KindParenthesizedExpression [253, 270), i=48, next=0
+                    KindBinaryExpression [254, 269), i=49, next=0
+                      KindIdentifier "fullCopy" [254, 262), i=50, next=51
+                      KindAmpersandAmpersandToken [262, 265), i=51, next=52
+                      KindIdentifier "pet" [265, 269), i=52, next=0
+    KindInterfaceDeclaration [281, 347), i=53, next=63
+      KindIdentifier "Animal2" [294, 302), i=54, next=55
+      NodeList [304, 344), i=55, next=0
+        KindPropertySignature [304, 323), i=56, next=59
+          KindIdentifier "name" [304, 314), i=57, next=58
+          KindStringKeyword [315, 322), i=58, next=0
+        KindPropertySignature [323, 344), i=59, next=0
+          KindIdentifier "owner" [323, 334), i=60, next=61
+          KindQuestionToken [334, 335), i=61, next=62
+          KindStringKeyword [336, 343), i=62, next=0
+    KindFunctionDeclaration [347, 460), i=63, next=0
+      KindIdentifier "billOwner" [357, 367), i=64, next=65
+      NodeList [368, 380), i=65, next=70
+        KindParameter [368, 380), i=66, next=0
+          KindIdentifier "pet" [368, 371), i=67, next=68
+          KindTypeReference [372, 380), i=68, next=0
+            KindIdentifier "Animal2" [372, 380), i=69, next=0
+      KindBlock [381, 460), i=70, next=0
+        NodeList [383, 457), i=71, next=0
+          KindReturnStatement [383, 457), i=72, next=0
+            KindObjectLiteralExpression [395, 457), i=73, next=0
+              NodeList [397, 450), i=74, next=0
+                KindSpreadAssignment [397, 428), i=75, next=83
+                  KindParenthesizedExpression [410, 428), i=76, next=0
+                    KindBinaryExpression [411, 427), i=77, next=0
+                      KindPropertyAccessExpression [411, 420), i=78, next=81
+                        KindIdentifier "pet" [411, 414), i=79, next=80
+                        KindIdentifier "owner" [415, 420), i=80, next=0
+                      KindAmpersandAmpersandToken [420, 423), i=81, next=82
+                      KindIdentifier "pet" [423, 427), i=82, next=0
+                KindPropertyAssignment [429, 450), i=83, next=0
+                  KindIdentifier "paid" [429, 443), i=84, next=85
+                  KindFalseKeyword [444, 450), i=85, next=0

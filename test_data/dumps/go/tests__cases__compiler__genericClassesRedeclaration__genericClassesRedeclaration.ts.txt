@@ -1,0 +1,832 @@
+KindSourceFile [0, 3698), i=1, next=0
+  NodeList [0, 3698), i=2, next=0
+    KindModuleDeclaration [0, 1847), i=3, next=162
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "TypeScript" [14, 25), i=6, next=7
+      KindModuleBlock [25, 1847), i=7, next=0
+        NodeList [27, 1844), i=8, next=0
+          KindInterfaceDeclaration [27, 90), i=9, next=22
+            KindIdentifier "IIndexable" [42, 53), i=10, next=11
+            NodeList [54, 55), i=11, next=14
+              KindTypeParameter [54, 55), i=12, next=0
+                KindIdentifier "T" [54, 55), i=13, next=0
+            NodeList [58, 83), i=14, next=0
+              KindIndexSignature [58, 83), i=15, next=0
+                NodeList [69, 78), i=16, next=20
+                  KindParameter [69, 78), i=17, next=0
+                    KindIdentifier "s" [69, 70), i=18, next=19
+                    KindStringKeyword [71, 78), i=19, next=0
+                KindTypeReference [80, 82), i=20, next=0
+                  KindIdentifier "T" [80, 82), i=21, next=0
+          KindFunctionDeclaration [90, 148), i=22, next=32
+            KindIdentifier "createIntrinsicsObject" [104, 127), i=23, next=24
+            NodeList [128, 129), i=24, next=27
+              KindTypeParameter [128, 129), i=25, next=0
+                KindIdentifier "T" [128, 129), i=26, next=0
+            KindTypeReference [133, 147), i=27, next=0
+              KindIdentifier "IIndexable" [133, 144), i=28, next=29
+              NodeList [145, 146), i=29, next=0
+                KindTypeReference [145, 146), i=30, next=0
+                  KindIdentifier "T" [145, 146), i=31, next=0
+          KindInterfaceDeclaration [148, 634), i=32, next=141
+            KindIdentifier "IHashTable" [163, 174), i=33, next=34
+            NodeList [175, 176), i=34, next=37
+              KindTypeParameter [175, 176), i=35, next=0
+                KindIdentifier "T" [175, 176), i=36, next=0
+            NodeList [179, 627), i=37, next=0
+              KindMethodSignature [179, 212), i=38, next=42
+                KindIdentifier "getAllKeys" [179, 199), i=39, next=40
+                KindArrayType [202, 211), i=40, next=0
+                  KindStringKeyword [202, 209), i=41, next=0
+              KindMethodSignature [212, 257), i=42, next=53
+                KindIdentifier "add" [212, 225), i=43, next=44
+                NodeList [226, 246), i=44, next=52
+                  KindParameter [226, 237), i=45, next=48
+                    KindIdentifier "key" [226, 229), i=46, next=47
+                    KindStringKeyword [230, 237), i=47, next=0
+                  KindParameter [238, 246), i=48, next=0
+                    KindIdentifier "data" [238, 243), i=49, next=50
+                    KindTypeReference [244, 246), i=50, next=0
+                      KindIdentifier "T" [244, 246), i=51, next=0
+                KindBooleanKeyword [248, 256), i=52, next=0
+              KindMethodSignature [257, 310), i=53, next=64
+                KindIdentifier "addOrUpdate" [257, 278), i=54, next=55
+                NodeList [279, 299), i=55, next=63
+                  KindParameter [279, 290), i=56, next=59
+                    KindIdentifier "key" [279, 282), i=57, next=58
+                    KindStringKeyword [283, 290), i=58, next=0
+                  KindParameter [291, 299), i=59, next=0
+                    KindIdentifier "data" [291, 296), i=60, next=61
+                    KindTypeReference [297, 299), i=61, next=0
+                      KindIdentifier "T" [297, 299), i=62, next=0
+                KindBooleanKeyword [301, 309), i=63, next=0
+              KindMethodSignature [310, 393), i=64, next=86
+                KindIdentifier "map" [310, 323), i=65, next=66
+                NodeList [324, 385), i=66, next=85
+                  KindParameter [324, 371), i=67, next=82
+                    KindIdentifier "fn" [324, 326), i=68, next=69
+                    KindFunctionType [327, 371), i=69, next=0
+                      NodeList [329, 362), i=70, next=81
+                        KindParameter [329, 338), i=71, next=74
+                          KindIdentifier "k" [329, 330), i=72, next=73
+                          KindStringKeyword [331, 338), i=73, next=0
+                        KindParameter [339, 348), i=74, next=78
+                          KindIdentifier "value" [339, 345), i=75, next=76
+                          KindTypeReference [346, 348), i=76, next=0
+                            KindIdentifier "T" [346, 348), i=77, next=0
+                        KindParameter [349, 362), i=78, next=0
+                          KindIdentifier "context" [349, 357), i=79, next=80
+                          KindAnyKeyword [358, 362), i=80, next=0
+                      KindVoidKeyword [366, 371), i=81, next=0
+                  KindParameter [372, 385), i=82, next=0
+                    KindIdentifier "context" [372, 380), i=83, next=84
+                    KindAnyKeyword [381, 385), i=84, next=0
+                KindVoidKeyword [387, 392), i=85, next=0
+              KindMethodSignature [393, 481), i=86, next=108
+                KindIdentifier "every" [393, 408), i=87, next=88
+                NodeList [409, 470), i=88, next=107
+                  KindParameter [409, 456), i=89, next=104
+                    KindIdentifier "fn" [409, 411), i=90, next=91
+                    KindFunctionType [412, 456), i=91, next=0
+                      NodeList [414, 447), i=92, next=103
+                        KindParameter [414, 423), i=93, next=96
+                          KindIdentifier "k" [414, 415), i=94, next=95
+                          KindStringKeyword [416, 423), i=95, next=0
+                        KindParameter [424, 433), i=96, next=100
+                          KindIdentifier "value" [424, 430), i=97, next=98
+                          KindTypeReference [431, 433), i=98, next=0
+                            KindIdentifier "T" [431, 433), i=99, next=0
+                        KindParameter [434, 447), i=100, next=0
+                          KindIdentifier "context" [434, 442), i=101, next=102
+                          KindAnyKeyword [443, 447), i=102, next=0
+                      KindVoidKeyword [451, 456), i=103, next=0
+                  KindParameter [457, 470), i=104, next=0
+                    KindIdentifier "context" [457, 465), i=105, next=106
+                    KindAnyKeyword [466, 470), i=106, next=0
+                KindBooleanKeyword [472, 480), i=107, next=0
+              KindMethodSignature [481, 568), i=108, next=130
+                KindIdentifier "some" [481, 495), i=109, next=110
+                NodeList [496, 557), i=110, next=129
+                  KindParameter [496, 543), i=111, next=126
+                    KindIdentifier "fn" [496, 498), i=112, next=113
+                    KindFunctionType [499, 543), i=113, next=0
+                      NodeList [501, 534), i=114, next=125
+                        KindParameter [501, 510), i=115, next=118
+                          KindIdentifier "k" [501, 502), i=116, next=117
+                          KindStringKeyword [503, 510), i=117, next=0
+                        KindParameter [511, 520), i=118, next=122
+                          KindIdentifier "value" [511, 517), i=119, next=120
+                          KindTypeReference [518, 520), i=120, next=0
+                            KindIdentifier "T" [518, 520), i=121, next=0
+                        KindParameter [521, 534), i=122, next=0
+                          KindIdentifier "context" [521, 529), i=123, next=124
+                          KindAnyKeyword [530, 534), i=124, next=0
+                      KindVoidKeyword [538, 543), i=125, next=0
+                  KindParameter [544, 557), i=126, next=0
+                    KindIdentifier "context" [544, 552), i=127, next=128
+                    KindAnyKeyword [553, 557), i=128, next=0
+                KindBooleanKeyword [559, 567), i=129, next=0
+              KindMethodSignature [568, 594), i=130, next=133
+                KindIdentifier "count" [568, 583), i=131, next=132
+                KindNumberKeyword [586, 593), i=132, next=0
+              KindMethodSignature [594, 627), i=133, next=0
+                KindIdentifier "lookup" [594, 610), i=134, next=135
+                NodeList [611, 622), i=135, next=139
+                  KindParameter [611, 622), i=136, next=0
+                    KindIdentifier "key" [611, 614), i=137, next=138
+                    KindStringKeyword [615, 622), i=138, next=0
+                KindTypeReference [624, 626), i=139, next=0
+                  KindIdentifier "T" [624, 626), i=140, next=0
+          KindClassDeclaration [634, 1297), i=141, next=35
+            KindIdentifier "StringHashTable" [645, 661), i=142, next=143
+            NodeList [662, 663), i=143, next=146
+              KindTypeParameter [662, 663), i=144, next=0
+                KindIdentifier "T" [662, 663), i=145, next=0
+            NodeList [664, 689), i=146, next=154
+              KindHeritageClause [664, 689), i=147, next=0
+                NodeList [675, 689), i=148, next=0
+                  KindExpressionWithTypeArguments [675, 689), i=149, next=0
+                    KindIdentifier "IHashTable" [675, 686), i=150, next=151
+                    NodeList [687, 688), i=151, next=0
+                      KindTypeReference [687, 688), i=152, next=0
+                        KindIdentifier "T" [687, 688), i=153, next=0
+            NodeList [691, 1290), i=154, next=0
+              KindPropertyDeclaration [691, 719), i=155, next=159
+                NodeList [691, 708), i=156, next=158
+                  KindPrivateKeyword [691, 708), i=157, next=0
+                KindIdentifier "itemCount" [708, 718), i=158, next=0
+              KindPropertyDeclaration [719, 743), i=159, next=163
+                NodeList [719, 736), i=160, next=162
+                  KindPrivateKeyword [719, 736), i=161, next=0
+                KindIdentifier "table" [736, 742), i=162, next=0
+              KindMethodDeclaration [743, 783), i=163, next=169
+                NodeList [743, 759), i=164, next=166
+                  KindPublicKeyword [743, 759), i=165, next=0
+                KindIdentifier "getAllKeys" [759, 770), i=166, next=167
+                KindArrayType [773, 782), i=167, next=0
+                  KindStringKeyword [773, 780), i=168, next=0
+              KindMethodDeclaration [783, 835), i=169, next=182
+                NodeList [783, 799), i=170, next=172
+                  KindPublicKeyword [783, 799), i=171, next=0
+                KindIdentifier "add" [799, 803), i=172, next=173
+                NodeList [804, 824), i=173, next=181
+                  KindParameter [804, 815), i=174, next=177
+                    KindIdentifier "key" [804, 807), i=175, next=176
+                    KindStringKeyword [808, 815), i=176, next=0
+                  KindParameter [816, 824), i=177, next=0
+                    KindIdentifier "data" [816, 821), i=178, next=179
+                    KindTypeReference [822, 824), i=179, next=0
+                      KindIdentifier "T" [822, 824), i=180, next=0
+                KindBooleanKeyword [826, 834), i=181, next=0
+              KindMethodDeclaration [835, 895), i=182, next=195
+                NodeList [835, 851), i=183, next=185
+                  KindPublicKeyword [835, 851), i=184, next=0
+                KindIdentifier "addOrUpdate" [851, 863), i=185, next=186
+                NodeList [864, 884), i=186, next=194
+                  KindParameter [864, 875), i=187, next=190
+                    KindIdentifier "key" [864, 867), i=188, next=189
+                    KindStringKeyword [868, 875), i=189, next=0
+                  KindParameter [876, 884), i=190, next=0
+                    KindIdentifier "data" [876, 881), i=191, next=192
+                    KindTypeReference [882, 884), i=192, next=0
+                      KindIdentifier "T" [882, 884), i=193, next=0
+                KindBooleanKeyword [886, 894), i=194, next=0
+              KindMethodDeclaration [895, 985), i=195, next=219
+                NodeList [895, 911), i=196, next=198
+                  KindPublicKeyword [895, 911), i=197, next=0
+                KindIdentifier "map" [911, 915), i=198, next=199
+                NodeList [916, 977), i=199, next=218
+                  KindParameter [916, 963), i=200, next=215
+                    KindIdentifier "fn" [916, 918), i=201, next=202
+                    KindFunctionType [919, 963), i=202, next=0
+                      NodeList [921, 954), i=203, next=214
+                        KindParameter [921, 930), i=204, next=207
+                          KindIdentifier "k" [921, 922), i=205, next=206
+                          KindStringKeyword [923, 930), i=206, next=0
+                        KindParameter [931, 940), i=207, next=211
+                          KindIdentifier "value" [931, 937), i=208, next=209
+                          KindTypeReference [938, 940), i=209, next=0
+                            KindIdentifier "T" [938, 940), i=210, next=0
+                        KindParameter [941, 954), i=211, next=0
+                          KindIdentifier "context" [941, 949), i=212, next=213
+                          KindAnyKeyword [950, 954), i=213, next=0
+                      KindVoidKeyword [958, 963), i=214, next=0
+                  KindParameter [964, 977), i=215, next=0
+                    KindIdentifier "context" [964, 972), i=216, next=217
+                    KindAnyKeyword [973, 977), i=217, next=0
+                KindVoidKeyword [979, 984), i=218, next=0
+              KindMethodDeclaration [985, 1080), i=219, next=243
+                NodeList [985, 1001), i=220, next=222
+                  KindPublicKeyword [985, 1001), i=221, next=0
+                KindIdentifier "every" [1001, 1007), i=222, next=223
+                NodeList [1008, 1069), i=223, next=242
+                  KindParameter [1008, 1055), i=224, next=239
+                    KindIdentifier "fn" [1008, 1010), i=225, next=226
+                    KindFunctionType [1011, 1055), i=226, next=0
+                      NodeList [1013, 1046), i=227, next=238
+                        KindParameter [1013, 1022), i=228, next=231
+                          KindIdentifier "k" [1013, 1014), i=229, next=230
+                          KindStringKeyword [1015, 1022), i=230, next=0
+                        KindParameter [1023, 1032), i=231, next=235
+                          KindIdentifier "value" [1023, 1029), i=232, next=233
+                          KindTypeReference [1030, 1032), i=233, next=0
+                            KindIdentifier "T" [1030, 1032), i=234, next=0
+                        KindParameter [1033, 1046), i=235, next=0
+                          KindIdentifier "context" [1033, 1041), i=236, next=237
+                          KindAnyKeyword [1042, 1046), i=237, next=0
+                      KindVoidKeyword [1050, 1055), i=238, next=0
+                  KindParameter [1056, 1069), i=239, next=0
+                    KindIdentifier "context" [1056, 1064), i=240, next=241
+                    KindAnyKeyword [1065, 1069), i=241, next=0
+                KindBooleanKeyword [1071, 1079), i=242, next=0
+              KindMethodDeclaration [1080, 1174), i=243, next=11
+                NodeList [1080, 1096), i=244, next=246
+                  KindPublicKeyword [1080, 1096), i=245, next=0
+                KindIdentifier "some" [1096, 1101), i=246, next=247
+                NodeList [1102, 1163), i=247, next=10
+                  KindParameter [1102, 1149), i=248, next=7
+                    KindIdentifier "fn" [1102, 1104), i=249, next=250
+                    KindFunctionType [1105, 1149), i=250, next=0
+                      NodeList [1107, 1140), i=251, next=6
+                        KindParameter [1107, 1116), i=252, next=255
+                          KindIdentifier "k" [1107, 1108), i=253, next=254
+                          KindStringKeyword [1109, 1116), i=254, next=0
+                        KindParameter [1117, 1126), i=255, next=3
+                          KindIdentifier "value" [1117, 1123), i=256, next=1
+                          KindTypeReference [1124, 1126), i=257, next=0
+                            KindIdentifier "T" [1124, 1126), i=258, next=0
+                        KindParameter [1127, 1140), i=259, next=0
+                          KindIdentifier "context" [1127, 1135), i=260, next=5
+                          KindAnyKeyword [1136, 1140), i=261, next=0
+                      KindVoidKeyword [1144, 1149), i=262, next=0
+                  KindParameter [1150, 1163), i=263, next=0
+                    KindIdentifier "context" [1150, 1158), i=264, next=9
+                    KindAnyKeyword [1159, 1163), i=265, next=0
+                KindBooleanKeyword [1165, 1173), i=266, next=0
+              KindMethodDeclaration [1174, 1207), i=267, next=16
+                NodeList [1174, 1190), i=268, next=14
+                  KindPublicKeyword [1174, 1190), i=269, next=0
+                KindIdentifier "count" [1190, 1196), i=270, next=15
+                KindNumberKeyword [1199, 1206), i=271, next=0
+              KindMethodDeclaration [1207, 1247), i=272, next=26
+                NodeList [1207, 1223), i=273, next=19
+                  KindPublicKeyword [1207, 1223), i=274, next=0
+                KindIdentifier "lookup" [1223, 1230), i=275, next=20
+                NodeList [1231, 1242), i=276, next=24
+                  KindParameter [1231, 1242), i=277, next=0
+                    KindIdentifier "key" [1231, 1234), i=278, next=23
+                    KindStringKeyword [1235, 1242), i=279, next=0
+                KindTypeReference [1244, 1246), i=280, next=0
+                  KindIdentifier "T" [1244, 1246), i=281, next=0
+              KindMethodDeclaration [1247, 1290), i=282, next=0
+                NodeList [1247, 1263), i=283, next=29
+                  KindPublicKeyword [1247, 1263), i=284, next=0
+                KindIdentifier "remove" [1263, 1270), i=285, next=30
+                NodeList [1271, 1282), i=286, next=34
+                  KindParameter [1271, 1282), i=287, next=0
+                    KindIdentifier "key" [1271, 1274), i=288, next=33
+                    KindStringKeyword [1275, 1282), i=289, next=0
+                KindVoidKeyword [1284, 1289), i=290, next=0
+          KindClassDeclaration [1297, 1844), i=291, next=0
+            KindIdentifier "IdentifierNameHashTable" [1308, 1332), i=292, next=37
+            NodeList [1333, 1334), i=293, next=40
+              KindTypeParameter [1333, 1334), i=294, next=0
+                KindIdentifier "T" [1333, 1334), i=295, next=0
+            NodeList [1335, 1362), i=296, next=48
+              KindHeritageClause [1335, 1362), i=297, next=0
+                NodeList [1343, 1362), i=298, next=0
+                  KindExpressionWithTypeArguments [1343, 1362), i=299, next=0
+                    KindIdentifier "StringHashTable" [1343, 1359), i=300, next=45
+                    NodeList [1360, 1361), i=301, next=0
+                      KindTypeReference [1360, 1361), i=302, next=0
+                        KindIdentifier "T" [1360, 1361), i=303, next=0
+            NodeList [1364, 1837), i=304, next=0
+              KindMethodDeclaration [1364, 1404), i=305, next=55
+                NodeList [1364, 1380), i=306, next=52
+                  KindPublicKeyword [1364, 1380), i=307, next=0
+                KindIdentifier "getAllKeys" [1380, 1391), i=308, next=53
+                KindArrayType [1394, 1403), i=309, next=0
+                  KindStringKeyword [1394, 1401), i=310, next=0
+              KindMethodDeclaration [1404, 1456), i=311, next=68
+                NodeList [1404, 1420), i=312, next=58
+                  KindPublicKeyword [1404, 1420), i=313, next=0
+                KindIdentifier "add" [1420, 1424), i=314, next=59
+                NodeList [1425, 1445), i=315, next=67
+                  KindParameter [1425, 1436), i=316, next=63
+                    KindIdentifier "key" [1425, 1428), i=317, next=62
+                    KindStringKeyword [1429, 1436), i=318, next=0
+                  KindParameter [1437, 1445), i=319, next=0
+                    KindIdentifier "data" [1437, 1442), i=320, next=65
+                    KindTypeReference [1443, 1445), i=321, next=0
+                      KindIdentifier "T" [1443, 1445), i=322, next=0
+                KindBooleanKeyword [1447, 1455), i=323, next=0
+              KindMethodDeclaration [1456, 1516), i=324, next=81
+                NodeList [1456, 1472), i=325, next=71
+                  KindPublicKeyword [1456, 1472), i=326, next=0
+                KindIdentifier "addOrUpdate" [1472, 1484), i=327, next=72
+                NodeList [1485, 1505), i=328, next=80
+                  KindParameter [1485, 1496), i=329, next=76
+                    KindIdentifier "key" [1485, 1488), i=330, next=75
+                    KindStringKeyword [1489, 1496), i=331, next=0
+                  KindParameter [1497, 1505), i=332, next=0
+                    KindIdentifier "data" [1497, 1502), i=333, next=78
+                    KindTypeReference [1503, 1505), i=334, next=0
+                      KindIdentifier "T" [1503, 1505), i=335, next=0
+                KindBooleanKeyword [1507, 1515), i=336, next=0
+              KindMethodDeclaration [1516, 1606), i=337, next=105
+                NodeList [1516, 1532), i=338, next=84
+                  KindPublicKeyword [1516, 1532), i=339, next=0
+                KindIdentifier "map" [1532, 1536), i=340, next=85
+                NodeList [1537, 1598), i=341, next=104
+                  KindParameter [1537, 1584), i=342, next=101
+                    KindIdentifier "fn" [1537, 1539), i=343, next=88
+                    KindFunctionType [1540, 1584), i=344, next=0
+                      NodeList [1542, 1575), i=345, next=100
+                        KindParameter [1542, 1551), i=346, next=93
+                          KindIdentifier "k" [1542, 1543), i=347, next=92
+                          KindStringKeyword [1544, 1551), i=348, next=0
+                        KindParameter [1552, 1561), i=349, next=97
+                          KindIdentifier "value" [1552, 1558), i=350, next=95
+                          KindTypeReference [1559, 1561), i=351, next=0
+                            KindIdentifier "T" [1559, 1561), i=352, next=0
+                        KindParameter [1562, 1575), i=353, next=0
+                          KindIdentifier "context" [1562, 1570), i=354, next=99
+                          KindAnyKeyword [1571, 1575), i=355, next=0
+                      KindVoidKeyword [1579, 1584), i=356, next=0
+                  KindParameter [1585, 1598), i=357, next=0
+                    KindIdentifier "context" [1585, 1593), i=358, next=103
+                    KindAnyKeyword [1594, 1598), i=359, next=0
+                KindVoidKeyword [1600, 1605), i=360, next=0
+              KindMethodDeclaration [1606, 1701), i=361, next=129
+                NodeList [1606, 1622), i=362, next=108
+                  KindPublicKeyword [1606, 1622), i=363, next=0
+                KindIdentifier "every" [1622, 1628), i=364, next=109
+                NodeList [1629, 1690), i=365, next=128
+                  KindParameter [1629, 1676), i=366, next=125
+                    KindIdentifier "fn" [1629, 1631), i=367, next=112
+                    KindFunctionType [1632, 1676), i=368, next=0
+                      NodeList [1634, 1667), i=369, next=124
+                        KindParameter [1634, 1643), i=370, next=117
+                          KindIdentifier "k" [1634, 1635), i=371, next=116
+                          KindStringKeyword [1636, 1643), i=372, next=0
+                        KindParameter [1644, 1653), i=373, next=121
+                          KindIdentifier "value" [1644, 1650), i=374, next=119
+                          KindTypeReference [1651, 1653), i=375, next=0
+                            KindIdentifier "T" [1651, 1653), i=376, next=0
+                        KindParameter [1654, 1667), i=377, next=0
+                          KindIdentifier "context" [1654, 1662), i=378, next=123
+                          KindAnyKeyword [1663, 1667), i=379, next=0
+                      KindVoidKeyword [1671, 1676), i=380, next=0
+                  KindParameter [1677, 1690), i=381, next=0
+                    KindIdentifier "context" [1677, 1685), i=382, next=127
+                    KindAnyKeyword [1686, 1690), i=383, next=0
+                KindBooleanKeyword [1692, 1700), i=384, next=0
+              KindMethodDeclaration [1701, 1797), i=385, next=152
+                NodeList [1701, 1717), i=386, next=132
+                  KindPublicKeyword [1701, 1717), i=387, next=0
+                KindIdentifier "some" [1717, 1722), i=388, next=133
+                NodeList [1723, 1786), i=389, next=151
+                  KindParameter [1723, 1772), i=390, next=148
+                    KindIdentifier "fn" [1723, 1725), i=391, next=136
+                    KindFunctionType [1726, 1772), i=392, next=0
+                      NodeList [1728, 1763), i=393, next=147
+                        KindParameter [1728, 1737), i=394, next=141
+                          KindIdentifier "k" [1728, 1729), i=395, next=140
+                          KindStringKeyword [1730, 1737), i=396, next=0
+                        KindParameter [1738, 1749), i=397, next=144
+                          KindIdentifier "value" [1738, 1744), i=398, next=143
+                          KindAnyKeyword [1745, 1749), i=399, next=0
+                        KindParameter [1750, 1763), i=400, next=0
+                          KindIdentifier "context" [1750, 1758), i=401, next=146
+                          KindAnyKeyword [1759, 1763), i=402, next=0
+                      KindVoidKeyword [1767, 1772), i=403, next=0
+                  KindParameter [1773, 1786), i=404, next=0
+                    KindIdentifier "context" [1773, 1781), i=405, next=150
+                    KindAnyKeyword [1782, 1786), i=406, next=0
+                KindBooleanKeyword [1788, 1796), i=407, next=0
+              KindMethodDeclaration [1797, 1837), i=408, next=0
+                NodeList [1797, 1813), i=409, next=155
+                  KindPublicKeyword [1797, 1813), i=410, next=0
+                KindIdentifier "lookup" [1813, 1820), i=411, next=156
+                NodeList [1821, 1832), i=412, next=160
+                  KindParameter [1821, 1832), i=413, next=0
+                    KindIdentifier "key" [1821, 1824), i=414, next=159
+                    KindStringKeyword [1825, 1832), i=415, next=0
+                KindTypeReference [1834, 1836), i=416, next=0
+                  KindIdentifier "T" [1834, 1836), i=417, next=0
+    KindModuleDeclaration [1847, 3698), i=418, next=0
+      NodeList [1847, 1858), i=419, next=165
+        KindDeclareKeyword [1847, 1858), i=420, next=0
+      KindIdentifier "TypeScript" [1865, 1876), i=421, next=166
+      KindModuleBlock [1876, 3698), i=422, next=0
+        NodeList [1878, 3695), i=423, next=0
+          KindInterfaceDeclaration [1878, 1941), i=424, next=181
+            KindIdentifier "IIndexable" [1893, 1904), i=425, next=170
+            NodeList [1905, 1906), i=426, next=173
+              KindTypeParameter [1905, 1906), i=427, next=0
+                KindIdentifier "T" [1905, 1906), i=428, next=0
+            NodeList [1909, 1934), i=429, next=0
+              KindIndexSignature [1909, 1934), i=430, next=0
+                NodeList [1920, 1929), i=431, next=179
+                  KindParameter [1920, 1929), i=432, next=0
+                    KindIdentifier "s" [1920, 1921), i=433, next=178
+                    KindStringKeyword [1922, 1929), i=434, next=0
+                KindTypeReference [1931, 1933), i=435, next=0
+                  KindIdentifier "T" [1931, 1933), i=436, next=0
+          KindFunctionDeclaration [1941, 1999), i=437, next=191
+            KindIdentifier "createIntrinsicsObject" [1955, 1978), i=438, next=183
+            NodeList [1979, 1980), i=439, next=186
+              KindTypeParameter [1979, 1980), i=440, next=0
+                KindIdentifier "T" [1979, 1980), i=441, next=0
+            KindTypeReference [1984, 1998), i=442, next=0
+              KindIdentifier "IIndexable" [1984, 1995), i=443, next=188
+              NodeList [1996, 1997), i=444, next=0
+                KindTypeReference [1996, 1997), i=445, next=0
+                  KindIdentifier "T" [1996, 1997), i=446, next=0
+          KindInterfaceDeclaration [1999, 2485), i=447, next=44
+            KindIdentifier "IHashTable" [2014, 2025), i=448, next=193
+            NodeList [2026, 2027), i=449, next=196
+              KindTypeParameter [2026, 2027), i=450, next=0
+                KindIdentifier "T" [2026, 2027), i=451, next=0
+            NodeList [2030, 2478), i=452, next=0
+              KindMethodSignature [2030, 2063), i=453, next=201
+                KindIdentifier "getAllKeys" [2030, 2050), i=454, next=199
+                KindArrayType [2053, 2062), i=455, next=0
+                  KindStringKeyword [2053, 2060), i=456, next=0
+              KindMethodSignature [2063, 2108), i=457, next=212
+                KindIdentifier "add" [2063, 2076), i=458, next=203
+                NodeList [2077, 2097), i=459, next=211
+                  KindParameter [2077, 2088), i=460, next=207
+                    KindIdentifier "key" [2077, 2080), i=461, next=206
+                    KindStringKeyword [2081, 2088), i=462, next=0
+                  KindParameter [2089, 2097), i=463, next=0
+                    KindIdentifier "data" [2089, 2094), i=464, next=209
+                    KindTypeReference [2095, 2097), i=465, next=0
+                      KindIdentifier "T" [2095, 2097), i=466, next=0
+                KindBooleanKeyword [2099, 2107), i=467, next=0
+              KindMethodSignature [2108, 2161), i=468, next=223
+                KindIdentifier "addOrUpdate" [2108, 2129), i=469, next=214
+                NodeList [2130, 2150), i=470, next=222
+                  KindParameter [2130, 2141), i=471, next=218
+                    KindIdentifier "key" [2130, 2133), i=472, next=217
+                    KindStringKeyword [2134, 2141), i=473, next=0
+                  KindParameter [2142, 2150), i=474, next=0
+                    KindIdentifier "data" [2142, 2147), i=475, next=220
+                    KindTypeReference [2148, 2150), i=476, next=0
+                      KindIdentifier "T" [2148, 2150), i=477, next=0
+                KindBooleanKeyword [2152, 2160), i=478, next=0
+              KindMethodSignature [2161, 2244), i=479, next=245
+                KindIdentifier "map" [2161, 2174), i=480, next=225
+                NodeList [2175, 2236), i=481, next=244
+                  KindParameter [2175, 2222), i=482, next=241
+                    KindIdentifier "fn" [2175, 2177), i=483, next=228
+                    KindFunctionType [2178, 2222), i=484, next=0
+                      NodeList [2180, 2213), i=485, next=240
+                        KindParameter [2180, 2189), i=486, next=233
+                          KindIdentifier "k" [2180, 2181), i=487, next=232
+                          KindStringKeyword [2182, 2189), i=488, next=0
+                        KindParameter [2190, 2199), i=489, next=237
+                          KindIdentifier "value" [2190, 2196), i=490, next=235
+                          KindTypeReference [2197, 2199), i=491, next=0
+                            KindIdentifier "T" [2197, 2199), i=492, next=0
+                        KindParameter [2200, 2213), i=493, next=0
+                          KindIdentifier "context" [2200, 2208), i=494, next=239
+                          KindAnyKeyword [2209, 2213), i=495, next=0
+                      KindVoidKeyword [2217, 2222), i=496, next=0
+                  KindParameter [2223, 2236), i=497, next=0
+                    KindIdentifier "context" [2223, 2231), i=498, next=243
+                    KindAnyKeyword [2232, 2236), i=499, next=0
+                KindVoidKeyword [2238, 2243), i=500, next=0
+              KindMethodSignature [2244, 2332), i=501, next=11
+                KindIdentifier "every" [2244, 2259), i=502, next=247
+                NodeList [2260, 2321), i=503, next=10
+                  KindParameter [2260, 2307), i=504, next=7
+                    KindIdentifier "fn" [2260, 2262), i=505, next=250
+                    KindFunctionType [2263, 2307), i=506, next=0
+                      NodeList [2265, 2298), i=507, next=6
+                        KindParameter [2265, 2274), i=508, next=255
+                          KindIdentifier "k" [2265, 2266), i=509, next=254
+                          KindStringKeyword [2267, 2274), i=510, next=0
+                        KindParameter [2275, 2284), i=511, next=3
+                          KindIdentifier "value" [2275, 2281), i=512, next=1
+                          KindTypeReference [2282, 2284), i=513, next=0
+                            KindIdentifier "T" [2282, 2284), i=514, next=0
+                        KindParameter [2285, 2298), i=515, next=0
+                          KindIdentifier "context" [2285, 2293), i=516, next=5
+                          KindAnyKeyword [2294, 2298), i=517, next=0
+                      KindVoidKeyword [2302, 2307), i=518, next=0
+                  KindParameter [2308, 2321), i=519, next=0
+                    KindIdentifier "context" [2308, 2316), i=520, next=9
+                    KindAnyKeyword [2317, 2321), i=521, next=0
+                KindBooleanKeyword [2323, 2331), i=522, next=0
+              KindMethodSignature [2332, 2419), i=523, next=33
+                KindIdentifier "some" [2332, 2346), i=524, next=13
+                NodeList [2347, 2408), i=525, next=32
+                  KindParameter [2347, 2394), i=526, next=29
+                    KindIdentifier "fn" [2347, 2349), i=527, next=16
+                    KindFunctionType [2350, 2394), i=528, next=0
+                      NodeList [2352, 2385), i=529, next=28
+                        KindParameter [2352, 2361), i=530, next=21
+                          KindIdentifier "k" [2352, 2353), i=531, next=20
+                          KindStringKeyword [2354, 2361), i=532, next=0
+                        KindParameter [2362, 2371), i=533, next=25
+                          KindIdentifier "value" [2362, 2368), i=534, next=23
+                          KindTypeReference [2369, 2371), i=535, next=0
+                            KindIdentifier "T" [2369, 2371), i=536, next=0
+                        KindParameter [2372, 2385), i=537, next=0
+                          KindIdentifier "context" [2372, 2380), i=538, next=27
+                          KindAnyKeyword [2381, 2385), i=539, next=0
+                      KindVoidKeyword [2389, 2394), i=540, next=0
+                  KindParameter [2395, 2408), i=541, next=0
+                    KindIdentifier "context" [2395, 2403), i=542, next=31
+                    KindAnyKeyword [2404, 2408), i=543, next=0
+                KindBooleanKeyword [2410, 2418), i=544, next=0
+              KindMethodSignature [2419, 2445), i=545, next=36
+                KindIdentifier "count" [2419, 2434), i=546, next=35
+                KindNumberKeyword [2437, 2444), i=547, next=0
+              KindMethodSignature [2445, 2478), i=548, next=0
+                KindIdentifier "lookup" [2445, 2461), i=549, next=38
+                NodeList [2462, 2473), i=550, next=42
+                  KindParameter [2462, 2473), i=551, next=0
+                    KindIdentifier "key" [2462, 2465), i=552, next=41
+                    KindStringKeyword [2466, 2473), i=553, next=0
+                KindTypeReference [2475, 2477), i=554, next=0
+                  KindIdentifier "T" [2475, 2477), i=555, next=0
+          KindClassDeclaration [2485, 3148), i=556, next=194
+            KindIdentifier "StringHashTable" [2496, 2512), i=557, next=46
+            NodeList [2513, 2514), i=558, next=49
+              KindTypeParameter [2513, 2514), i=559, next=0
+                KindIdentifier "T" [2513, 2514), i=560, next=0
+            NodeList [2515, 2540), i=561, next=57
+              KindHeritageClause [2515, 2540), i=562, next=0
+                NodeList [2526, 2540), i=563, next=0
+                  KindExpressionWithTypeArguments [2526, 2540), i=564, next=0
+                    KindIdentifier "IHashTable" [2526, 2537), i=565, next=54
+                    NodeList [2538, 2539), i=566, next=0
+                      KindTypeReference [2538, 2539), i=567, next=0
+                        KindIdentifier "T" [2538, 2539), i=568, next=0
+            NodeList [2542, 3141), i=569, next=0
+              KindPropertyDeclaration [2542, 2570), i=570, next=62
+                NodeList [2542, 2559), i=571, next=61
+                  KindPrivateKeyword [2542, 2559), i=572, next=0
+                KindIdentifier "itemCount" [2559, 2569), i=573, next=0
+              KindPropertyDeclaration [2570, 2594), i=574, next=66
+                NodeList [2570, 2587), i=575, next=65
+                  KindPrivateKeyword [2570, 2587), i=576, next=0
+                KindIdentifier "table" [2587, 2593), i=577, next=0
+              KindMethodDeclaration [2594, 2634), i=578, next=72
+                NodeList [2594, 2610), i=579, next=69
+                  KindPublicKeyword [2594, 2610), i=580, next=0
+                KindIdentifier "getAllKeys" [2610, 2621), i=581, next=70
+                KindArrayType [2624, 2633), i=582, next=0
+                  KindStringKeyword [2624, 2631), i=583, next=0
+              KindMethodDeclaration [2634, 2686), i=584, next=85
+                NodeList [2634, 2650), i=585, next=75
+                  KindPublicKeyword [2634, 2650), i=586, next=0
+                KindIdentifier "add" [2650, 2654), i=587, next=76
+                NodeList [2655, 2675), i=588, next=84
+                  KindParameter [2655, 2666), i=589, next=80
+                    KindIdentifier "key" [2655, 2658), i=590, next=79
+                    KindStringKeyword [2659, 2666), i=591, next=0
+                  KindParameter [2667, 2675), i=592, next=0
+                    KindIdentifier "data" [2667, 2672), i=593, next=82
+                    KindTypeReference [2673, 2675), i=594, next=0
+                      KindIdentifier "T" [2673, 2675), i=595, next=0
+                KindBooleanKeyword [2677, 2685), i=596, next=0
+              KindMethodDeclaration [2686, 2746), i=597, next=98
+                NodeList [2686, 2702), i=598, next=88
+                  KindPublicKeyword [2686, 2702), i=599, next=0
+                KindIdentifier "addOrUpdate" [2702, 2714), i=600, next=89
+                NodeList [2715, 2735), i=601, next=97
+                  KindParameter [2715, 2726), i=602, next=93
+                    KindIdentifier "key" [2715, 2718), i=603, next=92
+                    KindStringKeyword [2719, 2726), i=604, next=0
+                  KindParameter [2727, 2735), i=605, next=0
+                    KindIdentifier "data" [2727, 2732), i=606, next=95
+                    KindTypeReference [2733, 2735), i=607, next=0
+                      KindIdentifier "T" [2733, 2735), i=608, next=0
+                KindBooleanKeyword [2737, 2745), i=609, next=0
+              KindMethodDeclaration [2746, 2836), i=610, next=122
+                NodeList [2746, 2762), i=611, next=101
+                  KindPublicKeyword [2746, 2762), i=612, next=0
+                KindIdentifier "map" [2762, 2766), i=613, next=102
+                NodeList [2767, 2828), i=614, next=121
+                  KindParameter [2767, 2814), i=615, next=118
+                    KindIdentifier "fn" [2767, 2769), i=616, next=105
+                    KindFunctionType [2770, 2814), i=617, next=0
+                      NodeList [2772, 2805), i=618, next=117
+                        KindParameter [2772, 2781), i=619, next=110
+                          KindIdentifier "k" [2772, 2773), i=620, next=109
+                          KindStringKeyword [2774, 2781), i=621, next=0
+                        KindParameter [2782, 2791), i=622, next=114
+                          KindIdentifier "value" [2782, 2788), i=623, next=112
+                          KindTypeReference [2789, 2791), i=624, next=0
+                            KindIdentifier "T" [2789, 2791), i=625, next=0
+                        KindParameter [2792, 2805), i=626, next=0
+                          KindIdentifier "context" [2792, 2800), i=627, next=116
+                          KindAnyKeyword [2801, 2805), i=628, next=0
+                      KindVoidKeyword [2809, 2814), i=629, next=0
+                  KindParameter [2815, 2828), i=630, next=0
+                    KindIdentifier "context" [2815, 2823), i=631, next=120
+                    KindAnyKeyword [2824, 2828), i=632, next=0
+                KindVoidKeyword [2830, 2835), i=633, next=0
+              KindMethodDeclaration [2836, 2931), i=634, next=146
+                NodeList [2836, 2852), i=635, next=125
+                  KindPublicKeyword [2836, 2852), i=636, next=0
+                KindIdentifier "every" [2852, 2858), i=637, next=126
+                NodeList [2859, 2920), i=638, next=145
+                  KindParameter [2859, 2906), i=639, next=142
+                    KindIdentifier "fn" [2859, 2861), i=640, next=129
+                    KindFunctionType [2862, 2906), i=641, next=0
+                      NodeList [2864, 2897), i=642, next=141
+                        KindParameter [2864, 2873), i=643, next=134
+                          KindIdentifier "k" [2864, 2865), i=644, next=133
+                          KindStringKeyword [2866, 2873), i=645, next=0
+                        KindParameter [2874, 2883), i=646, next=138
+                          KindIdentifier "value" [2874, 2880), i=647, next=136
+                          KindTypeReference [2881, 2883), i=648, next=0
+                            KindIdentifier "T" [2881, 2883), i=649, next=0
+                        KindParameter [2884, 2897), i=650, next=0
+                          KindIdentifier "context" [2884, 2892), i=651, next=140
+                          KindAnyKeyword [2893, 2897), i=652, next=0
+                      KindVoidKeyword [2901, 2906), i=653, next=0
+                  KindParameter [2907, 2920), i=654, next=0
+                    KindIdentifier "context" [2907, 2915), i=655, next=144
+                    KindAnyKeyword [2916, 2920), i=656, next=0
+                KindBooleanKeyword [2922, 2930), i=657, next=0
+              KindMethodDeclaration [2931, 3025), i=658, next=170
+                NodeList [2931, 2947), i=659, next=149
+                  KindPublicKeyword [2931, 2947), i=660, next=0
+                KindIdentifier "some" [2947, 2952), i=661, next=150
+                NodeList [2953, 3014), i=662, next=169
+                  KindParameter [2953, 3000), i=663, next=166
+                    KindIdentifier "fn" [2953, 2955), i=664, next=153
+                    KindFunctionType [2956, 3000), i=665, next=0
+                      NodeList [2958, 2991), i=666, next=165
+                        KindParameter [2958, 2967), i=667, next=158
+                          KindIdentifier "k" [2958, 2959), i=668, next=157
+                          KindStringKeyword [2960, 2967), i=669, next=0
+                        KindParameter [2968, 2977), i=670, next=162
+                          KindIdentifier "value" [2968, 2974), i=671, next=160
+                          KindTypeReference [2975, 2977), i=672, next=0
+                            KindIdentifier "T" [2975, 2977), i=673, next=0
+                        KindParameter [2978, 2991), i=674, next=0
+                          KindIdentifier "context" [2978, 2986), i=675, next=164
+                          KindAnyKeyword [2987, 2991), i=676, next=0
+                      KindVoidKeyword [2995, 3000), i=677, next=0
+                  KindParameter [3001, 3014), i=678, next=0
+                    KindIdentifier "context" [3001, 3009), i=679, next=168
+                    KindAnyKeyword [3010, 3014), i=680, next=0
+                KindBooleanKeyword [3016, 3024), i=681, next=0
+              KindMethodDeclaration [3025, 3058), i=682, next=175
+                NodeList [3025, 3041), i=683, next=173
+                  KindPublicKeyword [3025, 3041), i=684, next=0
+                KindIdentifier "count" [3041, 3047), i=685, next=174
+                KindNumberKeyword [3050, 3057), i=686, next=0
+              KindMethodDeclaration [3058, 3098), i=687, next=185
+                NodeList [3058, 3074), i=688, next=178
+                  KindPublicKeyword [3058, 3074), i=689, next=0
+                KindIdentifier "lookup" [3074, 3081), i=690, next=179
+                NodeList [3082, 3093), i=691, next=183
+                  KindParameter [3082, 3093), i=692, next=0
+                    KindIdentifier "key" [3082, 3085), i=693, next=182
+                    KindStringKeyword [3086, 3093), i=694, next=0
+                KindTypeReference [3095, 3097), i=695, next=0
+                  KindIdentifier "T" [3095, 3097), i=696, next=0
+              KindMethodDeclaration [3098, 3141), i=697, next=0
+                NodeList [3098, 3114), i=698, next=188
+                  KindPublicKeyword [3098, 3114), i=699, next=0
+                KindIdentifier "remove" [3114, 3121), i=700, next=189
+                NodeList [3122, 3133), i=701, next=193
+                  KindParameter [3122, 3133), i=702, next=0
+                    KindIdentifier "key" [3122, 3125), i=703, next=192
+                    KindStringKeyword [3126, 3133), i=704, next=0
+                KindVoidKeyword [3135, 3140), i=705, next=0
+          KindClassDeclaration [3148, 3695), i=706, next=0
+            KindIdentifier "IdentifierNameHashTable" [3159, 3183), i=707, next=196
+            NodeList [3184, 3185), i=708, next=199
+              KindTypeParameter [3184, 3185), i=709, next=0
+                KindIdentifier "T" [3184, 3185), i=710, next=0
+            NodeList [3186, 3213), i=711, next=207
+              KindHeritageClause [3186, 3213), i=712, next=0
+                NodeList [3194, 3213), i=713, next=0
+                  KindExpressionWithTypeArguments [3194, 3213), i=714, next=0
+                    KindIdentifier "StringHashTable" [3194, 3210), i=715, next=204
+                    NodeList [3211, 3212), i=716, next=0
+                      KindTypeReference [3211, 3212), i=717, next=0
+                        KindIdentifier "T" [3211, 3212), i=718, next=0
+            NodeList [3215, 3688), i=719, next=0
+              KindMethodDeclaration [3215, 3255), i=720, next=214
+                NodeList [3215, 3231), i=721, next=211
+                  KindPublicKeyword [3215, 3231), i=722, next=0
+                KindIdentifier "getAllKeys" [3231, 3242), i=723, next=212
+                KindArrayType [3245, 3254), i=724, next=0
+                  KindStringKeyword [3245, 3252), i=725, next=0
+              KindMethodDeclaration [3255, 3307), i=726, next=227
+                NodeList [3255, 3271), i=727, next=217
+                  KindPublicKeyword [3255, 3271), i=728, next=0
+                KindIdentifier "add" [3271, 3275), i=729, next=218
+                NodeList [3276, 3296), i=730, next=226
+                  KindParameter [3276, 3287), i=731, next=222
+                    KindIdentifier "key" [3276, 3279), i=732, next=221
+                    KindStringKeyword [3280, 3287), i=733, next=0
+                  KindParameter [3288, 3296), i=734, next=0
+                    KindIdentifier "data" [3288, 3293), i=735, next=224
+                    KindTypeReference [3294, 3296), i=736, next=0
+                      KindIdentifier "T" [3294, 3296), i=737, next=0
+                KindBooleanKeyword [3298, 3306), i=738, next=0
+              KindMethodDeclaration [3307, 3367), i=739, next=240
+                NodeList [3307, 3323), i=740, next=230
+                  KindPublicKeyword [3307, 3323), i=741, next=0
+                KindIdentifier "addOrUpdate" [3323, 3335), i=742, next=231
+                NodeList [3336, 3356), i=743, next=239
+                  KindParameter [3336, 3347), i=744, next=235
+                    KindIdentifier "key" [3336, 3339), i=745, next=234
+                    KindStringKeyword [3340, 3347), i=746, next=0
+                  KindParameter [3348, 3356), i=747, next=0
+                    KindIdentifier "data" [3348, 3353), i=748, next=237
+                    KindTypeReference [3354, 3356), i=749, next=0
+                      KindIdentifier "T" [3354, 3356), i=750, next=0
+                KindBooleanKeyword [3358, 3366), i=751, next=0
+              KindMethodDeclaration [3367, 3457), i=752, next=8
+                NodeList [3367, 3383), i=753, next=243
+                  KindPublicKeyword [3367, 3383), i=754, next=0
+                KindIdentifier "map" [3383, 3387), i=755, next=244
+                NodeList [3388, 3449), i=756, next=7
+                  KindParameter [3388, 3435), i=757, next=4
+                    KindIdentifier "fn" [3388, 3390), i=758, next=247
+                    KindFunctionType [3391, 3435), i=759, next=0
+                      NodeList [3393, 3426), i=760, next=3
+                        KindParameter [3393, 3402), i=761, next=252
+                          KindIdentifier "k" [3393, 3394), i=762, next=251
+                          KindStringKeyword [3395, 3402), i=763, next=0
+                        KindParameter [3403, 3412), i=764, next=0
+                          KindIdentifier "value" [3403, 3409), i=765, next=254
+                          KindTypeReference [3410, 3412), i=766, next=0
+                            KindIdentifier "T" [3410, 3412), i=767, next=0
+                        KindParameter [3413, 3426), i=768, next=0
+                          KindIdentifier "context" [3413, 3421), i=769, next=2
+                          KindAnyKeyword [3422, 3426), i=770, next=0
+                      KindVoidKeyword [3430, 3435), i=771, next=0
+                  KindParameter [3436, 3449), i=772, next=0
+                    KindIdentifier "context" [3436, 3444), i=773, next=6
+                    KindAnyKeyword [3445, 3449), i=774, next=0
+                KindVoidKeyword [3451, 3456), i=775, next=0
+              KindMethodDeclaration [3457, 3552), i=776, next=32
+                NodeList [3457, 3473), i=777, next=11
+                  KindPublicKeyword [3457, 3473), i=778, next=0
+                KindIdentifier "every" [3473, 3479), i=779, next=12
+                NodeList [3480, 3541), i=780, next=31
+                  KindParameter [3480, 3527), i=781, next=28
+                    KindIdentifier "fn" [3480, 3482), i=782, next=15
+                    KindFunctionType [3483, 3527), i=783, next=0
+                      NodeList [3485, 3518), i=784, next=27
+                        KindParameter [3485, 3494), i=785, next=20
+                          KindIdentifier "k" [3485, 3486), i=786, next=19
+                          KindStringKeyword [3487, 3494), i=787, next=0
+                        KindParameter [3495, 3504), i=788, next=24
+                          KindIdentifier "value" [3495, 3501), i=789, next=22
+                          KindTypeReference [3502, 3504), i=790, next=0
+                            KindIdentifier "T" [3502, 3504), i=791, next=0
+                        KindParameter [3505, 3518), i=792, next=0
+                          KindIdentifier "context" [3505, 3513), i=793, next=26
+                          KindAnyKeyword [3514, 3518), i=794, next=0
+                      KindVoidKeyword [3522, 3527), i=795, next=0
+                  KindParameter [3528, 3541), i=796, next=0
+                    KindIdentifier "context" [3528, 3536), i=797, next=30
+                    KindAnyKeyword [3537, 3541), i=798, next=0
+                KindBooleanKeyword [3543, 3551), i=799, next=0
+              KindMethodDeclaration [3552, 3648), i=800, next=55
+                NodeList [3552, 3568), i=801, next=35
+                  KindPublicKeyword [3552, 3568), i=802, next=0
+                KindIdentifier "some" [3568, 3573), i=803, next=36
+                NodeList [3574, 3637), i=804, next=54
+                  KindParameter [3574, 3623), i=805, next=51
+                    KindIdentifier "fn" [3574, 3576), i=806, next=39
+                    KindFunctionType [3577, 3623), i=807, next=0
+                      NodeList [3579, 3614), i=808, next=50
+                        KindParameter [3579, 3588), i=809, next=44
+                          KindIdentifier "k" [3579, 3580), i=810, next=43
+                          KindStringKeyword [3581, 3588), i=811, next=0
+                        KindParameter [3589, 3600), i=812, next=47
+                          KindIdentifier "value" [3589, 3595), i=813, next=46
+                          KindAnyKeyword [3596, 3600), i=814, next=0
+                        KindParameter [3601, 3614), i=815, next=0
+                          KindIdentifier "context" [3601, 3609), i=816, next=49
+                          KindAnyKeyword [3610, 3614), i=817, next=0
+                      KindVoidKeyword [3618, 3623), i=818, next=0
+                  KindParameter [3624, 3637), i=819, next=0
+                    KindIdentifier "context" [3624, 3632), i=820, next=53
+                    KindAnyKeyword [3633, 3637), i=821, next=0
+                KindBooleanKeyword [3639, 3647), i=822, next=0
+              KindMethodDeclaration [3648, 3688), i=823, next=0
+                NodeList [3648, 3664), i=824, next=58
+                  KindPublicKeyword [3648, 3664), i=825, next=0
+                KindIdentifier "lookup" [3664, 3671), i=826, next=59
+                NodeList [3672, 3683), i=827, next=63
+                  KindParameter [3672, 3683), i=828, next=0
+                    KindIdentifier "key" [3672, 3675), i=829, next=62
+                    KindStringKeyword [3676, 3683), i=830, next=0
+                KindTypeReference [3685, 3687), i=831, next=0
+                  KindIdentifier "T" [3685, 3687), i=832, next=0

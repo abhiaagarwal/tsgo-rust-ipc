@@ -1,0 +1,132 @@
+KindSourceFile [0, 530), i=1, next=0
+  NodeList [0, 528), i=2, next=0
+    KindTypeAliasDeclaration [0, 105), i=3, next=43
+      KindIdentifier "Equals" [4, 11), i=4, next=5
+      NodeList [12, 16), i=5, next=10
+        KindTypeParameter [12, 13), i=6, next=8
+          KindIdentifier "A" [12, 13), i=7, next=0
+        KindTypeParameter [14, 16), i=8, next=0
+          KindIdentifier "B" [14, 16), i=9, next=0
+      KindConditionalType [19, 104), i=10, next=0
+        KindParenthesizedType [19, 50), i=11, next=25
+          KindFunctionType [21, 49), i=12, next=0
+            NodeList [22, 23), i=13, next=16
+              KindTypeParameter [22, 23), i=14, next=0
+                KindIdentifier "T" [22, 23), i=15, next=0
+            KindConditionalType [29, 49), i=16, next=0
+              KindTypeReference [29, 31), i=17, next=19
+                KindIdentifier "T" [29, 31), i=18, next=0
+              KindTypeReference [39, 41), i=19, next=21
+                KindIdentifier "B" [39, 41), i=20, next=0
+              KindLiteralType [43, 45), i=21, next=23
+                KindNumericLiteral [43, 45), i=22, next=0
+              KindLiteralType [47, 49), i=23, next=0
+                KindNumericLiteral [47, 49), i=24, next=0
+        KindParenthesizedType [58, 89), i=25, next=39
+          KindFunctionType [60, 88), i=26, next=0
+            NodeList [61, 62), i=27, next=30
+              KindTypeParameter [61, 62), i=28, next=0
+                KindIdentifier "T" [61, 62), i=29, next=0
+            KindConditionalType [68, 88), i=30, next=0
+              KindTypeReference [68, 70), i=31, next=33
+                KindIdentifier "T" [68, 70), i=32, next=0
+              KindTypeReference [78, 80), i=33, next=35
+                KindIdentifier "A" [78, 80), i=34, next=0
+              KindLiteralType [82, 84), i=35, next=37
+                KindNumericLiteral [82, 84), i=36, next=0
+              KindLiteralType [86, 88), i=37, next=0
+                KindNumericLiteral [86, 88), i=38, next=0
+        KindLiteralType [91, 96), i=39, next=41
+          KindTrueKeyword [91, 96), i=40, next=0
+        KindLiteralType [98, 104), i=41, next=0
+          KindFalseKeyword [98, 104), i=42, next=0
+    KindClassDeclaration [105, 282), i=43, next=84
+      NodeList [105, 116), i=44, next=46
+        KindDeclareKeyword [105, 116), i=45, next=0
+      KindIdentifier "State" [122, 128), i=46, next=47
+      NodeList [129, 137), i=47, next=50
+        KindTypeParameter [129, 137), i=48, next=0
+          KindIdentifier "TContext" [129, 137), i=49, next=0
+      NodeList [140, 279), i=50, next=0
+        KindPropertyDeclaration [140, 165), i=51, next=55
+          KindIdentifier "_context" [140, 154), i=52, next=53
+          KindTypeReference [155, 164), i=53, next=0
+            KindIdentifier "TContext" [155, 164), i=54, next=0
+        KindPropertyDeclaration [165, 186), i=55, next=58
+          KindIdentifier "_value" [165, 177), i=56, next=57
+          KindStringKeyword [178, 185), i=57, next=0
+        KindMethodDeclaration [186, 279), i=58, next=0
+          KindIdentifier "matches" [186, 199), i=59, next=60
+          NodeList [200, 218), i=60, next=64
+            KindTypeParameter [200, 218), i=61, next=0
+              KindIdentifier "TSV" [200, 203), i=62, next=63
+              KindStringKeyword [211, 218), i=63, next=0
+          NodeList [220, 235), i=64, next=69
+            KindParameter [220, 235), i=65, next=0
+              KindIdentifier "stateValue" [220, 230), i=66, next=67
+              KindTypeReference [231, 235), i=67, next=0
+                KindIdentifier "TSV" [231, 235), i=68, next=0
+          KindTypePredicate [237, 278), i=69, next=0
+            KindThisType [237, 242), i=70, next=71
+            KindIntersectionType [245, 278), i=71, next=0
+              NodeList [245, 278), i=72, next=0
+                KindTypeReference [245, 261), i=73, next=78
+                  KindIdentifier "State" [245, 251), i=74, next=75
+                  NodeList [252, 260), i=75, next=0
+                    KindTypeReference [252, 260), i=76, next=0
+                      KindIdentifier "TContext" [252, 260), i=77, next=0
+                KindTypeLiteral [263, 278), i=78, next=0
+                  NodeList [265, 276), i=79, next=0
+                    KindPropertySignature [265, 276), i=80, next=0
+                      KindIdentifier "value" [265, 271), i=81, next=82
+                      KindTypeReference [272, 276), i=82, next=0
+                        KindIdentifier "TSV" [272, 276), i=83, next=0
+    KindFunctionDeclaration [282, 528), i=84, next=0
+      KindIdentifier "f1" [294, 297), i=85, next=86
+      NodeList [298, 327), i=86, next=97
+        KindParameter [298, 327), i=87, next=0
+          KindIdentifier "state" [298, 303), i=88, next=89
+          KindTypeReference [304, 327), i=89, next=0
+            KindIdentifier "State" [304, 310), i=90, next=91
+            NodeList [311, 326), i=91, next=0
+              KindTypeLiteral [311, 326), i=92, next=0
+                NodeList [312, 324), i=93, next=0
+                  KindPropertySignature [312, 324), i=94, next=0
+                    KindIdentifier "foo" [312, 316), i=95, next=96
+                    KindNumberKeyword [317, 324), i=96, next=0
+      KindBlock [328, 528), i=97, next=0
+        NodeList [330, 525), i=98, next=0
+          KindIfStatement [330, 525), i=99, next=0
+            KindBinaryExpression [340, 382), i=100, next=114
+              KindCallExpression [340, 358), i=101, next=107
+                KindPropertyAccessExpression [340, 353), i=102, next=105
+                  KindIdentifier "state" [340, 345), i=103, next=104
+                  KindIdentifier "matches" [346, 353), i=104, next=0
+                NodeList [354, 357), i=105, next=0
+                  KindStringLiteral "a" [354, 357), i=106, next=0
+              KindAmpersandAmpersandToken [358, 361), i=107, next=108
+              KindCallExpression [361, 382), i=108, next=0
+                KindPropertyAccessExpression [361, 375), i=109, next=112
+                  KindIdentifier "state" [361, 367), i=110, next=111
+                  KindIdentifier "matches" [368, 375), i=111, next=0
+                NodeList [376, 381), i=112, next=0
+                  KindStringLiteral "a.b" [376, 381), i=113, next=0
+            KindBlock [383, 525), i=114, next=0
+              NodeList [385, 509), i=115, next=0
+                KindExpressionStatement [385, 401), i=116, next=118
+                  KindIdentifier "state" [385, 400), i=117, next=0
+                KindTypeAliasDeclaration [401, 459), i=118, next=126
+                  KindIdentifier "T1" [425, 428), i=119, next=120
+                  KindTypeReference [430, 458), i=120, next=0
+                    KindIdentifier "Equals" [430, 437), i=121, next=122
+                    NodeList [438, 457), i=122, next=0
+                      KindTypeQuery [438, 450), i=123, next=125
+                        KindIdentifier "state" [444, 450), i=124, next=0
+                      KindNeverKeyword [451, 457), i=125, next=0
+                KindTypeAliasDeclaration [459, 509), i=126, next=0
+                  KindIdentifier "T2" [482, 485), i=127, next=128
+                  KindTypeReference [487, 508), i=128, next=0
+                    KindIdentifier "Equals" [487, 494), i=129, next=130
+                    NodeList [495, 507), i=130, next=0
+                      KindNeverKeyword [495, 500), i=131, next=132
+                      KindNeverKeyword [501, 507), i=132, next=0

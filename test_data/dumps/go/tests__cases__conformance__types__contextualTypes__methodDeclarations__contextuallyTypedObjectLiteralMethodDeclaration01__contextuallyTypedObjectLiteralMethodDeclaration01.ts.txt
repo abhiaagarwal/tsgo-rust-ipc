@@ -1,0 +1,150 @@
+KindSourceFile [0, 764), i=1, next=0
+  NodeList [0, 764), i=2, next=0
+    KindInterfaceDeclaration [0, 38), i=3, next=9
+      KindIdentifier "A" [9, 11), i=4, next=5
+      NodeList [13, 35), i=5, next=0
+        KindPropertySignature [13, 35), i=6, next=0
+          KindIdentifier "numProp" [13, 26), i=7, next=8
+          KindNumberKeyword [27, 34), i=8, next=0
+    KindInterfaceDeclaration [38, 81), i=9, next=15
+      KindIdentifier "B" [51, 53), i=10, next=11
+      NodeList [56, 78), i=11, next=0
+        KindPropertySignature [56, 78), i=12, next=0
+          KindIdentifier "strProp" [56, 69), i=13, next=14
+          KindStringKeyword [70, 77), i=14, next=0
+    KindInterfaceDeclaration [81, 159), i=15, next=34
+      KindIdentifier "Foo" [94, 98), i=16, next=17
+      NodeList [100, 156), i=17, next=0
+        KindMethodSignature [100, 128), i=18, next=26
+          KindIdentifier "method1" [100, 113), i=19, next=20
+          NodeList [114, 120), i=20, next=25
+            KindParameter [114, 120), i=21, next=0
+              KindIdentifier "arg" [114, 117), i=22, next=23
+              KindTypeReference [118, 120), i=23, next=0
+                KindIdentifier "A" [118, 120), i=24, next=0
+          KindVoidKeyword [122, 127), i=25, next=0
+        KindMethodSignature [128, 156), i=26, next=0
+          KindIdentifier "method2" [128, 141), i=27, next=28
+          NodeList [142, 148), i=28, next=33
+            KindParameter [142, 148), i=29, next=0
+              KindIdentifier "arg" [142, 145), i=30, next=31
+              KindTypeReference [146, 148), i=31, next=0
+                KindIdentifier "B" [146, 148), i=32, next=0
+          KindVoidKeyword [150, 155), i=33, next=0
+    KindFunctionDeclaration [159, 350), i=34, next=71
+      KindIdentifier "getFoo1" [171, 179), i=35, next=36
+      KindTypeReference [182, 186), i=36, next=38
+        KindIdentifier "Foo" [182, 186), i=37, next=0
+      KindBlock [186, 350), i=38, next=0
+        NodeList [188, 347), i=39, next=0
+          KindReturnStatement [188, 347), i=40, next=0
+            KindObjectLiteralExpression [200, 347), i=41, next=0
+              NodeList [202, 340), i=42, next=0
+                KindMethodDeclaration [202, 268), i=43, next=57
+                  KindIdentifier "method1" [202, 219), i=44, next=45
+                  NodeList [220, 223), i=45, next=48
+                    KindParameter [220, 223), i=46, next=0
+                      KindIdentifier "arg" [220, 223), i=47, next=0
+                  KindBlock [224, 268), i=48, next=0
+                    NodeList [226, 257), i=49, next=0
+                      KindExpressionStatement [226, 257), i=50, next=0
+                        KindBinaryExpression [226, 256), i=51, next=0
+                          KindPropertyAccessExpression [226, 251), i=52, next=55
+                            KindIdentifier "arg" [226, 243), i=53, next=54
+                            KindIdentifier "numProp" [244, 251), i=54, next=0
+                          KindEqualsToken [251, 253), i=55, next=56
+                          KindNumericLiteral [253, 256), i=56, next=0
+                KindMethodDeclaration [269, 340), i=57, next=0
+                  KindIdentifier "method2" [269, 286), i=58, next=59
+                  NodeList [287, 290), i=59, next=62
+                    KindParameter [287, 290), i=60, next=0
+                      KindIdentifier "arg" [287, 290), i=61, next=0
+                  KindBlock [291, 340), i=62, next=0
+                    NodeList [293, 329), i=63, next=0
+                      KindExpressionStatement [293, 329), i=64, next=0
+                        KindBinaryExpression [293, 328), i=65, next=0
+                          KindPropertyAccessExpression [293, 318), i=66, next=69
+                            KindIdentifier "arg" [293, 310), i=67, next=68
+                            KindIdentifier "strProp" [311, 318), i=68, next=0
+                          KindEqualsToken [318, 320), i=69, next=70
+                          KindStringLiteral "hello" [320, 328), i=70, next=0
+    KindFunctionDeclaration [350, 551), i=71, next=112
+      KindIdentifier "getFoo2" [362, 370), i=72, next=73
+      KindTypeReference [373, 377), i=73, next=75
+        KindIdentifier "Foo" [373, 377), i=74, next=0
+      KindBlock [377, 551), i=75, next=0
+        NodeList [379, 548), i=76, next=0
+          KindReturnStatement [379, 548), i=77, next=0
+            KindObjectLiteralExpression [391, 548), i=78, next=0
+              NodeList [393, 541), i=79, next=0
+                KindPropertyAssignment [393, 464), i=80, next=96
+                  KindIdentifier "method1" [393, 410), i=81, next=82
+                  KindArrowFunction [411, 464), i=82, next=0
+                    NodeList [413, 416), i=83, next=86
+                      KindParameter [413, 416), i=84, next=0
+                        KindIdentifier "arg" [413, 416), i=85, next=0
+                    KindEqualsGreaterThanToken [417, 420), i=86, next=87
+                    KindBlock [420, 464), i=87, next=0
+                      NodeList [422, 453), i=88, next=0
+                        KindExpressionStatement [422, 453), i=89, next=0
+                          KindBinaryExpression [422, 452), i=90, next=0
+                            KindPropertyAccessExpression [422, 447), i=91, next=94
+                              KindIdentifier "arg" [422, 439), i=92, next=93
+                              KindIdentifier "numProp" [440, 447), i=93, next=0
+                            KindEqualsToken [447, 449), i=94, next=95
+                            KindNumericLiteral [449, 452), i=95, next=0
+                KindPropertyAssignment [465, 541), i=96, next=0
+                  KindIdentifier "method2" [465, 482), i=97, next=98
+                  KindArrowFunction [483, 541), i=98, next=0
+                    NodeList [485, 488), i=99, next=102
+                      KindParameter [485, 488), i=100, next=0
+                        KindIdentifier "arg" [485, 488), i=101, next=0
+                    KindEqualsGreaterThanToken [489, 492), i=102, next=103
+                    KindBlock [492, 541), i=103, next=0
+                      NodeList [494, 530), i=104, next=0
+                        KindExpressionStatement [494, 530), i=105, next=0
+                          KindBinaryExpression [494, 529), i=106, next=0
+                            KindPropertyAccessExpression [494, 519), i=107, next=110
+                              KindIdentifier "arg" [494, 511), i=108, next=109
+                              KindIdentifier "strProp" [512, 519), i=109, next=0
+                            KindEqualsToken [519, 521), i=110, next=111
+                            KindStringLiteral "hello" [521, 529), i=111, next=0
+    KindFunctionDeclaration [551, 764), i=112, next=0
+      KindIdentifier "getFoo3" [563, 571), i=113, next=114
+      KindTypeReference [574, 578), i=114, next=116
+        KindIdentifier "Foo" [574, 578), i=115, next=0
+      KindBlock [578, 764), i=116, next=0
+        NodeList [580, 761), i=117, next=0
+          KindReturnStatement [580, 761), i=118, next=0
+            KindObjectLiteralExpression [592, 761), i=119, next=0
+              NodeList [594, 754), i=120, next=0
+                KindPropertyAssignment [594, 671), i=121, next=136
+                  KindIdentifier "method1" [594, 611), i=122, next=123
+                  KindFunctionExpression [612, 671), i=123, next=0
+                    NodeList [623, 626), i=124, next=127
+                      KindParameter [623, 626), i=125, next=0
+                        KindIdentifier "arg" [623, 626), i=126, next=0
+                    KindBlock [627, 671), i=127, next=0
+                      NodeList [629, 660), i=128, next=0
+                        KindExpressionStatement [629, 660), i=129, next=0
+                          KindBinaryExpression [629, 659), i=130, next=0
+                            KindPropertyAccessExpression [629, 654), i=131, next=134
+                              KindIdentifier "arg" [629, 646), i=132, next=133
+                              KindIdentifier "numProp" [647, 654), i=133, next=0
+                            KindEqualsToken [654, 656), i=134, next=135
+                            KindNumericLiteral [656, 659), i=135, next=0
+                KindPropertyAssignment [672, 754), i=136, next=0
+                  KindIdentifier "method2" [672, 689), i=137, next=138
+                  KindFunctionExpression [690, 754), i=138, next=0
+                    NodeList [701, 704), i=139, next=142
+                      KindParameter [701, 704), i=140, next=0
+                        KindIdentifier "arg" [701, 704), i=141, next=0
+                    KindBlock [705, 754), i=142, next=0
+                      NodeList [707, 743), i=143, next=0
+                        KindExpressionStatement [707, 743), i=144, next=0
+                          KindBinaryExpression [707, 742), i=145, next=0
+                            KindPropertyAccessExpression [707, 732), i=146, next=149
+                              KindIdentifier "arg" [707, 724), i=147, next=148
+                              KindIdentifier "strProp" [725, 732), i=148, next=0
+                            KindEqualsToken [732, 734), i=149, next=150
+                            KindStringLiteral "hello" [734, 742), i=150, next=0

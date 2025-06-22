@@ -1,0 +1,86 @@
+KindSourceFile [0, 268), i=1, next=0
+  NodeList [0, 268), i=2, next=0
+    KindClassDeclaration [0, 189), i=3, next=50
+      KindIdentifier "Bar" [5, 9), i=4, next=5
+      NodeList [10, 11), i=5, next=8
+        KindTypeParameter [10, 11), i=6, next=0
+          KindIdentifier "T" [10, 11), i=7, next=0
+      NodeList [14, 186), i=8, next=0
+        KindPropertyDeclaration [14, 40), i=9, next=14
+          NodeList [14, 26), i=10, next=12
+            KindPublicKeyword [14, 26), i=11, next=0
+          KindIdentifier "size" [26, 31), i=12, next=13
+          KindNumberKeyword [32, 39), i=13, next=0
+        KindPropertyDeclaration [40, 57), i=14, next=20
+          NodeList [40, 51), i=15, next=17
+            KindPublicKeyword [40, 51), i=16, next=0
+          KindIdentifier "t" [51, 53), i=17, next=18
+          KindTypeReference [54, 56), i=18, next=0
+            KindIdentifier "T" [54, 56), i=19, next=0
+        KindConstructor [57, 118), i=20, next=34
+          NodeList [75, 84), i=21, next=25
+            KindParameter [75, 84), i=22, next=0
+              KindIdentifier "x" [75, 76), i=23, next=24
+              KindNumberKeyword [77, 84), i=24, next=0
+          KindBlock [85, 118), i=25, next=0
+            NodeList [87, 111), i=26, next=0
+              KindExpressionStatement [87, 111), i=27, next=0
+                KindBinaryExpression [87, 110), i=28, next=0
+                  KindPropertyAccessExpression [87, 106), i=29, next=32
+                    KindThisKeyword [87, 101), i=30, next=31
+                    KindIdentifier "size" [102, 106), i=31, next=0
+                  KindEqualsToken [106, 108), i=32, next=33
+                  KindIdentifier "x" [108, 110), i=33, next=0
+        KindMethodDeclaration [118, 186), i=34, next=0
+          NodeList [118, 130), i=35, next=37
+            KindPublicKeyword [118, 130), i=36, next=0
+          KindIdentifier "clone" [130, 136), i=37, next=38
+          KindBlock [138, 186), i=38, next=0
+            NodeList [140, 179), i=39, next=0
+              KindReturnStatement [140, 179), i=40, next=0
+                KindNewExpression [156, 178), i=41, next=0
+                  KindIdentifier "Bar" [160, 164), i=42, next=43
+                  NodeList [165, 166), i=43, next=46
+                    KindTypeReference [165, 166), i=44, next=0
+                      KindIdentifier "T" [165, 166), i=45, next=0
+                  NodeList [168, 177), i=46, next=0
+                    KindPropertyAccessExpression [168, 177), i=47, next=0
+                      KindThisKeyword [168, 172), i=48, next=49
+                      KindIdentifier "size" [173, 177), i=49, next=0
+    KindVariableStatement [189, 210), i=50, next=59
+      KindVariableDeclarationList [189, 209), i=51, next=0
+        NodeList [194, 209), i=52, next=0
+          KindVariableDeclaration [194, 209), i=53, next=0
+            KindIdentifier "b" [194, 196), i=54, next=55
+            KindTypeReference [197, 209), i=55, next=0
+              KindIdentifier "Bar" [197, 201), i=56, next=57
+              NodeList [202, 208), i=57, next=0
+                KindNumberKeyword [202, 208), i=58, next=0
+    KindVariableStatement [210, 231), i=59, next=68
+      KindVariableDeclarationList [210, 230), i=60, next=0
+        NodeList [215, 230), i=61, next=0
+          KindVariableDeclaration [215, 230), i=62, next=0
+            KindIdentifier "b2" [215, 218), i=63, next=64
+            KindCallExpression [220, 230), i=64, next=0
+              KindPropertyAccessExpression [220, 228), i=65, next=0
+                KindIdentifier "b" [220, 222), i=66, next=67
+                KindIdentifier "clone" [223, 228), i=67, next=0
+    KindVariableStatement [231, 252), i=68, next=77
+      KindVariableDeclarationList [231, 251), i=69, next=0
+        NodeList [235, 251), i=70, next=0
+          KindVariableDeclaration [235, 251), i=71, next=0
+            KindIdentifier "b3" [235, 238), i=72, next=73
+            KindTypeReference [239, 251), i=73, next=0
+              KindIdentifier "Bar" [239, 243), i=74, next=75
+              NodeList [244, 250), i=75, next=0
+                KindStringKeyword [244, 250), i=76, next=0
+    KindExpressionStatement [252, 260), i=77, next=82
+      KindBinaryExpression [252, 259), i=78, next=0
+        KindIdentifier "b" [252, 254), i=79, next=80
+        KindEqualsToken [254, 256), i=80, next=81
+        KindIdentifier "b2" [256, 259), i=81, next=0
+    KindExpressionStatement [260, 268), i=82, next=0
+      KindBinaryExpression [260, 267), i=83, next=0
+        KindIdentifier "b" [260, 262), i=84, next=85
+        KindEqualsToken [262, 264), i=85, next=86
+        KindIdentifier "b3" [264, 267), i=86, next=0

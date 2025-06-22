@@ -1,0 +1,54 @@
+KindSourceFile [0, 210), i=1, next=0
+  NodeList [0, 210), i=2, next=0
+    KindFunctionDeclaration [0, 183), i=3, next=47
+      NodeList [0, 5), i=4, next=6
+        KindAsyncKeyword [0, 5), i=5, next=0
+      KindIdentifier "compute" [14, 22), i=6, next=7
+      NodeList [23, 44), i=7, next=14
+        KindParameter [23, 44), i=8, next=0
+          KindIdentifier "promise" [23, 30), i=9, next=10
+          KindTypeReference [31, 44), i=10, next=0
+            KindIdentifier "Promise" [31, 39), i=11, next=12
+            NodeList [40, 43), i=12, next=0
+              KindAnyKeyword [40, 43), i=13, next=0
+      KindBlock [45, 183), i=14, next=0
+        NodeList [47, 180), i=15, next=0
+          KindVariableStatement [47, 75), i=16, next=23
+            KindVariableDeclarationList [47, 74), i=17, next=0
+              NodeList [56, 74), i=18, next=0
+                KindVariableDeclaration [56, 74), i=19, next=0
+                  KindIdentifier "j" [56, 58), i=20, next=21
+                  KindAwaitExpression [60, 74), i=21, next=0
+                    KindIdentifier "promise" [66, 74), i=22, next=0
+          KindIfStatement [75, 159), i=23, next=42
+            KindPrefixUnaryExpression [85, 87), i=24, next=26
+              KindIdentifier "j" [86, 87), i=25, next=0
+            KindBlock [88, 159), i=26, next=0
+              NodeList [90, 152), i=27, next=0
+                KindExpressionStatement [90, 124), i=28, next=37
+                  KindBinaryExpression [90, 123), i=29, next=0
+                    KindIdentifier "j" [90, 101), i=30, next=31
+                    KindEqualsToken [101, 103), i=31, next=32
+                    KindAwaitExpression [103, 123), i=32, next=0
+                      KindCallExpression [109, 123), i=33, next=0
+                        KindImportKeyword [109, 116), i=34, next=35
+                        NodeList [117, 122), i=35, next=0
+                          KindStringLiteral "./1" [117, 122), i=36, next=0
+                KindReturnStatement [124, 152), i=37, next=0
+                  KindCallExpression [140, 151), i=38, next=0
+                    KindPropertyAccessExpression [140, 149), i=39, next=0
+                      KindIdentifier "j" [140, 142), i=40, next=41
+                      KindIdentifier "backup" [143, 149), i=41, next=0
+          KindReturnStatement [159, 180), i=42, next=0
+            KindCallExpression [171, 179), i=43, next=0
+              KindPropertyAccessExpression [171, 177), i=44, next=0
+                KindIdentifier "j" [171, 173), i=45, next=46
+                KindIdentifier "foo" [174, 177), i=46, next=0
+    KindExpressionStatement [183, 210), i=47, next=0
+      KindCallExpression [183, 209), i=48, next=0
+        KindIdentifier "compute" [183, 194), i=49, next=50
+        NodeList [195, 208), i=50, next=0
+          KindCallExpression [195, 208), i=51, next=0
+            KindImportKeyword [195, 201), i=52, next=53
+            NodeList [202, 207), i=53, next=0
+              KindStringLiteral "./0" [202, 207), i=54, next=0

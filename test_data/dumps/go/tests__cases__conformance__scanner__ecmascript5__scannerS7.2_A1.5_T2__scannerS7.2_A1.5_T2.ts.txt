@@ -1,0 +1,45 @@
+KindSourceFile [0, 422), i=1, next=0
+  NodeList [0, 419), i=2, next=0
+    KindExpressionStatement [0, 221), i=3, next=8
+      KindCallExpression [0, 220), i=4, next=0
+        KindIdentifier "eval" [0, 190), i=5, next=6
+        NodeList [191, 219), i=6, next=0
+          KindStringLiteral " var x = 1 " [191, 219), i=7, next=0
+    KindIfStatement [221, 318), i=8, next=24
+      KindBinaryExpression [226, 233), i=9, next=13
+        KindIdentifier "x" [226, 227), i=10, next=11
+        KindExclamationEqualsEqualsToken [227, 231), i=11, next=12
+        KindNumericLiteral [231, 233), i=12, next=0
+      KindBlock [234, 318), i=13, next=0
+        NodeList [236, 316), i=14, next=0
+          KindExpressionStatement [236, 316), i=15, next=0
+            KindCallExpression [236, 315), i=16, next=0
+              KindIdentifier "$ERROR" [236, 245), i=17, next=18
+              NodeList [246, 314), i=18, next=0
+                KindBinaryExpression [246, 314), i=19, next=0
+                  KindStringLiteral "#1: eval("\u00A0var x\u00A0= 1\u00A0"); x === 1. Actual: " [246, 308), i=20, next=21
+                  KindPlusToken [308, 310), i=21, next=22
+                  KindParenthesizedExpression [310, 314), i=22, next=0
+                    KindIdentifier "x" [312, 313), i=23, next=0
+    KindVariableStatement [318, 345), i=24, next=30
+      KindVariableDeclarationList [318, 342), i=25, next=0
+        NodeList [335, 342), i=26, next=0
+          KindVariableDeclaration [335, 342), i=27, next=0
+            KindIdentifier "x" [335, 337), i=28, next=29
+            KindNumericLiteral [340, 342), i=29, next=0
+    KindIfStatement [345, 419), i=30, next=0
+      KindBinaryExpression [350, 357), i=31, next=35
+        KindIdentifier "x" [350, 351), i=32, next=33
+        KindExclamationEqualsEqualsToken [351, 355), i=33, next=34
+        KindNumericLiteral [355, 357), i=34, next=0
+      KindBlock [358, 419), i=35, next=0
+        NodeList [360, 417), i=36, next=0
+          KindExpressionStatement [360, 417), i=37, next=0
+            KindCallExpression [360, 416), i=38, next=0
+              KindIdentifier "$ERROR" [360, 369), i=39, next=40
+              NodeList [370, 415), i=40, next=0
+                KindBinaryExpression [370, 415), i=41, next=0
+                  KindStringLiteral "#2:  var x = 1 ; x === 1. Actual: " [370, 409), i=42, next=43
+                  KindPlusToken [409, 411), i=43, next=44
+                  KindParenthesizedExpression [411, 415), i=44, next=0
+                    KindIdentifier "x" [413, 414), i=45, next=0

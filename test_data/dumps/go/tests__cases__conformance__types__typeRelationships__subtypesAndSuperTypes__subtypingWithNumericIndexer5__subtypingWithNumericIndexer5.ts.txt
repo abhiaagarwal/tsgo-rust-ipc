@@ -1,0 +1,194 @@
+KindSourceFile [0, 861), i=1, next=0
+  NodeList [0, 861), i=2, next=0
+    KindInterfaceDeclaration [0, 31), i=3, next=9
+      KindIdentifier "Base" [9, 14), i=4, next=5
+      NodeList [16, 29), i=5, next=0
+        KindPropertySignature [16, 29), i=6, next=0
+          KindIdentifier "foo" [16, 20), i=7, next=8
+          KindStringKeyword [21, 28), i=8, next=0
+    KindInterfaceDeclaration [31, 80), i=9, next=20
+      KindIdentifier "Derived" [42, 50), i=10, next=11
+      NodeList [50, 63), i=11, next=16
+        KindHeritageClause [50, 63), i=12, next=0
+          NodeList [58, 63), i=13, next=0
+            KindExpressionWithTypeArguments [58, 63), i=14, next=0
+              KindIdentifier "Base" [58, 63), i=15, next=0
+      NodeList [65, 78), i=16, next=0
+        KindPropertySignature [65, 78), i=17, next=0
+          KindIdentifier "bar" [65, 69), i=18, next=19
+          KindStringKeyword [70, 77), i=19, next=0
+    KindInterfaceDeclaration [80, 133), i=20, next=31
+      KindIdentifier "Derived2" [91, 100), i=21, next=22
+      NodeList [100, 116), i=22, next=27
+        KindHeritageClause [100, 116), i=23, next=0
+          NodeList [108, 116), i=24, next=0
+            KindExpressionWithTypeArguments [108, 116), i=25, next=0
+              KindIdentifier "Derived" [108, 116), i=26, next=0
+      NodeList [118, 131), i=27, next=0
+        KindPropertySignature [118, 131), i=28, next=0
+          KindIdentifier "baz" [118, 122), i=29, next=30
+          KindStringKeyword [123, 130), i=30, next=0
+    KindInterfaceDeclaration [133, 180), i=31, next=41
+      KindIdentifier "A" [146, 148), i=32, next=33
+      NodeList [150, 177), i=33, next=0
+        KindIndexSignature [150, 177), i=34, next=0
+          NodeList [157, 166), i=35, next=39
+            KindParameter [157, 166), i=36, next=0
+              KindIdentifier "x" [157, 158), i=37, next=38
+              KindNumberKeyword [159, 166), i=38, next=0
+          KindTypeReference [168, 176), i=39, next=0
+            KindIdentifier "Derived" [168, 176), i=40, next=0
+    KindClassDeclaration [180, 242), i=41, next=56
+      KindIdentifier "B" [189, 191), i=42, next=43
+      NodeList [191, 204), i=43, next=48
+        KindHeritageClause [191, 204), i=44, next=0
+          NodeList [202, 204), i=45, next=0
+            KindExpressionWithTypeArguments [202, 204), i=46, next=0
+              KindIdentifier "A" [202, 204), i=47, next=0
+      NodeList [206, 230), i=48, next=0
+        KindIndexSignature [206, 230), i=49, next=0
+          NodeList [213, 222), i=50, next=54
+            KindParameter [213, 222), i=51, next=0
+              KindIdentifier "x" [213, 214), i=52, next=53
+              KindStringKeyword [215, 222), i=53, next=0
+          KindTypeReference [224, 229), i=54, next=0
+            KindIdentifier "Base" [224, 229), i=55, next=0
+    KindClassDeclaration [242, 306), i=56, next=71
+      KindIdentifier "B2" [251, 254), i=57, next=58
+      NodeList [254, 267), i=58, next=63
+        KindHeritageClause [254, 267), i=59, next=0
+          NodeList [265, 267), i=60, next=0
+            KindExpressionWithTypeArguments [265, 267), i=61, next=0
+              KindIdentifier "A" [265, 267), i=62, next=0
+      NodeList [269, 297), i=63, next=0
+        KindIndexSignature [269, 297), i=64, next=0
+          NodeList [276, 285), i=65, next=69
+            KindParameter [276, 285), i=66, next=0
+              KindIdentifier "x" [276, 277), i=67, next=68
+              KindStringKeyword [278, 285), i=68, next=0
+          KindTypeReference [287, 296), i=69, next=0
+            KindIdentifier "Derived2" [287, 296), i=70, next=0
+    KindModuleDeclaration [306, 861), i=71, next=0
+      KindIdentifier "Generics" [316, 325), i=72, next=73
+      KindModuleBlock [325, 861), i=73, next=0
+        NodeList [327, 858), i=74, next=0
+          KindInterfaceDeclaration [327, 394), i=75, next=90
+            KindIdentifier "A" [342, 344), i=76, next=77
+            NodeList [345, 359), i=77, next=82
+              KindTypeParameter [345, 359), i=78, next=0
+                KindIdentifier "T" [345, 346), i=79, next=80
+                KindTypeReference [354, 359), i=80, next=0
+                  KindIdentifier "Base" [354, 359), i=81, next=0
+            NodeList [362, 387), i=82, next=0
+              KindIndexSignature [362, 387), i=83, next=0
+                NodeList [373, 382), i=84, next=88
+                  KindParameter [373, 382), i=85, next=0
+                    KindIdentifier "x" [373, 374), i=86, next=87
+                    KindNumberKeyword [375, 382), i=87, next=0
+                KindTypeReference [384, 386), i=88, next=0
+                  KindIdentifier "T" [384, 386), i=89, next=0
+          KindClassDeclaration [394, 474), i=90, next=108
+            KindIdentifier "B" [407, 409), i=91, next=92
+            NodeList [409, 428), i=92, next=100
+              KindHeritageClause [409, 428), i=93, next=0
+                NodeList [420, 428), i=94, next=0
+                  KindExpressionWithTypeArguments [420, 428), i=95, next=0
+                    KindIdentifier "A" [420, 422), i=96, next=97
+                    NodeList [423, 427), i=97, next=0
+                      KindTypeReference [423, 427), i=98, next=0
+                        KindIdentifier "Base" [423, 427), i=99, next=0
+            NodeList [430, 461), i=100, next=0
+              KindIndexSignature [430, 461), i=101, next=0
+                NodeList [441, 450), i=102, next=106
+                  KindParameter [441, 450), i=103, next=0
+                    KindIdentifier "x" [441, 442), i=104, next=105
+                    KindStringKeyword [443, 450), i=105, next=0
+                KindTypeReference [452, 460), i=106, next=0
+                  KindIdentifier "Derived" [452, 460), i=107, next=0
+          KindClassDeclaration [474, 559), i=108, next=126
+            KindIdentifier "B2" [487, 490), i=109, next=110
+            NodeList [490, 512), i=110, next=118
+              KindHeritageClause [490, 512), i=111, next=0
+                NodeList [501, 512), i=112, next=0
+                  KindExpressionWithTypeArguments [501, 512), i=113, next=0
+                    KindIdentifier "A" [501, 503), i=114, next=115
+                    NodeList [504, 511), i=115, next=0
+                      KindTypeReference [504, 511), i=116, next=0
+                        KindIdentifier "Derived" [504, 511), i=117, next=0
+            NodeList [514, 546), i=118, next=0
+              KindIndexSignature [514, 546), i=119, next=0
+                NodeList [525, 534), i=120, next=124
+                  KindParameter [525, 534), i=121, next=0
+                    KindIdentifier "x" [525, 526), i=122, next=123
+                    KindStringKeyword [527, 534), i=123, next=0
+                KindTypeReference [536, 545), i=124, next=0
+                  KindIdentifier "Derived2" [536, 545), i=125, next=0
+          KindClassDeclaration [559, 656), i=126, next=149
+            KindIdentifier "B3" [572, 575), i=127, next=128
+            NodeList [576, 593), i=128, next=133
+              KindTypeParameter [576, 593), i=129, next=0
+                KindIdentifier "T" [576, 577), i=130, next=131
+                KindTypeReference [585, 593), i=131, next=0
+                  KindIdentifier "Derived" [585, 593), i=132, next=0
+            NodeList [594, 610), i=133, next=141
+              KindHeritageClause [594, 610), i=134, next=0
+                NodeList [605, 610), i=135, next=0
+                  KindExpressionWithTypeArguments [605, 610), i=136, next=0
+                    KindIdentifier "A" [605, 607), i=137, next=138
+                    NodeList [608, 609), i=138, next=0
+                      KindTypeReference [608, 609), i=139, next=0
+                        KindIdentifier "T" [608, 609), i=140, next=0
+            NodeList [612, 640), i=141, next=0
+              KindIndexSignature [612, 640), i=142, next=0
+                NodeList [623, 632), i=143, next=147
+                  KindParameter [623, 632), i=144, next=0
+                    KindIdentifier "x" [623, 624), i=145, next=146
+                    KindStringKeyword [625, 632), i=146, next=0
+                KindTypeReference [634, 639), i=147, next=0
+                  KindIdentifier "Base" [634, 639), i=148, next=0
+          KindClassDeclaration [656, 756), i=149, next=172
+            KindIdentifier "B4" [669, 672), i=150, next=151
+            NodeList [673, 690), i=151, next=156
+              KindTypeParameter [673, 690), i=152, next=0
+                KindIdentifier "T" [673, 674), i=153, next=154
+                KindTypeReference [682, 690), i=154, next=0
+                  KindIdentifier "Derived" [682, 690), i=155, next=0
+            NodeList [691, 707), i=156, next=164
+              KindHeritageClause [691, 707), i=157, next=0
+                NodeList [702, 707), i=158, next=0
+                  KindExpressionWithTypeArguments [702, 707), i=159, next=0
+                    KindIdentifier "A" [702, 704), i=160, next=161
+                    NodeList [705, 706), i=161, next=0
+                      KindTypeReference [705, 706), i=162, next=0
+                        KindIdentifier "T" [705, 706), i=163, next=0
+            NodeList [709, 740), i=164, next=0
+              KindIndexSignature [709, 740), i=165, next=0
+                NodeList [720, 729), i=166, next=170
+                  KindParameter [720, 729), i=167, next=0
+                    KindIdentifier "x" [720, 721), i=168, next=169
+                    KindStringKeyword [722, 729), i=169, next=0
+                KindTypeReference [731, 739), i=170, next=0
+                  KindIdentifier "Derived" [731, 739), i=171, next=0
+          KindClassDeclaration [756, 858), i=172, next=0
+            KindIdentifier "B5" [769, 772), i=173, next=174
+            NodeList [773, 791), i=174, next=179
+              KindTypeParameter [773, 791), i=175, next=0
+                KindIdentifier "T" [773, 774), i=176, next=177
+                KindTypeReference [782, 791), i=177, next=0
+                  KindIdentifier "Derived2" [782, 791), i=178, next=0
+            NodeList [792, 808), i=179, next=187
+              KindHeritageClause [792, 808), i=180, next=0
+                NodeList [803, 808), i=181, next=0
+                  KindExpressionWithTypeArguments [803, 808), i=182, next=0
+                    KindIdentifier "A" [803, 805), i=183, next=184
+                    NodeList [806, 807), i=184, next=0
+                      KindTypeReference [806, 807), i=185, next=0
+                        KindIdentifier "T" [806, 807), i=186, next=0
+            NodeList [810, 842), i=187, next=0
+              KindIndexSignature [810, 842), i=188, next=0
+                NodeList [821, 830), i=189, next=193
+                  KindParameter [821, 830), i=190, next=0
+                    KindIdentifier "x" [821, 822), i=191, next=192
+                    KindStringKeyword [823, 830), i=192, next=0
+                KindTypeReference [832, 841), i=193, next=0
+                  KindIdentifier "Derived2" [832, 841), i=194, next=0

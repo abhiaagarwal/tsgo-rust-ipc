@@ -1,0 +1,116 @@
+KindSourceFile [0, 445), i=1, next=0
+  NodeList [0, 443), i=2, next=0
+    KindClassDeclaration [0, 29), i=3, next=5
+      KindIdentifier "AsyncEnumeratorDone" [5, 25), i=4, next=0
+    KindEmptyStatement [29, 30), i=5, next=6
+    KindInterfaceDeclaration [30, 246), i=6, next=61
+      KindIdentifier "IAsyncEnumerator" [43, 60), i=7, next=8
+      NodeList [61, 62), i=8, next=11
+        KindTypeParameter [61, 62), i=9, next=0
+          KindIdentifier "T" [61, 62), i=10, next=0
+      NodeList [65, 243), i=11, next=0
+        KindMethodSignature [65, 113), i=12, next=23
+          KindIdentifier "next1" [65, 76), i=13, next=14
+          KindTypeReference [79, 112), i=14, next=0
+            KindIdentifier "Promise" [79, 87), i=15, next=16
+            NodeList [88, 111), i=16, next=0
+              KindUnionType [88, 111), i=17, next=0
+                NodeList [88, 111), i=18, next=0
+                  KindTypeReference [88, 89), i=19, next=21
+                    KindIdentifier "T" [88, 89), i=20, next=0
+                  KindTypeReference [91, 111), i=21, next=0
+                    KindIdentifier "AsyncEnumeratorDone" [91, 111), i=22, next=0
+        KindMethodSignature [113, 170), i=23, next=37
+          KindIdentifier "next2" [113, 124), i=24, next=25
+          KindUnionType [127, 169), i=25, next=0
+            NodeList [127, 169), i=26, next=0
+              KindTypeReference [127, 138), i=27, next=32
+                KindIdentifier "Promise" [127, 135), i=28, next=29
+                NodeList [136, 137), i=29, next=0
+                  KindTypeReference [136, 137), i=30, next=0
+                    KindIdentifier "T" [136, 137), i=31, next=0
+              KindTypeReference [140, 169), i=32, next=0
+                KindIdentifier "Promise" [140, 148), i=33, next=34
+                NodeList [149, 168), i=34, next=0
+                  KindTypeReference [149, 168), i=35, next=0
+                    KindIdentifier "AsyncEnumeratorDone" [149, 168), i=36, next=0
+        KindMethodSignature [170, 201), i=37, next=47
+          KindIdentifier "next3" [170, 181), i=38, next=39
+          KindTypeReference [184, 200), i=39, next=0
+            KindIdentifier "Promise" [184, 192), i=40, next=41
+            NodeList [193, 199), i=41, next=0
+              KindUnionType [193, 199), i=42, next=0
+                NodeList [193, 199), i=43, next=0
+                  KindTypeReference [193, 194), i=44, next=46
+                    KindIdentifier "T" [193, 194), i=45, next=0
+                  KindTypeLiteral [196, 199), i=46, next=0
+        KindMethodSignature [201, 243), i=47, next=0
+          KindIdentifier "next4" [201, 212), i=48, next=49
+          KindTypeReference [215, 242), i=49, next=0
+            KindIdentifier "Promise" [215, 223), i=50, next=51
+            NodeList [224, 241), i=51, next=0
+              KindUnionType [224, 241), i=52, next=0
+                NodeList [224, 241), i=53, next=0
+                  KindTypeReference [224, 225), i=54, next=56
+                    KindIdentifier "T" [224, 225), i=55, next=0
+                  KindTypeLiteral [227, 241), i=56, next=0
+                    NodeList [229, 239), i=57, next=0
+                      KindPropertySignature [229, 239), i=58, next=0
+                        KindIdentifier "x" [229, 231), i=59, next=60
+                        KindStringKeyword [232, 239), i=60, next=0
+    KindFunctionDeclaration [246, 443), i=61, next=0
+      NodeList [246, 255), i=62, next=64
+        KindAsyncKeyword [246, 255), i=63, next=0
+      KindIdentifier "main" [264, 269), i=64, next=65
+      KindBlock [271, 443), i=65, next=0
+        NodeList [273, 440), i=66, next=0
+          KindVariableStatement [273, 320), i=67, next=77
+            KindVariableDeclarationList [273, 319), i=68, next=0
+              NodeList [284, 319), i=69, next=0
+                KindVariableDeclaration [284, 319), i=70, next=0
+                  KindIdentifier "x" [284, 286), i=71, next=72
+                  KindTypeReference [287, 312), i=72, next=76
+                    KindIdentifier "IAsyncEnumerator" [287, 304), i=73, next=74
+                    NodeList [305, 311), i=74, next=0
+                      KindNumberKeyword [305, 311), i=75, next=0
+                  KindNullKeyword [314, 319), i=76, next=0
+          KindVariableStatement [320, 350), i=77, next=87
+            KindVariableDeclarationList [320, 349), i=78, next=0
+              NodeList [329, 349), i=79, next=0
+                KindVariableDeclaration [329, 349), i=80, next=0
+                  KindIdentifier "a" [329, 331), i=81, next=82
+                  KindAwaitExpression [333, 349), i=82, next=0
+                    KindCallExpression [339, 349), i=83, next=0
+                      KindPropertyAccessExpression [339, 347), i=84, next=0
+                        KindIdentifier "x" [339, 341), i=85, next=86
+                        KindIdentifier "next1" [342, 347), i=86, next=0
+          KindVariableStatement [350, 380), i=87, next=97
+            KindVariableDeclarationList [350, 379), i=88, next=0
+              NodeList [359, 379), i=89, next=0
+                KindVariableDeclaration [359, 379), i=90, next=0
+                  KindIdentifier "b" [359, 361), i=91, next=92
+                  KindAwaitExpression [363, 379), i=92, next=0
+                    KindCallExpression [369, 379), i=93, next=0
+                      KindPropertyAccessExpression [369, 377), i=94, next=0
+                        KindIdentifier "x" [369, 371), i=95, next=96
+                        KindIdentifier "next2" [372, 377), i=96, next=0
+          KindVariableStatement [380, 410), i=97, next=107
+            KindVariableDeclarationList [380, 409), i=98, next=0
+              NodeList [389, 409), i=99, next=0
+                KindVariableDeclaration [389, 409), i=100, next=0
+                  KindIdentifier "c" [389, 391), i=101, next=102
+                  KindAwaitExpression [393, 409), i=102, next=0
+                    KindCallExpression [399, 409), i=103, next=0
+                      KindPropertyAccessExpression [399, 407), i=104, next=0
+                        KindIdentifier "x" [399, 401), i=105, next=106
+                        KindIdentifier "next3" [402, 407), i=106, next=0
+          KindVariableStatement [410, 440), i=107, next=0
+            KindVariableDeclarationList [410, 439), i=108, next=0
+              NodeList [419, 439), i=109, next=0
+                KindVariableDeclaration [419, 439), i=110, next=0
+                  KindIdentifier "d" [419, 421), i=111, next=112
+                  KindAwaitExpression [423, 439), i=112, next=0
+                    KindCallExpression [429, 439), i=113, next=0
+                      KindPropertyAccessExpression [429, 437), i=114, next=0
+                        KindIdentifier "x" [429, 431), i=115, next=116
+                        KindIdentifier "next4" [432, 437), i=116, next=0

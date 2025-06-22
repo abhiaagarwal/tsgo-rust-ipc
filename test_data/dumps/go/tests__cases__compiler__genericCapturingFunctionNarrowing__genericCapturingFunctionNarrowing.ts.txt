@@ -1,0 +1,98 @@
+KindSourceFile [0, 608), i=1, next=0
+  NodeList [0, 608), i=2, next=0
+    KindFunctionDeclaration [0, 608), i=3, next=0
+      KindIdentifier "needsToNarrowTheType" [8, 29), i=4, next=5
+      NodeList [30, 161), i=5, next=35
+        KindTypeParameter [30, 59), i=6, next=13
+          KindIdentifier "First" [30, 35), i=7, next=8
+          KindTypeLiteral [43, 59), i=8, next=0
+            NodeList [45, 57), i=9, next=0
+              KindPropertySignature [45, 57), i=10, next=0
+                KindIdentifier "foo" [45, 49), i=11, next=12
+                KindStringKeyword [50, 57), i=12, next=0
+        KindTypeParameter [60, 91), i=13, next=20
+          KindIdentifier "Second" [60, 67), i=14, next=15
+          KindTypeLiteral [75, 91), i=15, next=0
+            NodeList [77, 89), i=16, next=0
+              KindPropertySignature [77, 89), i=17, next=0
+                KindIdentifier "bar" [77, 81), i=18, next=19
+                KindStringKeyword [82, 89), i=19, next=0
+        KindTypeParameter [92, 115), i=20, next=24
+          KindIdentifier "SubFirst" [92, 101), i=21, next=22
+          KindTypeReference [109, 115), i=22, next=0
+            KindIdentifier "First" [109, 115), i=23, next=0
+        KindTypeParameter [116, 161), i=24, next=0
+          KindIdentifier "SubFirstMore" [116, 129), i=25, next=26
+          KindIntersectionType [137, 161), i=26, next=0
+            NodeList [137, 161), i=27, next=0
+              KindTypeReference [137, 143), i=28, next=30
+                KindIdentifier "First" [137, 143), i=29, next=0
+              KindTypeLiteral [145, 161), i=30, next=0
+                NodeList [147, 160), i=31, next=0
+                  KindPropertySignature [147, 160), i=32, next=0
+                    KindIdentifier "other" [147, 152), i=33, next=34
+                    KindStringKeyword [153, 160), i=34, next=0
+      NodeList [163, 210), i=35, next=48
+        KindParameter [163, 210), i=36, next=0
+          KindIdentifier "thing" [163, 168), i=37, next=38
+          KindUnionType [169, 210), i=38, next=0
+            NodeList [169, 210), i=39, next=0
+              KindTypeReference [169, 175), i=40, next=42
+                KindIdentifier "First" [169, 175), i=41, next=0
+              KindTypeReference [177, 186), i=42, next=44
+                KindIdentifier "SubFirst" [177, 186), i=43, next=0
+              KindTypeReference [188, 201), i=44, next=46
+                KindIdentifier "SubFirstMore" [188, 201), i=45, next=0
+              KindTypeReference [203, 210), i=46, next=0
+                KindIdentifier "Second" [203, 210), i=47, next=0
+      KindBlock [211, 608), i=48, next=0
+        NodeList [213, 605), i=49, next=0
+          KindIfStatement [213, 501), i=50, next=77
+            KindCallExpression [223, 237), i=51, next=55
+              KindIdentifier "hasAFoo" [223, 230), i=52, next=53
+              NodeList [231, 236), i=53, next=0
+                KindIdentifier "thing" [231, 236), i=54, next=0
+            KindBlock [238, 280), i=55, next=66
+              NodeList [240, 273), i=56, next=0
+                KindExpressionStatement [240, 273), i=57, next=0
+                  KindCallExpression [240, 272), i=58, next=0
+                    KindPropertyAccessExpression [240, 261), i=59, next=62
+                      KindIdentifier "console" [240, 257), i=60, next=61
+                      KindIdentifier "log" [258, 261), i=61, next=0
+                    NodeList [262, 271), i=62, next=0
+                      KindPropertyAccessExpression [262, 271), i=63, next=0
+                        KindIdentifier "thing" [262, 267), i=64, next=65
+                        KindIdentifier "foo" [268, 271), i=65, next=0
+            KindBlock [290, 501), i=66, next=0
+              NodeList [292, 428), i=67, next=0
+                KindExpressionStatement [292, 428), i=68, next=0
+                  KindCallExpression [292, 427), i=69, next=0
+                    KindPropertyAccessExpression [292, 416), i=70, next=73
+                      KindIdentifier "console" [292, 412), i=71, next=72
+                      KindIdentifier "log" [413, 416), i=72, next=0
+                    NodeList [417, 426), i=73, next=0
+                      KindPropertyAccessExpression [417, 426), i=74, next=0
+                        KindIdentifier "thing" [417, 422), i=75, next=76
+                        KindIdentifier "bar" [423, 426), i=76, next=0
+          KindFunctionDeclaration [501, 605), i=77, next=0
+            KindIdentifier "hasAFoo" [517, 525), i=78, next=79
+            NodeList [526, 547), i=79, next=88
+              KindParameter [526, 547), i=80, next=0
+                KindIdentifier "value" [526, 531), i=81, next=82
+                KindUnionType [532, 547), i=82, next=0
+                  NodeList [532, 547), i=83, next=0
+                    KindTypeReference [532, 538), i=84, next=86
+                      KindIdentifier "First" [532, 538), i=85, next=0
+                    KindTypeReference [540, 547), i=86, next=0
+                      KindIdentifier "Second" [540, 547), i=87, next=0
+            KindTypePredicate [549, 564), i=88, next=92
+              KindIdentifier "value" [549, 555), i=89, next=90
+              KindTypeReference [558, 564), i=90, next=0
+                KindIdentifier "First" [558, 564), i=91, next=0
+            KindBlock [564, 605), i=92, next=0
+              NodeList [566, 598), i=93, next=0
+                KindReturnStatement [566, 598), i=94, next=0
+                  KindBinaryExpression [582, 597), i=95, next=0
+                    KindStringLiteral "foo" [582, 588), i=96, next=97
+                    KindInKeyword [588, 591), i=97, next=98
+                    KindIdentifier "value" [591, 597), i=98, next=0

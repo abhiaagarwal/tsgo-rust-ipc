@@ -1,0 +1,70 @@
+KindSourceFile [0, 215), i=1, next=0
+  NodeList [0, 215), i=2, next=0
+    KindClassDeclaration [0, 26), i=3, next=9
+      KindIdentifier "Animal" [5, 12), i=4, next=5
+      NodeList [14, 24), i=5, next=0
+        KindMethodDeclaration [14, 24), i=6, next=0
+          KindIdentifier "run" [14, 18), i=7, next=8
+          KindBlock [20, 24), i=8, next=0
+    KindClassDeclaration [26, 61), i=9, next=19
+      KindIdentifier "Cat" [33, 37), i=10, next=11
+      NodeList [37, 52), i=11, next=16
+        KindHeritageClause [37, 52), i=12, next=0
+          NodeList [45, 52), i=13, next=0
+            KindExpressionWithTypeArguments [45, 52), i=14, next=0
+              KindIdentifier "Animal" [45, 52), i=15, next=0
+      NodeList [54, 59), i=16, next=0
+        KindPropertyDeclaration [54, 59), i=17, next=0
+          KindIdentifier "meow" [54, 59), i=18, next=0
+    KindClassDeclaration [61, 96), i=19, next=29
+      KindIdentifier "Dog" [68, 72), i=20, next=21
+      NodeList [72, 87), i=21, next=26
+        KindHeritageClause [72, 87), i=22, next=0
+          NodeList [80, 87), i=23, next=0
+            KindExpressionWithTypeArguments [80, 87), i=24, next=0
+              KindIdentifier "Animal" [80, 87), i=25, next=0
+      NodeList [89, 94), i=26, next=0
+        KindPropertyDeclaration [89, 94), i=27, next=0
+          KindIdentifier "woof" [89, 94), i=28, next=0
+    KindFunctionDeclaration [96, 142), i=29, next=43
+      KindIdentifier "run" [108, 112), i=30, next=31
+      NodeList [113, 122), i=31, next=36
+        KindParameter [113, 122), i=32, next=0
+          KindIdentifier "a" [113, 114), i=33, next=34
+          KindTypeReference [115, 122), i=34, next=0
+            KindIdentifier "Animal" [115, 122), i=35, next=0
+      KindBlock [123, 142), i=36, next=0
+        NodeList [125, 139), i=37, next=0
+          KindExpressionStatement [125, 139), i=38, next=0
+            KindCallExpression [125, 138), i=39, next=0
+              KindPropertyAccessExpression [125, 136), i=40, next=0
+                KindIdentifier "a" [125, 132), i=41, next=42
+                KindIdentifier "run" [133, 136), i=42, next=0
+    KindFunctionDeclaration [142, 215), i=43, next=0
+      KindIdentifier "f" [154, 156), i=44, next=45
+      NodeList [157, 176), i=45, next=54
+        KindTypeParameter [157, 176), i=46, next=0
+          KindIdentifier "T" [157, 158), i=47, next=48
+          KindUnionType [166, 176), i=48, next=0
+            NodeList [166, 176), i=49, next=0
+              KindTypeReference [166, 170), i=50, next=52
+                KindIdentifier "Cat" [166, 170), i=51, next=0
+              KindTypeReference [172, 176), i=52, next=0
+                KindIdentifier "Dog" [172, 176), i=53, next=0
+      NodeList [178, 182), i=54, next=59
+        KindParameter [178, 182), i=55, next=0
+          KindIdentifier "a" [178, 179), i=56, next=57
+          KindTypeReference [180, 182), i=57, next=0
+            KindIdentifier "T" [180, 182), i=58, next=0
+      KindBlock [183, 215), i=59, next=0
+        NodeList [185, 212), i=60, next=0
+          KindExpressionStatement [185, 199), i=61, next=66
+            KindCallExpression [185, 198), i=62, next=0
+              KindPropertyAccessExpression [185, 196), i=63, next=0
+                KindIdentifier "a" [185, 192), i=64, next=65
+                KindIdentifier "run" [193, 196), i=65, next=0
+          KindExpressionStatement [199, 212), i=66, next=0
+            KindCallExpression [199, 211), i=67, next=0
+              KindIdentifier "run" [199, 208), i=68, next=69
+              NodeList [209, 210), i=69, next=0
+                KindIdentifier "a" [209, 210), i=70, next=0

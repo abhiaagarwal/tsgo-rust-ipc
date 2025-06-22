@@ -1,0 +1,83 @@
+KindSourceFile [0, 362), i=1, next=0
+  NodeList [0, 360), i=2, next=0
+    KindClassDeclaration [0, 230), i=3, next=34
+      KindIdentifier "Foo" [5, 9), i=4, next=5
+      NodeList [11, 227), i=5, next=0
+        KindConstructor [11, 40), i=6, next=11
+          NodeList [29, 38), i=7, next=0
+            KindParameter [29, 38), i=8, next=0
+              KindIdentifier "s" [29, 30), i=9, next=10
+              KindStringKeyword [31, 38), i=10, next=0
+        KindConstructor [40, 69), i=11, next=16
+          NodeList [58, 67), i=12, next=0
+            KindParameter [58, 67), i=13, next=0
+              KindIdentifier "n" [58, 59), i=14, next=15
+              KindNumberKeyword [60, 67), i=15, next=0
+        KindConstructor [69, 105), i=16, next=22
+          NodeList [87, 93), i=17, next=21
+            KindParameter [87, 93), i=18, next=0
+              KindIdentifier "x" [87, 88), i=19, next=20
+              KindAnyKeyword [89, 93), i=20, next=0
+          KindBlock [94, 105), i=21, next=0
+        KindConstructor [105, 141), i=22, next=28
+          NodeList [123, 129), i=23, next=27
+            KindParameter [123, 129), i=24, next=0
+              KindIdentifier "x" [123, 124), i=25, next=26
+              KindAnyKeyword [125, 129), i=26, next=0
+          KindBlock [130, 141), i=27, next=0
+        KindMethodDeclaration [141, 184), i=28, next=31
+          KindIdentifier "bar1" [141, 151), i=29, next=30
+          KindBlock [153, 184), i=30, next=0
+        KindMethodDeclaration [184, 227), i=31, next=0
+          KindIdentifier "bar2" [184, 194), i=32, next=33
+          KindBlock [196, 227), i=33, next=0
+    KindVariableStatement [230, 258), i=34, next=43
+      KindVariableDeclarationList [230, 257), i=35, next=0
+        NodeList [237, 257), i=36, next=0
+          KindVariableDeclaration [237, 257), i=37, next=0
+            KindIdentifier "f1" [237, 240), i=38, next=39
+            KindNewExpression [242, 257), i=39, next=0
+              KindIdentifier "Foo" [246, 250), i=40, next=41
+              NodeList [251, 256), i=41, next=0
+                KindStringLiteral "hey" [251, 256), i=42, next=0
+    KindVariableStatement [258, 280), i=43, next=52
+      KindVariableDeclarationList [258, 279), i=44, next=0
+        NodeList [263, 279), i=45, next=0
+          KindVariableDeclaration [263, 279), i=46, next=0
+            KindIdentifier "f2" [263, 266), i=47, next=48
+            KindNewExpression [268, 279), i=48, next=0
+              KindIdentifier "Foo" [272, 276), i=49, next=50
+              NodeList [277, 278), i=50, next=0
+                KindNumericLiteral [277, 278), i=51, next=0
+    KindVariableStatement [280, 303), i=52, next=61
+      KindVariableDeclarationList [280, 302), i=53, next=0
+        NodeList [285, 302), i=54, next=0
+          KindVariableDeclaration [285, 302), i=55, next=0
+            KindIdentifier "f3" [285, 288), i=56, next=57
+            KindNewExpression [290, 302), i=57, next=0
+              KindIdentifier "Foo" [294, 298), i=58, next=59
+              NodeList [299, 301), i=59, next=0
+                KindIdentifier "f1" [299, 301), i=60, next=0
+    KindVariableStatement [303, 334), i=61, next=74
+      KindVariableDeclarationList [303, 333), i=62, next=0
+        NodeList [308, 333), i=63, next=0
+          KindVariableDeclaration [308, 333), i=64, next=0
+            KindIdentifier "f4" [308, 311), i=65, next=66
+            KindNewExpression [313, 333), i=66, next=0
+              KindIdentifier "Foo" [317, 321), i=67, next=68
+              NodeList [322, 332), i=68, next=0
+                KindArrayLiteralExpression [322, 332), i=69, next=0
+                  NodeList [323, 331), i=70, next=0
+                    KindIdentifier "f1" [323, 325), i=71, next=72
+                    KindIdentifier "f2" [326, 328), i=72, next=73
+                    KindIdentifier "f3" [329, 331), i=73, next=0
+    KindExpressionStatement [334, 348), i=74, next=79
+      KindCallExpression [334, 347), i=75, next=0
+        KindPropertyAccessExpression [334, 345), i=76, next=0
+          KindIdentifier "f1" [334, 340), i=77, next=78
+          KindIdentifier "bar1" [341, 345), i=78, next=0
+    KindExpressionStatement [348, 360), i=79, next=0
+      KindCallExpression [348, 359), i=80, next=0
+        KindPropertyAccessExpression [348, 357), i=81, next=0
+          KindIdentifier "f1" [348, 352), i=82, next=83
+          KindIdentifier "bar2" [353, 357), i=83, next=0

@@ -1,0 +1,117 @@
+KindSourceFile [0, 601), i=1, next=0
+  NodeList [0, 600), i=2, next=0
+    KindEnumDeclaration [0, 60), i=3, next=12
+      KindIdentifier "TerrestrialAnimalTypes" [4, 27), i=4, next=5
+      NodeList [29, 58), i=5, next=0
+        KindEnumMember [29, 43), i=6, next=9
+          KindIdentifier "CAT" [29, 35), i=7, next=8
+          KindStringLiteral "cat" [37, 43), i=8, next=0
+        KindEnumMember [44, 58), i=9, next=0
+          KindIdentifier "DOG" [44, 50), i=10, next=11
+          KindStringLiteral "dog" [52, 58), i=11, next=0
+    KindEmptyStatement [60, 61), i=12, next=13
+    KindEnumDeclaration [61, 103), i=13, next=19
+      KindIdentifier "AlienAnimalTypes" [67, 84), i=14, next=15
+      NodeList [86, 101), i=15, next=0
+        KindEnumMember [86, 100), i=16, next=0
+          KindIdentifier "CAT" [86, 92), i=17, next=18
+          KindStringLiteral "cat" [94, 100), i=18, next=0
+    KindEmptyStatement [103, 104), i=19, next=20
+    KindTypeAliasDeclaration [104, 167), i=20, next=28
+      KindIdentifier "AnimalTypes" [110, 122), i=21, next=22
+      KindUnionType [124, 166), i=22, next=0
+        NodeList [124, 166), i=23, next=0
+          KindTypeReference [124, 147), i=24, next=26
+            KindIdentifier "TerrestrialAnimalTypes" [124, 147), i=25, next=0
+          KindTypeReference [149, 166), i=26, next=0
+            KindIdentifier "AlienAnimalTypes" [149, 166), i=27, next=0
+    KindInterfaceDeclaration [167, 252), i=28, next=40
+      KindIdentifier "TerrestrialCat" [178, 193), i=29, next=30
+      NodeList [195, 250), i=30, next=0
+        KindPropertySignature [195, 231), i=31, next=37
+          KindIdentifier "type" [195, 202), i=32, next=33
+          KindTypeReference [203, 230), i=33, next=0
+            KindQualifiedName [203, 230), i=34, next=0
+              KindIdentifier "TerrestrialAnimalTypes" [203, 226), i=35, next=36
+              KindIdentifier "CAT" [227, 230), i=36, next=0
+        KindPropertySignature [231, 250), i=37, next=0
+          KindIdentifier "address" [231, 241), i=38, next=39
+          KindStringKeyword [242, 249), i=39, next=0
+    KindInterfaceDeclaration [252, 323), i=40, next=52
+      KindIdentifier "AlienCat" [263, 272), i=41, next=42
+      NodeList [274, 321), i=42, next=0
+        KindPropertySignature [274, 303), i=43, next=49
+          KindIdentifier "type" [274, 281), i=44, next=45
+          KindTypeReference [282, 303), i=45, next=0
+            KindQualifiedName [282, 303), i=46, next=0
+              KindIdentifier "AlienAnimalTypes" [282, 299), i=47, next=48
+              KindIdentifier "CAT" [300, 303), i=48, next=0
+        KindPropertySignature [303, 321), i=49, next=0
+          KindIdentifier "planet" [303, 312), i=50, next=51
+          KindStringKeyword [313, 320), i=51, next=0
+    KindTypeAliasDeclaration [323, 363), i=52, next=60
+      KindIdentifier "Cats" [329, 334), i=53, next=54
+      KindUnionType [336, 362), i=54, next=0
+        NodeList [336, 362), i=55, next=0
+          KindTypeReference [336, 351), i=56, next=58
+            KindIdentifier "TerrestrialCat" [336, 351), i=57, next=0
+          KindTypeReference [353, 362), i=58, next=0
+            KindIdentifier "AlienCat" [353, 362), i=59, next=0
+    KindTypeAliasDeclaration [363, 434), i=60, next=79
+      KindIdentifier "CatMap" [369, 376), i=61, next=62
+      KindMappedType [378, 433), i=62, next=0
+        KindTypeParameter [384, 400), i=63, next=67
+          KindIdentifier "V" [384, 385), i=64, next=65
+          KindTypeReference [388, 400), i=65, next=0
+            KindIdentifier "AnimalTypes" [388, 400), i=66, next=0
+        KindArrayType [402, 431), i=67, next=0
+          KindTypeReference [402, 429), i=68, next=0
+            KindIdentifier "Extract" [402, 410), i=69, next=70
+            NodeList [411, 428), i=70, next=0
+              KindTypeReference [411, 415), i=71, next=73
+                KindIdentifier "Cats" [411, 415), i=72, next=0
+              KindTypeLiteral [416, 428), i=73, next=0
+                NodeList [418, 426), i=74, next=0
+                  KindPropertySignature [418, 426), i=75, next=0
+                    KindIdentifier "type" [418, 423), i=76, next=77
+                    KindTypeReference [424, 426), i=77, next=0
+                      KindIdentifier "V" [424, 426), i=78, next=0
+    KindVariableStatement [434, 600), i=79, next=0
+      KindVariableDeclarationList [434, 599), i=80, next=0
+        NodeList [441, 599), i=81, next=0
+          KindVariableDeclaration [441, 599), i=82, next=0
+            KindIdentifier "catMap" [441, 448), i=83, next=84
+            KindTypeReference [449, 456), i=84, next=86
+              KindIdentifier "CatMap" [449, 456), i=85, next=0
+            KindObjectLiteralExpression [458, 599), i=86, next=0
+              NodeList [460, 597), i=87, next=0
+                KindPropertyAssignment [460, 575), i=88, next=112
+                  KindIdentifier "cat" [460, 466), i=89, next=90
+                  KindArrayLiteralExpression [467, 575), i=90, next=0
+                    NodeList [469, 571), i=91, next=0
+                      KindObjectLiteralExpression [469, 523), i=92, next=102
+                        NodeList [475, 521), i=93, next=0
+                          KindPropertyAssignment [475, 508), i=94, next=99
+                            KindIdentifier "type" [475, 480), i=95, next=96
+                            KindPropertyAccessExpression [481, 508), i=96, next=0
+                              KindIdentifier "TerrestrialAnimalTypes" [481, 504), i=97, next=98
+                              KindIdentifier "CAT" [505, 508), i=98, next=0
+                          KindPropertyAssignment [509, 521), i=99, next=0
+                            KindIdentifier "address" [509, 517), i=100, next=101
+                            KindStringLiteral "" [518, 521), i=101, next=0
+                      KindObjectLiteralExpression [524, 571), i=102, next=0
+                        NodeList [530, 569), i=103, next=0
+                          KindPropertyAssignment [530, 557), i=104, next=109
+                            KindIdentifier "type" [530, 535), i=105, next=106
+                            KindPropertyAccessExpression [536, 557), i=106, next=0
+                              KindIdentifier "AlienAnimalTypes" [536, 553), i=107, next=108
+                              KindIdentifier "CAT" [554, 557), i=108, next=0
+                          KindPropertyAssignment [558, 569), i=109, next=0
+                            KindIdentifier "planet" [558, 565), i=110, next=111
+                            KindStringLiteral "" [566, 569), i=111, next=0
+                KindPropertyAssignment [576, 597), i=112, next=0
+                  KindIdentifier "dog" [576, 582), i=113, next=114
+                  KindAsExpression [583, 597), i=114, next=0
+                    KindArrayLiteralExpression [583, 586), i=115, next=116
+                    KindArrayType [589, 597), i=116, next=0
+                      KindNeverKeyword [589, 595), i=117, next=0

@@ -1,0 +1,136 @@
+KindSourceFile [0, 605), i=1, next=0
+  NodeList [0, 604), i=2, next=0
+    KindInterfaceDeclaration [0, 110), i=3, next=28
+      KindIdentifier "IObserver" [9, 19), i=4, next=5
+      NodeList [21, 108), i=5, next=0
+        KindMethodSignature [21, 108), i=6, next=0
+          KindIdentifier "handleChange" [21, 35), i=7, next=8
+          NodeList [36, 46), i=8, next=13
+            KindTypeParameter [36, 37), i=9, next=11
+              KindIdentifier "T" [36, 37), i=10, next=0
+            KindTypeParameter [38, 46), i=11, next=0
+              KindIdentifier "TChange" [38, 46), i=12, next=0
+          NodeList [48, 100), i=13, next=27
+            KindParameter [48, 83), i=14, next=23
+              KindIdentifier "observable" [48, 58), i=15, next=16
+              KindTypeReference [59, 83), i=16, next=0
+                KindIdentifier "IObservable" [59, 71), i=17, next=18
+                NodeList [72, 82), i=18, next=0
+                  KindTypeReference [72, 73), i=19, next=21
+                    KindIdentifier "T" [72, 73), i=20, next=0
+                  KindTypeReference [74, 82), i=21, next=0
+                    KindIdentifier "TChange" [74, 82), i=22, next=0
+            KindParameter [84, 100), i=23, next=0
+              KindIdentifier "change" [84, 91), i=24, next=25
+              KindTypeReference [92, 100), i=25, next=0
+                KindIdentifier "TChange" [92, 100), i=26, next=0
+          KindVoidKeyword [102, 107), i=27, next=0
+    KindInterfaceDeclaration [110, 198), i=28, next=47
+      KindIdentifier "IObservable" [121, 133), i=29, next=30
+      NodeList [134, 154), i=30, next=36
+        KindTypeParameter [134, 135), i=31, next=33
+          KindIdentifier "T" [134, 135), i=32, next=0
+        KindTypeParameter [136, 154), i=33, next=0
+          KindIdentifier "TChange" [136, 144), i=34, next=35
+          KindUnknownKeyword [146, 154), i=35, next=0
+      NodeList [157, 196), i=36, next=0
+        KindMethodSignature [157, 168), i=37, next=41
+          KindIdentifier "get" [157, 162), i=38, next=39
+          KindTypeReference [165, 167), i=39, next=0
+            KindIdentifier "T" [165, 167), i=40, next=0
+        KindPropertySignature [168, 196), i=41, next=0
+          NodeList [168, 178), i=42, next=44
+            KindReadonlyKeyword [168, 178), i=43, next=0
+          KindIdentifier "TChange" [178, 186), i=44, next=45
+          KindTypeReference [187, 195), i=45, next=0
+            KindIdentifier "TChange" [187, 195), i=46, next=0
+    KindInterfaceDeclaration [198, 284), i=47, next=68
+      NodeList [198, 206), i=48, next=50
+        KindExportKeyword [198, 206), i=49, next=0
+      KindIdentifier "IReader" [216, 224), i=50, next=51
+      NodeList [226, 282), i=51, next=0
+        KindMethodSignature [226, 282), i=52, next=0
+          KindIdentifier "readObservable" [226, 242), i=53, next=54
+          NodeList [243, 244), i=54, next=57
+            KindTypeParameter [243, 244), i=55, next=0
+              KindIdentifier "T" [243, 244), i=56, next=0
+          NodeList [246, 277), i=57, next=66
+            KindParameter [246, 277), i=58, next=0
+              KindIdentifier "observable" [246, 256), i=59, next=60
+              KindTypeReference [257, 277), i=60, next=0
+                KindIdentifier "IObservable" [257, 269), i=61, next=62
+                NodeList [270, 276), i=62, next=0
+                  KindTypeReference [270, 271), i=63, next=65
+                    KindIdentifier "T" [270, 271), i=64, next=0
+                  KindAnyKeyword [272, 276), i=65, next=0
+          KindTypeReference [279, 281), i=66, next=0
+            KindIdentifier "T" [279, 281), i=67, next=0
+    KindClassDeclaration [284, 448), i=68, next=105
+      NodeList [284, 301), i=69, next=72
+        KindExportKeyword [284, 292), i=70, next=71
+        KindAbstractKeyword [292, 301), i=71, next=0
+      KindIdentifier "ConvenientObservable" [307, 328), i=72, next=73
+      NodeList [329, 339), i=73, next=78
+        KindTypeParameter [329, 330), i=74, next=76
+          KindIdentifier "T" [329, 330), i=75, next=0
+        KindTypeParameter [331, 339), i=76, next=0
+          KindIdentifier "TChange" [331, 339), i=77, next=0
+      NodeList [340, 375), i=78, next=88
+        KindHeritageClause [340, 375), i=79, next=0
+          NodeList [351, 375), i=80, next=0
+            KindExpressionWithTypeArguments [351, 375), i=81, next=0
+              KindIdentifier "IObservable" [351, 363), i=82, next=83
+              NodeList [364, 374), i=83, next=0
+                KindTypeReference [364, 365), i=84, next=86
+                  KindIdentifier "T" [364, 365), i=85, next=0
+                KindTypeReference [366, 374), i=86, next=0
+                  KindIdentifier "TChange" [366, 374), i=87, next=0
+      NodeList [377, 446), i=88, next=0
+        KindGetAccessor [377, 419), i=89, next=98
+          KindIdentifier "TChange" [382, 390), i=90, next=91
+          KindTypeReference [393, 401), i=91, next=93
+            KindIdentifier "TChange" [393, 401), i=92, next=0
+          KindBlock [401, 419), i=93, next=0
+            NodeList [403, 417), i=94, next=0
+              KindReturnStatement [403, 417), i=95, next=0
+                KindNonNullExpression [410, 416), i=96, next=0
+                  KindNullKeyword [410, 415), i=97, next=0
+        KindMethodDeclaration [419, 446), i=98, next=0
+          NodeList [419, 436), i=99, next=102
+            KindPublicKeyword [419, 427), i=100, next=101
+            KindAbstractKeyword [427, 436), i=101, next=0
+          KindIdentifier "get" [436, 440), i=102, next=103
+          KindTypeReference [443, 445), i=103, next=0
+            KindIdentifier "T" [443, 445), i=104, next=0
+    KindClassDeclaration [448, 604), i=105, next=0
+      NodeList [448, 465), i=106, next=109
+        KindExportKeyword [448, 456), i=107, next=108
+        KindAbstractKeyword [456, 465), i=108, next=0
+      KindIdentifier "BaseObservable" [471, 486), i=109, next=110
+      NodeList [487, 504), i=110, next=116
+        KindTypeParameter [487, 488), i=111, next=113
+          KindIdentifier "T" [487, 488), i=112, next=0
+        KindTypeParameter [489, 504), i=113, next=0
+          KindIdentifier "TChange" [489, 497), i=114, next=115
+          KindVoidKeyword [499, 504), i=115, next=0
+      NodeList [505, 546), i=116, next=126
+        KindHeritageClause [505, 546), i=117, next=0
+          NodeList [513, 546), i=118, next=0
+            KindExpressionWithTypeArguments [513, 546), i=119, next=0
+              KindIdentifier "ConvenientObservable" [513, 534), i=120, next=121
+              NodeList [535, 545), i=121, next=0
+                KindTypeReference [535, 536), i=122, next=124
+                  KindIdentifier "T" [535, 536), i=123, next=0
+                KindTypeReference [537, 545), i=124, next=0
+                  KindIdentifier "TChange" [537, 545), i=125, next=0
+      NodeList [548, 602), i=126, next=0
+        KindPropertyDeclaration [548, 602), i=127, next=0
+          NodeList [548, 568), i=128, next=131
+            KindProtectedKeyword [548, 559), i=129, next=130
+            KindReadonlyKeyword [559, 568), i=130, next=0
+          KindIdentifier "observers" [568, 578), i=131, next=132
+          KindNewExpression [580, 601), i=132, next=0
+            KindIdentifier "Set" [584, 588), i=133, next=134
+            NodeList [589, 598), i=134, next=0
+              KindTypeReference [589, 598), i=135, next=0
+                KindIdentifier "IObserver" [589, 598), i=136, next=0

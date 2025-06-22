@@ -1,0 +1,46 @@
+KindSourceFile [0, 162), i=1, next=0
+  NodeList [0, 162), i=2, next=0
+    KindImportDeclaration [0, 35), i=3, next=10
+      KindImportClause [6, 10), i=4, next=9
+        KindNamedImports [6, 10), i=5, next=0
+          NodeList [8, 9), i=6, next=0
+            KindImportSpecifier [8, 9), i=7, next=0
+              KindIdentifier "x" [8, 9), i=8, next=0
+      KindStringLiteral "./existingModule" [15, 34), i=9, next=0
+    KindImportDeclaration [35, 73), i=10, next=17
+      KindImportClause [43, 49), i=11, next=16
+        KindNamedImports [43, 49), i=12, next=0
+          NodeList [45, 48), i=13, next=0
+            KindImportSpecifier [45, 48), i=14, next=0
+              KindIdentifier "foo" [45, 48), i=15, next=0
+      KindStringLiteral "./missingModule" [54, 72), i=16, next=0
+    KindFunctionDeclaration [73, 112), i=17, next=26
+      NodeList [73, 84), i=18, next=20
+        KindDeclareKeyword [73, 84), i=19, next=0
+      KindIdentifier "use" [93, 97), i=20, next=21
+      NodeList [98, 104), i=21, next=25
+        KindParameter [98, 104), i=22, next=0
+          KindIdentifier "a" [98, 99), i=23, next=24
+          KindAnyKeyword [100, 104), i=24, next=0
+      KindVoidKeyword [106, 111), i=25, next=0
+    KindVariableStatement [112, 140), i=26, next=37
+      KindVariableDeclarationList [112, 139), i=27, next=0
+        NodeList [121, 139), i=28, next=0
+          KindVariableDeclaration [121, 139), i=29, next=0
+            KindIdentifier "test" [121, 126), i=30, next=31
+            KindObjectLiteralExpression [128, 139), i=31, next=0
+              NodeList [130, 137), i=32, next=0
+                KindShorthandPropertyAssignment [130, 132), i=33, next=35
+                  KindIdentifier "x" [130, 132), i=34, next=0
+                KindShorthandPropertyAssignment [133, 137), i=35, next=0
+                  KindIdentifier "foo" [133, 137), i=36, next=0
+    KindExpressionStatement [140, 151), i=37, next=42
+      KindCallExpression [140, 150), i=38, next=0
+        KindIdentifier "use" [140, 147), i=39, next=40
+        NodeList [148, 149), i=40, next=0
+          KindIdentifier "x" [148, 149), i=41, next=0
+    KindExpressionStatement [151, 162), i=42, next=0
+      KindCallExpression [151, 161), i=43, next=0
+        KindIdentifier "use" [151, 156), i=44, next=45
+        NodeList [157, 160), i=45, next=0
+          KindIdentifier "foo" [157, 160), i=46, next=0

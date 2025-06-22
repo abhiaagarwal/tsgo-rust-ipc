@@ -1,0 +1,296 @@
+KindSourceFile [0, 1725), i=1, next=0
+  NodeList [0, 1725), i=2, next=0
+    KindModuleDeclaration [0, 1725), i=3, next=0
+      KindIdentifier "TypeScript" [6, 17), i=4, next=5
+      KindModuleBlock [17, 1725), i=5, next=0
+        NodeList [19, 1722), i=6, next=0
+          KindClassDeclaration [19, 1297), i=7, next=212
+            NodeList [19, 83), i=8, next=10
+              KindExportKeyword [19, 83), i=9, next=0
+            KindIdentifier "PrintContext" [89, 102), i=10, next=11
+            NodeList [104, 1288), i=11, next=0
+              KindPropertyDeclaration [104, 134), i=12, next=17
+                NodeList [104, 120), i=13, next=15
+                  KindPublicKeyword [104, 120), i=14, next=0
+                KindIdentifier "builder" [120, 128), i=15, next=16
+                KindStringLiteral "" [130, 133), i=16, next=0
+              KindPropertyDeclaration [134, 166), i=17, next=22
+                NodeList [134, 150), i=18, next=20
+                  KindPublicKeyword [134, 150), i=19, next=0
+                KindIdentifier "indent1" [150, 158), i=20, next=21
+                KindStringLiteral "  " [160, 165), i=21, next=0
+              KindPropertyDeclaration [166, 212), i=22, next=29
+                NodeList [166, 182), i=23, next=25
+                  KindPublicKeyword [166, 182), i=24, next=0
+                KindIdentifier "indentStrings" [182, 196), i=25, next=26
+                KindArrayType [197, 206), i=26, next=28
+                  KindStringKeyword [197, 204), i=27, next=0
+                KindArrayLiteralExpression [208, 211), i=28, next=0
+              KindPropertyDeclaration [212, 243), i=29, next=34
+                NodeList [212, 228), i=30, next=32
+                  KindPublicKeyword [212, 228), i=31, next=0
+                KindIdentifier "indentAmt" [228, 238), i=32, next=33
+                KindNumericLiteral [240, 242), i=33, next=0
+              KindConstructor [243, 332), i=34, next=49
+                NodeList [268, 318), i=35, next=48
+                  KindParameter [268, 295), i=36, next=42
+                    NodeList [268, 274), i=37, next=39
+                      KindPublicKeyword [268, 274), i=38, next=0
+                    KindIdentifier "outfile" [274, 282), i=39, next=40
+                    KindTypeReference [283, 295), i=40, next=0
+                      KindIdentifier "ITextWriter" [283, 295), i=41, next=0
+                  KindParameter [296, 318), i=42, next=0
+                    NodeList [296, 303), i=43, next=45
+                      KindPublicKeyword [296, 303), i=44, next=0
+                    KindIdentifier "parser" [303, 310), i=45, next=46
+                    KindTypeReference [311, 318), i=46, next=0
+                      KindIdentifier "Parser" [311, 318), i=47, next=0
+                KindBlock [319, 332), i=48, next=0
+              KindMethodDeclaration [332, 411), i=49, next=60
+                NodeList [332, 350), i=50, next=52
+                  KindPublicKeyword [332, 350), i=51, next=0
+                KindIdentifier "increaseIndent" [350, 365), i=52, next=53
+                KindBlock [367, 411), i=53, next=0
+                  NodeList [369, 400), i=54, next=0
+                    KindExpressionStatement [369, 400), i=55, next=0
+                      KindPostfixUnaryExpression [369, 399), i=56, next=0
+                        KindPropertyAccessExpression [369, 397), i=57, next=0
+                          KindThisKeyword [369, 387), i=58, next=59
+                          KindIdentifier "indentAmt" [388, 397), i=59, next=0
+              KindMethodDeclaration [411, 490), i=60, next=71
+                NodeList [411, 429), i=61, next=63
+                  KindPublicKeyword [411, 429), i=62, next=0
+                KindIdentifier "decreaseIndent" [429, 444), i=63, next=64
+                KindBlock [446, 490), i=64, next=0
+                  NodeList [448, 479), i=65, next=0
+                    KindExpressionStatement [448, 479), i=66, next=0
+                      KindPostfixUnaryExpression [448, 478), i=67, next=0
+                        KindPropertyAccessExpression [448, 476), i=68, next=0
+                          KindThisKeyword [448, 466), i=69, next=70
+                          KindIdentifier "indentAmt" [467, 476), i=70, next=0
+              KindMethodDeclaration [490, 1057), i=71, next=162
+                NodeList [490, 508), i=72, next=74
+                  KindPublicKeyword [490, 508), i=73, next=0
+                KindIdentifier "startLine" [508, 518), i=74, next=75
+                KindBlock [520, 1057), i=75, next=0
+                  NodeList [522, 1046), i=76, next=0
+                    KindIfStatement [522, 639), i=77, next=97
+                      KindBinaryExpression [540, 563), i=78, next=86
+                        KindPropertyAccessExpression [540, 559), i=79, next=84
+                          KindPropertyAccessExpression [540, 552), i=80, next=83
+                            KindThisKeyword [540, 544), i=81, next=82
+                            KindIdentifier "builder" [545, 552), i=82, next=0
+                          KindIdentifier "length" [553, 559), i=83, next=0
+                        KindGreaterThanToken [559, 561), i=84, next=85
+                        KindNumericLiteral [561, 563), i=85, next=0
+                      KindBlock [564, 639), i=86, next=0
+                        NodeList [566, 624), i=87, next=0
+                          KindExpressionStatement [566, 624), i=88, next=0
+                            KindCallExpression [566, 623), i=89, next=0
+                              KindPropertyAccessExpression [566, 609), i=90, next=93
+                                KindIdentifier "CompilerDiagnostics" [566, 603), i=91, next=92
+                                KindIdentifier "Alert" [604, 609), i=92, next=0
+                              NodeList [610, 622), i=93, next=0
+                                KindPropertyAccessExpression [610, 622), i=94, next=0
+                                  KindThisKeyword [610, 614), i=95, next=96
+                                  KindIdentifier "builder" [615, 622), i=96, next=0
+                    KindVariableStatement [639, 707), i=97, next=109
+                      KindVariableDeclarationList [639, 706), i=98, next=0
+                        NodeList [656, 706), i=99, next=0
+                          KindVariableDeclaration [656, 706), i=100, next=0
+                            KindIdentifier "indentString" [656, 669), i=101, next=102
+                            KindElementAccessExpression [671, 706), i=102, next=0
+                              KindPropertyAccessExpression [671, 690), i=103, next=106
+                                KindThisKeyword [671, 676), i=104, next=105
+                                KindIdentifier "indentStrings" [677, 690), i=105, next=0
+                              KindPropertyAccessExpression [691, 705), i=106, next=0
+                                KindThisKeyword [691, 695), i=107, next=108
+                                KindIdentifier "indentAmt" [696, 705), i=108, next=0
+                    KindIfStatement [707, 1003), i=109, next=155
+                      KindBinaryExpression [725, 751), i=110, next=114
+                        KindIdentifier "indentString" [725, 737), i=111, next=112
+                        KindEqualsEqualsEqualsToken [737, 741), i=112, next=113
+                        KindIdentifier "undefined" [741, 751), i=113, next=0
+                      KindBlock [752, 1003), i=114, next=0
+                        NodeList [754, 988), i=115, next=0
+                          KindExpressionStatement [754, 790), i=116, next=121
+                            KindBinaryExpression [754, 789), i=117, next=0
+                              KindIdentifier "indentString" [754, 784), i=118, next=119
+                              KindEqualsToken [784, 786), i=119, next=120
+                              KindStringLiteral "" [786, 789), i=120, next=0
+                          KindForStatement [790, 920), i=121, next=144
+                            KindVariableDeclarationList [813, 822), i=122, next=127
+                              NodeList [816, 822), i=123, next=0
+                                KindVariableDeclaration [816, 822), i=124, next=0
+                                  KindIdentifier "i" [816, 818), i=125, next=126
+                                  KindNumericLiteral [820, 822), i=126, next=0
+                            KindBinaryExpression [823, 842), i=127, next=133
+                              KindIdentifier "i" [823, 825), i=128, next=129
+                              KindLessThanToken [825, 827), i=129, next=130
+                              KindPropertyAccessExpression [827, 842), i=130, next=0
+                                KindThisKeyword [827, 832), i=131, next=132
+                                KindIdentifier "indentAmt" [833, 842), i=132, next=0
+                            KindPostfixUnaryExpression [843, 847), i=133, next=135
+                              KindIdentifier "i" [843, 845), i=134, next=0
+                            KindBlock [848, 920), i=135, next=0
+                              NodeList [850, 901), i=136, next=0
+                                KindExpressionStatement [850, 901), i=137, next=0
+                                  KindBinaryExpression [850, 900), i=138, next=0
+                                    KindIdentifier "indentString" [850, 884), i=139, next=140
+                                    KindPlusEqualsToken [884, 887), i=140, next=141
+                                    KindPropertyAccessExpression [887, 900), i=141, next=0
+                                      KindThisKeyword [887, 892), i=142, next=143
+                                      KindIdentifier "indent1" [893, 900), i=143, next=0
+                          KindExpressionStatement [920, 988), i=144, next=0
+                            KindBinaryExpression [920, 987), i=145, next=0
+                              KindElementAccessExpression [920, 972), i=146, next=153
+                                KindPropertyAccessExpression [920, 956), i=147, next=150
+                                  KindThisKeyword [920, 942), i=148, next=149
+                                  KindIdentifier "indentStrings" [943, 956), i=149, next=0
+                                KindPropertyAccessExpression [957, 971), i=150, next=0
+                                  KindThisKeyword [957, 961), i=151, next=152
+                                  KindIdentifier "indentAmt" [962, 971), i=152, next=0
+                              KindEqualsToken [972, 974), i=153, next=154
+                              KindIdentifier "indentString" [974, 987), i=154, next=0
+                    KindExpressionStatement [1003, 1046), i=155, next=0
+                      KindBinaryExpression [1003, 1045), i=156, next=0
+                        KindPropertyAccessExpression [1003, 1029), i=157, next=160
+                          KindThisKeyword [1003, 1021), i=158, next=159
+                          KindIdentifier "builder" [1022, 1029), i=159, next=0
+                        KindPlusEqualsToken [1029, 1032), i=160, next=161
+                        KindIdentifier "indentString" [1032, 1045), i=161, next=0
+              KindMethodDeclaration [1057, 1129), i=162, next=178
+                NodeList [1057, 1075), i=163, next=165
+                  KindPublicKeyword [1057, 1075), i=164, next=0
+                KindIdentifier "write" [1075, 1081), i=165, next=166
+                NodeList [1082, 1083), i=166, next=169
+                  KindParameter [1082, 1083), i=167, next=0
+                    KindIdentifier "s" [1082, 1083), i=168, next=0
+                KindBlock [1084, 1129), i=169, next=0
+                  NodeList [1086, 1118), i=170, next=0
+                    KindExpressionStatement [1086, 1118), i=171, next=0
+                      KindBinaryExpression [1086, 1117), i=172, next=0
+                        KindPropertyAccessExpression [1086, 1112), i=173, next=176
+                          KindThisKeyword [1086, 1104), i=174, next=175
+                          KindIdentifier "builder" [1105, 1112), i=175, next=0
+                        KindPlusEqualsToken [1112, 1115), i=176, next=177
+                        KindIdentifier "s" [1115, 1117), i=177, next=0
+              KindMethodDeclaration [1129, 1288), i=178, next=0
+                NodeList [1129, 1147), i=179, next=181
+                  KindPublicKeyword [1129, 1147), i=180, next=0
+                KindIdentifier "writeLine" [1147, 1157), i=181, next=182
+                NodeList [1158, 1159), i=182, next=185
+                  KindParameter [1158, 1159), i=183, next=0
+                    KindIdentifier "s" [1158, 1159), i=184, next=0
+                KindBlock [1160, 1288), i=185, next=0
+                  NodeList [1162, 1277), i=186, next=0
+                    KindExpressionStatement [1162, 1194), i=187, next=194
+                      KindBinaryExpression [1162, 1193), i=188, next=0
+                        KindPropertyAccessExpression [1162, 1188), i=189, next=192
+                          KindThisKeyword [1162, 1180), i=190, next=191
+                          KindIdentifier "builder" [1181, 1188), i=191, next=0
+                        KindPlusEqualsToken [1188, 1191), i=192, next=193
+                        KindIdentifier "s" [1191, 1193), i=193, next=0
+                    KindExpressionStatement [1194, 1245), i=194, next=205
+                      KindCallExpression [1194, 1244), i=195, next=0
+                        KindPropertyAccessExpression [1194, 1230), i=196, next=201
+                          KindPropertyAccessExpression [1194, 1220), i=197, next=200
+                            KindThisKeyword [1194, 1212), i=198, next=199
+                            KindIdentifier "outfile" [1213, 1220), i=199, next=0
+                          KindIdentifier "WriteLine" [1221, 1230), i=200, next=0
+                        NodeList [1231, 1243), i=201, next=0
+                          KindPropertyAccessExpression [1231, 1243), i=202, next=0
+                            KindThisKeyword [1231, 1235), i=203, next=204
+                            KindIdentifier "builder" [1236, 1243), i=204, next=0
+                    KindExpressionStatement [1245, 1277), i=205, next=0
+                      KindBinaryExpression [1245, 1276), i=206, next=0
+                        KindPropertyAccessExpression [1245, 1271), i=207, next=210
+                          KindThisKeyword [1245, 1263), i=208, next=209
+                          KindIdentifier "builder" [1264, 1271), i=209, next=0
+                        KindEqualsToken [1271, 1273), i=210, next=211
+                        KindStringLiteral "" [1273, 1276), i=211, next=0
+          KindFunctionDeclaration [1297, 1521), i=212, next=2
+            NodeList [1297, 1311), i=213, next=215
+              KindExportKeyword [1297, 1311), i=214, next=0
+            KindIdentifier "prePrintAST" [1320, 1332), i=215, next=216
+            NodeList [1333, 1374), i=216, next=229
+              KindParameter [1333, 1341), i=217, next=221
+                KindIdentifier "ast" [1333, 1336), i=218, next=219
+                KindTypeReference [1337, 1341), i=219, next=0
+                  KindIdentifier "AST" [1337, 1341), i=220, next=0
+              KindParameter [1342, 1354), i=221, next=225
+                KindIdentifier "parent" [1342, 1349), i=222, next=223
+                KindTypeReference [1350, 1354), i=223, next=0
+                  KindIdentifier "AST" [1350, 1354), i=224, next=0
+              KindParameter [1355, 1374), i=225, next=0
+                KindIdentifier "walker" [1355, 1362), i=226, next=227
+                KindTypeReference [1363, 1374), i=227, next=0
+                  KindIdentifier "IAstWalker" [1363, 1374), i=228, next=0
+            KindBlock [1375, 1521), i=229, next=0
+              NodeList [1377, 1514), i=230, next=0
+                KindVariableStatement [1377, 1437), i=231, next=244
+                  KindVariableDeclarationList [1377, 1436), i=232, next=0
+                    NodeList [1390, 1436), i=233, next=0
+                      KindVariableDeclaration [1390, 1436), i=234, next=0
+                        KindIdentifier "pc" [1390, 1393), i=235, next=236
+                        KindTypeReference [1394, 1407), i=236, next=238
+                          KindIdentifier "PrintContext" [1394, 1407), i=237, next=0
+                        KindTypeAssertionExpression [1409, 1436), i=238, next=0
+                          KindTypeReference [1411, 1423), i=239, next=241
+                            KindIdentifier "PrintContext" [1411, 1423), i=240, next=0
+                          KindPropertyAccessExpression [1424, 1436), i=241, next=0
+                            KindIdentifier "walker" [1424, 1430), i=242, next=243
+                            KindIdentifier "state" [1431, 1436), i=243, next=0
+                KindExpressionStatement [1437, 1463), i=244, next=251
+                  KindCallExpression [1437, 1462), i=245, next=0
+                    KindPropertyAccessExpression [1437, 1458), i=246, next=249
+                      KindIdentifier "ast" [1437, 1452), i=247, next=248
+                      KindIdentifier "print" [1453, 1458), i=248, next=0
+                    NodeList [1459, 1461), i=249, next=0
+                      KindIdentifier "pc" [1459, 1461), i=250, next=0
+                KindExpressionStatement [1463, 1493), i=251, next=0
+                  KindCallExpression [1463, 1492), i=252, next=0
+                    KindPropertyAccessExpression [1463, 1490), i=253, next=0
+                      KindIdentifier "pc" [1463, 1475), i=254, next=255
+                      KindIdentifier "increaseIndent" [1476, 1490), i=255, next=0
+                KindReturnStatement [1493, 1514), i=256, next=0
+                  KindIdentifier "ast" [1509, 1513), i=257, next=0
+          KindFunctionDeclaration [1521, 1722), i=258, next=0
+            NodeList [1521, 1537), i=259, next=5
+              KindExportKeyword [1521, 1537), i=260, next=0
+            KindIdentifier "postPrintAST" [1546, 1559), i=261, next=6
+            NodeList [1560, 1601), i=262, next=19
+              KindParameter [1560, 1568), i=263, next=11
+                KindIdentifier "ast" [1560, 1563), i=264, next=9
+                KindTypeReference [1564, 1568), i=265, next=0
+                  KindIdentifier "AST" [1564, 1568), i=266, next=0
+              KindParameter [1569, 1581), i=267, next=15
+                KindIdentifier "parent" [1569, 1576), i=268, next=13
+                KindTypeReference [1577, 1581), i=269, next=0
+                  KindIdentifier "AST" [1577, 1581), i=270, next=0
+              KindParameter [1582, 1601), i=271, next=0
+                KindIdentifier "walker" [1582, 1589), i=272, next=17
+                KindTypeReference [1590, 1601), i=273, next=0
+                  KindIdentifier "IAstWalker" [1590, 1601), i=274, next=0
+            KindBlock [1602, 1722), i=275, next=0
+              NodeList [1604, 1715), i=276, next=0
+                KindVariableStatement [1604, 1664), i=277, next=34
+                  KindVariableDeclarationList [1604, 1663), i=278, next=0
+                    NodeList [1617, 1663), i=279, next=0
+                      KindVariableDeclaration [1617, 1663), i=280, next=0
+                        KindIdentifier "pc" [1617, 1620), i=281, next=26
+                        KindTypeReference [1621, 1634), i=282, next=28
+                          KindIdentifier "PrintContext" [1621, 1634), i=283, next=0
+                        KindTypeAssertionExpression [1636, 1663), i=284, next=0
+                          KindTypeReference [1638, 1650), i=285, next=31
+                            KindIdentifier "PrintContext" [1638, 1650), i=286, next=0
+                          KindPropertyAccessExpression [1651, 1663), i=287, next=0
+                            KindIdentifier "walker" [1651, 1657), i=288, next=33
+                            KindIdentifier "state" [1658, 1663), i=289, next=0
+                KindExpressionStatement [1664, 1694), i=290, next=39
+                  KindCallExpression [1664, 1693), i=291, next=0
+                    KindPropertyAccessExpression [1664, 1691), i=292, next=0
+                      KindIdentifier "pc" [1664, 1676), i=293, next=38
+                      KindIdentifier "decreaseIndent" [1677, 1691), i=294, next=0
+                KindReturnStatement [1694, 1715), i=295, next=0
+                  KindIdentifier "ast" [1710, 1714), i=296, next=0

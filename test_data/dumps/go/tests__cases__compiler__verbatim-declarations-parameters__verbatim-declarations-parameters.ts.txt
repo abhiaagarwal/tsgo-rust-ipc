@@ -1,0 +1,90 @@
+KindSourceFile [0, 658), i=1, next=0
+  NodeList [0, 656), i=2, next=0
+    KindTypeAliasDeclaration [0, 38), i=3, next=13
+      KindIdentifier "Map" [4, 8), i=4, next=5
+      KindIntersectionType [10, 38), i=5, next=0
+        NodeList [10, 38), i=6, next=0
+          KindTypeLiteral [10, 13), i=7, next=8
+          KindMappedType [15, 38), i=8, next=0
+            KindTypeParameter [19, 30), i=9, next=12
+              KindIdentifier "P" [19, 20), i=10, next=11
+              KindStringKeyword [23, 30), i=11, next=0
+            KindAnyKeyword [32, 36), i=12, next=0
+    KindTypeAliasDeclaration [38, 87), i=13, next=22
+      KindIdentifier "MapOrUndefined" [44, 59), i=14, next=15
+      KindUnionType [61, 87), i=15, next=0
+        NodeList [61, 87), i=16, next=0
+          KindTypeReference [61, 65), i=17, next=19
+            KindIdentifier "Map" [61, 65), i=18, next=0
+          KindUndefinedKeyword [67, 77), i=19, next=20
+          KindLiteralType [79, 87), i=20, next=0
+            KindStringLiteral "dummy" [79, 87), i=21, next=0
+    KindClassDeclaration [87, 369), i=22, next=59
+      NodeList [87, 95), i=23, next=25
+        KindExportKeyword [87, 95), i=24, next=0
+      KindIdentifier "Foo" [101, 105), i=25, next=26
+      NodeList [107, 366), i=26, next=0
+        KindConstructor [107, 366), i=27, next=0
+          NodeList [123, 357), i=28, next=58
+            KindParameter [123, 207), i=29, next=39
+              NodeList [123, 175), i=30, next=32
+                KindPublicKeyword [123, 175), i=31, next=0
+              KindIdentifier "reuseTypeNode" [175, 189), i=32, next=33
+              KindQuestionToken [189, 190), i=33, next=34
+              KindUnionType [191, 207), i=34, next=0
+                NodeList [191, 207), i=35, next=0
+                  KindTypeReference [191, 195), i=36, next=38
+                    KindIdentifier "Map" [191, 195), i=37, next=0
+                  KindUndefinedKeyword [197, 207), i=38, next=0
+            KindParameter [208, 270), i=39, next=51
+              NodeList [208, 220), i=40, next=42
+                KindPublicKeyword [208, 220), i=41, next=0
+              KindIdentifier "reuseTypeNode2" [220, 235), i=42, next=43
+              KindQuestionToken [235, 236), i=43, next=44
+              KindTypeReference [237, 270), i=44, next=0
+                KindIdentifier "Exclude" [237, 245), i=45, next=46
+                NodeList [246, 269), i=46, next=0
+                  KindTypeReference [246, 260), i=47, next=49
+                    KindIdentifier "MapOrUndefined" [246, 260), i=48, next=0
+                  KindLiteralType [261, 269), i=49, next=0
+                    KindStringLiteral "dummy" [261, 269), i=50, next=0
+            KindParameter [271, 356), i=51, next=0
+              NodeList [271, 338), i=52, next=54
+                KindPublicKeyword [271, 338), i=53, next=0
+              KindIdentifier "resolveType" [338, 350), i=54, next=55
+              KindQuestionToken [350, 351), i=55, next=56
+              KindTypeReference [352, 356), i=56, next=0
+                KindIdentifier "Map" [352, 356), i=57, next=0
+          KindBlock [362, 366), i=58, next=0
+    KindFunctionDeclaration [369, 656), i=59, next=0
+      NodeList [369, 379), i=60, next=62
+        KindExportKeyword [369, 379), i=61, next=0
+      KindIdentifier "foo1" [388, 393), i=62, next=63
+      NodeList [394, 648), i=63, next=90
+        KindParameter [394, 475), i=64, next=72
+          KindIdentifier "reuseTypeNode" [394, 453), i=65, next=66
+          KindUnionType [454, 470), i=66, next=71
+            NodeList [454, 470), i=67, next=0
+              KindTypeReference [454, 458), i=68, next=70
+                KindIdentifier "Map" [454, 458), i=69, next=0
+              KindUndefinedKeyword [460, 470), i=70, next=0
+          KindObjectLiteralExpression [472, 475), i=71, next=0
+        KindParameter [476, 536), i=72, next=82
+          KindIdentifier "reuseTypeNode2" [476, 496), i=73, next=74
+          KindTypeReference [497, 530), i=74, next=81
+            KindIdentifier "Exclude" [497, 505), i=75, next=76
+            NodeList [506, 529), i=76, next=0
+              KindTypeReference [506, 520), i=77, next=79
+                KindIdentifier "MapOrUndefined" [506, 520), i=78, next=0
+              KindLiteralType [521, 529), i=79, next=0
+                KindStringLiteral "dummy" [521, 529), i=80, next=0
+          KindObjectLiteralExpression [533, 536), i=81, next=0
+        KindParameter [537, 619), i=82, next=87
+          KindIdentifier "resolveType" [537, 609), i=83, next=84
+          KindTypeReference [610, 614), i=84, next=86
+            KindIdentifier "Map" [610, 614), i=85, next=0
+          KindObjectLiteralExpression [616, 619), i=86, next=0
+        KindParameter [620, 648), i=87, next=0
+          KindIdentifier "requiredParam" [620, 640), i=88, next=89
+          KindNumberKeyword [641, 648), i=89, next=0
+      KindBlock [649, 656), i=90, next=0

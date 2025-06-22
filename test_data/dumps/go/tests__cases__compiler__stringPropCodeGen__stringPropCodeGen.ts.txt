@@ -1,0 +1,28 @@
+KindSourceFile [0, 96), i=1, next=0
+  NodeList [0, 94), i=2, next=0
+    KindVariableStatement [0, 57), i=3, next=17
+      KindVariableDeclarationList [0, 56), i=4, next=0
+        NodeList [3, 56), i=5, next=0
+          KindVariableDeclaration [3, 56), i=6, next=0
+            KindIdentifier "a" [3, 5), i=7, next=8
+            KindObjectLiteralExpression [7, 56), i=8, next=0
+              NodeList [9, 51), i=9, next=0
+                KindPropertyAssignment [9, 37), i=10, next=14
+                  KindStringLiteral "foo" [9, 20), i=11, next=12
+                  KindFunctionExpression [22, 37), i=12, next=0
+                    KindBlock [33, 37), i=13, next=0
+                KindPropertyAssignment [38, 51), i=14, next=0
+                  KindStringLiteral "bar" [38, 47), i=15, next=16
+                  KindNumericLiteral [49, 51), i=16, next=0
+    KindExpressionStatement [57, 73), i=17, next=22
+      KindCallExpression [57, 72), i=18, next=0
+        KindPropertyAccessExpression [57, 70), i=19, next=0
+          KindIdentifier "a" [57, 66), i=20, next=21
+          KindIdentifier "foo" [67, 70), i=21, next=0
+    KindExpressionStatement [73, 94), i=22, next=0
+      KindCallExpression [73, 93), i=23, next=0
+        KindPropertyAccessExpression [73, 91), i=24, next=0
+          KindPropertyAccessExpression [73, 82), i=25, next=28
+            KindIdentifier "a" [73, 78), i=26, next=27
+            KindIdentifier "bar" [79, 82), i=27, next=0
+          KindIdentifier "toString" [83, 91), i=28, next=0

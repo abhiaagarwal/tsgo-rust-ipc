@@ -1,0 +1,112 @@
+KindSourceFile [0, 309), i=1, next=0
+  NodeList [0, 307), i=2, next=0
+    KindTypeAliasDeclaration [0, 72), i=3, next=27
+      KindIdentifier "Digits" [4, 11), i=4, next=5
+      KindUnionType [13, 71), i=5, next=0
+        NodeList [13, 71), i=6, next=0
+          KindLiteralType [13, 17), i=7, next=9
+            KindStringLiteral "0" [13, 17), i=8, next=0
+          KindLiteralType [19, 23), i=9, next=11
+            KindStringLiteral "1" [19, 23), i=10, next=0
+          KindLiteralType [25, 29), i=11, next=13
+            KindStringLiteral "2" [25, 29), i=12, next=0
+          KindLiteralType [31, 35), i=13, next=15
+            KindStringLiteral "3" [31, 35), i=14, next=0
+          KindLiteralType [37, 41), i=15, next=17
+            KindStringLiteral "4" [37, 41), i=16, next=0
+          KindLiteralType [43, 47), i=17, next=19
+            KindStringLiteral "5" [43, 47), i=18, next=0
+          KindLiteralType [49, 53), i=19, next=21
+            KindStringLiteral "6" [49, 53), i=20, next=0
+          KindLiteralType [55, 59), i=21, next=23
+            KindStringLiteral "7" [55, 59), i=22, next=0
+          KindLiteralType [61, 65), i=23, next=25
+            KindStringLiteral "8" [61, 65), i=24, next=0
+          KindLiteralType [67, 71), i=25, next=0
+            KindStringLiteral "9" [67, 71), i=26, next=0
+    KindTypeAliasDeclaration [72, 135), i=27, next=51
+      KindIdentifier "T1" [78, 81), i=28, next=29
+      KindUnionType [83, 134), i=29, next=0
+        NodeList [83, 134), i=30, next=0
+          KindTemplateLiteralType [83, 122), i=31, next=50
+            KindTemplateHead [83, 87), i=32, next=33
+            NodeList [87, 122), i=33, next=0
+              KindTemplateLiteralTypeSpan [87, 96), i=34, next=38
+                KindTypeReference [87, 93), i=35, next=37
+                  KindIdentifier "Digits" [87, 93), i=36, next=0
+                KindTemplateMiddle [93, 96), i=37, next=0
+              KindTemplateLiteralTypeSpan [96, 105), i=38, next=42
+                KindTypeReference [96, 102), i=39, next=41
+                  KindIdentifier "Digits" [96, 102), i=40, next=0
+                KindTemplateMiddle [102, 105), i=41, next=0
+              KindTemplateLiteralTypeSpan [105, 114), i=42, next=46
+                KindTypeReference [105, 111), i=43, next=45
+                  KindIdentifier "Digits" [105, 111), i=44, next=0
+                KindTemplateMiddle [111, 114), i=45, next=0
+              KindTemplateLiteralTypeSpan [114, 122), i=46, next=0
+                KindTypeReference [114, 120), i=47, next=49
+                  KindIdentifier "Digits" [114, 120), i=48, next=0
+                KindTemplateTail [120, 122), i=49, next=0
+          KindUndefinedKeyword [124, 134), i=50, next=0
+    KindTypeAliasDeclaration [135, 177), i=51, next=65
+      KindIdentifier "T2" [141, 144), i=52, next=53
+      KindUnionType [146, 176), i=53, next=0
+        NodeList [146, 176), i=54, next=0
+          KindTypeLiteral [146, 160), i=55, next=60
+            NodeList [148, 158), i=56, next=0
+              KindPropertySignature [148, 158), i=57, next=0
+                KindIdentifier "a" [148, 150), i=58, next=59
+                KindStringKeyword [151, 158), i=59, next=0
+          KindTypeLiteral [162, 176), i=60, next=0
+            NodeList [164, 174), i=61, next=0
+              KindPropertySignature [164, 174), i=62, next=0
+                KindIdentifier "b" [164, 166), i=63, next=64
+                KindNumberKeyword [167, 174), i=64, next=0
+    KindFunctionDeclaration [177, 228), i=65, next=87
+      KindIdentifier "f1" [189, 192), i=66, next=67
+      NodeList [193, 210), i=67, next=80
+        KindParameter [193, 198), i=68, next=72
+          KindIdentifier "x" [193, 194), i=69, next=70
+          KindTypeReference [195, 198), i=70, next=0
+            KindIdentifier "T1" [195, 198), i=71, next=0
+        KindParameter [199, 210), i=72, next=0
+          KindIdentifier "y" [199, 201), i=73, next=74
+          KindIntersectionType [202, 210), i=74, next=0
+            NodeList [202, 210), i=75, next=0
+              KindTypeReference [202, 205), i=76, next=78
+                KindIdentifier "T1" [202, 205), i=77, next=0
+              KindTypeReference [207, 210), i=78, next=0
+                KindIdentifier "T2" [207, 210), i=79, next=0
+      KindBlock [211, 228), i=80, next=0
+        NodeList [213, 225), i=81, next=0
+          KindExpressionStatement [213, 225), i=82, next=0
+            KindBinaryExpression [213, 224), i=83, next=0
+              KindIdentifier "x" [213, 220), i=84, next=85
+              KindEqualsToken [220, 222), i=85, next=86
+              KindIdentifier "y" [222, 224), i=86, next=0
+    KindFunctionDeclaration [228, 307), i=87, next=0
+      KindIdentifier "f2" [240, 243), i=88, next=89
+      NodeList [244, 268), i=89, next=106
+        KindParameter [244, 256), i=90, next=98
+          KindIdentifier "x" [244, 245), i=91, next=92
+          KindUnionType [246, 256), i=92, next=0
+            NodeList [246, 256), i=93, next=0
+              KindTypeReference [246, 249), i=94, next=96
+                KindIdentifier "T1" [246, 249), i=95, next=0
+              KindLiteralType [251, 256), i=96, next=0
+                KindNullKeyword [251, 256), i=97, next=0
+        KindParameter [257, 268), i=98, next=0
+          KindIdentifier "y" [257, 259), i=99, next=100
+          KindIntersectionType [260, 268), i=100, next=0
+            NodeList [260, 268), i=101, next=0
+              KindTypeReference [260, 263), i=102, next=104
+                KindIdentifier "T1" [260, 263), i=103, next=0
+              KindTypeReference [265, 268), i=104, next=0
+                KindIdentifier "T2" [265, 268), i=105, next=0
+      KindBlock [269, 307), i=106, next=0
+        NodeList [271, 283), i=107, next=0
+          KindExpressionStatement [271, 283), i=108, next=0
+            KindBinaryExpression [271, 282), i=109, next=0
+              KindIdentifier "x" [271, 278), i=110, next=111
+              KindEqualsToken [278, 280), i=111, next=112
+              KindIdentifier "y" [280, 282), i=112, next=0

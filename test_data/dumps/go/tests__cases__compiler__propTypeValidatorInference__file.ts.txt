@@ -1,0 +1,253 @@
+KindSourceFile [0, 1485), i=1, next=0
+  NodeList [0, 1485), i=2, next=0
+    KindImportDeclaration [0, 40), i=3, next=8
+      KindImportClause [6, 21), i=4, next=7
+        KindNamespaceImport [6, 21), i=5, next=0
+          KindIdentifier "PropTypes" [11, 21), i=6, next=0
+      KindStringLiteral "prop-types" [26, 39), i=7, next=0
+    KindInterfaceDeclaration [40, 297), i=8, next=52
+      KindIdentifier "Props" [51, 57), i=9, next=10
+      NodeList [59, 294), i=10, next=0
+        KindPropertySignature [59, 75), i=11, next=15
+          KindIdentifier "any" [59, 68), i=12, next=13
+          KindQuestionToken [68, 69), i=13, next=14
+          KindAnyKeyword [70, 74), i=14, next=0
+        KindPropertySignature [75, 97), i=15, next=19
+          KindIdentifier "array" [75, 86), i=16, next=17
+          KindArrayType [87, 96), i=17, next=0
+            KindStringKeyword [87, 94), i=18, next=0
+        KindPropertySignature [97, 117), i=19, next=22
+          KindIdentifier "bool" [97, 107), i=20, next=21
+          KindBooleanKeyword [108, 116), i=21, next=0
+        KindPropertySignature [117, 204), i=22, next=37
+          KindIdentifier "shape" [117, 128), i=23, next=24
+          KindTypeLiteral [129, 203), i=24, next=0
+            NodeList [131, 196), i=25, next=0
+              KindPropertySignature [131, 153), i=26, next=29
+                KindIdentifier "foo" [131, 144), i=27, next=28
+                KindStringKeyword [145, 152), i=28, next=0
+              KindPropertySignature [153, 177), i=29, next=33
+                KindIdentifier "bar" [153, 166), i=30, next=31
+                KindQuestionToken [166, 167), i=31, next=32
+                KindBooleanKeyword [168, 176), i=32, next=0
+              KindPropertySignature [177, 196), i=33, next=0
+                KindIdentifier "baz" [177, 190), i=34, next=35
+                KindQuestionToken [190, 191), i=35, next=36
+                KindAnyKeyword [192, 196), i=36, next=0
+        KindPropertySignature [204, 294), i=37, next=0
+          KindIdentifier "oneOfType" [204, 219), i=38, next=39
+          KindUnionType [220, 293), i=39, next=0
+            NodeList [220, 293), i=40, next=0
+              KindStringKeyword [220, 227), i=41, next=42
+              KindBooleanKeyword [229, 237), i=42, next=43
+              KindTypeLiteral [239, 293), i=43, next=0
+                NodeList [241, 286), i=44, next=0
+                  KindPropertySignature [241, 264), i=45, next=49
+                    KindIdentifier "foo" [241, 254), i=46, next=47
+                    KindQuestionToken [254, 255), i=47, next=48
+                    KindStringKeyword [256, 263), i=48, next=0
+                  KindPropertySignature [264, 286), i=49, next=0
+                    KindIdentifier "bar" [264, 277), i=50, next=51
+                    KindNumberKeyword [278, 285), i=51, next=0
+    KindTypeAliasDeclaration [297, 352), i=52, next=61
+      KindIdentifier "PropTypesMap" [305, 318), i=53, next=54
+      KindTypeReference [320, 351), i=54, next=0
+        KindQualifiedName [320, 344), i=55, next=58
+          KindIdentifier "PropTypes" [320, 330), i=56, next=57
+          KindIdentifier "ValidationMap" [331, 344), i=57, next=0
+        NodeList [345, 350), i=58, next=0
+          KindTypeReference [345, 350), i=59, next=0
+            KindIdentifier "Props" [345, 350), i=60, next=0
+    KindVariableStatement [352, 469), i=61, next=85
+      KindVariableDeclarationList [352, 468), i=62, next=0
+        NodeList [361, 468), i=63, next=0
+          KindVariableDeclaration [361, 468), i=64, next=0
+            KindIdentifier "innerProps" [361, 372), i=65, next=66
+            KindObjectLiteralExpression [374, 468), i=66, next=0
+              NodeList [376, 465), i=67, next=0
+                KindPropertyAssignment [376, 414), i=68, next=75
+                  KindIdentifier "foo" [376, 385), i=69, next=70
+                  KindPropertyAccessExpression [386, 414), i=70, next=0
+                    KindPropertyAccessExpression [386, 403), i=71, next=74
+                      KindIdentifier "PropTypes" [386, 396), i=72, next=73
+                      KindIdentifier "string" [397, 403), i=73, next=0
+                    KindIdentifier "isRequired" [404, 414), i=74, next=0
+                KindPropertyAssignment [415, 440), i=75, next=80
+                  KindIdentifier "bar" [415, 424), i=76, next=77
+                  KindPropertyAccessExpression [425, 440), i=77, next=0
+                    KindIdentifier "PropTypes" [425, 435), i=78, next=79
+                    KindIdentifier "bool" [436, 440), i=79, next=0
+                KindPropertyAssignment [441, 465), i=80, next=0
+                  KindIdentifier "baz" [441, 450), i=81, next=82
+                  KindPropertyAccessExpression [451, 465), i=82, next=0
+                    KindIdentifier "PropTypes" [451, 461), i=83, next=84
+                    KindIdentifier "any" [462, 465), i=84, next=0
+    KindVariableStatement [469, 618), i=85, next=117
+      KindVariableDeclarationList [469, 617), i=86, next=0
+        NodeList [478, 617), i=87, next=0
+          KindVariableDeclaration [478, 617), i=88, next=0
+            KindIdentifier "arrayOfTypes" [478, 491), i=89, next=90
+            KindArrayLiteralExpression [493, 617), i=90, next=0
+              NodeList [495, 616), i=91, next=0
+                KindPropertyAccessExpression [495, 511), i=92, next=95
+                  KindIdentifier "PropTypes" [495, 504), i=93, next=94
+                  KindIdentifier "string" [505, 511), i=94, next=0
+                KindPropertyAccessExpression [512, 527), i=95, next=98
+                  KindIdentifier "PropTypes" [512, 522), i=96, next=97
+                  KindIdentifier "bool" [523, 527), i=97, next=0
+                KindCallExpression [528, 616), i=98, next=0
+                  KindPropertyAccessExpression [528, 544), i=99, next=102
+                    KindIdentifier "PropTypes" [528, 538), i=100, next=101
+                    KindIdentifier "shape" [539, 544), i=101, next=0
+                  NodeList [545, 615), i=102, next=0
+                    KindObjectLiteralExpression [545, 615), i=103, next=0
+                      NodeList [546, 612), i=104, next=0
+                        KindPropertyAssignment [546, 573), i=105, next=110
+                          KindIdentifier "foo" [546, 555), i=106, next=107
+                          KindPropertyAccessExpression [556, 573), i=107, next=0
+                            KindIdentifier "PropTypes" [556, 566), i=108, next=109
+                            KindIdentifier "string" [567, 573), i=109, next=0
+                        KindPropertyAssignment [574, 612), i=110, next=0
+                          KindIdentifier "bar" [574, 583), i=111, next=112
+                          KindPropertyAccessExpression [584, 612), i=112, next=0
+                            KindPropertyAccessExpression [584, 601), i=113, next=116
+                              KindIdentifier "PropTypes" [584, 594), i=114, next=115
+                              KindIdentifier "number" [595, 601), i=115, next=0
+                            KindIdentifier "isRequired" [602, 612), i=116, next=0
+    KindVariableStatement [618, 892), i=117, next=165
+      KindVariableDeclarationList [618, 891), i=118, next=0
+        NodeList [643, 891), i=119, next=0
+          KindVariableDeclaration [643, 891), i=120, next=0
+            KindIdentifier "propTypes" [643, 653), i=121, next=122
+            KindTypeReference [654, 667), i=122, next=124
+              KindIdentifier "PropTypesMap" [654, 667), i=123, next=0
+            KindObjectLiteralExpression [669, 891), i=124, next=0
+              NodeList [671, 888), i=125, next=0
+                KindPropertyAssignment [671, 695), i=126, next=131
+                  KindIdentifier "any" [671, 680), i=127, next=128
+                  KindPropertyAccessExpression [681, 695), i=128, next=0
+                    KindIdentifier "PropTypes" [681, 691), i=129, next=130
+                    KindIdentifier "any" [692, 695), i=130, next=0
+                KindPropertyAssignment [696, 735), i=131, next=138
+                  KindIdentifier "array" [696, 707), i=132, next=133
+                  KindPropertyAccessExpression [708, 735), i=133, next=0
+                    KindPropertyAccessExpression [708, 724), i=134, next=137
+                      KindIdentifier "PropTypes" [708, 718), i=135, next=136
+                      KindIdentifier "array" [719, 724), i=136, next=0
+                    KindIdentifier "isRequired" [725, 735), i=137, next=0
+                KindPropertyAssignment [736, 773), i=138, next=145
+                  KindIdentifier "bool" [736, 746), i=139, next=140
+                  KindPropertyAccessExpression [747, 773), i=140, next=0
+                    KindPropertyAccessExpression [747, 762), i=141, next=144
+                      KindIdentifier "PropTypes" [747, 757), i=142, next=143
+                      KindIdentifier "bool" [758, 762), i=143, next=0
+                    KindIdentifier "isRequired" [763, 773), i=144, next=0
+                KindPropertyAssignment [774, 825), i=145, next=155
+                  KindIdentifier "shape" [774, 785), i=146, next=147
+                  KindPropertyAccessExpression [786, 825), i=147, next=0
+                    KindCallExpression [786, 814), i=148, next=154
+                      KindPropertyAccessExpression [786, 802), i=149, next=152
+                        KindIdentifier "PropTypes" [786, 796), i=150, next=151
+                        KindIdentifier "shape" [797, 802), i=151, next=0
+                      NodeList [803, 813), i=152, next=0
+                        KindIdentifier "innerProps" [803, 813), i=153, next=0
+                    KindIdentifier "isRequired" [815, 825), i=154, next=0
+                KindPropertyAssignment [826, 887), i=155, next=0
+                  KindIdentifier "oneOfType" [826, 841), i=156, next=157
+                  KindPropertyAccessExpression [842, 887), i=157, next=0
+                    KindCallExpression [842, 876), i=158, next=164
+                      KindPropertyAccessExpression [842, 862), i=159, next=162
+                        KindIdentifier "PropTypes" [842, 852), i=160, next=161
+                        KindIdentifier "oneOfType" [853, 862), i=161, next=0
+                      NodeList [863, 875), i=162, next=0
+                        KindIdentifier "arrayOfTypes" [863, 875), i=163, next=0
+                    KindIdentifier "isRequired" [877, 887), i=164, next=0
+    KindVariableStatement [892, 1169), i=165, next=211
+      KindVariableDeclarationList [892, 1168), i=166, next=0
+        NodeList [917, 1168), i=167, next=0
+          KindVariableDeclaration [917, 1168), i=168, next=0
+            KindIdentifier "propTypesWithoutAnnotation" [917, 944), i=169, next=170
+            KindObjectLiteralExpression [946, 1168), i=170, next=0
+              NodeList [948, 1165), i=171, next=0
+                KindPropertyAssignment [948, 972), i=172, next=177
+                  KindIdentifier "any" [948, 957), i=173, next=174
+                  KindPropertyAccessExpression [958, 972), i=174, next=0
+                    KindIdentifier "PropTypes" [958, 968), i=175, next=176
+                    KindIdentifier "any" [969, 972), i=176, next=0
+                KindPropertyAssignment [973, 1012), i=177, next=184
+                  KindIdentifier "array" [973, 984), i=178, next=179
+                  KindPropertyAccessExpression [985, 1012), i=179, next=0
+                    KindPropertyAccessExpression [985, 1001), i=180, next=183
+                      KindIdentifier "PropTypes" [985, 995), i=181, next=182
+                      KindIdentifier "array" [996, 1001), i=182, next=0
+                    KindIdentifier "isRequired" [1002, 1012), i=183, next=0
+                KindPropertyAssignment [1013, 1050), i=184, next=191
+                  KindIdentifier "bool" [1013, 1023), i=185, next=186
+                  KindPropertyAccessExpression [1024, 1050), i=186, next=0
+                    KindPropertyAccessExpression [1024, 1039), i=187, next=190
+                      KindIdentifier "PropTypes" [1024, 1034), i=188, next=189
+                      KindIdentifier "bool" [1035, 1039), i=189, next=0
+                    KindIdentifier "isRequired" [1040, 1050), i=190, next=0
+                KindPropertyAssignment [1051, 1102), i=191, next=201
+                  KindIdentifier "shape" [1051, 1062), i=192, next=193
+                  KindPropertyAccessExpression [1063, 1102), i=193, next=0
+                    KindCallExpression [1063, 1091), i=194, next=200
+                      KindPropertyAccessExpression [1063, 1079), i=195, next=198
+                        KindIdentifier "PropTypes" [1063, 1073), i=196, next=197
+                        KindIdentifier "shape" [1074, 1079), i=197, next=0
+                      NodeList [1080, 1090), i=198, next=0
+                        KindIdentifier "innerProps" [1080, 1090), i=199, next=0
+                    KindIdentifier "isRequired" [1092, 1102), i=200, next=0
+                KindPropertyAssignment [1103, 1164), i=201, next=0
+                  KindIdentifier "oneOfType" [1103, 1118), i=202, next=203
+                  KindPropertyAccessExpression [1119, 1164), i=203, next=0
+                    KindCallExpression [1119, 1153), i=204, next=210
+                      KindPropertyAccessExpression [1119, 1139), i=205, next=208
+                        KindIdentifier "PropTypes" [1119, 1129), i=206, next=207
+                        KindIdentifier "oneOfType" [1130, 1139), i=207, next=0
+                      NodeList [1140, 1152), i=208, next=0
+                        KindIdentifier "arrayOfTypes" [1140, 1152), i=209, next=0
+                    KindIdentifier "isRequired" [1154, 1164), i=210, next=0
+    KindTypeAliasDeclaration [1169, 1234), i=211, next=220
+      KindIdentifier "ExtractedProps" [1177, 1192), i=212, next=213
+      KindTypeReference [1194, 1233), i=213, next=0
+        KindQualifiedName [1194, 1215), i=214, next=217
+          KindIdentifier "PropTypes" [1194, 1204), i=215, next=216
+          KindIdentifier "InferProps" [1205, 1215), i=216, next=0
+        NodeList [1216, 1232), i=217, next=0
+          KindTypeQuery [1216, 1232), i=218, next=0
+            KindIdentifier "propTypes" [1222, 1232), i=219, next=0
+    KindTypeAliasDeclaration [1234, 1333), i=220, next=229
+      KindIdentifier "ExtractedPropsWithoutAnnotation" [1242, 1274), i=221, next=222
+      KindTypeReference [1276, 1332), i=222, next=0
+        KindQualifiedName [1276, 1297), i=223, next=226
+          KindIdentifier "PropTypes" [1276, 1286), i=224, next=225
+          KindIdentifier "InferProps" [1287, 1297), i=225, next=0
+        NodeList [1298, 1331), i=226, next=0
+          KindTypeQuery [1298, 1331), i=227, next=0
+            KindIdentifier "propTypesWithoutAnnotation" [1304, 1331), i=228, next=0
+    KindTypeAliasDeclaration [1333, 1432), i=229, next=240
+      KindIdentifier "ExtractPropsMatch" [1341, 1359), i=230, next=231
+      KindConditionalType [1361, 1431), i=231, next=0
+        KindTypeReference [1361, 1376), i=232, next=234
+          KindIdentifier "ExtractedProps" [1361, 1376), i=233, next=0
+        KindTypeReference [1384, 1416), i=234, next=236
+          KindIdentifier "ExtractedPropsWithoutAnnotation" [1384, 1416), i=235, next=0
+        KindLiteralType [1418, 1423), i=236, next=238
+          KindTrueKeyword [1418, 1423), i=237, next=0
+        KindLiteralType [1425, 1431), i=238, next=0
+          KindFalseKeyword [1425, 1431), i=239, next=0
+    KindVariableStatement [1432, 1485), i=240, next=0
+      KindVariableDeclarationList [1432, 1484), i=241, next=0
+        NodeList [1439, 1484), i=242, next=0
+          KindVariableDeclaration [1439, 1484), i=243, next=0
+            KindIdentifier "x" [1439, 1441), i=244, next=245
+            KindLiteralType [1442, 1447), i=245, next=247
+              KindTrueKeyword [1442, 1447), i=246, next=0
+            KindParenthesizedExpression [1449, 1484), i=247, next=0
+              KindAsExpression [1451, 1483), i=248, next=0
+                KindAsExpression [1451, 1462), i=249, next=252
+                  KindNullKeyword [1451, 1455), i=250, next=251
+                  KindAnyKeyword [1458, 1462), i=251, next=0
+                KindTypeReference [1465, 1483), i=252, next=0
+                  KindIdentifier "ExtractPropsMatch" [1465, 1483), i=253, next=0

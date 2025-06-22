@@ -1,0 +1,64 @@
+KindSourceFile [0, 230), i=1, next=0
+  NodeList [0, 230), i=2, next=0
+    KindInterfaceDeclaration [0, 68), i=3, next=17
+      KindIdentifier "Options" [9, 17), i=4, next=5
+      NodeList [19, 65), i=5, next=0
+        KindPropertySignature [19, 45), i=6, next=13
+          KindIdentifier "a" [19, 26), i=7, next=8
+          KindQuestionToken [26, 27), i=8, next=9
+          KindUnionType [28, 44), i=9, next=0
+            NodeList [28, 44), i=10, next=0
+              KindNumberKeyword [28, 35), i=11, next=12
+              KindObjectKeyword [37, 44), i=12, next=0
+        KindPropertySignature [45, 65), i=13, next=0
+          KindIdentifier "b" [45, 52), i=14, next=15
+          KindFunctionType [53, 64), i=15, next=0
+            KindVoidKeyword [59, 64), i=16, next=0
+    KindClassDeclaration [68, 230), i=17, next=0
+      KindIdentifier "C" [77, 79), i=18, next=19
+      NodeList [80, 97), i=19, next=24
+        KindTypeParameter [80, 97), i=20, next=0
+          KindIdentifier "T" [80, 81), i=21, next=22
+          KindTypeReference [89, 97), i=22, next=0
+            KindIdentifier "Options" [89, 97), i=23, next=0
+      NodeList [100, 227), i=24, next=0
+        KindPropertyDeclaration [100, 136), i=25, next=39
+          KindIdentifier "foo" [100, 109), i=26, next=27
+          KindExclamationToken [109, 110), i=27, next=28
+          KindMappedType [111, 136), i=28, next=0
+            KindTypeParameter [115, 127), i=29, next=34
+              KindIdentifier "P" [115, 116), i=30, next=31
+              KindTypeOperator [119, 127), i=31, next=0
+                KindTypeReference [125, 127), i=32, next=0
+                  KindIdentifier "T" [125, 127), i=33, next=0
+            KindIndexedAccessType [129, 134), i=34, next=0
+              KindTypeReference [129, 131), i=35, next=37
+                KindIdentifier "T" [129, 131), i=36, next=0
+              KindTypeReference [132, 133), i=37, next=0
+                KindIdentifier "P" [132, 133), i=38, next=0
+        KindMethodDeclaration [136, 227), i=39, next=0
+          KindIdentifier "method" [136, 150), i=40, next=41
+          KindBlock [152, 227), i=41, next=0
+            NodeList [154, 220), i=42, next=0
+              KindVariableStatement [154, 188), i=43, next=56
+                KindVariableDeclarationList [154, 187), i=44, next=0
+                  NodeList [167, 187), i=45, next=0
+                    KindVariableDeclaration [167, 187), i=46, next=0
+                      KindObjectBindingPattern [167, 176), i=47, next=53
+                        NodeList [169, 174), i=48, next=0
+                          KindBindingElement [169, 171), i=49, next=51
+                            KindIdentifier "a" [169, 171), i=50, next=0
+                          KindBindingElement [172, 174), i=51, next=0
+                            KindIdentifier "b" [172, 174), i=52, next=0
+                      KindPropertyAccessExpression [178, 187), i=53, next=0
+                        KindThisKeyword [178, 183), i=54, next=55
+                        KindIdentifier "foo" [184, 187), i=55, next=0
+              KindExpressionStatement [188, 208), i=56, next=63
+                KindPrefixUnaryExpression [188, 207), i=57, next=0
+                  KindParenthesizedExpression [199, 207), i=58, next=0
+                    KindBinaryExpression [200, 206), i=59, next=0
+                      KindIdentifier "a" [200, 201), i=60, next=61
+                      KindAmpersandAmpersandToken [201, 204), i=61, next=62
+                      KindIdentifier "b" [204, 206), i=62, next=0
+              KindExpressionStatement [208, 220), i=63, next=0
+                KindIdentifier "a" [208, 219), i=64, next=0

@@ -1,0 +1,47 @@
+KindSourceFile [0, 321), i=1, next=0
+  NodeList [0, 321), i=2, next=0
+    KindModuleDeclaration [0, 321), i=3, next=0
+      KindIdentifier "SomeOther" [65, 75), i=4, next=5
+      KindModuleDeclaration [76, 321), i=5, next=0
+        NodeList [76, 76), i=6, next=8
+          KindExportKeyword [76, 76), i=7, next=0
+        KindIdentifier "Thing" [76, 81), i=8, next=9
+        KindModuleBlock [81, 321), i=9, next=0
+          NodeList [83, 318), i=10, next=0
+            KindImportEqualsDeclaration [83, 119), i=11, next=16
+              KindIdentifier "Internal" [95, 104), i=12, next=13
+              KindQualifiedName [106, 118), i=13, next=0
+                KindIdentifier "My" [106, 109), i=14, next=15
+                KindIdentifier "Internal" [110, 118), i=15, next=0
+            KindClassDeclaration [119, 318), i=16, next=0
+              NodeList [119, 131), i=17, next=19
+                KindExportKeyword [119, 131), i=18, next=0
+              KindIdentifier "Foo" [137, 141), i=19, next=20
+              NodeList [143, 311), i=20, next=0
+                KindPropertyDeclaration [143, 189), i=21, next=29
+                  NodeList [143, 160), i=22, next=24
+                    KindPrivateKeyword [143, 160), i=23, next=0
+                  KindIdentifier "_which" [160, 167), i=24, next=25
+                  KindTypeReference [168, 188), i=25, next=0
+                    KindQualifiedName [168, 188), i=26, next=0
+                      KindIdentifier "Internal" [168, 177), i=27, next=28
+                      KindIdentifier "WhichThing" [178, 188), i=28, next=0
+                KindConstructor [189, 311), i=29, next=0
+                  KindBlock [212, 311), i=30, next=0
+                    NodeList [214, 300), i=31, next=0
+                      KindExpressionStatement [214, 248), i=32, next=37
+                        KindCallExpression [214, 247), i=33, next=0
+                          KindPropertyAccessExpression [214, 245), i=34, next=0
+                            KindIdentifier "Internal" [214, 236), i=35, next=36
+                            KindIdentifier "getThing" [237, 245), i=36, next=0
+                      KindExpressionStatement [248, 300), i=37, next=0
+                        KindConditionalExpression [248, 299), i=38, next=0
+                          KindPropertyAccessExpression [248, 283), i=39, next=44
+                            KindPropertyAccessExpression [248, 281), i=40, next=43
+                              KindIdentifier "Internal" [248, 270), i=41, next=42
+                              KindIdentifier "WhichThing" [271, 281), i=42, next=0
+                            KindIdentifier "A" [282, 283), i=43, next=0
+                          KindQuestionToken [283, 285), i=44, next=45
+                          KindStringLiteral "foo" [285, 291), i=45, next=46
+                          KindColonToken [291, 293), i=46, next=47
+                          KindStringLiteral "bar" [293, 299), i=47, next=0

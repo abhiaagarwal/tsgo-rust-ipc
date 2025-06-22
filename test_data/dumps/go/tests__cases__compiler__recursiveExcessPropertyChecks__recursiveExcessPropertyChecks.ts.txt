@@ -1,0 +1,45 @@
+KindSourceFile [0, 199), i=1, next=0
+  NodeList [0, 197), i=2, next=0
+    KindInterfaceDeclaration [0, 46), i=3, next=10
+      KindIdentifier "ITreeItem" [9, 19), i=4, next=5
+      NodeList [21, 43), i=5, next=0
+        KindPropertySignature [21, 43), i=6, next=0
+          KindIdentifier "Parent" [21, 35), i=7, next=8
+          KindQuestionToken [35, 36), i=8, next=9
+          KindThisType [37, 42), i=9, next=0
+    KindTypeAliasDeclaration [46, 96), i=10, next=22
+      KindIdentifier "NodeWithId" [54, 65), i=11, next=12
+      KindIntersectionType [67, 95), i=12, next=0
+        NodeList [67, 95), i=13, next=0
+          KindTypeReference [67, 77), i=14, next=16
+            KindIdentifier "ITreeItem" [67, 77), i=15, next=0
+          KindTypeLiteral [79, 95), i=16, next=0
+            NodeList [81, 93), i=17, next=0
+              KindPropertySignature [81, 93), i=18, next=0
+                KindIdentifier "Id" [81, 84), i=19, next=20
+                KindQuestionToken [84, 85), i=20, next=21
+                KindNumberKeyword [86, 93), i=21, next=0
+    KindFunctionDeclaration [96, 143), i=22, next=31
+      KindIdentifier "getMaxId" [108, 117), i=23, next=24
+      NodeList [118, 137), i=24, next=30
+        KindParameter [118, 137), i=25, next=0
+          KindIdentifier "items" [118, 123), i=26, next=27
+          KindArrayType [124, 137), i=27, next=0
+            KindTypeReference [124, 135), i=28, next=0
+              KindIdentifier "NodeWithId" [124, 135), i=29, next=0
+      KindBlock [138, 143), i=30, next=0
+    KindVariableStatement [143, 179), i=31, next=41
+      KindVariableDeclarationList [143, 178), i=32, next=0
+        NodeList [152, 178), i=33, next=0
+          KindVariableDeclaration [152, 178), i=34, next=0
+            KindIdentifier "nodes" [152, 158), i=35, next=36
+            KindAsExpression [160, 178), i=36, next=0
+              KindArrayLiteralExpression [160, 163), i=37, next=38
+              KindArrayType [166, 178), i=38, next=0
+                KindTypeReference [166, 176), i=39, next=0
+                  KindIdentifier "ITreeItem" [166, 176), i=40, next=0
+    KindExpressionStatement [179, 197), i=41, next=0
+      KindCallExpression [179, 196), i=42, next=0
+        KindIdentifier "getMaxId" [179, 189), i=43, next=44
+        NodeList [190, 195), i=44, next=0
+          KindIdentifier "nodes" [190, 195), i=45, next=0

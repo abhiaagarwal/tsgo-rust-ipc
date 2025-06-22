@@ -1,0 +1,33 @@
+KindSourceFile [0, 125), i=1, next=0
+  NodeList [0, 125), i=2, next=0
+    KindVariableStatement [0, 125), i=3, next=0
+      KindVariableDeclarationList [0, 124), i=4, next=0
+        NodeList [3, 124), i=5, next=0
+          KindVariableDeclaration [3, 124), i=6, next=0
+            KindIdentifier "foo" [3, 7), i=7, next=8
+            KindFunctionType [8, 20), i=8, next=12
+              KindTupleType [14, 20), i=9, next=0
+                NodeList [16, 19), i=10, next=0
+                  KindAnyKeyword [16, 19), i=11, next=0
+            KindFunctionExpression [22, 124), i=12, next=0
+              KindIdentifier "bar" [31, 35), i=13, next=14
+              KindBlock [37, 124), i=14, next=0
+                NodeList [39, 121), i=15, next=0
+                  KindVariableStatement [39, 70), i=16, next=23
+                    KindVariableDeclarationList [39, 69), i=17, next=0
+                      NodeList [48, 69), i=18, next=0
+                        KindVariableDeclaration [48, 69), i=19, next=0
+                          KindIdentifier "intermediate" [48, 61), i=20, next=21
+                          KindCallExpression [63, 69), i=21, next=0
+                            KindIdentifier "bar" [63, 67), i=22, next=0
+                  KindExpressionStatement [70, 96), i=23, next=30
+                    KindBinaryExpression [70, 95), i=24, next=0
+                      KindIdentifier "intermediate" [70, 88), i=25, next=26
+                      KindEqualsToken [88, 90), i=26, next=27
+                      KindArrayLiteralExpression [90, 95), i=27, next=0
+                        NodeList [92, 94), i=28, next=0
+                          KindStringLiteral "" [92, 94), i=29, next=0
+                  KindReturnStatement [96, 121), i=30, next=0
+                    KindArrayLiteralExpression [108, 120), i=31, next=0
+                      NodeList [110, 119), i=32, next=0
+                        KindIdentifier "undefined" [110, 119), i=33, next=0

@@ -1,0 +1,278 @@
+KindSourceFile [0, 2811), i=1, next=0
+  NodeList [0, 2789), i=2, next=0
+    KindInterfaceDeclaration [0, 49), i=3, next=12
+      KindIdentifier "SomeType" [9, 18), i=4, next=5
+      NodeList [20, 46), i=5, next=0
+        KindCallSignature [20, 46), i=6, next=0
+          NodeList [27, 36), i=7, next=11
+            KindParameter [27, 36), i=8, next=0
+              KindIdentifier "a" [27, 28), i=9, next=10
+              KindNumberKeyword [29, 36), i=10, next=0
+          KindNumberKeyword [38, 45), i=11, next=0
+    KindInterfaceDeclaration [49, 101), i=12, next=21
+      KindIdentifier "SomeType2" [60, 70), i=13, next=14
+      NodeList [72, 98), i=14, next=0
+        KindCallSignature [72, 98), i=15, next=0
+          NodeList [79, 88), i=16, next=20
+            KindParameter [79, 88), i=17, next=0
+              KindIdentifier "a" [79, 80), i=18, next=19
+              KindNumberKeyword [81, 88), i=19, next=0
+          KindStringKeyword [90, 97), i=20, next=0
+    KindInterfaceDeclaration [101, 165), i=21, next=27
+      KindIdentifier "IWithNoStringIndexSignature" [114, 142), i=22, next=23
+      NodeList [144, 162), i=23, next=0
+        KindPropertySignature [144, 162), i=24, next=0
+          KindIdentifier "foo" [144, 153), i=25, next=26
+          KindStringKeyword [154, 161), i=26, next=0
+    KindInterfaceDeclaration [165, 225), i=27, next=33
+      KindIdentifier "IWithNoNumberIndexSignature" [176, 204), i=28, next=29
+      NodeList [206, 222), i=29, next=0
+        KindPropertySignature [206, 222), i=30, next=0
+          KindNumericLiteral [206, 213), i=31, next=32
+          KindStringKeyword [214, 221), i=32, next=0
+    KindInterfaceDeclaration [225, 296), i=33, next=43
+      KindIdentifier "IWithStringIndexSignature1" [236, 263), i=34, next=35
+      NodeList [265, 293), i=35, next=0
+        KindIndexSignature [265, 293), i=36, next=0
+          NodeList [272, 281), i=37, next=41
+            KindParameter [272, 281), i=38, next=0
+              KindIdentifier "a" [272, 273), i=39, next=40
+              KindStringKeyword [274, 281), i=40, next=0
+          KindTypeReference [283, 292), i=41, next=0
+            KindIdentifier "SomeType" [283, 292), i=42, next=0
+    KindInterfaceDeclaration [296, 368), i=43, next=53
+      KindIdentifier "IWithStringIndexSignature2" [307, 334), i=44, next=45
+      NodeList [336, 365), i=45, next=0
+        KindIndexSignature [336, 365), i=46, next=0
+          NodeList [343, 352), i=47, next=51
+            KindParameter [343, 352), i=48, next=0
+              KindIdentifier "a" [343, 344), i=49, next=50
+              KindStringKeyword [345, 352), i=50, next=0
+          KindTypeReference [354, 364), i=51, next=0
+            KindIdentifier "SomeType2" [354, 364), i=52, next=0
+    KindInterfaceDeclaration [368, 439), i=53, next=63
+      KindIdentifier "IWithNumberIndexSignature1" [379, 406), i=54, next=55
+      NodeList [408, 436), i=55, next=0
+        KindIndexSignature [408, 436), i=56, next=0
+          NodeList [415, 424), i=57, next=61
+            KindParameter [415, 424), i=58, next=0
+              KindIdentifier "a" [415, 416), i=59, next=60
+              KindNumberKeyword [417, 424), i=60, next=0
+          KindTypeReference [426, 435), i=61, next=0
+            KindIdentifier "SomeType" [426, 435), i=62, next=0
+    KindInterfaceDeclaration [439, 511), i=63, next=73
+      KindIdentifier "IWithNumberIndexSignature2" [450, 477), i=64, next=65
+      NodeList [479, 508), i=65, next=0
+        KindIndexSignature [479, 508), i=66, next=0
+          NodeList [486, 495), i=67, next=71
+            KindParameter [486, 495), i=68, next=0
+              KindIdentifier "a" [486, 487), i=69, next=70
+              KindNumberKeyword [488, 495), i=70, next=0
+          KindTypeReference [497, 507), i=71, next=0
+            KindIdentifier "SomeType2" [497, 507), i=72, next=0
+    KindVariableStatement [511, 1530), i=73, next=94
+      KindVariableDeclarationList [511, 1529), i=74, next=0
+        NodeList [1453, 1529), i=75, next=0
+          KindVariableDeclaration [1453, 1529), i=76, next=0
+            KindIdentifier "x" [1453, 1455), i=77, next=78
+            KindUnionType [1456, 1513), i=78, next=84
+              NodeList [1456, 1513), i=79, next=0
+                KindTypeReference [1456, 1484), i=80, next=82
+                  KindIdentifier "IWithNoStringIndexSignature" [1456, 1484), i=81, next=0
+                KindTypeReference [1486, 1513), i=82, next=0
+                  KindIdentifier "IWithStringIndexSignature1" [1486, 1513), i=83, next=0
+            KindObjectLiteralExpression [1515, 1529), i=84, next=0
+              NodeList [1517, 1527), i=85, next=0
+                KindPropertyAssignment [1517, 1527), i=86, next=0
+                  KindIdentifier "z" [1517, 1519), i=87, next=88
+                  KindArrowFunction [1520, 1527), i=88, next=0
+                    NodeList [1520, 1522), i=89, next=92
+                      KindParameter [1520, 1522), i=90, next=0
+                        KindIdentifier "a" [1520, 1522), i=91, next=0
+                    KindEqualsGreaterThanToken [1522, 1525), i=92, next=93
+                    KindIdentifier "a" [1525, 1527), i=93, next=0
+    KindVariableStatement [1530, 1636), i=94, next=115
+      KindVariableDeclarationList [1530, 1635), i=95, next=0
+        NodeList [1557, 1635), i=96, next=0
+          KindVariableDeclaration [1557, 1635), i=97, next=0
+            KindIdentifier "x" [1557, 1559), i=98, next=99
+            KindUnionType [1560, 1617), i=99, next=105
+              NodeList [1560, 1617), i=100, next=0
+                KindTypeReference [1560, 1588), i=101, next=103
+                  KindIdentifier "IWithNoStringIndexSignature" [1560, 1588), i=102, next=0
+                KindTypeReference [1590, 1617), i=103, next=0
+                  KindIdentifier "IWithStringIndexSignature1" [1590, 1617), i=104, next=0
+            KindObjectLiteralExpression [1619, 1635), i=105, next=0
+              NodeList [1621, 1633), i=106, next=0
+                KindPropertyAssignment [1621, 1633), i=107, next=0
+                  KindIdentifier "foo" [1621, 1625), i=108, next=109
+                  KindArrowFunction [1626, 1633), i=109, next=0
+                    NodeList [1626, 1628), i=110, next=113
+                      KindParameter [1626, 1628), i=111, next=0
+                        KindIdentifier "a" [1626, 1628), i=112, next=0
+                    KindEqualsGreaterThanToken [1628, 1631), i=113, next=114
+                    KindIdentifier "a" [1631, 1633), i=114, next=0
+    KindVariableStatement [1636, 1802), i=115, next=131
+      KindVariableDeclarationList [1636, 1801), i=116, next=0
+        NodeList [1722, 1801), i=117, next=0
+          KindVariableDeclaration [1722, 1801), i=118, next=0
+            KindIdentifier "x" [1722, 1724), i=119, next=120
+            KindUnionType [1725, 1782), i=120, next=126
+              NodeList [1725, 1782), i=121, next=0
+                KindTypeReference [1725, 1753), i=122, next=124
+                  KindIdentifier "IWithNoStringIndexSignature" [1725, 1753), i=123, next=0
+                KindTypeReference [1755, 1782), i=124, next=0
+                  KindIdentifier "IWithStringIndexSignature1" [1755, 1782), i=125, next=0
+            KindObjectLiteralExpression [1784, 1801), i=126, next=0
+              NodeList [1786, 1799), i=127, next=0
+                KindPropertyAssignment [1786, 1799), i=128, next=0
+                  KindIdentifier "foo" [1786, 1790), i=129, next=130
+                  KindStringLiteral "hello" [1791, 1799), i=130, next=0
+    KindVariableStatement [1802, 1896), i=131, next=155
+      KindVariableDeclarationList [1802, 1895), i=132, next=0
+        NodeList [1808, 1895), i=133, next=0
+          KindVariableDeclaration [1808, 1895), i=134, next=0
+            KindIdentifier "x2" [1808, 1811), i=135, next=136
+            KindUnionType [1812, 1868), i=136, next=142
+              NodeList [1812, 1868), i=137, next=0
+                KindTypeReference [1812, 1839), i=138, next=140
+                  KindIdentifier "IWithStringIndexSignature1" [1812, 1839), i=139, next=0
+                KindTypeReference [1841, 1868), i=140, next=0
+                  KindIdentifier "IWithStringIndexSignature2" [1841, 1868), i=141, next=0
+            KindObjectLiteralExpression [1870, 1895), i=142, next=0
+              NodeList [1872, 1893), i=143, next=0
+                KindPropertyAssignment [1872, 1893), i=144, next=0
+                  KindIdentifier "z" [1872, 1874), i=145, next=146
+                  KindArrowFunction [1875, 1893), i=146, next=0
+                    NodeList [1875, 1877), i=147, next=150
+                      KindParameter [1875, 1877), i=148, next=0
+                        KindIdentifier "a" [1875, 1877), i=149, next=0
+                    KindEqualsGreaterThanToken [1877, 1880), i=150, next=151
+                    KindCallExpression [1880, 1893), i=151, next=0
+                      KindPropertyAccessExpression [1880, 1891), i=152, next=0
+                        KindIdentifier "a" [1880, 1882), i=153, next=154
+                        KindIdentifier "toString" [1883, 1891), i=154, next=0
+    KindVariableStatement [1896, 2000), i=155, next=176
+      KindVariableDeclarationList [1896, 1999), i=156, next=0
+        NodeList [1923, 1999), i=157, next=0
+          KindVariableDeclaration [1923, 1999), i=158, next=0
+            KindIdentifier "x2" [1923, 1926), i=159, next=160
+            KindUnionType [1927, 1983), i=160, next=166
+              NodeList [1927, 1983), i=161, next=0
+                KindTypeReference [1927, 1954), i=162, next=164
+                  KindIdentifier "IWithStringIndexSignature1" [1927, 1954), i=163, next=0
+                KindTypeReference [1956, 1983), i=164, next=0
+                  KindIdentifier "IWithStringIndexSignature2" [1956, 1983), i=165, next=0
+            KindObjectLiteralExpression [1985, 1999), i=166, next=0
+              NodeList [1987, 1997), i=167, next=0
+                KindPropertyAssignment [1987, 1997), i=168, next=0
+                  KindIdentifier "z" [1987, 1989), i=169, next=170
+                  KindArrowFunction [1990, 1997), i=170, next=0
+                    NodeList [1990, 1992), i=171, next=174
+                      KindParameter [1990, 1992), i=172, next=0
+                        KindIdentifier "a" [1990, 1992), i=173, next=0
+                    KindEqualsGreaterThanToken [1992, 1995), i=174, next=175
+                    KindIdentifier "a" [1995, 1997), i=175, next=0
+    KindVariableStatement [2000, 2322), i=176, next=197
+      KindVariableDeclarationList [2000, 2321), i=177, next=0
+        NodeList [2244, 2321), i=178, next=0
+          KindVariableDeclaration [2244, 2321), i=179, next=0
+            KindIdentifier "x3" [2244, 2247), i=180, next=181
+            KindUnionType [2248, 2305), i=181, next=187
+              NodeList [2248, 2305), i=182, next=0
+                KindTypeReference [2248, 2276), i=183, next=185
+                  KindIdentifier "IWithNoNumberIndexSignature" [2248, 2276), i=184, next=0
+                KindTypeReference [2278, 2305), i=185, next=0
+                  KindIdentifier "IWithNumberIndexSignature1" [2278, 2305), i=186, next=0
+            KindObjectLiteralExpression [2307, 2321), i=187, next=0
+              NodeList [2309, 2319), i=188, next=0
+                KindPropertyAssignment [2309, 2319), i=189, next=0
+                  KindNumericLiteral [2309, 2311), i=190, next=191
+                  KindArrowFunction [2312, 2319), i=191, next=0
+                    NodeList [2312, 2314), i=192, next=195
+                      KindParameter [2312, 2314), i=193, next=0
+                        KindIdentifier "a" [2312, 2314), i=194, next=0
+                    KindEqualsGreaterThanToken [2314, 2317), i=195, next=196
+                    KindIdentifier "a" [2317, 2319), i=196, next=0
+    KindVariableStatement [2322, 2427), i=197, next=218
+      KindVariableDeclarationList [2322, 2426), i=198, next=0
+        NodeList [2349, 2426), i=199, next=0
+          KindVariableDeclaration [2349, 2426), i=200, next=0
+            KindIdentifier "x3" [2349, 2352), i=201, next=202
+            KindUnionType [2353, 2410), i=202, next=208
+              NodeList [2353, 2410), i=203, next=0
+                KindTypeReference [2353, 2381), i=204, next=206
+                  KindIdentifier "IWithNoNumberIndexSignature" [2353, 2381), i=205, next=0
+                KindTypeReference [2383, 2410), i=206, next=0
+                  KindIdentifier "IWithNumberIndexSignature1" [2383, 2410), i=207, next=0
+            KindObjectLiteralExpression [2412, 2426), i=208, next=0
+              NodeList [2414, 2424), i=209, next=0
+                KindPropertyAssignment [2414, 2424), i=210, next=0
+                  KindNumericLiteral [2414, 2416), i=211, next=212
+                  KindArrowFunction [2417, 2424), i=212, next=0
+                    NodeList [2417, 2419), i=213, next=216
+                      KindParameter [2417, 2419), i=214, next=0
+                        KindIdentifier "a" [2417, 2419), i=215, next=0
+                    KindEqualsGreaterThanToken [2419, 2422), i=216, next=217
+                    KindIdentifier "a" [2422, 2424), i=217, next=0
+    KindVariableStatement [2427, 2592), i=218, next=234
+      KindVariableDeclarationList [2427, 2591), i=219, next=0
+        NodeList [2513, 2591), i=220, next=0
+          KindVariableDeclaration [2513, 2591), i=221, next=0
+            KindIdentifier "x3" [2513, 2516), i=222, next=223
+            KindUnionType [2517, 2574), i=223, next=229
+              NodeList [2517, 2574), i=224, next=0
+                KindTypeReference [2517, 2545), i=225, next=227
+                  KindIdentifier "IWithNoNumberIndexSignature" [2517, 2545), i=226, next=0
+                KindTypeReference [2547, 2574), i=227, next=0
+                  KindIdentifier "IWithNumberIndexSignature1" [2547, 2574), i=228, next=0
+            KindObjectLiteralExpression [2576, 2591), i=229, next=0
+              NodeList [2578, 2589), i=230, next=0
+                KindPropertyAssignment [2578, 2589), i=231, next=0
+                  KindNumericLiteral [2578, 2580), i=232, next=233
+                  KindStringLiteral "hello" [2581, 2589), i=233, next=0
+    KindVariableStatement [2592, 2685), i=234, next=2
+      KindVariableDeclarationList [2592, 2684), i=235, next=0
+        NodeList [2597, 2684), i=236, next=0
+          KindVariableDeclaration [2597, 2684), i=237, next=0
+            KindIdentifier "x4" [2597, 2600), i=238, next=239
+            KindUnionType [2601, 2657), i=239, next=245
+              NodeList [2601, 2657), i=240, next=0
+                KindTypeReference [2601, 2628), i=241, next=243
+                  KindIdentifier "IWithNumberIndexSignature1" [2601, 2628), i=242, next=0
+                KindTypeReference [2630, 2657), i=243, next=0
+                  KindIdentifier "IWithNumberIndexSignature2" [2630, 2657), i=244, next=0
+            KindObjectLiteralExpression [2659, 2684), i=245, next=0
+              NodeList [2661, 2682), i=246, next=0
+                KindPropertyAssignment [2661, 2682), i=247, next=0
+                  KindNumericLiteral [2661, 2663), i=248, next=249
+                  KindArrowFunction [2664, 2682), i=249, next=0
+                    NodeList [2664, 2666), i=250, next=253
+                      KindParameter [2664, 2666), i=251, next=0
+                        KindIdentifier "a" [2664, 2666), i=252, next=0
+                    KindEqualsGreaterThanToken [2666, 2669), i=253, next=254
+                    KindCallExpression [2669, 2682), i=254, next=0
+                      KindPropertyAccessExpression [2669, 2680), i=255, next=0
+                        KindIdentifier "a" [2669, 2671), i=256, next=1
+                        KindIdentifier "toString" [2672, 2680), i=257, next=0
+    KindVariableStatement [2685, 2789), i=258, next=0
+      KindVariableDeclarationList [2685, 2788), i=259, next=0
+        NodeList [2712, 2788), i=260, next=0
+          KindVariableDeclaration [2712, 2788), i=261, next=0
+            KindIdentifier "x4" [2712, 2715), i=262, next=7
+            KindUnionType [2716, 2772), i=263, next=13
+              NodeList [2716, 2772), i=264, next=0
+                KindTypeReference [2716, 2743), i=265, next=11
+                  KindIdentifier "IWithNumberIndexSignature1" [2716, 2743), i=266, next=0
+                KindTypeReference [2745, 2772), i=267, next=0
+                  KindIdentifier "IWithNumberIndexSignature2" [2745, 2772), i=268, next=0
+            KindObjectLiteralExpression [2774, 2788), i=269, next=0
+              NodeList [2776, 2786), i=270, next=0
+                KindPropertyAssignment [2776, 2786), i=271, next=0
+                  KindNumericLiteral [2776, 2778), i=272, next=17
+                  KindArrowFunction [2779, 2786), i=273, next=0
+                    NodeList [2779, 2781), i=274, next=21
+                      KindParameter [2779, 2781), i=275, next=0
+                        KindIdentifier "a" [2779, 2781), i=276, next=0
+                    KindEqualsGreaterThanToken [2781, 2784), i=277, next=22
+                    KindIdentifier "a" [2784, 2786), i=278, next=0

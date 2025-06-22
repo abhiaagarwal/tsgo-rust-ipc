@@ -1,0 +1,261 @@
+KindSourceFile [0, 1229), i=1, next=0
+  NodeList [0, 1228), i=2, next=0
+    KindTypeAliasDeclaration [0, 45), i=3, next=17
+      KindIdentifier "ComputedGetter" [4, 19), i=4, next=5
+      NodeList [20, 21), i=5, next=8
+        KindTypeParameter [20, 21), i=6, next=0
+          KindIdentifier "T" [20, 21), i=7, next=0
+      KindFunctionType [24, 44), i=8, next=0
+        NodeList [26, 38), i=9, next=15
+          KindParameter [26, 38), i=10, next=0
+            KindIdentifier "oldValue" [26, 34), i=11, next=12
+            KindQuestionToken [34, 35), i=12, next=13
+            KindTypeReference [36, 38), i=13, next=0
+              KindIdentifier "T" [36, 38), i=14, next=0
+        KindTypeReference [42, 44), i=15, next=0
+          KindIdentifier "T" [42, 44), i=16, next=0
+    KindTypeAliasDeclaration [45, 105), i=17, next=27
+      KindIdentifier "ComputedOptions" [50, 66), i=18, next=19
+      KindTypeReference [68, 104), i=19, next=0
+        KindIdentifier "Record" [68, 75), i=20, next=21
+        NodeList [76, 103), i=21, next=0
+          KindStringKeyword [76, 82), i=22, next=23
+          KindTypeReference [83, 103), i=23, next=0
+            KindIdentifier "ComputedGetter" [83, 98), i=24, next=25
+            NodeList [99, 102), i=25, next=0
+              KindAnyKeyword [99, 102), i=26, next=0
+    KindTypeAliasDeclaration [105, 252), i=27, next=58
+      KindIdentifier "ExtractComputedReturns" [111, 134), i=28, next=29
+      NodeList [135, 148), i=29, next=33
+        KindTypeParameter [135, 148), i=30, next=0
+          KindIdentifier "T" [135, 136), i=31, next=32
+          KindAnyKeyword [144, 148), i=32, next=0
+      KindMappedType [151, 251), i=33, next=0
+        KindTypeParameter [157, 171), i=34, next=39
+          KindIdentifier "key" [157, 160), i=35, next=36
+          KindTypeOperator [163, 171), i=36, next=0
+            KindTypeReference [169, 171), i=37, next=0
+              KindIdentifier "T" [169, 171), i=38, next=0
+        KindConditionalType [173, 248), i=39, next=0
+          KindIndexedAccessType [173, 180), i=40, next=45
+            KindTypeReference [173, 175), i=41, next=43
+              KindIdentifier "T" [173, 175), i=42, next=0
+            KindTypeReference [176, 179), i=43, next=0
+              KindIdentifier "key" [176, 179), i=44, next=0
+          KindFunctionType [188, 222), i=45, next=55
+            NodeList [190, 204), i=46, next=52
+              KindParameter [190, 204), i=47, next=0
+                KindDotDotDotToken [190, 193), i=48, next=49
+                KindIdentifier "args" [193, 197), i=49, next=50
+                KindArrayType [198, 204), i=50, next=0
+                  KindAnyKeyword [198, 202), i=51, next=0
+            KindInferType [208, 222), i=52, next=0
+              KindTypeParameter [214, 222), i=53, next=0
+                KindIdentifier "TReturn" [214, 222), i=54, next=0
+          KindTypeReference [228, 236), i=55, next=57
+            KindIdentifier "TReturn" [228, 236), i=56, next=0
+          KindNeverKeyword [242, 248), i=57, next=0
+    KindInterfaceDeclaration [252, 346), i=58, next=78
+      KindIdentifier "ComponentOptionsBase" [263, 284), i=59, next=60
+      NodeList [285, 313), i=60, next=67
+        KindTypeParameter [285, 286), i=61, next=63
+          KindIdentifier "D" [285, 286), i=62, next=0
+        KindTypeParameter [287, 313), i=63, next=0
+          KindIdentifier "C" [287, 289), i=64, next=65
+          KindTypeReference [297, 313), i=65, next=0
+            KindIdentifier "ComputedOptions" [297, 313), i=66, next=0
+      NodeList [316, 344), i=67, next=0
+        KindPropertySignature [316, 328), i=68, next=73
+          KindIdentifier "data" [316, 323), i=69, next=70
+          KindQuestionToken [323, 324), i=70, next=71
+          KindTypeReference [325, 327), i=71, next=0
+            KindIdentifier "D" [325, 327), i=72, next=0
+        KindPropertySignature [328, 344), i=73, next=0
+          KindIdentifier "computed" [328, 339), i=74, next=75
+          KindQuestionToken [339, 340), i=75, next=76
+          KindTypeReference [341, 343), i=76, next=0
+            KindIdentifier "C" [341, 343), i=77, next=0
+    KindTypeAliasDeclaration [346, 451), i=78, next=98
+      KindIdentifier "ComponentPublicInstance" [352, 376), i=79, next=80
+      NodeList [377, 415), i=80, next=89
+        KindTypeParameter [377, 383), i=81, next=84
+          KindIdentifier "D" [377, 378), i=82, next=83
+          KindTypeLiteral [380, 383), i=83, next=0
+        KindTypeParameter [384, 415), i=84, next=0
+          KindIdentifier "C" [384, 386), i=85, next=86
+          KindTypeReference [394, 410), i=86, next=88
+            KindIdentifier "ComputedOptions" [394, 410), i=87, next=0
+          KindTypeLiteral [412, 415), i=88, next=0
+      KindIntersectionType [418, 450), i=89, next=0
+        NodeList [418, 450), i=90, next=0
+          KindTypeReference [418, 420), i=91, next=93
+            KindIdentifier "D" [418, 420), i=92, next=0
+          KindTypeReference [422, 450), i=93, next=0
+            KindIdentifier "ExtractComputedReturns" [422, 447), i=94, next=95
+            NodeList [448, 449), i=95, next=0
+              KindTypeReference [448, 449), i=96, next=0
+                KindIdentifier "C" [448, 449), i=97, next=0
+    KindTypeAliasDeclaration [451, 595), i=98, next=128
+      KindIdentifier "ComponentOptions" [457, 474), i=99, next=100
+      NodeList [475, 521), i=100, next=109
+        KindTypeParameter [475, 485), i=101, next=104
+          KindIdentifier "D" [475, 479), i=102, next=103
+          KindAnyKeyword [481, 485), i=103, next=0
+        KindTypeParameter [486, 520), i=104, next=0
+          KindIdentifier "C" [486, 490), i=105, next=106
+          KindTypeReference [498, 514), i=106, next=108
+            KindIdentifier "ComputedOptions" [498, 514), i=107, next=0
+          KindAnyKeyword [516, 520), i=108, next=0
+      KindIntersectionType [525, 594), i=109, next=0
+        NodeList [525, 594), i=110, next=0
+          KindTypeReference [525, 552), i=111, next=118
+            KindIdentifier "ComponentOptionsBase" [525, 546), i=112, next=113
+            NodeList [547, 551), i=113, next=0
+              KindTypeReference [547, 548), i=114, next=116
+                KindIdentifier "D" [547, 548), i=115, next=0
+              KindTypeReference [549, 551), i=116, next=0
+                KindIdentifier "C" [549, 551), i=117, next=0
+          KindTypeReference [554, 594), i=118, next=0
+            KindIdentifier "ThisType" [554, 563), i=119, next=120
+            NodeList [564, 593), i=120, next=0
+              KindTypeReference [564, 593), i=121, next=0
+                KindIdentifier "ComponentPublicInstance" [564, 587), i=122, next=123
+                NodeList [588, 592), i=123, next=0
+                  KindTypeReference [588, 589), i=124, next=126
+                    KindIdentifier "D" [588, 589), i=125, next=0
+                  KindTypeReference [590, 592), i=126, next=0
+                    KindIdentifier "C" [590, 592), i=127, next=0
+    KindInterfaceDeclaration [595, 654), i=128, next=139
+      KindIdentifier "App" [606, 610), i=129, next=130
+      NodeList [612, 652), i=130, next=0
+        KindMethodSignature [612, 652), i=131, next=0
+          KindIdentifier "mixin" [612, 620), i=132, next=133
+          NodeList [621, 644), i=133, next=138
+            KindParameter [621, 644), i=134, next=0
+              KindIdentifier "mixin" [621, 626), i=135, next=136
+              KindTypeReference [627, 644), i=136, next=0
+                KindIdentifier "ComponentOptions" [627, 644), i=137, next=0
+          KindThisType [646, 651), i=138, next=0
+    KindInterfaceDeclaration [654, 699), i=139, next=149
+      KindIdentifier "InjectionKey" [665, 678), i=140, next=141
+      NodeList [679, 680), i=141, next=144
+        KindTypeParameter [679, 680), i=142, next=0
+          KindIdentifier "T" [679, 680), i=143, next=0
+      NodeList [681, 696), i=144, next=0
+        KindHeritageClause [681, 696), i=145, next=0
+          NodeList [689, 696), i=146, next=0
+            KindExpressionWithTypeArguments [689, 696), i=147, next=0
+              KindIdentifier "Symbol" [689, 696), i=148, next=0
+    KindInterfaceDeclaration [699, 730), i=149, next=159
+      KindIdentifier "Ref" [710, 714), i=150, next=151
+      NodeList [715, 716), i=151, next=154
+        KindTypeParameter [715, 716), i=152, next=0
+          KindIdentifier "T" [715, 716), i=153, next=0
+      NodeList [719, 728), i=154, next=0
+        KindPropertySignature [719, 728), i=155, next=0
+          KindIdentifier "_v" [719, 724), i=156, next=157
+          KindTypeReference [725, 727), i=157, next=0
+            KindIdentifier "T" [725, 727), i=158, next=0
+    KindFunctionDeclaration [730, 795), i=159, next=177
+      NodeList [730, 739), i=160, next=162
+        KindDeclareKeyword [730, 739), i=161, next=0
+      KindIdentifier "reactive" [748, 757), i=162, next=163
+      NodeList [758, 774), i=163, next=167
+        KindTypeParameter [758, 774), i=164, next=0
+          KindIdentifier "T" [758, 759), i=165, next=166
+          KindObjectKeyword [767, 774), i=166, next=0
+      NodeList [776, 785), i=167, next=172
+        KindParameter [776, 785), i=168, next=0
+          KindIdentifier "target" [776, 782), i=169, next=170
+          KindTypeReference [783, 785), i=170, next=0
+            KindIdentifier "T" [783, 785), i=171, next=0
+      KindTypeReference [787, 794), i=172, next=0
+        KindIdentifier "Ref" [787, 791), i=173, next=174
+        NodeList [792, 793), i=174, next=0
+          KindTypeReference [792, 793), i=175, next=0
+            KindIdentifier "T" [792, 793), i=176, next=0
+    KindInterfaceDeclaration [795, 864), i=177, next=191
+      KindIdentifier "ThemeInstance" [806, 820), i=178, next=179
+      NodeList [822, 862), i=179, next=0
+        KindPropertySignature [822, 862), i=180, next=0
+          NodeList [822, 833), i=181, next=183
+            KindReadonlyKeyword [822, 833), i=182, next=0
+          KindIdentifier "name" [833, 838), i=183, next=184
+          KindTypeReference [839, 861), i=184, next=0
+            KindIdentifier "Readonly" [839, 848), i=185, next=186
+            NodeList [849, 860), i=186, next=0
+              KindTypeReference [849, 860), i=187, next=0
+                KindIdentifier "Ref" [849, 852), i=188, next=189
+                NodeList [853, 859), i=189, next=0
+                  KindStringKeyword [853, 859), i=190, next=0
+    KindVariableStatement [864, 921), i=191, next=203
+      NodeList [864, 873), i=192, next=194
+        KindDeclareKeyword [864, 873), i=193, next=0
+      KindVariableDeclarationList [873, 920), i=194, next=0
+        NodeList [879, 920), i=195, next=0
+          KindVariableDeclaration [879, 920), i=196, next=0
+            KindIdentifier "ThemeSymbol" [879, 891), i=197, next=198
+            KindTypeReference [892, 920), i=198, next=0
+              KindIdentifier "InjectionKey" [892, 905), i=199, next=200
+              NodeList [906, 919), i=200, next=0
+                KindTypeReference [906, 919), i=201, next=0
+                  KindIdentifier "ThemeInstance" [906, 919), i=202, next=0
+    KindFunctionDeclaration [921, 1023), i=203, next=222
+      NodeList [921, 930), i=204, next=206
+        KindDeclareKeyword [921, 930), i=205, next=0
+      KindIdentifier "inject" [939, 946), i=206, next=207
+      NodeList [947, 1015), i=207, next=221
+        KindParameter [947, 979), i=208, next=212
+          KindIdentifier "this" [947, 954), i=209, next=210
+          KindTypeReference [955, 979), i=210, next=0
+            KindIdentifier "ComponentPublicInstance" [955, 979), i=211, next=0
+        KindParameter [980, 1014), i=212, next=0
+          KindIdentifier "key" [980, 986), i=213, next=214
+          KindUnionType [987, 1014), i=214, next=0
+            NodeList [987, 1014), i=215, next=0
+              KindTypeReference [987, 1005), i=216, next=220
+                KindIdentifier "InjectionKey" [987, 1000), i=217, next=218
+                NodeList [1001, 1004), i=218, next=0
+                  KindAnyKeyword [1001, 1004), i=219, next=0
+              KindStringKeyword [1007, 1014), i=220, next=0
+      KindAnyKeyword [1018, 1022), i=221, next=0
+    KindVariableStatement [1023, 1048), i=222, next=231
+      NodeList [1023, 1032), i=223, next=225
+        KindDeclareKeyword [1023, 1032), i=224, next=0
+      KindVariableDeclarationList [1032, 1047), i=225, next=0
+        NodeList [1038, 1047), i=226, next=0
+          KindVariableDeclaration [1038, 1047), i=227, next=0
+            KindIdentifier "app" [1038, 1042), i=228, next=229
+            KindTypeReference [1043, 1047), i=229, next=0
+              KindIdentifier "App" [1043, 1047), i=230, next=0
+    KindExpressionStatement [1048, 1228), i=231, next=0
+      KindCallExpression [1048, 1227), i=232, next=0
+        KindPropertyAccessExpression [1048, 1058), i=233, next=236
+          KindIdentifier "app" [1048, 1052), i=234, next=235
+          KindIdentifier "mixin" [1053, 1058), i=235, next=0
+        NodeList [1059, 1226), i=236, next=0
+          KindObjectLiteralExpression [1059, 1226), i=237, next=0
+            NodeList [1060, 1224), i=238, next=0
+              KindPropertyAssignment [1060, 1223), i=239, next=0
+                KindIdentifier "computed" [1060, 1071), i=240, next=241
+                KindObjectLiteralExpression [1072, 1223), i=241, next=0
+                  NodeList [1074, 1219), i=242, next=0
+                    KindMethodDeclaration [1074, 1218), i=243, next=0
+                      KindIdentifier "$vuetify" [1074, 1087), i=244, next=245
+                      KindBlock [1089, 1218), i=245, next=0
+                        NodeList [1091, 1212), i=246, next=0
+                          KindReturnStatement [1091, 1212), i=247, next=0
+                            KindCallExpression [1144, 1211), i=248, next=0
+                              KindIdentifier "reactive" [1144, 1153), i=249, next=250
+                              NodeList [1154, 1210), i=250, next=0
+                                KindObjectLiteralExpression [1154, 1210), i=251, next=0
+                                  NodeList [1155, 1202), i=252, next=0
+                                    KindPropertyAssignment [1155, 1201), i=253, next=0
+                                      KindIdentifier "theme" [1155, 1169), i=254, next=255
+                                      KindCallExpression [1170, 1201), i=255, next=0
+                                        KindPropertyAccessExpression [1170, 1182), i=256, next=3
+                                          KindIdentifier "inject" [1170, 1177), i=257, next=2
+                                          KindIdentifier "call" [1178, 1182), i=258, next=0
+                                        NodeList [1183, 1200), i=259, next=0
+                                          KindThisKeyword [1183, 1187), i=260, next=5
+                                          KindIdentifier "ThemeSymbol" [1188, 1200), i=261, next=0

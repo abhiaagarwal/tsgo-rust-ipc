@@ -1,0 +1,55 @@
+KindSourceFile [0, 259), i=1, next=0
+  NodeList [0, 257), i=2, next=0
+    KindImportDeclaration [0, 33), i=3, next=8
+      KindImportClause [6, 14), i=4, next=7
+        KindNamespaceImport [6, 14), i=5, next=0
+          KindIdentifier "ns" [11, 14), i=6, next=0
+      KindStringLiteral "./reexport" [19, 32), i=7, next=0
+    KindModuleDeclaration [33, 185), i=8, next=25
+      NodeList [33, 44), i=9, next=11
+        KindDeclareKeyword [33, 44), i=10, next=0
+      KindStringLiteral "./reexport" [51, 64), i=11, next=12
+      KindModuleBlock [64, 185), i=12, next=0
+        NodeList [66, 182), i=13, next=0
+          KindEnumDeclaration [66, 182), i=14, next=0
+            NodeList [66, 128), i=15, next=17
+              KindExportKeyword [66, 128), i=16, next=0
+            KindIdentifier "Root" [133, 138), i=17, next=18
+            NodeList [140, 175), i=18, next=0
+              KindEnumMember [140, 151), i=19, next=21
+                KindIdentifier "A" [140, 151), i=20, next=0
+              KindEnumMember [152, 163), i=21, next=23
+                KindIdentifier "B" [152, 163), i=22, next=0
+              KindEnumMember [164, 175), i=23, next=0
+                KindIdentifier "C" [164, 175), i=24, next=0
+    KindVariableStatement [185, 218), i=25, next=38
+      NodeList [185, 196), i=26, next=28
+        KindDeclareKeyword [185, 196), i=27, next=0
+      KindVariableDeclarationList [196, 217), i=28, next=0
+        NodeList [202, 217), i=29, next=0
+          KindVariableDeclaration [202, 217), i=30, next=0
+            KindIdentifier "f" [202, 204), i=31, next=32
+            KindTypeReference [205, 217), i=32, next=0
+              KindQualifiedName [205, 217), i=33, next=0
+                KindQualifiedName [205, 213), i=34, next=37
+                  KindIdentifier "ns" [205, 208), i=35, next=36
+                  KindIdentifier "Root" [209, 213), i=36, next=0
+                KindIdentifier "Foo" [214, 217), i=37, next=0
+    KindVariableStatement [218, 249), i=38, next=52
+      KindVariableDeclarationList [218, 248), i=39, next=0
+        NodeList [225, 248), i=40, next=0
+          KindVariableDeclaration [225, 248), i=41, next=0
+            KindIdentifier "g" [225, 227), i=42, next=43
+            KindTypeReference [228, 236), i=43, next=47
+              KindQualifiedName [228, 236), i=44, next=0
+                KindIdentifier "ns" [228, 231), i=45, next=46
+                KindIdentifier "Root" [232, 236), i=46, next=0
+            KindPropertyAccessExpression [238, 248), i=47, next=0
+              KindPropertyAccessExpression [238, 246), i=48, next=51
+                KindIdentifier "ns" [238, 241), i=49, next=50
+                KindIdentifier "Root" [242, 246), i=50, next=0
+              KindIdentifier "A" [247, 248), i=51, next=0
+    KindExpressionStatement [249, 257), i=52, next=0
+      KindPropertyAccessExpression [249, 256), i=53, next=0
+        KindIdentifier "f" [249, 254), i=54, next=55
+        KindIdentifier "x" [255, 256), i=55, next=0

@@ -1,0 +1,29 @@
+KindSourceFile [0, 130), i=1, next=0
+  NodeList [0, 128), i=2, next=0
+    KindImportDeclaration [0, 27), i=3, next=8
+      KindImportClause [6, 15), i=4, next=7
+        KindNamespaceImport [6, 15), i=5, next=0
+          KindIdentifier "foo" [11, 15), i=6, next=0
+      KindStringLiteral "foo" [20, 26), i=7, next=0
+    KindClassDeclaration [27, 128), i=8, next=0
+      KindIdentifier "Test" [36, 41), i=9, next=10
+      NodeList [43, 125), i=10, next=0
+        KindPropertyDeclaration [43, 62), i=11, next=17
+          KindIdentifier "bar" [43, 52), i=12, next=13
+          KindTypeReference [53, 61), i=13, next=0
+            KindQualifiedName [53, 61), i=14, next=0
+              KindIdentifier "foo" [53, 57), i=15, next=16
+              KindIdentifier "Foo" [58, 61), i=16, next=0
+        KindConstructor [62, 125), i=17, next=0
+          KindBlock [81, 125), i=18, next=0
+            NodeList [83, 118), i=19, next=0
+              KindExpressionStatement [83, 118), i=20, next=0
+                KindBinaryExpression [83, 117), i=21, next=0
+                  KindPropertyAccessExpression [83, 101), i=22, next=25
+                    KindThisKeyword [83, 97), i=23, next=24
+                    KindIdentifier "bar" [98, 101), i=24, next=0
+                  KindEqualsToken [101, 103), i=25, next=26
+                  KindNewExpression [103, 117), i=26, next=0
+                    KindPropertyAccessExpression [107, 115), i=27, next=0
+                      KindIdentifier "foo" [107, 111), i=28, next=29
+                      KindIdentifier "Foo" [112, 115), i=29, next=0

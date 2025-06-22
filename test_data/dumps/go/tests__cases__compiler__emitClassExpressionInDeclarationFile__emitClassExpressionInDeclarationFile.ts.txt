@@ -1,0 +1,152 @@
+KindSourceFile [0, 605), i=1, next=0
+  NodeList [0, 604), i=2, next=0
+    KindVariableStatement [0, 76), i=3, next=20
+      NodeList [0, 6), i=4, next=6
+        KindExportKeyword [0, 6), i=5, next=0
+      KindVariableDeclarationList [6, 76), i=6, next=0
+        NodeList [10, 76), i=7, next=0
+          KindVariableDeclaration [10, 76), i=8, next=0
+            KindIdentifier "simpleExample" [10, 24), i=9, next=10
+            KindClassExpression [26, 76), i=10, next=0
+              NodeList [34, 74), i=11, next=0
+                KindMethodDeclaration [34, 59), i=12, next=17
+                  NodeList [34, 45), i=13, next=15
+                    KindStaticKeyword [34, 45), i=14, next=0
+                  KindIdentifier "getTags" [45, 53), i=15, next=16
+                  KindBlock [55, 59), i=16, next=0
+                KindMethodDeclaration [59, 74), i=17, next=0
+                  KindIdentifier "tags" [59, 68), i=18, next=19
+                  KindBlock [70, 74), i=19, next=0
+    KindVariableStatement [76, 191), i=20, next=58
+      NodeList [76, 83), i=21, next=23
+        KindExportKeyword [76, 83), i=22, next=0
+      KindVariableDeclarationList [83, 191), i=23, next=0
+        NodeList [87, 191), i=24, next=0
+          KindVariableDeclaration [87, 191), i=25, next=0
+            KindIdentifier "circularReference" [87, 105), i=26, next=27
+            KindClassExpression [107, 191), i=27, next=0
+              KindIdentifier "C" [113, 115), i=28, next=29
+              NodeList [117, 189), i=29, next=0
+                KindMethodDeclaration [117, 158), i=30, next=45
+                  NodeList [117, 128), i=31, next=33
+                    KindStaticKeyword [117, 128), i=32, next=0
+                  KindIdentifier "getTags" [128, 136), i=33, next=34
+                  NodeList [137, 141), i=34, next=39
+                    KindParameter [137, 141), i=35, next=0
+                      KindIdentifier "c" [137, 138), i=36, next=37
+                      KindTypeReference [139, 141), i=37, next=0
+                        KindIdentifier "C" [139, 141), i=38, next=0
+                  KindTypeReference [143, 145), i=39, next=41
+                    KindIdentifier "C" [143, 145), i=40, next=0
+                  KindBlock [145, 158), i=41, next=0
+                    NodeList [147, 156), i=42, next=0
+                      KindReturnStatement [147, 156), i=43, next=0
+                        KindIdentifier "c" [154, 156), i=44, next=0
+                KindMethodDeclaration [158, 189), i=45, next=0
+                  KindIdentifier "tags" [158, 167), i=46, next=47
+                  NodeList [168, 172), i=47, next=52
+                    KindParameter [168, 172), i=48, next=0
+                      KindIdentifier "c" [168, 169), i=49, next=50
+                      KindTypeReference [170, 172), i=50, next=0
+                        KindIdentifier "C" [170, 172), i=51, next=0
+                  KindTypeReference [174, 176), i=52, next=54
+                    KindIdentifier "C" [174, 176), i=53, next=0
+                  KindBlock [176, 189), i=54, next=0
+                    NodeList [178, 187), i=55, next=0
+                      KindReturnStatement [178, 187), i=56, next=0
+                        KindIdentifier "c" [185, 187), i=57, next=0
+    KindClassDeclaration [191, 277), i=58, next=71
+      NodeList [191, 220), i=59, next=61
+        KindExportKeyword [191, 220), i=60, next=0
+      KindIdentifier "FooItem" [226, 234), i=61, next=62
+      NodeList [236, 275), i=62, next=0
+        KindMethodDeclaration [236, 256), i=63, next=67
+          KindIdentifier "foo" [236, 244), i=64, next=65
+          KindVoidKeyword [247, 252), i=65, next=66
+          KindBlock [252, 256), i=66, next=0
+        KindPropertyDeclaration [256, 275), i=67, next=0
+          KindIdentifier "name" [256, 265), i=68, next=69
+          KindQuestionToken [265, 266), i=69, next=70
+          KindStringKeyword [267, 274), i=70, next=0
+    KindTypeAliasDeclaration [277, 333), i=71, next=87
+      NodeList [277, 285), i=72, next=74
+        KindExportKeyword [277, 285), i=73, next=0
+      KindIdentifier "Constructor" [290, 302), i=74, next=75
+      NodeList [303, 304), i=75, next=78
+        KindTypeParameter [303, 304), i=76, next=0
+          KindIdentifier "T" [303, 304), i=77, next=0
+      KindConstructorType [307, 332), i=78, next=0
+        NodeList [312, 326), i=79, next=85
+          KindParameter [312, 326), i=80, next=0
+            KindDotDotDotToken [312, 315), i=81, next=82
+            KindIdentifier "args" [315, 319), i=82, next=83
+            KindArrayType [320, 326), i=83, next=0
+              KindAnyKeyword [320, 324), i=84, next=0
+        KindTypeReference [330, 332), i=85, next=0
+          KindIdentifier "T" [330, 332), i=86, next=0
+    KindFunctionDeclaration [333, 501), i=87, next=124
+      NodeList [333, 340), i=88, next=90
+        KindExportKeyword [333, 340), i=89, next=0
+      KindIdentifier "WithTags" [349, 358), i=90, next=91
+      NodeList [359, 389), i=91, next=99
+        KindTypeParameter [359, 389), i=92, next=0
+          KindIdentifier "T" [359, 360), i=93, next=94
+          KindTypeReference [368, 389), i=94, next=0
+            KindIdentifier "Constructor" [368, 380), i=95, next=96
+            NodeList [381, 388), i=96, next=0
+              KindTypeReference [381, 388), i=97, next=0
+                KindIdentifier "FooItem" [381, 388), i=98, next=0
+      NodeList [391, 398), i=99, next=104
+        KindParameter [391, 398), i=100, next=0
+          KindIdentifier "Base" [391, 395), i=101, next=102
+          KindTypeReference [396, 398), i=102, next=0
+            KindIdentifier "T" [396, 398), i=103, next=0
+      KindBlock [399, 501), i=104, next=0
+        NodeList [401, 499), i=105, next=0
+          KindReturnStatement [401, 499), i=106, next=0
+            KindClassExpression [412, 499), i=107, next=0
+              NodeList [418, 431), i=108, next=113
+                KindHeritageClause [418, 431), i=109, next=0
+                  NodeList [426, 431), i=110, next=0
+                    KindExpressionWithTypeArguments [426, 431), i=111, next=0
+                      KindIdentifier "Base" [426, 431), i=112, next=0
+              NodeList [433, 493), i=113, next=0
+                KindMethodDeclaration [433, 468), i=114, next=120
+                  NodeList [433, 448), i=115, next=117
+                    KindStaticKeyword [433, 448), i=116, next=0
+                  KindIdentifier "getTags" [448, 456), i=117, next=118
+                  KindVoidKeyword [459, 464), i=118, next=119
+                  KindBlock [464, 468), i=119, next=0
+                KindMethodDeclaration [468, 493), i=120, next=0
+                  KindIdentifier "tags" [468, 481), i=121, next=122
+                  KindVoidKeyword [484, 489), i=122, next=123
+                  KindBlock [489, 493), i=123, next=0
+    KindClassDeclaration [501, 549), i=124, next=136
+      NodeList [501, 509), i=125, next=127
+        KindExportKeyword [501, 509), i=126, next=0
+      KindIdentifier "Test" [515, 520), i=127, next=128
+      NodeList [520, 546), i=128, next=0
+        KindHeritageClause [520, 546), i=129, next=0
+          NodeList [528, 546), i=130, next=0
+            KindExpressionWithTypeArguments [528, 546), i=131, next=0
+              KindCallExpression [528, 546), i=132, next=0
+                KindIdentifier "WithTags" [528, 537), i=133, next=134
+                NodeList [538, 545), i=134, next=0
+                  KindIdentifier "FooItem" [538, 545), i=135, next=0
+    KindVariableStatement [549, 575), i=136, next=143
+      KindVariableDeclarationList [549, 574), i=137, next=0
+        NodeList [556, 574), i=138, next=0
+          KindVariableDeclaration [556, 574), i=139, next=0
+            KindIdentifier "test" [556, 561), i=140, next=141
+            KindNewExpression [563, 574), i=141, next=0
+              KindIdentifier "Test" [567, 572), i=142, next=0
+    KindExpressionStatement [575, 591), i=143, next=148
+      KindCallExpression [575, 591), i=144, next=0
+        KindPropertyAccessExpression [575, 589), i=145, next=0
+          KindIdentifier "Test" [575, 581), i=146, next=147
+          KindIdentifier "getTags" [582, 589), i=147, next=0
+    KindExpressionStatement [591, 604), i=148, next=0
+      KindCallExpression [591, 603), i=149, next=0
+        KindPropertyAccessExpression [591, 601), i=150, next=0
+          KindIdentifier "test" [591, 596), i=151, next=152
+          KindIdentifier "tags" [597, 601), i=152, next=0

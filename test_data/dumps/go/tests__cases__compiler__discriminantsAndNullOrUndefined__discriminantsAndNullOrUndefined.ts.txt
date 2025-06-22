@@ -1,0 +1,102 @@
+KindSourceFile [0, 391), i=1, next=0
+  NodeList [0, 391), i=2, next=0
+    KindInterfaceDeclaration [0, 26), i=3, next=10
+      KindIdentifier "A" [9, 11), i=4, next=5
+      NodeList [13, 24), i=5, next=0
+        KindPropertySignature [13, 24), i=6, next=0
+          KindIdentifier "kind" [13, 18), i=7, next=8
+          KindLiteralType [19, 23), i=8, next=0
+            KindStringLiteral "A" [19, 23), i=9, next=0
+    KindInterfaceDeclaration [26, 54), i=10, next=17
+      KindIdentifier "B" [37, 39), i=11, next=12
+      NodeList [41, 52), i=12, next=0
+        KindPropertySignature [41, 52), i=13, next=0
+          KindIdentifier "kind" [41, 46), i=14, next=15
+          KindLiteralType [47, 51), i=15, next=0
+            KindStringLiteral "B" [47, 51), i=16, next=0
+    KindTypeAliasDeclaration [54, 85), i=17, next=26
+      KindIdentifier "C" [62, 64), i=18, next=19
+      KindUnionType [66, 84), i=19, next=0
+        NodeList [66, 84), i=20, next=0
+          KindTypeReference [66, 68), i=21, next=23
+            KindIdentifier "A" [66, 68), i=22, next=0
+          KindTypeReference [70, 72), i=23, next=25
+            KindIdentifier "B" [70, 72), i=24, next=0
+          KindUndefinedKeyword [74, 84), i=25, next=0
+    KindFunctionDeclaration [85, 149), i=26, next=38
+      KindIdentifier "never" [97, 103), i=27, next=28
+      NodeList [104, 112), i=28, next=32
+        KindParameter [104, 112), i=29, next=0
+          KindIdentifier "_" [104, 105), i=30, next=31
+          KindNeverKeyword [106, 112), i=31, next=0
+      KindNeverKeyword [114, 120), i=32, next=33
+      KindBlock [120, 149), i=33, next=0
+        NodeList [122, 146), i=34, next=0
+          KindThrowStatement [122, 146), i=35, next=0
+            KindNewExpression [133, 145), i=36, next=0
+              KindIdentifier "Error" [137, 143), i=37, next=0
+    KindFunctionDeclaration [149, 182), i=38, next=47
+      KindIdentifier "useA" [161, 166), i=39, next=40
+      NodeList [167, 171), i=40, next=45
+        KindParameter [167, 171), i=41, next=0
+          KindIdentifier "_" [167, 168), i=42, next=43
+          KindTypeReference [169, 171), i=43, next=0
+            KindIdentifier "A" [169, 171), i=44, next=0
+      KindVoidKeyword [173, 178), i=45, next=46
+      KindBlock [178, 182), i=46, next=0
+    KindFunctionDeclaration [182, 213), i=47, next=56
+      KindIdentifier "useB" [192, 197), i=48, next=49
+      NodeList [198, 202), i=49, next=54
+        KindParameter [198, 202), i=50, next=0
+          KindIdentifier "_" [198, 199), i=51, next=52
+          KindTypeReference [200, 202), i=52, next=0
+            KindIdentifier "B" [200, 202), i=53, next=0
+      KindVoidKeyword [204, 209), i=54, next=55
+      KindBlock [209, 213), i=55, next=0
+    KindVariableStatement [213, 234), i=56, next=65
+      NodeList [213, 224), i=57, next=59
+        KindDeclareKeyword [213, 224), i=58, next=0
+      KindVariableDeclarationList [224, 233), i=59, next=0
+        NodeList [228, 233), i=60, next=0
+          KindVariableDeclaration [228, 233), i=61, next=0
+            KindIdentifier "c" [228, 230), i=62, next=63
+            KindTypeReference [231, 233), i=63, next=0
+              KindIdentifier "C" [231, 233), i=64, next=0
+    KindIfStatement [234, 391), i=65, next=0
+      KindBinaryExpression [242, 257), i=66, next=70
+        KindIdentifier "c" [242, 243), i=67, next=68
+        KindExclamationEqualsEqualsToken [243, 247), i=68, next=69
+        KindIdentifier "undefined" [247, 257), i=69, next=0
+      KindBlock [258, 391), i=70, next=0
+        NodeList [260, 388), i=71, next=0
+          KindSwitchStatement [260, 388), i=72, next=0
+            KindPropertyAccessExpression [274, 280), i=73, next=76
+              KindIdentifier "c" [274, 275), i=74, next=75
+              KindIdentifier "kind" [276, 280), i=75, next=0
+            KindCaseBlock [281, 388), i=76, next=0
+              NodeList [283, 381), i=77, next=0
+                KindCaseClause [283, 318), i=78, next=87
+                  KindStringLiteral "A" [297, 301), i=79, next=80
+                  NodeList [302, 318), i=80, next=0
+                    KindExpressionStatement [302, 311), i=81, next=86
+                      KindCallExpression [302, 310), i=82, next=0
+                        KindIdentifier "useA" [302, 307), i=83, next=84
+                        NodeList [308, 309), i=84, next=0
+                          KindIdentifier "c" [308, 309), i=85, next=0
+                    KindBreakStatement [311, 318), i=86, next=0
+                KindCaseClause [318, 353), i=87, next=96
+                  KindStringLiteral "B" [332, 336), i=88, next=89
+                  NodeList [337, 353), i=89, next=0
+                    KindExpressionStatement [337, 346), i=90, next=95
+                      KindCallExpression [337, 345), i=91, next=0
+                        KindIdentifier "useB" [337, 342), i=92, next=93
+                        NodeList [343, 344), i=93, next=0
+                          KindIdentifier "c" [343, 344), i=94, next=0
+                    KindBreakStatement [346, 353), i=95, next=0
+                KindDefaultClause [353, 381), i=96, next=0
+                  NodeList [371, 381), i=97, next=0
+                    KindExpressionStatement [371, 381), i=98, next=0
+                      KindCallExpression [371, 380), i=99, next=0
+                        KindIdentifier "never" [371, 377), i=100, next=101
+                        NodeList [378, 379), i=101, next=0
+                          KindIdentifier "c" [378, 379), i=102, next=0

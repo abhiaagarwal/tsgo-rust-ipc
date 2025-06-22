@@ -1,0 +1,39 @@
+KindSourceFile [0, 129), i=1, next=0
+  NodeList [0, 118), i=2, next=0
+    KindImportDeclaration [0, 31), i=3, next=11
+      KindImportClause [6, 19), i=4, next=10
+        KindNamedImports [6, 19), i=5, next=0
+          NodeList [8, 17), i=6, next=0
+            KindImportSpecifier [8, 17), i=7, next=0
+              KindIdentifier "Foo" [8, 12), i=8, next=9
+              KindIdentifier "A" [15, 17), i=9, next=0
+      KindStringLiteral "./a" [24, 30), i=10, next=0
+    KindImportDeclaration [31, 64), i=11, next=19
+      KindImportClause [39, 52), i=12, next=18
+        KindNamedImports [39, 52), i=13, next=0
+          NodeList [41, 50), i=14, next=0
+            KindImportSpecifier [41, 50), i=15, next=0
+              KindIdentifier "Foo" [41, 45), i=16, next=17
+              KindIdentifier "B" [48, 50), i=17, next=0
+      KindStringLiteral "./b" [57, 63), i=18, next=0
+    KindVariableStatement [64, 86), i=19, next=26
+      KindVariableDeclarationList [64, 85), i=20, next=0
+        NodeList [73, 85), i=21, next=0
+          KindVariableDeclaration [73, 85), i=22, next=0
+            KindIdentifier "a" [73, 75), i=23, next=24
+            KindNewExpression [77, 85), i=24, next=0
+              KindIdentifier "A" [81, 83), i=25, next=0
+    KindVariableStatement [86, 106), i=26, next=33
+      KindVariableDeclarationList [86, 105), i=27, next=0
+        NodeList [93, 105), i=28, next=0
+          KindVariableDeclaration [93, 105), i=29, next=0
+            KindIdentifier "b" [93, 95), i=30, next=31
+            KindNewExpression [97, 105), i=31, next=0
+              KindIdentifier "B" [101, 103), i=32, next=0
+    KindExpressionStatement [106, 118), i=33, next=0
+      KindCallExpression [106, 117), i=34, next=0
+        KindPropertyAccessExpression [106, 114), i=35, next=38
+          KindIdentifier "a" [106, 109), i=36, next=37
+          KindIdentifier "copy" [110, 114), i=37, next=0
+        NodeList [115, 116), i=38, next=0
+          KindIdentifier "b" [115, 116), i=39, next=0

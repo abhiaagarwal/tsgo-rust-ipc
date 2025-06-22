@@ -1,0 +1,49 @@
+KindSourceFile [0, 258), i=1, next=0
+  NodeList [0, 257), i=2, next=0
+    KindModuleDeclaration [0, 79), i=3, next=16
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "global" [7, 14), i=6, next=7
+      KindModuleBlock [14, 79), i=7, next=0
+        NodeList [16, 77), i=8, next=0
+          KindInterfaceDeclaration [16, 77), i=9, next=0
+            KindIdentifier "ImportAttributes" [30, 48), i=10, next=11
+            NodeList [50, 71), i=11, next=0
+              KindPropertySignature [50, 71), i=12, next=0
+                KindIdentifier "type" [50, 63), i=13, next=14
+                KindLiteralType [64, 71), i=14, next=0
+                  KindStringLiteral "json" [64, 71), i=15, next=0
+    KindImportDeclaration [79, 133), i=16, next=26
+      KindImportClause [87, 95), i=17, next=20
+        KindNamespaceImport [87, 95), i=18, next=0
+          KindIdentifier "ns" [92, 95), i=19, next=0
+      KindStringLiteral "./a" [100, 106), i=20, next=21
+      KindImportAttributes [106, 132), i=21, next=0
+        NodeList [113, 130), i=22, next=0
+          KindImportAttribute [113, 130), i=23, next=0
+            KindIdentifier "type" [113, 118), i=24, next=25
+            KindStringLiteral "not-json" [119, 130), i=25, next=0
+    KindExpressionStatement [133, 142), i=26, next=29
+      KindVoidExpression [133, 141), i=27, next=0
+        KindIdentifier "ns" [138, 141), i=28, next=0
+    KindFunctionDeclaration [142, 257), i=29, next=0
+      NodeList [142, 149), i=30, next=32
+        KindAsyncKeyword [142, 149), i=31, next=0
+      KindIdentifier "f" [158, 160), i=32, next=33
+      KindBlock [162, 257), i=33, next=0
+        NodeList [164, 255), i=34, next=0
+          KindExpressionStatement [164, 255), i=35, next=0
+            KindAwaitExpression [164, 254), i=36, next=0
+              KindCallExpression [174, 254), i=37, next=0
+                KindImportKeyword [174, 181), i=38, next=39
+                NodeList [182, 253), i=39, next=0
+                  KindStringLiteral "./a" [182, 187), i=40, next=41
+                  KindObjectLiteralExpression [188, 253), i=41, next=0
+                    NodeList [190, 247), i=42, next=0
+                      KindPropertyAssignment [190, 246), i=43, next=0
+                        KindIdentifier "with" [190, 203), i=44, next=45
+                        KindObjectLiteralExpression [204, 246), i=45, next=0
+                          NodeList [206, 236), i=46, next=0
+                            KindPropertyAssignment [206, 235), i=47, next=0
+                              KindIdentifier "type" [206, 223), i=48, next=49
+                              KindStringLiteral "not-json" [224, 235), i=49, next=0

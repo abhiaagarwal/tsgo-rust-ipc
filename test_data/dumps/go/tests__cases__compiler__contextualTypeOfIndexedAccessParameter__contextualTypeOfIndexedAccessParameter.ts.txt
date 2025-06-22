@@ -1,0 +1,110 @@
+KindSourceFile [0, 320), i=1, next=0
+  NodeList [0, 318), i=2, next=0
+    KindTypeAliasDeclaration [0, 22), i=3, next=11
+      KindIdentifier "Keys" [4, 9), i=4, next=5
+      KindUnionType [11, 21), i=5, next=0
+        NodeList [11, 21), i=6, next=0
+          KindLiteralType [11, 15), i=7, next=9
+            KindStringLiteral "a" [11, 15), i=8, next=0
+          KindLiteralType [17, 21), i=9, next=0
+            KindStringLiteral "b" [17, 21), i=10, next=0
+    KindTypeAliasDeclaration [22, 96), i=11, next=34
+      KindIdentifier "OptionsForKey" [30, 44), i=12, next=13
+      KindIntersectionType [46, 95), i=13, next=0
+        NodeList [46, 95), i=14, next=0
+          KindTypeLiteral [46, 83), i=15, next=29
+            NodeList [48, 81), i=16, next=0
+              KindPropertySignature [48, 81), i=17, next=0
+                KindIdentifier "a" [48, 50), i=18, next=19
+                KindTypeLiteral [51, 81), i=19, next=0
+                  NodeList [53, 79), i=20, next=0
+                    KindPropertySignature [53, 79), i=21, next=0
+                      KindIdentifier "cb" [53, 56), i=22, next=23
+                      KindFunctionType [57, 79), i=23, next=0
+                        NodeList [59, 68), i=24, next=28
+                          KindParameter [59, 68), i=25, next=0
+                            KindIdentifier "p" [59, 60), i=26, next=27
+                            KindNumberKeyword [61, 68), i=27, next=0
+                        KindNumberKeyword [72, 79), i=28, next=0
+          KindTypeLiteral [85, 95), i=29, next=0
+            NodeList [87, 93), i=30, next=0
+              KindPropertySignature [87, 93), i=31, next=0
+                KindIdentifier "b" [87, 89), i=32, next=33
+                KindTypeLiteral [90, 93), i=33, next=0
+    KindFunctionDeclaration [96, 176), i=34, next=56
+      NodeList [96, 107), i=35, next=37
+        KindDeclareKeyword [96, 107), i=36, next=0
+      KindIdentifier "f" [116, 118), i=37, next=38
+      NodeList [119, 133), i=38, next=43
+        KindTypeParameter [119, 133), i=39, next=0
+          KindIdentifier "K" [119, 120), i=40, next=41
+          KindTypeReference [128, 133), i=41, next=0
+            KindIdentifier "Keys" [128, 133), i=42, next=0
+      NodeList [135, 168), i=43, next=55
+        KindParameter [135, 141), i=44, next=48
+          KindIdentifier "key" [135, 138), i=45, next=46
+          KindTypeReference [139, 141), i=46, next=0
+            KindIdentifier "K" [139, 141), i=47, next=0
+        KindParameter [142, 168), i=48, next=0
+          KindIdentifier "options" [142, 150), i=49, next=50
+          KindIndexedAccessType [151, 168), i=50, next=0
+            KindTypeReference [151, 165), i=51, next=53
+              KindIdentifier "OptionsForKey" [151, 165), i=52, next=0
+            KindTypeReference [166, 167), i=53, next=0
+              KindIdentifier "K" [166, 167), i=54, next=0
+      KindVoidKeyword [170, 175), i=55, next=0
+    KindExpressionStatement [176, 210), i=56, next=71
+      KindCallExpression [176, 209), i=57, next=0
+        KindIdentifier "f" [176, 181), i=58, next=59
+        NodeList [182, 208), i=59, next=0
+          KindStringLiteral "a" [182, 185), i=60, next=61
+          KindObjectLiteralExpression [186, 208), i=61, next=0
+            NodeList [188, 205), i=62, next=0
+              KindPropertyAssignment [188, 204), i=63, next=0
+                KindIdentifier "cb" [188, 196), i=64, next=65
+                KindArrowFunction [197, 204), i=65, next=0
+                  NodeList [197, 199), i=66, next=69
+                    KindParameter [197, 199), i=67, next=0
+                      KindIdentifier "p" [197, 199), i=68, next=0
+                  KindEqualsGreaterThanToken [199, 202), i=69, next=70
+                  KindIdentifier "p" [202, 204), i=70, next=0
+    KindFunctionDeclaration [210, 318), i=71, next=0
+      KindIdentifier "g" [222, 224), i=72, next=73
+      NodeList [225, 250), i=73, next=82
+        KindTypeParameter [225, 250), i=74, next=0
+          KindIdentifier "K" [225, 232), i=75, next=76
+          KindUnionType [240, 250), i=76, next=0
+            NodeList [240, 250), i=77, next=0
+              KindLiteralType [240, 244), i=78, next=80
+                KindStringLiteral "a" [240, 244), i=79, next=0
+              KindLiteralType [246, 250), i=80, next=0
+                KindStringLiteral "b" [246, 250), i=81, next=0
+      NodeList [252, 300), i=82, next=104
+        KindParameter [252, 289), i=83, next=101
+          KindIdentifier "x" [252, 253), i=84, next=85
+          KindIndexedAccessType [254, 289), i=85, next=0
+            KindParenthesizedType [254, 286), i=86, next=99
+              KindIntersectionType [256, 285), i=87, next=0
+                NodeList [256, 285), i=88, next=0
+                  KindTypeLiteral [256, 269), i=89, next=94
+                    NodeList [257, 267), i=90, next=0
+                      KindPropertySignature [257, 267), i=91, next=0
+                        KindIdentifier "a" [257, 259), i=92, next=93
+                        KindStringKeyword [260, 267), i=93, next=0
+                  KindTypeLiteral [271, 285), i=94, next=0
+                    NodeList [273, 283), i=95, next=0
+                      KindPropertySignature [273, 283), i=96, next=0
+                        KindIdentifier "b" [273, 275), i=97, next=98
+                        KindStringKeyword [276, 283), i=98, next=0
+            KindTypeReference [287, 288), i=99, next=0
+              KindIdentifier "K" [287, 288), i=100, next=0
+        KindParameter [290, 300), i=101, next=0
+          KindIdentifier "y" [290, 292), i=102, next=103
+          KindStringKeyword [293, 300), i=103, next=0
+      KindBlock [301, 318), i=104, next=0
+        NodeList [303, 315), i=105, next=0
+          KindExpressionStatement [303, 315), i=106, next=0
+            KindBinaryExpression [303, 314), i=107, next=0
+              KindIdentifier "x" [303, 310), i=108, next=109
+              KindEqualsToken [310, 312), i=109, next=110
+              KindIdentifier "y" [312, 314), i=110, next=0

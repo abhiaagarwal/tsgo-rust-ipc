@@ -1,0 +1,57 @@
+KindSourceFile [0, 258), i=1, next=0
+  NodeList [0, 256), i=2, next=0
+    KindImportDeclaration [0, 72), i=3, next=7
+      KindImportClause [50, 57), i=4, next=6
+        KindIdentifier "fooBar" [50, 57), i=5, next=0
+      KindStringLiteral "foobar" [62, 71), i=6, next=0
+    KindImportEqualsDeclaration [72, 94), i=7, next=12
+      KindIdentifier "X" [80, 82), i=8, next=9
+      KindQualifiedName [84, 93), i=9, next=0
+        KindIdentifier "fooBar" [84, 91), i=10, next=11
+        KindIdentifier "X" [92, 93), i=11, next=0
+    KindImportDeclaration [94, 121), i=12, next=16
+      KindImportClause [102, 105), i=13, next=15
+        KindIdentifier "X2" [102, 105), i=14, next=0
+      KindStringLiteral "foobarx" [110, 120), i=15, next=0
+    KindVariableStatement [121, 138), i=16, next=24
+      KindVariableDeclarationList [121, 137), i=17, next=0
+        NodeList [128, 137), i=18, next=0
+          KindVariableDeclaration [128, 137), i=19, next=0
+            KindIdentifier "x" [128, 130), i=20, next=21
+            KindTypeReference [131, 133), i=21, next=23
+              KindIdentifier "X" [131, 133), i=22, next=0
+            KindIdentifier "X" [135, 137), i=23, next=0
+    KindVariableStatement [138, 158), i=24, next=32
+      KindVariableDeclarationList [138, 157), i=25, next=0
+        NodeList [145, 157), i=26, next=0
+          KindVariableDeclaration [145, 157), i=27, next=0
+            KindIdentifier "x2" [145, 148), i=28, next=29
+            KindTypeReference [149, 152), i=29, next=31
+              KindIdentifier "X2" [149, 152), i=30, next=0
+            KindIdentifier "X2" [154, 157), i=31, next=0
+    KindImportDeclaration [158, 182), i=32, next=36
+      KindImportClause [168, 170), i=33, next=35
+        KindIdentifier "B" [168, 170), i=34, next=0
+      KindStringLiteral "./a" [175, 181), i=35, next=0
+    KindVariableStatement [182, 208), i=36, next=49
+      KindVariableDeclarationList [182, 207), i=37, next=0
+        NodeList [189, 207), i=38, next=0
+          KindVariableDeclaration [189, 207), i=39, next=0
+            KindIdentifier "b" [189, 191), i=40, next=41
+            KindTypeReference [192, 194), i=41, next=43
+              KindIdentifier "B" [192, 194), i=42, next=0
+            KindNewExpression [196, 207), i=43, next=0
+              KindIdentifier "B" [200, 202), i=44, next=45
+              NodeList [203, 206), i=45, next=0
+                KindPropertyAccessExpression [203, 206), i=46, next=0
+                  KindIdentifier "B" [203, 204), i=47, next=48
+                  KindIdentifier "b" [205, 206), i=48, next=0
+    KindImportDeclaration [208, 240), i=49, next=53
+      KindImportClause [218, 228), i=50, next=52
+        KindIdentifier "fooLength" [218, 228), i=51, next=0
+      KindStringLiteral "./b" [233, 239), i=52, next=0
+    KindExpressionStatement [240, 256), i=53, next=0
+      KindBinaryExpression [240, 255), i=54, next=0
+        KindIdentifier "fooLength" [240, 251), i=55, next=56
+        KindPlusToken [251, 253), i=56, next=57
+        KindNumericLiteral [253, 255), i=57, next=0

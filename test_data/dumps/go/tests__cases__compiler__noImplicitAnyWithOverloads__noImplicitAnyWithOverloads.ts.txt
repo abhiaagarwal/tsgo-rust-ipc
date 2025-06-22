@@ -1,0 +1,54 @@
+KindSourceFile [0, 202), i=1, next=0
+  NodeList [0, 171), i=2, next=0
+    KindInterfaceDeclaration [0, 26), i=3, next=8
+      KindIdentifier "A" [9, 11), i=4, next=5
+      NodeList [13, 23), i=5, next=0
+        KindPropertySignature [13, 23), i=6, next=0
+          KindIdentifier "foo" [13, 22), i=7, next=0
+    KindInterfaceDeclaration [26, 43), i=8, next=10
+      KindIdentifier "B" [37, 39), i=9, next=0
+    KindFunctionDeclaration [43, 83), i=10, next=22
+      KindIdentifier "callb" [55, 61), i=11, next=12
+      NodeList [62, 81), i=12, next=0
+        KindParameter [62, 81), i=13, next=0
+          KindIdentifier "lam" [62, 65), i=14, next=15
+          KindFunctionType [66, 81), i=15, next=0
+            NodeList [68, 72), i=16, next=21
+              KindParameter [68, 72), i=17, next=0
+                KindIdentifier "l" [68, 69), i=18, next=19
+                KindTypeReference [70, 72), i=19, next=0
+                  KindIdentifier "A" [70, 72), i=20, next=0
+            KindVoidKeyword [76, 81), i=21, next=0
+    KindFunctionDeclaration [83, 121), i=22, next=34
+      KindIdentifier "callb" [93, 99), i=23, next=24
+      NodeList [100, 119), i=24, next=0
+        KindParameter [100, 119), i=25, next=0
+          KindIdentifier "lam" [100, 103), i=26, next=27
+          KindFunctionType [104, 119), i=27, next=0
+            NodeList [106, 110), i=28, next=33
+              KindParameter [106, 110), i=29, next=0
+                KindIdentifier "n" [106, 107), i=30, next=31
+                KindTypeReference [108, 110), i=31, next=0
+                  KindIdentifier "B" [108, 110), i=32, next=0
+            KindVoidKeyword [114, 119), i=33, next=0
+    KindFunctionDeclaration [121, 144), i=34, next=40
+      KindIdentifier "callb" [131, 137), i=35, next=36
+      NodeList [138, 139), i=36, next=39
+        KindParameter [138, 139), i=37, next=0
+          KindIdentifier "a" [138, 139), i=38, next=0
+      KindBlock [140, 144), i=39, next=0
+    KindExpressionStatement [144, 171), i=40, next=0
+      KindCallExpression [144, 170), i=41, next=0
+        KindIdentifier "callb" [144, 151), i=42, next=43
+        NodeList [152, 169), i=43, next=0
+          KindArrowFunction [152, 169), i=44, next=0
+            NodeList [153, 154), i=45, next=48
+              KindParameter [153, 154), i=46, next=0
+                KindIdentifier "a" [153, 154), i=47, next=0
+            KindEqualsGreaterThanToken [155, 158), i=48, next=49
+            KindBlock [158, 169), i=49, next=0
+              NodeList [160, 167), i=50, next=0
+                KindExpressionStatement [160, 167), i=51, next=0
+                  KindPropertyAccessExpression [160, 166), i=52, next=0
+                    KindIdentifier "a" [160, 162), i=53, next=54
+                    KindIdentifier "foo" [163, 166), i=54, next=0

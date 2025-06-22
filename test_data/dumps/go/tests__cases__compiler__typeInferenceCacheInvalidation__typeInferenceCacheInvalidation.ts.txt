@@ -1,0 +1,109 @@
+KindSourceFile [0, 401), i=1, next=0
+  NodeList [0, 399), i=2, next=0
+    KindTypeAliasDeclaration [0, 57), i=3, next=21
+      KindIdentifier "Callback" [4, 13), i=4, next=5
+      NodeList [14, 24), i=5, next=10
+        KindTypeParameter [14, 18), i=6, next=8
+          KindIdentifier "TFoo" [14, 18), i=7, next=0
+        KindTypeParameter [19, 24), i=8, next=0
+          KindIdentifier "TBar" [19, 24), i=9, next=0
+      KindFunctionType [27, 57), i=10, next=0
+        NodeList [29, 49), i=11, next=20
+          KindParameter [29, 38), i=12, next=16
+            KindIdentifier "foo" [29, 32), i=13, next=14
+            KindTypeReference [33, 38), i=14, next=0
+              KindIdentifier "TFoo" [33, 38), i=15, next=0
+          KindParameter [39, 49), i=16, next=0
+            KindIdentifier "bar" [39, 43), i=17, next=18
+            KindTypeReference [44, 49), i=18, next=0
+              KindIdentifier "TBar" [44, 49), i=19, next=0
+        KindAnyKeyword [53, 57), i=20, next=0
+    KindFunctionDeclaration [57, 210), i=21, next=54
+      NodeList [57, 68), i=22, next=24
+        KindDeclareKeyword [57, 68), i=23, next=0
+      KindIdentifier "example" [77, 85), i=24, next=25
+      NodeList [86, 136), i=25, next=39
+        KindTypeParameter [86, 90), i=26, next=28
+          KindIdentifier "TFoo" [86, 90), i=27, next=0
+        KindTypeParameter [91, 96), i=28, next=30
+          KindIdentifier "TBar" [91, 96), i=29, next=0
+        KindTypeParameter [97, 136), i=30, next=0
+          KindIdentifier "TCallback" [97, 107), i=31, next=32
+          KindTypeReference [115, 136), i=32, next=0
+            KindIdentifier "Callback" [115, 124), i=33, next=34
+            NodeList [125, 135), i=34, next=0
+              KindTypeReference [125, 129), i=35, next=37
+                KindIdentifier "TFoo" [125, 129), i=36, next=0
+              KindTypeReference [130, 135), i=37, next=0
+                KindIdentifier "TBar" [130, 135), i=38, next=0
+      NodeList [138, 196), i=39, next=52
+        KindParameter [138, 153), i=40, next=44
+          KindIdentifier "foo" [138, 147), i=41, next=42
+          KindTypeReference [148, 153), i=42, next=0
+            KindIdentifier "TFoo" [148, 153), i=43, next=0
+        KindParameter [154, 179), i=44, next=48
+          KindIdentifier "callback" [154, 168), i=45, next=46
+          KindTypeReference [169, 179), i=46, next=0
+            KindIdentifier "TCallback" [169, 179), i=47, next=0
+        KindParameter [180, 195), i=48, next=0
+          KindIdentifier "bar" [180, 189), i=49, next=50
+          KindTypeReference [190, 195), i=50, next=0
+            KindIdentifier "TBar" [190, 195), i=51, next=0
+      KindTypeReference [200, 210), i=52, next=0
+        KindIdentifier "TCallback" [200, 210), i=53, next=0
+    KindExpressionStatement [210, 307), i=54, next=83
+      KindCallExpression [210, 306), i=55, next=0
+        KindIdentifier "example" [210, 221), i=56, next=57
+        NodeList [222, 305), i=57, next=0
+          KindNumericLiteral [222, 224), i=58, next=59
+          KindArrowFunction [225, 299), i=59, next=82
+            NodeList [227, 235), i=60, next=65
+              KindParameter [227, 230), i=61, next=63
+                KindIdentifier "foo" [227, 230), i=62, next=0
+              KindParameter [231, 235), i=63, next=0
+                KindIdentifier "bar" [231, 235), i=64, next=0
+            KindEqualsGreaterThanToken [236, 239), i=65, next=66
+            KindParenthesizedExpression [239, 299), i=66, next=0
+              KindObjectLiteralExpression [241, 298), i=67, next=0
+                NodeList [242, 295), i=68, next=0
+                  KindPropertyAssignment [242, 295), i=69, next=0
+                    KindIdentifier "t" [242, 249), i=70, next=71
+                    KindArrowFunction [250, 295), i=71, next=0
+                      KindEqualsGreaterThanToken [253, 256), i=72, next=73
+                      KindBlock [256, 295), i=73, next=0
+                        NodeList [258, 288), i=74, next=0
+                          KindVariableStatement [258, 288), i=75, next=0
+                            KindVariableDeclarationList [258, 287), i=76, next=0
+                              NodeList [271, 287), i=77, next=0
+                                KindVariableDeclaration [271, 287), i=78, next=0
+                                  KindIdentifier "s" [271, 273), i=79, next=80
+                                  KindStringKeyword [274, 281), i=80, next=81
+                                  KindIdentifier "bar" [283, 287), i=81, next=0
+          KindStringLiteral "42" [300, 305), i=82, next=0
+    KindExpressionStatement [307, 399), i=83, next=0
+      KindCallExpression [307, 398), i=84, next=0
+        KindIdentifier "example" [307, 318), i=85, next=86
+        NodeList [319, 397), i=86, next=0
+          KindNumericLiteral [319, 321), i=87, next=88
+          KindArrowFunction [322, 391), i=88, next=109
+            NodeList [324, 332), i=89, next=94
+              KindParameter [324, 327), i=90, next=92
+                KindIdentifier "foo" [324, 327), i=91, next=0
+              KindParameter [328, 332), i=92, next=0
+                KindIdentifier "bar" [328, 332), i=93, next=0
+            KindEqualsGreaterThanToken [333, 336), i=94, next=95
+            KindParenthesizedExpression [336, 391), i=95, next=0
+              KindObjectLiteralExpression [338, 390), i=96, next=0
+                NodeList [339, 387), i=97, next=0
+                  KindMethodDeclaration [339, 387), i=98, next=0
+                    KindIdentifier "t" [339, 346), i=99, next=100
+                    KindBlock [348, 387), i=100, next=0
+                      NodeList [350, 380), i=101, next=0
+                        KindVariableStatement [350, 380), i=102, next=0
+                          KindVariableDeclarationList [350, 379), i=103, next=0
+                            NodeList [363, 379), i=104, next=0
+                              KindVariableDeclaration [363, 379), i=105, next=0
+                                KindIdentifier "s" [363, 365), i=106, next=107
+                                KindStringKeyword [366, 373), i=107, next=108
+                                KindIdentifier "bar" [375, 379), i=108, next=0
+          KindStringLiteral "42" [392, 397), i=109, next=0

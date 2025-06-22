@@ -1,0 +1,55 @@
+KindSourceFile [0, 167), i=1, next=0
+  NodeList [0, 167), i=2, next=0
+    KindTypeAliasDeclaration [0, 52), i=3, next=18
+      KindIdentifier "Foo" [4, 8), i=4, next=5
+      NodeList [9, 10), i=5, next=8
+        KindTypeParameter [9, 10), i=6, next=0
+          KindIdentifier "T" [9, 10), i=7, next=0
+      KindMappedType [13, 52), i=8, next=0
+        KindTypeParameter [22, 43), i=9, next=17
+          KindIdentifier "k" [22, 23), i=10, next=11
+          KindIntersectionType [26, 43), i=11, next=0
+            NodeList [26, 43), i=12, next=0
+              KindTypeOperator [26, 34), i=13, next=16
+                KindTypeReference [32, 34), i=14, next=0
+                  KindIdentifier "T" [32, 34), i=15, next=0
+              KindStringKeyword [36, 43), i=16, next=0
+        KindAnyKeyword [45, 49), i=17, next=0
+    KindFunctionDeclaration [52, 127), i=18, next=42
+      KindIdentifier "bar" [64, 68), i=19, next=20
+      NodeList [69, 70), i=20, next=23
+        KindTypeParameter [69, 70), i=21, next=0
+          KindIdentifier "T" [69, 70), i=22, next=0
+      NodeList [72, 77), i=23, next=28
+        KindParameter [72, 77), i=24, next=0
+          KindIdentifier "_p" [72, 74), i=25, next=26
+          KindTypeReference [75, 77), i=26, next=0
+            KindIdentifier "T" [75, 77), i=27, next=0
+      KindTypeLiteral [79, 97), i=28, next=36
+        NodeList [81, 95), i=29, next=0
+          KindConstructSignature [81, 95), i=30, next=0
+            KindTypeReference [88, 95), i=31, next=0
+              KindIdentifier "Foo" [88, 92), i=32, next=33
+              NodeList [93, 94), i=33, next=0
+                KindTypeReference [93, 94), i=34, next=0
+                  KindIdentifier "T" [93, 94), i=35, next=0
+      KindBlock [97, 127), i=36, next=0
+        NodeList [99, 124), i=37, next=0
+          KindReturnStatement [99, 124), i=38, next=0
+            KindAsExpression [111, 123), i=39, next=0
+              KindNullKeyword [111, 116), i=40, next=41
+              KindAnyKeyword [119, 123), i=41, next=0
+    KindClassDeclaration [127, 167), i=42, next=0
+      KindIdentifier "Baz" [136, 140), i=43, next=44
+      NodeList [140, 162), i=44, next=0
+        KindHeritageClause [140, 162), i=45, next=0
+          NodeList [148, 162), i=46, next=0
+            KindExpressionWithTypeArguments [148, 162), i=47, next=0
+              KindCallExpression [148, 162), i=48, next=0
+                KindIdentifier "bar" [148, 152), i=49, next=50
+                NodeList [153, 161), i=50, next=0
+                  KindObjectLiteralExpression [153, 161), i=51, next=0
+                    NodeList [154, 159), i=52, next=0
+                      KindPropertyAssignment [154, 159), i=53, next=0
+                        KindIdentifier "x" [154, 156), i=54, next=55
+                        KindNumericLiteral [157, 159), i=55, next=0

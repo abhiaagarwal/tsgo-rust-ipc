@@ -1,0 +1,687 @@
+KindSourceFile [0, 2401), i=1, next=0
+  NodeList [0, 2401), i=2, next=0
+    KindEnumDeclaration [0, 38), i=3, next=14
+      NodeList [0, 5), i=4, next=6
+        KindConstKeyword [0, 5), i=5, next=0
+      KindIdentifier "Choice" [10, 17), i=6, next=7
+      NodeList [19, 36), i=7, next=0
+        KindEnumMember [19, 27), i=8, next=10
+          KindIdentifier "Unknown" [19, 27), i=9, next=0
+        KindEnumMember [28, 32), i=10, next=12
+          KindIdentifier "Yes" [28, 32), i=11, next=0
+        KindEnumMember [33, 36), i=12, next=0
+          KindIdentifier "No" [33, 36), i=13, next=0
+    KindEmptyStatement [38, 39), i=14, next=15
+    KindTypeAliasDeclaration [39, 65), i=15, next=21
+      KindIdentifier "Yes" [47, 51), i=16, next=17
+      KindTypeReference [53, 64), i=17, next=0
+        KindQualifiedName [53, 64), i=18, next=0
+          KindIdentifier "Choice" [53, 60), i=19, next=20
+          KindIdentifier "Yes" [61, 64), i=20, next=0
+    KindTypeAliasDeclaration [65, 103), i=21, next=33
+      KindIdentifier "YesNo" [71, 77), i=22, next=23
+      KindUnionType [79, 102), i=23, next=0
+        NodeList [79, 102), i=24, next=0
+          KindTypeReference [79, 90), i=25, next=29
+            KindQualifiedName [79, 90), i=26, next=0
+              KindIdentifier "Choice" [79, 86), i=27, next=28
+              KindIdentifier "Yes" [87, 90), i=28, next=0
+          KindTypeReference [92, 102), i=29, next=0
+            KindQualifiedName [92, 102), i=30, next=0
+              KindIdentifier "Choice" [92, 99), i=31, next=32
+              KindIdentifier "No" [100, 102), i=32, next=0
+    KindTypeAliasDeclaration [103, 141), i=33, next=45
+      KindIdentifier "NoYes" [109, 115), i=34, next=35
+      KindUnionType [117, 140), i=35, next=0
+        NodeList [117, 140), i=36, next=0
+          KindTypeReference [117, 127), i=37, next=41
+            KindQualifiedName [117, 127), i=38, next=0
+              KindIdentifier "Choice" [117, 124), i=39, next=40
+              KindIdentifier "No" [125, 127), i=40, next=0
+          KindTypeReference [129, 140), i=41, next=0
+            KindQualifiedName [129, 140), i=42, next=0
+              KindIdentifier "Choice" [129, 136), i=43, next=44
+              KindIdentifier "Yes" [137, 140), i=44, next=0
+    KindTypeAliasDeclaration [141, 203), i=45, next=61
+      KindIdentifier "UnknownYesNo" [147, 160), i=46, next=47
+      KindUnionType [162, 202), i=47, next=0
+        NodeList [162, 202), i=48, next=0
+          KindTypeReference [162, 177), i=49, next=53
+            KindQualifiedName [162, 177), i=50, next=0
+              KindIdentifier "Choice" [162, 169), i=51, next=52
+              KindIdentifier "Unknown" [170, 177), i=52, next=0
+          KindTypeReference [179, 190), i=53, next=57
+            KindQualifiedName [179, 190), i=54, next=0
+              KindIdentifier "Choice" [179, 186), i=55, next=56
+              KindIdentifier "Yes" [187, 190), i=56, next=0
+          KindTypeReference [192, 202), i=57, next=0
+            KindQualifiedName [192, 202), i=58, next=0
+              KindIdentifier "Choice" [192, 199), i=59, next=60
+              KindIdentifier "No" [200, 202), i=60, next=0
+    KindFunctionDeclaration [203, 317), i=61, next=102
+      KindIdentifier "f1" [215, 218), i=62, next=63
+      NodeList [219, 263), i=63, next=80
+        KindParameter [219, 225), i=64, next=68
+          KindIdentifier "a" [219, 220), i=65, next=66
+          KindTypeReference [221, 225), i=66, next=0
+            KindIdentifier "Yes" [221, 225), i=67, next=0
+        KindParameter [226, 235), i=68, next=72
+          KindIdentifier "b" [226, 228), i=69, next=70
+          KindTypeReference [229, 235), i=70, next=0
+            KindIdentifier "YesNo" [229, 235), i=71, next=0
+        KindParameter [236, 252), i=72, next=76
+          KindIdentifier "c" [236, 238), i=73, next=74
+          KindTypeReference [239, 252), i=74, next=0
+            KindIdentifier "UnknownYesNo" [239, 252), i=75, next=0
+        KindParameter [253, 263), i=76, next=0
+          KindIdentifier "d" [253, 255), i=77, next=78
+          KindTypeReference [256, 263), i=78, next=0
+            KindIdentifier "Choice" [256, 263), i=79, next=0
+      KindBlock [264, 317), i=80, next=0
+        NodeList [266, 314), i=81, next=0
+          KindExpressionStatement [266, 278), i=82, next=87
+            KindBinaryExpression [266, 277), i=83, next=0
+              KindIdentifier "a" [266, 273), i=84, next=85
+              KindEqualsToken [273, 275), i=85, next=86
+              KindIdentifier "a" [275, 277), i=86, next=0
+          KindExpressionStatement [278, 290), i=87, next=92
+            KindBinaryExpression [278, 289), i=88, next=0
+              KindIdentifier "a" [278, 285), i=89, next=90
+              KindEqualsToken [285, 287), i=90, next=91
+              KindIdentifier "b" [287, 289), i=91, next=0
+          KindExpressionStatement [290, 302), i=92, next=97
+            KindBinaryExpression [290, 301), i=93, next=0
+              KindIdentifier "a" [290, 297), i=94, next=95
+              KindEqualsToken [297, 299), i=95, next=96
+              KindIdentifier "c" [299, 301), i=96, next=0
+          KindExpressionStatement [302, 314), i=97, next=0
+            KindBinaryExpression [302, 313), i=98, next=0
+              KindIdentifier "a" [302, 309), i=99, next=100
+              KindEqualsToken [309, 311), i=100, next=101
+              KindIdentifier "d" [311, 313), i=101, next=0
+    KindFunctionDeclaration [317, 431), i=102, next=143
+      KindIdentifier "f2" [329, 332), i=103, next=104
+      NodeList [333, 377), i=104, next=121
+        KindParameter [333, 339), i=105, next=109
+          KindIdentifier "a" [333, 334), i=106, next=107
+          KindTypeReference [335, 339), i=107, next=0
+            KindIdentifier "Yes" [335, 339), i=108, next=0
+        KindParameter [340, 349), i=109, next=113
+          KindIdentifier "b" [340, 342), i=110, next=111
+          KindTypeReference [343, 349), i=111, next=0
+            KindIdentifier "YesNo" [343, 349), i=112, next=0
+        KindParameter [350, 366), i=113, next=117
+          KindIdentifier "c" [350, 352), i=114, next=115
+          KindTypeReference [353, 366), i=115, next=0
+            KindIdentifier "UnknownYesNo" [353, 366), i=116, next=0
+        KindParameter [367, 377), i=117, next=0
+          KindIdentifier "d" [367, 369), i=118, next=119
+          KindTypeReference [370, 377), i=119, next=0
+            KindIdentifier "Choice" [370, 377), i=120, next=0
+      KindBlock [378, 431), i=121, next=0
+        NodeList [380, 428), i=122, next=0
+          KindExpressionStatement [380, 392), i=123, next=128
+            KindBinaryExpression [380, 391), i=124, next=0
+              KindIdentifier "b" [380, 387), i=125, next=126
+              KindEqualsToken [387, 389), i=126, next=127
+              KindIdentifier "a" [389, 391), i=127, next=0
+          KindExpressionStatement [392, 404), i=128, next=133
+            KindBinaryExpression [392, 403), i=129, next=0
+              KindIdentifier "b" [392, 399), i=130, next=131
+              KindEqualsToken [399, 401), i=131, next=132
+              KindIdentifier "b" [401, 403), i=132, next=0
+          KindExpressionStatement [404, 416), i=133, next=138
+            KindBinaryExpression [404, 415), i=134, next=0
+              KindIdentifier "b" [404, 411), i=135, next=136
+              KindEqualsToken [411, 413), i=136, next=137
+              KindIdentifier "c" [413, 415), i=137, next=0
+          KindExpressionStatement [416, 428), i=138, next=0
+            KindBinaryExpression [416, 427), i=139, next=0
+              KindIdentifier "b" [416, 423), i=140, next=141
+              KindEqualsToken [423, 425), i=141, next=142
+              KindIdentifier "d" [425, 427), i=142, next=0
+    KindFunctionDeclaration [431, 545), i=143, next=184
+      KindIdentifier "f3" [443, 446), i=144, next=145
+      NodeList [447, 491), i=145, next=162
+        KindParameter [447, 453), i=146, next=150
+          KindIdentifier "a" [447, 448), i=147, next=148
+          KindTypeReference [449, 453), i=148, next=0
+            KindIdentifier "Yes" [449, 453), i=149, next=0
+        KindParameter [454, 463), i=150, next=154
+          KindIdentifier "b" [454, 456), i=151, next=152
+          KindTypeReference [457, 463), i=152, next=0
+            KindIdentifier "YesNo" [457, 463), i=153, next=0
+        KindParameter [464, 480), i=154, next=158
+          KindIdentifier "c" [464, 466), i=155, next=156
+          KindTypeReference [467, 480), i=156, next=0
+            KindIdentifier "UnknownYesNo" [467, 480), i=157, next=0
+        KindParameter [481, 491), i=158, next=0
+          KindIdentifier "d" [481, 483), i=159, next=160
+          KindTypeReference [484, 491), i=160, next=0
+            KindIdentifier "Choice" [484, 491), i=161, next=0
+      KindBlock [492, 545), i=162, next=0
+        NodeList [494, 542), i=163, next=0
+          KindExpressionStatement [494, 506), i=164, next=169
+            KindBinaryExpression [494, 505), i=165, next=0
+              KindIdentifier "c" [494, 501), i=166, next=167
+              KindEqualsToken [501, 503), i=167, next=168
+              KindIdentifier "a" [503, 505), i=168, next=0
+          KindExpressionStatement [506, 518), i=169, next=174
+            KindBinaryExpression [506, 517), i=170, next=0
+              KindIdentifier "c" [506, 513), i=171, next=172
+              KindEqualsToken [513, 515), i=172, next=173
+              KindIdentifier "b" [515, 517), i=173, next=0
+          KindExpressionStatement [518, 530), i=174, next=179
+            KindBinaryExpression [518, 529), i=175, next=0
+              KindIdentifier "c" [518, 525), i=176, next=177
+              KindEqualsToken [525, 527), i=177, next=178
+              KindIdentifier "c" [527, 529), i=178, next=0
+          KindExpressionStatement [530, 542), i=179, next=0
+            KindBinaryExpression [530, 541), i=180, next=0
+              KindIdentifier "c" [530, 537), i=181, next=182
+              KindEqualsToken [537, 539), i=182, next=183
+              KindIdentifier "d" [539, 541), i=183, next=0
+    KindFunctionDeclaration [545, 659), i=184, next=225
+      KindIdentifier "f4" [557, 560), i=185, next=186
+      NodeList [561, 605), i=186, next=203
+        KindParameter [561, 567), i=187, next=191
+          KindIdentifier "a" [561, 562), i=188, next=189
+          KindTypeReference [563, 567), i=189, next=0
+            KindIdentifier "Yes" [563, 567), i=190, next=0
+        KindParameter [568, 577), i=191, next=195
+          KindIdentifier "b" [568, 570), i=192, next=193
+          KindTypeReference [571, 577), i=193, next=0
+            KindIdentifier "YesNo" [571, 577), i=194, next=0
+        KindParameter [578, 594), i=195, next=199
+          KindIdentifier "c" [578, 580), i=196, next=197
+          KindTypeReference [581, 594), i=197, next=0
+            KindIdentifier "UnknownYesNo" [581, 594), i=198, next=0
+        KindParameter [595, 605), i=199, next=0
+          KindIdentifier "d" [595, 597), i=200, next=201
+          KindTypeReference [598, 605), i=201, next=0
+            KindIdentifier "Choice" [598, 605), i=202, next=0
+      KindBlock [606, 659), i=203, next=0
+        NodeList [608, 656), i=204, next=0
+          KindExpressionStatement [608, 620), i=205, next=210
+            KindBinaryExpression [608, 619), i=206, next=0
+              KindIdentifier "d" [608, 615), i=207, next=208
+              KindEqualsToken [615, 617), i=208, next=209
+              KindIdentifier "a" [617, 619), i=209, next=0
+          KindExpressionStatement [620, 632), i=210, next=215
+            KindBinaryExpression [620, 631), i=211, next=0
+              KindIdentifier "d" [620, 627), i=212, next=213
+              KindEqualsToken [627, 629), i=213, next=214
+              KindIdentifier "b" [629, 631), i=214, next=0
+          KindExpressionStatement [632, 644), i=215, next=220
+            KindBinaryExpression [632, 643), i=216, next=0
+              KindIdentifier "d" [632, 639), i=217, next=218
+              KindEqualsToken [639, 641), i=218, next=219
+              KindIdentifier "c" [641, 643), i=219, next=0
+          KindExpressionStatement [644, 656), i=220, next=0
+            KindBinaryExpression [644, 655), i=221, next=0
+              KindIdentifier "d" [644, 651), i=222, next=223
+              KindEqualsToken [651, 653), i=223, next=224
+              KindIdentifier "d" [653, 655), i=224, next=0
+    KindFunctionDeclaration [659, 989), i=225, next=74
+      KindIdentifier "f5" [671, 674), i=226, next=227
+      NodeList [675, 719), i=227, next=244
+        KindParameter [675, 681), i=228, next=232
+          KindIdentifier "a" [675, 676), i=229, next=230
+          KindTypeReference [677, 681), i=230, next=0
+            KindIdentifier "Yes" [677, 681), i=231, next=0
+        KindParameter [682, 691), i=232, next=236
+          KindIdentifier "b" [682, 684), i=233, next=234
+          KindTypeReference [685, 691), i=234, next=0
+            KindIdentifier "YesNo" [685, 691), i=235, next=0
+        KindParameter [692, 708), i=236, next=240
+          KindIdentifier "c" [692, 694), i=237, next=238
+          KindTypeReference [695, 708), i=238, next=0
+            KindIdentifier "UnknownYesNo" [695, 708), i=239, next=0
+        KindParameter [709, 719), i=240, next=0
+          KindIdentifier "d" [709, 711), i=241, next=242
+          KindTypeReference [712, 719), i=242, next=0
+            KindIdentifier "Choice" [712, 719), i=243, next=0
+      KindBlock [720, 989), i=244, next=0
+        NodeList [722, 986), i=245, next=0
+          KindExpressionStatement [722, 747), i=246, next=253
+            KindBinaryExpression [722, 746), i=247, next=0
+              KindIdentifier "a" [722, 729), i=248, next=249
+              KindEqualsToken [729, 731), i=249, next=250
+              KindPropertyAccessExpression [731, 746), i=250, next=0
+                KindIdentifier "Choice" [731, 738), i=251, next=252
+                KindIdentifier "Unknown" [739, 746), i=252, next=0
+          KindExpressionStatement [747, 768), i=253, next=4
+            KindBinaryExpression [747, 767), i=254, next=0
+              KindIdentifier "a" [747, 754), i=255, next=0
+              KindEqualsToken [754, 756), i=256, next=1
+              KindPropertyAccessExpression [756, 767), i=257, next=0
+                KindIdentifier "Choice" [756, 763), i=258, next=3
+                KindIdentifier "Yes" [764, 767), i=259, next=0
+          KindExpressionStatement [768, 788), i=260, next=11
+            KindBinaryExpression [768, 787), i=261, next=0
+              KindIdentifier "a" [768, 775), i=262, next=7
+              KindEqualsToken [775, 777), i=263, next=8
+              KindPropertyAccessExpression [777, 787), i=264, next=0
+                KindIdentifier "Choice" [777, 784), i=265, next=10
+                KindIdentifier "No" [785, 787), i=266, next=0
+          KindExpressionStatement [788, 813), i=267, next=18
+            KindBinaryExpression [788, 812), i=268, next=0
+              KindIdentifier "b" [788, 795), i=269, next=14
+              KindEqualsToken [795, 797), i=270, next=15
+              KindPropertyAccessExpression [797, 812), i=271, next=0
+                KindIdentifier "Choice" [797, 804), i=272, next=17
+                KindIdentifier "Unknown" [805, 812), i=273, next=0
+          KindExpressionStatement [813, 834), i=274, next=25
+            KindBinaryExpression [813, 833), i=275, next=0
+              KindIdentifier "b" [813, 820), i=276, next=21
+              KindEqualsToken [820, 822), i=277, next=22
+              KindPropertyAccessExpression [822, 833), i=278, next=0
+                KindIdentifier "Choice" [822, 829), i=279, next=24
+                KindIdentifier "Yes" [830, 833), i=280, next=0
+          KindExpressionStatement [834, 854), i=281, next=32
+            KindBinaryExpression [834, 853), i=282, next=0
+              KindIdentifier "b" [834, 841), i=283, next=28
+              KindEqualsToken [841, 843), i=284, next=29
+              KindPropertyAccessExpression [843, 853), i=285, next=0
+                KindIdentifier "Choice" [843, 850), i=286, next=31
+                KindIdentifier "No" [851, 853), i=287, next=0
+          KindExpressionStatement [854, 879), i=288, next=39
+            KindBinaryExpression [854, 878), i=289, next=0
+              KindIdentifier "c" [854, 861), i=290, next=35
+              KindEqualsToken [861, 863), i=291, next=36
+              KindPropertyAccessExpression [863, 878), i=292, next=0
+                KindIdentifier "Choice" [863, 870), i=293, next=38
+                KindIdentifier "Unknown" [871, 878), i=294, next=0
+          KindExpressionStatement [879, 900), i=295, next=46
+            KindBinaryExpression [879, 899), i=296, next=0
+              KindIdentifier "c" [879, 886), i=297, next=42
+              KindEqualsToken [886, 888), i=298, next=43
+              KindPropertyAccessExpression [888, 899), i=299, next=0
+                KindIdentifier "Choice" [888, 895), i=300, next=45
+                KindIdentifier "Yes" [896, 899), i=301, next=0
+          KindExpressionStatement [900, 920), i=302, next=53
+            KindBinaryExpression [900, 919), i=303, next=0
+              KindIdentifier "c" [900, 907), i=304, next=49
+              KindEqualsToken [907, 909), i=305, next=50
+              KindPropertyAccessExpression [909, 919), i=306, next=0
+                KindIdentifier "Choice" [909, 916), i=307, next=52
+                KindIdentifier "No" [917, 919), i=308, next=0
+          KindExpressionStatement [920, 945), i=309, next=60
+            KindBinaryExpression [920, 944), i=310, next=0
+              KindIdentifier "d" [920, 927), i=311, next=56
+              KindEqualsToken [927, 929), i=312, next=57
+              KindPropertyAccessExpression [929, 944), i=313, next=0
+                KindIdentifier "Choice" [929, 936), i=314, next=59
+                KindIdentifier "Unknown" [937, 944), i=315, next=0
+          KindExpressionStatement [945, 966), i=316, next=67
+            KindBinaryExpression [945, 965), i=317, next=0
+              KindIdentifier "d" [945, 952), i=318, next=63
+              KindEqualsToken [952, 954), i=319, next=64
+              KindPropertyAccessExpression [954, 965), i=320, next=0
+                KindIdentifier "Choice" [954, 961), i=321, next=66
+                KindIdentifier "Yes" [962, 965), i=322, next=0
+          KindExpressionStatement [966, 986), i=323, next=0
+            KindBinaryExpression [966, 985), i=324, next=0
+              KindIdentifier "d" [966, 973), i=325, next=70
+              KindEqualsToken [973, 975), i=326, next=71
+              KindPropertyAccessExpression [975, 985), i=327, next=0
+                KindIdentifier "Choice" [975, 982), i=328, next=73
+                KindIdentifier "No" [983, 985), i=329, next=0
+    KindFunctionDeclaration [989, 1343), i=330, next=179
+      KindIdentifier "f6" [1001, 1004), i=331, next=76
+      NodeList [1005, 1049), i=332, next=93
+        KindParameter [1005, 1011), i=333, next=81
+          KindIdentifier "a" [1005, 1006), i=334, next=79
+          KindTypeReference [1007, 1011), i=335, next=0
+            KindIdentifier "Yes" [1007, 1011), i=336, next=0
+        KindParameter [1012, 1021), i=337, next=85
+          KindIdentifier "b" [1012, 1014), i=338, next=83
+          KindTypeReference [1015, 1021), i=339, next=0
+            KindIdentifier "YesNo" [1015, 1021), i=340, next=0
+        KindParameter [1022, 1038), i=341, next=89
+          KindIdentifier "c" [1022, 1024), i=342, next=87
+          KindTypeReference [1025, 1038), i=343, next=0
+            KindIdentifier "UnknownYesNo" [1025, 1038), i=344, next=0
+        KindParameter [1039, 1049), i=345, next=0
+          KindIdentifier "d" [1039, 1041), i=346, next=91
+          KindTypeReference [1042, 1049), i=347, next=0
+            KindIdentifier "Choice" [1042, 1049), i=348, next=0
+      KindBlock [1050, 1343), i=349, next=0
+        NodeList [1052, 1340), i=350, next=0
+          KindExpressionStatement [1052, 1079), i=351, next=102
+            KindBinaryExpression [1052, 1078), i=352, next=0
+              KindIdentifier "a" [1052, 1059), i=353, next=98
+              KindEqualsEqualsEqualsToken [1059, 1063), i=354, next=99
+              KindPropertyAccessExpression [1063, 1078), i=355, next=0
+                KindIdentifier "Choice" [1063, 1070), i=356, next=101
+                KindIdentifier "Unknown" [1071, 1078), i=357, next=0
+          KindExpressionStatement [1079, 1102), i=358, next=109
+            KindBinaryExpression [1079, 1101), i=359, next=0
+              KindIdentifier "a" [1079, 1086), i=360, next=105
+              KindEqualsEqualsEqualsToken [1086, 1090), i=361, next=106
+              KindPropertyAccessExpression [1090, 1101), i=362, next=0
+                KindIdentifier "Choice" [1090, 1097), i=363, next=108
+                KindIdentifier "Yes" [1098, 1101), i=364, next=0
+          KindExpressionStatement [1102, 1124), i=365, next=116
+            KindBinaryExpression [1102, 1123), i=366, next=0
+              KindIdentifier "a" [1102, 1109), i=367, next=112
+              KindEqualsEqualsEqualsToken [1109, 1113), i=368, next=113
+              KindPropertyAccessExpression [1113, 1123), i=369, next=0
+                KindIdentifier "Choice" [1113, 1120), i=370, next=115
+                KindIdentifier "No" [1121, 1123), i=371, next=0
+          KindExpressionStatement [1124, 1151), i=372, next=123
+            KindBinaryExpression [1124, 1150), i=373, next=0
+              KindIdentifier "b" [1124, 1131), i=374, next=119
+              KindEqualsEqualsEqualsToken [1131, 1135), i=375, next=120
+              KindPropertyAccessExpression [1135, 1150), i=376, next=0
+                KindIdentifier "Choice" [1135, 1142), i=377, next=122
+                KindIdentifier "Unknown" [1143, 1150), i=378, next=0
+          KindExpressionStatement [1151, 1174), i=379, next=130
+            KindBinaryExpression [1151, 1173), i=380, next=0
+              KindIdentifier "b" [1151, 1158), i=381, next=126
+              KindEqualsEqualsEqualsToken [1158, 1162), i=382, next=127
+              KindPropertyAccessExpression [1162, 1173), i=383, next=0
+                KindIdentifier "Choice" [1162, 1169), i=384, next=129
+                KindIdentifier "Yes" [1170, 1173), i=385, next=0
+          KindExpressionStatement [1174, 1196), i=386, next=137
+            KindBinaryExpression [1174, 1195), i=387, next=0
+              KindIdentifier "b" [1174, 1181), i=388, next=133
+              KindEqualsEqualsEqualsToken [1181, 1185), i=389, next=134
+              KindPropertyAccessExpression [1185, 1195), i=390, next=0
+                KindIdentifier "Choice" [1185, 1192), i=391, next=136
+                KindIdentifier "No" [1193, 1195), i=392, next=0
+          KindExpressionStatement [1196, 1223), i=393, next=144
+            KindBinaryExpression [1196, 1222), i=394, next=0
+              KindIdentifier "c" [1196, 1203), i=395, next=140
+              KindEqualsEqualsEqualsToken [1203, 1207), i=396, next=141
+              KindPropertyAccessExpression [1207, 1222), i=397, next=0
+                KindIdentifier "Choice" [1207, 1214), i=398, next=143
+                KindIdentifier "Unknown" [1215, 1222), i=399, next=0
+          KindExpressionStatement [1223, 1246), i=400, next=151
+            KindBinaryExpression [1223, 1245), i=401, next=0
+              KindIdentifier "c" [1223, 1230), i=402, next=147
+              KindEqualsEqualsEqualsToken [1230, 1234), i=403, next=148
+              KindPropertyAccessExpression [1234, 1245), i=404, next=0
+                KindIdentifier "Choice" [1234, 1241), i=405, next=150
+                KindIdentifier "Yes" [1242, 1245), i=406, next=0
+          KindExpressionStatement [1246, 1268), i=407, next=158
+            KindBinaryExpression [1246, 1267), i=408, next=0
+              KindIdentifier "c" [1246, 1253), i=409, next=154
+              KindEqualsEqualsEqualsToken [1253, 1257), i=410, next=155
+              KindPropertyAccessExpression [1257, 1267), i=411, next=0
+                KindIdentifier "Choice" [1257, 1264), i=412, next=157
+                KindIdentifier "No" [1265, 1267), i=413, next=0
+          KindExpressionStatement [1268, 1295), i=414, next=165
+            KindBinaryExpression [1268, 1294), i=415, next=0
+              KindIdentifier "d" [1268, 1275), i=416, next=161
+              KindEqualsEqualsEqualsToken [1275, 1279), i=417, next=162
+              KindPropertyAccessExpression [1279, 1294), i=418, next=0
+                KindIdentifier "Choice" [1279, 1286), i=419, next=164
+                KindIdentifier "Unknown" [1287, 1294), i=420, next=0
+          KindExpressionStatement [1295, 1318), i=421, next=172
+            KindBinaryExpression [1295, 1317), i=422, next=0
+              KindIdentifier "d" [1295, 1302), i=423, next=168
+              KindEqualsEqualsEqualsToken [1302, 1306), i=424, next=169
+              KindPropertyAccessExpression [1306, 1317), i=425, next=0
+                KindIdentifier "Choice" [1306, 1313), i=426, next=171
+                KindIdentifier "Yes" [1314, 1317), i=427, next=0
+          KindExpressionStatement [1318, 1340), i=428, next=0
+            KindBinaryExpression [1318, 1339), i=429, next=0
+              KindIdentifier "d" [1318, 1325), i=430, next=175
+              KindEqualsEqualsEqualsToken [1325, 1329), i=431, next=176
+              KindPropertyAccessExpression [1329, 1339), i=432, next=0
+                KindIdentifier "Choice" [1329, 1336), i=433, next=178
+                KindIdentifier "No" [1337, 1339), i=434, next=0
+    KindFunctionDeclaration [1343, 1633), i=435, next=24
+      KindIdentifier "f7" [1355, 1358), i=436, next=181
+      NodeList [1359, 1403), i=437, next=198
+        KindParameter [1359, 1365), i=438, next=186
+          KindIdentifier "a" [1359, 1360), i=439, next=184
+          KindTypeReference [1361, 1365), i=440, next=0
+            KindIdentifier "Yes" [1361, 1365), i=441, next=0
+        KindParameter [1366, 1375), i=442, next=190
+          KindIdentifier "b" [1366, 1368), i=443, next=188
+          KindTypeReference [1369, 1375), i=444, next=0
+            KindIdentifier "YesNo" [1369, 1375), i=445, next=0
+        KindParameter [1376, 1392), i=446, next=194
+          KindIdentifier "c" [1376, 1378), i=447, next=192
+          KindTypeReference [1379, 1392), i=448, next=0
+            KindIdentifier "UnknownYesNo" [1379, 1392), i=449, next=0
+        KindParameter [1393, 1403), i=450, next=0
+          KindIdentifier "d" [1393, 1395), i=451, next=196
+          KindTypeReference [1396, 1403), i=452, next=0
+            KindIdentifier "Choice" [1396, 1403), i=453, next=0
+      KindBlock [1404, 1633), i=454, next=0
+        NodeList [1406, 1630), i=455, next=0
+          KindExpressionStatement [1406, 1420), i=456, next=205
+            KindBinaryExpression [1406, 1419), i=457, next=0
+              KindIdentifier "a" [1406, 1413), i=458, next=203
+              KindEqualsEqualsEqualsToken [1413, 1417), i=459, next=204
+              KindIdentifier "a" [1417, 1419), i=460, next=0
+          KindExpressionStatement [1420, 1434), i=461, next=210
+            KindBinaryExpression [1420, 1433), i=462, next=0
+              KindIdentifier "a" [1420, 1427), i=463, next=208
+              KindEqualsEqualsEqualsToken [1427, 1431), i=464, next=209
+              KindIdentifier "b" [1431, 1433), i=465, next=0
+          KindExpressionStatement [1434, 1448), i=466, next=215
+            KindBinaryExpression [1434, 1447), i=467, next=0
+              KindIdentifier "a" [1434, 1441), i=468, next=213
+              KindEqualsEqualsEqualsToken [1441, 1445), i=469, next=214
+              KindIdentifier "c" [1445, 1447), i=470, next=0
+          KindExpressionStatement [1448, 1462), i=471, next=220
+            KindBinaryExpression [1448, 1461), i=472, next=0
+              KindIdentifier "a" [1448, 1455), i=473, next=218
+              KindEqualsEqualsEqualsToken [1455, 1459), i=474, next=219
+              KindIdentifier "d" [1459, 1461), i=475, next=0
+          KindExpressionStatement [1462, 1476), i=476, next=225
+            KindBinaryExpression [1462, 1475), i=477, next=0
+              KindIdentifier "b" [1462, 1469), i=478, next=223
+              KindEqualsEqualsEqualsToken [1469, 1473), i=479, next=224
+              KindIdentifier "a" [1473, 1475), i=480, next=0
+          KindExpressionStatement [1476, 1490), i=481, next=230
+            KindBinaryExpression [1476, 1489), i=482, next=0
+              KindIdentifier "b" [1476, 1483), i=483, next=228
+              KindEqualsEqualsEqualsToken [1483, 1487), i=484, next=229
+              KindIdentifier "b" [1487, 1489), i=485, next=0
+          KindExpressionStatement [1490, 1504), i=486, next=235
+            KindBinaryExpression [1490, 1503), i=487, next=0
+              KindIdentifier "b" [1490, 1497), i=488, next=233
+              KindEqualsEqualsEqualsToken [1497, 1501), i=489, next=234
+              KindIdentifier "c" [1501, 1503), i=490, next=0
+          KindExpressionStatement [1504, 1518), i=491, next=240
+            KindBinaryExpression [1504, 1517), i=492, next=0
+              KindIdentifier "b" [1504, 1511), i=493, next=238
+              KindEqualsEqualsEqualsToken [1511, 1515), i=494, next=239
+              KindIdentifier "d" [1515, 1517), i=495, next=0
+          KindExpressionStatement [1518, 1532), i=496, next=245
+            KindBinaryExpression [1518, 1531), i=497, next=0
+              KindIdentifier "c" [1518, 1525), i=498, next=243
+              KindEqualsEqualsEqualsToken [1525, 1529), i=499, next=244
+              KindIdentifier "a" [1529, 1531), i=500, next=0
+          KindExpressionStatement [1532, 1546), i=501, next=250
+            KindBinaryExpression [1532, 1545), i=502, next=0
+              KindIdentifier "c" [1532, 1539), i=503, next=248
+              KindEqualsEqualsEqualsToken [1539, 1543), i=504, next=249
+              KindIdentifier "b" [1543, 1545), i=505, next=0
+          KindExpressionStatement [1546, 1560), i=506, next=255
+            KindBinaryExpression [1546, 1559), i=507, next=0
+              KindIdentifier "c" [1546, 1553), i=508, next=253
+              KindEqualsEqualsEqualsToken [1553, 1557), i=509, next=254
+              KindIdentifier "c" [1557, 1559), i=510, next=0
+          KindExpressionStatement [1560, 1574), i=511, next=4
+            KindBinaryExpression [1560, 1573), i=512, next=0
+              KindIdentifier "c" [1560, 1567), i=513, next=2
+              KindEqualsEqualsEqualsToken [1567, 1571), i=514, next=3
+              KindIdentifier "d" [1571, 1573), i=515, next=0
+          KindExpressionStatement [1574, 1588), i=516, next=9
+            KindBinaryExpression [1574, 1587), i=517, next=0
+              KindIdentifier "d" [1574, 1581), i=518, next=7
+              KindEqualsEqualsEqualsToken [1581, 1585), i=519, next=8
+              KindIdentifier "a" [1585, 1587), i=520, next=0
+          KindExpressionStatement [1588, 1602), i=521, next=14
+            KindBinaryExpression [1588, 1601), i=522, next=0
+              KindIdentifier "d" [1588, 1595), i=523, next=12
+              KindEqualsEqualsEqualsToken [1595, 1599), i=524, next=13
+              KindIdentifier "b" [1599, 1601), i=525, next=0
+          KindExpressionStatement [1602, 1616), i=526, next=19
+            KindBinaryExpression [1602, 1615), i=527, next=0
+              KindIdentifier "d" [1602, 1609), i=528, next=17
+              KindEqualsEqualsEqualsToken [1609, 1613), i=529, next=18
+              KindIdentifier "c" [1613, 1615), i=530, next=0
+          KindExpressionStatement [1616, 1630), i=531, next=0
+            KindBinaryExpression [1616, 1629), i=532, next=0
+              KindIdentifier "d" [1616, 1623), i=533, next=22
+              KindEqualsEqualsEqualsToken [1623, 1627), i=534, next=23
+              KindIdentifier "d" [1627, 1629), i=535, next=0
+    KindFunctionDeclaration [1633, 1818), i=536, next=62
+      KindIdentifier "f10" [1645, 1649), i=537, next=26
+      NodeList [1650, 1656), i=538, next=31
+        KindParameter [1650, 1656), i=539, next=0
+          KindIdentifier "x" [1650, 1651), i=540, next=29
+          KindTypeReference [1652, 1656), i=541, next=0
+            KindIdentifier "Yes" [1652, 1656), i=542, next=0
+      KindTypeReference [1658, 1662), i=543, next=33
+        KindIdentifier "Yes" [1658, 1662), i=544, next=0
+      KindBlock [1662, 1818), i=545, next=0
+        NodeList [1664, 1815), i=546, next=0
+          KindSwitchStatement [1664, 1800), i=547, next=60
+            KindIdentifier "x" [1678, 1679), i=548, next=37
+            KindCaseBlock [1680, 1800), i=549, next=0
+              NodeList [1682, 1793), i=550, next=0
+                KindCaseClause [1682, 1722), i=551, next=46
+                  KindPropertyAccessExpression [1696, 1711), i=552, next=43
+                    KindIdentifier "Choice" [1696, 1703), i=553, next=42
+                    KindIdentifier "Unknown" [1704, 1711), i=554, next=0
+                  NodeList [1712, 1722), i=555, next=0
+                    KindReturnStatement [1712, 1722), i=556, next=0
+                      KindIdentifier "x" [1719, 1721), i=557, next=0
+                KindCaseClause [1722, 1758), i=558, next=53
+                  KindPropertyAccessExpression [1736, 1747), i=559, next=50
+                    KindIdentifier "Choice" [1736, 1743), i=560, next=49
+                    KindIdentifier "Yes" [1744, 1747), i=561, next=0
+                  NodeList [1748, 1758), i=562, next=0
+                    KindReturnStatement [1748, 1758), i=563, next=0
+                      KindIdentifier "x" [1755, 1757), i=564, next=0
+                KindCaseClause [1758, 1793), i=565, next=0
+                  KindPropertyAccessExpression [1772, 1782), i=566, next=57
+                    KindIdentifier "Choice" [1772, 1779), i=567, next=56
+                    KindIdentifier "No" [1780, 1782), i=568, next=0
+                  NodeList [1783, 1793), i=569, next=0
+                    KindReturnStatement [1783, 1793), i=570, next=0
+                      KindIdentifier "x" [1790, 1792), i=571, next=0
+          KindReturnStatement [1800, 1815), i=572, next=0
+            KindIdentifier "x" [1812, 1814), i=573, next=0
+    KindFunctionDeclaration [1818, 2007), i=574, next=100
+      KindIdentifier "f11" [1830, 1834), i=575, next=64
+      NodeList [1835, 1843), i=576, next=69
+        KindParameter [1835, 1843), i=577, next=0
+          KindIdentifier "x" [1835, 1836), i=578, next=67
+          KindTypeReference [1837, 1843), i=579, next=0
+            KindIdentifier "YesNo" [1837, 1843), i=580, next=0
+      KindTypeReference [1845, 1851), i=581, next=71
+        KindIdentifier "YesNo" [1845, 1851), i=582, next=0
+      KindBlock [1851, 2007), i=583, next=0
+        NodeList [1853, 2004), i=584, next=0
+          KindSwitchStatement [1853, 1989), i=585, next=98
+            KindIdentifier "x" [1867, 1868), i=586, next=75
+            KindCaseBlock [1869, 1989), i=587, next=0
+              NodeList [1871, 1982), i=588, next=0
+                KindCaseClause [1871, 1911), i=589, next=84
+                  KindPropertyAccessExpression [1885, 1900), i=590, next=81
+                    KindIdentifier "Choice" [1885, 1892), i=591, next=80
+                    KindIdentifier "Unknown" [1893, 1900), i=592, next=0
+                  NodeList [1901, 1911), i=593, next=0
+                    KindReturnStatement [1901, 1911), i=594, next=0
+                      KindIdentifier "x" [1908, 1910), i=595, next=0
+                KindCaseClause [1911, 1947), i=596, next=91
+                  KindPropertyAccessExpression [1925, 1936), i=597, next=88
+                    KindIdentifier "Choice" [1925, 1932), i=598, next=87
+                    KindIdentifier "Yes" [1933, 1936), i=599, next=0
+                  NodeList [1937, 1947), i=600, next=0
+                    KindReturnStatement [1937, 1947), i=601, next=0
+                      KindIdentifier "x" [1944, 1946), i=602, next=0
+                KindCaseClause [1947, 1982), i=603, next=0
+                  KindPropertyAccessExpression [1961, 1971), i=604, next=95
+                    KindIdentifier "Choice" [1961, 1968), i=605, next=94
+                    KindIdentifier "No" [1969, 1971), i=606, next=0
+                  NodeList [1972, 1982), i=607, next=0
+                    KindReturnStatement [1972, 1982), i=608, next=0
+                      KindIdentifier "x" [1979, 1981), i=609, next=0
+          KindReturnStatement [1989, 2004), i=610, next=0
+            KindIdentifier "x" [2001, 2003), i=611, next=0
+    KindFunctionDeclaration [2007, 2210), i=612, next=138
+      KindIdentifier "f12" [2019, 2023), i=613, next=102
+      NodeList [2024, 2039), i=614, next=107
+        KindParameter [2024, 2039), i=615, next=0
+          KindIdentifier "x" [2024, 2025), i=616, next=105
+          KindTypeReference [2026, 2039), i=617, next=0
+            KindIdentifier "UnknownYesNo" [2026, 2039), i=618, next=0
+      KindTypeReference [2041, 2054), i=619, next=109
+        KindIdentifier "UnknownYesNo" [2041, 2054), i=620, next=0
+      KindBlock [2054, 2210), i=621, next=0
+        NodeList [2056, 2207), i=622, next=0
+          KindSwitchStatement [2056, 2192), i=623, next=136
+            KindIdentifier "x" [2070, 2071), i=624, next=113
+            KindCaseBlock [2072, 2192), i=625, next=0
+              NodeList [2074, 2185), i=626, next=0
+                KindCaseClause [2074, 2114), i=627, next=122
+                  KindPropertyAccessExpression [2088, 2103), i=628, next=119
+                    KindIdentifier "Choice" [2088, 2095), i=629, next=118
+                    KindIdentifier "Unknown" [2096, 2103), i=630, next=0
+                  NodeList [2104, 2114), i=631, next=0
+                    KindReturnStatement [2104, 2114), i=632, next=0
+                      KindIdentifier "x" [2111, 2113), i=633, next=0
+                KindCaseClause [2114, 2150), i=634, next=129
+                  KindPropertyAccessExpression [2128, 2139), i=635, next=126
+                    KindIdentifier "Choice" [2128, 2135), i=636, next=125
+                    KindIdentifier "Yes" [2136, 2139), i=637, next=0
+                  NodeList [2140, 2150), i=638, next=0
+                    KindReturnStatement [2140, 2150), i=639, next=0
+                      KindIdentifier "x" [2147, 2149), i=640, next=0
+                KindCaseClause [2150, 2185), i=641, next=0
+                  KindPropertyAccessExpression [2164, 2174), i=642, next=133
+                    KindIdentifier "Choice" [2164, 2171), i=643, next=132
+                    KindIdentifier "No" [2172, 2174), i=644, next=0
+                  NodeList [2175, 2185), i=645, next=0
+                    KindReturnStatement [2175, 2185), i=646, next=0
+                      KindIdentifier "x" [2182, 2184), i=647, next=0
+          KindReturnStatement [2192, 2207), i=648, next=0
+            KindIdentifier "x" [2204, 2206), i=649, next=0
+    KindFunctionDeclaration [2210, 2401), i=650, next=0
+      KindIdentifier "f13" [2222, 2226), i=651, next=140
+      NodeList [2227, 2236), i=652, next=145
+        KindParameter [2227, 2236), i=653, next=0
+          KindIdentifier "x" [2227, 2228), i=654, next=143
+          KindTypeReference [2229, 2236), i=655, next=0
+            KindIdentifier "Choice" [2229, 2236), i=656, next=0
+      KindTypeReference [2238, 2245), i=657, next=147
+        KindIdentifier "Choice" [2238, 2245), i=658, next=0
+      KindBlock [2245, 2401), i=659, next=0
+        NodeList [2247, 2398), i=660, next=0
+          KindSwitchStatement [2247, 2383), i=661, next=174
+            KindIdentifier "x" [2261, 2262), i=662, next=151
+            KindCaseBlock [2263, 2383), i=663, next=0
+              NodeList [2265, 2376), i=664, next=0
+                KindCaseClause [2265, 2305), i=665, next=160
+                  KindPropertyAccessExpression [2279, 2294), i=666, next=157
+                    KindIdentifier "Choice" [2279, 2286), i=667, next=156
+                    KindIdentifier "Unknown" [2287, 2294), i=668, next=0
+                  NodeList [2295, 2305), i=669, next=0
+                    KindReturnStatement [2295, 2305), i=670, next=0
+                      KindIdentifier "x" [2302, 2304), i=671, next=0
+                KindCaseClause [2305, 2341), i=672, next=167
+                  KindPropertyAccessExpression [2319, 2330), i=673, next=164
+                    KindIdentifier "Choice" [2319, 2326), i=674, next=163
+                    KindIdentifier "Yes" [2327, 2330), i=675, next=0
+                  NodeList [2331, 2341), i=676, next=0
+                    KindReturnStatement [2331, 2341), i=677, next=0
+                      KindIdentifier "x" [2338, 2340), i=678, next=0
+                KindCaseClause [2341, 2376), i=679, next=0
+                  KindPropertyAccessExpression [2355, 2365), i=680, next=171
+                    KindIdentifier "Choice" [2355, 2362), i=681, next=170
+                    KindIdentifier "No" [2363, 2365), i=682, next=0
+                  NodeList [2366, 2376), i=683, next=0
+                    KindReturnStatement [2366, 2376), i=684, next=0
+                      KindIdentifier "x" [2373, 2375), i=685, next=0
+          KindReturnStatement [2383, 2398), i=686, next=0
+            KindIdentifier "x" [2395, 2397), i=687, next=0

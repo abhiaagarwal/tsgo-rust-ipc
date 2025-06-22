@@ -1,0 +1,53 @@
+KindSourceFile [0, 194), i=1, next=0
+  NodeList [0, 194), i=2, next=0
+    KindImportDeclaration [0, 33), i=3, next=8
+      KindImportClause [6, 14), i=4, next=7
+        KindNamespaceImport [6, 14), i=5, next=0
+          KindIdentifier "ns" [11, 14), i=6, next=0
+      KindStringLiteral "./reexport" [19, 32), i=7, next=0
+    KindModuleDeclaration [33, 124), i=8, next=23
+      NodeList [33, 44), i=9, next=11
+        KindDeclareKeyword [33, 44), i=10, next=0
+      KindStringLiteral "./reexport" [51, 64), i=11, next=12
+      KindModuleBlock [64, 124), i=12, next=0
+        NodeList [66, 121), i=13, next=0
+          KindInterfaceDeclaration [66, 121), i=14, next=0
+            NodeList [66, 78), i=15, next=17
+              KindExportKeyword [66, 78), i=16, next=0
+            KindIdentifier "Foo" [88, 92), i=17, next=18
+            NodeList [94, 114), i=18, next=0
+              KindPropertySignature [94, 114), i=19, next=0
+                KindIdentifier "self" [94, 108), i=20, next=21
+                KindTypeReference [109, 113), i=21, next=0
+                  KindIdentifier "Foo" [109, 113), i=22, next=0
+    KindVariableStatement [124, 152), i=23, next=34
+      NodeList [124, 135), i=24, next=26
+        KindDeclareKeyword [124, 135), i=25, next=0
+      KindVariableDeclarationList [135, 151), i=26, next=0
+        NodeList [141, 151), i=27, next=0
+          KindVariableDeclaration [141, 151), i=28, next=0
+            KindIdentifier "f" [141, 143), i=29, next=30
+            KindTypeReference [144, 151), i=30, next=0
+              KindQualifiedName [144, 151), i=31, next=0
+                KindIdentifier "ns" [144, 147), i=32, next=33
+                KindIdentifier "Foo" [148, 151), i=33, next=0
+    KindExpressionStatement [152, 160), i=34, next=38
+      KindPropertyAccessExpression [152, 159), i=35, next=0
+        KindIdentifier "f" [152, 157), i=36, next=37
+        KindIdentifier "x" [158, 159), i=37, next=0
+    KindExpressionStatement [160, 169), i=38, next=42
+      KindPropertyAccessExpression [160, 168), i=39, next=0
+        KindIdentifier "f" [160, 163), i=40, next=41
+        KindIdentifier "self" [164, 168), i=41, next=0
+    KindExpressionStatement [169, 180), i=42, next=48
+      KindPropertyAccessExpression [169, 179), i=43, next=0
+        KindPropertyAccessExpression [169, 177), i=44, next=47
+          KindIdentifier "f" [169, 172), i=45, next=46
+          KindIdentifier "self" [173, 177), i=46, next=0
+        KindIdentifier "x" [178, 179), i=47, next=0
+    KindExpressionStatement [180, 194), i=48, next=0
+      KindPropertyAccessExpression [180, 193), i=49, next=0
+        KindPropertyAccessExpression [180, 188), i=50, next=53
+          KindIdentifier "f" [180, 183), i=51, next=52
+          KindIdentifier "self" [184, 188), i=52, next=0
+        KindIdentifier "self" [189, 193), i=53, next=0

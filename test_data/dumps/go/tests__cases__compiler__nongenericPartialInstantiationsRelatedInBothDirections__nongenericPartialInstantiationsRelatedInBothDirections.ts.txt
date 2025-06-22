@@ -1,0 +1,74 @@
+KindSourceFile [0, 284), i=1, next=0
+  NodeList [0, 282), i=2, next=0
+    KindInterfaceDeclaration [0, 68), i=3, next=15
+      KindIdentifier "Foo" [9, 13), i=4, next=5
+      NodeList [15, 65), i=5, next=0
+        KindPropertySignature [15, 31), i=6, next=9
+          KindIdentifier "a" [15, 22), i=7, next=8
+          KindNumberKeyword [23, 30), i=8, next=0
+        KindPropertySignature [31, 47), i=9, next=12
+          KindIdentifier "b" [31, 38), i=10, next=11
+          KindNumberKeyword [39, 46), i=11, next=0
+        KindPropertySignature [47, 65), i=12, next=0
+          KindIdentifier "bar" [47, 56), i=13, next=14
+          KindStringKeyword [57, 64), i=14, next=0
+    KindInterfaceDeclaration [68, 144), i=15, next=35
+      KindIdentifier "ObjectContaining" [79, 96), i=16, next=17
+      NodeList [97, 98), i=17, next=20
+        KindTypeParameter [97, 98), i=18, next=0
+          KindIdentifier "T" [97, 98), i=19, next=0
+      NodeList [101, 141), i=20, next=0
+        KindConstructSignature [101, 141), i=21, next=0
+          NodeList [110, 128), i=22, next=30
+            KindParameter [110, 128), i=23, next=0
+              KindIdentifier "sample" [110, 116), i=24, next=25
+              KindTypeReference [117, 128), i=25, next=0
+                KindIdentifier "Partial" [117, 125), i=26, next=27
+                NodeList [126, 127), i=27, next=0
+                  KindTypeReference [126, 127), i=28, next=0
+                    KindIdentifier "T" [126, 127), i=29, next=0
+          KindTypeReference [130, 141), i=30, next=0
+            KindIdentifier "Partial" [130, 138), i=31, next=32
+            NodeList [139, 140), i=32, next=0
+              KindTypeReference [139, 140), i=33, next=0
+                KindIdentifier "T" [139, 140), i=34, next=0
+    KindVariableStatement [144, 210), i=35, next=53
+      NodeList [144, 153), i=36, next=38
+        KindDeclareKeyword [144, 153), i=37, next=0
+      KindVariableDeclarationList [153, 209), i=38, next=0
+        NodeList [157, 209), i=39, next=0
+          KindVariableDeclaration [157, 209), i=40, next=0
+            KindIdentifier "cafoo" [157, 163), i=41, next=42
+            KindTypeReference [164, 209), i=42, next=0
+              KindIdentifier "ObjectContaining" [164, 181), i=43, next=44
+              NodeList [182, 208), i=44, next=0
+                KindTypeLiteral [182, 208), i=45, next=0
+                  NodeList [183, 206), i=46, next=0
+                    KindPropertySignature [183, 194), i=47, next=50
+                      KindIdentifier "a" [183, 185), i=48, next=49
+                      KindNumberKeyword [186, 193), i=49, next=0
+                    KindPropertySignature [194, 206), i=50, next=0
+                      KindIdentifier "foo" [194, 198), i=51, next=52
+                      KindNumberKeyword [199, 206), i=52, next=0
+    KindVariableStatement [210, 252), i=53, next=65
+      NodeList [210, 219), i=54, next=56
+        KindDeclareKeyword [210, 219), i=55, next=0
+      KindVariableDeclarationList [219, 251), i=56, next=0
+        NodeList [223, 251), i=57, next=0
+          KindVariableDeclaration [223, 251), i=58, next=0
+            KindIdentifier "cfoo" [223, 228), i=59, next=60
+            KindTypeReference [229, 251), i=60, next=0
+              KindIdentifier "ObjectContaining" [229, 246), i=61, next=62
+              NodeList [247, 250), i=62, next=0
+                KindTypeReference [247, 250), i=63, next=0
+                  KindIdentifier "Foo" [247, 250), i=64, next=0
+    KindExpressionStatement [252, 267), i=65, next=70
+      KindBinaryExpression [252, 266), i=66, next=0
+        KindIdentifier "cfoo" [252, 258), i=67, next=68
+        KindEqualsToken [258, 260), i=68, next=69
+        KindIdentifier "cafoo" [260, 266), i=69, next=0
+    KindExpressionStatement [267, 282), i=70, next=0
+      KindBinaryExpression [267, 281), i=71, next=0
+        KindIdentifier "cafoo" [267, 274), i=72, next=73
+        KindEqualsToken [274, 276), i=73, next=74
+        KindIdentifier "cfoo" [276, 281), i=74, next=0

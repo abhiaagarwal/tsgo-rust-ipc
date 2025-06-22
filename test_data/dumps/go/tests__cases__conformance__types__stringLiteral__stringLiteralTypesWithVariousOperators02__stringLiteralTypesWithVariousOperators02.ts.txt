@@ -1,0 +1,153 @@
+KindSourceFile [0, 524), i=1, next=0
+  NodeList [0, 524), i=2, next=0
+    KindVariableStatement [0, 23), i=3, next=11
+      KindVariableDeclarationList [0, 22), i=4, next=0
+        NodeList [3, 22), i=5, next=0
+          KindVariableDeclaration [3, 22), i=6, next=0
+            KindIdentifier "abc" [3, 7), i=7, next=8
+            KindLiteralType [8, 14), i=8, next=10
+              KindStringLiteral "ABC" [8, 14), i=9, next=0
+            KindStringLiteral "ABC" [16, 22), i=10, next=0
+    KindVariableStatement [23, 48), i=11, next=19
+      KindVariableDeclarationList [23, 47), i=12, next=0
+        NodeList [28, 47), i=13, next=0
+          KindVariableDeclaration [28, 47), i=14, next=0
+            KindIdentifier "xyz" [28, 32), i=15, next=16
+            KindLiteralType [33, 39), i=16, next=18
+              KindStringLiteral "XYZ" [33, 39), i=17, next=0
+            KindStringLiteral "XYZ" [41, 47), i=18, next=0
+    KindVariableStatement [48, 91), i=19, next=34
+      KindVariableDeclarationList [48, 90), i=20, next=0
+        NodeList [53, 90), i=21, next=0
+          KindVariableDeclaration [53, 90), i=22, next=0
+            KindIdentifier "abcOrXyz" [53, 62), i=23, next=24
+            KindUnionType [63, 77), i=24, next=30
+              NodeList [63, 77), i=25, next=0
+                KindLiteralType [63, 69), i=26, next=28
+                  KindStringLiteral "ABC" [63, 69), i=27, next=0
+                KindLiteralType [71, 77), i=28, next=0
+                  KindStringLiteral "XYZ" [71, 77), i=29, next=0
+            KindBinaryExpression [79, 90), i=30, next=0
+              KindIdentifier "abc" [79, 83), i=31, next=32
+              KindBarBarToken [83, 86), i=32, next=33
+              KindIdentifier "xyz" [86, 90), i=33, next=0
+    KindVariableStatement [91, 156), i=34, next=50
+      KindVariableDeclarationList [91, 155), i=35, next=0
+        NodeList [96, 155), i=36, next=0
+          KindVariableDeclaration [96, 155), i=37, next=0
+            KindIdentifier "abcOrXyzOrNumber" [96, 113), i=38, next=39
+            KindUnionType [114, 137), i=39, next=46
+              NodeList [114, 137), i=40, next=0
+                KindLiteralType [114, 120), i=41, next=43
+                  KindStringLiteral "ABC" [114, 120), i=42, next=0
+                KindLiteralType [122, 128), i=43, next=45
+                  KindStringLiteral "XYZ" [122, 128), i=44, next=0
+                KindNumberKeyword [130, 137), i=45, next=0
+            KindBinaryExpression [139, 155), i=46, next=0
+              KindIdentifier "abcOrXyz" [139, 148), i=47, next=48
+              KindBarBarToken [148, 151), i=48, next=49
+              KindNumericLiteral [151, 155), i=49, next=0
+    KindVariableStatement [156, 191), i=50, next=59
+      KindVariableDeclarationList [156, 190), i=51, next=0
+        NodeList [163, 190), i=52, next=0
+          KindVariableDeclaration [163, 190), i=53, next=0
+            KindIdentifier "a" [163, 165), i=54, next=55
+            KindBinaryExpression [167, 190), i=55, next=0
+              KindIdentifier "abcOrXyzOrNumber" [167, 184), i=56, next=57
+              KindPlusToken [184, 186), i=57, next=58
+              KindNumericLiteral [186, 190), i=58, next=0
+    KindVariableStatement [191, 224), i=59, next=68
+      KindVariableDeclarationList [191, 223), i=60, next=0
+        NodeList [196, 223), i=61, next=0
+          KindVariableDeclaration [196, 223), i=62, next=0
+            KindIdentifier "b" [196, 198), i=63, next=64
+            KindBinaryExpression [200, 223), i=64, next=0
+              KindNumericLiteral [200, 204), i=65, next=66
+              KindPlusToken [204, 206), i=66, next=67
+              KindIdentifier "abcOrXyzOrNumber" [206, 223), i=67, next=0
+    KindVariableStatement [224, 270), i=68, next=77
+      KindVariableDeclarationList [224, 269), i=69, next=0
+        NodeList [229, 269), i=70, next=0
+          KindVariableDeclaration [229, 269), i=71, next=0
+            KindIdentifier "c" [229, 231), i=72, next=73
+            KindBinaryExpression [233, 269), i=73, next=0
+              KindIdentifier "abcOrXyzOrNumber" [233, 250), i=74, next=75
+              KindPlusToken [250, 252), i=75, next=76
+              KindIdentifier "abcOrXyzOrNumber" [252, 269), i=76, next=0
+    KindVariableStatement [270, 304), i=77, next=86
+      KindVariableDeclarationList [270, 303), i=78, next=0
+        NodeList [275, 303), i=79, next=0
+          KindVariableDeclaration [275, 303), i=80, next=0
+            KindIdentifier "d" [275, 277), i=81, next=82
+            KindBinaryExpression [279, 303), i=82, next=0
+              KindIdentifier "abcOrXyzOrNumber" [279, 296), i=83, next=84
+              KindPlusToken [296, 298), i=84, next=85
+              KindTrueKeyword [298, 303), i=85, next=0
+    KindVariableStatement [304, 339), i=86, next=95
+      KindVariableDeclarationList [304, 338), i=87, next=0
+        NodeList [309, 338), i=88, next=0
+          KindVariableDeclaration [309, 338), i=89, next=0
+            KindIdentifier "e" [309, 311), i=90, next=91
+            KindBinaryExpression [313, 338), i=91, next=0
+              KindFalseKeyword [313, 319), i=92, next=93
+              KindPlusToken [319, 321), i=93, next=94
+              KindIdentifier "abcOrXyzOrNumber" [321, 338), i=94, next=0
+    KindVariableStatement [339, 368), i=95, next=102
+      KindVariableDeclarationList [339, 367), i=96, next=0
+        NodeList [344, 367), i=97, next=0
+          KindVariableDeclaration [344, 367), i=98, next=0
+            KindIdentifier "f" [344, 346), i=99, next=100
+            KindPostfixUnaryExpression [348, 367), i=100, next=0
+              KindIdentifier "abcOrXyzOrNumber" [348, 365), i=101, next=0
+    KindVariableStatement [368, 397), i=102, next=109
+      KindVariableDeclarationList [368, 396), i=103, next=0
+        NodeList [373, 396), i=104, next=0
+          KindVariableDeclaration [373, 396), i=105, next=0
+            KindIdentifier "g" [373, 375), i=106, next=107
+            KindPrefixUnaryExpression [377, 396), i=107, next=0
+              KindIdentifier "abcOrXyzOrNumber" [380, 396), i=108, next=0
+    KindVariableStatement [397, 429), i=109, next=118
+      KindVariableDeclarationList [397, 428), i=110, next=0
+        NodeList [402, 428), i=111, next=0
+          KindVariableDeclaration [402, 428), i=112, next=0
+            KindIdentifier "h" [402, 404), i=113, next=114
+            KindBinaryExpression [406, 428), i=114, next=0
+              KindIdentifier "abcOrXyzOrNumber" [406, 423), i=115, next=116
+              KindCaretToken [423, 425), i=116, next=117
+              KindNumericLiteral [425, 428), i=117, next=0
+    KindVariableStatement [429, 461), i=118, next=127
+      KindVariableDeclarationList [429, 460), i=119, next=0
+        NodeList [434, 460), i=120, next=0
+          KindVariableDeclaration [434, 460), i=121, next=0
+            KindIdentifier "i" [434, 436), i=122, next=123
+            KindBinaryExpression [438, 460), i=123, next=0
+              KindIdentifier "abcOrXyzOrNumber" [438, 455), i=124, next=125
+              KindBarToken [455, 457), i=125, next=126
+              KindNumericLiteral [457, 460), i=126, next=0
+    KindVariableStatement [461, 481), i=127, next=136
+      KindVariableDeclarationList [461, 480), i=128, next=0
+        NodeList [466, 480), i=129, next=0
+          KindVariableDeclaration [466, 480), i=130, next=0
+            KindIdentifier "j" [466, 468), i=131, next=132
+            KindBinaryExpression [470, 480), i=132, next=0
+              KindIdentifier "abc" [470, 474), i=133, next=134
+              KindLessThanToken [474, 476), i=134, next=135
+              KindIdentifier "xyz" [476, 480), i=135, next=0
+    KindVariableStatement [481, 503), i=136, next=145
+      KindVariableDeclarationList [481, 502), i=137, next=0
+        NodeList [486, 502), i=138, next=0
+          KindVariableDeclaration [486, 502), i=139, next=0
+            KindIdentifier "k" [486, 488), i=140, next=141
+            KindBinaryExpression [490, 502), i=141, next=0
+              KindIdentifier "abc" [490, 494), i=142, next=143
+              KindEqualsEqualsEqualsToken [494, 498), i=143, next=144
+              KindIdentifier "xyz" [498, 502), i=144, next=0
+    KindVariableStatement [503, 524), i=145, next=0
+      KindVariableDeclarationList [503, 523), i=146, next=0
+        NodeList [508, 523), i=147, next=0
+          KindVariableDeclaration [508, 523), i=148, next=0
+            KindIdentifier "l" [508, 510), i=149, next=150
+            KindBinaryExpression [512, 523), i=150, next=0
+              KindIdentifier "abc" [512, 516), i=151, next=152
+              KindExclamationEqualsToken [516, 519), i=152, next=153
+              KindIdentifier "xyz" [519, 523), i=153, next=0

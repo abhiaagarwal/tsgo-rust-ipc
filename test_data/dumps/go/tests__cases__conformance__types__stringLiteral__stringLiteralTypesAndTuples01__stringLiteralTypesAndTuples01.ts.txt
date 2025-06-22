@@ -1,0 +1,92 @@
+KindSourceFile [0, 412), i=1, next=0
+  NodeList [0, 412), i=2, next=0
+    KindVariableStatement [0, 71), i=3, next=23
+      KindVariableDeclarationList [0, 70), i=4, next=0
+        NodeList [3, 70), i=5, next=0
+          KindVariableDeclaration [3, 70), i=6, next=0
+            KindArrayBindingPattern [3, 33), i=7, next=17
+              NodeList [5, 32), i=8, next=0
+                KindBindingElement [5, 10), i=9, next=11
+                  KindIdentifier "hello" [5, 10), i=10, next=0
+                KindBindingElement [11, 17), i=11, next=13
+                  KindIdentifier "brave" [11, 17), i=12, next=0
+                KindBindingElement [18, 25), i=13, next=15
+                  KindIdentifier "newish" [18, 25), i=14, next=0
+                KindBindingElement [26, 32), i=15, next=0
+                  KindIdentifier "world" [26, 32), i=16, next=0
+            KindArrayLiteralExpression [35, 70), i=17, next=0
+              NodeList [37, 69), i=18, next=0
+                KindStringLiteral "Hello" [37, 44), i=19, next=20
+                KindStringLiteral "Brave" [45, 53), i=20, next=21
+                KindStringLiteral "New" [54, 60), i=21, next=22
+                KindStringLiteral "World" [61, 69), i=22, next=0
+    KindTypeAliasDeclaration [71, 112), i=23, next=31
+      KindIdentifier "RexOrRaptor" [79, 91), i=24, next=25
+      KindUnionType [93, 112), i=25, next=0
+        NodeList [93, 112), i=26, next=0
+          KindLiteralType [93, 101), i=27, next=29
+            KindStringLiteral "t-rex" [93, 101), i=28, next=0
+          KindLiteralType [103, 112), i=29, next=0
+            KindStringLiteral "raptor" [103, 112), i=30, next=0
+    KindVariableStatement [112, 188), i=31, next=56
+      KindVariableDeclarationList [112, 187), i=32, next=0
+        NodeList [117, 187), i=33, next=0
+          KindVariableDeclaration [117, 187), i=34, next=0
+            KindArrayBindingPattern [117, 135), i=35, next=43
+              NodeList [119, 134), i=36, next=0
+                KindBindingElement [119, 121), i=37, next=39
+                  KindIdentifier "im" [119, 121), i=38, next=0
+                KindBindingElement [122, 124), i=39, next=41
+                  KindIdentifier "a" [122, 124), i=40, next=0
+                KindBindingElement [125, 134), i=41, next=0
+                  KindIdentifier "dinosaur" [125, 134), i=42, next=0
+            KindTupleType [136, 162), i=43, next=51
+              NodeList [138, 161), i=44, next=0
+                KindLiteralType [138, 143), i=45, next=47
+                  KindStringLiteral "I'm" [138, 143), i=46, next=0
+                KindLiteralType [144, 148), i=47, next=49
+                  KindStringLiteral "a" [144, 148), i=48, next=0
+                KindTypeReference [149, 161), i=49, next=0
+                  KindIdentifier "RexOrRaptor" [149, 161), i=50, next=0
+            KindArrayLiteralExpression [164, 187), i=51, next=0
+              NodeList [166, 186), i=52, next=0
+                KindStringLiteral "I'm" [166, 172), i=53, next=54
+                KindStringLiteral "a" [173, 177), i=54, next=55
+                KindStringLiteral "t-rex" [178, 186), i=55, next=0
+    KindExpressionStatement [188, 207), i=56, next=61
+      KindCallExpression [188, 206), i=57, next=0
+        KindIdentifier "rawr" [188, 196), i=58, next=59
+        NodeList [197, 205), i=59, next=0
+          KindIdentifier "dinosaur" [197, 205), i=60, next=0
+    KindFunctionDeclaration [207, 412), i=61, next=0
+      KindIdentifier "rawr" [219, 224), i=62, next=63
+      NodeList [225, 242), i=63, next=68
+        KindParameter [225, 242), i=64, next=0
+          KindIdentifier "dino" [225, 229), i=65, next=66
+          KindTypeReference [230, 242), i=66, next=0
+            KindIdentifier "RexOrRaptor" [230, 242), i=67, next=0
+      KindBlock [243, 412), i=68, next=0
+        NodeList [245, 409), i=69, next=0
+          KindIfStatement [245, 309), i=70, next=79
+            KindBinaryExpression [255, 271), i=71, next=75
+              KindIdentifier "dino" [255, 259), i=72, next=73
+              KindEqualsEqualsEqualsToken [259, 263), i=73, next=74
+              KindStringLiteral "t-rex" [263, 271), i=74, next=0
+            KindBlock [272, 309), i=75, next=0
+              NodeList [274, 302), i=76, next=0
+                KindReturnStatement [274, 302), i=77, next=0
+                  KindStringLiteral "ROAAAAR!" [290, 301), i=78, next=0
+          KindIfStatement [309, 374), i=79, next=88
+            KindBinaryExpression [319, 336), i=80, next=84
+              KindIdentifier "dino" [319, 323), i=81, next=82
+              KindEqualsEqualsEqualsToken [323, 327), i=82, next=83
+              KindStringLiteral "raptor" [327, 336), i=83, next=0
+            KindBlock [337, 374), i=84, next=0
+              NodeList [339, 367), i=85, next=0
+                KindReturnStatement [339, 367), i=86, next=0
+                  KindStringLiteral "yip yip!" [355, 366), i=87, next=0
+          KindThrowStatement [374, 409), i=88, next=0
+            KindBinaryExpression [387, 408), i=89, next=0
+              KindStringLiteral "Unexpected " [387, 401), i=90, next=91
+              KindPlusToken [401, 403), i=91, next=92
+              KindIdentifier "dino" [403, 408), i=92, next=0

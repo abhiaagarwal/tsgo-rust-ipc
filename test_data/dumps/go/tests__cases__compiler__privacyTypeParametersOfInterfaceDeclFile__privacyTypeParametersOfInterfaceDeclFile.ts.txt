@@ -1,0 +1,880 @@
+KindSourceFile [0, 7565), i=1, next=0
+  NodeList [0, 7565), i=2, next=0
+    KindClassDeclaration [0, 23), i=3, next=5
+      KindIdentifier "privateClass" [5, 18), i=4, next=0
+    KindClassDeclaration [23, 56), i=5, next=9
+      NodeList [23, 33), i=6, next=8
+        KindExportKeyword [23, 33), i=7, next=0
+      KindIdentifier "publicClass" [39, 51), i=8, next=0
+    KindClassDeclaration [56, 87), i=9, next=14
+      KindIdentifier "privateClassT" [65, 79), i=10, next=11
+      NodeList [80, 81), i=11, next=0
+        KindTypeParameter [80, 81), i=12, next=0
+          KindIdentifier "T" [80, 81), i=13, next=0
+    KindClassDeclaration [87, 124), i=14, next=21
+      NodeList [87, 97), i=15, next=17
+        KindExportKeyword [87, 97), i=16, next=0
+      KindIdentifier "publicClassT" [103, 116), i=17, next=18
+      NodeList [117, 118), i=18, next=0
+        KindTypeParameter [117, 118), i=19, next=0
+          KindIdentifier "T" [117, 118), i=20, next=0
+    KindInterfaceDeclaration [124, 470), i=21, next=75
+      NodeList [124, 134), i=22, next=24
+        KindExportKeyword [124, 134), i=23, next=0
+      KindIdentifier "publicInterfaceWithPrivateTypeParameters" [144, 185), i=24, next=25
+      NodeList [186, 208), i=25, next=30
+        KindTypeParameter [186, 208), i=26, next=0
+          KindIdentifier "T" [186, 187), i=27, next=28
+          KindTypeReference [195, 208), i=28, next=0
+            KindIdentifier "privateClass" [195, 208), i=29, next=0
+      NodeList [211, 466), i=30, next=0
+        KindMethodSignature [211, 246), i=31, next=40
+          KindIdentifier "myMethod" [211, 234), i=32, next=33
+          NodeList [235, 241), i=33, next=38
+            KindParameter [235, 241), i=34, next=0
+              KindIdentifier "val" [235, 238), i=35, next=36
+              KindTypeReference [239, 241), i=36, next=0
+                KindIdentifier "T" [239, 241), i=37, next=0
+          KindTypeReference [243, 245), i=38, next=0
+            KindIdentifier "T" [243, 245), i=39, next=0
+        KindMethodSignature [246, 281), i=40, next=47
+          KindIdentifier "myMethod0" [246, 261), i=41, next=42
+          KindTypeReference [264, 280), i=42, next=0
+            KindIdentifier "publicClassT" [264, 277), i=43, next=44
+            NodeList [278, 279), i=44, next=0
+              KindTypeReference [278, 279), i=45, next=0
+                KindIdentifier "T" [278, 279), i=46, next=0
+        KindMethodSignature [281, 328), i=47, next=54
+          KindIdentifier "myMethod1" [281, 296), i=48, next=49
+          KindTypeReference [299, 327), i=49, next=0
+            KindIdentifier "privateClassT" [299, 313), i=50, next=51
+            NodeList [314, 326), i=51, next=0
+              KindTypeReference [314, 326), i=52, next=0
+                KindIdentifier "privateClass" [314, 326), i=53, next=0
+        KindMethodSignature [328, 375), i=54, next=61
+          KindIdentifier "myMethod2" [328, 344), i=55, next=56
+          KindTypeReference [347, 374), i=56, next=0
+            KindIdentifier "privateClassT" [347, 361), i=57, next=58
+            NodeList [362, 373), i=58, next=0
+              KindTypeReference [362, 373), i=59, next=0
+                KindIdentifier "publicClass" [362, 373), i=60, next=0
+        KindMethodSignature [375, 421), i=61, next=68
+          KindIdentifier "myMethod3" [375, 390), i=62, next=63
+          KindTypeReference [393, 420), i=63, next=0
+            KindIdentifier "publicClassT" [393, 406), i=64, next=65
+            NodeList [407, 419), i=65, next=0
+              KindTypeReference [407, 419), i=66, next=0
+                KindIdentifier "privateClass" [407, 419), i=67, next=0
+        KindMethodSignature [421, 466), i=68, next=0
+          KindIdentifier "myMethod4" [421, 436), i=69, next=70
+          KindTypeReference [439, 465), i=70, next=0
+            KindIdentifier "publicClassT" [439, 452), i=71, next=72
+            NodeList [453, 464), i=72, next=0
+              KindTypeReference [453, 464), i=73, next=0
+                KindIdentifier "publicClass" [453, 464), i=74, next=0
+    KindInterfaceDeclaration [470, 802), i=75, next=129
+      NodeList [470, 480), i=76, next=78
+        KindExportKeyword [470, 480), i=77, next=0
+      KindIdentifier "publicInterfaceWithPublicTypeParameters" [490, 530), i=78, next=79
+      NodeList [531, 552), i=79, next=84
+        KindTypeParameter [531, 552), i=80, next=0
+          KindIdentifier "T" [531, 532), i=81, next=82
+          KindTypeReference [540, 552), i=82, next=0
+            KindIdentifier "publicClass" [540, 552), i=83, next=0
+      NodeList [555, 799), i=84, next=0
+        KindMethodSignature [555, 581), i=85, next=94
+          KindIdentifier "myMethod" [555, 569), i=86, next=87
+          NodeList [570, 576), i=87, next=92
+            KindParameter [570, 576), i=88, next=0
+              KindIdentifier "val" [570, 573), i=89, next=90
+              KindTypeReference [574, 576), i=90, next=0
+                KindIdentifier "T" [574, 576), i=91, next=0
+          KindTypeReference [578, 580), i=92, next=0
+            KindIdentifier "T" [578, 580), i=93, next=0
+        KindMethodSignature [581, 615), i=94, next=101
+          KindIdentifier "myMethod0" [581, 596), i=95, next=96
+          KindTypeReference [599, 615), i=96, next=0
+            KindIdentifier "publicClassT" [599, 612), i=97, next=98
+            NodeList [613, 614), i=98, next=0
+              KindTypeReference [613, 614), i=99, next=0
+                KindIdentifier "T" [613, 614), i=100, next=0
+        KindMethodSignature [615, 662), i=101, next=108
+          KindIdentifier "myMethod1" [615, 630), i=102, next=103
+          KindTypeReference [633, 661), i=103, next=0
+            KindIdentifier "privateClassT" [633, 647), i=104, next=105
+            NodeList [648, 660), i=105, next=0
+              KindTypeReference [648, 660), i=106, next=0
+                KindIdentifier "privateClass" [648, 660), i=107, next=0
+        KindMethodSignature [662, 708), i=108, next=115
+          KindIdentifier "myMethod2" [662, 677), i=109, next=110
+          KindTypeReference [680, 707), i=110, next=0
+            KindIdentifier "privateClassT" [680, 694), i=111, next=112
+            NodeList [695, 706), i=112, next=0
+              KindTypeReference [695, 706), i=113, next=0
+                KindIdentifier "publicClass" [695, 706), i=114, next=0
+        KindMethodSignature [708, 754), i=115, next=122
+          KindIdentifier "myMethod3" [708, 723), i=116, next=117
+          KindTypeReference [726, 753), i=117, next=0
+            KindIdentifier "publicClassT" [726, 739), i=118, next=119
+            NodeList [740, 752), i=119, next=0
+              KindTypeReference [740, 752), i=120, next=0
+                KindIdentifier "privateClass" [740, 752), i=121, next=0
+        KindMethodSignature [754, 799), i=122, next=0
+          KindIdentifier "myMethod4" [754, 769), i=123, next=124
+          KindTypeReference [772, 798), i=124, next=0
+            KindIdentifier "publicClassT" [772, 785), i=125, next=126
+            NodeList [786, 797), i=126, next=0
+              KindTypeReference [786, 797), i=127, next=0
+                KindIdentifier "publicClass" [786, 797), i=128, next=0
+    KindInterfaceDeclaration [802, 1131), i=129, next=181
+      KindIdentifier "privateInterfaceWithPrivateTypeParameters" [815, 857), i=130, next=131
+      NodeList [858, 880), i=131, next=136
+        KindTypeParameter [858, 880), i=132, next=0
+          KindIdentifier "T" [858, 859), i=133, next=134
+          KindTypeReference [867, 880), i=134, next=0
+            KindIdentifier "privateClass" [867, 880), i=135, next=0
+      NodeList [883, 1128), i=136, next=0
+        KindMethodSignature [883, 909), i=137, next=146
+          KindIdentifier "myMethod" [883, 897), i=138, next=139
+          NodeList [898, 904), i=139, next=144
+            KindParameter [898, 904), i=140, next=0
+              KindIdentifier "val" [898, 901), i=141, next=142
+              KindTypeReference [902, 904), i=142, next=0
+                KindIdentifier "T" [902, 904), i=143, next=0
+          KindTypeReference [906, 908), i=144, next=0
+            KindIdentifier "T" [906, 908), i=145, next=0
+        KindMethodSignature [909, 944), i=146, next=153
+          KindIdentifier "myMethod0" [909, 924), i=147, next=148
+          KindTypeReference [927, 943), i=148, next=0
+            KindIdentifier "publicClassT" [927, 940), i=149, next=150
+            NodeList [941, 942), i=150, next=0
+              KindTypeReference [941, 942), i=151, next=0
+                KindIdentifier "T" [941, 942), i=152, next=0
+        KindMethodSignature [944, 991), i=153, next=160
+          KindIdentifier "myMethod1" [944, 959), i=154, next=155
+          KindTypeReference [962, 990), i=155, next=0
+            KindIdentifier "privateClassT" [962, 976), i=156, next=157
+            NodeList [977, 989), i=157, next=0
+              KindTypeReference [977, 989), i=158, next=0
+                KindIdentifier "privateClass" [977, 989), i=159, next=0
+        KindMethodSignature [991, 1037), i=160, next=167
+          KindIdentifier "myMethod2" [991, 1006), i=161, next=162
+          KindTypeReference [1009, 1036), i=162, next=0
+            KindIdentifier "privateClassT" [1009, 1023), i=163, next=164
+            NodeList [1024, 1035), i=164, next=0
+              KindTypeReference [1024, 1035), i=165, next=0
+                KindIdentifier "publicClass" [1024, 1035), i=166, next=0
+        KindMethodSignature [1037, 1083), i=167, next=174
+          KindIdentifier "myMethod3" [1037, 1052), i=168, next=169
+          KindTypeReference [1055, 1082), i=169, next=0
+            KindIdentifier "publicClassT" [1055, 1068), i=170, next=171
+            NodeList [1069, 1081), i=171, next=0
+              KindTypeReference [1069, 1081), i=172, next=0
+                KindIdentifier "privateClass" [1069, 1081), i=173, next=0
+        KindMethodSignature [1083, 1128), i=174, next=0
+          KindIdentifier "myMethod4" [1083, 1098), i=175, next=176
+          KindTypeReference [1101, 1127), i=176, next=0
+            KindIdentifier "publicClassT" [1101, 1114), i=177, next=178
+            NodeList [1115, 1126), i=178, next=0
+              KindTypeReference [1115, 1126), i=179, next=0
+                KindIdentifier "publicClass" [1115, 1126), i=180, next=0
+    KindInterfaceDeclaration [1131, 1458), i=181, next=233
+      KindIdentifier "privateInterfaceWithPublicTypeParameters" [1144, 1185), i=182, next=183
+      NodeList [1186, 1207), i=183, next=188
+        KindTypeParameter [1186, 1207), i=184, next=0
+          KindIdentifier "T" [1186, 1187), i=185, next=186
+          KindTypeReference [1195, 1207), i=186, next=0
+            KindIdentifier "publicClass" [1195, 1207), i=187, next=0
+      NodeList [1210, 1455), i=188, next=0
+        KindMethodSignature [1210, 1236), i=189, next=198
+          KindIdentifier "myMethod" [1210, 1224), i=190, next=191
+          NodeList [1225, 1231), i=191, next=196
+            KindParameter [1225, 1231), i=192, next=0
+              KindIdentifier "val" [1225, 1228), i=193, next=194
+              KindTypeReference [1229, 1231), i=194, next=0
+                KindIdentifier "T" [1229, 1231), i=195, next=0
+          KindTypeReference [1233, 1235), i=196, next=0
+            KindIdentifier "T" [1233, 1235), i=197, next=0
+        KindMethodSignature [1236, 1271), i=198, next=205
+          KindIdentifier "myMethod0" [1236, 1251), i=199, next=200
+          KindTypeReference [1254, 1270), i=200, next=0
+            KindIdentifier "publicClassT" [1254, 1267), i=201, next=202
+            NodeList [1268, 1269), i=202, next=0
+              KindTypeReference [1268, 1269), i=203, next=0
+                KindIdentifier "T" [1268, 1269), i=204, next=0
+        KindMethodSignature [1271, 1318), i=205, next=212
+          KindIdentifier "myMethod1" [1271, 1286), i=206, next=207
+          KindTypeReference [1289, 1317), i=207, next=0
+            KindIdentifier "privateClassT" [1289, 1303), i=208, next=209
+            NodeList [1304, 1316), i=209, next=0
+              KindTypeReference [1304, 1316), i=210, next=0
+                KindIdentifier "privateClass" [1304, 1316), i=211, next=0
+        KindMethodSignature [1318, 1364), i=212, next=219
+          KindIdentifier "myMethod2" [1318, 1333), i=213, next=214
+          KindTypeReference [1336, 1363), i=214, next=0
+            KindIdentifier "privateClassT" [1336, 1350), i=215, next=216
+            NodeList [1351, 1362), i=216, next=0
+              KindTypeReference [1351, 1362), i=217, next=0
+                KindIdentifier "publicClass" [1351, 1362), i=218, next=0
+        KindMethodSignature [1364, 1410), i=219, next=226
+          KindIdentifier "myMethod3" [1364, 1379), i=220, next=221
+          KindTypeReference [1382, 1409), i=221, next=0
+            KindIdentifier "publicClassT" [1382, 1395), i=222, next=223
+            NodeList [1396, 1408), i=223, next=0
+              KindTypeReference [1396, 1408), i=224, next=0
+                KindIdentifier "privateClass" [1396, 1408), i=225, next=0
+        KindMethodSignature [1410, 1455), i=226, next=0
+          KindIdentifier "myMethod4" [1410, 1425), i=227, next=228
+          KindTypeReference [1428, 1454), i=228, next=0
+            KindIdentifier "publicClassT" [1428, 1441), i=229, next=230
+            NodeList [1442, 1453), i=230, next=0
+              KindTypeReference [1442, 1453), i=231, next=0
+                KindIdentifier "publicClass" [1442, 1453), i=232, next=0
+    KindInterfaceDeclaration [1458, 1601), i=233, next=1
+      NodeList [1458, 1468), i=234, next=236
+        KindExportKeyword [1458, 1468), i=235, next=0
+      KindIdentifier "publicInterfaceWithPublicTypeParametersWithoutExtends" [1478, 1532), i=236, next=237
+      NodeList [1533, 1534), i=237, next=240
+        KindTypeParameter [1533, 1534), i=238, next=0
+          KindIdentifier "T" [1533, 1534), i=239, next=0
+      NodeList [1537, 1598), i=240, next=0
+        KindMethodSignature [1537, 1563), i=241, next=250
+          KindIdentifier "myMethod" [1537, 1551), i=242, next=243
+          NodeList [1552, 1558), i=243, next=248
+            KindParameter [1552, 1558), i=244, next=0
+              KindIdentifier "val" [1552, 1555), i=245, next=246
+              KindTypeReference [1556, 1558), i=246, next=0
+                KindIdentifier "T" [1556, 1558), i=247, next=0
+          KindTypeReference [1560, 1562), i=248, next=0
+            KindIdentifier "T" [1560, 1562), i=249, next=0
+        KindMethodSignature [1563, 1598), i=250, next=0
+          KindIdentifier "myMethod0" [1563, 1578), i=251, next=252
+          KindTypeReference [1581, 1597), i=252, next=0
+            KindIdentifier "publicClassT" [1581, 1594), i=253, next=254
+            NodeList [1595, 1596), i=254, next=0
+              KindTypeReference [1595, 1596), i=255, next=0
+                KindIdentifier "T" [1595, 1596), i=256, next=0
+    KindInterfaceDeclaration [1601, 1738), i=257, next=23
+      KindIdentifier "privateInterfaceWithPublicTypeParametersWithoutExtends" [1614, 1669), i=258, next=3
+      NodeList [1670, 1671), i=259, next=6
+        KindTypeParameter [1670, 1671), i=260, next=0
+          KindIdentifier "T" [1670, 1671), i=261, next=0
+      NodeList [1674, 1735), i=262, next=0
+        KindMethodSignature [1674, 1700), i=263, next=16
+          KindIdentifier "myMethod" [1674, 1688), i=264, next=9
+          NodeList [1689, 1695), i=265, next=14
+            KindParameter [1689, 1695), i=266, next=0
+              KindIdentifier "val" [1689, 1692), i=267, next=12
+              KindTypeReference [1693, 1695), i=268, next=0
+                KindIdentifier "T" [1693, 1695), i=269, next=0
+          KindTypeReference [1697, 1699), i=270, next=0
+            KindIdentifier "T" [1697, 1699), i=271, next=0
+        KindMethodSignature [1700, 1735), i=272, next=0
+          KindIdentifier "myMethod0" [1700, 1715), i=273, next=18
+          KindTypeReference [1718, 1734), i=274, next=0
+            KindIdentifier "publicClassT" [1718, 1731), i=275, next=20
+            NodeList [1732, 1733), i=276, next=0
+              KindTypeReference [1732, 1733), i=277, next=0
+                KindIdentifier "T" [1732, 1733), i=278, next=0
+    KindInterfaceDeclaration [1738, 1883), i=279, next=34
+      NodeList [1738, 1750), i=280, next=26
+        KindExportKeyword [1738, 1750), i=281, next=0
+      KindIdentifier "publicInterfaceWithPrivateModuleTypeParameterConstraints" [1760, 1817), i=282, next=27
+      NodeList [1818, 1868), i=283, next=0
+        KindTypeParameter [1818, 1868), i=284, next=0
+          KindIdentifier "T" [1818, 1819), i=285, next=30
+          KindTypeReference [1827, 1868), i=286, next=0
+            KindQualifiedName [1827, 1868), i=287, next=0
+              KindIdentifier "privateModule" [1827, 1841), i=288, next=33
+              KindIdentifier "publicClassInPrivateModule" [1842, 1868), i=289, next=0
+    KindInterfaceDeclaration [1883, 2020), i=290, next=43
+      KindIdentifier "privateInterfaceWithPrivateModuleTypeParameterConstraints" [1896, 1954), i=291, next=36
+      NodeList [1955, 2005), i=292, next=0
+        KindTypeParameter [1955, 2005), i=293, next=0
+          KindIdentifier "T" [1955, 1956), i=294, next=39
+          KindTypeReference [1964, 2005), i=295, next=0
+            KindQualifiedName [1964, 2005), i=296, next=0
+              KindIdentifier "privateModule" [1964, 1978), i=297, next=42
+              KindIdentifier "publicClassInPrivateModule" [1979, 2005), i=298, next=0
+    KindModuleDeclaration [2020, 4925), i=299, next=89
+      NodeList [2020, 2030), i=300, next=46
+        KindExportKeyword [2020, 2030), i=301, next=0
+      KindIdentifier "publicModule" [2037, 2050), i=302, next=47
+      KindModuleBlock [2050, 4925), i=303, next=0
+        NodeList [2052, 4922), i=304, next=0
+          KindClassDeclaration [2052, 2099), i=305, next=51
+            KindIdentifier "privateClassInPublicModule" [2063, 2090), i=306, next=0
+          KindClassDeclaration [2099, 2154), i=307, next=55
+            NodeList [2099, 2113), i=308, next=54
+              KindExportKeyword [2099, 2113), i=309, next=0
+            KindIdentifier "publicClassInPublicModule" [2119, 2145), i=310, next=0
+          KindClassDeclaration [2154, 2207), i=311, next=60
+            KindIdentifier "privateClassInPublicModuleT" [2167, 2195), i=312, next=57
+            NodeList [2196, 2197), i=313, next=0
+              KindTypeParameter [2196, 2197), i=314, next=0
+                KindIdentifier "T" [2196, 2197), i=315, next=0
+          KindClassDeclaration [2207, 2266), i=316, next=67
+            NodeList [2207, 2221), i=317, next=63
+              KindExportKeyword [2207, 2221), i=318, next=0
+            KindIdentifier "publicClassInPublicModuleT" [2227, 2254), i=319, next=64
+            NodeList [2255, 2256), i=320, next=0
+              KindTypeParameter [2255, 2256), i=321, next=0
+                KindIdentifier "T" [2255, 2256), i=322, next=0
+          KindInterfaceDeclaration [2266, 2782), i=323, next=121
+            NodeList [2266, 2280), i=324, next=70
+              KindExportKeyword [2266, 2280), i=325, next=0
+            KindIdentifier "publicInterfaceWithPrivateTypeParameters" [2290, 2331), i=326, next=71
+            NodeList [2332, 2368), i=327, next=76
+              KindTypeParameter [2332, 2368), i=328, next=0
+                KindIdentifier "T" [2332, 2333), i=329, next=74
+                KindTypeReference [2341, 2368), i=330, next=0
+                  KindIdentifier "privateClassInPublicModule" [2341, 2368), i=331, next=0
+            NodeList [2371, 2775), i=332, next=0
+              KindMethodSignature [2371, 2410), i=333, next=86
+                KindIdentifier "myMethod" [2371, 2398), i=334, next=79
+                NodeList [2399, 2405), i=335, next=84
+                  KindParameter [2399, 2405), i=336, next=0
+                    KindIdentifier "val" [2399, 2402), i=337, next=82
+                    KindTypeReference [2403, 2405), i=338, next=0
+                      KindIdentifier "T" [2403, 2405), i=339, next=0
+                KindTypeReference [2407, 2409), i=340, next=0
+                  KindIdentifier "T" [2407, 2409), i=341, next=0
+              KindMethodSignature [2410, 2463), i=342, next=93
+                KindIdentifier "myMethod0" [2410, 2429), i=343, next=88
+                KindTypeReference [2432, 2462), i=344, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [2432, 2459), i=345, next=90
+                  NodeList [2460, 2461), i=346, next=0
+                    KindTypeReference [2460, 2461), i=347, next=0
+                      KindIdentifier "T" [2460, 2461), i=348, next=0
+              KindMethodSignature [2463, 2542), i=349, next=100
+                KindIdentifier "myMethod1" [2463, 2482), i=350, next=95
+                KindTypeReference [2485, 2541), i=351, next=0
+                  KindIdentifier "privateClassInPublicModuleT" [2485, 2513), i=352, next=97
+                  NodeList [2514, 2540), i=353, next=0
+                    KindTypeReference [2514, 2540), i=354, next=0
+                      KindIdentifier "privateClassInPublicModule" [2514, 2540), i=355, next=0
+              KindMethodSignature [2542, 2620), i=356, next=107
+                KindIdentifier "myMethod2" [2542, 2561), i=357, next=102
+                KindTypeReference [2564, 2619), i=358, next=0
+                  KindIdentifier "privateClassInPublicModuleT" [2564, 2592), i=359, next=104
+                  NodeList [2593, 2618), i=360, next=0
+                    KindTypeReference [2593, 2618), i=361, next=0
+                      KindIdentifier "publicClassInPublicModule" [2593, 2618), i=362, next=0
+              KindMethodSignature [2620, 2698), i=363, next=114
+                KindIdentifier "myMethod3" [2620, 2639), i=364, next=109
+                KindTypeReference [2642, 2697), i=365, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [2642, 2669), i=366, next=111
+                  NodeList [2670, 2696), i=367, next=0
+                    KindTypeReference [2670, 2696), i=368, next=0
+                      KindIdentifier "privateClassInPublicModule" [2670, 2696), i=369, next=0
+              KindMethodSignature [2698, 2775), i=370, next=0
+                KindIdentifier "myMethod4" [2698, 2717), i=371, next=116
+                KindTypeReference [2720, 2774), i=372, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [2720, 2747), i=373, next=118
+                  NodeList [2748, 2773), i=374, next=0
+                    KindTypeReference [2748, 2773), i=375, next=0
+                      KindIdentifier "publicClassInPublicModule" [2748, 2773), i=376, next=0
+          KindInterfaceDeclaration [2782, 3286), i=377, next=175
+            NodeList [2782, 2796), i=378, next=124
+              KindExportKeyword [2782, 2796), i=379, next=0
+            KindIdentifier "publicInterfaceWithPublicTypeParameters" [2806, 2846), i=380, next=125
+            NodeList [2847, 2882), i=381, next=130
+              KindTypeParameter [2847, 2882), i=382, next=0
+                KindIdentifier "T" [2847, 2848), i=383, next=128
+                KindTypeReference [2856, 2882), i=384, next=0
+                  KindIdentifier "publicClassInPublicModule" [2856, 2882), i=385, next=0
+            NodeList [2885, 3279), i=386, next=0
+              KindMethodSignature [2885, 2915), i=387, next=140
+                KindIdentifier "myMethod" [2885, 2903), i=388, next=133
+                NodeList [2904, 2910), i=389, next=138
+                  KindParameter [2904, 2910), i=390, next=0
+                    KindIdentifier "val" [2904, 2907), i=391, next=136
+                    KindTypeReference [2908, 2910), i=392, next=0
+                      KindIdentifier "T" [2908, 2910), i=393, next=0
+                KindTypeReference [2912, 2914), i=394, next=0
+                  KindIdentifier "T" [2912, 2914), i=395, next=0
+              KindMethodSignature [2915, 2967), i=396, next=147
+                KindIdentifier "myMethod0" [2915, 2934), i=397, next=142
+                KindTypeReference [2937, 2967), i=398, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [2937, 2964), i=399, next=144
+                  NodeList [2965, 2966), i=400, next=0
+                    KindTypeReference [2965, 2966), i=401, next=0
+                      KindIdentifier "T" [2965, 2966), i=402, next=0
+              KindMethodSignature [2967, 3046), i=403, next=154
+                KindIdentifier "myMethod1" [2967, 2986), i=404, next=149
+                KindTypeReference [2989, 3045), i=405, next=0
+                  KindIdentifier "privateClassInPublicModuleT" [2989, 3017), i=406, next=151
+                  NodeList [3018, 3044), i=407, next=0
+                    KindTypeReference [3018, 3044), i=408, next=0
+                      KindIdentifier "privateClassInPublicModule" [3018, 3044), i=409, next=0
+              KindMethodSignature [3046, 3124), i=410, next=161
+                KindIdentifier "myMethod2" [3046, 3065), i=411, next=156
+                KindTypeReference [3068, 3123), i=412, next=0
+                  KindIdentifier "privateClassInPublicModuleT" [3068, 3096), i=413, next=158
+                  NodeList [3097, 3122), i=414, next=0
+                    KindTypeReference [3097, 3122), i=415, next=0
+                      KindIdentifier "publicClassInPublicModule" [3097, 3122), i=416, next=0
+              KindMethodSignature [3124, 3202), i=417, next=168
+                KindIdentifier "myMethod3" [3124, 3143), i=418, next=163
+                KindTypeReference [3146, 3201), i=419, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [3146, 3173), i=420, next=165
+                  NodeList [3174, 3200), i=421, next=0
+                    KindTypeReference [3174, 3200), i=422, next=0
+                      KindIdentifier "privateClassInPublicModule" [3174, 3200), i=423, next=0
+              KindMethodSignature [3202, 3279), i=424, next=0
+                KindIdentifier "myMethod4" [3202, 3221), i=425, next=170
+                KindTypeReference [3224, 3278), i=426, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [3224, 3251), i=427, next=172
+                  NodeList [3252, 3277), i=428, next=0
+                    KindTypeReference [3252, 3277), i=429, next=0
+                      KindIdentifier "publicClassInPublicModule" [3252, 3277), i=430, next=0
+          KindInterfaceDeclaration [3286, 3787), i=431, next=227
+            KindIdentifier "privateInterfaceWithPrivateTypeParameters" [3303, 3345), i=432, next=177
+            NodeList [3346, 3382), i=433, next=182
+              KindTypeParameter [3346, 3382), i=434, next=0
+                KindIdentifier "T" [3346, 3347), i=435, next=180
+                KindTypeReference [3355, 3382), i=436, next=0
+                  KindIdentifier "privateClassInPublicModule" [3355, 3382), i=437, next=0
+            NodeList [3385, 3780), i=438, next=0
+              KindMethodSignature [3385, 3415), i=439, next=192
+                KindIdentifier "myMethod" [3385, 3403), i=440, next=185
+                NodeList [3404, 3410), i=441, next=190
+                  KindParameter [3404, 3410), i=442, next=0
+                    KindIdentifier "val" [3404, 3407), i=443, next=188
+                    KindTypeReference [3408, 3410), i=444, next=0
+                      KindIdentifier "T" [3408, 3410), i=445, next=0
+                KindTypeReference [3412, 3414), i=446, next=0
+                  KindIdentifier "T" [3412, 3414), i=447, next=0
+              KindMethodSignature [3415, 3468), i=448, next=199
+                KindIdentifier "myMethod0" [3415, 3434), i=449, next=194
+                KindTypeReference [3437, 3467), i=450, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [3437, 3464), i=451, next=196
+                  NodeList [3465, 3466), i=452, next=0
+                    KindTypeReference [3465, 3466), i=453, next=0
+                      KindIdentifier "T" [3465, 3466), i=454, next=0
+              KindMethodSignature [3468, 3547), i=455, next=206
+                KindIdentifier "myMethod1" [3468, 3487), i=456, next=201
+                KindTypeReference [3490, 3546), i=457, next=0
+                  KindIdentifier "privateClassInPublicModuleT" [3490, 3518), i=458, next=203
+                  NodeList [3519, 3545), i=459, next=0
+                    KindTypeReference [3519, 3545), i=460, next=0
+                      KindIdentifier "privateClassInPublicModule" [3519, 3545), i=461, next=0
+              KindMethodSignature [3547, 3625), i=462, next=213
+                KindIdentifier "myMethod2" [3547, 3566), i=463, next=208
+                KindTypeReference [3569, 3624), i=464, next=0
+                  KindIdentifier "privateClassInPublicModuleT" [3569, 3597), i=465, next=210
+                  NodeList [3598, 3623), i=466, next=0
+                    KindTypeReference [3598, 3623), i=467, next=0
+                      KindIdentifier "publicClassInPublicModule" [3598, 3623), i=468, next=0
+              KindMethodSignature [3625, 3703), i=469, next=220
+                KindIdentifier "myMethod3" [3625, 3644), i=470, next=215
+                KindTypeReference [3647, 3702), i=471, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [3647, 3674), i=472, next=217
+                  NodeList [3675, 3701), i=473, next=0
+                    KindTypeReference [3675, 3701), i=474, next=0
+                      KindIdentifier "privateClassInPublicModule" [3675, 3701), i=475, next=0
+              KindMethodSignature [3703, 3780), i=476, next=0
+                KindIdentifier "myMethod4" [3703, 3722), i=477, next=222
+                KindTypeReference [3725, 3779), i=478, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [3725, 3752), i=479, next=224
+                  NodeList [3753, 3778), i=480, next=0
+                    KindTypeReference [3753, 3778), i=481, next=0
+                      KindIdentifier "publicClassInPublicModule" [3753, 3778), i=482, next=0
+          KindInterfaceDeclaration [3787, 4286), i=483, next=23
+            KindIdentifier "privateInterfaceWithPublicTypeParameters" [3804, 3845), i=484, next=229
+            NodeList [3846, 3881), i=485, next=234
+              KindTypeParameter [3846, 3881), i=486, next=0
+                KindIdentifier "T" [3846, 3847), i=487, next=232
+                KindTypeReference [3855, 3881), i=488, next=0
+                  KindIdentifier "publicClassInPublicModule" [3855, 3881), i=489, next=0
+            NodeList [3884, 4279), i=490, next=0
+              KindMethodSignature [3884, 3914), i=491, next=244
+                KindIdentifier "myMethod" [3884, 3902), i=492, next=237
+                NodeList [3903, 3909), i=493, next=242
+                  KindParameter [3903, 3909), i=494, next=0
+                    KindIdentifier "val" [3903, 3906), i=495, next=240
+                    KindTypeReference [3907, 3909), i=496, next=0
+                      KindIdentifier "T" [3907, 3909), i=497, next=0
+                KindTypeReference [3911, 3913), i=498, next=0
+                  KindIdentifier "T" [3911, 3913), i=499, next=0
+              KindMethodSignature [3914, 3967), i=500, next=251
+                KindIdentifier "myMethod0" [3914, 3933), i=501, next=246
+                KindTypeReference [3936, 3966), i=502, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [3936, 3963), i=503, next=248
+                  NodeList [3964, 3965), i=504, next=0
+                    KindTypeReference [3964, 3965), i=505, next=0
+                      KindIdentifier "T" [3964, 3965), i=506, next=0
+              KindMethodSignature [3967, 4046), i=507, next=2
+                KindIdentifier "myMethod1" [3967, 3986), i=508, next=253
+                KindTypeReference [3989, 4045), i=509, next=0
+                  KindIdentifier "privateClassInPublicModuleT" [3989, 4017), i=510, next=255
+                  NodeList [4018, 4044), i=511, next=0
+                    KindTypeReference [4018, 4044), i=512, next=0
+                      KindIdentifier "privateClassInPublicModule" [4018, 4044), i=513, next=0
+              KindMethodSignature [4046, 4124), i=514, next=9
+                KindIdentifier "myMethod2" [4046, 4065), i=515, next=4
+                KindTypeReference [4068, 4123), i=516, next=0
+                  KindIdentifier "privateClassInPublicModuleT" [4068, 4096), i=517, next=6
+                  NodeList [4097, 4122), i=518, next=0
+                    KindTypeReference [4097, 4122), i=519, next=0
+                      KindIdentifier "publicClassInPublicModule" [4097, 4122), i=520, next=0
+              KindMethodSignature [4124, 4202), i=521, next=16
+                KindIdentifier "myMethod3" [4124, 4143), i=522, next=11
+                KindTypeReference [4146, 4201), i=523, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [4146, 4173), i=524, next=13
+                  NodeList [4174, 4200), i=525, next=0
+                    KindTypeReference [4174, 4200), i=526, next=0
+                      KindIdentifier "privateClassInPublicModule" [4174, 4200), i=527, next=0
+              KindMethodSignature [4202, 4279), i=528, next=0
+                KindIdentifier "myMethod4" [4202, 4221), i=529, next=18
+                KindTypeReference [4224, 4278), i=530, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [4224, 4251), i=531, next=20
+                  NodeList [4252, 4277), i=532, next=0
+                    KindTypeReference [4252, 4277), i=533, next=0
+                      KindIdentifier "publicClassInPublicModule" [4252, 4277), i=534, next=0
+          KindInterfaceDeclaration [4286, 4459), i=535, next=47
+            NodeList [4286, 4300), i=536, next=26
+              KindExportKeyword [4286, 4300), i=537, next=0
+            KindIdentifier "publicInterfaceWithPublicTypeParametersWithoutExtends" [4310, 4364), i=538, next=27
+            NodeList [4365, 4366), i=539, next=30
+              KindTypeParameter [4365, 4366), i=540, next=0
+                KindIdentifier "T" [4365, 4366), i=541, next=0
+            NodeList [4369, 4452), i=542, next=0
+              KindMethodSignature [4369, 4399), i=543, next=40
+                KindIdentifier "myMethod" [4369, 4387), i=544, next=33
+                NodeList [4388, 4394), i=545, next=38
+                  KindParameter [4388, 4394), i=546, next=0
+                    KindIdentifier "val" [4388, 4391), i=547, next=36
+                    KindTypeReference [4392, 4394), i=548, next=0
+                      KindIdentifier "T" [4392, 4394), i=549, next=0
+                KindTypeReference [4396, 4398), i=550, next=0
+                  KindIdentifier "T" [4396, 4398), i=551, next=0
+              KindMethodSignature [4399, 4452), i=552, next=0
+                KindIdentifier "myMethod0" [4399, 4418), i=553, next=42
+                KindTypeReference [4421, 4451), i=554, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [4421, 4448), i=555, next=44
+                  NodeList [4449, 4450), i=556, next=0
+                    KindTypeReference [4449, 4450), i=557, next=0
+                      KindIdentifier "T" [4449, 4450), i=558, next=0
+          KindInterfaceDeclaration [4459, 4626), i=559, next=69
+            KindIdentifier "privateInterfaceWithPublicTypeParametersWithoutExtends" [4476, 4531), i=560, next=49
+            NodeList [4532, 4533), i=561, next=52
+              KindTypeParameter [4532, 4533), i=562, next=0
+                KindIdentifier "T" [4532, 4533), i=563, next=0
+            NodeList [4536, 4619), i=564, next=0
+              KindMethodSignature [4536, 4566), i=565, next=62
+                KindIdentifier "myMethod" [4536, 4554), i=566, next=55
+                NodeList [4555, 4561), i=567, next=60
+                  KindParameter [4555, 4561), i=568, next=0
+                    KindIdentifier "val" [4555, 4558), i=569, next=58
+                    KindTypeReference [4559, 4561), i=570, next=0
+                      KindIdentifier "T" [4559, 4561), i=571, next=0
+                KindTypeReference [4563, 4565), i=572, next=0
+                  KindIdentifier "T" [4563, 4565), i=573, next=0
+              KindMethodSignature [4566, 4619), i=574, next=0
+                KindIdentifier "myMethod0" [4566, 4585), i=575, next=64
+                KindTypeReference [4588, 4618), i=576, next=0
+                  KindIdentifier "publicClassInPublicModuleT" [4588, 4615), i=577, next=66
+                  NodeList [4616, 4617), i=578, next=0
+                    KindTypeReference [4616, 4617), i=579, next=0
+                      KindIdentifier "T" [4616, 4617), i=580, next=0
+          KindInterfaceDeclaration [4626, 4777), i=581, next=80
+            NodeList [4626, 4640), i=582, next=72
+              KindExportKeyword [4626, 4640), i=583, next=0
+            KindIdentifier "publicInterfaceWithPrivateModuleTypeParameterConstraints" [4650, 4707), i=584, next=73
+            NodeList [4708, 4758), i=585, next=0
+              KindTypeParameter [4708, 4758), i=586, next=0
+                KindIdentifier "T" [4708, 4709), i=587, next=76
+                KindTypeReference [4717, 4758), i=588, next=0
+                  KindQualifiedName [4717, 4758), i=589, next=0
+                    KindIdentifier "privateModule" [4717, 4731), i=590, next=79
+                    KindIdentifier "publicClassInPrivateModule" [4732, 4758), i=591, next=0
+          KindInterfaceDeclaration [4777, 4922), i=592, next=0
+            KindIdentifier "privateInterfaceWithPrivateModuleTypeParameterConstraints" [4794, 4852), i=593, next=82
+            NodeList [4853, 4903), i=594, next=0
+              KindTypeParameter [4853, 4903), i=595, next=0
+                KindIdentifier "T" [4853, 4854), i=596, next=85
+                KindTypeReference [4862, 4903), i=597, next=0
+                  KindQualifiedName [4862, 4903), i=598, next=0
+                    KindIdentifier "privateModule" [4862, 4876), i=599, next=88
+                    KindIdentifier "publicClassInPrivateModule" [4877, 4903), i=600, next=0
+    KindModuleDeclaration [4925, 7565), i=601, next=0
+      KindIdentifier "privateModule" [4935, 4949), i=602, next=91
+      KindModuleBlock [4949, 7565), i=603, next=0
+        NodeList [4951, 7562), i=604, next=0
+          KindClassDeclaration [4951, 4999), i=605, next=95
+            KindIdentifier "privateClassInPrivateModule" [4962, 4990), i=606, next=0
+          KindClassDeclaration [4999, 5055), i=607, next=99
+            NodeList [4999, 5013), i=608, next=98
+              KindExportKeyword [4999, 5013), i=609, next=0
+            KindIdentifier "publicClassInPrivateModule" [5019, 5046), i=610, next=0
+          KindClassDeclaration [5055, 5109), i=611, next=104
+            KindIdentifier "privateClassInPrivateModuleT" [5068, 5097), i=612, next=101
+            NodeList [5098, 5099), i=613, next=0
+              KindTypeParameter [5098, 5099), i=614, next=0
+                KindIdentifier "T" [5098, 5099), i=615, next=0
+          KindClassDeclaration [5109, 5169), i=616, next=111
+            NodeList [5109, 5123), i=617, next=107
+              KindExportKeyword [5109, 5123), i=618, next=0
+            KindIdentifier "publicClassInPrivateModuleT" [5129, 5157), i=619, next=108
+            NodeList [5158, 5159), i=620, next=0
+              KindTypeParameter [5158, 5159), i=621, next=0
+                KindIdentifier "T" [5158, 5159), i=622, next=0
+          KindInterfaceDeclaration [5169, 5686), i=623, next=165
+            NodeList [5169, 5183), i=624, next=114
+              KindExportKeyword [5169, 5183), i=625, next=0
+            KindIdentifier "publicInterfaceWithPrivateTypeParameters" [5193, 5234), i=626, next=115
+            NodeList [5235, 5272), i=627, next=120
+              KindTypeParameter [5235, 5272), i=628, next=0
+                KindIdentifier "T" [5235, 5236), i=629, next=118
+                KindTypeReference [5244, 5272), i=630, next=0
+                  KindIdentifier "privateClassInPrivateModule" [5244, 5272), i=631, next=0
+            NodeList [5275, 5679), i=632, next=0
+              KindMethodSignature [5275, 5305), i=633, next=130
+                KindIdentifier "myMethod" [5275, 5293), i=634, next=123
+                NodeList [5294, 5300), i=635, next=128
+                  KindParameter [5294, 5300), i=636, next=0
+                    KindIdentifier "val" [5294, 5297), i=637, next=126
+                    KindTypeReference [5298, 5300), i=638, next=0
+                      KindIdentifier "T" [5298, 5300), i=639, next=0
+                KindTypeReference [5302, 5304), i=640, next=0
+                  KindIdentifier "T" [5302, 5304), i=641, next=0
+              KindMethodSignature [5305, 5359), i=642, next=137
+                KindIdentifier "myMethod0" [5305, 5324), i=643, next=132
+                KindTypeReference [5327, 5358), i=644, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [5327, 5355), i=645, next=134
+                  NodeList [5356, 5357), i=646, next=0
+                    KindTypeReference [5356, 5357), i=647, next=0
+                      KindIdentifier "T" [5356, 5357), i=648, next=0
+              KindMethodSignature [5359, 5440), i=649, next=144
+                KindIdentifier "myMethod1" [5359, 5378), i=650, next=139
+                KindTypeReference [5381, 5439), i=651, next=0
+                  KindIdentifier "privateClassInPrivateModuleT" [5381, 5410), i=652, next=141
+                  NodeList [5411, 5438), i=653, next=0
+                    KindTypeReference [5411, 5438), i=654, next=0
+                      KindIdentifier "privateClassInPrivateModule" [5411, 5438), i=655, next=0
+              KindMethodSignature [5440, 5520), i=656, next=151
+                KindIdentifier "myMethod2" [5440, 5459), i=657, next=146
+                KindTypeReference [5462, 5519), i=658, next=0
+                  KindIdentifier "privateClassInPrivateModuleT" [5462, 5491), i=659, next=148
+                  NodeList [5492, 5518), i=660, next=0
+                    KindTypeReference [5492, 5518), i=661, next=0
+                      KindIdentifier "publicClassInPrivateModule" [5492, 5518), i=662, next=0
+              KindMethodSignature [5520, 5600), i=663, next=158
+                KindIdentifier "myMethod3" [5520, 5539), i=664, next=153
+                KindTypeReference [5542, 5599), i=665, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [5542, 5570), i=666, next=155
+                  NodeList [5571, 5598), i=667, next=0
+                    KindTypeReference [5571, 5598), i=668, next=0
+                      KindIdentifier "privateClassInPrivateModule" [5571, 5598), i=669, next=0
+              KindMethodSignature [5600, 5679), i=670, next=0
+                KindIdentifier "myMethod4" [5600, 5619), i=671, next=160
+                KindTypeReference [5622, 5678), i=672, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [5622, 5650), i=673, next=162
+                  NodeList [5651, 5677), i=674, next=0
+                    KindTypeReference [5651, 5677), i=675, next=0
+                      KindIdentifier "publicClassInPrivateModule" [5651, 5677), i=676, next=0
+          KindInterfaceDeclaration [5686, 6200), i=677, next=219
+            NodeList [5686, 5700), i=678, next=168
+              KindExportKeyword [5686, 5700), i=679, next=0
+            KindIdentifier "publicInterfaceWithPublicTypeParameters" [5710, 5750), i=680, next=169
+            NodeList [5751, 5787), i=681, next=174
+              KindTypeParameter [5751, 5787), i=682, next=0
+                KindIdentifier "T" [5751, 5752), i=683, next=172
+                KindTypeReference [5760, 5787), i=684, next=0
+                  KindIdentifier "publicClassInPrivateModule" [5760, 5787), i=685, next=0
+            NodeList [5790, 6193), i=686, next=0
+              KindMethodSignature [5790, 5820), i=687, next=184
+                KindIdentifier "myMethod" [5790, 5808), i=688, next=177
+                NodeList [5809, 5815), i=689, next=182
+                  KindParameter [5809, 5815), i=690, next=0
+                    KindIdentifier "val" [5809, 5812), i=691, next=180
+                    KindTypeReference [5813, 5815), i=692, next=0
+                      KindIdentifier "T" [5813, 5815), i=693, next=0
+                KindTypeReference [5817, 5819), i=694, next=0
+                  KindIdentifier "T" [5817, 5819), i=695, next=0
+              KindMethodSignature [5820, 5873), i=696, next=191
+                KindIdentifier "myMethod0" [5820, 5839), i=697, next=186
+                KindTypeReference [5842, 5873), i=698, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [5842, 5870), i=699, next=188
+                  NodeList [5871, 5872), i=700, next=0
+                    KindTypeReference [5871, 5872), i=701, next=0
+                      KindIdentifier "T" [5871, 5872), i=702, next=0
+              KindMethodSignature [5873, 5954), i=703, next=198
+                KindIdentifier "myMethod1" [5873, 5892), i=704, next=193
+                KindTypeReference [5895, 5953), i=705, next=0
+                  KindIdentifier "privateClassInPrivateModuleT" [5895, 5924), i=706, next=195
+                  NodeList [5925, 5952), i=707, next=0
+                    KindTypeReference [5925, 5952), i=708, next=0
+                      KindIdentifier "privateClassInPrivateModule" [5925, 5952), i=709, next=0
+              KindMethodSignature [5954, 6034), i=710, next=205
+                KindIdentifier "myMethod2" [5954, 5973), i=711, next=200
+                KindTypeReference [5976, 6033), i=712, next=0
+                  KindIdentifier "privateClassInPrivateModuleT" [5976, 6005), i=713, next=202
+                  NodeList [6006, 6032), i=714, next=0
+                    KindTypeReference [6006, 6032), i=715, next=0
+                      KindIdentifier "publicClassInPrivateModule" [6006, 6032), i=716, next=0
+              KindMethodSignature [6034, 6114), i=717, next=212
+                KindIdentifier "myMethod3" [6034, 6053), i=718, next=207
+                KindTypeReference [6056, 6113), i=719, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [6056, 6084), i=720, next=209
+                  NodeList [6085, 6112), i=721, next=0
+                    KindTypeReference [6085, 6112), i=722, next=0
+                      KindIdentifier "privateClassInPrivateModule" [6085, 6112), i=723, next=0
+              KindMethodSignature [6114, 6193), i=724, next=0
+                KindIdentifier "myMethod4" [6114, 6133), i=725, next=214
+                KindTypeReference [6136, 6192), i=726, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [6136, 6164), i=727, next=216
+                  NodeList [6165, 6191), i=728, next=0
+                    KindTypeReference [6165, 6191), i=729, next=0
+                      KindIdentifier "publicClassInPrivateModule" [6165, 6191), i=730, next=0
+          KindInterfaceDeclaration [6200, 6711), i=731, next=15
+            KindIdentifier "privateInterfaceWithPrivateTypeParameters" [6217, 6259), i=732, next=221
+            NodeList [6260, 6297), i=733, next=226
+              KindTypeParameter [6260, 6297), i=734, next=0
+                KindIdentifier "T" [6260, 6261), i=735, next=224
+                KindTypeReference [6269, 6297), i=736, next=0
+                  KindIdentifier "privateClassInPrivateModule" [6269, 6297), i=737, next=0
+            NodeList [6300, 6704), i=738, next=0
+              KindMethodSignature [6300, 6330), i=739, next=236
+                KindIdentifier "myMethod" [6300, 6318), i=740, next=229
+                NodeList [6319, 6325), i=741, next=234
+                  KindParameter [6319, 6325), i=742, next=0
+                    KindIdentifier "val" [6319, 6322), i=743, next=232
+                    KindTypeReference [6323, 6325), i=744, next=0
+                      KindIdentifier "T" [6323, 6325), i=745, next=0
+                KindTypeReference [6327, 6329), i=746, next=0
+                  KindIdentifier "T" [6327, 6329), i=747, next=0
+              KindMethodSignature [6330, 6384), i=748, next=243
+                KindIdentifier "myMethod0" [6330, 6349), i=749, next=238
+                KindTypeReference [6352, 6383), i=750, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [6352, 6380), i=751, next=240
+                  NodeList [6381, 6382), i=752, next=0
+                    KindTypeReference [6381, 6382), i=753, next=0
+                      KindIdentifier "T" [6381, 6382), i=754, next=0
+              KindMethodSignature [6384, 6465), i=755, next=250
+                KindIdentifier "myMethod1" [6384, 6403), i=756, next=245
+                KindTypeReference [6406, 6464), i=757, next=0
+                  KindIdentifier "privateClassInPrivateModuleT" [6406, 6435), i=758, next=247
+                  NodeList [6436, 6463), i=759, next=0
+                    KindTypeReference [6436, 6463), i=760, next=0
+                      KindIdentifier "privateClassInPrivateModule" [6436, 6463), i=761, next=0
+              KindMethodSignature [6465, 6545), i=762, next=1
+                KindIdentifier "myMethod2" [6465, 6484), i=763, next=252
+                KindTypeReference [6487, 6544), i=764, next=0
+                  KindIdentifier "privateClassInPrivateModuleT" [6487, 6516), i=765, next=254
+                  NodeList [6517, 6543), i=766, next=0
+                    KindTypeReference [6517, 6543), i=767, next=0
+                      KindIdentifier "publicClassInPrivateModule" [6517, 6543), i=768, next=0
+              KindMethodSignature [6545, 6625), i=769, next=8
+                KindIdentifier "myMethod3" [6545, 6564), i=770, next=3
+                KindTypeReference [6567, 6624), i=771, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [6567, 6595), i=772, next=5
+                  NodeList [6596, 6623), i=773, next=0
+                    KindTypeReference [6596, 6623), i=774, next=0
+                      KindIdentifier "privateClassInPrivateModule" [6596, 6623), i=775, next=0
+              KindMethodSignature [6625, 6704), i=776, next=0
+                KindIdentifier "myMethod4" [6625, 6644), i=777, next=10
+                KindTypeReference [6647, 6703), i=778, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [6647, 6675), i=779, next=12
+                  NodeList [6676, 6702), i=780, next=0
+                    KindTypeReference [6676, 6702), i=781, next=0
+                      KindIdentifier "publicClassInPrivateModule" [6676, 6702), i=782, next=0
+          KindInterfaceDeclaration [6711, 7220), i=783, next=67
+            KindIdentifier "privateInterfaceWithPublicTypeParameters" [6728, 6769), i=784, next=17
+            NodeList [6770, 6806), i=785, next=22
+              KindTypeParameter [6770, 6806), i=786, next=0
+                KindIdentifier "T" [6770, 6771), i=787, next=20
+                KindTypeReference [6779, 6806), i=788, next=0
+                  KindIdentifier "publicClassInPrivateModule" [6779, 6806), i=789, next=0
+            NodeList [6809, 7213), i=790, next=0
+              KindMethodSignature [6809, 6839), i=791, next=32
+                KindIdentifier "myMethod" [6809, 6827), i=792, next=25
+                NodeList [6828, 6834), i=793, next=30
+                  KindParameter [6828, 6834), i=794, next=0
+                    KindIdentifier "val" [6828, 6831), i=795, next=28
+                    KindTypeReference [6832, 6834), i=796, next=0
+                      KindIdentifier "T" [6832, 6834), i=797, next=0
+                KindTypeReference [6836, 6838), i=798, next=0
+                  KindIdentifier "T" [6836, 6838), i=799, next=0
+              KindMethodSignature [6839, 6893), i=800, next=39
+                KindIdentifier "myMethod0" [6839, 6858), i=801, next=34
+                KindTypeReference [6861, 6892), i=802, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [6861, 6889), i=803, next=36
+                  NodeList [6890, 6891), i=804, next=0
+                    KindTypeReference [6890, 6891), i=805, next=0
+                      KindIdentifier "T" [6890, 6891), i=806, next=0
+              KindMethodSignature [6893, 6974), i=807, next=46
+                KindIdentifier "myMethod1" [6893, 6912), i=808, next=41
+                KindTypeReference [6915, 6973), i=809, next=0
+                  KindIdentifier "privateClassInPrivateModuleT" [6915, 6944), i=810, next=43
+                  NodeList [6945, 6972), i=811, next=0
+                    KindTypeReference [6945, 6972), i=812, next=0
+                      KindIdentifier "privateClassInPrivateModule" [6945, 6972), i=813, next=0
+              KindMethodSignature [6974, 7054), i=814, next=53
+                KindIdentifier "myMethod2" [6974, 6993), i=815, next=48
+                KindTypeReference [6996, 7053), i=816, next=0
+                  KindIdentifier "privateClassInPrivateModuleT" [6996, 7025), i=817, next=50
+                  NodeList [7026, 7052), i=818, next=0
+                    KindTypeReference [7026, 7052), i=819, next=0
+                      KindIdentifier "publicClassInPrivateModule" [7026, 7052), i=820, next=0
+              KindMethodSignature [7054, 7134), i=821, next=60
+                KindIdentifier "myMethod3" [7054, 7073), i=822, next=55
+                KindTypeReference [7076, 7133), i=823, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [7076, 7104), i=824, next=57
+                  NodeList [7105, 7132), i=825, next=0
+                    KindTypeReference [7105, 7132), i=826, next=0
+                      KindIdentifier "privateClassInPrivateModule" [7105, 7132), i=827, next=0
+              KindMethodSignature [7134, 7213), i=828, next=0
+                KindIdentifier "myMethod4" [7134, 7153), i=829, next=62
+                KindTypeReference [7156, 7212), i=830, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [7156, 7184), i=831, next=64
+                  NodeList [7185, 7211), i=832, next=0
+                    KindTypeReference [7185, 7211), i=833, next=0
+                      KindIdentifier "publicClassInPrivateModule" [7185, 7211), i=834, next=0
+          KindInterfaceDeclaration [7220, 7394), i=835, next=91
+            NodeList [7220, 7234), i=836, next=70
+              KindExportKeyword [7220, 7234), i=837, next=0
+            KindIdentifier "publicInterfaceWithPublicTypeParametersWithoutExtends" [7244, 7298), i=838, next=71
+            NodeList [7299, 7300), i=839, next=74
+              KindTypeParameter [7299, 7300), i=840, next=0
+                KindIdentifier "T" [7299, 7300), i=841, next=0
+            NodeList [7303, 7387), i=842, next=0
+              KindMethodSignature [7303, 7333), i=843, next=84
+                KindIdentifier "myMethod" [7303, 7321), i=844, next=77
+                NodeList [7322, 7328), i=845, next=82
+                  KindParameter [7322, 7328), i=846, next=0
+                    KindIdentifier "val" [7322, 7325), i=847, next=80
+                    KindTypeReference [7326, 7328), i=848, next=0
+                      KindIdentifier "T" [7326, 7328), i=849, next=0
+                KindTypeReference [7330, 7332), i=850, next=0
+                  KindIdentifier "T" [7330, 7332), i=851, next=0
+              KindMethodSignature [7333, 7387), i=852, next=0
+                KindIdentifier "myMethod0" [7333, 7352), i=853, next=86
+                KindTypeReference [7355, 7386), i=854, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [7355, 7383), i=855, next=88
+                  NodeList [7384, 7385), i=856, next=0
+                    KindTypeReference [7384, 7385), i=857, next=0
+                      KindIdentifier "T" [7384, 7385), i=858, next=0
+          KindInterfaceDeclaration [7394, 7562), i=859, next=0
+            KindIdentifier "privateInterfaceWithPublicTypeParametersWithoutExtends" [7411, 7466), i=860, next=93
+            NodeList [7467, 7468), i=861, next=96
+              KindTypeParameter [7467, 7468), i=862, next=0
+                KindIdentifier "T" [7467, 7468), i=863, next=0
+            NodeList [7471, 7555), i=864, next=0
+              KindMethodSignature [7471, 7501), i=865, next=106
+                KindIdentifier "myMethod" [7471, 7489), i=866, next=99
+                NodeList [7490, 7496), i=867, next=104
+                  KindParameter [7490, 7496), i=868, next=0
+                    KindIdentifier "val" [7490, 7493), i=869, next=102
+                    KindTypeReference [7494, 7496), i=870, next=0
+                      KindIdentifier "T" [7494, 7496), i=871, next=0
+                KindTypeReference [7498, 7500), i=872, next=0
+                  KindIdentifier "T" [7498, 7500), i=873, next=0
+              KindMethodSignature [7501, 7555), i=874, next=0
+                KindIdentifier "myMethod0" [7501, 7520), i=875, next=108
+                KindTypeReference [7523, 7554), i=876, next=0
+                  KindIdentifier "publicClassInPrivateModuleT" [7523, 7551), i=877, next=110
+                  NodeList [7552, 7553), i=878, next=0
+                    KindTypeReference [7552, 7553), i=879, next=0
+                      KindIdentifier "T" [7552, 7553), i=880, next=0

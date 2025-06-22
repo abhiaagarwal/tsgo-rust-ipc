@@ -1,0 +1,60 @@
+KindSourceFile [0, 151), i=1, next=0
+  NodeList [0, 149), i=2, next=0
+    KindFunctionDeclaration [0, 62), i=3, next=21
+      KindIdentifier "foo" [8, 12), i=4, next=5
+      NodeList [13, 37), i=5, next=14
+        KindParameter [13, 37), i=6, next=0
+          KindIdentifier "f" [13, 14), i=7, next=8
+          KindFunctionType [15, 37), i=8, next=0
+            NodeList [17, 26), i=9, next=13
+              KindParameter [17, 26), i=10, next=0
+                KindIdentifier "x" [17, 18), i=11, next=12
+                KindStringKeyword [19, 26), i=12, next=0
+            KindStringKeyword [30, 37), i=13, next=0
+      KindBlock [38, 62), i=14, next=0
+        NodeList [40, 59), i=15, next=0
+          KindReturnStatement [40, 59), i=16, next=0
+            KindCallExpression [52, 58), i=17, next=0
+              KindIdentifier "f" [52, 54), i=18, next=19
+              NodeList [55, 57), i=19, next=0
+                KindStringLiteral "" [55, 57), i=20, next=0
+    KindVariableStatement [62, 98), i=21, next=36
+      KindVariableDeclarationList [62, 97), i=22, next=0
+        NodeList [67, 97), i=23, next=0
+          KindVariableDeclaration [67, 97), i=24, next=0
+            KindIdentifier "g" [67, 69), i=25, next=26
+            KindArrowFunction [71, 97), i=26, next=0
+              NodeList [73, 82), i=27, next=31
+                KindParameter [73, 82), i=28, next=0
+                  KindIdentifier "x" [73, 74), i=29, next=30
+                  KindStringKeyword [75, 82), i=30, next=0
+              KindEqualsGreaterThanToken [83, 86), i=31, next=32
+              KindBinaryExpression [86, 97), i=32, next=0
+                KindIdentifier "x" [86, 88), i=33, next=34
+                KindPlusToken [88, 90), i=34, next=35
+                KindStringLiteral "blah" [90, 97), i=35, next=0
+    KindVariableStatement [98, 116), i=36, next=44
+      KindVariableDeclarationList [98, 115), i=37, next=0
+        NodeList [103, 115), i=38, next=0
+          KindVariableDeclaration [103, 115), i=39, next=0
+            KindIdentifier "x" [103, 105), i=40, next=41
+            KindArrowFunction [107, 115), i=41, next=0
+              KindEqualsGreaterThanToken [110, 113), i=42, next=43
+              KindIdentifier "g" [113, 115), i=43, next=0
+    KindExpressionStatement [116, 125), i=44, next=49
+      KindCallExpression [116, 124), i=45, next=0
+        KindIdentifier "foo" [116, 121), i=46, next=47
+        NodeList [122, 123), i=47, next=0
+          KindIdentifier "g" [122, 123), i=48, next=0
+    KindExpressionStatement [125, 140), i=49, next=56
+      KindCallExpression [125, 139), i=50, next=0
+        KindIdentifier "foo" [125, 130), i=51, next=52
+        NodeList [131, 138), i=52, next=0
+          KindArrowFunction [131, 138), i=53, next=0
+            KindEqualsGreaterThanToken [133, 136), i=54, next=55
+            KindIdentifier "g" [136, 138), i=55, next=0
+    KindExpressionStatement [140, 149), i=56, next=0
+      KindCallExpression [140, 148), i=57, next=0
+        KindIdentifier "foo" [140, 145), i=58, next=59
+        NodeList [146, 147), i=59, next=0
+          KindIdentifier "x" [146, 147), i=60, next=0

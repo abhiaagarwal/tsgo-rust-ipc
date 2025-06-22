@@ -1,0 +1,77 @@
+KindSourceFile [0, 586), i=1, next=0
+  NodeList [0, 584), i=2, next=0
+    KindEnumDeclaration [0, 112), i=3, next=18
+      KindIdentifier "AutomationMode" [4, 19), i=4, next=5
+      NodeList [21, 109), i=5, next=0
+        KindEnumMember [21, 36), i=6, next=9
+          KindIdentifier "NONE" [21, 31), i=7, next=8
+          KindStringLiteral "" [33, 36), i=8, next=0
+        KindEnumMember [37, 56), i=9, next=12
+          KindIdentifier "TIME" [37, 47), i=10, next=11
+          KindStringLiteral "time" [49, 56), i=11, next=0
+        KindEnumMember [57, 80), i=12, next=15
+          KindIdentifier "SYSTEM" [57, 69), i=13, next=14
+          KindStringLiteral "system" [71, 80), i=14, next=0
+        KindEnumMember [81, 108), i=15, next=0
+          KindIdentifier "LOCATION" [81, 95), i=16, next=17
+          KindStringLiteral "location" [97, 108), i=17, next=0
+    KindInterfaceDeclaration [112, 159), i=18, next=24
+      KindIdentifier "ThemePreset" [125, 137), i=19, next=20
+      NodeList [139, 156), i=20, next=0
+        KindPropertySignature [139, 156), i=21, next=0
+          KindIdentifier "id" [139, 147), i=22, next=23
+          KindStringKeyword [148, 155), i=23, next=0
+    KindInterfaceDeclaration [159, 215), i=24, next=31
+      KindIdentifier "Automation" [172, 183), i=25, next=26
+      NodeList [185, 212), i=26, next=0
+        KindPropertySignature [185, 212), i=27, next=0
+          KindIdentifier "mode" [185, 195), i=28, next=29
+          KindTypeReference [196, 211), i=29, next=0
+            KindIdentifier "AutomationMode" [196, 211), i=30, next=0
+    KindInterfaceDeclaration [215, 304), i=31, next=43
+      KindIdentifier "UserSettings" [228, 241), i=32, next=33
+      NodeList [243, 301), i=33, next=0
+        KindPropertySignature [243, 272), i=34, next=39
+          KindIdentifier "presets" [243, 256), i=35, next=36
+          KindArrayType [257, 271), i=36, next=0
+            KindTypeReference [257, 269), i=37, next=0
+              KindIdentifier "ThemePreset" [257, 269), i=38, next=0
+        KindPropertySignature [272, 301), i=39, next=0
+          KindIdentifier "automation" [272, 288), i=40, next=41
+          KindTypeReference [289, 300), i=41, next=0
+            KindIdentifier "Automation" [289, 300), i=42, next=0
+    KindInterfaceDeclaration [304, 365), i=43, next=50
+      KindIdentifier "ExtensionData" [317, 331), i=44, next=45
+      NodeList [333, 362), i=45, next=0
+        KindPropertySignature [333, 362), i=46, next=0
+          KindIdentifier "settings" [333, 347), i=47, next=48
+          KindTypeReference [348, 361), i=48, next=0
+            KindIdentifier "UserSettings" [348, 361), i=49, next=0
+    KindFunctionDeclaration [365, 584), i=50, next=0
+      NodeList [365, 375), i=51, next=53
+        KindExportKeyword [365, 375), i=52, next=0
+      KindIdentifier "getMockData" [384, 396), i=53, next=54
+      KindTypeReference [399, 413), i=54, next=56
+        KindIdentifier "ExtensionData" [399, 413), i=55, next=0
+      KindBlock [413, 584), i=56, next=0
+        NodeList [415, 581), i=57, next=0
+          KindReturnStatement [415, 581), i=58, next=0
+            KindObjectLiteralExpression [427, 581), i=59, next=0
+              NodeList [429, 574), i=60, next=0
+                KindPropertyAssignment [429, 573), i=61, next=0
+                  KindIdentifier "settings" [429, 447), i=62, next=63
+                  KindAsExpression [448, 573), i=63, next=0
+                    KindObjectLiteralExpression [448, 557), i=64, next=76
+                      NodeList [450, 546), i=65, next=0
+                        KindPropertyAssignment [450, 475), i=66, next=69
+                          KindIdentifier "presets" [450, 471), i=67, next=68
+                          KindArrayLiteralExpression [472, 475), i=68, next=0
+                        KindPropertyAssignment [476, 545), i=69, next=0
+                          KindIdentifier "automation" [476, 500), i=70, next=71
+                          KindObjectLiteralExpression [501, 545), i=71, next=0
+                            NodeList [503, 530), i=72, next=0
+                              KindPropertyAssignment [503, 529), i=73, next=0
+                                KindIdentifier "mode" [503, 525), i=74, next=75
+                                KindStringLiteral "" [526, 529), i=75, next=0
+                    KindTypeReference [560, 573), i=76, next=0
+                      KindIdentifier "UserSettings" [560, 573), i=77, next=0

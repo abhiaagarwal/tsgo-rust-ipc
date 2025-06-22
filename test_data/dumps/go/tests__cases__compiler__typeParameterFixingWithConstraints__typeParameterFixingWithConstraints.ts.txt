@@ -1,0 +1,78 @@
+KindSourceFile [0, 238), i=1, next=0
+  NodeList [0, 238), i=2, next=0
+    KindInterfaceDeclaration [0, 46), i=3, next=12
+      KindIdentifier "IBar" [9, 14), i=4, next=5
+      NodeList [16, 43), i=5, next=0
+        KindIndexSignature [16, 43), i=6, next=0
+          NodeList [23, 36), i=7, next=11
+            KindParameter [23, 36), i=8, next=0
+              KindIdentifier "barId" [23, 28), i=9, next=10
+              KindStringKeyword [29, 36), i=10, next=0
+          KindAnyKeyword [38, 42), i=11, next=0
+    KindInterfaceDeclaration [46, 169), i=12, next=49
+      KindIdentifier "IFoo" [59, 64), i=13, next=14
+      NodeList [66, 166), i=14, next=0
+        KindMethodSignature [66, 166), i=15, next=0
+          KindIdentifier "foo" [66, 75), i=16, next=17
+          NodeList [76, 93), i=17, next=22
+            KindTypeParameter [76, 93), i=18, next=0
+              KindIdentifier "TBar" [76, 80), i=19, next=20
+              KindTypeReference [88, 93), i=20, next=0
+                KindIdentifier "IBar" [88, 93), i=21, next=0
+          NodeList [95, 158), i=22, next=47
+            KindParameter [95, 104), i=23, next=27
+              KindIdentifier "bar" [95, 98), i=24, next=25
+              KindTypeReference [99, 104), i=25, next=0
+                KindIdentifier "TBar" [99, 104), i=26, next=0
+            KindParameter [105, 131), i=27, next=37
+              KindIdentifier "bar1" [105, 110), i=28, next=29
+              KindFunctionType [111, 131), i=29, next=0
+                NodeList [113, 122), i=30, next=35
+                  KindParameter [113, 122), i=31, next=0
+                    KindIdentifier "bar" [113, 116), i=32, next=33
+                    KindTypeReference [117, 122), i=33, next=0
+                      KindIdentifier "TBar" [117, 122), i=34, next=0
+                KindTypeReference [126, 131), i=35, next=0
+                  KindIdentifier "TBar" [126, 131), i=36, next=0
+            KindParameter [132, 158), i=37, next=0
+              KindIdentifier "bar2" [132, 137), i=38, next=39
+              KindFunctionType [138, 158), i=39, next=0
+                NodeList [140, 149), i=40, next=45
+                  KindParameter [140, 149), i=41, next=0
+                    KindIdentifier "bar" [140, 143), i=42, next=43
+                    KindTypeReference [144, 149), i=43, next=0
+                      KindIdentifier "TBar" [144, 149), i=44, next=0
+                KindTypeReference [153, 158), i=45, next=0
+                  KindIdentifier "TBar" [153, 158), i=46, next=0
+          KindTypeReference [160, 165), i=47, next=0
+            KindIdentifier "TBar" [160, 165), i=48, next=0
+    KindVariableStatement [169, 187), i=49, next=56
+      KindVariableDeclarationList [169, 186), i=50, next=0
+        NodeList [176, 186), i=51, next=0
+          KindVariableDeclaration [176, 186), i=52, next=0
+            KindIdentifier "foo" [176, 180), i=53, next=54
+            KindTypeReference [181, 186), i=54, next=0
+              KindIdentifier "IFoo" [181, 186), i=55, next=0
+    KindExpressionStatement [187, 238), i=56, next=0
+      KindCallExpression [187, 237), i=57, next=0
+        KindPropertyAccessExpression [187, 196), i=58, next=61
+          KindIdentifier "foo" [187, 192), i=59, next=60
+          KindIdentifier "foo" [193, 196), i=60, next=0
+        NodeList [197, 236), i=61, next=0
+          KindObjectLiteralExpression [197, 210), i=62, next=67
+            NodeList [198, 208), i=63, next=0
+              KindPropertyAssignment [198, 208), i=64, next=0
+                KindIdentifier "bar" [198, 202), i=65, next=66
+                KindNullKeyword [203, 208), i=66, next=0
+          KindArrowFunction [211, 223), i=67, next=73
+            NodeList [211, 215), i=68, next=71
+              KindParameter [211, 215), i=69, next=0
+                KindIdentifier "bar" [211, 215), i=70, next=0
+            KindEqualsGreaterThanToken [215, 218), i=71, next=72
+            KindNullKeyword [218, 223), i=72, next=0
+          KindArrowFunction [224, 236), i=73, next=0
+            NodeList [224, 228), i=74, next=77
+              KindParameter [224, 228), i=75, next=0
+                KindIdentifier "bar" [224, 228), i=76, next=0
+            KindEqualsGreaterThanToken [228, 231), i=77, next=78
+            KindNullKeyword [231, 236), i=78, next=0

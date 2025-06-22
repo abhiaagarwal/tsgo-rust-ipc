@@ -1,0 +1,36 @@
+KindSourceFile [0, 173), i=1, next=0
+  NodeList [0, 171), i=2, next=0
+    KindImportEqualsDeclaration [0, 34), i=3, next=7
+      KindIdentifier "foo0" [6, 11), i=4, next=5
+      KindExternalModuleReference [13, 33), i=5, next=0
+        KindStringLiteral "../foo_0" [22, 32), i=6, next=0
+    KindImportEqualsDeclaration [34, 74), i=7, next=11
+      KindIdentifier "foo1" [42, 47), i=8, next=9
+      KindExternalModuleReference [49, 73), i=9, next=0
+        KindStringLiteral "./test/foo_1" [58, 72), i=10, next=0
+    KindImportEqualsDeclaration [74, 119), i=11, next=15
+      KindIdentifier "foo2" [82, 87), i=12, next=13
+      KindExternalModuleReference [89, 118), i=13, next=0
+        KindStringLiteral "./.././test/foo_2" [98, 117), i=14, next=0
+    KindIfStatement [119, 171), i=15, next=0
+      KindPropertyAccessExpression [126, 135), i=16, next=21
+        KindPropertyAccessExpression [126, 133), i=17, next=20
+          KindIdentifier "foo2" [126, 130), i=18, next=19
+          KindIdentifier "M2" [131, 133), i=19, next=0
+        KindIdentifier "x" [134, 135), i=20, next=0
+      KindBlock [136, 171), i=21, next=0
+        NodeList [137, 168), i=22, next=0
+          KindVariableStatement [137, 168), i=23, next=0
+            KindVariableDeclarationList [137, 167), i=24, next=0
+              NodeList [143, 167), i=25, next=0
+                KindVariableDeclaration [143, 167), i=26, next=0
+                  KindIdentifier "x" [143, 145), i=27, next=28
+                  KindBinaryExpression [147, 167), i=28, next=0
+                    KindPropertyAccessExpression [147, 156), i=29, next=32
+                      KindIdentifier "foo0" [147, 152), i=30, next=31
+                      KindIdentifier "foo" [153, 156), i=31, next=0
+                    KindPlusToken [156, 158), i=32, next=33
+                    KindCallExpression [158, 167), i=33, next=0
+                      KindPropertyAccessExpression [158, 165), i=34, next=0
+                        KindIdentifier "foo1" [158, 163), i=35, next=36
+                        KindIdentifier "f" [164, 165), i=36, next=0

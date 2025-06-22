@@ -1,0 +1,327 @@
+KindSourceFile [0, 1597), i=1, next=0
+  NodeList [0, 1586), i=2, next=0
+    KindVariableStatement [0, 22), i=3, next=11
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindVariableDeclarationList [7, 21), i=6, next=0
+        NodeList [11, 21), i=7, next=0
+          KindVariableDeclaration [11, 21), i=8, next=0
+            KindIdentifier "cond" [11, 16), i=9, next=10
+            KindAnyKeyword [17, 21), i=10, next=0
+    KindVariableStatement [22, 135), i=11, next=26
+      KindVariableDeclarationList [22, 134), i=12, next=0
+        NodeList [80, 134), i=13, next=0
+          KindVariableDeclaration [80, 134), i=14, next=0
+            KindIdentifier "test1" [80, 86), i=15, next=16
+            KindBinaryExpression [88, 134), i=16, next=0
+              KindParenthesizedExpression [88, 112), i=17, next=24
+                KindConditionalExpression [90, 111), i=18, next=0
+                  KindIdentifier "cond" [90, 94), i=19, next=20
+                  KindQuestionToken [94, 96), i=20, next=21
+                  KindIdentifier "undefined" [96, 106), i=21, next=22
+                  KindColonToken [106, 108), i=22, next=23
+                  KindNumericLiteral [108, 111), i=23, next=0
+              KindQuestionQuestionToken [112, 115), i=24, next=25
+              KindStringLiteral "possibly reached" [115, 134), i=25, next=0
+    KindVariableStatement [135, 233), i=26, next=41
+      KindVariableDeclarationList [135, 232), i=27, next=0
+        NodeList [178, 232), i=28, next=0
+          KindVariableDeclaration [178, 232), i=29, next=0
+            KindIdentifier "test2" [178, 184), i=30, next=31
+            KindBinaryExpression [186, 232), i=31, next=0
+              KindParenthesizedExpression [186, 212), i=32, next=39
+                KindConditionalExpression [188, 211), i=33, next=0
+                  KindIdentifier "cond" [188, 192), i=34, next=35
+                  KindQuestionToken [192, 194), i=35, next=36
+                  KindIdentifier "undefined" [194, 204), i=36, next=37
+                  KindColonToken [204, 206), i=37, next=38
+                  KindNullKeyword [206, 211), i=38, next=0
+              KindQuestionQuestionToken [212, 215), i=39, next=40
+              KindStringLiteral "always reached" [215, 232), i=40, next=0
+    KindVariableStatement [233, 324), i=41, next=56
+      KindVariableDeclarationList [233, 323), i=42, next=0
+        NodeList [280, 323), i=43, next=0
+          KindVariableDeclaration [280, 323), i=44, next=0
+            KindIdentifier "test3" [280, 286), i=45, next=46
+            KindBinaryExpression [288, 323), i=46, next=0
+              KindParenthesizedExpression [288, 306), i=47, next=54
+                KindConditionalExpression [290, 305), i=48, next=0
+                  KindIdentifier "cond" [290, 294), i=49, next=50
+                  KindQuestionToken [294, 296), i=50, next=51
+                  KindNumericLiteral [296, 300), i=51, next=52
+                  KindColonToken [300, 302), i=52, next=53
+                  KindNumericLiteral [302, 305), i=53, next=0
+              KindQuestionQuestionToken [306, 309), i=54, next=55
+              KindStringLiteral "unreachable" [309, 323), i=55, next=0
+    KindVariableStatement [324, 387), i=56, next=73
+      KindVariableDeclarationList [324, 386), i=57, next=0
+        NodeList [344, 386), i=58, next=0
+          KindVariableDeclaration [344, 386), i=59, next=0
+            KindIdentifier "test4" [344, 350), i=60, next=61
+            KindBinaryExpression [352, 386), i=61, next=0
+              KindParenthesizedExpression [352, 380), i=62, next=71
+                KindConditionalExpression [354, 379), i=63, next=0
+                  KindIdentifier "cond" [354, 358), i=64, next=65
+                  KindQuestionToken [358, 360), i=65, next=66
+                  KindParenthesizedExpression [360, 372), i=66, next=68
+                    KindIdentifier "undefined" [362, 371), i=67, next=0
+                  KindColonToken [372, 374), i=68, next=69
+                  KindParenthesizedExpression [374, 379), i=69, next=0
+                    KindNumericLiteral [376, 378), i=70, next=0
+              KindQuestionQuestionToken [380, 383), i=71, next=72
+              KindNumericLiteral [383, 386), i=72, next=0
+    KindIfStatement [387, 441), i=73, next=78
+      KindPrefixUnaryExpression [427, 433), i=74, next=77
+        KindPrefixUnaryExpression [428, 433), i=75, next=0
+          KindTrueKeyword [429, 433), i=76, next=0
+      KindBlock [434, 441), i=77, next=0
+    KindWhileStatement [441, 491), i=78, next=81
+      KindNumericLiteral [485, 486), i=79, next=80
+      KindBlock [487, 491), i=80, next=0
+    KindWhileStatement [491, 506), i=81, next=84
+      KindNumericLiteral [500, 501), i=82, next=83
+      KindBlock [502, 506), i=83, next=0
+    KindWhileStatement [506, 524), i=84, next=87
+      KindTrueKeyword [515, 519), i=85, next=86
+      KindBlock [520, 524), i=86, next=0
+    KindWhileStatement [524, 543), i=87, next=90
+      KindFalseKeyword [533, 538), i=88, next=89
+      KindBlock [539, 543), i=89, next=0
+    KindVariableStatement [543, 569), i=90, next=99
+      KindVariableDeclarationList [543, 568), i=91, next=0
+        NodeList [552, 568), i=92, next=0
+          KindVariableDeclaration [552, 568), i=93, next=0
+            KindIdentifier "p5" [552, 555), i=94, next=95
+            KindBinaryExpression [557, 568), i=95, next=0
+              KindObjectLiteralExpression [557, 560), i=96, next=97
+              KindQuestionQuestionToken [560, 563), i=97, next=98
+              KindNullKeyword [563, 568), i=98, next=0
+    KindVariableStatement [569, 596), i=99, next=111
+      KindVariableDeclarationList [569, 595), i=100, next=0
+        NodeList [576, 595), i=101, next=0
+          KindVariableDeclaration [576, 595), i=102, next=0
+            KindIdentifier "p6" [576, 579), i=103, next=104
+            KindBinaryExpression [581, 595), i=104, next=0
+              KindBinaryExpression [581, 587), i=105, next=109
+                KindNumericLiteral [581, 583), i=106, next=107
+                KindGreaterThanToken [583, 585), i=107, next=108
+                KindNumericLiteral [585, 587), i=108, next=0
+              KindQuestionQuestionToken [587, 590), i=109, next=110
+              KindNullKeyword [590, 595), i=110, next=0
+    KindVariableStatement [596, 622), i=111, next=120
+      KindVariableDeclarationList [596, 621), i=112, next=0
+        NodeList [603, 621), i=113, next=0
+          KindVariableDeclaration [603, 621), i=114, next=0
+            KindIdentifier "p7" [603, 606), i=115, next=116
+            KindBinaryExpression [608, 621), i=116, next=0
+              KindNullKeyword [608, 613), i=117, next=118
+              KindQuestionQuestionToken [613, 616), i=118, next=119
+              KindNullKeyword [616, 621), i=119, next=0
+    KindVariableStatement [622, 659), i=120, next=131
+      KindVariableDeclarationList [622, 658), i=121, next=0
+        NodeList [629, 658), i=122, next=0
+          KindVariableDeclaration [629, 658), i=123, next=0
+            KindIdentifier "p8" [629, 632), i=124, next=125
+            KindBinaryExpression [634, 658), i=125, next=0
+              KindParenthesizedExpression [634, 650), i=126, next=129
+                KindClassExpression [636, 649), i=127, next=0
+                  KindIdentifier "foo" [641, 645), i=128, next=0
+              KindAmpersandAmpersandToken [650, 653), i=129, next=130
+              KindNullKeyword [653, 658), i=130, next=0
+    KindVariableStatement [659, 696), i=131, next=142
+      KindVariableDeclarationList [659, 695), i=132, next=0
+        NodeList [666, 695), i=133, next=0
+          KindVariableDeclaration [666, 695), i=134, next=0
+            KindIdentifier "p9" [666, 669), i=135, next=136
+            KindBinaryExpression [671, 695), i=136, next=0
+              KindParenthesizedExpression [671, 687), i=137, next=140
+                KindClassExpression [673, 686), i=138, next=0
+                  KindIdentifier "foo" [678, 682), i=139, next=0
+              KindBarBarToken [687, 690), i=140, next=141
+              KindNullKeyword [690, 695), i=141, next=0
+    KindWhileStatement [696, 748), i=142, next=147
+      KindAsExpression [734, 743), i=143, next=146
+        KindObjectLiteralExpression [734, 736), i=144, next=145
+        KindAnyKeyword [739, 743), i=145, next=0
+      KindBlock [744, 748), i=146, next=0
+    KindWhileStatement [748, 782), i=147, next=152
+      KindSatisfiesExpression [757, 777), i=148, next=151
+        KindObjectLiteralExpression [757, 759), i=149, next=150
+        KindUnknownKeyword [769, 777), i=150, next=0
+      KindBlock [778, 782), i=151, next=0
+    KindWhileStatement [782, 807), i=152, next=159
+      KindParenthesizedExpression [791, 802), i=153, next=158
+        KindTypeAssertionExpression [792, 801), i=154, next=0
+          KindAnyKeyword [793, 796), i=155, next=156
+          KindParenthesizedExpression [797, 801), i=156, next=0
+            KindObjectLiteralExpression [798, 800), i=157, next=0
+      KindBlock [803, 807), i=158, next=0
+    KindWhileStatement [807, 827), i=159, next=164
+      KindParenthesizedExpression [816, 822), i=160, next=163
+        KindParenthesizedExpression [817, 821), i=161, next=0
+          KindObjectLiteralExpression [818, 820), i=162, next=0
+      KindBlock [823, 827), i=163, next=0
+    KindExpressionStatement [827, 893), i=164, next=181
+      KindCallExpression [827, 892), i=165, next=0
+        KindPropertyAccessExpression [827, 859), i=166, next=169
+          KindIdentifier "console" [827, 855), i=167, next=168
+          KindIdentifier "log" [856, 859), i=168, next=0
+        NodeList [860, 891), i=169, next=0
+          KindBinaryExpression [860, 891), i=170, next=0
+            KindParenthesizedExpression [860, 879), i=171, next=176
+              KindBinaryExpression [861, 878), i=172, next=0
+                KindIdentifier "cond" [861, 865), i=173, next=174
+                KindBarBarToken [865, 868), i=174, next=175
+                KindIdentifier "undefined" [868, 878), i=175, next=0
+            KindAmpersandAmpersandToken [879, 882), i=176, next=177
+            KindBinaryExpression [882, 891), i=177, next=0
+              KindNumericLiteral [882, 884), i=178, next=179
+              KindSlashToken [884, 886), i=179, next=180
+              KindIdentifier "cond" [886, 891), i=180, next=0
+    KindFunctionDeclaration [893, 984), i=181, next=198
+      KindIdentifier "foo" [905, 909), i=182, next=183
+      NodeList [910, 934), i=183, next=191
+        KindParameter [910, 934), i=184, next=0
+          KindIdentifier "this" [910, 914), i=185, next=186
+          KindUnionType [915, 934), i=186, next=0
+            NodeList [915, 934), i=187, next=0
+              KindTypeReference [915, 922), i=188, next=190
+                KindIdentifier "Object" [915, 922), i=189, next=0
+              KindUndefinedKeyword [924, 934), i=190, next=0
+      KindBlock [935, 984), i=191, next=0
+        NodeList [937, 981), i=192, next=0
+          KindReturnStatement [937, 981), i=193, next=0
+            KindBinaryExpression [970, 980), i=194, next=0
+              KindThisKeyword [970, 975), i=195, next=196
+              KindQuestionQuestionToken [975, 978), i=196, next=197
+              KindNumericLiteral [978, 980), i=197, next=0
+    KindBlock [984, 1228), i=198, next=6
+      NodeList [1046, 1216), i=199, next=0
+        KindVariableStatement [1046, 1084), i=200, next=213
+          KindVariableDeclarationList [1046, 1083), i=201, next=0
+            NodeList [1055, 1083), i=202, next=0
+              KindVariableDeclaration [1055, 1083), i=203, next=0
+                KindIdentifier "maybe" [1055, 1061), i=204, next=205
+                KindAsExpression [1063, 1083), i=205, next=0
+                  KindNullKeyword [1063, 1068), i=206, next=207
+                  KindUnionType [1071, 1083), i=207, next=0
+                    NodeList [1071, 1083), i=208, next=0
+                      KindLiteralType [1071, 1076), i=209, next=211
+                        KindTrueKeyword [1071, 1076), i=210, next=0
+                      KindLiteralType [1078, 1083), i=211, next=0
+                        KindNullKeyword [1078, 1083), i=212, next=0
+        KindVariableStatement [1084, 1098), i=213, next=219
+          KindVariableDeclarationList [1084, 1097), i=214, next=0
+            NodeList [1091, 1097), i=215, next=0
+              KindVariableDeclaration [1091, 1097), i=216, next=0
+                KindIdentifier "i" [1091, 1093), i=217, next=218
+                KindNumericLiteral [1095, 1097), i=218, next=0
+        KindVariableStatement [1098, 1133), i=219, next=233
+          KindVariableDeclarationList [1098, 1132), i=220, next=0
+            NodeList [1107, 1132), i=221, next=0
+              KindVariableDeclaration [1107, 1132), i=222, next=0
+                KindIdentifier "d" [1107, 1109), i=223, next=224
+                KindBinaryExpression [1111, 1132), i=224, next=0
+                  KindParenthesizedExpression [1111, 1124), i=225, next=231
+                    KindBinaryExpression [1113, 1123), i=226, next=0
+                      KindPostfixUnaryExpression [1113, 1116), i=227, next=229
+                        KindIdentifier "i" [1113, 1114), i=228, next=0
+                      KindCommaToken [1116, 1117), i=229, next=230
+                      KindIdentifier "maybe" [1117, 1123), i=230, next=0
+                  KindQuestionQuestionToken [1124, 1127), i=231, next=232
+                  KindTrueKeyword [1127, 1132), i=232, next=0
+        KindVariableStatement [1133, 1172), i=233, next=248
+          KindVariableDeclarationList [1133, 1171), i=234, next=0
+            NodeList [1148, 1171), i=235, next=0
+              KindVariableDeclaration [1148, 1171), i=236, next=0
+                KindIdentifier "e" [1148, 1150), i=237, next=238
+                KindBinaryExpression [1152, 1171), i=238, next=0
+                  KindParenthesizedExpression [1152, 1163), i=239, next=246
+                    KindBinaryExpression [1154, 1162), i=240, next=0
+                      KindPostfixUnaryExpression [1154, 1157), i=241, next=243
+                        KindIdentifier "i" [1154, 1155), i=242, next=0
+                      KindCommaToken [1157, 1158), i=243, next=244
+                      KindPostfixUnaryExpression [1158, 1162), i=244, next=0
+                        KindIdentifier "i" [1158, 1160), i=245, next=0
+                  KindQuestionQuestionToken [1163, 1166), i=246, next=247
+                  KindTrueKeyword [1166, 1171), i=247, next=0
+        KindVariableStatement [1172, 1216), i=248, next=0
+          KindVariableDeclarationList [1172, 1215), i=249, next=0
+            NodeList [1190, 1215), i=250, next=0
+              KindVariableDeclaration [1190, 1215), i=251, next=0
+                KindIdentifier "f" [1190, 1192), i=252, next=253
+                KindBinaryExpression [1194, 1215), i=253, next=0
+                  KindParenthesizedExpression [1194, 1207), i=254, next=4
+                    KindBinaryExpression [1196, 1206), i=255, next=0
+                      KindIdentifier "maybe" [1196, 1201), i=256, next=1
+                      KindCommaToken [1201, 1202), i=257, next=2
+                      KindPostfixUnaryExpression [1202, 1206), i=258, next=0
+                        KindIdentifier "i" [1202, 1204), i=259, next=0
+                  KindQuestionQuestionToken [1207, 1210), i=260, next=5
+                  KindTrueKeyword [1210, 1215), i=261, next=0
+    KindClassDeclaration [1228, 1358), i=262, next=22
+      KindIdentifier "X" [1294, 1296), i=263, next=8
+      NodeList [1298, 1355), i=264, next=0
+        KindConstructor [1298, 1355), i=265, next=0
+          KindBlock [1315, 1355), i=266, next=0
+            NodeList [1317, 1350), i=267, next=0
+              KindVariableStatement [1317, 1350), i=268, next=0
+                KindVariableDeclarationList [1317, 1349), i=269, next=0
+                  NodeList [1328, 1349), i=270, next=0
+                    KindVariableDeclaration [1328, 1349), i=271, next=0
+                      KindIdentifier "p" [1328, 1330), i=272, next=17
+                      KindBinaryExpression [1332, 1349), i=273, next=0
+                        KindMetaProperty [1332, 1343), i=274, next=20
+                          KindIdentifier "target" [1337, 1343), i=275, next=0
+                        KindQuestionQuestionToken [1343, 1346), i=276, next=21
+                        KindNumericLiteral [1346, 1349), i=277, next=0
+    KindFunctionDeclaration [1358, 1514), i=278, next=45
+      NodeList [1358, 1426), i=279, next=25
+        KindDeclareKeyword [1358, 1426), i=280, next=0
+      KindIdentifier "tag" [1435, 1439), i=281, next=26
+      NodeList [1440, 1441), i=282, next=29
+        KindTypeParameter [1440, 1441), i=283, next=0
+          KindIdentifier "T" [1440, 1441), i=284, next=0
+      NodeList [1443, 1500), i=285, next=39
+        KindParameter [1443, 1476), i=286, next=34
+          KindIdentifier "strings" [1443, 1454), i=287, next=32
+          KindTypeReference [1455, 1476), i=288, next=0
+            KindIdentifier "TemplateStringsArray" [1455, 1476), i=289, next=0
+        KindParameter [1477, 1500), i=290, next=0
+          KindDotDotDotToken [1477, 1484), i=291, next=36
+          KindIdentifier "values" [1484, 1490), i=292, next=37
+          KindArrayType [1491, 1500), i=293, next=0
+            KindNumberKeyword [1491, 1498), i=294, next=0
+      KindUnionType [1504, 1513), i=295, next=0
+        NodeList [1504, 1513), i=296, next=0
+          KindTypeReference [1504, 1506), i=297, next=43
+            KindIdentifier "T" [1504, 1506), i=298, next=0
+          KindLiteralType [1508, 1513), i=299, next=0
+            KindNullKeyword [1508, 1513), i=300, next=0
+    KindExpressionStatement [1514, 1537), i=301, next=57
+      KindBinaryExpression [1514, 1536), i=302, next=0
+        KindTaggedTemplateExpression [1514, 1530), i=303, next=55
+          KindIdentifier "tag" [1514, 1521), i=304, next=49
+          KindTemplateExpression [1521, 1530), i=305, next=0
+            KindTemplateHead [1521, 1527), i=306, next=51
+            NodeList [1527, 1530), i=307, next=0
+              KindTemplateSpan [1527, 1530), i=308, next=0
+                KindNumericLiteral [1527, 1528), i=309, next=54
+                KindTemplateTail [1528, 1530), i=310, next=0
+        KindQuestionQuestionToken [1530, 1533), i=311, next=56
+        KindNumericLiteral [1533, 1536), i=312, next=0
+    KindExpressionStatement [1537, 1563), i=313, next=67
+      KindBinaryExpression [1537, 1562), i=314, next=0
+        KindTemplateExpression [1537, 1556), i=315, next=65
+          KindTemplateHead [1537, 1553), i=316, next=61
+          NodeList [1553, 1556), i=317, next=0
+            KindTemplateSpan [1553, 1556), i=318, next=0
+              KindNumericLiteral [1553, 1554), i=319, next=64
+              KindTemplateTail [1554, 1556), i=320, next=0
+        KindQuestionQuestionToken [1556, 1559), i=321, next=66
+        KindNumericLiteral [1559, 1562), i=322, next=0
+    KindExpressionStatement [1563, 1586), i=323, next=0
+      KindBinaryExpression [1563, 1585), i=324, next=0
+        KindNoSubstitutionTemplateLiteral [1563, 1579), i=325, next=70
+        KindQuestionQuestionToken [1579, 1582), i=326, next=71
+        KindNumericLiteral [1582, 1585), i=327, next=0

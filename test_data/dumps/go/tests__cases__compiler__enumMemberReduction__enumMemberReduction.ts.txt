@@ -1,0 +1,153 @@
+KindSourceFile [0, 712), i=1, next=0
+  NodeList [0, 711), i=2, next=0
+    KindEnumDeclaration [0, 30), i=3, next=12
+      KindIdentifier "MyEnum" [4, 11), i=4, next=5
+      NodeList [13, 28), i=5, next=0
+        KindEnumMember [13, 17), i=6, next=8
+          KindIdentifier "A" [13, 17), i=7, next=0
+        KindEnumMember [18, 22), i=8, next=10
+          KindIdentifier "B" [18, 22), i=9, next=0
+        KindEnumMember [23, 27), i=10, next=0
+          KindIdentifier "C" [23, 27), i=11, next=0
+    KindEnumDeclaration [30, 86), i=12, next=24
+      KindIdentifier "MyStringEnum" [36, 49), i=13, next=14
+      NodeList [51, 84), i=14, next=0
+        KindEnumMember [51, 61), i=15, next=18
+          KindIdentifier "A" [51, 55), i=16, next=17
+          KindStringLiteral "a" [57, 61), i=17, next=0
+        KindEnumMember [62, 72), i=18, next=21
+          KindIdentifier "B" [62, 66), i=19, next=20
+          KindStringLiteral "b" [68, 72), i=20, next=0
+        KindEnumMember [73, 83), i=21, next=0
+          KindIdentifier "C" [73, 77), i=22, next=23
+          KindStringLiteral "c" [79, 83), i=23, next=0
+    KindEnumDeclaration [86, 150), i=24, next=36
+      KindIdentifier "MyStringEnumWithEmpty" [92, 114), i=25, next=26
+      NodeList [116, 148), i=26, next=0
+        KindEnumMember [116, 125), i=27, next=30
+          KindIdentifier "A" [116, 120), i=28, next=29
+          KindStringLiteral "" [122, 125), i=29, next=0
+        KindEnumMember [126, 136), i=30, next=33
+          KindIdentifier "B" [126, 130), i=31, next=32
+          KindStringLiteral "b" [132, 136), i=32, next=0
+        KindEnumMember [137, 147), i=33, next=0
+          KindIdentifier "C" [137, 141), i=34, next=35
+          KindStringLiteral "c" [143, 147), i=35, next=0
+    KindFunctionDeclaration [150, 243), i=36, next=57
+      NodeList [150, 158), i=37, next=39
+        KindExportKeyword [150, 158), i=38, next=0
+      KindIdentifier "fn" [167, 170), i=39, next=40
+      NodeList [171, 203), i=40, next=48
+        KindParameter [171, 203), i=41, next=0
+          KindIdentifier "optionalEnum" [171, 183), i=42, next=43
+          KindUnionType [184, 203), i=43, next=0
+            NodeList [184, 203), i=44, next=0
+              KindTypeReference [184, 191), i=45, next=47
+                KindIdentifier "MyEnum" [184, 191), i=46, next=0
+              KindUndefinedKeyword [193, 203), i=47, next=0
+      KindBlock [204, 243), i=48, next=0
+        NodeList [206, 241), i=49, next=0
+          KindReturnStatement [206, 241), i=50, next=0
+            KindBinaryExpression [215, 240), i=51, next=0
+              KindIdentifier "optionalEnum" [215, 228), i=52, next=53
+              KindQuestionQuestionToken [228, 231), i=53, next=54
+              KindPropertyAccessExpression [231, 240), i=54, next=0
+                KindIdentifier "MyEnum" [231, 238), i=55, next=56
+                KindIdentifier "A" [239, 240), i=56, next=0
+    KindFunctionDeclaration [243, 337), i=57, next=78
+      NodeList [243, 251), i=58, next=60
+        KindExportKeyword [243, 251), i=59, next=0
+      KindIdentifier "fn2" [260, 264), i=60, next=61
+      NodeList [265, 297), i=61, next=69
+        KindParameter [265, 297), i=62, next=0
+          KindIdentifier "optionalEnum" [265, 277), i=63, next=64
+          KindUnionType [278, 297), i=64, next=0
+            NodeList [278, 297), i=65, next=0
+              KindTypeReference [278, 285), i=66, next=68
+                KindIdentifier "MyEnum" [278, 285), i=67, next=0
+              KindUndefinedKeyword [287, 297), i=68, next=0
+      KindBlock [298, 337), i=69, next=0
+        NodeList [300, 335), i=70, next=0
+          KindReturnStatement [300, 335), i=71, next=0
+            KindBinaryExpression [309, 334), i=72, next=0
+              KindIdentifier "optionalEnum" [309, 322), i=73, next=74
+              KindBarBarToken [322, 325), i=74, next=75
+              KindPropertyAccessExpression [325, 334), i=75, next=0
+                KindIdentifier "MyEnum" [325, 332), i=76, next=77
+                KindIdentifier "B" [333, 334), i=77, next=0
+    KindFunctionDeclaration [337, 420), i=78, next=97
+      NodeList [337, 345), i=79, next=81
+        KindExportKeyword [337, 345), i=80, next=0
+      KindIdentifier "fn3" [354, 358), i=81, next=82
+      NodeList [359, 380), i=82, next=88
+        KindParameter [359, 380), i=83, next=0
+          KindIdentifier "optionalEnum" [359, 371), i=84, next=85
+          KindQuestionToken [371, 372), i=85, next=86
+          KindTypeReference [373, 380), i=86, next=0
+            KindIdentifier "MyEnum" [373, 380), i=87, next=0
+      KindBlock [381, 420), i=88, next=0
+        NodeList [383, 418), i=89, next=0
+          KindReturnStatement [383, 418), i=90, next=0
+            KindBinaryExpression [392, 417), i=91, next=0
+              KindIdentifier "optionalEnum" [392, 405), i=92, next=93
+              KindQuestionQuestionToken [405, 408), i=93, next=94
+              KindPropertyAccessExpression [408, 417), i=94, next=0
+                KindIdentifier "MyEnum" [408, 415), i=95, next=96
+                KindIdentifier "A" [416, 417), i=96, next=0
+    KindFunctionDeclaration [420, 503), i=97, next=116
+      NodeList [420, 428), i=98, next=100
+        KindExportKeyword [420, 428), i=99, next=0
+      KindIdentifier "fn4" [437, 441), i=100, next=101
+      NodeList [442, 463), i=101, next=107
+        KindParameter [442, 463), i=102, next=0
+          KindIdentifier "optionalEnum" [442, 454), i=103, next=104
+          KindQuestionToken [454, 455), i=104, next=105
+          KindTypeReference [456, 463), i=105, next=0
+            KindIdentifier "MyEnum" [456, 463), i=106, next=0
+      KindBlock [464, 503), i=107, next=0
+        NodeList [466, 501), i=108, next=0
+          KindReturnStatement [466, 501), i=109, next=0
+            KindBinaryExpression [475, 500), i=110, next=0
+              KindIdentifier "optionalEnum" [475, 488), i=111, next=112
+              KindBarBarToken [488, 491), i=112, next=113
+              KindPropertyAccessExpression [491, 500), i=113, next=0
+                KindIdentifier "MyEnum" [491, 498), i=114, next=115
+                KindIdentifier "B" [499, 500), i=115, next=0
+    KindFunctionDeclaration [503, 598), i=116, next=135
+      NodeList [503, 511), i=117, next=119
+        KindExportKeyword [503, 511), i=118, next=0
+      KindIdentifier "fn5" [520, 524), i=119, next=120
+      NodeList [525, 552), i=120, next=126
+        KindParameter [525, 552), i=121, next=0
+          KindIdentifier "optionalEnum" [525, 537), i=122, next=123
+          KindQuestionToken [537, 538), i=123, next=124
+          KindTypeReference [539, 552), i=124, next=0
+            KindIdentifier "MyStringEnum" [539, 552), i=125, next=0
+      KindBlock [553, 598), i=126, next=0
+        NodeList [555, 596), i=127, next=0
+          KindReturnStatement [555, 596), i=128, next=0
+            KindBinaryExpression [564, 595), i=129, next=0
+              KindIdentifier "optionalEnum" [564, 577), i=130, next=131
+              KindBarBarToken [577, 580), i=131, next=132
+              KindPropertyAccessExpression [580, 595), i=132, next=0
+                KindIdentifier "MyStringEnum" [580, 593), i=133, next=134
+                KindIdentifier "B" [594, 595), i=134, next=0
+    KindFunctionDeclaration [598, 711), i=135, next=0
+      NodeList [598, 606), i=136, next=138
+        KindExportKeyword [598, 606), i=137, next=0
+      KindIdentifier "fn6" [615, 619), i=138, next=139
+      NodeList [620, 656), i=139, next=145
+        KindParameter [620, 656), i=140, next=0
+          KindIdentifier "optionalEnum" [620, 632), i=141, next=142
+          KindQuestionToken [632, 633), i=142, next=143
+          KindTypeReference [634, 656), i=143, next=0
+            KindIdentifier "MyStringEnumWithEmpty" [634, 656), i=144, next=0
+      KindBlock [657, 711), i=145, next=0
+        NodeList [659, 709), i=146, next=0
+          KindReturnStatement [659, 709), i=147, next=0
+            KindBinaryExpression [668, 708), i=148, next=0
+              KindIdentifier "optionalEnum" [668, 681), i=149, next=150
+              KindBarBarToken [681, 684), i=150, next=151
+              KindPropertyAccessExpression [684, 708), i=151, next=0
+                KindIdentifier "MyStringEnumWithEmpty" [684, 706), i=152, next=153
+                KindIdentifier "B" [707, 708), i=153, next=0

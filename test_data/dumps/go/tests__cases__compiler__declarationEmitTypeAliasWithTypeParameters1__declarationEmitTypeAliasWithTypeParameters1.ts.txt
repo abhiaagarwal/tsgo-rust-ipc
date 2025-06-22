@@ -1,0 +1,48 @@
+KindSourceFile [0, 112), i=1, next=0
+  NodeList [0, 112), i=2, next=0
+    KindTypeAliasDeclaration [0, 37), i=3, next=19
+      NodeList [0, 6), i=4, next=6
+        KindExportKeyword [0, 6), i=5, next=0
+      KindIdentifier "Bar" [11, 15), i=6, next=7
+      NodeList [16, 20), i=7, next=12
+        KindTypeParameter [16, 17), i=8, next=10
+          KindIdentifier "X" [16, 17), i=9, next=0
+        KindTypeParameter [18, 20), i=10, next=0
+          KindIdentifier "Y" [18, 20), i=11, next=0
+      KindFunctionType [23, 36), i=12, next=0
+        KindTupleType [29, 36), i=13, next=0
+          NodeList [31, 35), i=14, next=0
+            KindTypeReference [31, 32), i=15, next=17
+              KindIdentifier "X" [31, 32), i=16, next=0
+            KindTypeReference [33, 35), i=17, next=0
+              KindIdentifier "Y" [33, 35), i=18, next=0
+    KindTypeAliasDeclaration [37, 72), i=19, next=32
+      NodeList [37, 45), i=20, next=22
+        KindExportKeyword [37, 45), i=21, next=0
+      KindIdentifier "Foo" [50, 54), i=22, next=23
+      NodeList [55, 56), i=23, next=26
+        KindTypeParameter [55, 56), i=24, next=0
+          KindIdentifier "Y" [55, 56), i=25, next=0
+      KindTypeReference [59, 71), i=26, next=0
+        KindIdentifier "Bar" [59, 63), i=27, next=28
+        NodeList [64, 70), i=28, next=0
+          KindAnyKeyword [64, 67), i=29, next=30
+          KindTypeReference [68, 70), i=30, next=0
+            KindIdentifier "Y" [68, 70), i=31, next=0
+    KindVariableStatement [72, 112), i=32, next=0
+      NodeList [72, 80), i=33, next=35
+        KindExportKeyword [72, 80), i=34, next=0
+      KindVariableDeclarationList [80, 112), i=35, next=0
+        NodeList [86, 112), i=36, next=0
+          KindVariableDeclaration [86, 112), i=37, next=0
+            KindIdentifier "y" [86, 88), i=38, next=39
+            KindArrowFunction [90, 112), i=39, next=0
+              NodeList [92, 106), i=40, next=47
+                KindParameter [92, 106), i=41, next=0
+                  KindIdentifier "x" [92, 93), i=42, next=43
+                  KindTypeReference [94, 106), i=43, next=0
+                    KindIdentifier "Foo" [94, 98), i=44, next=45
+                    NodeList [99, 105), i=45, next=0
+                      KindStringKeyword [99, 105), i=46, next=0
+              KindEqualsGreaterThanToken [107, 110), i=47, next=48
+              KindNumericLiteral [110, 112), i=48, next=0

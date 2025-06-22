@@ -1,0 +1,58 @@
+KindSourceFile [0, 193), i=1, next=0
+  NodeList [0, 192), i=2, next=0
+    KindTypeAliasDeclaration [0, 46), i=3, next=14
+      KindIdentifier "Foo" [4, 8), i=4, next=5
+      KindUnionType [10, 45), i=5, next=0
+        NodeList [10, 45), i=6, next=0
+          KindArrayType [10, 33), i=7, next=13
+            KindParenthesizedType [10, 31), i=8, next=0
+              KindUnionType [12, 30), i=9, next=0
+                NodeList [12, 30), i=10, next=0
+                  KindNumberKeyword [12, 18), i=11, next=12
+                  KindUndefinedKeyword [20, 30), i=12, next=0
+          KindUndefinedKeyword [35, 45), i=13, next=0
+    KindVariableStatement [46, 75), i=14, next=26
+      KindVariableDeclarationList [46, 74), i=15, next=0
+        NodeList [53, 74), i=16, next=0
+          KindVariableDeclaration [53, 74), i=17, next=0
+            KindIdentifier "foo" [53, 57), i=18, next=19
+            KindTypeReference [58, 62), i=19, next=21
+              KindIdentifier "Foo" [58, 62), i=20, next=0
+            KindArrayLiteralExpression [64, 74), i=21, next=0
+              NodeList [66, 73), i=22, next=0
+                KindNumericLiteral [66, 67), i=23, next=24
+                KindNumericLiteral [68, 70), i=24, next=25
+                KindNumericLiteral [71, 73), i=25, next=0
+    KindVariableStatement [75, 92), i=26, next=32
+      KindVariableDeclarationList [75, 91), i=27, next=0
+        NodeList [81, 91), i=28, next=0
+          KindVariableDeclaration [81, 91), i=29, next=0
+            KindIdentifier "index" [81, 87), i=30, next=31
+            KindNumericLiteral [89, 91), i=31, next=0
+    KindIfStatement [92, 192), i=32, next=0
+      KindBinaryExpression [98, 162), i=33, next=53
+        KindBinaryExpression [98, 143), i=34, next=46
+          KindBinaryExpression [98, 115), i=35, next=39
+            KindIdentifier "foo" [98, 101), i=36, next=37
+            KindExclamationEqualsEqualsToken [101, 105), i=37, next=38
+            KindIdentifier "undefined" [105, 115), i=38, next=0
+          KindAmpersandAmpersandToken [115, 118), i=39, next=40
+          KindBinaryExpression [118, 143), i=40, next=0
+            KindElementAccessExpression [118, 129), i=41, next=44
+              KindIdentifier "foo" [118, 122), i=42, next=43
+              KindIdentifier "index" [123, 128), i=43, next=0
+            KindExclamationEqualsEqualsToken [129, 133), i=44, next=45
+            KindIdentifier "undefined" [133, 143), i=45, next=0
+        KindAmpersandAmpersandToken [143, 146), i=46, next=47
+        KindBinaryExpression [146, 162), i=47, next=0
+          KindElementAccessExpression [146, 157), i=48, next=51
+            KindIdentifier "foo" [146, 150), i=49, next=50
+            KindIdentifier "index" [151, 156), i=50, next=0
+          KindGreaterThanEqualsToken [157, 160), i=51, next=52
+          KindNumericLiteral [160, 162), i=52, next=0
+      KindBlock [163, 192), i=53, next=0
+        NodeList [165, 180), i=54, next=0
+          KindExpressionStatement [165, 180), i=55, next=0
+            KindElementAccessExpression [165, 180), i=56, next=0
+              KindIdentifier "foo" [165, 173), i=57, next=58
+              KindIdentifier "index" [174, 179), i=58, next=0

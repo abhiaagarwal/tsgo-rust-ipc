@@ -1,0 +1,64 @@
+KindSourceFile [0, 273), i=1, next=0
+  NodeList [0, 271), i=2, next=0
+    KindModuleDeclaration [0, 42), i=3, next=13
+      NodeList [0, 6), i=4, next=6
+        KindExportKeyword [0, 6), i=5, next=0
+      KindIdentifier "Foo" [13, 17), i=6, next=7
+      KindModuleBlock [17, 42), i=7, next=0
+        NodeList [19, 39), i=8, next=0
+          KindClassDeclaration [19, 39), i=9, next=0
+            NodeList [19, 28), i=10, next=12
+              KindExportKeyword [19, 28), i=11, next=0
+            KindIdentifier "C" [34, 36), i=12, next=0
+    KindModuleDeclaration [42, 271), i=13, next=0
+      NodeList [42, 52), i=14, next=16
+        KindExportKeyword [42, 52), i=15, next=0
+      KindIdentifier "Foo" [59, 63), i=16, next=17
+      KindModuleBlock [63, 271), i=17, next=0
+        NodeList [65, 265), i=18, next=0
+          KindFunctionDeclaration [65, 143), i=19, next=35
+            KindIdentifier "Bar" [78, 82), i=20, next=21
+            KindTypeReference [86, 88), i=21, next=23
+              KindIdentifier "C" [86, 88), i=22, next=0
+            KindBlock [88, 143), i=23, next=0
+              NodeList [90, 139), i=24, next=0
+                KindIfStatement [90, 120), i=25, next=32
+                  KindTrueKeyword [98, 102), i=26, next=27
+                  KindBlock [103, 120), i=27, next=0
+                    NodeList [105, 119), i=28, next=0
+                      KindReturnStatement [105, 119), i=29, next=0
+                        KindCallExpression [112, 118), i=30, next=0
+                          KindIdentifier "Bar" [112, 116), i=31, next=0
+                KindReturnStatement [120, 139), i=32, next=0
+                  KindNewExpression [130, 138), i=33, next=0
+                    KindIdentifier "C" [134, 136), i=34, next=0
+          KindFunctionDeclaration [143, 207), i=35, next=51
+            KindIdentifier "Baz" [156, 160), i=36, next=37
+            KindTypeReference [164, 166), i=37, next=39
+              KindIdentifier "C" [164, 166), i=38, next=0
+            KindBlock [166, 207), i=39, next=0
+              NodeList [168, 203), i=40, next=0
+                KindVariableStatement [168, 186), i=41, next=48
+                  KindVariableDeclarationList [168, 185), i=42, next=0
+                    NodeList [175, 185), i=43, next=0
+                      KindVariableDeclaration [175, 185), i=44, next=0
+                        KindIdentifier "c" [175, 177), i=45, next=46
+                        KindCallExpression [179, 185), i=46, next=0
+                          KindIdentifier "Baz" [179, 183), i=47, next=0
+                KindReturnStatement [186, 203), i=48, next=0
+                  KindCallExpression [196, 202), i=49, next=0
+                    KindIdentifier "Bar" [196, 200), i=50, next=0
+          KindFunctionDeclaration [207, 265), i=51, next=0
+            KindIdentifier "Gar" [220, 224), i=52, next=53
+            KindBlock [226, 265), i=53, next=0
+              NodeList [228, 261), i=54, next=0
+                KindVariableStatement [228, 250), i=55, next=64
+                  KindVariableDeclarationList [228, 249), i=56, next=0
+                    NodeList [235, 249), i=57, next=0
+                      KindVariableDeclaration [235, 249), i=58, next=0
+                        KindIdentifier "c" [235, 237), i=59, next=60
+                        KindTypeReference [239, 241), i=60, next=62
+                          KindIdentifier "C" [239, 241), i=61, next=0
+                        KindCallExpression [243, 249), i=62, next=0
+                          KindIdentifier "Baz" [243, 247), i=63, next=0
+                KindReturnStatement [250, 261), i=64, next=0

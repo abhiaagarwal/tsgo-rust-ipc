@@ -1,0 +1,87 @@
+KindSourceFile [0, 431), i=1, next=0
+  NodeList [0, 338), i=2, next=0
+    KindInterfaceDeclaration [0, 32), i=3, next=13
+      KindIdentifier "Box" [9, 13), i=4, next=5
+      NodeList [14, 15), i=5, next=8
+        KindTypeParameter [14, 15), i=6, next=0
+          KindIdentifier "T" [14, 15), i=7, next=0
+      NodeList [18, 29), i=8, next=0
+        KindPropertySignature [18, 29), i=9, next=0
+          KindIdentifier "__" [18, 26), i=10, next=11
+          KindTypeReference [27, 29), i=11, next=0
+            KindIdentifier "T" [27, 29), i=12, next=0
+    KindTypeAliasDeclaration [32, 89), i=13, next=30
+      KindIdentifier "Recursive" [40, 50), i=14, next=15
+      NodeList [51, 52), i=15, next=18
+        KindTypeParameter [51, 52), i=16, next=0
+          KindIdentifier "T" [51, 52), i=17, next=0
+      KindUnionType [55, 89), i=18, next=0
+        NodeList [55, 89), i=19, next=0
+          KindTypeReference [62, 64), i=20, next=22
+            KindIdentifier "T" [62, 64), i=21, next=0
+          KindTypeReference [71, 89), i=22, next=0
+            KindIdentifier "Box" [71, 75), i=23, next=24
+            NodeList [76, 88), i=24, next=0
+              KindTypeReference [76, 88), i=25, next=0
+                KindIdentifier "Recursive" [76, 85), i=26, next=27
+                NodeList [86, 87), i=27, next=0
+                  KindTypeReference [86, 87), i=28, next=0
+                    KindIdentifier "T" [86, 87), i=29, next=0
+    KindTypeAliasDeclaration [89, 161), i=30, next=48
+      KindIdentifier "InferRecursive" [97, 112), i=31, next=32
+      NodeList [113, 114), i=32, next=35
+        KindTypeParameter [113, 114), i=33, next=0
+          KindIdentifier "T" [113, 114), i=34, next=0
+      KindConditionalType [117, 161), i=35, next=0
+        KindTypeReference [117, 119), i=36, next=38
+          KindIdentifier "T" [117, 119), i=37, next=0
+        KindTypeReference [127, 146), i=38, next=44
+          KindIdentifier "Recursive" [127, 137), i=39, next=40
+          NodeList [138, 145), i=40, next=0
+            KindInferType [138, 145), i=41, next=0
+              KindTypeParameter [143, 145), i=42, next=0
+                KindIdentifier "R" [143, 145), i=43, next=0
+        KindTypeReference [148, 150), i=44, next=46
+          KindIdentifier "R" [148, 150), i=45, next=0
+        KindLiteralType [152, 161), i=46, next=0
+          KindStringLiteral "never!" [152, 161), i=47, next=0
+    KindTypeAliasDeclaration [161, 243), i=48, next=63
+      KindIdentifier "t1" [202, 205), i=49, next=50
+      KindTypeReference [207, 243), i=50, next=0
+        KindIdentifier "Box" [207, 211), i=51, next=52
+        NodeList [212, 242), i=52, next=0
+          KindUnionType [212, 242), i=53, next=0
+            NodeList [212, 242), i=54, next=0
+              KindStringKeyword [212, 218), i=55, next=56
+              KindTypeReference [220, 242), i=56, next=0
+                KindIdentifier "Box" [220, 224), i=57, next=58
+                NodeList [225, 241), i=58, next=0
+                  KindUnionType [225, 241), i=59, next=0
+                    NodeList [225, 241), i=60, next=0
+                      KindNumberKeyword [225, 231), i=61, next=62
+                      KindBooleanKeyword [233, 241), i=62, next=0
+    KindTypeAliasDeclaration [243, 275), i=63, next=70
+      KindIdentifier "t2" [251, 254), i=64, next=65
+      KindTypeReference [256, 275), i=65, next=0
+        KindIdentifier "InferRecursive" [256, 271), i=66, next=67
+        NodeList [272, 274), i=67, next=0
+          KindTypeReference [272, 274), i=68, next=0
+            KindIdentifier "t1" [272, 274), i=69, next=0
+    KindTypeAliasDeclaration [275, 338), i=70, next=0
+      KindIdentifier "t3" [281, 284), i=71, next=72
+      KindTypeReference [286, 338), i=72, next=0
+        KindIdentifier "InferRecursive" [286, 301), i=73, next=74
+        NodeList [302, 337), i=74, next=0
+          KindTypeReference [302, 337), i=75, next=0
+            KindIdentifier "Box" [302, 305), i=76, next=77
+            NodeList [306, 336), i=77, next=0
+              KindUnionType [306, 336), i=78, next=0
+                NodeList [306, 336), i=79, next=0
+                  KindStringKeyword [306, 312), i=80, next=81
+                  KindTypeReference [314, 336), i=81, next=0
+                    KindIdentifier "Box" [314, 318), i=82, next=83
+                    NodeList [319, 335), i=83, next=0
+                      KindUnionType [319, 335), i=84, next=0
+                        NodeList [319, 335), i=85, next=0
+                          KindNumberKeyword [319, 325), i=86, next=87
+                          KindBooleanKeyword [327, 335), i=87, next=0

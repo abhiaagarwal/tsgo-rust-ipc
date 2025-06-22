@@ -1,0 +1,28 @@
+KindSourceFile [0, 132), i=1, next=0
+  NodeList [0, 132), i=2, next=0
+    KindFunctionDeclaration [0, 132), i=3, next=0
+      KindIdentifier "recursive" [8, 18), i=4, next=5
+      NodeList [19, 45), i=5, next=12
+        KindParameter [19, 30), i=6, next=9
+          KindIdentifier "arg" [19, 22), i=7, next=8
+          KindStringKeyword [23, 30), i=8, next=0
+        KindParameter [31, 45), i=9, next=0
+          KindIdentifier "other" [31, 37), i=10, next=11
+          KindStringKeyword [38, 45), i=11, next=0
+      KindBlock [46, 132), i=12, next=0
+        NodeList [48, 129), i=13, next=0
+          KindVariableStatement [48, 87), i=14, next=23
+            KindVariableDeclarationList [48, 86), i=15, next=0
+              NodeList [59, 86), i=16, next=0
+                KindVariableDeclaration [59, 86), i=17, next=0
+                  KindIdentifier "someLocalVar" [59, 72), i=18, next=19
+                  KindBinaryExpression [74, 86), i=19, next=0
+                    KindIdentifier "arg" [74, 78), i=20, next=21
+                    KindPlusToken [78, 80), i=21, next=22
+                    KindIdentifier "other" [80, 86), i=22, next=0
+          KindReturnStatement [87, 129), i=23, next=0
+            KindCallExpression [99, 128), i=24, next=0
+              KindIdentifier "recursive" [99, 109), i=25, next=26
+              NodeList [110, 127), i=26, next=0
+                KindIdentifier "someLocalVar" [110, 122), i=27, next=28
+                KindIdentifier "arg" [123, 127), i=28, next=0

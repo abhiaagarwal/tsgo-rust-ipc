@@ -1,0 +1,127 @@
+KindSourceFile [0, 613), i=1, next=0
+  NodeList [0, 613), i=2, next=0
+    KindImportEqualsDeclaration [0, 26), i=3, next=7
+      KindIdentifier "fs" [6, 9), i=4, next=5
+      KindExternalModuleReference [11, 25), i=5, next=0
+        KindStringLiteral "fs" [20, 24), i=6, next=0
+    KindFunctionDeclaration [26, 193), i=7, next=51
+      KindIdentifier "readdir" [36, 44), i=8, next=9
+      NodeList [45, 188), i=9, next=50
+        KindParameter [45, 57), i=10, next=13
+          KindIdentifier "path" [45, 49), i=11, next=12
+          KindStringKeyword [50, 57), i=12, next=0
+        KindParameter [58, 108), i=13, next=27
+          KindIdentifier "accept" [58, 65), i=14, next=15
+          KindFunctionType [66, 108), i=15, next=0
+            NodeList [68, 96), i=16, next=26
+              KindParameter [68, 82), i=17, next=23
+                KindIdentifier "stat" [68, 72), i=18, next=19
+                KindTypeReference [73, 82), i=19, next=0
+                  KindQualifiedName [73, 82), i=20, next=0
+                    KindIdentifier "fs" [73, 76), i=21, next=22
+                    KindIdentifier "Stats" [77, 82), i=22, next=0
+              KindParameter [83, 96), i=23, next=0
+                KindIdentifier "name" [83, 88), i=24, next=25
+                KindStringKeyword [89, 96), i=25, next=0
+            KindBooleanKeyword [100, 108), i=26, next=0
+        KindParameter [109, 188), i=27, next=0
+          KindIdentifier "callback" [109, 118), i=28, next=29
+          KindFunctionType [119, 188), i=29, next=0
+            NodeList [121, 179), i=30, next=49
+              KindParameter [121, 133), i=31, next=35
+                KindIdentifier "error" [121, 126), i=32, next=33
+                KindTypeReference [127, 133), i=33, next=0
+                  KindIdentifier "Error" [127, 133), i=34, next=0
+              KindParameter [134, 179), i=35, next=0
+                KindIdentifier "results" [134, 142), i=36, next=37
+                KindArrayType [143, 179), i=37, next=0
+                  KindTypeLiteral [143, 177), i=38, next=0
+                    NodeList [145, 175), i=39, next=0
+                      KindPropertySignature [145, 159), i=40, next=43
+                        KindIdentifier "name" [145, 150), i=41, next=42
+                        KindStringKeyword [151, 158), i=42, next=0
+                      KindPropertySignature [159, 175), i=43, next=0
+                        KindIdentifier "stat" [159, 164), i=44, next=45
+                        KindTypeReference [165, 174), i=45, next=0
+                          KindQualifiedName [165, 174), i=46, next=0
+                            KindIdentifier "fs" [165, 168), i=47, next=48
+                            KindIdentifier "Stats" [169, 174), i=48, next=0
+            KindVoidKeyword [183, 188), i=49, next=0
+      KindBlock [190, 193), i=50, next=0
+    KindFunctionDeclaration [193, 233), i=51, next=60
+      KindIdentifier "join" [205, 210), i=52, next=53
+      NodeList [211, 229), i=53, next=59
+        KindParameter [211, 229), i=54, next=0
+          KindDotDotDotToken [211, 214), i=55, next=56
+          KindIdentifier "paths" [214, 219), i=56, next=57
+          KindArrayType [220, 229), i=57, next=0
+            KindStringKeyword [220, 227), i=58, next=0
+      KindBlock [230, 233), i=59, next=0
+    KindFunctionDeclaration [233, 613), i=60, next=0
+      KindIdentifier "instrumentFile" [245, 260), i=61, next=62
+      NodeList [261, 326), i=62, next=72
+        KindParameter [261, 279), i=63, next=66
+          KindIdentifier "covFileDir" [261, 271), i=64, next=65
+          KindStringKeyword [272, 279), i=65, next=0
+        KindParameter [280, 300), i=66, next=69
+          KindIdentifier "covFileName" [280, 292), i=67, next=68
+          KindStringKeyword [293, 300), i=68, next=0
+        KindParameter [301, 326), i=69, next=0
+          KindIdentifier "originalFilePath" [301, 318), i=70, next=71
+          KindStringKeyword [319, 326), i=71, next=0
+      KindBlock [327, 613), i=72, next=0
+        NodeList [329, 610), i=73, next=0
+          KindExpressionStatement [329, 610), i=74, next=0
+            KindCallExpression [329, 609), i=75, next=0
+              KindPropertyAccessExpression [329, 346), i=76, next=79
+                KindIdentifier "fs" [329, 337), i=77, next=78
+                KindIdentifier "readFile" [338, 346), i=78, next=0
+              NodeList [347, 607), i=79, next=0
+                KindIdentifier "originalFilePath" [347, 363), i=80, next=81
+                KindArrowFunction [364, 607), i=81, next=0
+                  KindEqualsGreaterThanToken [367, 370), i=82, next=83
+                  KindBlock [370, 607), i=83, next=0
+                    NodeList [372, 600), i=84, next=0
+                      KindExpressionStatement [372, 600), i=85, next=0
+                        KindCallExpression [372, 599), i=86, next=0
+                          KindIdentifier "readdir" [372, 396), i=87, next=88
+                          NodeList [397, 597), i=88, next=0
+                            KindIdentifier "covFileDir" [397, 407), i=89, next=90
+                            KindArrowFunction [408, 427), i=90, next=93
+                              KindEqualsGreaterThanToken [411, 414), i=91, next=92
+                              KindBlock [414, 427), i=92, next=0
+                            KindArrowFunction [429, 597), i=93, next=0
+                              NodeList [431, 456), i=94, next=103
+                                KindParameter [431, 443), i=95, next=99
+                                  KindIdentifier "error" [431, 436), i=96, next=97
+                                  KindTypeReference [437, 443), i=97, next=0
+                                    KindIdentifier "Error" [437, 443), i=98, next=0
+                                KindParameter [444, 456), i=99, next=0
+                                  KindIdentifier "files" [444, 450), i=100, next=101
+                                  KindArrayType [451, 456), i=101, next=0
+                                    KindTypeLiteral [451, 454), i=102, next=0
+                              KindEqualsGreaterThanToken [457, 460), i=103, next=104
+                              KindBlock [460, 597), i=104, next=0
+                                NodeList [462, 582), i=105, next=0
+                                  KindExpressionStatement [462, 582), i=106, next=0
+                                    KindCallExpression [462, 581), i=107, next=0
+                                      KindPropertyAccessExpression [462, 493), i=108, next=111
+                                        KindIdentifier "files" [462, 485), i=109, next=110
+                                        KindIdentifier "forEach" [486, 493), i=110, next=0
+                                      NodeList [494, 579), i=111, next=0
+                                        KindArrowFunction [494, 579), i=112, next=0
+                                          NodeList [495, 499), i=113, next=116
+                                            KindParameter [495, 499), i=114, next=0
+                                              KindIdentifier "file" [495, 499), i=115, next=0
+                                          KindEqualsGreaterThanToken [500, 503), i=116, next=117
+                                          KindBlock [503, 579), i=117, next=0
+                                            NodeList [505, 560), i=118, next=0
+                                              KindVariableStatement [505, 560), i=119, next=0
+                                                KindVariableDeclarationList [505, 559), i=120, next=0
+                                                  NodeList [530, 559), i=121, next=0
+                                                    KindVariableDeclaration [530, 559), i=122, next=0
+                                                      KindIdentifier "fullPath" [530, 539), i=123, next=124
+                                                      KindCallExpression [541, 559), i=124, next=0
+                                                        KindIdentifier "join" [541, 546), i=125, next=126
+                                                        NodeList [547, 558), i=126, next=0
+                                                          KindIdentifier "IDoNotExist" [547, 558), i=127, next=0

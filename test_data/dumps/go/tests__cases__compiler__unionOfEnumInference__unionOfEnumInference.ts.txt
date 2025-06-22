@@ -1,0 +1,73 @@
+KindSourceFile [0, 213), i=1, next=0
+  NodeList [0, 211), i=2, next=0
+    KindEnumDeclaration [0, 21), i=3, next=12
+      KindIdentifier "Enum" [4, 9), i=4, next=5
+      NodeList [11, 19), i=5, next=0
+        KindEnumMember [11, 13), i=6, next=8
+          KindIdentifier "A" [11, 13), i=7, next=0
+        KindEnumMember [14, 16), i=8, next=10
+          KindIdentifier "B" [14, 16), i=9, next=0
+        KindEnumMember [17, 19), i=10, next=0
+          KindIdentifier "C" [17, 19), i=11, next=0
+    KindInterfaceDeclaration [21, 76), i=12, next=24
+      KindIdentifier "Interface" [34, 44), i=13, next=14
+      NodeList [45, 59), i=14, next=19
+        KindTypeParameter [45, 59), i=15, next=0
+          KindIdentifier "T" [45, 46), i=16, next=17
+          KindTypeReference [54, 59), i=17, next=0
+            KindIdentifier "Enum" [54, 59), i=18, next=0
+      NodeList [62, 73), i=19, next=0
+        KindPropertySignature [62, 73), i=20, next=0
+          KindIdentifier "type" [62, 69), i=21, next=22
+          KindTypeReference [70, 72), i=22, next=0
+            KindIdentifier "T" [70, 72), i=23, next=0
+    KindFunctionDeclaration [76, 129), i=24, next=40
+      KindIdentifier "foo" [88, 92), i=25, next=26
+      NodeList [93, 107), i=26, next=31
+        KindTypeParameter [93, 107), i=27, next=0
+          KindIdentifier "T" [93, 94), i=28, next=29
+          KindTypeReference [102, 107), i=29, next=0
+            KindIdentifier "Enum" [102, 107), i=30, next=0
+      NodeList [109, 124), i=31, next=39
+        KindParameter [109, 124), i=32, next=0
+          KindIdentifier "x" [109, 110), i=33, next=34
+          KindTypeReference [111, 124), i=34, next=0
+            KindIdentifier "Interface" [111, 121), i=35, next=36
+            NodeList [122, 123), i=36, next=0
+              KindTypeReference [122, 123), i=37, next=0
+                KindIdentifier "T" [122, 123), i=38, next=0
+      KindBlock [125, 129), i=39, next=0
+    KindFunctionDeclaration [129, 211), i=40, next=0
+      KindIdentifier "bar" [141, 145), i=41, next=42
+      NodeList [146, 195), i=42, next=67
+        KindParameter [146, 195), i=43, next=0
+          KindIdentifier "x" [146, 147), i=44, next=45
+          KindUnionType [148, 195), i=45, next=0
+            NodeList [148, 195), i=46, next=0
+              KindTypeReference [148, 175), i=47, next=60
+                KindIdentifier "Interface" [148, 158), i=48, next=49
+                NodeList [159, 174), i=49, next=0
+                  KindUnionType [159, 174), i=50, next=0
+                    NodeList [159, 174), i=51, next=0
+                      KindTypeReference [159, 165), i=52, next=56
+                        KindQualifiedName [159, 165), i=53, next=0
+                          KindIdentifier "Enum" [159, 163), i=54, next=55
+                          KindIdentifier "A" [164, 165), i=55, next=0
+                      KindTypeReference [167, 174), i=56, next=0
+                        KindQualifiedName [167, 174), i=57, next=0
+                          KindIdentifier "Enum" [167, 172), i=58, next=59
+                          KindIdentifier "B" [173, 174), i=59, next=0
+              KindTypeReference [177, 195), i=60, next=0
+                KindIdentifier "Interface" [177, 187), i=61, next=62
+                NodeList [188, 194), i=62, next=0
+                  KindTypeReference [188, 194), i=63, next=0
+                    KindQualifiedName [188, 194), i=64, next=0
+                      KindIdentifier "Enum" [188, 192), i=65, next=66
+                      KindIdentifier "C" [193, 194), i=66, next=0
+      KindBlock [196, 211), i=67, next=0
+        NodeList [198, 208), i=68, next=0
+          KindExpressionStatement [198, 208), i=69, next=0
+            KindCallExpression [198, 207), i=70, next=0
+              KindIdentifier "foo" [198, 204), i=71, next=72
+              NodeList [205, 206), i=72, next=0
+                KindIdentifier "x" [205, 206), i=73, next=0

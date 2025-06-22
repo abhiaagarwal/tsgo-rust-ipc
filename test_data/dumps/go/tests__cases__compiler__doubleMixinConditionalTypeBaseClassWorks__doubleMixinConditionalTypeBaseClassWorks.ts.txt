@@ -1,0 +1,94 @@
+KindSourceFile [0, 363), i=1, next=0
+  NodeList [0, 363), i=2, next=0
+    KindTypeAliasDeclaration [0, 46), i=3, next=13
+      KindIdentifier "Constructor" [4, 16), i=4, next=5
+      KindConstructorType [18, 45), i=5, next=0
+        NodeList [24, 38), i=6, next=12
+          KindParameter [24, 38), i=7, next=0
+            KindDotDotDotToken [24, 27), i=8, next=9
+            KindIdentifier "args" [27, 31), i=9, next=10
+            KindArrayType [32, 38), i=10, next=0
+              KindAnyKeyword [32, 36), i=11, next=0
+        KindTypeLiteral [42, 45), i=12, next=0
+    KindVariableStatement [46, 148), i=13, next=42
+      KindVariableDeclarationList [46, 148), i=14, next=0
+        NodeList [55, 148), i=15, next=0
+          KindVariableDeclaration [55, 148), i=16, next=0
+            KindIdentifier "Mixin1" [55, 62), i=17, next=18
+            KindArrowFunction [64, 148), i=18, next=0
+              NodeList [66, 87), i=19, next=24
+                KindTypeParameter [66, 87), i=20, next=0
+                  KindIdentifier "C" [66, 67), i=21, next=22
+                  KindTypeReference [75, 87), i=22, next=0
+                    KindIdentifier "Constructor" [75, 87), i=23, next=0
+              NodeList [89, 96), i=24, next=29
+                KindParameter [89, 96), i=25, next=0
+                  KindIdentifier "Base" [89, 93), i=26, next=27
+                  KindTypeReference [94, 96), i=27, next=0
+                    KindIdentifier "C" [94, 96), i=28, next=0
+              KindEqualsGreaterThanToken [97, 100), i=29, next=30
+              KindClassExpression [100, 148), i=30, next=0
+                NodeList [106, 119), i=31, next=36
+                  KindHeritageClause [106, 119), i=32, next=0
+                    NodeList [114, 119), i=33, next=0
+                      KindExpressionWithTypeArguments [114, 119), i=34, next=0
+                        KindIdentifier "Base" [114, 119), i=35, next=0
+                NodeList [121, 146), i=36, next=0
+                  KindPropertyDeclaration [121, 146), i=37, next=0
+                    NodeList [121, 129), i=38, next=40
+                      KindPrivateKeyword [121, 129), i=39, next=0
+                    KindIdentifier "_fooPrivate" [129, 141), i=40, next=41
+                    KindTypeLiteral [142, 145), i=41, next=0
+    KindTypeAliasDeclaration [148, 240), i=42, next=59
+      KindIdentifier "FooConstructor" [156, 171), i=43, next=44
+      KindConditionalType [173, 239), i=44, next=0
+        KindTypeQuery [173, 187), i=45, next=47
+          KindIdentifier "Mixin1" [180, 187), i=46, next=0
+        KindFunctionType [195, 225), i=47, next=56
+          NodeList [197, 211), i=48, next=53
+            KindParameter [197, 211), i=49, next=0
+              KindIdentifier "a" [197, 198), i=50, next=51
+              KindTypeReference [199, 211), i=51, next=0
+                KindIdentifier "Constructor" [199, 211), i=52, next=0
+          KindInferType [215, 225), i=53, next=0
+            KindTypeParameter [221, 225), i=54, next=0
+              KindIdentifier "Cls" [221, 225), i=55, next=0
+        KindTypeReference [227, 231), i=56, next=58
+          KindIdentifier "Cls" [227, 231), i=57, next=0
+        KindNeverKeyword [233, 239), i=58, next=0
+    KindVariableStatement [240, 318), i=59, next=82
+      KindVariableDeclarationList [240, 317), i=60, next=0
+        NodeList [247, 317), i=61, next=0
+          KindVariableDeclaration [247, 317), i=62, next=0
+            KindIdentifier "Mixin2" [247, 254), i=63, next=64
+            KindArrowFunction [256, 317), i=64, next=0
+              NodeList [258, 282), i=65, next=70
+                KindTypeParameter [258, 282), i=66, next=0
+                  KindIdentifier "C" [258, 259), i=67, next=68
+                  KindTypeReference [267, 282), i=68, next=0
+                    KindIdentifier "FooConstructor" [267, 282), i=69, next=0
+              NodeList [284, 291), i=70, next=75
+                KindParameter [284, 291), i=71, next=0
+                  KindIdentifier "Base" [284, 288), i=72, next=73
+                  KindTypeReference [289, 291), i=73, next=0
+                    KindIdentifier "C" [289, 291), i=74, next=0
+              KindEqualsGreaterThanToken [292, 295), i=75, next=76
+              KindClassExpression [295, 317), i=76, next=0
+                NodeList [301, 314), i=77, next=0
+                  KindHeritageClause [301, 314), i=78, next=0
+                    NodeList [309, 314), i=79, next=0
+                      KindExpressionWithTypeArguments [309, 314), i=80, next=0
+                        KindIdentifier "Base" [309, 314), i=81, next=0
+    KindClassDeclaration [318, 363), i=82, next=0
+      KindIdentifier "C" [327, 329), i=83, next=84
+      NodeList [329, 360), i=84, next=0
+        KindHeritageClause [329, 360), i=85, next=0
+          NodeList [337, 360), i=86, next=0
+            KindExpressionWithTypeArguments [337, 360), i=87, next=0
+              KindCallExpression [337, 360), i=88, next=0
+                KindIdentifier "Mixin2" [337, 344), i=89, next=90
+                NodeList [345, 359), i=90, next=0
+                  KindCallExpression [345, 359), i=91, next=0
+                    KindIdentifier "Mixin1" [345, 351), i=92, next=93
+                    NodeList [352, 358), i=93, next=0
+                      KindIdentifier "Object" [352, 358), i=94, next=0

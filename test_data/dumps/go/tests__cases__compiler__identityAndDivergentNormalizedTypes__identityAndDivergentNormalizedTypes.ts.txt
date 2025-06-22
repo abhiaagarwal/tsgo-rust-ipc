@@ -1,0 +1,175 @@
+KindSourceFile [0, 640), i=1, next=0
+  NodeList [0, 638), i=2, next=0
+    KindTypeAliasDeclaration [0, 148), i=3, next=29
+      KindIdentifier "ApiPost" [4, 12), i=4, next=5
+      KindUnionType [14, 148), i=5, next=0
+        NodeList [14, 148), i=6, next=0
+          KindTypeLiteral [21, 74), i=7, next=16
+            NodeList [23, 67), i=8, next=0
+              KindPropertySignature [23, 48), i=9, next=13
+                KindIdentifier "path" [23, 37), i=10, next=11
+                KindLiteralType [38, 47), i=11, next=0
+                  KindStringLiteral "/login" [38, 47), i=12, next=0
+              KindPropertySignature [48, 67), i=13, next=0
+                KindIdentifier "body" [48, 62), i=14, next=15
+                KindTypeLiteral [63, 66), i=15, next=0
+          KindTypeLiteral [81, 148), i=16, next=0
+            NodeList [83, 141), i=17, next=0
+              KindPropertySignature [83, 107), i=18, next=22
+                KindIdentifier "path" [83, 97), i=19, next=20
+                KindLiteralType [98, 106), i=20, next=0
+                  KindStringLiteral "/user" [98, 106), i=21, next=0
+              KindPropertySignature [107, 141), i=22, next=0
+                KindIdentifier "body" [107, 121), i=23, next=24
+                KindTypeLiteral [122, 140), i=24, next=0
+                  NodeList [124, 138), i=25, next=0
+                    KindPropertySignature [124, 138), i=26, next=0
+                      KindIdentifier "name" [124, 129), i=27, next=28
+                      KindStringKeyword [130, 137), i=28, next=0
+    KindTypeAliasDeclaration [148, 184), i=29, next=36
+      KindIdentifier "PostPath" [156, 165), i=30, next=31
+      KindIndexedAccessType [167, 183), i=31, next=0
+        KindTypeReference [167, 175), i=32, next=34
+          KindIdentifier "ApiPost" [167, 175), i=33, next=0
+        KindLiteralType [176, 182), i=34, next=0
+          KindStringLiteral "path" [176, 182), i=35, next=0
+    KindTypeAliasDeclaration [184, 268), i=36, next=57
+      KindIdentifier "PostBody" [192, 201), i=37, next=38
+      NodeList [202, 223), i=38, next=43
+        KindTypeParameter [202, 223), i=39, next=0
+          KindIdentifier "PATH" [202, 206), i=40, next=41
+          KindTypeReference [214, 223), i=41, next=0
+            KindIdentifier "PostPath" [214, 223), i=42, next=0
+      KindIndexedAccessType [226, 267), i=43, next=0
+        KindTypeReference [226, 259), i=44, next=55
+          KindIdentifier "Extract" [226, 234), i=45, next=46
+          NodeList [235, 258), i=46, next=0
+            KindTypeReference [235, 242), i=47, next=49
+              KindIdentifier "ApiPost" [235, 242), i=48, next=0
+            KindTypeLiteral [243, 258), i=49, next=0
+              NodeList [245, 256), i=50, next=0
+                KindPropertySignature [245, 256), i=51, next=0
+                  KindIdentifier "path" [245, 250), i=52, next=53
+                  KindTypeReference [251, 256), i=53, next=0
+                    KindIdentifier "PATH" [251, 256), i=54, next=0
+        KindLiteralType [260, 266), i=55, next=0
+          KindStringLiteral "body" [260, 266), i=56, next=0
+    KindVariableStatement [268, 413), i=57, next=101
+      KindVariableDeclarationList [268, 413), i=58, next=0
+        NodeList [277, 413), i=59, next=0
+          KindVariableDeclaration [277, 413), i=60, next=0
+            KindIdentifier "post" [277, 282), i=61, next=62
+            KindArrowFunction [284, 413), i=62, next=0
+              NodeList [286, 307), i=63, next=68
+                KindTypeParameter [286, 307), i=64, next=0
+                  KindIdentifier "PATH" [286, 290), i=65, next=66
+                  KindTypeReference [298, 307), i=66, next=0
+                    KindIdentifier "PostPath" [298, 307), i=67, next=0
+              NodeList [309, 402), i=68, next=99
+                KindParameter [309, 325), i=69, next=73
+                  KindIdentifier "path" [309, 319), i=70, next=71
+                  KindTypeReference [320, 325), i=71, next=0
+                    KindIdentifier "PATH" [320, 325), i=72, next=0
+                KindParameter [326, 402), i=73, next=0
+                  KindObjectBindingPattern [326, 350), i=74, next=81
+                    NodeList [333, 349), i=75, next=0
+                      KindBindingElement [333, 337), i=76, next=78
+                        KindIdentifier "body" [333, 337), i=77, next=0
+                      KindBindingElement [338, 349), i=78, next=0
+                        KindDotDotDotToken [338, 342), i=79, next=80
+                        KindIdentifier "options" [342, 349), i=80, next=0
+                  KindIntersectionType [351, 402), i=81, next=0
+                    NodeList [351, 402), i=82, next=0
+                      KindTypeReference [351, 377), i=83, next=90
+                        KindIdentifier "Omit" [351, 356), i=84, next=85
+                        NodeList [357, 376), i=85, next=0
+                          KindTypeReference [357, 368), i=86, next=88
+                            KindIdentifier "RequestInit" [357, 368), i=87, next=0
+                          KindLiteralType [369, 376), i=88, next=0
+                            KindStringLiteral "body" [369, 376), i=89, next=0
+                      KindTypeLiteral [379, 402), i=90, next=0
+                        NodeList [381, 401), i=91, next=0
+                          KindPropertySignature [381, 401), i=92, next=0
+                            KindIdentifier "body" [381, 385), i=93, next=94
+                            KindTypeReference [386, 401), i=94, next=0
+                              KindIdentifier "PostBody" [386, 395), i=95, next=96
+                              NodeList [396, 400), i=96, next=0
+                                KindTypeReference [396, 400), i=97, next=0
+                                  KindIdentifier "PATH" [396, 400), i=98, next=0
+              KindEqualsGreaterThanToken [405, 408), i=99, next=100
+              KindBlock [408, 413), i=100, next=0
+    KindVariableStatement [413, 533), i=101, next=139
+      KindVariableDeclarationList [413, 533), i=102, next=0
+        NodeList [422, 533), i=103, next=0
+          KindVariableDeclaration [422, 533), i=104, next=0
+            KindIdentifier "tmp" [422, 426), i=105, next=106
+            KindArrowFunction [428, 533), i=106, next=0
+              NodeList [430, 451), i=107, next=112
+                KindTypeParameter [430, 451), i=108, next=0
+                  KindIdentifier "PATH" [430, 434), i=109, next=110
+                  KindTypeReference [442, 451), i=110, next=0
+                    KindIdentifier "PostPath" [442, 451), i=111, next=0
+              NodeList [453, 492), i=112, next=124
+                KindParameter [453, 467), i=113, next=117
+                  KindIdentifier "path" [453, 461), i=114, next=115
+                  KindTypeReference [462, 467), i=115, next=0
+                    KindIdentifier "PATH" [462, 467), i=116, next=0
+                KindParameter [468, 492), i=117, next=0
+                  KindIdentifier "body" [468, 476), i=118, next=119
+                  KindTypeReference [477, 492), i=119, next=0
+                    KindIdentifier "PostBody" [477, 486), i=120, next=121
+                    NodeList [487, 491), i=121, next=0
+                      KindTypeReference [487, 491), i=122, next=0
+                        KindIdentifier "PATH" [487, 491), i=123, next=0
+              KindEqualsGreaterThanToken [495, 498), i=124, next=125
+              KindBlock [498, 533), i=125, next=0
+                NodeList [500, 530), i=126, next=0
+                  KindExpressionStatement [500, 530), i=127, next=0
+                    KindCallExpression [500, 530), i=128, next=0
+                      KindIdentifier "post" [500, 508), i=129, next=130
+                      NodeList [509, 513), i=130, next=133
+                        KindTypeReference [509, 513), i=131, next=0
+                          KindIdentifier "PATH" [509, 513), i=132, next=0
+                      NodeList [515, 529), i=133, next=0
+                        KindIdentifier "path" [515, 519), i=134, next=135
+                        KindObjectLiteralExpression [520, 529), i=135, next=0
+                          NodeList [522, 527), i=136, next=0
+                            KindShorthandPropertyAssignment [522, 527), i=137, next=0
+                              KindIdentifier "body" [522, 527), i=138, next=0
+    KindFunctionDeclaration [533, 638), i=139, next=0
+      KindIdentifier "fx1" [545, 549), i=140, next=141
+      NodeList [550, 568), i=141, next=146
+        KindTypeParameter [550, 568), i=142, next=0
+          KindIdentifier "P" [550, 551), i=143, next=144
+          KindTypeReference [559, 568), i=144, next=0
+            KindIdentifier "PostPath" [559, 568), i=145, next=0
+      NodeList [570, 620), i=146, next=169
+        KindParameter [570, 594), i=147, next=158
+          KindIdentifier "x" [570, 571), i=148, next=149
+          KindTypeLiteral [572, 594), i=149, next=0
+            NodeList [574, 592), i=150, next=0
+              KindPropertySignature [574, 592), i=151, next=0
+                KindIdentifier "body" [574, 579), i=152, next=153
+                KindTypeReference [580, 592), i=153, next=0
+                  KindIdentifier "PostBody" [580, 589), i=154, next=155
+                  NodeList [590, 591), i=155, next=0
+                    KindTypeReference [590, 591), i=156, next=0
+                      KindIdentifier "P" [590, 591), i=157, next=0
+        KindParameter [595, 620), i=158, next=0
+          KindIdentifier "y" [595, 597), i=159, next=160
+          KindTypeLiteral [598, 620), i=160, next=0
+            NodeList [600, 618), i=161, next=0
+              KindPropertySignature [600, 618), i=162, next=0
+                KindIdentifier "body" [600, 605), i=163, next=164
+                KindTypeReference [606, 618), i=164, next=0
+                  KindIdentifier "PostBody" [606, 615), i=165, next=166
+                  NodeList [616, 617), i=166, next=0
+                    KindTypeReference [616, 617), i=167, next=0
+                      KindIdentifier "P" [616, 617), i=168, next=0
+      KindBlock [621, 638), i=169, next=0
+        NodeList [623, 635), i=170, next=0
+          KindExpressionStatement [623, 635), i=171, next=0
+            KindBinaryExpression [623, 634), i=172, next=0
+              KindIdentifier "x" [623, 630), i=173, next=174
+              KindEqualsToken [630, 632), i=174, next=175
+              KindIdentifier "y" [632, 634), i=175, next=0

@@ -1,0 +1,154 @@
+KindSourceFile [0, 569), i=1, next=0
+  NodeList [0, 567), i=2, next=0
+    KindFunctionDeclaration [0, 76), i=3, next=26
+      NodeList [0, 14), i=4, next=7
+        KindExportKeyword [0, 6), i=5, next=6
+        KindDeclareKeyword [6, 14), i=6, next=0
+      KindIdentifier "foo" [23, 27), i=7, next=8
+      NodeList [28, 29), i=8, next=11
+        KindTypeParameter [28, 29), i=9, next=0
+          KindIdentifier "T" [28, 29), i=10, next=0
+      NodeList [31, 37), i=11, next=16
+        KindParameter [31, 37), i=12, next=0
+          KindIdentifier "obj" [31, 34), i=13, next=14
+          KindTypeReference [35, 37), i=14, next=0
+            KindIdentifier "T" [35, 37), i=15, next=0
+      KindConditionalType [39, 75), i=16, next=0
+        KindTypeReference [39, 41), i=17, next=19
+          KindIdentifier "T" [39, 41), i=18, next=0
+        KindFunctionType [49, 63), i=19, next=23
+          KindInferType [55, 63), i=20, next=0
+            KindTypeParameter [61, 63), i=21, next=0
+              KindIdentifier "P" [61, 63), i=22, next=0
+        KindTypeReference [65, 67), i=23, next=25
+          KindIdentifier "P" [65, 67), i=24, next=0
+        KindNeverKeyword [69, 75), i=25, next=0
+    KindFunctionDeclaration [76, 135), i=26, next=45
+      NodeList [76, 84), i=27, next=29
+        KindExportKeyword [76, 84), i=28, next=0
+      KindIdentifier "bar" [93, 97), i=29, next=30
+      NodeList [98, 99), i=30, next=33
+        KindTypeParameter [98, 99), i=31, next=0
+          KindIdentifier "T" [98, 99), i=32, next=0
+      NodeList [101, 107), i=33, next=38
+        KindParameter [101, 107), i=34, next=0
+          KindIdentifier "obj" [101, 104), i=35, next=36
+          KindTypeReference [105, 107), i=36, next=0
+            KindIdentifier "T" [105, 107), i=37, next=0
+      KindBlock [108, 135), i=38, next=0
+        NodeList [110, 132), i=39, next=0
+          KindReturnStatement [110, 132), i=40, next=0
+            KindCallExpression [122, 131), i=41, next=0
+              KindIdentifier "foo" [122, 126), i=42, next=43
+              NodeList [127, 130), i=43, next=0
+                KindIdentifier "obj" [127, 130), i=44, next=0
+    KindTypeAliasDeclaration [135, 203), i=45, next=63
+      NodeList [135, 145), i=46, next=48
+        KindExportKeyword [135, 145), i=47, next=0
+      KindIdentifier "BadNested" [150, 160), i=48, next=49
+      NodeList [161, 162), i=49, next=52
+        KindTypeParameter [161, 162), i=50, next=0
+          KindIdentifier "T" [161, 162), i=51, next=0
+      KindTypeLiteral [165, 202), i=52, next=0
+        NodeList [167, 200), i=53, next=0
+          KindPropertySignature [167, 200), i=54, next=0
+            KindIdentifier "x" [167, 169), i=55, next=56
+            KindConditionalType [170, 200), i=56, next=0
+              KindTypeReference [170, 172), i=57, next=59
+                KindIdentifier "T" [170, 172), i=58, next=0
+              KindNumberKeyword [180, 187), i=59, next=60
+              KindTypeReference [189, 191), i=60, next=62
+                KindIdentifier "T" [189, 191), i=61, next=0
+              KindStringKeyword [193, 200), i=62, next=0
+    KindFunctionDeclaration [203, 329), i=63, next=101
+      NodeList [203, 221), i=64, next=67
+        KindExportKeyword [203, 213), i=65, next=66
+        KindDeclareKeyword [213, 221), i=66, next=0
+      KindIdentifier "foo2" [230, 235), i=67, next=68
+      NodeList [236, 237), i=68, next=71
+        KindTypeParameter [236, 237), i=69, next=0
+          KindIdentifier "T" [236, 237), i=70, next=0
+      NodeList [239, 245), i=71, next=76
+        KindParameter [239, 245), i=72, next=0
+          KindIdentifier "obj" [239, 242), i=73, next=74
+          KindTypeReference [243, 245), i=74, next=0
+            KindIdentifier "T" [243, 245), i=75, next=0
+      KindConditionalType [247, 328), i=76, next=0
+        KindTypeReference [247, 249), i=77, next=79
+          KindIdentifier "T" [247, 249), i=78, next=0
+        KindMappedType [257, 316), i=79, next=98
+          KindTypeParameter [261, 290), i=80, next=89
+            KindIdentifier "K" [261, 262), i=81, next=82
+            KindTypeOperator [265, 290), i=82, next=0
+              KindTypeReference [271, 290), i=83, next=0
+                KindIdentifier "BadNested" [271, 281), i=84, next=85
+                NodeList [282, 289), i=85, next=0
+                  KindInferType [282, 289), i=86, next=0
+                    KindTypeParameter [287, 289), i=87, next=0
+                      KindIdentifier "P" [287, 289), i=88, next=0
+          KindIndexedAccessType [292, 314), i=89, next=0
+            KindTypeReference [292, 311), i=90, next=96
+              KindIdentifier "BadNested" [292, 302), i=91, next=92
+              NodeList [303, 310), i=92, next=0
+                KindInferType [303, 310), i=93, next=0
+                  KindTypeParameter [308, 310), i=94, next=0
+                    KindIdentifier "P" [308, 310), i=95, next=0
+            KindTypeReference [312, 313), i=96, next=0
+              KindIdentifier "K" [312, 313), i=97, next=0
+        KindTypeReference [318, 320), i=98, next=100
+          KindIdentifier "P" [318, 320), i=99, next=0
+        KindNeverKeyword [322, 328), i=100, next=0
+    KindFunctionDeclaration [329, 390), i=101, next=120
+      NodeList [329, 337), i=102, next=104
+        KindExportKeyword [329, 337), i=103, next=0
+      KindIdentifier "bar2" [346, 351), i=104, next=105
+      NodeList [352, 353), i=105, next=108
+        KindTypeParameter [352, 353), i=106, next=0
+          KindIdentifier "T" [352, 353), i=107, next=0
+      NodeList [355, 361), i=108, next=113
+        KindParameter [355, 361), i=109, next=0
+          KindIdentifier "obj" [355, 358), i=110, next=111
+          KindTypeReference [359, 361), i=111, next=0
+            KindIdentifier "T" [359, 361), i=112, next=0
+      KindBlock [362, 390), i=113, next=0
+        NodeList [364, 387), i=114, next=0
+          KindReturnStatement [364, 387), i=115, next=0
+            KindCallExpression [376, 386), i=116, next=0
+              KindIdentifier "foo2" [376, 381), i=117, next=118
+              NodeList [382, 385), i=118, next=0
+                KindIdentifier "obj" [382, 385), i=119, next=0
+    KindTypeAliasDeclaration [390, 464), i=120, next=130
+      KindIdentifier "Weird" [423, 429), i=121, next=122
+      KindConditionalType [431, 463), i=122, next=0
+        KindAnyKeyword [431, 435), i=123, next=124
+        KindInferType [443, 451), i=124, next=127
+          KindTypeParameter [449, 451), i=125, next=0
+            KindIdentifier "U" [449, 451), i=126, next=0
+        KindTypeReference [453, 455), i=127, next=129
+          KindIdentifier "U" [453, 455), i=128, next=0
+        KindNeverKeyword [457, 463), i=129, next=0
+    KindTypeAliasDeclaration [464, 519), i=130, next=140
+      KindIdentifier "AlsoWeird" [470, 480), i=131, next=132
+      KindConditionalType [482, 518), i=132, next=0
+        KindUnknownKeyword [482, 490), i=133, next=134
+        KindInferType [498, 506), i=134, next=137
+          KindTypeParameter [504, 506), i=135, next=0
+            KindIdentifier "U" [504, 506), i=136, next=0
+        KindTypeReference [508, 510), i=137, next=139
+          KindIdentifier "U" [508, 510), i=138, next=0
+        KindNeverKeyword [512, 518), i=139, next=0
+    KindVariableStatement [519, 545), i=140, next=148
+      KindVariableDeclarationList [519, 544), i=141, next=0
+        NodeList [528, 544), i=142, next=0
+          KindVariableDeclaration [528, 544), i=143, next=0
+            KindIdentifier "a" [528, 530), i=144, next=145
+            KindTypeReference [531, 537), i=145, next=147
+              KindIdentifier "Weird" [531, 537), i=146, next=0
+            KindNullKeyword [539, 544), i=147, next=0
+    KindVariableStatement [545, 567), i=148, next=0
+      KindVariableDeclarationList [545, 566), i=149, next=0
+        NodeList [552, 566), i=150, next=0
+          KindVariableDeclaration [552, 566), i=151, next=0
+            KindIdentifier "b" [552, 554), i=152, next=153
+            KindStringKeyword [555, 562), i=153, next=154
+            KindIdentifier "a" [564, 566), i=154, next=0

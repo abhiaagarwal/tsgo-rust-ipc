@@ -1,0 +1,61 @@
+KindSourceFile [0, 253), i=1, next=0
+  NodeList [0, 253), i=2, next=0
+    KindInterfaceDeclaration [0, 51), i=3, next=14
+      KindIdentifier "Foo" [9, 13), i=4, next=5
+      NodeList [15, 48), i=5, next=0
+        KindPropertySignature [15, 48), i=6, next=0
+          KindIdentifier "fooProp" [15, 28), i=7, next=8
+          KindUnionType [29, 47), i=8, next=0
+            NodeList [29, 47), i=9, next=0
+              KindLiteralType [29, 37), i=10, next=12
+                KindStringLiteral "hello" [29, 37), i=11, next=0
+              KindLiteralType [39, 47), i=12, next=0
+                KindStringLiteral "world" [39, 47), i=13, next=0
+    KindInterfaceDeclaration [51, 95), i=14, next=20
+      KindIdentifier "Bar" [64, 68), i=15, next=16
+      NodeList [70, 92), i=16, next=0
+        KindPropertySignature [70, 92), i=17, next=0
+          KindIdentifier "barProp" [70, 83), i=18, next=19
+          KindStringKeyword [84, 91), i=19, next=0
+    KindInterfaceDeclaration [95, 137), i=20, next=29
+      KindIdentifier "FooBar" [108, 115), i=21, next=22
+      NodeList [115, 132), i=22, next=0
+        KindHeritageClause [115, 132), i=23, next=0
+          NodeList [123, 132), i=24, next=0
+            KindExpressionWithTypeArguments [123, 127), i=25, next=27
+              KindIdentifier "Foo" [123, 127), i=26, next=0
+            KindExpressionWithTypeArguments [128, 132), i=27, next=0
+              KindIdentifier "Bar" [128, 132), i=28, next=0
+    KindFunctionDeclaration [137, 185), i=29, next=47
+      NodeList [137, 148), i=30, next=32
+        KindDeclareKeyword [137, 148), i=31, next=0
+      KindIdentifier "mixBar" [157, 164), i=32, next=33
+      NodeList [165, 166), i=33, next=36
+        KindTypeParameter [165, 166), i=34, next=0
+          KindIdentifier "T" [165, 166), i=35, next=0
+      NodeList [168, 174), i=36, next=41
+        KindParameter [168, 174), i=37, next=0
+          KindIdentifier "obj" [168, 171), i=38, next=39
+          KindTypeReference [172, 174), i=39, next=0
+            KindIdentifier "T" [172, 174), i=40, next=0
+      KindIntersectionType [176, 184), i=41, next=0
+        NodeList [176, 184), i=42, next=0
+          KindTypeReference [176, 178), i=43, next=45
+            KindIdentifier "T" [176, 178), i=44, next=0
+          KindTypeReference [180, 184), i=45, next=0
+            KindIdentifier "Bar" [180, 184), i=46, next=0
+    KindVariableStatement [185, 253), i=47, next=0
+      KindVariableDeclarationList [185, 252), i=48, next=0
+        NodeList [192, 252), i=49, next=0
+          KindVariableDeclaration [192, 252), i=50, next=0
+            KindIdentifier "fooBar" [192, 199), i=51, next=52
+            KindTypeReference [200, 207), i=52, next=54
+              KindIdentifier "FooBar" [200, 207), i=53, next=0
+            KindCallExpression [209, 252), i=54, next=0
+              KindIdentifier "mixBar" [209, 216), i=55, next=56
+              NodeList [217, 251), i=56, next=0
+                KindObjectLiteralExpression [217, 251), i=57, next=0
+                  NodeList [218, 248), i=58, next=0
+                    KindPropertyAssignment [218, 248), i=59, next=0
+                      KindIdentifier "fooProp" [218, 231), i=60, next=61
+                      KindStringLiteral "frizzlebizzle" [232, 248), i=61, next=0

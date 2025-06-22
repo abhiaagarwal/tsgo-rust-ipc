@@ -1,0 +1,154 @@
+KindSourceFile [0, 437), i=1, next=0
+  NodeList [0, 437), i=2, next=0
+    KindTypeAliasDeclaration [0, 52), i=3, next=16
+      KindIdentifier "ObjType1" [4, 13), i=4, next=5
+      KindTypeLiteral [15, 52), i=5, next=0
+        NodeList [17, 50), i=6, next=0
+          KindPropertySignature [17, 28), i=7, next=10
+            KindIdentifier "x" [17, 19), i=8, next=9
+            KindNumberKeyword [20, 27), i=9, next=0
+          KindPropertySignature [28, 39), i=10, next=13
+            KindIdentifier "y" [28, 30), i=11, next=12
+            KindStringKeyword [31, 38), i=12, next=0
+          KindPropertySignature [39, 50), i=13, next=0
+            KindIdentifier "z" [39, 41), i=14, next=15
+            KindBooleanKeyword [42, 50), i=15, next=0
+    KindTypeAliasDeclaration [52, 98), i=16, next=24
+      KindIdentifier "TupleType1" [58, 69), i=17, next=18
+      KindTupleType [71, 98), i=18, next=0
+        NodeList [73, 97), i=19, next=0
+          KindTypeReference [73, 81), i=20, next=22
+            KindIdentifier "ObjType1" [73, 81), i=21, next=0
+          KindNumberKeyword [82, 89), i=22, next=23
+          KindStringKeyword [90, 97), i=23, next=0
+    KindClassDeclaration [98, 309), i=24, next=99
+      KindIdentifier "C1" [107, 110), i=25, next=26
+      NodeList [112, 306), i=26, next=0
+        KindConstructor [112, 306), i=27, next=0
+          NodeList [130, 171), i=28, next=49
+            KindParameter [130, 171), i=29, next=0
+              NodeList [130, 136), i=30, next=32
+                KindPublicKeyword [130, 136), i=31, next=0
+              KindArrayBindingPattern [136, 159), i=32, next=47
+                NodeList [138, 158), i=33, next=0
+                  KindBindingElement [138, 152), i=34, next=43
+                    KindObjectBindingPattern [138, 152), i=35, next=0
+                      NodeList [139, 150), i=36, next=0
+                        KindBindingElement [139, 142), i=37, next=39
+                          KindIdentifier "x1" [139, 142), i=38, next=0
+                        KindBindingElement [143, 146), i=39, next=41
+                          KindIdentifier "x2" [143, 146), i=40, next=0
+                        KindBindingElement [147, 150), i=41, next=0
+                          KindIdentifier "x3" [147, 150), i=42, next=0
+                  KindBindingElement [153, 155), i=43, next=45
+                    KindIdentifier "y" [153, 155), i=44, next=0
+                  KindBindingElement [156, 158), i=45, next=0
+                    KindIdentifier "z" [156, 158), i=46, next=0
+              KindTypeReference [160, 171), i=47, next=0
+                KindIdentifier "TupleType1" [160, 171), i=48, next=0
+          KindBlock [172, 306), i=49, next=0
+            NodeList [174, 299), i=50, next=0
+              KindVariableStatement [174, 224), i=51, next=70
+                KindVariableDeclarationList [174, 223), i=52, next=0
+                  NodeList [187, 223), i=53, next=0
+                    KindVariableDeclaration [187, 223), i=54, next=0
+                      KindIdentifier "foo" [187, 191), i=55, next=56
+                      KindAnyKeyword [192, 196), i=56, next=57
+                      KindBinaryExpression [198, 223), i=57, next=0
+                        KindBinaryExpression [198, 218), i=58, next=68
+                          KindBinaryExpression [198, 213), i=59, next=66
+                            KindBinaryExpression [198, 207), i=60, next=64
+                              KindIdentifier "x1" [198, 201), i=61, next=62
+                              KindBarBarToken [201, 204), i=62, next=63
+                              KindIdentifier "x2" [204, 207), i=63, next=0
+                            KindBarBarToken [207, 210), i=64, next=65
+                            KindIdentifier "x3" [210, 213), i=65, next=0
+                          KindBarBarToken [213, 216), i=66, next=67
+                          KindIdentifier "y" [216, 218), i=67, next=0
+                        KindBarBarToken [218, 221), i=68, next=69
+                        KindIdentifier "z" [221, 223), i=69, next=0
+              KindVariableStatement [224, 299), i=70, next=0
+                KindVariableDeclarationList [224, 298), i=71, next=0
+                  NodeList [237, 298), i=72, next=0
+                    KindVariableDeclaration [237, 298), i=73, next=0
+                      KindIdentifier "bar" [237, 241), i=74, next=75
+                      KindAnyKeyword [242, 246), i=75, next=76
+                      KindBinaryExpression [248, 298), i=76, next=0
+                        KindBinaryExpression [248, 288), i=77, next=95
+                          KindBinaryExpression [248, 278), i=78, next=91
+                            KindBinaryExpression [248, 267), i=79, next=87
+                              KindPropertyAccessExpression [248, 256), i=80, next=83
+                                KindThisKeyword [248, 253), i=81, next=82
+                                KindIdentifier "x1" [254, 256), i=82, next=0
+                              KindBarBarToken [256, 259), i=83, next=84
+                              KindPropertyAccessExpression [259, 267), i=84, next=0
+                                KindThisKeyword [259, 264), i=85, next=86
+                                KindIdentifier "x2" [265, 267), i=86, next=0
+                            KindBarBarToken [267, 270), i=87, next=88
+                            KindPropertyAccessExpression [270, 278), i=88, next=0
+                              KindThisKeyword [270, 275), i=89, next=90
+                              KindIdentifier "x3" [276, 278), i=90, next=0
+                          KindBarBarToken [278, 281), i=91, next=92
+                          KindPropertyAccessExpression [281, 288), i=92, next=0
+                            KindThisKeyword [281, 286), i=93, next=94
+                            KindIdentifier "y" [287, 288), i=94, next=0
+                        KindBarBarToken [288, 291), i=95, next=96
+                        KindPropertyAccessExpression [291, 298), i=96, next=0
+                          KindThisKeyword [291, 296), i=97, next=98
+                          KindIdentifier "z" [297, 298), i=98, next=0
+    KindVariableStatement [309, 371), i=99, next=122
+      KindVariableDeclarationList [309, 370), i=100, next=0
+        NodeList [316, 370), i=101, next=0
+          KindVariableDeclaration [316, 370), i=102, next=0
+            KindIdentifier "a" [316, 318), i=103, next=104
+            KindNewExpression [320, 370), i=104, next=0
+              KindIdentifier "C1" [324, 327), i=105, next=106
+              NodeList [328, 369), i=106, next=0
+                KindArrayLiteralExpression [328, 369), i=107, next=0
+                  NodeList [329, 368), i=108, next=0
+                    KindObjectLiteralExpression [329, 357), i=109, next=120
+                      NodeList [330, 355), i=110, next=0
+                        KindPropertyAssignment [330, 337), i=111, next=114
+                          KindIdentifier "x1" [330, 333), i=112, next=113
+                          KindNumericLiteral [334, 337), i=113, next=0
+                        KindPropertyAssignment [338, 345), i=114, next=117
+                          KindIdentifier "x2" [338, 341), i=115, next=116
+                          KindStringLiteral "" [342, 345), i=116, next=0
+                        KindPropertyAssignment [346, 355), i=117, next=0
+                          KindIdentifier "x3" [346, 349), i=118, next=119
+                          KindTrueKeyword [350, 355), i=119, next=0
+                    KindStringLiteral "" [358, 361), i=120, next=121
+                    KindFalseKeyword [362, 368), i=121, next=0
+    KindVariableStatement [371, 437), i=122, next=0
+      KindVariableDeclarationList [371, 436), i=123, next=0
+        NodeList [376, 436), i=124, next=0
+          KindVariableDeclaration [376, 436), i=125, next=0
+            KindArrayBindingPattern [376, 405), i=126, next=138
+              NodeList [378, 404), i=127, next=0
+                KindBindingElement [378, 382), i=128, next=130
+                  KindIdentifier "a_x1" [378, 382), i=129, next=0
+                KindBindingElement [383, 388), i=130, next=132
+                  KindIdentifier "a_x2" [383, 388), i=131, next=0
+                KindBindingElement [389, 394), i=132, next=134
+                  KindIdentifier "a_x3" [389, 394), i=133, next=0
+                KindBindingElement [395, 399), i=134, next=136
+                  KindIdentifier "a_y" [395, 399), i=135, next=0
+                KindBindingElement [400, 404), i=136, next=0
+                  KindIdentifier "a_z" [400, 404), i=137, next=0
+            KindArrayLiteralExpression [407, 436), i=138, next=0
+              NodeList [409, 435), i=139, next=0
+                KindPropertyAccessExpression [409, 413), i=140, next=143
+                  KindIdentifier "a" [409, 410), i=141, next=142
+                  KindIdentifier "x1" [411, 413), i=142, next=0
+                KindPropertyAccessExpression [414, 419), i=143, next=146
+                  KindIdentifier "a" [414, 416), i=144, next=145
+                  KindIdentifier "x2" [417, 419), i=145, next=0
+                KindPropertyAccessExpression [420, 425), i=146, next=149
+                  KindIdentifier "a" [420, 422), i=147, next=148
+                  KindIdentifier "x3" [423, 425), i=148, next=0
+                KindPropertyAccessExpression [426, 430), i=149, next=152
+                  KindIdentifier "a" [426, 428), i=150, next=151
+                  KindIdentifier "y" [429, 430), i=151, next=0
+                KindPropertyAccessExpression [431, 435), i=152, next=0
+                  KindIdentifier "a" [431, 433), i=153, next=154
+                  KindIdentifier "z" [434, 435), i=154, next=0

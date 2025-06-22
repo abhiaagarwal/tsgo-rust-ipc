@@ -1,0 +1,72 @@
+KindSourceFile [0, 897), i=1, next=0
+  NodeList [0, 897), i=2, next=0
+    KindExportDeclaration [0, 10), i=3, next=5
+      KindNamedExports [6, 9), i=4, next=0
+    KindVariableStatement [10, 198), i=5, next=22
+      KindVariableDeclarationList [10, 197), i=6, next=0
+        NodeList [154, 197), i=7, next=0
+          KindVariableDeclaration [154, 197), i=8, next=0
+            KindIdentifier "one" [154, 158), i=9, next=10
+            KindTypeLiteral [159, 182), i=10, next=17
+              NodeList [161, 180), i=11, next=0
+                KindPropertySignature [161, 180), i=12, next=0
+                  NodeList [161, 170), i=13, next=15
+                    KindReadonlyKeyword [161, 170), i=14, next=0
+                  KindIdentifier "a" [170, 172), i=15, next=16
+                  KindStringKeyword [173, 180), i=16, next=0
+            KindObjectLiteralExpression [184, 197), i=17, next=0
+              NodeList [186, 195), i=18, next=0
+                KindPropertyAssignment [186, 195), i=19, next=0
+                  KindIdentifier "a" [186, 188), i=20, next=21
+                  KindStringLiteral "one" [189, 195), i=21, next=0
+    KindVariableStatement [198, 240), i=22, next=37
+      KindVariableDeclarationList [198, 239), i=23, next=0
+        NodeList [205, 239), i=24, next=0
+          KindVariableDeclaration [205, 239), i=25, next=0
+            KindIdentifier "two" [205, 209), i=26, next=27
+            KindTypeLiteral [210, 224), i=27, next=32
+              NodeList [212, 222), i=28, next=0
+                KindPropertySignature [212, 222), i=29, next=0
+                  KindIdentifier "a" [212, 214), i=30, next=31
+                  KindStringKeyword [215, 222), i=31, next=0
+            KindObjectLiteralExpression [226, 239), i=32, next=0
+              NodeList [228, 237), i=33, next=0
+                KindPropertyAssignment [228, 237), i=34, next=0
+                  KindIdentifier "a" [228, 230), i=35, next=36
+                  KindStringLiteral "two" [231, 237), i=36, next=0
+    KindFunctionDeclaration [240, 897), i=37, next=0
+      KindIdentifier "doSomething" [252, 264), i=38, next=39
+      NodeList [265, 283), i=39, next=43
+        KindParameter [265, 283), i=40, next=0
+          KindIdentifier "condition" [265, 274), i=41, next=42
+          KindBooleanKeyword [275, 283), i=42, next=0
+      KindBlock [284, 897), i=43, next=0
+        NodeList [286, 894), i=44, next=0
+          KindVariableStatement [286, 549), i=45, next=57
+            KindVariableDeclarationList [286, 548), i=46, next=0
+              NodeList [516, 548), i=47, next=0
+                KindVariableDeclaration [516, 548), i=48, next=0
+                  KindIdentifier "three" [516, 522), i=49, next=50
+                  KindConditionalExpression [524, 548), i=50, next=0
+                    KindParenthesizedExpression [524, 536), i=51, next=53
+                      KindIdentifier "condition" [526, 535), i=52, next=0
+                    KindQuestionToken [536, 538), i=53, next=54
+                    KindIdentifier "two" [538, 542), i=54, next=55
+                    KindColonToken [542, 544), i=55, next=56
+                    KindIdentifier "one" [544, 548), i=56, next=0
+          KindExpressionStatement [549, 573), i=57, next=64
+            KindBinaryExpression [549, 572), i=58, next=0
+              KindPropertyAccessExpression [549, 564), i=59, next=62
+                KindIdentifier "three" [549, 562), i=60, next=61
+                KindIdentifier "a" [563, 564), i=61, next=0
+              KindEqualsToken [564, 566), i=62, next=63
+              KindStringLiteral "foo" [566, 572), i=63, next=0
+          KindExpressionStatement [573, 873), i=64, next=71
+            KindBinaryExpression [573, 872), i=65, next=0
+              KindPropertyAccessExpression [573, 863), i=66, next=69
+                KindIdentifier "three" [573, 861), i=67, next=68
+                KindIdentifier "a" [862, 863), i=68, next=0
+              KindEqualsToken [863, 865), i=69, next=70
+              KindStringLiteral "foo2" [865, 872), i=70, next=0
+          KindReturnStatement [873, 894), i=71, next=0
+            KindIdentifier "three" [887, 893), i=72, next=0

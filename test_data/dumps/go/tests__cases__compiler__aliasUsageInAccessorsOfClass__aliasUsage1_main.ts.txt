@@ -1,0 +1,46 @@
+KindSourceFile [0, 329), i=1, next=0
+  NodeList [0, 329), i=2, next=0
+    KindImportEqualsDeclaration [0, 52), i=3, next=7
+      KindIdentifier "Backbone" [6, 15), i=4, next=5
+      KindExternalModuleReference [17, 51), i=5, next=0
+        KindStringLiteral "./aliasUsage1_backbone" [26, 50), i=6, next=0
+    KindImportEqualsDeclaration [52, 104), i=7, next=11
+      KindIdentifier "moduleA" [60, 68), i=8, next=9
+      KindExternalModuleReference [70, 103), i=9, next=0
+        KindStringLiteral "./aliasUsage1_moduleA" [79, 102), i=10, next=0
+    KindInterfaceDeclaration [104, 191), i=11, next=20
+      KindIdentifier "IHasVisualizationModel" [115, 138), i=12, next=13
+      NodeList [140, 188), i=13, next=0
+        KindPropertySignature [140, 188), i=14, next=0
+          KindIdentifier "VisualizationModel" [140, 164), i=15, next=16
+          KindTypeQuery [165, 187), i=16, next=0
+            KindQualifiedName [172, 187), i=17, next=0
+              KindIdentifier "Backbone" [172, 181), i=18, next=19
+              KindIdentifier "Model" [182, 187), i=19, next=0
+    KindClassDeclaration [191, 329), i=20, next=0
+      KindIdentifier "C2" [198, 201), i=21, next=22
+      NodeList [203, 326), i=22, next=0
+        KindPropertyDeclaration [203, 235), i=23, next=27
+          KindIdentifier "x" [203, 210), i=24, next=25
+          KindTypeReference [211, 234), i=25, next=0
+            KindIdentifier "IHasVisualizationModel" [211, 234), i=26, next=0
+        KindGetAccessor [235, 281), i=27, next=35
+          KindIdentifier "A" [244, 246), i=28, next=29
+          KindBlock [248, 281), i=29, next=0
+            NodeList [250, 274), i=30, next=0
+              KindReturnStatement [250, 274), i=31, next=0
+                KindPropertyAccessExpression [266, 273), i=32, next=0
+                  KindThisKeyword [266, 271), i=33, next=34
+                  KindIdentifier "x" [272, 273), i=34, next=0
+        KindSetAccessor [281, 326), i=35, next=0
+          KindIdentifier "A" [290, 292), i=36, next=37
+          NodeList [293, 294), i=37, next=40
+            KindParameter [293, 294), i=38, next=0
+              KindIdentifier "x" [293, 294), i=39, next=0
+          KindBlock [295, 326), i=40, next=0
+            NodeList [297, 319), i=41, next=0
+              KindExpressionStatement [297, 319), i=42, next=0
+                KindBinaryExpression [297, 318), i=43, next=0
+                  KindIdentifier "x" [297, 308), i=44, next=45
+                  KindEqualsToken [308, 310), i=45, next=46
+                  KindIdentifier "moduleA" [310, 318), i=46, next=0

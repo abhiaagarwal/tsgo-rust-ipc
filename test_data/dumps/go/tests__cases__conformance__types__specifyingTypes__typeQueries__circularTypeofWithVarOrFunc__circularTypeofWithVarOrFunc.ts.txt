@@ -1,0 +1,94 @@
+KindSourceFile [0, 558), i=1, next=0
+  NodeList [0, 556), i=2, next=0
+    KindTypeAliasDeclaration [0, 43), i=3, next=7
+      KindIdentifier "typeAlias1" [4, 15), i=4, next=5
+      KindTypeQuery [17, 42), i=5, next=0
+        KindIdentifier "varOfAliasedType1" [24, 42), i=6, next=0
+    KindVariableStatement [43, 79), i=7, next=14
+      KindVariableDeclarationList [43, 78), i=8, next=0
+        NodeList [48, 78), i=9, next=0
+          KindVariableDeclaration [48, 78), i=10, next=0
+            KindIdentifier "varOfAliasedType1" [48, 66), i=11, next=12
+            KindTypeReference [67, 78), i=12, next=0
+              KindIdentifier "typeAlias1" [67, 78), i=13, next=0
+    KindVariableStatement [79, 117), i=14, next=21
+      KindVariableDeclarationList [79, 116), i=15, next=0
+        NodeList [86, 116), i=16, next=0
+          KindVariableDeclaration [86, 116), i=17, next=0
+            KindIdentifier "varOfAliasedType2" [86, 104), i=18, next=19
+            KindTypeReference [105, 116), i=19, next=0
+              KindIdentifier "typeAlias2" [105, 116), i=20, next=0
+    KindTypeAliasDeclaration [117, 162), i=21, next=25
+      KindIdentifier "typeAlias2" [123, 134), i=22, next=23
+      KindTypeQuery [136, 161), i=23, next=0
+        KindIdentifier "varOfAliasedType2" [143, 161), i=24, next=0
+    KindFunctionDeclaration [162, 210), i=25, next=33
+      KindIdentifier "func" [174, 179), i=26, next=27
+      KindTypeReference [182, 193), i=27, next=29
+        KindIdentifier "typeAlias3" [182, 193), i=28, next=0
+      KindBlock [193, 210), i=29, next=0
+        NodeList [195, 208), i=30, next=0
+          KindReturnStatement [195, 208), i=31, next=0
+            KindNullKeyword [202, 207), i=32, next=0
+    KindVariableStatement [210, 243), i=33, next=40
+      KindVariableDeclarationList [210, 242), i=34, next=0
+        NodeList [215, 242), i=35, next=0
+          KindVariableDeclaration [215, 242), i=36, next=0
+            KindIdentifier "varOfAliasedType3" [215, 233), i=37, next=38
+            KindCallExpression [235, 242), i=38, next=0
+              KindIdentifier "func" [235, 240), i=39, next=0
+    KindTypeAliasDeclaration [243, 288), i=40, next=44
+      KindIdentifier "typeAlias3" [249, 260), i=41, next=42
+      KindTypeQuery [262, 287), i=42, next=0
+        KindIdentifier "varOfAliasedType3" [269, 287), i=43, next=0
+    KindInterfaceDeclaration [288, 364), i=44, next=53
+      KindIdentifier "Input" [325, 331), i=45, next=46
+      NodeList [333, 361), i=46, next=0
+        KindPropertySignature [333, 347), i=47, next=50
+          KindIdentifier "a" [333, 338), i=48, next=49
+          KindNumberKeyword [339, 346), i=49, next=0
+        KindPropertySignature [347, 361), i=50, next=0
+          KindIdentifier "b" [347, 352), i=51, next=52
+          KindNumberKeyword [353, 360), i=52, next=0
+    KindTypeAliasDeclaration [364, 400), i=53, next=60
+      KindIdentifier "R" [372, 374), i=54, next=55
+      KindTypeReference [376, 399), i=55, next=0
+        KindIdentifier "ReturnType" [376, 387), i=56, next=57
+        NodeList [388, 398), i=57, next=0
+          KindTypeQuery [388, 398), i=58, next=0
+            KindIdentifier "mul" [394, 398), i=59, next=0
+    KindFunctionDeclaration [400, 465), i=60, next=80
+      KindIdentifier "mul" [410, 414), i=61, next=62
+      NodeList [415, 427), i=62, next=67
+        KindParameter [415, 427), i=63, next=0
+          KindIdentifier "input" [415, 420), i=64, next=65
+          KindTypeReference [421, 427), i=65, next=0
+            KindIdentifier "Input" [421, 427), i=66, next=0
+      KindTypeReference [429, 431), i=67, next=69
+        KindIdentifier "R" [429, 431), i=68, next=0
+      KindBlock [431, 465), i=69, next=0
+        NodeList [433, 462), i=70, next=0
+          KindReturnStatement [433, 462), i=71, next=0
+            KindBinaryExpression [443, 461), i=72, next=0
+              KindPropertyAccessExpression [443, 451), i=73, next=76
+                KindIdentifier "input" [443, 449), i=74, next=75
+                KindIdentifier "a" [450, 451), i=75, next=0
+              KindAsteriskToken [451, 453), i=76, next=77
+              KindPropertyAccessExpression [453, 461), i=77, next=0
+                KindIdentifier "input" [453, 459), i=78, next=79
+                KindIdentifier "b" [460, 461), i=79, next=0
+    KindTypeAliasDeclaration [465, 524), i=80, next=87
+      KindIdentifier "R2" [497, 500), i=81, next=82
+      KindTypeReference [502, 523), i=82, next=0
+        KindIdentifier "ReturnType" [502, 513), i=83, next=84
+        NodeList [514, 522), i=84, next=0
+          KindTypeQuery [514, 522), i=85, next=0
+            KindIdentifier "f" [520, 522), i=86, next=0
+    KindFunctionDeclaration [524, 556), i=87, next=0
+      KindIdentifier "f" [534, 536), i=88, next=89
+      KindTypeReference [539, 542), i=89, next=91
+        KindIdentifier "R2" [539, 542), i=90, next=0
+      KindBlock [542, 556), i=91, next=0
+        NodeList [544, 554), i=92, next=0
+          KindReturnStatement [544, 554), i=93, next=0
+            KindNumericLiteral [551, 553), i=94, next=0

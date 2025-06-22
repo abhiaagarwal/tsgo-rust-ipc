@@ -1,0 +1,36 @@
+KindSourceFile [0, 104), i=1, next=0
+  NodeList [0, 104), i=2, next=0
+    KindModuleDeclaration [0, 42), i=3, next=16
+      KindIdentifier "m1" [6, 9), i=4, next=5
+      KindModuleBlock [9, 42), i=5, next=0
+        NodeList [11, 41), i=6, next=0
+          KindClassDeclaration [11, 41), i=7, next=0
+            NodeList [11, 18), i=8, next=10
+              KindExportKeyword [11, 18), i=9, next=0
+            KindIdentifier "c1" [24, 27), i=10, next=11
+            NodeList [29, 39), i=11, next=0
+              KindPropertyDeclaration [29, 39), i=12, next=0
+                NodeList [29, 36), i=13, next=15
+                  KindPublicKeyword [29, 36), i=14, next=0
+                KindIdentifier "a" [36, 38), i=15, next=0
+    KindFunctionDeclaration [42, 86), i=16, next=29
+      KindIdentifier "foo" [53, 57), i=17, next=18
+      KindTypeReference [60, 65), i=18, next=22
+        KindQualifiedName [60, 65), i=19, next=0
+          KindIdentifier "m1" [60, 62), i=20, next=21
+          KindIdentifier "c1" [63, 65), i=21, next=0
+      KindBlock [65, 86), i=22, next=0
+        NodeList [66, 85), i=23, next=0
+          KindReturnStatement [66, 85), i=24, next=0
+            KindNewExpression [72, 84), i=25, next=0
+              KindPropertyAccessExpression [76, 82), i=26, next=0
+                KindIdentifier "m1" [76, 79), i=27, next=28
+                KindIdentifier "c1" [80, 82), i=28, next=0
+    KindEmptyStatement [86, 87), i=29, next=30
+    KindVariableStatement [87, 104), i=30, next=0
+      KindVariableDeclarationList [87, 103), i=31, next=0
+        NodeList [93, 103), i=32, next=0
+          KindVariableDeclaration [93, 103), i=33, next=0
+            KindIdentifier "x" [93, 95), i=34, next=35
+            KindCallExpression [97, 103), i=35, next=0
+              KindIdentifier "foo" [97, 101), i=36, next=0

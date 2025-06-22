@@ -1,0 +1,90 @@
+KindSourceFile [0, 481), i=1, next=0
+  NodeList [0, 481), i=2, next=0
+    KindInterfaceDeclaration [0, 51), i=3, next=13
+      NodeList [0, 6), i=4, next=6
+        KindExportKeyword [0, 6), i=5, next=0
+      KindIdentifier "UnionAltA" [16, 26), i=6, next=7
+      NodeList [28, 48), i=7, next=0
+        KindPropertySignature [28, 48), i=8, next=0
+          KindIdentifier "type" [28, 38), i=9, next=10
+          KindQuestionToken [38, 39), i=10, next=11
+          KindLiteralType [40, 47), i=11, next=0
+            KindStringLiteral "text" [40, 47), i=12, next=0
+    KindInterfaceDeclaration [51, 130), i=13, next=29
+      NodeList [51, 61), i=14, next=16
+        KindExportKeyword [51, 61), i=15, next=0
+      KindIdentifier "UnionAltB" [71, 81), i=16, next=17
+      NodeList [83, 127), i=17, next=0
+        KindPropertySignature [83, 127), i=18, next=0
+          KindIdentifier "type" [83, 93), i=19, next=20
+          KindQuestionToken [93, 94), i=20, next=21
+          KindUnionType [95, 126), i=21, next=0
+            NodeList [95, 126), i=22, next=0
+              KindLiteralType [95, 103), i=23, next=25
+                KindStringLiteral "image" [95, 103), i=24, next=0
+              KindLiteralType [105, 113), i=25, next=27
+                KindStringLiteral "video" [105, 113), i=26, next=0
+              KindLiteralType [115, 126), i=27, next=0
+                KindStringLiteral "document" [115, 126), i=28, next=0
+    KindTypeAliasDeclaration [130, 181), i=29, next=39
+      NodeList [130, 140), i=30, next=32
+        KindExportKeyword [130, 140), i=31, next=0
+      KindIdentifier "ValueUnion" [145, 156), i=32, next=33
+      KindUnionType [158, 180), i=33, next=0
+        NodeList [158, 180), i=34, next=0
+          KindTypeReference [158, 168), i=35, next=37
+            KindIdentifier "UnionAltA" [158, 168), i=36, next=0
+          KindTypeReference [170, 180), i=37, next=0
+            KindIdentifier "UnionAltB" [170, 180), i=38, next=0
+    KindTypeAliasDeclaration [181, 284), i=39, next=56
+      NodeList [181, 191), i=40, next=42
+        KindExportKeyword [181, 191), i=41, next=0
+      KindIdentifier "MapOrSingleton" [196, 211), i=42, next=43
+      KindUnionType [213, 283), i=43, next=0
+        NodeList [213, 283), i=44, next=0
+          KindTypeLiteral [220, 265), i=45, next=54
+            NodeList [222, 258), i=46, next=0
+              KindIndexSignature [222, 258), i=47, next=0
+                NodeList [233, 244), i=48, next=52
+                  KindParameter [233, 244), i=49, next=0
+                    KindIdentifier "key" [233, 236), i=50, next=51
+                    KindStringKeyword [237, 244), i=51, next=0
+                KindTypeReference [246, 257), i=52, next=0
+                  KindIdentifier "ValueUnion" [246, 257), i=53, next=0
+          KindTypeReference [272, 283), i=54, next=0
+            KindIdentifier "ValueUnion" [272, 283), i=55, next=0
+    KindVariableStatement [284, 386), i=56, next=72
+      KindVariableDeclarationList [284, 385), i=57, next=0
+        NodeList [293, 385), i=58, next=0
+          KindVariableDeclaration [293, 385), i=59, next=0
+            KindIdentifier "withoutAsConst" [293, 308), i=60, next=61
+            KindTypeReference [309, 324), i=61, next=63
+              KindIdentifier "MapOrSingleton" [309, 324), i=62, next=0
+            KindObjectLiteralExpression [326, 385), i=63, next=0
+              NodeList [328, 382), i=64, next=0
+                KindPropertyAssignment [328, 381), i=65, next=0
+                  KindNumericLiteral [328, 335), i=66, next=67
+                  KindObjectLiteralExpression [336, 381), i=67, next=0
+                    NodeList [338, 374), i=68, next=0
+                      KindPropertyAssignment [338, 360), i=69, next=0
+                        KindIdentifier "type" [338, 352), i=70, next=71
+                        KindStringLiteral "text" [353, 360), i=71, next=0
+    KindVariableStatement [386, 481), i=72, next=0
+      KindVariableDeclarationList [386, 480), i=73, next=0
+        NodeList [395, 480), i=74, next=0
+          KindVariableDeclaration [395, 480), i=75, next=0
+            KindIdentifier "withAsConst" [395, 407), i=76, next=77
+            KindTypeReference [408, 423), i=77, next=79
+              KindIdentifier "MapOrSingleton" [408, 423), i=78, next=0
+            KindObjectLiteralExpression [425, 480), i=79, next=0
+              NodeList [427, 477), i=80, next=0
+                KindPropertyAssignment [427, 476), i=81, next=0
+                  KindNumericLiteral [427, 434), i=82, next=83
+                  KindObjectLiteralExpression [435, 476), i=83, next=0
+                    NodeList [437, 469), i=84, next=0
+                      KindPropertyAssignment [437, 468), i=85, next=0
+                        KindIdentifier "type" [437, 451), i=86, next=87
+                        KindAsExpression [452, 468), i=87, next=0
+                          KindStringLiteral "text" [452, 459), i=88, next=89
+                          KindTypeReference [462, 468), i=89, next=0
+                            KindIdentifier "const" [462, 468), i=90, next=0

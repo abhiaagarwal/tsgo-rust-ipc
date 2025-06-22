@@ -1,0 +1,148 @@
+KindSourceFile [0, 736), i=1, next=0
+  NodeList [0, 720), i=2, next=0
+    KindClassDeclaration [0, 18), i=3, next=5
+      KindIdentifier "ConcreteA" [5, 15), i=4, next=0
+    KindClassDeclaration [18, 37), i=5, next=7
+      KindIdentifier "ConcreteB" [24, 34), i=6, next=0
+    KindClassDeclaration [37, 77), i=7, next=15
+      NodeList [37, 46), i=8, next=10
+        KindAbstractKeyword [37, 46), i=9, next=0
+      KindIdentifier "AbstractA" [52, 62), i=10, next=11
+      NodeList [64, 75), i=11, next=0
+        KindPropertyDeclaration [64, 75), i=12, next=0
+          KindIdentifier "a" [64, 66), i=13, next=14
+          KindStringKeyword [67, 74), i=14, next=0
+    KindClassDeclaration [77, 117), i=15, next=23
+      NodeList [77, 86), i=16, next=18
+        KindAbstractKeyword [77, 86), i=17, next=0
+      KindIdentifier "AbstractB" [92, 102), i=18, next=19
+      NodeList [104, 115), i=19, next=0
+        KindPropertyDeclaration [104, 115), i=20, next=0
+          KindIdentifier "b" [104, 106), i=21, next=22
+          KindStringKeyword [107, 114), i=22, next=0
+    KindTypeAliasDeclaration [117, 172), i=23, next=31
+      KindIdentifier "Abstracts" [123, 133), i=24, next=25
+      KindUnionType [135, 171), i=25, next=0
+        NodeList [135, 171), i=26, next=0
+          KindTypeQuery [135, 152), i=27, next=29
+            KindIdentifier "AbstractA" [142, 152), i=28, next=0
+          KindTypeQuery [154, 171), i=29, next=0
+            KindIdentifier "AbstractB" [161, 171), i=30, next=0
+    KindTypeAliasDeclaration [172, 226), i=31, next=39
+      KindIdentifier "Concretes" [177, 187), i=32, next=33
+      KindUnionType [189, 225), i=33, next=0
+        NodeList [189, 225), i=34, next=0
+          KindTypeQuery [189, 206), i=35, next=37
+            KindIdentifier "ConcreteA" [196, 206), i=36, next=0
+          KindTypeQuery [208, 225), i=37, next=0
+            KindIdentifier "ConcreteB" [215, 225), i=38, next=0
+    KindTypeAliasDeclaration [226, 277), i=39, next=47
+      KindIdentifier "ConcretesOrAbstracts" [231, 252), i=40, next=41
+      KindUnionType [254, 276), i=41, next=0
+        NodeList [254, 276), i=42, next=0
+          KindTypeReference [254, 264), i=43, next=45
+            KindIdentifier "Concretes" [254, 264), i=44, next=0
+          KindTypeReference [266, 276), i=45, next=0
+            KindIdentifier "Abstracts" [266, 276), i=46, next=0
+    KindVariableStatement [277, 320), i=47, next=56
+      NodeList [277, 286), i=48, next=50
+        KindDeclareKeyword [277, 286), i=49, next=0
+      KindVariableDeclarationList [286, 319), i=50, next=0
+        NodeList [292, 319), i=51, next=0
+          KindVariableDeclaration [292, 319), i=52, next=0
+            KindIdentifier "cls1" [292, 297), i=53, next=54
+            KindTypeReference [298, 319), i=54, next=0
+              KindIdentifier "ConcretesOrAbstracts" [298, 319), i=55, next=0
+    KindVariableStatement [320, 351), i=56, next=65
+      NodeList [320, 328), i=57, next=59
+        KindDeclareKeyword [320, 328), i=58, next=0
+      KindVariableDeclarationList [328, 350), i=59, next=0
+        NodeList [334, 350), i=60, next=0
+          KindVariableDeclaration [334, 350), i=61, next=0
+            KindIdentifier "cls2" [334, 339), i=62, next=63
+            KindTypeReference [340, 350), i=63, next=0
+              KindIdentifier "Abstracts" [340, 350), i=64, next=0
+    KindVariableStatement [351, 382), i=65, next=74
+      NodeList [351, 359), i=66, next=68
+        KindDeclareKeyword [351, 359), i=67, next=0
+      KindVariableDeclarationList [359, 381), i=68, next=0
+        NodeList [365, 381), i=69, next=0
+          KindVariableDeclaration [365, 381), i=70, next=0
+            KindIdentifier "cls3" [365, 370), i=71, next=72
+            KindTypeReference [371, 381), i=72, next=0
+              KindIdentifier "Concretes" [371, 381), i=73, next=0
+    KindExpressionStatement [382, 395), i=74, next=77
+      KindNewExpression [382, 394), i=75, next=0
+        KindIdentifier "cls1" [387, 392), i=76, next=0
+    KindExpressionStatement [395, 423), i=77, next=80
+      KindNewExpression [395, 422), i=78, next=0
+        KindIdentifier "cls2" [415, 420), i=79, next=0
+    KindExpressionStatement [423, 451), i=80, next=83
+      KindNewExpression [423, 450), i=81, next=0
+        KindIdentifier "cls3" [443, 448), i=82, next=0
+    KindExpressionStatement [451, 524), i=83, next=100
+      KindCallExpression [451, 523), i=84, next=0
+        KindPropertyAccessExpression [451, 505), i=85, next=92
+          KindArrayLiteralExpression [451, 501), i=86, next=91
+            NodeList [469, 500), i=87, next=0
+              KindIdentifier "ConcreteA" [469, 478), i=88, next=89
+              KindIdentifier "AbstractA" [479, 489), i=89, next=90
+              KindIdentifier "AbstractB" [490, 500), i=90, next=0
+          KindIdentifier "map" [502, 505), i=91, next=0
+        NodeList [506, 522), i=92, next=0
+          KindArrowFunction [506, 522), i=93, next=0
+            NodeList [506, 509), i=94, next=97
+              KindParameter [506, 509), i=95, next=0
+                KindIdentifier "cls" [506, 509), i=96, next=0
+            KindEqualsGreaterThanToken [509, 512), i=97, next=98
+            KindNewExpression [512, 522), i=98, next=0
+              KindIdentifier "cls" [516, 520), i=99, next=0
+    KindExpressionStatement [524, 597), i=100, next=117
+      KindCallExpression [524, 596), i=101, next=0
+        KindPropertyAccessExpression [524, 578), i=102, next=109
+          KindArrayLiteralExpression [524, 574), i=103, next=108
+            NodeList [542, 573), i=104, next=0
+              KindIdentifier "AbstractA" [542, 551), i=105, next=106
+              KindIdentifier "AbstractB" [552, 562), i=106, next=107
+              KindIdentifier "ConcreteA" [563, 573), i=107, next=0
+          KindIdentifier "map" [575, 578), i=108, next=0
+        NodeList [579, 595), i=109, next=0
+          KindArrowFunction [579, 595), i=110, next=0
+            NodeList [579, 582), i=111, next=114
+              KindParameter [579, 582), i=112, next=0
+                KindIdentifier "cls" [579, 582), i=113, next=0
+            KindEqualsGreaterThanToken [582, 585), i=114, next=115
+            KindNewExpression [585, 595), i=115, next=0
+              KindIdentifier "cls" [589, 593), i=116, next=0
+    KindExpressionStatement [597, 659), i=117, next=133
+      KindCallExpression [597, 658), i=118, next=0
+        KindPropertyAccessExpression [597, 640), i=119, next=125
+          KindArrayLiteralExpression [597, 636), i=120, next=124
+            NodeList [615, 635), i=121, next=0
+              KindIdentifier "ConcreteA" [615, 624), i=122, next=123
+              KindIdentifier "ConcreteB" [625, 635), i=123, next=0
+          KindIdentifier "map" [637, 640), i=124, next=0
+        NodeList [641, 657), i=125, next=0
+          KindArrowFunction [641, 657), i=126, next=0
+            NodeList [641, 644), i=127, next=130
+              KindParameter [641, 644), i=128, next=0
+                KindIdentifier "cls" [641, 644), i=129, next=0
+            KindEqualsGreaterThanToken [644, 647), i=130, next=131
+            KindNewExpression [647, 657), i=131, next=0
+              KindIdentifier "cls" [651, 655), i=132, next=0
+    KindExpressionStatement [659, 720), i=133, next=0
+      KindCallExpression [659, 719), i=134, next=0
+        KindPropertyAccessExpression [659, 701), i=135, next=141
+          KindArrayLiteralExpression [659, 697), i=136, next=140
+            NodeList [676, 696), i=137, next=0
+              KindIdentifier "AbstractA" [676, 685), i=138, next=139
+              KindIdentifier "AbstractB" [686, 696), i=139, next=0
+          KindIdentifier "map" [698, 701), i=140, next=0
+        NodeList [702, 718), i=141, next=0
+          KindArrowFunction [702, 718), i=142, next=0
+            NodeList [702, 705), i=143, next=146
+              KindParameter [702, 705), i=144, next=0
+                KindIdentifier "cls" [702, 705), i=145, next=0
+            KindEqualsGreaterThanToken [705, 708), i=146, next=147
+            KindNewExpression [708, 718), i=147, next=0
+              KindIdentifier "cls" [712, 716), i=148, next=0

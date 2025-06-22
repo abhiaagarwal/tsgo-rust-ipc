@@ -1,0 +1,172 @@
+KindSourceFile [0, 958), i=1, next=0
+  NodeList [0, 957), i=2, next=0
+    KindTypeAliasDeclaration [0, 37), i=3, next=15
+      KindIdentifier "Maybe" [4, 10), i=4, next=5
+      NodeList [11, 12), i=5, next=8
+        KindTypeParameter [11, 12), i=6, next=0
+          KindIdentifier "T" [11, 12), i=7, next=0
+      KindUnionType [15, 36), i=8, next=0
+        NodeList [15, 36), i=9, next=0
+          KindLiteralType [15, 20), i=10, next=12
+            KindNullKeyword [15, 20), i=11, next=0
+          KindUndefinedKeyword [22, 32), i=12, next=13
+          KindTypeReference [34, 36), i=13, next=0
+            KindIdentifier "T" [34, 36), i=14, next=0
+    KindClassDeclaration [37, 107), i=15, next=29
+      NodeList [37, 46), i=16, next=18
+        KindDeclareKeyword [37, 46), i=17, next=0
+      KindIdentifier "GraphQLError" [52, 65), i=18, next=19
+      NodeList [65, 79), i=19, next=24
+        KindHeritageClause [65, 79), i=20, next=0
+          NodeList [73, 79), i=21, next=0
+            KindExpressionWithTypeArguments [73, 79), i=22, next=0
+              KindIdentifier "Error" [73, 79), i=23, next=0
+      NodeList [81, 105), i=24, next=0
+        KindPropertyDeclaration [81, 105), i=25, next=0
+          KindIdentifier "originalError" [81, 97), i=26, next=27
+          KindTypeReference [98, 104), i=27, next=0
+            KindIdentifier "Error" [98, 104), i=28, next=0
+    KindInterfaceDeclaration [107, 204), i=29, next=48
+      KindIdentifier "ExecutionArgs" [118, 132), i=30, next=31
+      NodeList [134, 202), i=31, next=0
+        KindPropertySignature [134, 202), i=32, next=0
+          KindIdentifier "variableValues" [134, 151), i=33, next=34
+          KindQuestionToken [151, 152), i=34, next=35
+          KindTypeReference [153, 201), i=35, next=0
+            KindIdentifier "Maybe" [153, 159), i=36, next=37
+            NodeList [160, 200), i=37, next=0
+              KindTypeLiteral [160, 200), i=38, next=0
+                NodeList [161, 198), i=39, next=0
+                  KindIndexSignature [161, 198), i=40, next=0
+                    NodeList [161, 170), i=41, next=43
+                      KindReadonlyKeyword [161, 170), i=42, next=0
+                    NodeList [172, 188), i=43, next=47
+                      KindParameter [172, 188), i=44, next=0
+                        KindIdentifier "variable" [172, 180), i=45, next=46
+                        KindStringKeyword [181, 188), i=46, next=0
+                    KindUnknownKeyword [190, 198), i=47, next=0
+    KindInterfaceDeclaration [204, 287), i=48, next=61
+      KindIdentifier "ExecutionContext" [215, 232), i=49, next=50
+      NodeList [234, 285), i=50, next=0
+        KindPropertySignature [234, 285), i=51, next=0
+          KindIdentifier "variableValues" [234, 251), i=52, next=53
+          KindTypeLiteral [252, 284), i=53, next=0
+            NodeList [254, 282), i=54, next=0
+              KindIndexSignature [254, 282), i=55, next=0
+                NodeList [256, 272), i=56, next=60
+                  KindParameter [256, 272), i=57, next=0
+                    KindIdentifier "variable" [256, 264), i=58, next=59
+                    KindStringKeyword [265, 272), i=59, next=0
+                KindUnknownKeyword [274, 282), i=60, next=0
+    KindTypeAliasDeclaration [287, 444), i=61, next=94
+      KindIdentifier "CoercedVariableValues" [293, 315), i=62, next=63
+      KindUnionType [317, 443), i=63, next=0
+        NodeList [317, 443), i=64, next=0
+          KindTypeLiteral [321, 378), i=65, next=78
+            NodeList [323, 376), i=66, next=0
+              KindPropertySignature [323, 360), i=67, next=74
+                KindIdentifier "errors" [323, 330), i=68, next=69
+                KindTypeReference [331, 359), i=69, next=0
+                  KindIdentifier "ReadonlyArray" [331, 345), i=70, next=71
+                  NodeList [346, 358), i=71, next=0
+                    KindTypeReference [346, 358), i=72, next=0
+                      KindIdentifier "GraphQLError" [346, 358), i=73, next=0
+              KindPropertySignature [360, 376), i=74, next=0
+                KindIdentifier "coerced" [360, 368), i=75, next=76
+                KindQuestionToken [368, 369), i=76, next=77
+                KindNeverKeyword [370, 376), i=77, next=0
+          KindTypeLiteral [382, 443), i=78, next=0
+            NodeList [384, 441), i=79, next=0
+              KindPropertySignature [384, 426), i=80, next=90
+                KindIdentifier "coerced" [384, 392), i=81, next=82
+                KindTypeLiteral [393, 425), i=82, next=0
+                  NodeList [395, 423), i=83, next=0
+                    KindIndexSignature [395, 423), i=84, next=0
+                      NodeList [397, 413), i=85, next=89
+                        KindParameter [397, 413), i=86, next=0
+                          KindIdentifier "variable" [397, 405), i=87, next=88
+                          KindStringKeyword [406, 413), i=88, next=0
+                      KindUnknownKeyword [415, 423), i=89, next=0
+              KindPropertySignature [426, 441), i=90, next=0
+                KindIdentifier "errors" [426, 433), i=91, next=92
+                KindQuestionToken [433, 434), i=92, next=93
+                KindNeverKeyword [435, 441), i=93, next=0
+    KindFunctionDeclaration [444, 557), i=94, next=113
+      NodeList [444, 453), i=95, next=97
+        KindDeclareKeyword [444, 453), i=96, next=0
+      KindIdentifier "getVariableValues" [462, 480), i=97, next=98
+      NodeList [481, 532), i=98, next=111
+        KindParameter [481, 532), i=99, next=0
+          KindIdentifier "inputs" [481, 487), i=100, next=101
+          KindTypeLiteral [488, 532), i=101, next=0
+            NodeList [490, 530), i=102, next=0
+              KindIndexSignature [490, 530), i=103, next=0
+                NodeList [490, 501), i=104, next=106
+                  KindReadonlyKeyword [490, 501), i=105, next=0
+                NodeList [503, 519), i=106, next=110
+                  KindParameter [503, 519), i=107, next=0
+                    KindIdentifier "variable" [503, 511), i=108, next=109
+                    KindStringKeyword [512, 519), i=109, next=0
+                KindUnknownKeyword [521, 529), i=110, next=0
+      KindTypeReference [534, 556), i=111, next=0
+        KindIdentifier "CoercedVariableValues" [534, 556), i=112, next=0
+    KindFunctionDeclaration [557, 957), i=113, next=0
+      NodeList [557, 565), i=114, next=116
+        KindExportKeyword [557, 565), i=115, next=0
+      KindIdentifier "buildExecutionContext" [574, 596), i=116, next=117
+      NodeList [597, 620), i=117, next=122
+        KindParameter [597, 619), i=118, next=0
+          KindIdentifier "args" [597, 604), i=119, next=120
+          KindTypeReference [605, 619), i=120, next=0
+            KindIdentifier "ExecutionArgs" [605, 619), i=121, next=0
+      KindUnionType [623, 670), i=122, next=131
+        NodeList [623, 670), i=123, next=0
+          KindTypeReference [623, 651), i=124, next=129
+            KindIdentifier "ReadonlyArray" [623, 637), i=125, next=126
+            NodeList [638, 650), i=126, next=0
+              KindTypeReference [638, 650), i=127, next=0
+                KindIdentifier "GraphQLError" [638, 650), i=128, next=0
+          KindTypeReference [653, 670), i=129, next=0
+            KindIdentifier "ExecutionContext" [653, 670), i=130, next=0
+      KindBlock [670, 957), i=131, next=0
+        NodeList [672, 955), i=132, next=0
+          KindVariableStatement [672, 726), i=133, next=143
+            KindVariableDeclarationList [672, 725), i=134, next=0
+              NodeList [680, 725), i=135, next=0
+                KindVariableDeclaration [680, 725), i=136, next=0
+                  KindObjectBindingPattern [680, 718), i=137, next=142
+                    NodeList [682, 716), i=138, next=0
+                      KindBindingElement [682, 716), i=139, next=0
+                        KindIdentifier "variableValues" [682, 697), i=140, next=141
+                        KindIdentifier "rawVariableValues" [698, 716), i=141, next=0
+                  KindIdentifier "args" [720, 725), i=142, next=0
+          KindVariableStatement [726, 803), i=143, next=155
+            KindVariableDeclarationList [726, 802), i=144, next=0
+              NodeList [735, 802), i=145, next=0
+                KindVariableDeclaration [735, 802), i=146, next=0
+                  KindIdentifier "coercedVariableValues" [735, 757), i=147, next=148
+                  KindCallExpression [759, 802), i=148, next=0
+                    KindIdentifier "getVariableValues" [759, 777), i=149, next=150
+                    NodeList [778, 801), i=150, next=0
+                      KindBinaryExpression [778, 801), i=151, next=0
+                        KindIdentifier "rawVariableValues" [778, 795), i=152, next=153
+                        KindQuestionQuestionToken [795, 798), i=153, next=154
+                        KindObjectLiteralExpression [798, 801), i=154, next=0
+          KindIfStatement [803, 887), i=155, next=165
+            KindPropertyAccessExpression [811, 839), i=156, next=159
+              KindIdentifier "coercedVariableValues" [811, 832), i=157, next=158
+              KindIdentifier "errors" [833, 839), i=158, next=0
+            KindBlock [840, 887), i=159, next=0
+              NodeList [842, 883), i=160, next=0
+                KindReturnStatement [842, 883), i=161, next=0
+                  KindPropertyAccessExpression [853, 882), i=162, next=0
+                    KindIdentifier "coercedVariableValues" [853, 875), i=163, next=164
+                    KindIdentifier "errors" [876, 882), i=164, next=0
+          KindReturnStatement [887, 955), i=165, next=0
+            KindObjectLiteralExpression [897, 954), i=166, next=0
+              NodeList [899, 950), i=167, next=0
+                KindPropertyAssignment [899, 949), i=168, next=0
+                  KindIdentifier "variableValues" [899, 918), i=169, next=170
+                  KindPropertyAccessExpression [919, 949), i=170, next=0
+                    KindIdentifier "coercedVariableValues" [919, 941), i=171, next=172
+                    KindIdentifier "coerced" [942, 949), i=172, next=0

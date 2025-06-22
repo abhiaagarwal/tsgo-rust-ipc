@@ -1,0 +1,42 @@
+KindSourceFile [0, 223), i=1, next=0
+  NodeList [0, 223), i=2, next=0
+    KindClassDeclaration [0, 41), i=3, next=11
+      KindIdentifier "Base" [5, 10), i=4, next=5
+      NodeList [12, 38), i=5, next=0
+        KindPropertyDeclaration [12, 38), i=6, next=0
+          NodeList [12, 25), i=7, next=9
+            KindPrivateKeyword [12, 25), i=8, next=0
+          KindIdentifier "foo" [25, 29), i=9, next=10
+          KindStringKeyword [30, 37), i=10, next=0
+    KindClassDeclaration [41, 223), i=11, next=0
+      KindIdentifier "Derived" [50, 58), i=12, next=13
+      NodeList [58, 71), i=13, next=18
+        KindHeritageClause [58, 71), i=14, next=0
+          NodeList [66, 71), i=15, next=0
+            KindExpressionWithTypeArguments [66, 71), i=16, next=0
+              KindIdentifier "Base" [66, 71), i=17, next=0
+      NodeList [73, 211), i=18, next=0
+        KindPropertyDeclaration [73, 93), i=19, next=24
+          KindIdentifier "x" [73, 80), i=20, next=21
+          KindPropertyAccessExpression [82, 92), i=21, next=0
+            KindSuperKeyword [82, 88), i=22, next=23
+            KindIdentifier "foo" [89, 92), i=23, next=0
+        KindMethodDeclaration [93, 156), i=24, next=32
+          KindIdentifier "y" [93, 109), i=25, next=26
+          KindBlock [111, 156), i=26, next=0
+            NodeList [113, 140), i=27, next=0
+              KindReturnStatement [113, 140), i=28, next=0
+                KindPropertyAccessExpression [129, 139), i=29, next=0
+                  KindSuperKeyword [129, 135), i=30, next=31
+                  KindIdentifier "foo" [136, 139), i=31, next=0
+        KindPropertyDeclaration [156, 182), i=32, next=38
+          KindIdentifier "z" [156, 163), i=33, next=34
+          KindTypeQuery [164, 181), i=34, next=0
+            KindQualifiedName [171, 181), i=35, next=0
+              KindIdentifier "super" [171, 177), i=36, next=37
+              KindIdentifier "foo" [178, 181), i=37, next=0
+        KindPropertyDeclaration [182, 206), i=38, next=41
+          KindIdentifier "a" [182, 200), i=39, next=40
+          KindThisType [201, 206), i=40, next=0
+        KindPropertyDeclaration [207, 211), i=41, next=0
+          KindIdentifier "foo" [207, 210), i=42, next=0

@@ -1,0 +1,63 @@
+KindSourceFile [0, 216), i=1, next=0
+  NodeList [0, 214), i=2, next=0
+    KindImportDeclaration [0, 25), i=3, next=8
+      KindImportClause [6, 13), i=4, next=7
+        KindNamespaceImport [6, 13), i=5, next=0
+          KindIdentifier "x" [11, 13), i=6, next=0
+      KindStringLiteral "foo" [18, 24), i=7, next=0
+    KindImportDeclaration [25, 52), i=8, next=13
+      KindImportClause [33, 40), i=9, next=12
+        KindNamespaceImport [33, 40), i=10, next=0
+          KindIdentifier "y" [38, 40), i=11, next=0
+      KindStringLiteral "bar" [45, 51), i=12, next=0
+    KindExportDeclaration [52, 74), i=13, next=15
+      KindStringLiteral "foo" [67, 73), i=14, next=0
+    KindExportDeclaration [74, 95), i=15, next=17
+      KindStringLiteral "bar" [89, 95), i=16, next=0
+    KindExportDeclaration [95, 107), i=17, next=22
+      KindNamedExports [103, 107), i=18, next=0
+        NodeList [105, 106), i=19, next=0
+          KindExportSpecifier [105, 106), i=20, next=0
+            KindIdentifier "x" [105, 106), i=21, next=0
+    KindExportDeclaration [107, 119), i=22, next=27
+      KindNamedExports [115, 119), i=23, next=0
+        NodeList [117, 118), i=24, next=0
+          KindExportSpecifier [117, 118), i=25, next=0
+            KindIdentifier "y" [117, 118), i=26, next=0
+    KindImportDeclaration [119, 158), i=27, next=39
+      KindImportClause [127, 146), i=28, next=38
+        KindNamedImports [127, 146), i=29, next=0
+          NodeList [129, 145), i=30, next=0
+            KindImportSpecifier [129, 131), i=31, next=33
+              KindIdentifier "a1" [129, 131), i=32, next=0
+            KindImportSpecifier [132, 135), i=33, next=35
+              KindIdentifier "b1" [132, 135), i=34, next=0
+            KindImportSpecifier [136, 145), i=35, next=0
+              KindIdentifier "c1" [136, 139), i=36, next=37
+              KindIdentifier "d1" [142, 145), i=37, next=0
+      KindStringLiteral "foo" [151, 157), i=38, next=0
+    KindExportDeclaration [158, 197), i=39, next=50
+      KindNamedExports [166, 185), i=40, next=49
+        NodeList [168, 184), i=41, next=0
+          KindExportSpecifier [168, 170), i=42, next=44
+            KindIdentifier "a2" [168, 170), i=43, next=0
+          KindExportSpecifier [171, 174), i=44, next=46
+            KindIdentifier "b2" [171, 174), i=45, next=0
+          KindExportSpecifier [175, 184), i=46, next=0
+            KindIdentifier "c2" [175, 178), i=47, next=48
+            KindIdentifier "d2" [181, 184), i=48, next=0
+      KindStringLiteral "bar" [190, 196), i=49, next=0
+    KindExpressionStatement [197, 214), i=50, next=0
+      KindBinaryExpression [197, 213), i=51, next=0
+        KindBinaryExpression [197, 210), i=52, next=62
+          KindBinaryExpression [197, 207), i=53, next=60
+            KindBinaryExpression [197, 204), i=54, next=58
+              KindIdentifier "x" [197, 202), i=55, next=56
+              KindCommaToken [202, 203), i=56, next=57
+              KindIdentifier "y" [203, 204), i=57, next=0
+            KindCommaToken [204, 205), i=58, next=59
+            KindIdentifier "a1" [205, 207), i=59, next=0
+          KindCommaToken [207, 208), i=60, next=61
+          KindIdentifier "b1" [208, 210), i=61, next=0
+        KindCommaToken [210, 211), i=62, next=63
+        KindIdentifier "d1" [211, 213), i=63, next=0

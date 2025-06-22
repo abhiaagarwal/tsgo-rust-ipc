@@ -1,0 +1,175 @@
+KindSourceFile [0, 924), i=1, next=0
+  NodeList [0, 924), i=2, next=0
+    KindTypeAliasDeclaration [0, 75), i=3, next=30
+      KindIdentifier "Action" [4, 11), i=4, next=5
+      NodeList [12, 16), i=5, next=10
+        KindTypeParameter [12, 13), i=6, next=8
+          KindIdentifier "T" [12, 13), i=7, next=0
+        KindTypeParameter [14, 16), i=8, next=0
+          KindIdentifier "P" [14, 16), i=9, next=0
+      KindConditionalType [19, 75), i=10, next=0
+        KindTypeReference [19, 21), i=11, next=13
+          KindIdentifier "P" [19, 21), i=12, next=0
+        KindVoidKeyword [29, 34), i=13, next=14
+        KindTypeLiteral [36, 49), i=14, next=20
+          NodeList [38, 47), i=15, next=0
+            KindPropertySignature [38, 47), i=16, next=0
+              KindIdentifier "type" [38, 43), i=17, next=18
+              KindTypeReference [45, 47), i=18, next=0
+                KindIdentifier "T" [45, 47), i=19, next=0
+        KindTypeLiteral [51, 75), i=20, next=0
+          NodeList [53, 73), i=21, next=0
+            KindPropertySignature [53, 62), i=22, next=26
+              KindIdentifier "type" [53, 58), i=23, next=24
+              KindTypeReference [59, 61), i=24, next=0
+                KindIdentifier "T" [59, 61), i=25, next=0
+            KindPropertySignature [62, 73), i=26, next=0
+              KindIdentifier "payload" [62, 70), i=27, next=28
+              KindTypeReference [71, 73), i=28, next=0
+                KindIdentifier "P" [71, 73), i=29, next=0
+    KindEnumDeclaration [75, 140), i=30, next=41
+      KindIdentifier "ActionType" [83, 94), i=31, next=32
+      NodeList [96, 137), i=32, next=0
+        KindEnumMember [96, 105), i=33, next=35
+          KindIdentifier "Foo" [96, 105), i=34, next=0
+        KindEnumMember [106, 115), i=35, next=37
+          KindIdentifier "Bar" [106, 115), i=36, next=0
+        KindEnumMember [116, 125), i=37, next=39
+          KindIdentifier "Baz" [116, 125), i=38, next=0
+        KindEnumMember [126, 137), i=39, next=0
+          KindIdentifier "Batch" [126, 137), i=40, next=0
+    KindTypeAliasDeclaration [140, 320), i=41, next=79
+      KindIdentifier "ReducerAction" [148, 162), i=42, next=43
+      KindUnionType [164, 320), i=43, next=0
+        NodeList [164, 320), i=44, next=0
+          KindTypeReference [169, 200), i=45, next=53
+            KindIdentifier "Action" [169, 176), i=46, next=47
+            NodeList [177, 199), i=47, next=0
+              KindTypeReference [177, 191), i=48, next=52
+                KindQualifiedName [177, 191), i=49, next=0
+                  KindIdentifier "ActionType" [177, 187), i=50, next=51
+                  KindIdentifier "Bar" [188, 191), i=51, next=0
+              KindNumberKeyword [192, 199), i=52, next=0
+          KindTypeReference [205, 237), i=53, next=61
+            KindIdentifier "Action" [205, 212), i=54, next=55
+            NodeList [213, 236), i=55, next=0
+              KindTypeReference [213, 227), i=56, next=60
+                KindQualifiedName [213, 227), i=57, next=0
+                  KindIdentifier "ActionType" [213, 223), i=58, next=59
+                  KindIdentifier "Baz" [224, 227), i=59, next=0
+              KindBooleanKeyword [228, 236), i=60, next=0
+          KindTypeReference [242, 273), i=61, next=69
+            KindIdentifier "Action" [242, 249), i=62, next=63
+            NodeList [250, 272), i=63, next=0
+              KindTypeReference [250, 264), i=64, next=68
+                KindQualifiedName [250, 264), i=65, next=0
+                  KindIdentifier "ActionType" [250, 260), i=66, next=67
+                  KindIdentifier "Foo" [261, 264), i=67, next=0
+              KindStringKeyword [265, 272), i=68, next=0
+          KindTypeReference [278, 320), i=69, next=0
+            KindIdentifier "Action" [278, 285), i=70, next=71
+            NodeList [286, 319), i=71, next=0
+              KindTypeReference [286, 302), i=72, next=76
+                KindQualifiedName [286, 302), i=73, next=0
+                  KindIdentifier "ActionType" [286, 296), i=74, next=75
+                  KindIdentifier "Batch" [297, 302), i=75, next=0
+              KindArrayType [303, 319), i=76, next=0
+                KindTypeReference [303, 317), i=77, next=0
+                  KindIdentifier "ReducerAction" [303, 317), i=78, next=0
+    KindFunctionDeclaration [320, 404), i=79, next=93
+      KindIdentifier "assertNever" [332, 344), i=80, next=81
+      NodeList [345, 353), i=81, next=85
+        KindParameter [345, 353), i=82, next=0
+          KindIdentifier "a" [345, 346), i=83, next=84
+          KindNeverKeyword [347, 353), i=84, next=0
+      KindNeverKeyword [355, 361), i=85, next=86
+      KindBlock [361, 404), i=86, next=0
+        NodeList [363, 401), i=87, next=0
+          KindThrowStatement [363, 401), i=88, next=0
+            KindNewExpression [374, 400), i=89, next=0
+              KindIdentifier "Error" [378, 384), i=90, next=91
+              NodeList [385, 399), i=91, next=0
+                KindStringLiteral "Unreachable!" [385, 399), i=92, next=0
+    KindFunctionDeclaration [404, 924), i=93, next=0
+      KindIdentifier "reducer" [416, 424), i=94, next=95
+      NodeList [425, 446), i=95, next=100
+        KindParameter [425, 446), i=96, next=0
+          KindIdentifier "action" [425, 431), i=97, next=98
+          KindTypeReference [432, 446), i=98, next=0
+            KindIdentifier "ReducerAction" [432, 446), i=99, next=0
+      KindVoidKeyword [448, 453), i=100, next=101
+      KindBlock [453, 924), i=101, next=0
+        NodeList [455, 921), i=102, next=0
+          KindSwitchStatement [455, 921), i=103, next=0
+            KindPropertyAccessExpression [468, 479), i=104, next=107
+              KindIdentifier "action" [468, 474), i=105, next=106
+              KindIdentifier "type" [475, 479), i=106, next=0
+            KindCaseBlock [480, 921), i=107, next=0
+              NodeList [482, 914), i=108, next=0
+                KindCaseClause [482, 579), i=109, next=124
+                  KindPropertyAccessExpression [496, 511), i=110, next=113
+                    KindIdentifier "ActionType" [496, 507), i=111, next=112
+                    KindIdentifier "Bar" [508, 511), i=112, next=0
+                  NodeList [512, 579), i=113, next=0
+                    KindVariableStatement [512, 559), i=114, next=123
+                      KindVariableDeclarationList [512, 558), i=115, next=0
+                        NodeList [531, 558), i=116, next=0
+                          KindVariableDeclaration [531, 558), i=117, next=0
+                            KindIdentifier "x" [531, 533), i=118, next=119
+                            KindNumberKeyword [534, 541), i=119, next=120
+                            KindPropertyAccessExpression [543, 558), i=120, next=0
+                              KindIdentifier "action" [543, 550), i=121, next=122
+                              KindIdentifier "payload" [551, 558), i=122, next=0
+                    KindBreakStatement [559, 579), i=123, next=0
+                KindCaseClause [579, 677), i=124, next=139
+                  KindPropertyAccessExpression [593, 608), i=125, next=128
+                    KindIdentifier "ActionType" [593, 604), i=126, next=127
+                    KindIdentifier "Baz" [605, 608), i=127, next=0
+                  NodeList [609, 677), i=128, next=0
+                    KindVariableStatement [609, 657), i=129, next=138
+                      KindVariableDeclarationList [609, 656), i=130, next=0
+                        NodeList [628, 656), i=131, next=0
+                          KindVariableDeclaration [628, 656), i=132, next=0
+                            KindIdentifier "y" [628, 630), i=133, next=134
+                            KindBooleanKeyword [631, 639), i=134, next=135
+                            KindPropertyAccessExpression [641, 656), i=135, next=0
+                              KindIdentifier "action" [641, 648), i=136, next=137
+                              KindIdentifier "payload" [649, 656), i=137, next=0
+                    KindBreakStatement [657, 677), i=138, next=0
+                KindCaseClause [677, 774), i=139, next=154
+                  KindPropertyAccessExpression [691, 706), i=140, next=143
+                    KindIdentifier "ActionType" [691, 702), i=141, next=142
+                    KindIdentifier "Foo" [703, 706), i=142, next=0
+                  NodeList [707, 774), i=143, next=0
+                    KindVariableStatement [707, 754), i=144, next=153
+                      KindVariableDeclarationList [707, 753), i=145, next=0
+                        NodeList [726, 753), i=146, next=0
+                          KindVariableDeclaration [726, 753), i=147, next=0
+                            KindIdentifier "z" [726, 728), i=148, next=149
+                            KindStringKeyword [729, 736), i=149, next=150
+                            KindPropertyAccessExpression [738, 753), i=150, next=0
+                              KindIdentifier "action" [738, 745), i=151, next=152
+                              KindIdentifier "payload" [746, 753), i=152, next=0
+                    KindBreakStatement [754, 774), i=153, next=0
+                KindCaseClause [774, 868), i=154, next=169
+                  KindPropertyAccessExpression [788, 805), i=155, next=158
+                    KindIdentifier "ActionType" [788, 799), i=156, next=157
+                    KindIdentifier "Batch" [800, 805), i=157, next=0
+                  NodeList [806, 868), i=158, next=0
+                    KindExpressionStatement [806, 848), i=159, next=168
+                      KindCallExpression [806, 847), i=160, next=0
+                        KindPropertyAccessExpression [806, 838), i=161, next=166
+                          KindPropertyAccessExpression [806, 834), i=162, next=165
+                            KindIdentifier "action" [806, 826), i=163, next=164
+                            KindIdentifier "payload" [827, 834), i=164, next=0
+                          KindIdentifier "map" [835, 838), i=165, next=0
+                        NodeList [839, 846), i=166, next=0
+                          KindIdentifier "reducer" [839, 846), i=167, next=0
+                    KindBreakStatement [848, 868), i=168, next=0
+                KindDefaultClause [868, 914), i=169, next=0
+                  NodeList [886, 914), i=170, next=0
+                    KindReturnStatement [886, 914), i=171, next=0
+                      KindCallExpression [893, 913), i=172, next=0
+                        KindIdentifier "assertNever" [893, 905), i=173, next=174
+                        NodeList [906, 912), i=174, next=0
+                          KindIdentifier "action" [906, 912), i=175, next=0

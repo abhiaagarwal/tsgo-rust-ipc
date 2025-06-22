@@ -1,0 +1,197 @@
+KindSourceFile [0, 1027), i=1, next=0
+  NodeList [0, 1027), i=2, next=0
+    KindInterfaceDeclaration [0, 78), i=3, next=24
+      KindIdentifier "Result" [9, 16), i=4, next=5
+      NodeList [17, 21), i=5, next=10
+        KindTypeParameter [17, 18), i=6, next=8
+          KindIdentifier "T" [17, 18), i=7, next=0
+        KindTypeParameter [19, 21), i=8, next=0
+          KindIdentifier "E" [19, 21), i=9, next=0
+      NodeList [24, 75), i=10, next=0
+        KindMethodSignature [24, 75), i=11, next=0
+          KindComputedPropertyName [24, 47), i=12, next=16
+            KindPropertyAccessExpression [31, 46), i=13, next=0
+              KindIdentifier "Symbol" [31, 37), i=14, next=15
+              KindIdentifier "iterator" [38, 46), i=15, next=0
+          KindTypeReference [50, 75), i=16, next=0
+            KindIdentifier "Generator" [50, 60), i=17, next=18
+            NodeList [61, 74), i=18, next=0
+              KindTypeReference [61, 62), i=19, next=21
+                KindIdentifier "E" [61, 62), i=20, next=0
+              KindTypeReference [63, 65), i=21, next=23
+                KindIdentifier "T" [63, 65), i=22, next=0
+              KindUnknownKeyword [66, 74), i=23, next=0
+    KindTypeAliasDeclaration [78, 142), i=24, next=37
+      KindIdentifier "Book" [86, 91), i=25, next=26
+      KindTypeLiteral [93, 141), i=26, next=0
+        NodeList [95, 139), i=27, next=0
+          KindPropertySignature [95, 107), i=28, next=31
+            KindIdentifier "id" [95, 98), i=29, next=30
+            KindStringKeyword [99, 106), i=30, next=0
+          KindPropertySignature [107, 122), i=31, next=34
+            KindIdentifier "title" [107, 113), i=32, next=33
+            KindStringKeyword [114, 121), i=33, next=0
+          KindPropertySignature [122, 139), i=34, next=0
+            KindIdentifier "authorId" [122, 131), i=35, next=36
+            KindStringKeyword [132, 139), i=36, next=0
+    KindTypeAliasDeclaration [142, 187), i=37, next=47
+      KindIdentifier "Author" [148, 155), i=38, next=39
+      KindTypeLiteral [157, 186), i=39, next=0
+        NodeList [159, 184), i=40, next=0
+          KindPropertySignature [159, 171), i=41, next=44
+            KindIdentifier "id" [159, 162), i=42, next=43
+            KindStringKeyword [163, 170), i=43, next=0
+          KindPropertySignature [171, 184), i=44, next=0
+            KindIdentifier "name" [171, 176), i=45, next=46
+            KindStringKeyword [177, 184), i=46, next=0
+    KindTypeAliasDeclaration [187, 237), i=47, next=59
+      KindIdentifier "BookWithAuthor" [193, 208), i=48, next=49
+      KindIntersectionType [210, 236), i=49, next=0
+        NodeList [210, 236), i=50, next=0
+          KindTypeReference [210, 215), i=51, next=53
+            KindIdentifier "Book" [210, 215), i=52, next=0
+          KindTypeLiteral [217, 236), i=53, next=0
+            NodeList [219, 234), i=54, next=0
+              KindPropertySignature [219, 234), i=55, next=0
+                KindIdentifier "author" [219, 226), i=56, next=57
+                KindTypeReference [227, 234), i=57, next=0
+                  KindIdentifier "Author" [227, 234), i=58, next=0
+    KindVariableStatement [237, 314), i=59, next=76
+      NodeList [237, 248), i=60, next=62
+        KindDeclareKeyword [237, 248), i=61, next=0
+      KindVariableDeclarationList [248, 313), i=62, next=0
+        NodeList [254, 313), i=63, next=0
+          KindVariableDeclaration [254, 313), i=64, next=0
+            KindIdentifier "authorPromise" [254, 268), i=65, next=66
+            KindTypeReference [269, 313), i=66, next=0
+              KindIdentifier "Promise" [269, 277), i=67, next=68
+              NodeList [278, 312), i=68, next=0
+                KindTypeReference [278, 312), i=69, next=0
+                  KindIdentifier "Result" [278, 284), i=70, next=71
+                  NodeList [285, 311), i=71, next=0
+                    KindTypeReference [285, 291), i=72, next=74
+                      KindIdentifier "Author" [285, 291), i=73, next=0
+                    KindLiteralType [292, 311), i=74, next=0
+                      KindStringLiteral "NOT_FOUND_AUTHOR" [292, 311), i=75, next=0
+    KindVariableStatement [314, 414), i=76, next=104
+      NodeList [314, 323), i=77, next=79
+        KindDeclareKeyword [314, 323), i=78, next=0
+      KindVariableDeclarationList [323, 413), i=79, next=0
+        NodeList [329, 413), i=80, next=0
+          KindVariableDeclaration [329, 413), i=81, next=0
+            KindIdentifier "mapper" [329, 336), i=82, next=83
+            KindFunctionType [337, 413), i=83, next=0
+              NodeList [339, 340), i=84, next=87
+                KindTypeParameter [339, 340), i=85, next=0
+                  KindIdentifier "T" [339, 340), i=86, next=0
+              NodeList [342, 379), i=87, next=97
+                KindParameter [342, 379), i=88, next=0
+                  KindIdentifier "result" [342, 348), i=89, next=90
+                  KindTypeReference [349, 379), i=90, next=0
+                    KindIdentifier "Result" [349, 356), i=91, next=92
+                    NodeList [357, 378), i=92, next=0
+                      KindTypeReference [357, 358), i=93, next=95
+                        KindIdentifier "T" [357, 358), i=94, next=0
+                      KindLiteralType [359, 378), i=95, next=0
+                        KindStringLiteral "NOT_FOUND_AUTHOR" [359, 378), i=96, next=0
+              KindTypeReference [383, 413), i=97, next=0
+                KindIdentifier "Result" [383, 390), i=98, next=99
+                NodeList [391, 412), i=99, next=0
+                  KindTypeReference [391, 392), i=100, next=102
+                    KindIdentifier "T" [391, 392), i=101, next=0
+                  KindLiteralType [393, 412), i=102, next=0
+                    KindStringLiteral "NOT_FOUND_AUTHOR" [393, 412), i=103, next=0
+    KindVariableStatement [414, 472), i=104, next=128
+      NodeList [414, 423), i=105, next=107
+        KindDeclareKeyword [414, 423), i=106, next=0
+      KindVariableDeclarationList [423, 471), i=107, next=0
+        NodeList [429, 471), i=108, next=0
+          KindVariableDeclaration [429, 471), i=109, next=0
+            KindIdentifier "g" [429, 431), i=110, next=111
+            KindFunctionType [432, 471), i=111, next=0
+              NodeList [434, 441), i=112, next=119
+                KindTypeParameter [434, 435), i=113, next=115
+                  KindIdentifier "T" [434, 435), i=114, next=0
+                KindTypeParameter [436, 438), i=115, next=117
+                  KindIdentifier "U" [436, 438), i=116, next=0
+                KindTypeParameter [439, 441), i=117, next=0
+                  KindIdentifier "V" [439, 441), i=118, next=0
+              KindTypeReference [447, 471), i=119, next=0
+                KindIdentifier "AsyncGenerator" [447, 462), i=120, next=121
+                NodeList [463, 470), i=121, next=0
+                  KindTypeReference [463, 464), i=122, next=124
+                    KindIdentifier "T" [463, 464), i=123, next=0
+                  KindTypeReference [465, 467), i=124, next=126
+                    KindIdentifier "U" [465, 467), i=125, next=0
+                  KindTypeReference [468, 470), i=126, next=0
+                    KindIdentifier "V" [468, 470), i=127, next=0
+    KindFunctionDeclaration [472, 1027), i=128, next=0
+      NodeList [472, 481), i=129, next=131
+        KindAsyncKeyword [472, 481), i=130, next=0
+      KindAsteriskToken [490, 491), i=131, next=132
+      KindIdentifier "f" [491, 493), i=132, next=133
+      KindTypeReference [496, 575), i=133, next=145
+        KindIdentifier "AsyncGenerator" [496, 511), i=134, next=135
+        NodeList [512, 574), i=135, next=0
+          KindUnionType [512, 549), i=136, next=142
+            NodeList [512, 549), i=137, next=0
+              KindLiteralType [512, 530), i=138, next=140
+                KindStringLiteral "NOT_FOUND_AUTHOR" [512, 530), i=139, next=0
+              KindLiteralType [532, 549), i=140, next=0
+                KindStringLiteral "NOT_FOUND_BOOK" [532, 549), i=141, next=0
+          KindTypeReference [550, 565), i=142, next=144
+            KindIdentifier "BookWithAuthor" [550, 565), i=143, next=0
+          KindUnknownKeyword [566, 574), i=144, next=0
+      KindBlock [575, 1027), i=145, next=0
+        NodeList [577, 1024), i=146, next=0
+          KindVariableStatement [577, 718), i=147, next=159
+            KindVariableDeclarationList [577, 718), i=148, next=0
+              NodeList [677, 718), i=149, next=0
+                KindVariableDeclaration [677, 718), i=150, next=0
+                  KindIdentifier "test1" [677, 683), i=151, next=152
+                  KindAwaitExpression [685, 718), i=152, next=0
+                    KindCallExpression [691, 718), i=153, next=0
+                      KindPropertyAccessExpression [691, 710), i=154, next=157
+                        KindIdentifier "authorPromise" [691, 705), i=155, next=156
+                        KindIdentifier "then" [706, 710), i=156, next=0
+                      NodeList [711, 717), i=157, next=0
+                        KindIdentifier "mapper" [711, 717), i=158, next=0
+          KindVariableStatement [718, 919), i=159, next=173
+            KindVariableDeclarationList [718, 919), i=160, next=0
+              NodeList [871, 919), i=161, next=0
+                KindVariableDeclaration [871, 919), i=162, next=0
+                  KindIdentifier "test2" [871, 877), i=163, next=164
+                  KindYieldExpression [879, 919), i=164, next=0
+                    KindAsteriskToken [885, 886), i=165, next=166
+                    KindAwaitExpression [886, 919), i=166, next=0
+                      KindCallExpression [892, 919), i=167, next=0
+                        KindPropertyAccessExpression [892, 911), i=168, next=171
+                          KindIdentifier "authorPromise" [892, 906), i=169, next=170
+                          KindIdentifier "then" [907, 911), i=170, next=0
+                        NodeList [912, 918), i=171, next=0
+                          KindIdentifier "mapper" [912, 918), i=172, next=0
+          KindVariableStatement [919, 949), i=173, next=182
+            KindVariableDeclarationList [919, 948), i=174, next=0
+              NodeList [932, 948), i=175, next=0
+                KindVariableDeclaration [932, 948), i=176, next=0
+                  KindIdentifier "x1" [932, 935), i=177, next=178
+                  KindYieldExpression [937, 948), i=178, next=0
+                    KindAsteriskToken [943, 944), i=179, next=180
+                    KindCallExpression [944, 948), i=180, next=0
+                      KindIdentifier "g" [944, 946), i=181, next=0
+          KindVariableStatement [949, 985), i=182, next=192
+            KindVariableDeclarationList [949, 984), i=183, next=0
+              NodeList [960, 984), i=184, next=0
+                KindVariableDeclaration [960, 984), i=185, next=0
+                  KindIdentifier "x2" [960, 963), i=186, next=187
+                  KindNumberKeyword [964, 971), i=187, next=188
+                  KindYieldExpression [973, 984), i=188, next=0
+                    KindAsteriskToken [979, 980), i=189, next=190
+                    KindCallExpression [980, 984), i=190, next=0
+                      KindIdentifier "g" [980, 982), i=191, next=0
+          KindReturnStatement [985, 1024), i=192, next=0
+            KindAsExpression [999, 1023), i=193, next=0
+              KindNonNullExpression [999, 1005), i=194, next=196
+                KindNullKeyword [999, 1004), i=195, next=0
+              KindTypeReference [1008, 1023), i=196, next=0
+                KindIdentifier "BookWithAuthor" [1008, 1023), i=197, next=0

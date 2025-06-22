@@ -1,0 +1,580 @@
+KindSourceFile [0, 3782), i=1, next=0
+  NodeList [0, 3782), i=2, next=0
+    KindTypeAliasDeclaration [0, 14), i=3, next=7
+      KindIdentifier "A" [4, 6), i=4, next=5
+      KindLiteralType [8, 13), i=5, next=0
+        KindStringLiteral "aA" [8, 13), i=6, next=0
+    KindTypeAliasDeclaration [14, 38), i=7, next=14
+      KindIdentifier "B" [20, 22), i=8, next=9
+      KindTypeReference [24, 37), i=9, next=0
+        KindIdentifier "Uppercase" [24, 34), i=10, next=11
+        NodeList [35, 36), i=11, next=0
+          KindTypeReference [35, 36), i=12, next=0
+            KindIdentifier "A" [35, 36), i=13, next=0
+    KindTypeAliasDeclaration [38, 62), i=14, next=21
+      KindIdentifier "C" [44, 46), i=15, next=16
+      KindTypeReference [48, 61), i=16, next=0
+        KindIdentifier "Lowercase" [48, 58), i=17, next=18
+        NodeList [59, 60), i=18, next=0
+          KindTypeReference [59, 60), i=19, next=0
+            KindIdentifier "A" [59, 60), i=20, next=0
+    KindTypeAliasDeclaration [62, 111), i=21, next=29
+      KindIdentifier "ATemplate" [84, 94), i=22, next=23
+      KindTemplateLiteralType [96, 110), i=23, next=0
+        KindTemplateHead [96, 102), i=24, next=25
+        NodeList [102, 110), i=25, next=0
+          KindTemplateLiteralTypeSpan [102, 110), i=26, next=0
+            KindStringKeyword [102, 108), i=27, next=28
+            KindTemplateTail [108, 110), i=28, next=0
+    KindTypeAliasDeclaration [111, 151), i=29, next=36
+      KindIdentifier "BTemplate" [117, 127), i=30, next=31
+      KindTypeReference [129, 150), i=31, next=0
+        KindIdentifier "Uppercase" [129, 139), i=32, next=33
+        NodeList [140, 149), i=33, next=0
+          KindTypeReference [140, 149), i=34, next=0
+            KindIdentifier "ATemplate" [140, 149), i=35, next=0
+    KindTypeAliasDeclaration [151, 191), i=36, next=43
+      KindIdentifier "CTemplate" [157, 167), i=37, next=38
+      KindTypeReference [169, 190), i=38, next=0
+        KindIdentifier "Lowercase" [169, 179), i=39, next=40
+        NodeList [180, 189), i=40, next=0
+          KindTypeReference [180, 189), i=41, next=0
+            KindIdentifier "ATemplate" [180, 189), i=42, next=0
+    KindFunctionDeclaration [191, 892), i=43, next=132
+      KindIdentifier "f1" [203, 206), i=44, next=45
+      NodeList [207, 323), i=45, next=70
+        KindParameter [207, 217), i=46, next=50
+          KindIdentifier "a" [207, 214), i=47, next=48
+          KindTypeReference [215, 217), i=48, next=0
+            KindIdentifier "A" [215, 217), i=49, next=0
+        KindParameter [218, 228), i=50, next=54
+          KindIdentifier "b" [218, 225), i=51, next=52
+          KindTypeReference [226, 228), i=52, next=0
+            KindIdentifier "B" [226, 228), i=53, next=0
+        KindParameter [229, 239), i=54, next=58
+          KindIdentifier "c" [229, 236), i=55, next=56
+          KindTypeReference [237, 239), i=56, next=0
+            KindIdentifier "C" [237, 239), i=57, next=0
+        KindParameter [240, 267), i=58, next=62
+          KindIdentifier "a_template" [240, 256), i=59, next=60
+          KindTypeReference [257, 267), i=60, next=0
+            KindIdentifier "ATemplate" [257, 267), i=61, next=0
+        KindParameter [268, 295), i=62, next=66
+          KindIdentifier "b_template" [268, 284), i=63, next=64
+          KindTypeReference [285, 295), i=64, next=0
+            KindIdentifier "BTemplate" [285, 295), i=65, next=0
+        KindParameter [296, 323), i=66, next=0
+          KindIdentifier "c_template" [296, 312), i=67, next=68
+          KindTypeReference [313, 323), i=68, next=0
+            KindIdentifier "CTemplate" [313, 323), i=69, next=0
+      KindBlock [326, 892), i=70, next=0
+        NodeList [328, 889), i=71, next=0
+          KindExpressionStatement [328, 452), i=72, next=77
+            KindBinaryExpression [328, 451), i=73, next=0
+              KindIdentifier "a_template" [328, 447), i=74, next=75
+              KindEqualsToken [447, 449), i=75, next=76
+              KindIdentifier "a" [449, 451), i=76, next=0
+          KindExpressionStatement [452, 473), i=77, next=82
+            KindBinaryExpression [452, 472), i=78, next=0
+              KindIdentifier "b_template" [452, 468), i=79, next=80
+              KindEqualsToken [468, 470), i=80, next=81
+              KindIdentifier "b" [470, 472), i=81, next=0
+          KindExpressionStatement [473, 494), i=82, next=87
+            KindBinaryExpression [473, 493), i=83, next=0
+              KindIdentifier "c_template" [473, 489), i=84, next=85
+              KindEqualsToken [489, 491), i=85, next=86
+              KindIdentifier "c" [491, 493), i=86, next=0
+          KindExpressionStatement [494, 550), i=87, next=92
+            KindBinaryExpression [494, 549), i=88, next=0
+              KindIdentifier "a" [494, 536), i=89, next=90
+              KindEqualsToken [536, 538), i=90, next=91
+              KindIdentifier "a_template" [538, 549), i=91, next=0
+          KindExpressionStatement [550, 571), i=92, next=97
+            KindBinaryExpression [550, 570), i=93, next=0
+              KindIdentifier "b" [550, 557), i=94, next=95
+              KindEqualsToken [557, 559), i=95, next=96
+              KindIdentifier "b_template" [559, 570), i=96, next=0
+          KindExpressionStatement [571, 592), i=97, next=102
+            KindBinaryExpression [571, 591), i=98, next=0
+              KindIdentifier "c" [571, 578), i=99, next=100
+              KindEqualsToken [578, 580), i=100, next=101
+              KindIdentifier "c_template" [580, 591), i=101, next=0
+          KindExpressionStatement [592, 735), i=102, next=107
+            KindBinaryExpression [592, 734), i=103, next=0
+              KindIdentifier "a_template" [592, 721), i=104, next=105
+              KindEqualsToken [721, 723), i=105, next=106
+              KindIdentifier "b_template" [723, 734), i=106, next=0
+          KindExpressionStatement [735, 765), i=107, next=112
+            KindBinaryExpression [735, 764), i=108, next=0
+              KindIdentifier "a_template" [735, 751), i=109, next=110
+              KindEqualsToken [751, 753), i=110, next=111
+              KindIdentifier "c_template" [753, 764), i=111, next=0
+          KindExpressionStatement [765, 797), i=112, next=117
+            KindBinaryExpression [765, 796), i=113, next=0
+              KindIdentifier "b_template" [765, 783), i=114, next=115
+              KindEqualsToken [783, 785), i=115, next=116
+              KindIdentifier "a_template" [785, 796), i=116, next=0
+          KindExpressionStatement [797, 827), i=117, next=122
+            KindBinaryExpression [797, 826), i=118, next=0
+              KindIdentifier "b_template" [797, 813), i=119, next=120
+              KindEqualsToken [813, 815), i=120, next=121
+              KindIdentifier "c_template" [815, 826), i=121, next=0
+          KindExpressionStatement [827, 859), i=122, next=127
+            KindBinaryExpression [827, 858), i=123, next=0
+              KindIdentifier "c_template" [827, 845), i=124, next=125
+              KindEqualsToken [845, 847), i=125, next=126
+              KindIdentifier "a_template" [847, 858), i=126, next=0
+          KindExpressionStatement [859, 889), i=127, next=0
+            KindBinaryExpression [859, 888), i=128, next=0
+              KindIdentifier "c_template" [859, 875), i=129, next=130
+              KindEqualsToken [875, 877), i=130, next=131
+              KindIdentifier "b_template" [877, 888), i=131, next=0
+    KindFunctionDeclaration [892, 1218), i=132, next=202
+      KindIdentifier "f2" [943, 946), i=133, next=134
+      NodeList [947, 1003), i=134, next=150
+        KindParameter [947, 957), i=135, next=138
+          KindIdentifier "x1" [947, 949), i=136, next=137
+          KindStringKeyword [950, 957), i=137, next=0
+        KindParameter [958, 980), i=138, next=144
+          KindIdentifier "x2" [958, 961), i=139, next=140
+          KindTypeReference [962, 980), i=140, next=0
+            KindIdentifier "Uppercase" [962, 972), i=141, next=142
+            NodeList [973, 979), i=142, next=0
+              KindStringKeyword [973, 979), i=143, next=0
+        KindParameter [981, 1003), i=144, next=0
+          KindIdentifier "x3" [981, 984), i=145, next=146
+          KindTypeReference [985, 1003), i=146, next=0
+            KindIdentifier "Lowercase" [985, 995), i=147, next=148
+            NodeList [996, 1002), i=148, next=0
+              KindStringKeyword [996, 1002), i=149, next=0
+      KindBlock [1004, 1218), i=150, next=0
+        NodeList [1006, 1215), i=151, next=0
+          KindExpressionStatement [1006, 1031), i=152, next=157
+            KindBinaryExpression [1006, 1030), i=153, next=0
+              KindIdentifier "x1" [1006, 1025), i=154, next=155
+              KindEqualsToken [1025, 1027), i=155, next=156
+              KindIdentifier "x2" [1027, 1030), i=156, next=0
+          KindExpressionStatement [1031, 1045), i=157, next=162
+            KindBinaryExpression [1031, 1044), i=158, next=0
+              KindIdentifier "x1" [1031, 1039), i=159, next=160
+              KindEqualsToken [1039, 1041), i=160, next=161
+              KindIdentifier "x3" [1041, 1044), i=161, next=0
+          KindExpressionStatement [1045, 1064), i=162, next=167
+            KindBinaryExpression [1045, 1063), i=163, next=0
+              KindIdentifier "x2" [1045, 1055), i=164, next=165
+              KindEqualsToken [1055, 1057), i=165, next=166
+              KindStringLiteral "ABC" [1057, 1063), i=166, next=0
+          KindExpressionStatement [1064, 1081), i=167, next=172
+            KindBinaryExpression [1064, 1080), i=168, next=0
+              KindIdentifier "x3" [1064, 1072), i=169, next=170
+              KindEqualsToken [1072, 1074), i=170, next=171
+              KindStringLiteral "abc" [1074, 1080), i=171, next=0
+          KindExpressionStatement [1081, 1137), i=172, next=177
+            KindBinaryExpression [1081, 1136), i=173, next=0
+              KindIdentifier "x2" [1081, 1131), i=174, next=175
+              KindEqualsToken [1131, 1133), i=175, next=176
+              KindIdentifier "x1" [1133, 1136), i=176, next=0
+          KindExpressionStatement [1137, 1151), i=177, next=182
+            KindBinaryExpression [1137, 1150), i=178, next=0
+              KindIdentifier "x2" [1137, 1145), i=179, next=180
+              KindEqualsToken [1145, 1147), i=180, next=181
+              KindIdentifier "x3" [1147, 1150), i=181, next=0
+          KindExpressionStatement [1151, 1165), i=182, next=187
+            KindBinaryExpression [1151, 1164), i=183, next=0
+              KindIdentifier "x3" [1151, 1159), i=184, next=185
+              KindEqualsToken [1159, 1161), i=185, next=186
+              KindIdentifier "x1" [1161, 1164), i=186, next=0
+          KindExpressionStatement [1165, 1179), i=187, next=192
+            KindBinaryExpression [1165, 1178), i=188, next=0
+              KindIdentifier "x3" [1165, 1173), i=189, next=190
+              KindEqualsToken [1173, 1175), i=190, next=191
+              KindIdentifier "x2" [1175, 1178), i=191, next=0
+          KindExpressionStatement [1179, 1198), i=192, next=197
+            KindBinaryExpression [1179, 1197), i=193, next=0
+              KindIdentifier "x2" [1179, 1189), i=194, next=195
+              KindEqualsToken [1189, 1191), i=195, next=196
+              KindStringLiteral "AbC" [1191, 1197), i=196, next=0
+          KindExpressionStatement [1198, 1215), i=197, next=0
+            KindBinaryExpression [1198, 1214), i=198, next=0
+              KindIdentifier "x3" [1198, 1206), i=199, next=200
+              KindEqualsToken [1206, 1208), i=200, next=201
+              KindStringLiteral "AbC" [1208, 1214), i=201, next=0
+    KindFunctionDeclaration [1218, 2042), i=202, next=50
+      KindIdentifier "f3" [1259, 1262), i=203, next=204
+      NodeList [1263, 1368), i=204, next=229
+        KindParameter [1263, 1290), i=205, next=211
+          KindIdentifier "x1" [1263, 1271), i=206, next=207
+          KindTypeReference [1272, 1290), i=207, next=0
+            KindIdentifier "Uppercase" [1272, 1282), i=208, next=209
+            NodeList [1283, 1289), i=209, next=0
+              KindStringKeyword [1283, 1289), i=210, next=0
+        KindParameter [1291, 1329), i=211, next=220
+          KindIdentifier "x2" [1291, 1299), i=212, next=213
+          KindTypeReference [1300, 1329), i=213, next=0
+            KindIdentifier "Uppercase" [1300, 1310), i=214, next=215
+            NodeList [1311, 1328), i=215, next=0
+              KindTypeReference [1311, 1328), i=216, next=0
+                KindIdentifier "Uppercase" [1311, 1320), i=217, next=218
+                NodeList [1321, 1327), i=218, next=0
+                  KindStringKeyword [1321, 1327), i=219, next=0
+        KindParameter [1330, 1368), i=220, next=0
+          KindIdentifier "x3" [1330, 1338), i=221, next=222
+          KindTypeReference [1339, 1368), i=222, next=0
+            KindIdentifier "Uppercase" [1339, 1349), i=223, next=224
+            NodeList [1350, 1367), i=224, next=0
+              KindTypeReference [1350, 1367), i=225, next=0
+                KindIdentifier "Lowercase" [1350, 1359), i=226, next=227
+                NodeList [1360, 1366), i=227, next=0
+                  KindStringKeyword [1360, 1366), i=228, next=0
+      KindBlock [1369, 2042), i=229, next=0
+        NodeList [1371, 2039), i=230, next=0
+          KindExpressionStatement [1371, 1435), i=231, next=236
+            KindBinaryExpression [1371, 1434), i=232, next=0
+              KindIdentifier "x1" [1371, 1429), i=233, next=234
+              KindEqualsToken [1429, 1431), i=234, next=235
+              KindIdentifier "x2" [1431, 1434), i=235, next=0
+          KindExpressionStatement [1435, 1449), i=236, next=241
+            KindBinaryExpression [1435, 1448), i=237, next=0
+              KindIdentifier "x1" [1435, 1443), i=238, next=239
+              KindEqualsToken [1443, 1445), i=239, next=240
+              KindIdentifier "x3" [1445, 1448), i=240, next=0
+          KindExpressionStatement [1449, 1465), i=241, next=246
+            KindBinaryExpression [1449, 1464), i=242, next=0
+              KindIdentifier "x2" [1449, 1459), i=243, next=244
+              KindEqualsToken [1459, 1461), i=244, next=245
+              KindIdentifier "x1" [1461, 1464), i=245, next=0
+          KindExpressionStatement [1465, 1479), i=246, next=251
+            KindBinaryExpression [1465, 1478), i=247, next=0
+              KindIdentifier "x2" [1465, 1473), i=248, next=249
+              KindEqualsToken [1473, 1475), i=249, next=250
+              KindIdentifier "x3" [1475, 1478), i=250, next=0
+          KindExpressionStatement [1479, 1820), i=251, next=0
+            KindBinaryExpression [1479, 1819), i=252, next=0
+              KindIdentifier "x3" [1479, 1814), i=253, next=254
+              KindEqualsToken [1814, 1816), i=254, next=255
+              KindIdentifier "x1" [1816, 1819), i=255, next=0
+          KindExpressionStatement [1820, 1834), i=256, next=5
+            KindBinaryExpression [1820, 1833), i=257, next=0
+              KindIdentifier "x3" [1820, 1828), i=258, next=3
+              KindEqualsToken [1828, 1830), i=259, next=4
+              KindIdentifier "x2" [1830, 1833), i=260, next=0
+          KindVariableStatement [1834, 1953), i=261, next=20
+            KindVariableDeclarationList [1834, 1952), i=262, next=0
+              NodeList [1905, 1952), i=263, next=0
+                KindVariableDeclaration [1905, 1952), i=264, next=0
+                  KindIdentifier "x4" [1905, 1908), i=265, next=10
+                  KindTypeReference [1909, 1938), i=266, next=17
+                    KindIdentifier "Lowercase" [1909, 1919), i=267, next=12
+                    NodeList [1920, 1937), i=268, next=0
+                      KindTypeReference [1920, 1937), i=269, next=0
+                        KindIdentifier "Uppercase" [1920, 1929), i=270, next=15
+                        NodeList [1930, 1936), i=271, next=0
+                          KindStringKeyword [1930, 1936), i=272, next=0
+                  KindAsExpression [1940, 1952), i=273, next=0
+                    KindNullKeyword [1940, 1945), i=274, next=19
+                    KindAnyKeyword [1948, 1952), i=275, next=0
+          KindExpressionStatement [1953, 1967), i=276, next=25
+            KindBinaryExpression [1953, 1966), i=277, next=0
+              KindIdentifier "x1" [1953, 1961), i=278, next=23
+              KindEqualsToken [1961, 1963), i=279, next=24
+              KindIdentifier "x4" [1963, 1966), i=280, next=0
+          KindExpressionStatement [1967, 1981), i=281, next=30
+            KindBinaryExpression [1967, 1980), i=282, next=0
+              KindIdentifier "x2" [1967, 1975), i=283, next=28
+              KindEqualsToken [1975, 1977), i=284, next=29
+              KindIdentifier "x4" [1977, 1980), i=285, next=0
+          KindExpressionStatement [1981, 1995), i=286, next=35
+            KindBinaryExpression [1981, 1994), i=287, next=0
+              KindIdentifier "x3" [1981, 1989), i=288, next=33
+              KindEqualsToken [1989, 1991), i=289, next=34
+              KindIdentifier "x4" [1991, 1994), i=290, next=0
+          KindExpressionStatement [1995, 2011), i=291, next=40
+            KindBinaryExpression [1995, 2010), i=292, next=0
+              KindIdentifier "x4" [1995, 2005), i=293, next=38
+              KindEqualsToken [2005, 2007), i=294, next=39
+              KindIdentifier "x1" [2007, 2010), i=295, next=0
+          KindExpressionStatement [2011, 2025), i=296, next=45
+            KindBinaryExpression [2011, 2024), i=297, next=0
+              KindIdentifier "x4" [2011, 2019), i=298, next=43
+              KindEqualsToken [2019, 2021), i=299, next=44
+              KindIdentifier "x2" [2021, 2024), i=300, next=0
+          KindExpressionStatement [2025, 2039), i=301, next=0
+            KindBinaryExpression [2025, 2038), i=302, next=0
+              KindIdentifier "x4" [2025, 2033), i=303, next=48
+              KindEqualsToken [2033, 2035), i=304, next=49
+              KindIdentifier "x3" [2035, 2038), i=305, next=0
+    KindTypeAliasDeclaration [2042, 2177), i=306, next=67
+      KindIdentifier "NonStringPat" [2117, 2130), i=307, next=52
+      KindTypeReference [2132, 2176), i=308, next=0
+        KindIdentifier "Uppercase" [2132, 2142), i=309, next=54
+        NodeList [2143, 2175), i=310, next=0
+          KindTemplateLiteralType [2143, 2175), i=311, next=0
+            KindTemplateHead [2143, 2148), i=312, next=57
+            NodeList [2148, 2175), i=313, next=0
+              KindTemplateLiteralTypeSpan [2148, 2157), i=314, next=61
+                KindNumberKeyword [2148, 2154), i=315, next=60
+                KindTemplateMiddle [2154, 2157), i=316, next=0
+              KindTemplateLiteralTypeSpan [2157, 2166), i=317, next=64
+                KindBigIntKeyword [2157, 2163), i=318, next=63
+                KindTemplateMiddle [2163, 2166), i=319, next=0
+              KindTemplateLiteralTypeSpan [2166, 2175), i=320, next=0
+                KindBooleanKeyword [2166, 2173), i=321, next=66
+                KindTemplateTail [2173, 2175), i=322, next=0
+    KindTypeAliasDeclaration [2177, 2290), i=323, next=105
+      KindIdentifier "EquivalentNonStringPat" [2183, 2206), i=324, next=69
+      KindTemplateLiteralType [2208, 2289), i=325, next=0
+        KindTemplateHead [2208, 2214), i=326, next=71
+        NodeList [2214, 2289), i=327, next=0
+          KindTemplateLiteralTypeSpan [2214, 2239), i=328, next=83
+            KindTypeReference [2214, 2236), i=329, next=82
+              KindIdentifier "Uppercase" [2214, 2223), i=330, next=75
+              NodeList [2224, 2235), i=331, next=0
+                KindTemplateLiteralType [2224, 2235), i=332, next=0
+                  KindTemplateHead [2224, 2227), i=333, next=78
+                  NodeList [2227, 2235), i=334, next=0
+                    KindTemplateLiteralTypeSpan [2227, 2235), i=335, next=0
+                      KindNumberKeyword [2227, 2233), i=336, next=81
+                      KindTemplateTail [2233, 2235), i=337, next=0
+            KindTemplateMiddle [2236, 2239), i=338, next=0
+          KindTemplateLiteralTypeSpan [2239, 2264), i=339, next=94
+            KindTypeReference [2239, 2261), i=340, next=93
+              KindIdentifier "Uppercase" [2239, 2248), i=341, next=86
+              NodeList [2249, 2260), i=342, next=0
+                KindTemplateLiteralType [2249, 2260), i=343, next=0
+                  KindTemplateHead [2249, 2252), i=344, next=89
+                  NodeList [2252, 2260), i=345, next=0
+                    KindTemplateLiteralTypeSpan [2252, 2260), i=346, next=0
+                      KindBigIntKeyword [2252, 2258), i=347, next=92
+                      KindTemplateTail [2258, 2260), i=348, next=0
+            KindTemplateMiddle [2261, 2264), i=349, next=0
+          KindTemplateLiteralTypeSpan [2264, 2289), i=350, next=0
+            KindTypeReference [2264, 2287), i=351, next=104
+              KindIdentifier "Uppercase" [2264, 2273), i=352, next=97
+              NodeList [2274, 2286), i=353, next=0
+                KindTemplateLiteralType [2274, 2286), i=354, next=0
+                  KindTemplateHead [2274, 2277), i=355, next=100
+                  NodeList [2277, 2286), i=356, next=0
+                    KindTemplateLiteralTypeSpan [2277, 2286), i=357, next=0
+                      KindBooleanKeyword [2277, 2284), i=358, next=103
+                      KindTemplateTail [2284, 2286), i=359, next=0
+            KindTemplateTail [2287, 2289), i=360, next=0
+    KindFunctionDeclaration [2290, 2409), i=361, next=128
+      KindIdentifier "f4" [2302, 2305), i=362, next=107
+      NodeList [2306, 2350), i=363, next=116
+        KindParameter [2306, 2322), i=364, next=112
+          KindIdentifier "x1" [2306, 2308), i=365, next=110
+          KindTypeReference [2309, 2322), i=366, next=0
+            KindIdentifier "NonStringPat" [2309, 2322), i=367, next=0
+        KindParameter [2323, 2350), i=368, next=0
+          KindIdentifier "x2" [2323, 2326), i=369, next=114
+          KindTypeReference [2327, 2350), i=370, next=0
+            KindIdentifier "EquivalentNonStringPat" [2327, 2350), i=371, next=0
+      KindBlock [2351, 2409), i=372, next=0
+        NodeList [2353, 2406), i=373, next=0
+          KindExpressionStatement [2353, 2392), i=374, next=123
+            KindBinaryExpression [2353, 2391), i=375, next=0
+              KindIdentifier "x1" [2353, 2386), i=376, next=121
+              KindEqualsToken [2386, 2388), i=377, next=122
+              KindIdentifier "x2" [2388, 2391), i=378, next=0
+          KindExpressionStatement [2392, 2406), i=379, next=0
+            KindBinaryExpression [2392, 2405), i=380, next=0
+              KindIdentifier "x2" [2392, 2400), i=381, next=126
+              KindEqualsToken [2400, 2402), i=382, next=127
+              KindIdentifier "x1" [2402, 2405), i=383, next=0
+    KindFunctionDeclaration [2409, 3782), i=384, next=0
+      KindIdentifier "f5" [2476, 2479), i=385, next=130
+      NodeList [2480, 2796), i=386, next=203
+        KindParameter [2480, 2507), i=387, next=139
+          KindIdentifier "cap_tem" [2480, 2493), i=388, next=133
+          KindTemplateLiteralType [2494, 2507), i=389, next=0
+            KindTemplateHead [2494, 2499), i=390, next=135
+            NodeList [2499, 2507), i=391, next=0
+              KindTemplateLiteralTypeSpan [2499, 2507), i=392, next=0
+                KindStringKeyword [2499, 2505), i=393, next=138
+                KindTemplateTail [2505, 2507), i=394, next=0
+        KindParameter [2508, 2541), i=395, next=145
+          KindIdentifier "cap_str" [2508, 2521), i=396, next=141
+          KindTypeReference [2522, 2541), i=397, next=0
+            KindIdentifier "Capitalize" [2522, 2533), i=398, next=143
+            NodeList [2534, 2540), i=399, next=0
+              KindStringKeyword [2534, 2540), i=400, next=0
+        KindParameter [2542, 2585), i=401, next=156
+          KindIdentifier "cap_tem_map" [2542, 2559), i=402, next=147
+          KindTypeReference [2560, 2585), i=403, next=0
+            KindIdentifier "Capitalize" [2560, 2571), i=404, next=149
+            NodeList [2572, 2584), i=405, next=0
+              KindTemplateLiteralType [2572, 2584), i=406, next=0
+                KindTemplateHead [2572, 2576), i=407, next=152
+                NodeList [2576, 2584), i=408, next=0
+                  KindTemplateLiteralTypeSpan [2576, 2584), i=409, next=0
+                    KindStringKeyword [2576, 2582), i=410, next=155
+                    KindTemplateTail [2582, 2584), i=411, next=0
+        KindParameter [2586, 2630), i=412, next=167
+          KindIdentifier "cap_tem_map2" [2586, 2604), i=413, next=158
+          KindTypeReference [2605, 2630), i=414, next=0
+            KindIdentifier "Capitalize" [2605, 2616), i=415, next=160
+            NodeList [2617, 2629), i=416, next=0
+              KindTemplateLiteralType [2617, 2629), i=417, next=0
+                KindTemplateHead [2617, 2621), i=418, next=163
+                NodeList [2621, 2629), i=419, next=0
+                  KindTemplateLiteralTypeSpan [2621, 2629), i=420, next=0
+                    KindStringKeyword [2621, 2627), i=421, next=166
+                    KindTemplateTail [2627, 2629), i=422, next=0
+        KindParameter [2631, 2660), i=423, next=175
+          KindIdentifier "uncap_tem" [2631, 2646), i=424, next=169
+          KindTemplateLiteralType [2647, 2660), i=425, next=0
+            KindTemplateHead [2647, 2652), i=426, next=171
+            NodeList [2652, 2660), i=427, next=0
+              KindTemplateLiteralTypeSpan [2652, 2660), i=428, next=0
+                KindStringKeyword [2652, 2658), i=429, next=174
+                KindTemplateTail [2658, 2660), i=430, next=0
+        KindParameter [2661, 2698), i=431, next=181
+          KindIdentifier "uncap_str" [2661, 2676), i=432, next=177
+          KindTypeReference [2677, 2698), i=433, next=0
+            KindIdentifier "Uncapitalize" [2677, 2690), i=434, next=179
+            NodeList [2691, 2697), i=435, next=0
+              KindStringKeyword [2691, 2697), i=436, next=0
+        KindParameter [2699, 2746), i=437, next=192
+          KindIdentifier "uncap_tem_map" [2699, 2718), i=438, next=183
+          KindTypeReference [2719, 2746), i=439, next=0
+            KindIdentifier "Uncapitalize" [2719, 2732), i=440, next=185
+            NodeList [2733, 2745), i=441, next=0
+              KindTemplateLiteralType [2733, 2745), i=442, next=0
+                KindTemplateHead [2733, 2737), i=443, next=188
+                NodeList [2737, 2745), i=444, next=0
+                  KindTemplateLiteralTypeSpan [2737, 2745), i=445, next=0
+                    KindStringKeyword [2737, 2743), i=446, next=191
+                    KindTemplateTail [2743, 2745), i=447, next=0
+        KindParameter [2747, 2795), i=448, next=0
+          KindIdentifier "uncap_tem_map2" [2747, 2767), i=449, next=194
+          KindTypeReference [2768, 2795), i=450, next=0
+            KindIdentifier "Uncapitalize" [2768, 2781), i=451, next=196
+            NodeList [2782, 2794), i=452, next=0
+              KindTemplateLiteralType [2782, 2794), i=453, next=0
+                KindTemplateHead [2782, 2786), i=454, next=199
+                NodeList [2786, 2794), i=455, next=0
+                  KindTemplateLiteralTypeSpan [2786, 2794), i=456, next=0
+                    KindStringKeyword [2786, 2792), i=457, next=202
+                    KindTemplateTail [2792, 2794), i=458, next=0
+      KindBlock [2799, 3782), i=459, next=0
+        NodeList [2801, 3779), i=460, next=0
+          KindExpressionStatement [2801, 2859), i=461, next=210
+            KindBinaryExpression [2801, 2858), i=462, next=0
+              KindIdentifier "cap_str" [2801, 2848), i=463, next=208
+              KindEqualsToken [2848, 2850), i=464, next=209
+              KindIdentifier "cap_tem" [2850, 2858), i=465, next=0
+          KindExpressionStatement [2859, 2887), i=466, next=215
+            KindBinaryExpression [2859, 2886), i=467, next=0
+              KindIdentifier "cap_str" [2859, 2872), i=468, next=213
+              KindEqualsToken [2872, 2874), i=469, next=214
+              KindIdentifier "cap_tem_map" [2874, 2886), i=470, next=0
+          KindExpressionStatement [2887, 2916), i=471, next=220
+            KindBinaryExpression [2887, 2915), i=472, next=0
+              KindIdentifier "cap_str" [2887, 2900), i=473, next=218
+              KindEqualsToken [2900, 2902), i=474, next=219
+              KindIdentifier "cap_tem_map2" [2902, 2915), i=475, next=0
+          KindExpressionStatement [2916, 2979), i=476, next=225
+            KindBinaryExpression [2916, 2978), i=477, next=0
+              KindIdentifier "cap_tem" [2916, 2964), i=478, next=223
+              KindEqualsToken [2964, 2966), i=479, next=224
+              KindIdentifier "cap_tem_map" [2966, 2978), i=480, next=0
+          KindExpressionStatement [2979, 3008), i=481, next=230
+            KindBinaryExpression [2979, 3007), i=482, next=0
+              KindIdentifier "cap_tem" [2979, 2992), i=483, next=228
+              KindEqualsToken [2992, 2994), i=484, next=229
+              KindIdentifier "cap_tem_map2" [2994, 3007), i=485, next=0
+          KindExpressionStatement [3008, 3041), i=486, next=235
+            KindBinaryExpression [3008, 3040), i=487, next=0
+              KindIdentifier "cap_tem_map" [3008, 3025), i=488, next=233
+              KindEqualsToken [3025, 3027), i=489, next=234
+              KindIdentifier "cap_tem_map2" [3027, 3040), i=490, next=0
+          KindExpressionStatement [3041, 3069), i=491, next=240
+            KindBinaryExpression [3041, 3068), i=492, next=0
+              KindIdentifier "cap_tem_map" [3041, 3058), i=493, next=238
+              KindEqualsToken [3058, 3060), i=494, next=239
+              KindIdentifier "cap_tem" [3060, 3068), i=495, next=0
+          KindExpressionStatement [3069, 3102), i=496, next=245
+            KindBinaryExpression [3069, 3101), i=497, next=0
+              KindIdentifier "cap_tem_map2" [3069, 3087), i=498, next=243
+              KindEqualsToken [3087, 3089), i=499, next=244
+              KindIdentifier "cap_tem_map" [3089, 3101), i=500, next=0
+          KindExpressionStatement [3102, 3131), i=501, next=250
+            KindBinaryExpression [3102, 3130), i=502, next=0
+              KindIdentifier "cap_tem_map2" [3102, 3120), i=503, next=248
+              KindEqualsToken [3120, 3122), i=504, next=249
+              KindIdentifier "cap_tem" [3122, 3130), i=505, next=0
+          KindExpressionStatement [3131, 3207), i=506, next=255
+            KindBinaryExpression [3131, 3206), i=507, next=0
+              KindIdentifier "cap_tem" [3131, 3196), i=508, next=253
+              KindEqualsToken [3196, 3198), i=509, next=254
+              KindIdentifier "cap_str" [3198, 3206), i=510, next=0
+          KindExpressionStatement [3207, 3235), i=511, next=4
+            KindBinaryExpression [3207, 3234), i=512, next=0
+              KindIdentifier "cap_tem_map" [3207, 3224), i=513, next=2
+              KindEqualsToken [3224, 3226), i=514, next=3
+              KindIdentifier "cap_str" [3226, 3234), i=515, next=0
+          KindExpressionStatement [3235, 3264), i=516, next=9
+            KindBinaryExpression [3235, 3263), i=517, next=0
+              KindIdentifier "cap_tem_map2" [3235, 3253), i=518, next=7
+              KindEqualsToken [3253, 3255), i=519, next=8
+              KindIdentifier "cap_str" [3255, 3263), i=520, next=0
+          KindExpressionStatement [3264, 3330), i=521, next=14
+            KindBinaryExpression [3264, 3329), i=522, next=0
+              KindIdentifier "uncap_str" [3264, 3317), i=523, next=12
+              KindEqualsToken [3317, 3319), i=524, next=13
+              KindIdentifier "uncap_tem" [3319, 3329), i=525, next=0
+          KindExpressionStatement [3330, 3362), i=526, next=19
+            KindBinaryExpression [3330, 3361), i=527, next=0
+              KindIdentifier "uncap_str" [3330, 3345), i=528, next=17
+              KindEqualsToken [3345, 3347), i=529, next=18
+              KindIdentifier "uncap_tem_map" [3347, 3361), i=530, next=0
+          KindExpressionStatement [3362, 3395), i=531, next=24
+            KindBinaryExpression [3362, 3394), i=532, next=0
+              KindIdentifier "uncap_str" [3362, 3377), i=533, next=22
+              KindEqualsToken [3377, 3379), i=534, next=23
+              KindIdentifier "uncap_tem_map2" [3379, 3394), i=535, next=0
+          KindExpressionStatement [3395, 3462), i=536, next=29
+            KindBinaryExpression [3395, 3461), i=537, next=0
+              KindIdentifier "uncap_tem" [3395, 3445), i=538, next=27
+              KindEqualsToken [3445, 3447), i=539, next=28
+              KindIdentifier "uncap_tem_map" [3447, 3461), i=540, next=0
+          KindExpressionStatement [3462, 3495), i=541, next=34
+            KindBinaryExpression [3462, 3494), i=542, next=0
+              KindIdentifier "uncap_tem" [3462, 3477), i=543, next=32
+              KindEqualsToken [3477, 3479), i=544, next=33
+              KindIdentifier "uncap_tem_map2" [3479, 3494), i=545, next=0
+          KindExpressionStatement [3495, 3532), i=546, next=39
+            KindBinaryExpression [3495, 3531), i=547, next=0
+              KindIdentifier "uncap_tem_map" [3495, 3514), i=548, next=37
+              KindEqualsToken [3514, 3516), i=549, next=38
+              KindIdentifier "uncap_tem_map2" [3516, 3531), i=550, next=0
+          KindExpressionStatement [3532, 3564), i=551, next=44
+            KindBinaryExpression [3532, 3563), i=552, next=0
+              KindIdentifier "uncap_tem_map" [3532, 3551), i=553, next=42
+              KindEqualsToken [3551, 3553), i=554, next=43
+              KindIdentifier "uncap_tem" [3553, 3563), i=555, next=0
+          KindExpressionStatement [3564, 3601), i=556, next=49
+            KindBinaryExpression [3564, 3600), i=557, next=0
+              KindIdentifier "uncap_tem_map2" [3564, 3584), i=558, next=47
+              KindEqualsToken [3584, 3586), i=559, next=48
+              KindIdentifier "uncap_tem_map" [3586, 3600), i=560, next=0
+          KindExpressionStatement [3601, 3634), i=561, next=54
+            KindBinaryExpression [3601, 3633), i=562, next=0
+              KindIdentifier "uncap_tem_map2" [3601, 3621), i=563, next=52
+              KindEqualsToken [3621, 3623), i=564, next=53
+              KindIdentifier "uncap_tem" [3623, 3633), i=565, next=0
+          KindExpressionStatement [3634, 3714), i=566, next=59
+            KindBinaryExpression [3634, 3713), i=567, next=0
+              KindIdentifier "uncap_tem" [3634, 3701), i=568, next=57
+              KindEqualsToken [3701, 3703), i=569, next=58
+              KindIdentifier "uncap_str" [3703, 3713), i=570, next=0
+          KindExpressionStatement [3714, 3746), i=571, next=64
+            KindBinaryExpression [3714, 3745), i=572, next=0
+              KindIdentifier "uncap_tem_map" [3714, 3733), i=573, next=62
+              KindEqualsToken [3733, 3735), i=574, next=63
+              KindIdentifier "uncap_str" [3735, 3745), i=575, next=0
+          KindExpressionStatement [3746, 3779), i=576, next=0
+            KindBinaryExpression [3746, 3778), i=577, next=0
+              KindIdentifier "uncap_tem_map2" [3746, 3766), i=578, next=67
+              KindEqualsToken [3766, 3768), i=579, next=68
+              KindIdentifier "uncap_str" [3768, 3778), i=580, next=0

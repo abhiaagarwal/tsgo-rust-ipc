@@ -1,0 +1,207 @@
+KindSourceFile [0, 1013), i=1, next=0
+  NodeList [0, 1013), i=2, next=0
+    KindClassDeclaration [0, 205), i=3, next=32
+      KindIdentifier "RoyalGuard" [5, 16), i=4, next=5
+      NodeList [18, 202), i=5, next=0
+        KindMethodDeclaration [18, 105), i=6, next=19
+          KindIdentifier "isLeader" [18, 32), i=7, next=8
+          KindTypePredicate [35, 53), i=8, next=12
+            KindThisType [35, 40), i=9, next=10
+            KindTypeReference [43, 53), i=10, next=0
+              KindIdentifier "LeadGuard" [43, 53), i=11, next=0
+          KindBlock [53, 105), i=12, next=0
+            NodeList [55, 98), i=13, next=0
+              KindReturnStatement [55, 98), i=14, next=0
+                KindBinaryExpression [71, 97), i=15, next=0
+                  KindThisKeyword [71, 76), i=16, next=17
+                  KindInstanceOfKeyword [76, 87), i=17, next=18
+                  KindIdentifier "LeadGuard" [87, 97), i=18, next=0
+        KindMethodDeclaration [105, 202), i=19, next=0
+          KindIdentifier "isFollower" [105, 121), i=20, next=21
+          KindTypePredicate [124, 146), i=21, next=25
+            KindThisType [124, 129), i=22, next=23
+            KindTypeReference [132, 146), i=23, next=0
+              KindIdentifier "FollowerGuard" [132, 146), i=24, next=0
+          KindBlock [146, 202), i=25, next=0
+            NodeList [148, 195), i=26, next=0
+              KindReturnStatement [148, 195), i=27, next=0
+                KindBinaryExpression [164, 194), i=28, next=0
+                  KindThisKeyword [164, 169), i=29, next=30
+                  KindInstanceOfKeyword [169, 180), i=30, next=31
+                  KindIdentifier "FollowerGuard" [180, 194), i=31, next=0
+    KindClassDeclaration [205, 270), i=32, next=45
+      KindIdentifier "LeadGuard" [214, 224), i=33, next=34
+      NodeList [224, 243), i=34, next=39
+        KindHeritageClause [224, 243), i=35, next=0
+          NodeList [232, 243), i=36, next=0
+            KindExpressionWithTypeArguments [232, 243), i=37, next=0
+              KindIdentifier "RoyalGuard" [232, 243), i=38, next=0
+      NodeList [245, 267), i=39, next=0
+        KindMethodDeclaration [245, 266), i=40, next=44
+          KindIdentifier "lead" [245, 255), i=41, next=42
+          KindVoidKeyword [258, 263), i=42, next=43
+          KindBlock [263, 266), i=43, next=0
+        KindSemicolonClassElement [266, 267), i=44, next=0
+    KindClassDeclaration [270, 341), i=45, next=58
+      KindIdentifier "FollowerGuard" [279, 293), i=46, next=47
+      NodeList [293, 312), i=47, next=52
+        KindHeritageClause [293, 312), i=48, next=0
+          NodeList [301, 312), i=49, next=0
+            KindExpressionWithTypeArguments [301, 312), i=50, next=0
+              KindIdentifier "RoyalGuard" [301, 312), i=51, next=0
+      NodeList [314, 338), i=52, next=0
+        KindMethodDeclaration [314, 337), i=53, next=57
+          KindIdentifier "follow" [314, 326), i=54, next=55
+          KindVoidKeyword [329, 334), i=55, next=56
+          KindBlock [334, 337), i=56, next=0
+        KindSemicolonClassElement [337, 338), i=57, next=0
+    KindInterfaceDeclaration [341, 391), i=58, next=65
+      KindIdentifier "GuardInterface" [354, 369), i=59, next=60
+      NodeList [369, 388), i=60, next=0
+        KindHeritageClause [369, 388), i=61, next=0
+          NodeList [377, 388), i=62, next=0
+            KindExpressionWithTypeArguments [377, 388), i=63, next=0
+              KindIdentifier "RoyalGuard" [377, 388), i=64, next=0
+    KindVariableStatement [391, 433), i=65, next=74
+      KindVariableDeclarationList [391, 432), i=66, next=0
+        NodeList [396, 432), i=67, next=0
+          KindVariableDeclaration [396, 432), i=68, next=0
+            KindIdentifier "a" [396, 398), i=69, next=70
+            KindTypeReference [399, 410), i=70, next=72
+              KindIdentifier "RoyalGuard" [399, 410), i=71, next=0
+            KindNewExpression [412, 432), i=72, next=0
+              KindIdentifier "FollowerGuard" [416, 430), i=73, next=0
+    KindVariableStatement [433, 475), i=74, next=83
+      KindVariableDeclarationList [433, 474), i=75, next=0
+        NodeList [438, 474), i=76, next=0
+          KindVariableDeclaration [438, 474), i=77, next=0
+            KindIdentifier "b" [438, 440), i=78, next=79
+            KindTypeReference [441, 456), i=79, next=81
+              KindIdentifier "GuardInterface" [441, 456), i=80, next=0
+            KindNewExpression [458, 474), i=81, next=0
+              KindIdentifier "LeadGuard" [462, 472), i=82, next=0
+    KindExpressionStatement [475, 551), i=83, next=92
+      KindBinaryExpression [475, 550), i=84, next=0
+        KindPropertyAccessExpression [475, 537), i=85, next=88
+          KindIdentifier "b" [475, 526), i=86, next=87
+          KindIdentifier "isFollower" [527, 537), i=87, next=0
+        KindEqualsToken [537, 539), i=88, next=89
+        KindPropertyAccessExpression [539, 550), i=89, next=0
+          KindIdentifier "b" [539, 541), i=90, next=91
+          KindIdentifier "isLeader" [542, 550), i=91, next=0
+    KindExpressionStatement [551, 579), i=92, next=101
+      KindBinaryExpression [551, 578), i=93, next=0
+        KindPropertyAccessExpression [551, 563), i=94, next=97
+          KindIdentifier "b" [551, 554), i=95, next=96
+          KindIdentifier "isLeader" [555, 563), i=96, next=0
+        KindEqualsToken [563, 565), i=97, next=98
+        KindPropertyAccessExpression [565, 578), i=98, next=0
+          KindIdentifier "b" [565, 567), i=99, next=100
+          KindIdentifier "isFollower" [568, 578), i=100, next=0
+    KindExpressionStatement [579, 609), i=101, next=110
+      KindBinaryExpression [579, 608), i=102, next=0
+        KindPropertyAccessExpression [579, 595), i=103, next=106
+          KindIdentifier "a" [579, 584), i=104, next=105
+          KindIdentifier "isFollower" [585, 595), i=105, next=0
+        KindEqualsToken [595, 597), i=106, next=107
+        KindPropertyAccessExpression [597, 608), i=107, next=0
+          KindIdentifier "a" [597, 599), i=108, next=109
+          KindIdentifier "isLeader" [600, 608), i=109, next=0
+    KindExpressionStatement [609, 637), i=110, next=119
+      KindBinaryExpression [609, 636), i=111, next=0
+        KindPropertyAccessExpression [609, 621), i=112, next=115
+          KindIdentifier "a" [609, 612), i=113, next=114
+          KindIdentifier "isLeader" [613, 621), i=114, next=0
+        KindEqualsToken [621, 623), i=115, next=116
+        KindPropertyAccessExpression [623, 636), i=116, next=0
+          KindIdentifier "a" [623, 625), i=117, next=118
+          KindIdentifier "isFollower" [626, 636), i=118, next=0
+    KindFunctionDeclaration [637, 710), i=119, next=132
+      KindIdentifier "invalidGuard" [649, 662), i=120, next=121
+      NodeList [663, 669), i=121, next=125
+        KindParameter [663, 669), i=122, next=0
+          KindIdentifier "c" [663, 664), i=123, next=124
+          KindAnyKeyword [665, 669), i=124, next=0
+      KindTypePredicate [671, 686), i=125, next=128
+        KindThisType [671, 676), i=126, next=127
+        KindNumberKeyword [679, 686), i=127, next=0
+      KindBlock [686, 710), i=128, next=0
+        NodeList [688, 707), i=129, next=0
+          KindReturnStatement [688, 707), i=130, next=0
+            KindFalseKeyword [700, 706), i=131, next=0
+    KindVariableStatement [710, 739), i=132, next=142
+      KindVariableDeclarationList [710, 738), i=133, next=0
+        NodeList [717, 738), i=134, next=0
+          KindVariableDeclaration [717, 738), i=135, next=0
+            KindIdentifier "c" [717, 719), i=136, next=137
+            KindUnionType [720, 738), i=137, next=0
+              NodeList [720, 738), i=138, next=0
+                KindNumberKeyword [720, 727), i=139, next=140
+                KindArrayType [729, 738), i=140, next=0
+                  KindNumberKeyword [729, 736), i=141, next=0
+    KindIfStatement [739, 793), i=142, next=155
+      KindCallExpression [745, 760), i=143, next=147
+        KindIdentifier "invalidGuard" [745, 757), i=144, next=145
+        NodeList [758, 759), i=145, next=0
+          KindIdentifier "c" [758, 759), i=146, next=0
+      KindBlock [761, 774), i=147, next=151
+        NodeList [763, 771), i=148, next=0
+          KindExpressionStatement [763, 771), i=149, next=0
+            KindIdentifier "c" [763, 770), i=150, next=0
+      KindBlock [780, 793), i=151, next=0
+        NodeList [782, 790), i=152, next=0
+          KindExpressionStatement [782, 790), i=153, next=0
+            KindIdentifier "c" [782, 789), i=154, next=0
+    KindVariableStatement [793, 825), i=155, next=164
+      KindVariableDeclarationList [793, 824), i=156, next=0
+        NodeList [800, 824), i=157, next=0
+          KindVariableDeclaration [800, 824), i=158, next=0
+            KindIdentifier "holder" [800, 807), i=159, next=160
+            KindObjectLiteralExpression [809, 824), i=160, next=0
+              NodeList [811, 823), i=161, next=0
+                KindShorthandPropertyAssignment [811, 823), i=162, next=0
+                  KindIdentifier "invalidGuard" [811, 823), i=163, next=0
+    KindIfStatement [825, 914), i=164, next=183
+      KindCallExpression [833, 855), i=165, next=171
+        KindPropertyAccessExpression [833, 852), i=166, next=169
+          KindIdentifier "holder" [833, 839), i=167, next=168
+          KindIdentifier "invalidGuard" [840, 852), i=168, next=0
+        NodeList [853, 854), i=169, next=0
+          KindIdentifier "c" [853, 854), i=170, next=0
+      KindBlock [856, 882), i=171, next=177
+        NodeList [858, 879), i=172, next=0
+          KindExpressionStatement [858, 866), i=173, next=175
+            KindIdentifier "c" [858, 865), i=174, next=0
+          KindExpressionStatement [866, 879), i=175, next=0
+            KindIdentifier "holder" [866, 878), i=176, next=0
+      KindBlock [888, 914), i=177, next=0
+        NodeList [890, 911), i=178, next=0
+          KindExpressionStatement [890, 898), i=179, next=181
+            KindIdentifier "c" [890, 897), i=180, next=0
+          KindExpressionStatement [898, 911), i=181, next=0
+            KindIdentifier "holder" [898, 910), i=182, next=0
+    KindVariableStatement [914, 946), i=183, next=191
+      KindVariableDeclarationList [914, 945), i=184, next=0
+        NodeList [921, 945), i=185, next=0
+          KindVariableDeclaration [921, 945), i=186, next=0
+            KindIdentifier "detached" [921, 930), i=187, next=188
+            KindPropertyAccessExpression [932, 945), i=188, next=0
+              KindIdentifier "a" [932, 934), i=189, next=190
+              KindIdentifier "isFollower" [935, 945), i=190, next=0
+    KindIfStatement [946, 1013), i=191, next=0
+      KindCallExpression [954, 964), i=192, next=194
+        KindIdentifier "detached" [954, 962), i=193, next=0
+      KindBlock [965, 987), i=194, next=201
+        NodeList [967, 984), i=195, next=0
+          KindExpressionStatement [967, 984), i=196, next=0
+            KindCallExpression [967, 983), i=197, next=0
+              KindPropertyAccessExpression [967, 981), i=198, next=0
+                KindIdentifier "a" [967, 974), i=199, next=200
+                KindIdentifier "follow" [975, 981), i=200, next=0
+      KindBlock [993, 1013), i=201, next=0
+        NodeList [995, 1010), i=202, next=0
+          KindExpressionStatement [995, 1010), i=203, next=0
+            KindCallExpression [995, 1009), i=204, next=0
+              KindPropertyAccessExpression [995, 1007), i=205, next=0
+                KindIdentifier "a" [995, 1002), i=206, next=207
+                KindIdentifier "lead" [1003, 1007), i=207, next=0

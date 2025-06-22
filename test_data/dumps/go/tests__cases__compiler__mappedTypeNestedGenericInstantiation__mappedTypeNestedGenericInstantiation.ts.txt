@@ -1,0 +1,99 @@
+KindSourceFile [0, 271), i=1, next=0
+  NodeList [0, 269), i=2, next=0
+    KindInterfaceDeclaration [0, 119), i=3, next=44
+      KindIdentifier "Chainable" [9, 19), i=4, next=5
+      NodeList [20, 21), i=5, next=8
+        KindTypeParameter [20, 21), i=6, next=0
+          KindIdentifier "T" [20, 21), i=7, next=0
+      NodeList [24, 116), i=8, next=0
+        KindMethodSignature [24, 39), i=9, next=13
+          KindIdentifier "value" [24, 33), i=10, next=11
+          KindTypeReference [36, 38), i=11, next=0
+            KindIdentifier "T" [36, 38), i=12, next=0
+        KindMethodSignature [39, 116), i=13, next=0
+          KindIdentifier "mapValues" [39, 52), i=14, next=15
+          NodeList [53, 54), i=15, next=18
+            KindTypeParameter [53, 54), i=16, next=0
+              KindIdentifier "U" [53, 54), i=17, next=0
+          NodeList [56, 82), i=18, next=33
+            KindParameter [56, 82), i=19, next=0
+              KindIdentifier "func" [56, 60), i=20, next=21
+              KindFunctionType [61, 82), i=21, next=0
+                NodeList [63, 76), i=22, next=31
+                  KindParameter [63, 76), i=23, next=0
+                    KindIdentifier "v" [63, 64), i=24, next=25
+                    KindIndexedAccessType [65, 76), i=25, next=0
+                      KindTypeReference [65, 67), i=26, next=28
+                        KindIdentifier "T" [65, 67), i=27, next=0
+                      KindTypeOperator [68, 75), i=28, next=0
+                        KindTypeReference [73, 75), i=29, next=0
+                          KindIdentifier "T" [73, 75), i=30, next=0
+                KindTypeReference [80, 82), i=31, next=0
+                  KindIdentifier "U" [80, 82), i=32, next=0
+          KindTypeReference [84, 115), i=33, next=0
+            KindIdentifier "Chainable" [84, 94), i=34, next=35
+            NodeList [95, 114), i=35, next=0
+              KindMappedType [95, 114), i=36, next=0
+                KindTypeParameter [97, 109), i=37, next=42
+                  KindIdentifier "k" [97, 98), i=38, next=39
+                  KindTypeOperator [101, 109), i=39, next=0
+                    KindTypeReference [107, 109), i=40, next=0
+                      KindIdentifier "T" [107, 109), i=41, next=0
+                KindTypeReference [111, 113), i=42, next=0
+                  KindIdentifier "U" [111, 113), i=43, next=0
+    KindFunctionDeclaration [119, 169), i=44, next=61
+      NodeList [119, 130), i=45, next=47
+        KindDeclareKeyword [119, 130), i=46, next=0
+      KindIdentifier "chain" [139, 145), i=47, next=48
+      NodeList [146, 147), i=48, next=51
+        KindTypeParameter [146, 147), i=49, next=0
+          KindIdentifier "T" [146, 147), i=50, next=0
+      NodeList [149, 153), i=51, next=56
+        KindParameter [149, 153), i=52, next=0
+          KindIdentifier "t" [149, 150), i=53, next=54
+          KindTypeReference [151, 153), i=54, next=0
+            KindIdentifier "T" [151, 153), i=55, next=0
+      KindTypeReference [155, 168), i=56, next=0
+        KindIdentifier "Chainable" [155, 165), i=57, next=58
+        NodeList [166, 167), i=58, next=0
+          KindTypeReference [166, 167), i=59, next=0
+            KindIdentifier "T" [166, 167), i=60, next=0
+    KindVariableStatement [169, 209), i=61, next=76
+      KindVariableDeclarationList [169, 208), i=62, next=0
+        NodeList [178, 208), i=63, next=0
+          KindVariableDeclaration [178, 208), i=64, next=0
+            KindIdentifier "square" [178, 185), i=65, next=66
+            KindArrowFunction [187, 208), i=66, next=0
+              NodeList [189, 198), i=67, next=71
+                KindParameter [189, 198), i=68, next=0
+                  KindIdentifier "x" [189, 190), i=69, next=70
+                  KindNumberKeyword [191, 198), i=70, next=0
+              KindEqualsGreaterThanToken [199, 202), i=71, next=72
+              KindBinaryExpression [202, 208), i=72, next=0
+                KindIdentifier "x" [202, 204), i=73, next=74
+                KindAsteriskToken [204, 206), i=74, next=75
+                KindIdentifier "x" [206, 208), i=75, next=0
+    KindVariableStatement [209, 269), i=76, next=0
+      KindVariableDeclarationList [209, 268), i=77, next=0
+        NodeList [218, 268), i=78, next=0
+          KindVariableDeclaration [218, 268), i=79, next=0
+            KindIdentifier "v" [218, 220), i=80, next=81
+            KindCallExpression [222, 268), i=81, next=0
+              KindPropertyAccessExpression [222, 266), i=82, next=0
+                KindCallExpression [222, 260), i=83, next=99
+                  KindPropertyAccessExpression [222, 252), i=84, next=97
+                    KindCallExpression [222, 242), i=85, next=96
+                      KindIdentifier "chain" [222, 228), i=86, next=87
+                      NodeList [229, 241), i=87, next=0
+                        KindObjectLiteralExpression [229, 241), i=88, next=0
+                          NodeList [230, 240), i=89, next=0
+                            KindPropertyAssignment [230, 234), i=90, next=93
+                              KindIdentifier "a" [230, 231), i=91, next=92
+                              KindNumericLiteral [232, 234), i=92, next=0
+                            KindPropertyAssignment [235, 240), i=93, next=0
+                              KindIdentifier "b" [235, 237), i=94, next=95
+                              KindNumericLiteral [238, 240), i=95, next=0
+                    KindIdentifier "mapValues" [243, 252), i=96, next=0
+                  NodeList [253, 259), i=97, next=0
+                    KindIdentifier "square" [253, 259), i=98, next=0
+                KindIdentifier "value" [261, 266), i=99, next=0

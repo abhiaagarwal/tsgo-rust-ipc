@@ -1,0 +1,189 @@
+KindSourceFile [0, 745), i=1, next=0
+  NodeList [0, 743), i=2, next=0
+    KindFunctionDeclaration [0, 44), i=3, next=20
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "of" [16, 19), i=6, next=7
+      NodeList [20, 21), i=7, next=10
+        KindTypeParameter [20, 21), i=8, next=0
+          KindIdentifier "T" [20, 21), i=9, next=0
+      NodeList [23, 27), i=10, next=15
+        KindParameter [23, 27), i=11, next=0
+          KindIdentifier "a" [23, 24), i=12, next=13
+          KindTypeReference [25, 27), i=13, next=0
+            KindIdentifier "T" [25, 27), i=14, next=0
+      KindTypeReference [29, 43), i=15, next=0
+        KindIdentifier "Observable" [29, 40), i=16, next=17
+        NodeList [41, 42), i=17, next=0
+          KindTypeReference [41, 42), i=18, next=0
+            KindIdentifier "T" [41, 42), i=19, next=0
+    KindFunctionDeclaration [44, 142), i=20, next=44
+      NodeList [44, 53), i=21, next=23
+        KindDeclareKeyword [44, 53), i=22, next=0
+      KindIdentifier "from" [62, 67), i=23, next=24
+      NodeList [68, 98), i=24, next=31
+        KindTypeParameter [68, 98), i=25, next=0
+          KindIdentifier "O" [68, 69), i=26, next=27
+          KindTypeReference [77, 98), i=27, next=0
+            KindIdentifier "ObservableInput" [77, 93), i=28, next=29
+            NodeList [94, 97), i=29, next=0
+              KindAnyKeyword [94, 97), i=30, next=0
+      NodeList [100, 108), i=31, next=36
+        KindParameter [100, 108), i=32, next=0
+          KindIdentifier "input" [100, 105), i=33, next=34
+          KindTypeReference [106, 108), i=34, next=0
+            KindIdentifier "O" [106, 108), i=35, next=0
+      KindTypeReference [110, 141), i=36, next=0
+        KindIdentifier "Observable" [110, 121), i=37, next=38
+        NodeList [122, 140), i=38, next=0
+          KindTypeReference [122, 140), i=39, next=0
+            KindIdentifier "ObservedValueOf" [122, 137), i=40, next=41
+            NodeList [138, 139), i=41, next=0
+              KindTypeReference [138, 139), i=42, next=0
+                KindIdentifier "O" [138, 139), i=43, next=0
+    KindTypeAliasDeclaration [142, 219), i=44, next=61
+      KindIdentifier "ObservedValueOf" [150, 166), i=45, next=46
+      NodeList [167, 168), i=46, next=49
+        KindTypeParameter [167, 168), i=47, next=0
+          KindIdentifier "O" [167, 168), i=48, next=0
+      KindConditionalType [171, 218), i=49, next=0
+        KindTypeReference [171, 173), i=50, next=52
+          KindIdentifier "O" [171, 173), i=51, next=0
+        KindTypeReference [181, 206), i=52, next=58
+          KindIdentifier "ObservableInput" [181, 197), i=53, next=54
+          NodeList [198, 205), i=54, next=0
+            KindInferType [198, 205), i=55, next=0
+              KindTypeParameter [203, 205), i=56, next=0
+                KindIdentifier "T" [203, 205), i=57, next=0
+        KindTypeReference [208, 210), i=58, next=60
+          KindIdentifier "T" [208, 210), i=59, next=0
+        KindNeverKeyword [212, 218), i=60, next=0
+    KindInterfaceDeclaration [219, 355), i=61, next=95
+      KindIdentifier "Subscribable" [232, 245), i=62, next=63
+      NodeList [246, 247), i=63, next=66
+        KindTypeParameter [246, 247), i=64, next=0
+          KindIdentifier "T" [246, 247), i=65, next=0
+      NodeList [250, 352), i=66, next=0
+        KindMethodSignature [250, 352), i=67, next=0
+          KindIdentifier "subscribe" [250, 265), i=68, next=69
+          NodeList [266, 344), i=69, next=94
+            KindParameter [266, 291), i=70, next=80
+              KindIdentifier "next" [266, 270), i=71, next=72
+              KindQuestionToken [270, 271), i=72, next=73
+              KindFunctionType [272, 291), i=73, next=0
+                NodeList [274, 282), i=74, next=79
+                  KindParameter [274, 282), i=75, next=0
+                    KindIdentifier "value" [274, 279), i=76, next=77
+                    KindTypeReference [280, 282), i=77, next=0
+                      KindIdentifier "T" [280, 282), i=78, next=0
+                KindVoidKeyword [286, 291), i=79, next=0
+            KindParameter [292, 321), i=80, next=89
+              KindIdentifier "error" [292, 298), i=81, next=82
+              KindQuestionToken [298, 299), i=82, next=83
+              KindFunctionType [300, 321), i=83, next=0
+                NodeList [302, 312), i=84, next=88
+                  KindParameter [302, 312), i=85, next=0
+                    KindIdentifier "error" [302, 307), i=86, next=87
+                    KindAnyKeyword [308, 312), i=87, next=0
+                KindVoidKeyword [316, 321), i=88, next=0
+            KindParameter [322, 344), i=89, next=0
+              KindIdentifier "complete" [322, 331), i=90, next=91
+              KindQuestionToken [331, 332), i=91, next=92
+              KindFunctionType [333, 344), i=92, next=0
+                KindVoidKeyword [339, 344), i=93, next=0
+          KindVoidKeyword [346, 351), i=94, next=0
+    KindTypeAliasDeclaration [355, 421), i=95, next=111
+      KindIdentifier "ObservableInput" [361, 377), i=96, next=97
+      NodeList [378, 379), i=97, next=100
+        KindTypeParameter [378, 379), i=98, next=0
+          KindIdentifier "T" [378, 379), i=99, next=0
+      KindUnionType [382, 420), i=100, next=0
+        NodeList [382, 420), i=101, next=0
+          KindTypeReference [382, 398), i=102, next=107
+            KindIdentifier "Subscribable" [382, 395), i=103, next=104
+            NodeList [396, 397), i=104, next=0
+              KindTypeReference [396, 397), i=105, next=0
+                KindIdentifier "T" [396, 397), i=106, next=0
+          KindTypeReference [400, 420), i=107, next=0
+            KindIdentifier "Subscribable" [400, 413), i=108, next=109
+            NodeList [414, 419), i=109, next=0
+              KindNeverKeyword [414, 419), i=110, next=0
+    KindClassDeclaration [421, 588), i=111, next=155
+      NodeList [421, 434), i=112, next=114
+        KindDeclareKeyword [421, 434), i=113, next=0
+      KindIdentifier "Observable" [440, 451), i=114, next=115
+      NodeList [452, 453), i=115, next=118
+        KindTypeParameter [452, 453), i=116, next=0
+          KindIdentifier "T" [452, 453), i=117, next=0
+      NodeList [454, 481), i=118, next=126
+        KindHeritageClause [454, 481), i=119, next=0
+          NodeList [465, 481), i=120, next=0
+            KindExpressionWithTypeArguments [465, 481), i=121, next=0
+              KindIdentifier "Subscribable" [465, 478), i=122, next=123
+              NodeList [479, 480), i=123, next=0
+                KindTypeReference [479, 480), i=124, next=0
+                  KindIdentifier "T" [479, 480), i=125, next=0
+      NodeList [483, 585), i=126, next=0
+        KindMethodDeclaration [483, 585), i=127, next=0
+          KindIdentifier "subscribe" [483, 498), i=128, next=129
+          NodeList [499, 577), i=129, next=154
+            KindParameter [499, 524), i=130, next=140
+              KindIdentifier "next" [499, 503), i=131, next=132
+              KindQuestionToken [503, 504), i=132, next=133
+              KindFunctionType [505, 524), i=133, next=0
+                NodeList [507, 515), i=134, next=139
+                  KindParameter [507, 515), i=135, next=0
+                    KindIdentifier "value" [507, 512), i=136, next=137
+                    KindTypeReference [513, 515), i=137, next=0
+                      KindIdentifier "T" [513, 515), i=138, next=0
+                KindVoidKeyword [519, 524), i=139, next=0
+            KindParameter [525, 554), i=140, next=149
+              KindIdentifier "error" [525, 531), i=141, next=142
+              KindQuestionToken [531, 532), i=142, next=143
+              KindFunctionType [533, 554), i=143, next=0
+                NodeList [535, 545), i=144, next=148
+                  KindParameter [535, 545), i=145, next=0
+                    KindIdentifier "error" [535, 540), i=146, next=147
+                    KindAnyKeyword [541, 545), i=147, next=0
+                KindVoidKeyword [549, 554), i=148, next=0
+            KindParameter [555, 577), i=149, next=0
+              KindIdentifier "complete" [555, 564), i=150, next=151
+              KindQuestionToken [564, 565), i=151, next=152
+              KindFunctionType [566, 577), i=152, next=0
+                KindVoidKeyword [572, 577), i=153, next=0
+          KindVoidKeyword [579, 584), i=154, next=0
+    KindFunctionDeclaration [588, 743), i=155, next=0
+      KindIdentifier "asObservable" [600, 613), i=156, next=157
+      NodeList [614, 653), i=157, next=167
+        KindParameter [614, 653), i=158, next=0
+          KindIdentifier "input" [614, 619), i=159, next=160
+          KindUnionType [620, 653), i=160, next=0
+            NodeList [620, 653), i=161, next=0
+              KindStringKeyword [620, 627), i=162, next=163
+              KindTypeReference [629, 653), i=163, next=0
+                KindIdentifier "ObservableInput" [629, 645), i=164, next=165
+                NodeList [646, 652), i=165, next=0
+                  KindStringKeyword [646, 652), i=166, next=0
+      KindTypeReference [655, 674), i=167, next=171
+        KindIdentifier "Observable" [655, 666), i=168, next=169
+        NodeList [667, 673), i=169, next=0
+          KindStringKeyword [667, 673), i=170, next=0
+      KindBlock [674, 743), i=171, next=0
+        NodeList [676, 740), i=172, next=0
+          KindReturnStatement [676, 740), i=173, next=0
+            KindConditionalExpression [688, 740), i=174, next=0
+              KindBinaryExpression [688, 714), i=175, next=180
+                KindTypeOfExpression [688, 701), i=176, next=178
+                  KindIdentifier "input" [695, 701), i=177, next=0
+                KindEqualsEqualsEqualsToken [701, 705), i=178, next=179
+                KindStringLiteral "string" [705, 714), i=179, next=0
+              KindQuestionToken [714, 716), i=180, next=181
+              KindCallExpression [716, 726), i=181, next=185
+                KindIdentifier "of" [716, 719), i=182, next=183
+                NodeList [720, 725), i=183, next=0
+                  KindIdentifier "input" [720, 725), i=184, next=0
+              KindColonToken [726, 728), i=185, next=186
+              KindCallExpression [728, 740), i=186, next=0
+                KindIdentifier "from" [728, 733), i=187, next=188
+                NodeList [734, 739), i=188, next=0
+                  KindIdentifier "input" [734, 739), i=189, next=0

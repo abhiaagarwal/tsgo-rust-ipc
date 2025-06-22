@@ -1,0 +1,201 @@
+KindSourceFile [0, 799), i=1, next=0
+  NodeList [0, 799), i=2, next=0
+    KindClassDeclaration [0, 32), i=3, next=13
+      KindIdentifier "Box" [5, 9), i=4, next=5
+      NodeList [10, 11), i=5, next=8
+        KindTypeParameter [10, 11), i=6, next=0
+          KindIdentifier "P" [10, 11), i=7, next=0
+      NodeList [14, 29), i=8, next=0
+        KindPropertyDeclaration [14, 29), i=9, next=0
+          KindIdentifier "value" [14, 25), i=10, next=11
+          KindTypeReference [26, 28), i=11, next=0
+            KindIdentifier "P" [26, 28), i=12, next=0
+    KindTypeAliasDeclaration [32, 91), i=13, next=32
+      KindIdentifier "Boxified" [40, 49), i=14, next=15
+      NodeList [50, 51), i=15, next=18
+        KindTypeParameter [50, 51), i=16, next=0
+          KindIdentifier "T" [50, 51), i=17, next=0
+      KindMappedType [54, 91), i=18, next=0
+        KindTypeParameter [63, 75), i=19, next=24
+          KindIdentifier "K" [63, 64), i=20, next=21
+          KindTypeOperator [67, 75), i=21, next=0
+            KindTypeReference [73, 75), i=22, next=0
+              KindIdentifier "T" [73, 75), i=23, next=0
+        KindTypeReference [77, 87), i=24, next=0
+          KindIdentifier "Box" [77, 81), i=25, next=26
+          NodeList [82, 86), i=26, next=0
+            KindIndexedAccessType [82, 86), i=27, next=0
+              KindTypeReference [82, 83), i=28, next=30
+                KindIdentifier "T" [82, 83), i=29, next=0
+              KindTypeReference [84, 85), i=30, next=0
+                KindIdentifier "K" [84, 85), i=31, next=0
+    KindFunctionDeclaration [91, 143), i=32, next=49
+      NodeList [91, 102), i=33, next=35
+        KindDeclareKeyword [91, 102), i=34, next=0
+      KindIdentifier "boxify" [111, 118), i=35, next=36
+      NodeList [119, 120), i=36, next=39
+        KindTypeParameter [119, 120), i=37, next=0
+          KindIdentifier "T" [119, 120), i=38, next=0
+      NodeList [122, 128), i=39, next=44
+        KindParameter [122, 128), i=40, next=0
+          KindIdentifier "obj" [122, 125), i=41, next=42
+          KindTypeReference [126, 128), i=42, next=0
+            KindIdentifier "T" [126, 128), i=43, next=0
+      KindTypeReference [130, 142), i=44, next=0
+        KindIdentifier "Boxified" [130, 139), i=45, next=46
+        NodeList [140, 141), i=46, next=0
+          KindTypeReference [140, 141), i=47, next=0
+            KindIdentifier "T" [140, 141), i=48, next=0
+    KindFunctionDeclaration [143, 195), i=49, next=66
+      NodeList [143, 152), i=50, next=52
+        KindDeclareKeyword [143, 152), i=51, next=0
+      KindIdentifier "unboxify" [161, 170), i=52, next=53
+      NodeList [171, 172), i=53, next=56
+        KindTypeParameter [171, 172), i=54, next=0
+          KindIdentifier "T" [171, 172), i=55, next=0
+      NodeList [174, 190), i=56, next=64
+        KindParameter [174, 190), i=57, next=0
+          KindIdentifier "obj" [174, 177), i=58, next=59
+          KindTypeReference [178, 190), i=59, next=0
+            KindIdentifier "Boxified" [178, 187), i=60, next=61
+            NodeList [188, 189), i=61, next=0
+              KindTypeReference [188, 189), i=62, next=0
+                KindIdentifier "T" [188, 189), i=63, next=0
+      KindTypeReference [192, 194), i=64, next=0
+        KindIdentifier "T" [192, 194), i=65, next=0
+    KindInterfaceDeclaration [195, 265), i=66, next=75
+      KindIdentifier "Bacon" [208, 214), i=67, next=68
+      NodeList [216, 262), i=68, next=0
+        KindPropertySignature [216, 241), i=69, next=72
+          KindIdentifier "isPerfect" [216, 231), i=70, next=71
+          KindBooleanKeyword [232, 240), i=71, next=0
+        KindPropertySignature [241, 262), i=72, next=0
+          KindIdentifier "weight" [241, 253), i=73, next=74
+          KindNumberKeyword [254, 261), i=74, next=0
+    KindInterfaceDeclaration [265, 353), i=75, next=90
+      KindIdentifier "BoxifiedBacon" [278, 292), i=76, next=77
+      NodeList [294, 350), i=77, next=0
+        KindPropertySignature [294, 324), i=78, next=84
+          KindIdentifier "isPerfect" [294, 309), i=79, next=80
+          KindTypeReference [310, 323), i=80, next=0
+            KindIdentifier "Box" [310, 314), i=81, next=82
+            NodeList [315, 322), i=82, next=0
+              KindBooleanKeyword [315, 322), i=83, next=0
+        KindPropertySignature [324, 350), i=84, next=0
+          KindIdentifier "weight" [324, 336), i=85, next=86
+          KindTypeReference [337, 349), i=86, next=0
+            KindIdentifier "Box" [337, 341), i=87, next=88
+            NodeList [342, 348), i=88, next=0
+              KindNumberKeyword [342, 348), i=89, next=0
+    KindFunctionDeclaration [353, 484), i=90, next=128
+      KindIdentifier "f1" [365, 368), i=91, next=92
+      NodeList [369, 377), i=92, next=97
+        KindParameter [369, 377), i=93, next=0
+          KindIdentifier "b" [369, 370), i=94, next=95
+          KindTypeReference [371, 377), i=95, next=0
+            KindIdentifier "Bacon" [371, 377), i=96, next=0
+      KindBlock [378, 484), i=97, next=0
+        NodeList [380, 481), i=98, next=0
+          KindVariableStatement [380, 405), i=99, next=108
+            KindVariableDeclarationList [380, 404), i=100, next=0
+              NodeList [389, 404), i=101, next=0
+                KindVariableDeclaration [389, 404), i=102, next=0
+                  KindIdentifier "bb" [389, 392), i=103, next=104
+                  KindCallExpression [394, 404), i=104, next=0
+                    KindIdentifier "boxify" [394, 401), i=105, next=106
+                    NodeList [402, 403), i=106, next=0
+                      KindIdentifier "b" [402, 403), i=107, next=0
+          KindVariableStatement [405, 446), i=108, next=118
+            KindVariableDeclarationList [405, 445), i=109, next=0
+              NodeList [414, 445), i=110, next=0
+                KindVariableDeclaration [414, 445), i=111, next=0
+                  KindIdentifier "isPerfect" [414, 424), i=112, next=113
+                  KindPropertyAccessExpression [426, 445), i=113, next=0
+                    KindPropertyAccessExpression [426, 439), i=114, next=117
+                      KindIdentifier "bb" [426, 429), i=115, next=116
+                      KindIdentifier "isPerfect" [430, 439), i=116, next=0
+                    KindIdentifier "value" [440, 445), i=117, next=0
+          KindVariableStatement [446, 481), i=118, next=0
+            KindVariableDeclarationList [446, 480), i=119, next=0
+              NodeList [455, 480), i=120, next=0
+                KindVariableDeclaration [455, 480), i=121, next=0
+                  KindIdentifier "weight" [455, 462), i=122, next=123
+                  KindPropertyAccessExpression [464, 480), i=123, next=0
+                    KindPropertyAccessExpression [464, 474), i=124, next=127
+                      KindIdentifier "bb" [464, 467), i=125, next=126
+                      KindIdentifier "weight" [468, 474), i=126, next=0
+                    KindIdentifier "value" [475, 480), i=127, next=0
+    KindFunctionDeclaration [484, 631), i=128, next=165
+      KindIdentifier "f2" [496, 499), i=129, next=130
+      NodeList [500, 519), i=130, next=138
+        KindParameter [500, 519), i=131, next=0
+          KindIdentifier "bb" [500, 502), i=132, next=133
+          KindTypeReference [503, 519), i=133, next=0
+            KindIdentifier "Boxified" [503, 512), i=134, next=135
+            NodeList [513, 518), i=135, next=0
+              KindTypeReference [513, 518), i=136, next=0
+                KindIdentifier "Bacon" [513, 518), i=137, next=0
+      KindBlock [520, 631), i=138, next=0
+        NodeList [522, 628), i=139, next=0
+          KindVariableStatement [522, 549), i=140, next=149
+            KindVariableDeclarationList [522, 548), i=141, next=0
+              NodeList [531, 548), i=142, next=0
+                KindVariableDeclaration [531, 548), i=143, next=0
+                  KindIdentifier "b" [531, 533), i=144, next=145
+                  KindCallExpression [535, 548), i=145, next=0
+                    KindIdentifier "unboxify" [535, 544), i=146, next=147
+                    NodeList [545, 547), i=147, next=0
+                      KindIdentifier "bb" [545, 547), i=148, next=0
+          KindVariableStatement [549, 600), i=149, next=157
+            KindVariableDeclarationList [549, 599), i=150, next=0
+              NodeList [580, 599), i=151, next=0
+                KindVariableDeclaration [580, 599), i=152, next=0
+                  KindIdentifier "bool" [580, 585), i=153, next=154
+                  KindPropertyAccessExpression [587, 599), i=154, next=0
+                    KindIdentifier "b" [587, 589), i=155, next=156
+                    KindIdentifier "isPerfect" [590, 599), i=156, next=0
+          KindVariableStatement [600, 628), i=157, next=0
+            KindVariableDeclarationList [600, 627), i=158, next=0
+              NodeList [609, 627), i=159, next=0
+                KindVariableDeclaration [609, 627), i=160, next=0
+                  KindIdentifier "weight" [609, 616), i=161, next=162
+                  KindPropertyAccessExpression [618, 627), i=162, next=0
+                    KindIdentifier "b" [618, 620), i=163, next=164
+                    KindIdentifier "weight" [621, 627), i=164, next=0
+    KindFunctionDeclaration [631, 799), i=165, next=0
+      KindIdentifier "f3" [643, 646), i=166, next=167
+      NodeList [647, 664), i=167, next=172
+        KindParameter [647, 664), i=168, next=0
+          KindIdentifier "bb" [647, 649), i=169, next=170
+          KindTypeReference [650, 664), i=170, next=0
+            KindIdentifier "BoxifiedBacon" [650, 664), i=171, next=0
+      KindBlock [665, 799), i=172, next=0
+        NodeList [667, 796), i=173, next=0
+          KindVariableStatement [667, 701), i=174, next=186
+            KindVariableDeclarationList [667, 700), i=175, next=0
+              NodeList [676, 700), i=176, next=0
+                KindVariableDeclaration [676, 700), i=177, next=0
+                  KindIdentifier "b" [676, 678), i=178, next=179
+                  KindCallExpression [680, 700), i=179, next=0
+                    KindIdentifier "unboxify" [680, 689), i=180, next=181
+                    NodeList [690, 695), i=181, next=184
+                      KindTypeReference [690, 695), i=182, next=0
+                        KindIdentifier "Bacon" [690, 695), i=183, next=0
+                    NodeList [697, 699), i=184, next=0
+                      KindIdentifier "bb" [697, 699), i=185, next=0
+          KindVariableStatement [701, 767), i=186, next=194
+            KindVariableDeclarationList [701, 766), i=187, next=0
+              NodeList [747, 766), i=188, next=0
+                KindVariableDeclaration [747, 766), i=189, next=0
+                  KindIdentifier "bool" [747, 752), i=190, next=191
+                  KindPropertyAccessExpression [754, 766), i=191, next=0
+                    KindIdentifier "b" [754, 756), i=192, next=193
+                    KindIdentifier "isPerfect" [757, 766), i=193, next=0
+          KindVariableStatement [767, 796), i=194, next=0
+            KindVariableDeclarationList [767, 795), i=195, next=0
+              NodeList [776, 795), i=196, next=0
+                KindVariableDeclaration [776, 795), i=197, next=0
+                  KindIdentifier "weight" [776, 783), i=198, next=199
+                  KindPropertyAccessExpression [785, 795), i=199, next=0
+                    KindIdentifier "bb" [785, 788), i=200, next=201
+                    KindIdentifier "weight" [789, 795), i=201, next=0

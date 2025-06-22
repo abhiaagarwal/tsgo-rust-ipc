@@ -1,0 +1,113 @@
+KindSourceFile [0, 564), i=1, next=0
+  NodeList [0, 564), i=2, next=0
+    KindTypeAliasDeclaration [0, 20), i=3, next=6
+      KindIdentifier "Client" [4, 11), i=4, next=5
+      KindStringKeyword [13, 20), i=5, next=0
+    KindTypeAliasDeclaration [20, 87), i=6, next=20
+      KindIdentifier "UpdatedClient" [50, 64), i=7, next=8
+      NodeList [65, 66), i=8, next=11
+        KindTypeParameter [65, 66), i=9, next=0
+          KindIdentifier "C" [65, 66), i=10, next=0
+      KindIntersectionType [69, 87), i=11, next=0
+        NodeList [69, 87), i=12, next=0
+          KindTypeReference [69, 71), i=13, next=15
+            KindIdentifier "C" [69, 71), i=14, next=0
+          KindTypeLiteral [73, 87), i=15, next=0
+            NodeList [75, 86), i=16, next=0
+              KindPropertySignature [75, 86), i=17, next=0
+                KindIdentifier "foo" [75, 78), i=18, next=19
+                KindNumberKeyword [79, 86), i=19, next=0
+    KindVariableStatement [87, 564), i=20, next=0
+      NodeList [87, 97), i=21, next=23
+        KindExportKeyword [87, 97), i=22, next=0
+      KindVariableDeclarationList [97, 564), i=23, next=0
+        NodeList [103, 564), i=24, next=0
+          KindVariableDeclaration [103, 564), i=25, next=0
+            KindIdentifier "createClient" [103, 116), i=26, next=27
+            KindArrowFunction [118, 564), i=27, next=0
+              NodeList [120, 243), i=28, next=56
+                KindTypeParameter [120, 243), i=29, next=0
+                  KindIdentifier "D" [120, 125), i=30, next=31
+                  KindUnionType [133, 243), i=31, next=0
+                    NodeList [133, 243), i=32, next=0
+                      KindParenthesizedType [140, 173), i=33, next=43
+                        KindConstructorType [142, 172), i=34, next=0
+                          NodeList [147, 161), i=35, next=41
+                            KindParameter [147, 161), i=36, next=0
+                              KindDotDotDotToken [147, 150), i=37, next=38
+                              KindIdentifier "args" [150, 154), i=38, next=39
+                              KindArrayType [155, 161), i=39, next=0
+                                KindAnyKeyword [155, 159), i=40, next=0
+                          KindTypeReference [165, 172), i=41, next=0
+                            KindIdentifier "Client" [165, 172), i=42, next=0
+                      KindTypeReference [196, 243), i=43, next=0
+                        KindIdentifier "Record" [196, 203), i=44, next=45
+                        NodeList [204, 242), i=45, next=0
+                          KindStringKeyword [204, 210), i=46, next=47
+                          KindConstructorType [211, 242), i=47, next=0
+                            NodeList [217, 231), i=48, next=54
+                              KindParameter [217, 231), i=49, next=0
+                                KindDotDotDotToken [217, 220), i=50, next=51
+                                KindIdentifier "args" [220, 224), i=51, next=52
+                                KindArrayType [225, 231), i=52, next=0
+                                  KindAnyKeyword [225, 229), i=53, next=0
+                            KindTypeReference [235, 242), i=54, next=0
+                              KindIdentifier "Client" [235, 242), i=55, next=0
+              NodeList [268, 284), i=56, next=61
+                KindParameter [268, 284), i=57, next=0
+                  KindIdentifier "clientDef" [268, 281), i=58, next=59
+                  KindTypeReference [282, 284), i=59, next=0
+                    KindIdentifier "D" [282, 284), i=60, next=0
+              KindConditionalType [288, 534), i=61, next=107
+                KindTypeReference [288, 290), i=62, next=64
+                  KindIdentifier "D" [288, 290), i=63, next=0
+                KindConstructorType [298, 330), i=64, next=74
+                  NodeList [304, 318), i=65, next=71
+                    KindParameter [304, 318), i=66, next=0
+                      KindDotDotDotToken [304, 307), i=67, next=68
+                      KindIdentifier "args" [307, 311), i=68, next=69
+                      KindArrayType [312, 318), i=69, next=0
+                        KindAnyKeyword [312, 316), i=70, next=0
+                  KindInferType [322, 330), i=71, next=0
+                    KindTypeParameter [328, 330), i=72, next=0
+                      KindIdentifier "C" [328, 330), i=73, next=0
+                KindTypeReference [335, 352), i=74, next=79
+                  KindIdentifier "UpdatedClient" [335, 349), i=75, next=76
+                  NodeList [350, 351), i=76, next=0
+                    KindTypeReference [350, 351), i=77, next=0
+                      KindIdentifier "C" [350, 351), i=78, next=0
+                KindMappedType [376, 534), i=79, next=0
+                  KindTypeParameter [387, 399), i=80, next=85
+                    KindIdentifier "K" [387, 388), i=81, next=82
+                    KindTypeOperator [391, 399), i=82, next=0
+                      KindTypeReference [397, 399), i=83, next=0
+                        KindIdentifier "D" [397, 399), i=84, next=0
+                  KindConditionalType [401, 527), i=85, next=0
+                    KindIndexedAccessType [401, 406), i=86, next=91
+                      KindTypeReference [401, 403), i=87, next=89
+                        KindIdentifier "D" [401, 403), i=88, next=0
+                      KindTypeReference [404, 405), i=89, next=0
+                        KindIdentifier "K" [404, 405), i=90, next=0
+                    KindConstructorType [414, 446), i=91, next=101
+                      NodeList [420, 434), i=92, next=98
+                        KindParameter [420, 434), i=93, next=0
+                          KindDotDotDotToken [420, 423), i=94, next=95
+                          KindIdentifier "args" [423, 427), i=95, next=96
+                          KindArrayType [428, 434), i=96, next=0
+                            KindAnyKeyword [428, 432), i=97, next=0
+                      KindInferType [438, 446), i=98, next=0
+                        KindTypeParameter [444, 446), i=99, next=0
+                          KindIdentifier "C" [444, 446), i=100, next=0
+                    KindTypeReference [493, 510), i=101, next=106
+                      KindIdentifier "UpdatedClient" [493, 507), i=102, next=103
+                      NodeList [508, 509), i=103, next=0
+                        KindTypeReference [508, 509), i=104, next=0
+                          KindIdentifier "C" [508, 509), i=105, next=0
+                    KindNeverKeyword [521, 527), i=106, next=0
+              KindEqualsGreaterThanToken [534, 537), i=107, next=108
+              KindBlock [537, 564), i=108, next=0
+                NodeList [539, 561), i=109, next=0
+                  KindReturnStatement [539, 561), i=110, next=0
+                    KindAsExpression [549, 561), i=111, next=0
+                      KindNullKeyword [549, 554), i=112, next=113
+                      KindAnyKeyword [557, 561), i=113, next=0

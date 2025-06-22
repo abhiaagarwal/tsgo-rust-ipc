@@ -1,0 +1,105 @@
+KindSourceFile [0, 512), i=1, next=0
+  NodeList [0, 512), i=2, next=0
+    KindTypeAliasDeclaration [0, 47), i=3, next=17
+      KindIdentifier "Constructor" [4, 16), i=4, next=5
+      NodeList [17, 18), i=5, next=8
+        KindTypeParameter [17, 18), i=6, next=0
+          KindIdentifier "T" [17, 18), i=7, next=0
+      KindConstructorType [21, 46), i=8, next=0
+        NodeList [26, 40), i=9, next=15
+          KindParameter [26, 40), i=10, next=0
+            KindDotDotDotToken [26, 29), i=11, next=12
+            KindIdentifier "args" [29, 33), i=12, next=13
+            KindArrayType [34, 40), i=13, next=0
+              KindAnyKeyword [34, 38), i=14, next=0
+        KindTypeReference [44, 46), i=15, next=0
+          KindIdentifier "T" [44, 46), i=16, next=0
+    KindFunctionDeclaration [47, 249), i=17, next=66
+      KindIdentifier "Tagged" [57, 64), i=18, next=19
+      NodeList [65, 90), i=19, next=26
+        KindTypeParameter [65, 90), i=20, next=0
+          KindIdentifier "T" [65, 66), i=21, next=22
+          KindTypeReference [74, 90), i=22, next=0
+            KindIdentifier "Constructor" [74, 86), i=23, next=24
+            NodeList [87, 89), i=24, next=0
+              KindTypeLiteral [87, 89), i=25, next=0
+      NodeList [92, 99), i=26, next=31
+        KindParameter [92, 99), i=27, next=0
+          KindIdentifier "Base" [92, 96), i=28, next=29
+          KindTypeReference [97, 99), i=29, next=0
+            KindIdentifier "T" [97, 99), i=30, next=0
+      KindBlock [100, 249), i=31, next=0
+        NodeList [102, 246), i=32, next=0
+          KindReturnStatement [102, 246), i=33, next=0
+            KindClassExpression [112, 245), i=34, next=0
+              NodeList [118, 131), i=35, next=40
+                KindHeritageClause [118, 131), i=36, next=0
+                  NodeList [126, 131), i=37, next=0
+                    KindExpressionWithTypeArguments [126, 131), i=38, next=0
+                      KindIdentifier "Base" [126, 131), i=39, next=0
+              NodeList [133, 240), i=40, next=0
+                KindPropertyDeclaration [133, 152), i=41, next=44
+                  KindIdentifier "_tag" [133, 143), i=42, next=43
+                  KindStringKeyword [144, 151), i=43, next=0
+                KindConstructor [152, 240), i=44, next=0
+                  NodeList [170, 184), i=45, next=51
+                    KindParameter [170, 184), i=46, next=0
+                      KindDotDotDotToken [170, 173), i=47, next=48
+                      KindIdentifier "args" [173, 177), i=48, next=49
+                      KindArrayType [178, 184), i=49, next=0
+                        KindAnyKeyword [178, 182), i=50, next=0
+                  KindBlock [185, 240), i=51, next=0
+                    NodeList [187, 233), i=52, next=0
+                      KindExpressionStatement [187, 210), i=53, next=59
+                        KindCallExpression [187, 209), i=54, next=0
+                          KindSuperKeyword [187, 200), i=55, next=56
+                          NodeList [201, 208), i=56, next=0
+                            KindSpreadElement [201, 208), i=57, next=0
+                              KindIdentifier "args" [204, 208), i=58, next=0
+                      KindExpressionStatement [210, 233), i=59, next=0
+                        KindBinaryExpression [210, 232), i=60, next=0
+                          KindPropertyAccessExpression [210, 227), i=61, next=64
+                            KindThisKeyword [210, 222), i=62, next=63
+                            KindIdentifier "_tag" [223, 227), i=63, next=0
+                          KindEqualsToken [227, 229), i=64, next=65
+                          KindStringLiteral "" [229, 232), i=65, next=0
+    KindClassDeclaration [249, 310), i=66, next=75
+      KindIdentifier "A" [258, 260), i=67, next=68
+      NodeList [262, 307), i=68, next=0
+        KindMethodDeclaration [262, 307), i=69, next=0
+          KindIdentifier "toString" [262, 274), i=70, next=71
+          KindBlock [277, 307), i=71, next=0
+            NodeList [279, 302), i=72, next=0
+              KindReturnStatement [279, 302), i=73, next=0
+                KindStringLiteral "class A" [291, 301), i=74, next=0
+    KindClassDeclaration [310, 415), i=75, next=92
+      KindIdentifier "B" [319, 321), i=76, next=77
+      NodeList [321, 339), i=77, next=85
+        KindHeritageClause [321, 339), i=78, next=0
+          NodeList [329, 339), i=79, next=0
+            KindExpressionWithTypeArguments [329, 339), i=80, next=0
+              KindCallExpression [329, 339), i=81, next=0
+                KindIdentifier "Tagged" [329, 336), i=82, next=83
+                NodeList [337, 338), i=83, next=0
+                  KindIdentifier "A" [337, 338), i=84, next=0
+      NodeList [341, 412), i=85, next=0
+        KindMethodDeclaration [341, 412), i=86, next=0
+          KindIdentifier "toString" [341, 353), i=87, next=88
+          KindBlock [356, 412), i=88, next=0
+            NodeList [358, 407), i=89, next=0
+              KindReturnStatement [358, 407), i=90, next=0
+                KindStringLiteral "class B" [396, 406), i=91, next=0
+    KindClassDeclaration [415, 512), i=92, next=0
+      KindIdentifier "C" [424, 426), i=93, next=94
+      NodeList [426, 436), i=94, next=99
+        KindHeritageClause [426, 436), i=95, next=0
+          NodeList [434, 436), i=96, next=0
+            KindExpressionWithTypeArguments [434, 436), i=97, next=0
+              KindIdentifier "A" [434, 436), i=98, next=0
+      NodeList [438, 509), i=99, next=0
+        KindMethodDeclaration [438, 509), i=100, next=0
+          KindIdentifier "toString" [438, 450), i=101, next=102
+          KindBlock [453, 509), i=102, next=0
+            NodeList [455, 504), i=103, next=0
+              KindReturnStatement [455, 504), i=104, next=0
+                KindStringLiteral "class C" [493, 503), i=105, next=0

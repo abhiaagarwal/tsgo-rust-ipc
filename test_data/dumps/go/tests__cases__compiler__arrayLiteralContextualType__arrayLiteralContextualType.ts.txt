@@ -1,0 +1,91 @@
+KindSourceFile [0, 709), i=1, next=0
+  NodeList [0, 655), i=2, next=0
+    KindInterfaceDeclaration [0, 41), i=3, next=9
+      KindIdentifier "IAnimal" [9, 17), i=4, next=5
+      NodeList [19, 38), i=5, next=0
+        KindPropertySignature [19, 38), i=6, next=0
+          KindIdentifier "name" [19, 29), i=7, next=8
+          KindStringKeyword [30, 37), i=8, next=0
+    KindClassDeclaration [41, 110), i=9, next=18
+      KindIdentifier "Giraffe" [50, 58), i=10, next=11
+      NodeList [60, 107), i=11, next=0
+        KindPropertyDeclaration [60, 83), i=12, next=15
+          KindIdentifier "name" [60, 70), i=13, next=14
+          KindStringLiteral "Giraffe" [72, 82), i=14, next=0
+        KindPropertyDeclaration [83, 107), i=15, next=0
+          KindIdentifier "neckLength" [83, 99), i=16, next=17
+          KindStringLiteral "3m" [101, 106), i=17, next=0
+    KindClassDeclaration [110, 186), i=18, next=27
+      KindIdentifier "Elephant" [119, 128), i=19, next=20
+      NodeList [130, 183), i=20, next=0
+        KindPropertyDeclaration [130, 154), i=21, next=24
+          KindIdentifier "name" [130, 140), i=22, next=23
+          KindStringLiteral "Elephant" [142, 153), i=23, next=0
+        KindPropertyDeclaration [154, 183), i=24, next=0
+          KindIdentifier "trunkDiameter" [154, 173), i=25, next=26
+          KindStringLiteral "20cm" [175, 182), i=26, next=0
+    KindFunctionDeclaration [186, 226), i=27, next=36
+      KindIdentifier "foo" [198, 202), i=28, next=29
+      NodeList [203, 221), i=29, next=35
+        KindParameter [203, 221), i=30, next=0
+          KindIdentifier "animals" [203, 210), i=31, next=32
+          KindArrayType [211, 221), i=32, next=0
+            KindTypeReference [211, 219), i=33, next=0
+              KindIdentifier "IAnimal" [211, 219), i=34, next=0
+      KindBlock [222, 226), i=35, next=0
+    KindFunctionDeclaration [226, 279), i=36, next=51
+      KindIdentifier "bar" [236, 240), i=37, next=38
+      NodeList [241, 274), i=38, next=50
+        KindParameter [241, 274), i=39, next=0
+          KindIdentifier "animals" [241, 248), i=40, next=41
+          KindTypeLiteral [249, 274), i=41, next=0
+            NodeList [251, 272), i=42, next=0
+              KindIndexSignature [251, 272), i=43, next=0
+                NodeList [253, 262), i=44, next=48
+                  KindParameter [253, 262), i=45, next=0
+                    KindIdentifier "n" [253, 254), i=46, next=47
+                    KindNumberKeyword [255, 262), i=47, next=0
+                KindTypeReference [264, 272), i=48, next=0
+                  KindIdentifier "IAnimal" [264, 272), i=49, next=0
+      KindBlock [275, 279), i=50, next=0
+    KindExpressionStatement [279, 333), i=51, next=61
+      KindCallExpression [279, 332), i=52, next=0
+        KindIdentifier "foo" [279, 286), i=53, next=54
+        NodeList [287, 331), i=54, next=0
+          KindArrayLiteralExpression [287, 331), i=55, next=0
+            NodeList [288, 328), i=56, next=0
+              KindNewExpression [288, 307), i=57, next=59
+                KindIdentifier "Giraffe" [297, 305), i=58, next=0
+              KindNewExpression [308, 328), i=59, next=0
+                KindIdentifier "Elephant" [317, 326), i=60, next=0
+    KindExpressionStatement [333, 459), i=61, next=71
+      KindCallExpression [333, 458), i=62, next=0
+        KindIdentifier "bar" [333, 412), i=63, next=64
+        NodeList [413, 457), i=64, next=0
+          KindArrayLiteralExpression [413, 457), i=65, next=0
+            NodeList [414, 454), i=66, next=0
+              KindNewExpression [414, 433), i=67, next=69
+                KindIdentifier "Giraffe" [423, 431), i=68, next=0
+              KindNewExpression [434, 454), i=69, next=0
+                KindIdentifier "Elephant" [443, 452), i=70, next=0
+    KindVariableStatement [459, 579), i=71, next=82
+      KindVariableDeclarationList [459, 578), i=72, next=0
+        NodeList [540, 578), i=73, next=0
+          KindVariableDeclaration [540, 578), i=74, next=0
+            KindIdentifier "arr" [540, 544), i=75, next=76
+            KindArrayLiteralExpression [546, 578), i=76, next=0
+              NodeList [548, 577), i=77, next=0
+                KindNewExpression [548, 561), i=78, next=80
+                  KindIdentifier "Giraffe" [551, 559), i=79, next=0
+                KindNewExpression [562, 577), i=80, next=0
+                  KindIdentifier "Elephant" [566, 575), i=81, next=0
+    KindExpressionStatement [579, 590), i=82, next=87
+      KindCallExpression [579, 589), i=83, next=0
+        KindIdentifier "foo" [579, 584), i=84, next=85
+        NodeList [585, 588), i=85, next=0
+          KindIdentifier "arr" [585, 588), i=86, next=0
+    KindExpressionStatement [590, 655), i=87, next=0
+      KindCallExpression [590, 654), i=88, next=0
+        KindIdentifier "bar" [590, 649), i=89, next=90
+        NodeList [650, 653), i=90, next=0
+          KindIdentifier "arr" [650, 653), i=91, next=0

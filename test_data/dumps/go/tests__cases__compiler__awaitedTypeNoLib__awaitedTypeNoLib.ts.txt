@@ -1,0 +1,130 @@
+KindSourceFile [0, 698), i=1, next=0
+  NodeList [0, 698), i=2, next=0
+    KindTypeAliasDeclaration [0, 110), i=3, next=27
+      KindIdentifier "NotPromise" [4, 15), i=4, next=5
+      NodeList [16, 17), i=5, next=8
+        KindTypeParameter [16, 17), i=6, next=0
+          KindIdentifier "T" [16, 17), i=7, next=0
+      KindConditionalType [20, 109), i=8, next=0
+        KindTypeReference [20, 22), i=9, next=11
+          KindIdentifier "T" [20, 22), i=10, next=0
+        KindTypeReference [30, 48), i=11, next=15
+          KindIdentifier "Thenable" [30, 39), i=12, next=13
+          NodeList [40, 47), i=13, next=0
+            KindUnknownKeyword [40, 47), i=14, next=0
+        KindTypeReference [53, 55), i=15, next=17
+          KindIdentifier "T" [53, 55), i=16, next=0
+        KindConditionalType [60, 109), i=17, next=0
+          KindTypeReference [60, 62), i=18, next=20
+            KindIdentifier "T" [60, 62), i=19, next=0
+          KindTypeReference [70, 91), i=20, next=24
+            KindIdentifier "PromiseLike" [70, 82), i=21, next=22
+            NodeList [83, 90), i=22, next=0
+              KindUnknownKeyword [83, 90), i=23, next=0
+          KindNeverKeyword [96, 102), i=24, next=25
+          KindTypeReference [107, 109), i=25, next=0
+            KindIdentifier "T" [107, 109), i=26, next=0
+    KindTypeAliasDeclaration [110, 164), i=27, next=42
+      KindIdentifier "Receiver" [118, 127), i=28, next=29
+      NodeList [128, 129), i=29, next=32
+        KindTypeParameter [128, 129), i=30, next=0
+          KindIdentifier "T" [128, 129), i=31, next=0
+      KindFunctionType [132, 163), i=32, next=0
+        NodeList [134, 154), i=33, next=41
+          KindParameter [134, 154), i=34, next=0
+            KindIdentifier "value" [134, 139), i=35, next=36
+            KindTypeReference [140, 154), i=36, next=0
+              KindIdentifier "NotPromise" [140, 151), i=37, next=38
+              NodeList [152, 153), i=38, next=0
+                KindTypeReference [152, 153), i=39, next=0
+                  KindIdentifier "T" [152, 153), i=40, next=0
+        KindVoidKeyword [158, 163), i=41, next=0
+    KindClassDeclaration [164, 698), i=42, next=0
+      KindIdentifier "Thenable" [173, 182), i=43, next=44
+      NodeList [183, 184), i=44, next=47
+        KindTypeParameter [183, 184), i=45, next=0
+          KindIdentifier "T" [183, 184), i=46, next=0
+      NodeList [187, 695), i=47, next=0
+        KindMethodDeclaration [187, 214), i=48, next=59
+          KindIdentifier "then" [187, 195), i=49, next=50
+          NodeList [196, 210), i=50, next=58
+            KindParameter [196, 210), i=51, next=0
+              KindIdentifier "a" [196, 197), i=52, next=53
+              KindTypeReference [198, 210), i=53, next=0
+                KindIdentifier "Receiver" [198, 207), i=54, next=55
+                NodeList [208, 209), i=55, next=0
+                  KindTypeReference [208, 209), i=56, next=0
+                    KindIdentifier "T" [208, 209), i=57, next=0
+          KindBlock [211, 214), i=58, next=0
+        KindMethodDeclaration [214, 584), i=59, next=108
+          NodeList [214, 227), i=60, next=62
+            KindPrivateKeyword [214, 227), i=61, next=0
+          KindIdentifier "handleResolve" [227, 241), i=62, next=63
+          NodeList [242, 249), i=63, next=66
+            KindTypeParameter [242, 249), i=64, next=0
+              KindIdentifier "TResult" [242, 249), i=65, next=0
+          NodeList [251, 350), i=66, next=91
+            KindParameter [251, 316), i=67, next=84
+              KindIdentifier "result" [251, 263), i=68, next=69
+              KindUnionType [264, 316), i=69, next=0
+                NodeList [264, 316), i=70, next=0
+                  KindTypeReference [264, 284), i=71, next=76
+                    KindIdentifier "NotPromise" [264, 275), i=72, next=73
+                    NodeList [276, 283), i=73, next=0
+                      KindTypeReference [276, 283), i=74, next=0
+                        KindIdentifier "TResult" [276, 283), i=75, next=0
+                  KindTypeReference [286, 316), i=76, next=0
+                    KindIdentifier "Thenable" [286, 295), i=77, next=78
+                    NodeList [296, 315), i=78, next=0
+                      KindTypeReference [296, 315), i=79, next=0
+                        KindIdentifier "NotPromise" [296, 306), i=80, next=81
+                        NodeList [307, 314), i=81, next=0
+                          KindTypeReference [307, 314), i=82, next=0
+                            KindIdentifier "TResult" [307, 314), i=83, next=0
+            KindParameter [317, 349), i=84, next=0
+              KindIdentifier "resolve" [317, 330), i=85, next=86
+              KindTypeReference [331, 349), i=86, next=0
+                KindIdentifier "Receiver" [331, 340), i=87, next=88
+                NodeList [341, 348), i=88, next=0
+                  KindTypeReference [341, 348), i=89, next=0
+                    KindIdentifier "TResult" [341, 348), i=90, next=0
+          KindBlock [355, 584), i=91, next=0
+            NodeList [357, 579), i=92, next=0
+              KindIfStatement [357, 579), i=93, next=0
+                KindBinaryExpression [367, 393), i=94, next=98
+                  KindIdentifier "result" [367, 373), i=95, next=96
+                  KindInstanceOfKeyword [373, 384), i=96, next=97
+                  KindIdentifier "Thenable" [384, 393), i=97, next=0
+                KindBlock [394, 579), i=98, next=0
+                  NodeList [396, 572), i=99, next=0
+                    KindExpressionStatement [396, 572), i=100, next=0
+                      KindCallExpression [396, 571), i=101, next=0
+                        KindPropertyAccessExpression [396, 554), i=102, next=105
+                          KindThisKeyword [396, 539), i=103, next=104
+                          KindIdentifier "resolvePromise" [540, 554), i=104, next=0
+                        NodeList [555, 570), i=105, next=0
+                          KindIdentifier "result" [555, 561), i=106, next=107
+                          KindIdentifier "resolve" [562, 570), i=107, next=0
+        KindMethodDeclaration [584, 695), i=108, next=0
+          NodeList [584, 597), i=109, next=111
+            KindPrivateKeyword [584, 597), i=110, next=0
+          KindIdentifier "resolvePromise" [597, 612), i=111, next=112
+          NodeList [613, 620), i=112, next=115
+            KindTypeParameter [613, 620), i=113, next=0
+              KindIdentifier "TResult" [613, 620), i=114, next=0
+          NodeList [622, 687), i=115, next=130
+            KindParameter [622, 653), i=116, next=123
+              KindIdentifier "result" [622, 634), i=117, next=118
+              KindTypeReference [635, 653), i=118, next=0
+                KindIdentifier "Thenable" [635, 644), i=119, next=120
+                NodeList [645, 652), i=120, next=0
+                  KindTypeReference [645, 652), i=121, next=0
+                    KindIdentifier "TResult" [645, 652), i=122, next=0
+            KindParameter [654, 686), i=123, next=0
+              KindIdentifier "resolve" [654, 667), i=124, next=125
+              KindTypeReference [668, 686), i=125, next=0
+                KindIdentifier "Receiver" [668, 677), i=126, next=127
+                NodeList [678, 685), i=127, next=0
+                  KindTypeReference [678, 685), i=128, next=0
+                    KindIdentifier "TResult" [678, 685), i=129, next=0
+          KindBlock [692, 695), i=130, next=0

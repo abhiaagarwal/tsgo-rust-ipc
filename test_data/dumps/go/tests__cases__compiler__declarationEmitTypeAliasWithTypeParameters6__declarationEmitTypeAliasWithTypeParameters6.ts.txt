@@ -1,0 +1,51 @@
+KindSourceFile [0, 149), i=1, next=0
+  NodeList [0, 147), i=2, next=0
+    KindTypeAliasDeclaration [0, 50), i=3, next=26
+      KindIdentifier "Foo" [4, 8), i=4, next=5
+      NodeList [9, 13), i=5, next=10
+        KindTypeParameter [9, 10), i=6, next=8
+          KindIdentifier "T" [9, 10), i=7, next=0
+        KindTypeParameter [11, 13), i=8, next=0
+          KindIdentifier "Y" [11, 13), i=9, next=0
+      KindTypeLiteral [16, 49), i=10, next=0
+        NodeList [18, 46), i=11, next=0
+          KindMethodSignature [18, 46), i=12, next=0
+            KindIdentifier "foo" [18, 27), i=13, next=14
+            NodeList [28, 32), i=14, next=19
+              KindTypeParameter [28, 29), i=15, next=17
+                KindIdentifier "U" [28, 29), i=16, next=0
+              KindTypeParameter [30, 32), i=17, next=0
+                KindIdentifier "J" [30, 32), i=18, next=0
+            KindTypeReference [36, 46), i=19, next=0
+              KindIdentifier "Foo" [36, 40), i=20, next=21
+              NodeList [41, 45), i=21, next=0
+                KindTypeReference [41, 42), i=22, next=24
+                  KindIdentifier "U" [41, 42), i=23, next=0
+                KindTypeReference [43, 45), i=24, next=0
+                  KindIdentifier "J" [43, 45), i=25, next=0
+    KindTypeAliasDeclaration [50, 82), i=26, next=40
+      KindIdentifier "SubFoo" [56, 63), i=27, next=28
+      NodeList [64, 68), i=28, next=33
+        KindTypeParameter [64, 65), i=29, next=31
+          KindIdentifier "R" [64, 65), i=30, next=0
+        KindTypeParameter [66, 68), i=31, next=0
+          KindIdentifier "S" [66, 68), i=32, next=0
+      KindTypeReference [71, 81), i=33, next=0
+        KindIdentifier "Foo" [71, 75), i=34, next=35
+        NodeList [76, 80), i=35, next=0
+          KindTypeReference [76, 77), i=36, next=38
+            KindIdentifier "S" [76, 77), i=37, next=0
+          KindTypeReference [78, 80), i=38, next=0
+            KindIdentifier "R" [78, 80), i=39, next=0
+    KindFunctionDeclaration [82, 147), i=40, next=0
+      KindIdentifier "foo" [94, 98), i=41, next=42
+      KindBlock [100, 147), i=42, next=0
+        NodeList [102, 144), i=43, next=0
+          KindReturnStatement [102, 144), i=44, next=0
+            KindAsExpression [114, 143), i=45, next=0
+              KindObjectLiteralExpression [114, 117), i=46, next=47
+              KindTypeReference [120, 143), i=47, next=0
+                KindIdentifier "SubFoo" [120, 127), i=48, next=49
+                NodeList [128, 142), i=49, next=0
+                  KindNumberKeyword [128, 134), i=50, next=51
+                  KindStringKeyword [135, 142), i=51, next=0

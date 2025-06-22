@@ -1,0 +1,260 @@
+KindSourceFile [0, 1642), i=1, next=0
+  NodeList [0, 1639), i=2, next=0
+    KindModuleDeclaration [0, 136), i=3, next=21
+      NodeList [0, 9), i=4, next=6
+        KindDeclareKeyword [0, 9), i=5, next=0
+      KindIdentifier "Express" [16, 24), i=6, next=7
+      KindModuleBlock [24, 136), i=7, next=0
+        NodeList [26, 133), i=8, next=0
+          KindInterfaceDeclaration [26, 60), i=9, next=13
+            NodeList [26, 38), i=10, next=12
+              KindExportKeyword [26, 38), i=11, next=0
+            KindIdentifier "Request" [48, 56), i=12, next=0
+          KindInterfaceDeclaration [60, 95), i=13, next=17
+            NodeList [60, 72), i=14, next=16
+              KindExportKeyword [60, 72), i=15, next=0
+            KindIdentifier "Response" [82, 91), i=16, next=0
+          KindInterfaceDeclaration [95, 133), i=17, next=0
+            NodeList [95, 107), i=18, next=20
+              KindExportKeyword [95, 107), i=19, next=0
+            KindIdentifier "Application" [117, 129), i=20, next=0
+    KindModuleDeclaration [136, 1639), i=21, next=0
+      NodeList [136, 147), i=22, next=24
+        KindDeclareKeyword [136, 147), i=23, next=0
+      KindStringLiteral "express" [154, 164), i=24, next=25
+      KindModuleBlock [164, 1639), i=25, next=0
+        NodeList [166, 1636), i=26, next=0
+          KindFunctionDeclaration [166, 196), i=27, next=33
+            KindIdentifier "e" [180, 182), i=28, next=29
+            KindTypeReference [185, 195), i=29, next=0
+              KindQualifiedName [185, 195), i=30, next=0
+                KindIdentifier "e" [185, 187), i=31, next=32
+                KindIdentifier "Express" [188, 195), i=32, next=0
+          KindModuleDeclaration [196, 1617), i=33, next=3
+            KindIdentifier "e" [211, 213), i=34, next=35
+            KindModuleBlock [213, 1617), i=35, next=0
+              NodeList [215, 1610), i=36, next=0
+                KindInterfaceDeclaration [215, 310), i=37, next=51
+                  KindIdentifier "IRoute" [234, 241), i=38, next=39
+                  NodeList [243, 299), i=39, next=0
+                    KindMethodSignature [243, 299), i=40, next=0
+                      KindIdentifier "all" [243, 260), i=41, next=42
+                      NodeList [261, 289), i=42, next=49
+                        KindParameter [261, 289), i=43, next=0
+                          KindDotDotDotToken [261, 264), i=44, next=45
+                          KindIdentifier "handler" [264, 271), i=45, next=46
+                          KindArrayType [272, 289), i=46, next=0
+                            KindTypeReference [272, 287), i=47, next=0
+                              KindIdentifier "RequestHandler" [272, 287), i=48, next=0
+                      KindTypeReference [291, 298), i=49, next=0
+                        KindIdentifier "IRoute" [291, 298), i=50, next=0
+                KindInterfaceDeclaration [310, 432), i=51, next=74
+                  KindIdentifier "IRouterMatcher" [331, 346), i=52, next=53
+                  NodeList [347, 348), i=53, next=56
+                    KindTypeParameter [347, 348), i=54, next=0
+                      KindIdentifier "T" [347, 348), i=55, next=0
+                  NodeList [351, 421), i=56, next=0
+                    KindCallSignature [351, 421), i=57, next=0
+                      NodeList [366, 416), i=58, next=72
+                        KindParameter [366, 385), i=59, next=66
+                          KindIdentifier "name" [366, 370), i=60, next=61
+                          KindUnionType [371, 385), i=61, next=0
+                            NodeList [371, 385), i=62, next=0
+                              KindStringKeyword [371, 378), i=63, next=64
+                              KindTypeReference [379, 385), i=64, next=0
+                                KindIdentifier "RegExp" [379, 385), i=65, next=0
+                        KindParameter [386, 416), i=66, next=0
+                          KindDotDotDotToken [386, 390), i=67, next=68
+                          KindIdentifier "handlers" [390, 398), i=68, next=69
+                          KindArrayType [399, 416), i=69, next=0
+                            KindTypeReference [399, 414), i=70, next=0
+                              KindIdentifier "RequestHandler" [399, 414), i=71, next=0
+                      KindTypeReference [418, 420), i=72, next=0
+                        KindIdentifier "T" [418, 420), i=73, next=0
+                KindInterfaceDeclaration [432, 542), i=74, next=93
+                  KindIdentifier "IRouter" [453, 461), i=75, next=76
+                  NodeList [462, 463), i=76, next=79
+                    KindTypeParameter [462, 463), i=77, next=0
+                      KindIdentifier "T" [462, 463), i=78, next=0
+                  NodeList [464, 487), i=79, next=84
+                    KindHeritageClause [464, 487), i=80, next=0
+                      NodeList [472, 487), i=81, next=0
+                        KindExpressionWithTypeArguments [472, 487), i=82, next=0
+                          KindIdentifier "RequestHandler" [472, 487), i=83, next=0
+                  NodeList [489, 531), i=84, next=0
+                    KindMethodSignature [489, 531), i=85, next=0
+                      KindIdentifier "route" [489, 508), i=86, next=87
+                      NodeList [509, 521), i=87, next=91
+                        KindParameter [509, 521), i=88, next=0
+                          KindIdentifier "path" [509, 513), i=89, next=90
+                          KindStringKeyword [514, 521), i=90, next=0
+                      KindTypeReference [523, 530), i=91, next=0
+                        KindIdentifier "IRoute" [523, 530), i=92, next=0
+                KindFunctionDeclaration [542, 600), i=93, next=104
+                  NodeList [542, 560), i=94, next=96
+                    KindExportKeyword [542, 560), i=95, next=0
+                  KindIdentifier "Router" [569, 576), i=96, next=97
+                  NodeList [577, 590), i=97, next=102
+                    KindParameter [577, 590), i=98, next=0
+                      KindIdentifier "options" [577, 584), i=99, next=100
+                      KindQuestionToken [584, 585), i=100, next=101
+                      KindAnyKeyword [586, 590), i=101, next=0
+                  KindTypeReference [592, 599), i=102, next=0
+                    KindIdentifier "Router" [592, 599), i=103, next=0
+                KindInterfaceDeclaration [600, 662), i=104, next=116
+                  NodeList [600, 618), i=105, next=107
+                    KindExportKeyword [600, 618), i=106, next=0
+                  KindIdentifier "Router" [628, 635), i=107, next=108
+                  NodeList [635, 659), i=108, next=0
+                    KindHeritageClause [635, 659), i=109, next=0
+                      NodeList [643, 659), i=110, next=0
+                        KindExpressionWithTypeArguments [643, 659), i=111, next=0
+                          KindIdentifier "IRouter" [643, 651), i=112, next=113
+                          NodeList [652, 658), i=113, next=0
+                            KindTypeReference [652, 658), i=114, next=0
+                              KindIdentifier "Router" [652, 658), i=115, next=0
+                KindInterfaceDeclaration [662, 715), i=116, next=126
+                  KindIdentifier "Errback" [683, 691), i=117, next=118
+                  NodeList [693, 713), i=118, next=0
+                    KindCallSignature [693, 713), i=119, next=0
+                      NodeList [695, 705), i=120, next=125
+                        KindParameter [695, 705), i=121, next=0
+                          KindIdentifier "err" [695, 698), i=122, next=123
+                          KindTypeReference [699, 705), i=123, next=0
+                            KindIdentifier "Error" [699, 705), i=124, next=0
+                      KindVoidKeyword [707, 712), i=125, next=0
+                KindInterfaceDeclaration [715, 824), i=126, next=143
+                  KindIdentifier "Request" [736, 744), i=127, next=128
+                  NodeList [744, 768), i=128, next=135
+                    KindHeritageClause [744, 768), i=129, next=0
+                      NodeList [752, 768), i=130, next=0
+                        KindExpressionWithTypeArguments [752, 768), i=131, next=0
+                          KindPropertyAccessExpression [752, 768), i=132, next=0
+                            KindIdentifier "Express" [752, 760), i=133, next=134
+                            KindIdentifier "Request" [761, 768), i=134, next=0
+                  NodeList [770, 813), i=135, next=0
+                    KindMethodSignature [770, 813), i=136, next=0
+                      KindIdentifier "get" [770, 789), i=137, next=138
+                      NodeList [791, 803), i=138, next=142
+                        KindParameter [791, 803), i=139, next=0
+                          KindIdentifier "name" [791, 795), i=140, next=141
+                          KindStringKeyword [796, 803), i=141, next=0
+                      KindStringKeyword [805, 812), i=142, next=0
+                KindInterfaceDeclaration [824, 922), i=143, next=156
+                  KindIdentifier "Response" [845, 854), i=144, next=145
+                  NodeList [854, 879), i=145, next=152
+                    KindHeritageClause [854, 879), i=146, next=0
+                      NodeList [862, 879), i=147, next=0
+                        KindExpressionWithTypeArguments [862, 879), i=148, next=0
+                          KindPropertyAccessExpression [862, 879), i=149, next=0
+                            KindIdentifier "Express" [862, 870), i=150, next=151
+                            KindIdentifier "Response" [871, 879), i=151, next=0
+                  NodeList [881, 911), i=152, next=0
+                    KindPropertySignature [881, 911), i=153, next=0
+                      KindIdentifier "charset" [881, 902), i=154, next=155
+                      KindStringKeyword [903, 910), i=155, next=0
+                KindInterfaceDeclaration [922, 1051), i=156, next=177
+                  KindIdentifier "ErrorRequestHandler" [943, 963), i=157, next=158
+                  NodeList [965, 1040), i=158, next=0
+                    KindCallSignature [965, 1040), i=159, next=0
+                      NodeList [980, 1033), i=160, next=176
+                        KindParameter [980, 988), i=161, next=164
+                          KindIdentifier "err" [980, 983), i=162, next=163
+                          KindAnyKeyword [984, 988), i=163, next=0
+                        KindParameter [989, 1002), i=164, next=168
+                          KindIdentifier "req" [989, 993), i=165, next=166
+                          KindTypeReference [994, 1002), i=166, next=0
+                            KindIdentifier "Request" [994, 1002), i=167, next=0
+                        KindParameter [1003, 1017), i=168, next=172
+                          KindIdentifier "res" [1003, 1007), i=169, next=170
+                          KindTypeReference [1008, 1017), i=170, next=0
+                            KindIdentifier "Response" [1008, 1017), i=171, next=0
+                        KindParameter [1018, 1033), i=172, next=0
+                          KindIdentifier "next" [1018, 1023), i=173, next=174
+                          KindTypeReference [1024, 1033), i=174, next=0
+                            KindIdentifier "Function" [1024, 1033), i=175, next=0
+                      KindAnyKeyword [1035, 1039), i=176, next=0
+                KindInterfaceDeclaration [1051, 1165), i=177, next=195
+                  KindIdentifier "RequestHandler" [1072, 1087), i=178, next=179
+                  NodeList [1089, 1154), i=179, next=0
+                    KindCallSignature [1089, 1154), i=180, next=0
+                      NodeList [1104, 1147), i=181, next=194
+                        KindParameter [1104, 1116), i=182, next=186
+                          KindIdentifier "req" [1104, 1107), i=183, next=184
+                          KindTypeReference [1108, 1116), i=184, next=0
+                            KindIdentifier "Request" [1108, 1116), i=185, next=0
+                        KindParameter [1117, 1131), i=186, next=190
+                          KindIdentifier "res" [1117, 1121), i=187, next=188
+                          KindTypeReference [1122, 1131), i=188, next=0
+                            KindIdentifier "Response" [1122, 1131), i=189, next=0
+                        KindParameter [1132, 1147), i=190, next=0
+                          KindIdentifier "next" [1132, 1137), i=191, next=192
+                          KindTypeReference [1138, 1147), i=192, next=0
+                            KindIdentifier "Function" [1138, 1147), i=193, next=0
+                      KindAnyKeyword [1149, 1153), i=194, next=0
+                KindInterfaceDeclaration [1165, 1220), i=195, next=202
+                  KindIdentifier "Handler" [1186, 1194), i=196, next=197
+                  NodeList [1194, 1217), i=197, next=0
+                    KindHeritageClause [1194, 1217), i=198, next=0
+                      NodeList [1202, 1217), i=199, next=0
+                        KindExpressionWithTypeArguments [1202, 1217), i=200, next=0
+                          KindIdentifier "RequestHandler" [1202, 1217), i=201, next=0
+                KindInterfaceDeclaration [1220, 1351), i=202, next=223
+                  KindIdentifier "RequestParamHandler" [1241, 1261), i=203, next=204
+                  NodeList [1263, 1340), i=204, next=0
+                    KindCallSignature [1263, 1340), i=205, next=0
+                      NodeList [1278, 1333), i=206, next=222
+                        KindParameter [1278, 1290), i=207, next=211
+                          KindIdentifier "req" [1278, 1281), i=208, next=209
+                          KindTypeReference [1282, 1290), i=209, next=0
+                            KindIdentifier "Request" [1282, 1290), i=210, next=0
+                        KindParameter [1291, 1305), i=211, next=215
+                          KindIdentifier "res" [1291, 1295), i=212, next=213
+                          KindTypeReference [1296, 1305), i=213, next=0
+                            KindIdentifier "Response" [1296, 1305), i=214, next=0
+                        KindParameter [1306, 1321), i=215, next=219
+                          KindIdentifier "next" [1306, 1311), i=216, next=217
+                          KindTypeReference [1312, 1321), i=217, next=0
+                            KindIdentifier "Function" [1312, 1321), i=218, next=0
+                        KindParameter [1322, 1333), i=219, next=0
+                          KindIdentifier "param" [1322, 1328), i=220, next=221
+                          KindAnyKeyword [1329, 1333), i=221, next=0
+                      KindAnyKeyword [1335, 1339), i=222, next=0
+                KindInterfaceDeclaration [1351, 1473), i=223, next=241
+                  KindIdentifier "Application" [1372, 1384), i=224, next=225
+                  NodeList [1384, 1434), i=225, next=237
+                    KindHeritageClause [1384, 1434), i=226, next=0
+                      NodeList [1392, 1434), i=227, next=0
+                        KindExpressionWithTypeArguments [1392, 1413), i=228, next=233
+                          KindIdentifier "IRouter" [1392, 1400), i=229, next=230
+                          NodeList [1401, 1412), i=230, next=0
+                            KindTypeReference [1401, 1412), i=231, next=0
+                              KindIdentifier "Application" [1401, 1412), i=232, next=0
+                        KindExpressionWithTypeArguments [1414, 1434), i=233, next=0
+                          KindPropertyAccessExpression [1414, 1434), i=234, next=0
+                            KindIdentifier "Express" [1414, 1422), i=235, next=236
+                            KindIdentifier "Application" [1423, 1434), i=236, next=0
+                  NodeList [1436, 1462), i=237, next=0
+                    KindPropertySignature [1436, 1462), i=238, next=0
+                      KindIdentifier "routes" [1436, 1456), i=239, next=240
+                      KindAnyKeyword [1457, 1461), i=240, next=0
+                KindInterfaceDeclaration [1473, 1582), i=241, next=253
+                  KindIdentifier "Express" [1494, 1502), i=242, next=243
+                  NodeList [1502, 1522), i=243, next=248
+                    KindHeritageClause [1502, 1522), i=244, next=0
+                      NodeList [1510, 1522), i=245, next=0
+                        KindExpressionWithTypeArguments [1510, 1522), i=246, next=0
+                          KindIdentifier "Application" [1510, 1522), i=247, next=0
+                  NodeList [1524, 1571), i=248, next=0
+                    KindMethodSignature [1524, 1571), i=249, next=0
+                      KindIdentifier "createApplication" [1524, 1555), i=250, next=251
+                      KindTypeReference [1558, 1570), i=251, next=0
+                        KindIdentifier "Application" [1558, 1570), i=252, next=0
+                KindVariableStatement [1582, 1610), i=253, next=0
+                  KindVariableDeclarationList [1582, 1609), i=254, next=0
+                    NodeList [1597, 1609), i=255, next=0
+                      KindVariableDeclaration [1597, 1609), i=256, next=0
+                        KindIdentifier "static" [1597, 1604), i=257, next=2
+                        KindAnyKeyword [1605, 1609), i=258, next=0
+          KindExportAssignment [1617, 1636), i=259, next=0
+            KindIdentifier "e" [1633, 1635), i=260, next=0

@@ -1,0 +1,32 @@
+KindSourceFile [0, 253), i=1, next=0
+  NodeList [0, 253), i=2, next=0
+    KindImportEqualsDeclaration [0, 66), i=3, next=7
+      KindIdentifier "require" [6, 14), i=4, next=5
+      KindExternalModuleReference [16, 65), i=5, next=0
+        KindStringLiteral "collisionExportsRequireAndAlias_file1" [25, 64), i=6, next=0
+    KindImportEqualsDeclaration [66, 146), i=7, next=11
+      KindIdentifier "exports" [83, 91), i=8, next=9
+      KindExternalModuleReference [93, 145), i=9, next=0
+        KindStringLiteral "collisionExportsRequireAndAlias_file3333" [102, 144), i=10, next=0
+    KindFunctionDeclaration [146, 203), i=11, next=22
+      NodeList [146, 163), i=12, next=14
+        KindExportKeyword [146, 163), i=13, next=0
+      KindIdentifier "foo" [172, 176), i=14, next=15
+      KindBlock [178, 203), i=15, next=0
+        NodeList [180, 200), i=16, next=0
+          KindExpressionStatement [180, 200), i=17, next=0
+            KindCallExpression [180, 199), i=18, next=0
+              KindPropertyAccessExpression [180, 197), i=19, next=0
+                KindIdentifier "require" [180, 193), i=20, next=21
+                KindIdentifier "bar" [194, 197), i=21, next=0
+    KindFunctionDeclaration [203, 253), i=22, next=0
+      NodeList [203, 211), i=23, next=25
+        KindExportKeyword [203, 211), i=24, next=0
+      KindIdentifier "foo2" [220, 225), i=25, next=26
+      KindBlock [227, 253), i=26, next=0
+        NodeList [229, 250), i=27, next=0
+          KindExpressionStatement [229, 250), i=28, next=0
+            KindCallExpression [229, 249), i=29, next=0
+              KindPropertyAccessExpression [229, 247), i=30, next=0
+                KindIdentifier "exports" [229, 242), i=31, next=32
+                KindIdentifier "bar2" [243, 247), i=32, next=0

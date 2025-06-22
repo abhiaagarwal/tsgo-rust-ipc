@@ -1,0 +1,115 @@
+KindSourceFile [0, 551), i=1, next=0
+  NodeList [0, 549), i=2, next=0
+    KindModuleDeclaration [0, 161), i=3, next=27
+      KindIdentifier "Outer" [6, 12), i=4, next=5
+      KindModuleBlock [12, 161), i=5, next=0
+        NodeList [14, 158), i=6, next=0
+          KindModuleDeclaration [14, 83), i=7, next=17
+            NodeList [14, 26), i=8, next=10
+              KindExportKeyword [14, 26), i=9, next=0
+            KindIdentifier "instantiated" [33, 46), i=10, next=11
+            KindModuleBlock [46, 83), i=11, next=0
+              NodeList [48, 76), i=12, next=0
+                KindClassDeclaration [48, 76), i=13, next=0
+                  NodeList [48, 64), i=14, next=16
+                    KindExportKeyword [48, 64), i=15, next=0
+                  KindIdentifier "C" [70, 72), i=16, next=0
+          KindModuleDeclaration [83, 158), i=17, next=0
+            NodeList [83, 95), i=18, next=20
+              KindExportKeyword [83, 95), i=19, next=0
+            KindIdentifier "uninstantiated" [102, 117), i=20, next=21
+            KindModuleBlock [117, 158), i=21, next=0
+              NodeList [119, 151), i=22, next=0
+                KindInterfaceDeclaration [119, 151), i=23, next=0
+                  NodeList [119, 135), i=24, next=26
+                    KindExportKeyword [119, 135), i=25, next=0
+                  KindIdentifier "P" [145, 147), i=26, next=0
+    KindImportEqualsDeclaration [161, 204), i=27, next=32
+      KindIdentifier "importInst" [171, 182), i=28, next=29
+      KindQualifiedName [184, 203), i=29, next=0
+        KindIdentifier "Outer" [184, 190), i=30, next=31
+        KindIdentifier "instantiated" [191, 203), i=31, next=0
+    KindImportEqualsDeclaration [204, 249), i=32, next=37
+      KindIdentifier "importUninst" [212, 225), i=33, next=34
+      KindQualifiedName [227, 248), i=34, next=0
+        KindIdentifier "Outer" [227, 233), i=35, next=36
+        KindIdentifier "uninstantiated" [234, 248), i=36, next=0
+    KindVariableStatement [249, 296), i=37, next=49
+      KindVariableDeclarationList [249, 295), i=38, next=0
+        NodeList [256, 295), i=39, next=0
+          KindVariableDeclaration [256, 295), i=40, next=0
+            KindIdentifier "x1" [256, 259), i=41, next=42
+            KindTypeQuery [260, 280), i=42, next=46
+              KindQualifiedName [267, 280), i=43, next=0
+                KindIdentifier "importInst" [267, 278), i=44, next=45
+                KindIdentifier "C" [279, 280), i=45, next=0
+            KindPropertyAccessExpression [282, 295), i=46, next=0
+              KindIdentifier "importInst" [282, 293), i=47, next=48
+              KindIdentifier "C" [294, 295), i=48, next=0
+    KindVariableStatement [296, 330), i=49, next=60
+      KindVariableDeclarationList [296, 329), i=50, next=0
+        NodeList [301, 329), i=51, next=0
+          KindVariableDeclaration [301, 329), i=52, next=0
+            KindIdentifier "x2" [301, 304), i=53, next=54
+            KindTypeReference [305, 318), i=54, next=58
+              KindQualifiedName [305, 318), i=55, next=0
+                KindIdentifier "importInst" [305, 316), i=56, next=57
+                KindIdentifier "C" [317, 318), i=57, next=0
+            KindNewExpression [320, 329), i=58, next=0
+              KindIdentifier "x1" [324, 327), i=59, next=0
+    KindVariableStatement [330, 362), i=60, next=69
+      KindVariableDeclarationList [330, 361), i=61, next=0
+        NodeList [335, 361), i=62, next=0
+          KindVariableDeclaration [335, 361), i=63, next=0
+            KindIdentifier "x3" [335, 338), i=64, next=65
+            KindTypeQuery [339, 361), i=65, next=0
+              KindQualifiedName [346, 361), i=66, next=0
+                KindIdentifier "importUninst" [346, 359), i=67, next=68
+                KindIdentifier "P" [360, 361), i=68, next=0
+    KindVariableStatement [362, 403), i=69, next=77
+      KindVariableDeclarationList [362, 402), i=70, next=0
+        NodeList [384, 402), i=71, next=0
+          KindVariableDeclaration [384, 402), i=72, next=0
+            KindIdentifier "x4" [384, 387), i=73, next=74
+            KindTypeReference [388, 394), i=74, next=76
+              KindIdentifier "Outer" [388, 394), i=75, next=0
+            KindIdentifier "Outer" [396, 402), i=76, next=0
+    KindVariableStatement [403, 431), i=77, next=84
+      KindVariableDeclarationList [403, 430), i=78, next=0
+        NodeList [408, 430), i=79, next=0
+          KindVariableDeclaration [408, 430), i=80, next=0
+            KindIdentifier "x5" [408, 411), i=81, next=82
+            KindTypeQuery [412, 430), i=82, next=0
+              KindIdentifier "importInst" [419, 430), i=83, next=0
+    KindExpressionStatement [431, 444), i=84, next=89
+      KindBinaryExpression [431, 443), i=85, next=0
+        KindIdentifier "x5" [431, 435), i=86, next=87
+        KindEqualsToken [435, 437), i=87, next=88
+        KindIdentifier "Outer" [437, 443), i=88, next=0
+    KindExpressionStatement [444, 470), i=89, next=96
+      KindBinaryExpression [444, 469), i=90, next=0
+        KindIdentifier "x5" [444, 448), i=91, next=92
+        KindEqualsToken [448, 450), i=92, next=93
+        KindPropertyAccessExpression [450, 469), i=93, next=0
+          KindIdentifier "Outer" [450, 456), i=94, next=95
+          KindIdentifier "instantiated" [457, 469), i=95, next=0
+    KindVariableStatement [470, 500), i=96, next=103
+      KindVariableDeclarationList [470, 499), i=97, next=0
+        NodeList [475, 499), i=98, next=0
+          KindVariableDeclaration [475, 499), i=99, next=0
+            KindIdentifier "x6" [475, 478), i=100, next=101
+            KindTypeQuery [479, 499), i=101, next=0
+              KindIdentifier "importUninst" [486, 499), i=102, next=0
+    KindVariableStatement [500, 531), i=103, next=111
+      KindVariableDeclarationList [500, 530), i=104, next=0
+        NodeList [505, 530), i=105, next=0
+          KindVariableDeclaration [505, 530), i=106, next=0
+            KindIdentifier "x7" [505, 508), i=107, next=108
+            KindTypeQuery [509, 522), i=108, next=110
+              KindIdentifier "Outer" [516, 522), i=109, next=0
+            KindIdentifier "Outer" [524, 530), i=110, next=0
+    KindExpressionStatement [531, 549), i=111, next=0
+      KindBinaryExpression [531, 548), i=112, next=0
+        KindIdentifier "x7" [531, 535), i=113, next=114
+        KindEqualsToken [535, 537), i=114, next=115
+        KindIdentifier "importInst" [537, 548), i=115, next=0

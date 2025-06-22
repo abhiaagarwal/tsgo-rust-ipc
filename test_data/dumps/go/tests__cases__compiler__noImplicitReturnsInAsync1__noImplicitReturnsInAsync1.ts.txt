@@ -1,0 +1,33 @@
+KindSourceFile [0, 179), i=1, next=0
+  NodeList [0, 179), i=2, next=0
+    KindFunctionDeclaration [0, 179), i=3, next=0
+      NodeList [0, 5), i=4, next=6
+        KindAsyncKeyword [0, 5), i=5, next=0
+      KindIdentifier "test" [14, 19), i=6, next=7
+      NodeList [20, 44), i=7, next=12
+        KindParameter [20, 44), i=8, next=0
+          KindIdentifier "isError" [20, 27), i=9, next=10
+          KindBooleanKeyword [28, 36), i=10, next=11
+          KindFalseKeyword [38, 44), i=11, next=0
+      KindBlock [45, 179), i=12, next=0
+        NodeList [47, 176), i=13, next=0
+          KindIfStatement [47, 100), i=14, next=22
+            KindBinaryExpression [57, 73), i=15, next=19
+              KindIdentifier "isError" [57, 64), i=16, next=17
+              KindEqualsEqualsEqualsToken [64, 68), i=17, next=18
+              KindTrueKeyword [68, 73), i=18, next=0
+            KindBlock [74, 100), i=19, next=0
+              NodeList [76, 93), i=20, next=0
+                KindReturnStatement [76, 93), i=21, next=0
+          KindVariableStatement [100, 176), i=22, next=0
+            KindVariableDeclarationList [100, 175), i=23, next=0
+              NodeList [109, 175), i=24, next=0
+                KindVariableDeclaration [109, 175), i=25, next=0
+                  KindIdentifier "x" [109, 111), i=26, next=27
+                  KindAwaitExpression [113, 175), i=27, next=0
+                    KindCallExpression [119, 175), i=28, next=0
+                      KindPropertyAccessExpression [119, 135), i=29, next=32
+                        KindIdentifier "Promise" [119, 127), i=30, next=31
+                        KindIdentifier "resolve" [128, 135), i=31, next=0
+                      NodeList [136, 174), i=32, next=0
+                        KindStringLiteral "The test is passed without an error." [136, 174), i=33, next=0

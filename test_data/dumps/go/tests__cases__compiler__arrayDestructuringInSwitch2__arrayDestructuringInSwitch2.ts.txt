@@ -1,0 +1,78 @@
+KindSourceFile [0, 253), i=1, next=0
+  NodeList [0, 253), i=2, next=0
+    KindTypeAliasDeclaration [0, 53), i=3, next=28
+      KindIdentifier "X" [4, 6), i=4, next=5
+      KindUnionType [8, 53), i=5, next=0
+        NodeList [8, 53), i=6, next=0
+          KindTypeLiteral [8, 30), i=7, next=19
+            NodeList [10, 28), i=8, next=0
+              KindPropertySignature [10, 21), i=9, next=13
+                KindIdentifier "kind" [10, 15), i=10, next=11
+                KindLiteralType [16, 20), i=11, next=0
+                  KindStringLiteral "a" [16, 20), i=12, next=0
+              KindPropertySignature [21, 28), i=13, next=0
+                KindIdentifier "a" [21, 23), i=14, next=15
+                KindTupleType [24, 28), i=15, next=0
+                  NodeList [26, 27), i=16, next=0
+                    KindLiteralType [26, 27), i=17, next=0
+                      KindNumericLiteral [26, 27), i=18, next=0
+          KindTypeLiteral [32, 53), i=19, next=0
+            NodeList [34, 51), i=20, next=0
+              KindPropertySignature [34, 45), i=21, next=25
+                KindIdentifier "kind" [34, 39), i=22, next=23
+                KindLiteralType [40, 44), i=23, next=0
+                  KindStringLiteral "b" [40, 44), i=24, next=0
+              KindPropertySignature [45, 51), i=25, next=0
+                KindIdentifier "a" [45, 47), i=26, next=27
+                KindTupleType [48, 51), i=27, next=0
+    KindFunctionDeclaration [53, 253), i=28, next=0
+      KindIdentifier "foo" [65, 69), i=29, next=30
+      NodeList [70, 74), i=30, next=35
+        KindParameter [70, 74), i=31, next=0
+          KindIdentifier "x" [70, 71), i=32, next=33
+          KindTypeReference [72, 74), i=33, next=0
+            KindIdentifier "X" [72, 74), i=34, next=0
+      KindLiteralType [76, 78), i=35, next=37
+        KindNumericLiteral [76, 78), i=36, next=0
+      KindBlock [78, 253), i=37, next=0
+        NodeList [80, 250), i=38, next=0
+          KindVariableStatement [80, 106), i=39, next=50
+            KindVariableDeclarationList [80, 105), i=40, next=0
+              NodeList [89, 105), i=41, next=0
+                KindVariableDeclaration [89, 105), i=42, next=0
+                  KindObjectBindingPattern [89, 101), i=43, next=49
+                    NodeList [91, 99), i=44, next=0
+                      KindBindingElement [91, 96), i=45, next=47
+                        KindIdentifier "kind" [91, 96), i=46, next=0
+                      KindBindingElement [97, 99), i=47, next=0
+                        KindIdentifier "a" [97, 99), i=48, next=0
+                  KindIdentifier "x" [103, 105), i=49, next=0
+          KindSwitchStatement [106, 250), i=50, next=0
+            KindIdentifier "kind" [118, 122), i=51, next=52
+            KindCaseBlock [123, 250), i=52, next=0
+              NodeList [125, 245), i=53, next=0
+                KindCaseClause [125, 160), i=54, next=61
+                  KindStringLiteral "a" [135, 139), i=55, next=56
+                  NodeList [140, 160), i=56, next=0
+                    KindReturnStatement [140, 160), i=57, next=0
+                      KindElementAccessExpression [154, 159), i=58, next=0
+                        KindIdentifier "a" [154, 156), i=59, next=60
+                        KindNumericLiteral [157, 158), i=60, next=0
+                KindCaseClause [160, 192), i=61, next=66
+                  KindStringLiteral "b" [170, 174), i=62, next=63
+                  NodeList [175, 192), i=63, next=0
+                    KindReturnStatement [175, 192), i=64, next=0
+                      KindNumericLiteral [189, 191), i=65, next=0
+                KindDefaultClause [192, 245), i=66, next=0
+                  NodeList [206, 245), i=67, next=0
+                    KindVariableStatement [206, 228), i=68, next=77
+                      KindVariableDeclarationList [206, 227), i=69, next=0
+                        NodeList [219, 227), i=70, next=0
+                          KindVariableDeclaration [219, 227), i=71, next=0
+                            KindArrayBindingPattern [219, 223), i=72, next=76
+                              NodeList [221, 222), i=73, next=0
+                                KindBindingElement [221, 222), i=74, next=0
+                                  KindIdentifier "n" [221, 222), i=75, next=0
+                            KindIdentifier "a" [225, 227), i=76, next=0
+                    KindReturnStatement [228, 245), i=77, next=0
+                      KindIdentifier "a" [242, 244), i=78, next=0

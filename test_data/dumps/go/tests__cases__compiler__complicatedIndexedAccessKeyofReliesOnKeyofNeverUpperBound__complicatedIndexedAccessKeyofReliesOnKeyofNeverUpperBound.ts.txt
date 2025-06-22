@@ -1,0 +1,231 @@
+KindSourceFile [0, 1146), i=1, next=0
+  NodeList [0, 1144), i=2, next=0
+    KindInterfaceDeclaration [0, 88), i=3, next=16
+      KindIdentifier "TextChannel" [9, 21), i=4, next=5
+      NodeList [23, 85), i=5, next=0
+        KindPropertySignature [23, 40), i=6, next=9
+          KindIdentifier "id" [23, 31), i=7, next=8
+          KindStringKeyword [32, 39), i=8, next=0
+        KindPropertySignature [40, 59), i=9, next=13
+          KindIdentifier "type" [40, 50), i=10, next=11
+          KindLiteralType [51, 58), i=11, next=0
+            KindStringLiteral "text" [51, 58), i=12, next=0
+        KindPropertySignature [59, 85), i=13, next=0
+          KindIdentifier "phoneNumber" [59, 76), i=14, next=15
+          KindStringKeyword [77, 84), i=15, next=0
+    KindInterfaceDeclaration [88, 177), i=16, next=29
+      KindIdentifier "EmailChannel" [101, 114), i=17, next=18
+      NodeList [116, 174), i=18, next=0
+        KindPropertySignature [116, 133), i=19, next=22
+          KindIdentifier "id" [116, 124), i=20, next=21
+          KindStringKeyword [125, 132), i=21, next=0
+        KindPropertySignature [133, 153), i=22, next=26
+          KindIdentifier "type" [133, 143), i=23, next=24
+          KindLiteralType [144, 152), i=24, next=0
+            KindStringLiteral "email" [144, 152), i=25, next=0
+        KindPropertySignature [153, 174), i=26, next=0
+          KindIdentifier "addres" [153, 165), i=27, next=28
+          KindStringKeyword [166, 173), i=28, next=0
+    KindTypeAliasDeclaration [177, 223), i=29, next=37
+      KindIdentifier "Channel" [185, 193), i=30, next=31
+      KindUnionType [195, 222), i=31, next=0
+        NodeList [195, 222), i=32, next=0
+          KindTypeReference [195, 207), i=33, next=35
+            KindIdentifier "TextChannel" [195, 207), i=34, next=0
+          KindTypeReference [209, 222), i=35, next=0
+            KindIdentifier "EmailChannel" [209, 222), i=36, next=0
+    KindTypeAliasDeclaration [223, 299), i=37, next=54
+      NodeList [223, 233), i=38, next=40
+        KindExportKeyword [223, 233), i=39, next=0
+      KindIdentifier "ChannelType" [238, 250), i=40, next=41
+      KindConditionalType [252, 298), i=41, next=0
+        KindTypeReference [252, 260), i=42, next=44
+          KindIdentifier "Channel" [252, 260), i=43, next=0
+        KindTypeLiteral [268, 286), i=44, next=51
+          NodeList [270, 284), i=45, next=0
+            KindPropertySignature [270, 284), i=46, next=0
+              KindIdentifier "type" [270, 275), i=47, next=48
+              KindInferType [276, 284), i=48, next=0
+                KindTypeParameter [282, 284), i=49, next=0
+                  KindIdentifier "R" [282, 284), i=50, next=0
+        KindTypeReference [288, 290), i=51, next=53
+          KindIdentifier "R" [288, 290), i=52, next=0
+        KindNeverKeyword [292, 298), i=53, next=0
+    KindTypeAliasDeclaration [299, 439), i=54, next=98
+      KindIdentifier "Omit" [307, 312), i=55, next=56
+      NodeList [313, 333), i=56, next=64
+        KindTypeParameter [313, 314), i=57, next=59
+          KindIdentifier "T" [313, 314), i=58, next=0
+        KindTypeParameter [315, 333), i=59, next=0
+          KindIdentifier "K" [315, 317), i=60, next=61
+          KindTypeOperator [325, 333), i=61, next=0
+            KindTypeReference [331, 333), i=62, next=0
+              KindIdentifier "T" [331, 333), i=63, next=0
+      KindTypeReference [336, 438), i=64, next=0
+        KindIdentifier "Pick" [336, 341), i=65, next=66
+        NodeList [342, 435), i=66, next=0
+          KindTypeReference [342, 349), i=67, next=69
+            KindIdentifier "T" [342, 349), i=68, next=0
+          KindIndexedAccessType [350, 435), i=69, next=0
+            KindParenthesizedType [350, 426), i=70, next=95
+              KindIntersectionType [357, 425), i=71, next=0
+                NodeList [357, 425), i=72, next=0
+                  KindMappedType [357, 378), i=73, next=81
+                    KindTypeParameter [360, 372), i=74, next=79
+                      KindIdentifier "P" [360, 361), i=75, next=76
+                      KindTypeOperator [364, 372), i=76, next=0
+                        KindTypeReference [370, 372), i=77, next=0
+                          KindIdentifier "T" [370, 372), i=78, next=0
+                    KindTypeReference [374, 376), i=79, next=0
+                      KindIdentifier "P" [374, 376), i=80, next=0
+                  KindMappedType [380, 400), i=81, next=87
+                    KindTypeParameter [384, 390), i=82, next=86
+                      KindIdentifier "P" [384, 385), i=83, next=84
+                      KindTypeReference [388, 390), i=84, next=0
+                        KindIdentifier "K" [388, 390), i=85, next=0
+                    KindNeverKeyword [392, 398), i=86, next=0
+                  KindTypeLiteral [402, 425), i=87, next=0
+                    NodeList [404, 423), i=88, next=0
+                      KindIndexSignature [404, 423), i=89, next=0
+                        NodeList [406, 415), i=90, next=94
+                          KindParameter [406, 415), i=91, next=0
+                            KindIdentifier "x" [406, 407), i=92, next=93
+                            KindStringKeyword [408, 415), i=93, next=0
+                        KindNeverKeyword [417, 423), i=94, next=0
+            KindTypeOperator [427, 434), i=95, next=0
+              KindTypeReference [432, 434), i=96, next=0
+                KindIdentifier "T" [432, 434), i=97, next=0
+    KindTypeAliasDeclaration [439, 544), i=98, next=121
+      KindIdentifier "ChannelOfType" [447, 461), i=99, next=100
+      NodeList [462, 496), i=100, next=109
+        KindTypeParameter [462, 483), i=101, next=105
+          KindIdentifier "T" [462, 463), i=102, next=103
+          KindTypeReference [471, 483), i=103, next=0
+            KindIdentifier "ChannelType" [471, 483), i=104, next=0
+        KindTypeParameter [484, 496), i=105, next=0
+          KindIdentifier "A" [484, 486), i=106, next=107
+          KindTypeReference [488, 496), i=107, next=0
+            KindIdentifier "Channel" [488, 496), i=108, next=0
+      KindConditionalType [499, 543), i=109, next=0
+        KindTypeReference [499, 501), i=110, next=112
+          KindIdentifier "A" [499, 501), i=111, next=0
+        KindTypeLiteral [509, 521), i=112, next=118
+          NodeList [511, 519), i=113, next=0
+            KindPropertySignature [511, 519), i=114, next=0
+              KindIdentifier "type" [511, 516), i=115, next=116
+              KindTypeReference [517, 519), i=116, next=0
+                KindIdentifier "T" [517, 519), i=117, next=0
+        KindTypeReference [528, 530), i=118, next=120
+          KindIdentifier "A" [528, 530), i=119, next=0
+        KindNeverKeyword [537, 543), i=120, next=0
+    KindTypeAliasDeclaration [544, 678), i=121, next=158
+      NodeList [544, 556), i=122, next=124
+        KindExportKeyword [544, 556), i=123, next=0
+      KindIdentifier "NewChannel" [561, 572), i=124, next=125
+      NodeList [573, 590), i=125, next=130
+        KindTypeParameter [573, 590), i=126, next=0
+          KindIdentifier "T" [573, 574), i=127, next=128
+          KindTypeReference [582, 590), i=128, next=0
+            KindIdentifier "Channel" [582, 590), i=129, next=0
+      KindIntersectionType [593, 677), i=130, next=0
+        NodeList [593, 677), i=131, next=0
+          KindTypeReference [593, 609), i=132, next=139
+            KindIdentifier "Pick" [593, 598), i=133, next=134
+            NodeList [599, 608), i=134, next=0
+              KindTypeReference [599, 600), i=135, next=137
+                KindIdentifier "T" [599, 600), i=136, next=0
+              KindLiteralType [601, 608), i=137, next=0
+                KindStringLiteral "type" [601, 608), i=138, next=0
+          KindTypeReference [611, 648), i=139, next=153
+            KindIdentifier "Partial" [611, 624), i=140, next=141
+            NodeList [625, 647), i=141, next=0
+              KindTypeReference [625, 647), i=142, next=0
+                KindIdentifier "Omit" [625, 629), i=143, next=144
+                NodeList [630, 646), i=144, next=0
+                  KindTypeReference [630, 631), i=145, next=147
+                    KindIdentifier "T" [630, 631), i=146, next=0
+                  KindUnionType [632, 646), i=147, next=0
+                    NodeList [632, 646), i=148, next=0
+                      KindLiteralType [632, 639), i=149, next=151
+                        KindStringLiteral "type" [632, 639), i=150, next=0
+                      KindLiteralType [641, 646), i=151, next=0
+                        KindStringLiteral "id" [641, 646), i=152, next=0
+          KindTypeLiteral [650, 677), i=153, next=0
+            NodeList [652, 675), i=154, next=0
+              KindPropertySignature [652, 675), i=155, next=0
+                KindIdentifier "localChannelId" [652, 667), i=156, next=157
+                KindStringKeyword [668, 675), i=157, next=0
+    KindFunctionDeclaration [678, 863), i=158, next=195
+      NodeList [678, 690), i=159, next=161
+        KindExportKeyword [678, 690), i=160, next=0
+      KindIdentifier "makeNewChannel" [699, 714), i=161, next=162
+      NodeList [715, 736), i=162, next=167
+        KindTypeParameter [715, 736), i=163, next=0
+          KindIdentifier "T" [715, 716), i=164, next=165
+          KindTypeReference [724, 736), i=165, next=0
+            KindIdentifier "ChannelType" [724, 736), i=166, next=0
+      NodeList [738, 745), i=167, next=172
+        KindParameter [738, 745), i=168, next=0
+          KindIdentifier "type" [738, 742), i=169, next=170
+          KindTypeReference [743, 745), i=170, next=0
+            KindIdentifier "T" [743, 745), i=171, next=0
+      KindTypeReference [747, 776), i=172, next=180
+        KindIdentifier "NewChannel" [747, 758), i=173, next=174
+        NodeList [759, 775), i=174, next=0
+          KindTypeReference [759, 775), i=175, next=0
+            KindIdentifier "ChannelOfType" [759, 772), i=176, next=177
+            NodeList [773, 774), i=177, next=0
+              KindTypeReference [773, 774), i=178, next=0
+                KindIdentifier "T" [773, 774), i=179, next=0
+      KindBlock [776, 863), i=180, next=0
+        NodeList [778, 860), i=181, next=0
+          KindVariableStatement [778, 822), i=182, next=188
+            KindVariableDeclarationList [778, 821), i=183, next=0
+              NodeList [789, 821), i=184, next=0
+                KindVariableDeclaration [789, 821), i=185, next=0
+                  KindIdentifier "localChannelId" [789, 804), i=186, next=187
+                  KindNoSubstitutionTemplateLiteral [806, 821), i=187, next=0
+          KindReturnStatement [822, 860), i=188, next=0
+            KindObjectLiteralExpression [834, 859), i=189, next=0
+              NodeList [836, 857), i=190, next=0
+                KindShorthandPropertyAssignment [836, 841), i=191, next=193
+                  KindIdentifier "type" [836, 841), i=192, next=0
+                KindShorthandPropertyAssignment [842, 857), i=193, next=0
+                  KindIdentifier "localChannelId" [842, 857), i=194, next=0
+    KindVariableStatement [863, 913), i=195, next=204
+      KindVariableDeclarationList [863, 912), i=196, next=0
+        NodeList [872, 912), i=197, next=0
+          KindVariableDeclaration [872, 912), i=198, next=0
+            KindIdentifier "newTextChannel" [872, 887), i=199, next=200
+            KindCallExpression [889, 912), i=200, next=0
+              KindIdentifier "makeNewChannel" [889, 904), i=201, next=202
+              NodeList [905, 911), i=202, next=0
+                KindStringLiteral "text" [905, 911), i=203, next=0
+    KindExpressionStatement [913, 980), i=204, next=211
+      KindBinaryExpression [913, 979), i=205, next=0
+        KindPropertyAccessExpression [913, 962), i=206, next=209
+          KindIdentifier "newTextChannel" [913, 950), i=207, next=208
+          KindIdentifier "phoneNumber" [951, 962), i=208, next=0
+        KindEqualsToken [962, 964), i=209, next=210
+        KindStringLiteral "613-555-1234" [964, 979), i=210, next=0
+    KindVariableStatement [980, 1057), i=211, next=225
+      KindVariableDeclarationList [980, 1056), i=212, next=0
+        NodeList [989, 1056), i=213, next=0
+          KindVariableDeclaration [989, 1056), i=214, next=0
+            KindIdentifier "newTextChannel2" [989, 1005), i=215, next=216
+            KindTypeReference [1007, 1031), i=216, next=221
+              KindIdentifier "NewChannel" [1007, 1018), i=217, next=218
+              NodeList [1019, 1030), i=218, next=0
+                KindTypeReference [1019, 1030), i=219, next=0
+                  KindIdentifier "TextChannel" [1019, 1030), i=220, next=0
+            KindCallExpression [1033, 1056), i=221, next=0
+              KindIdentifier "makeNewChannel" [1033, 1048), i=222, next=223
+              NodeList [1049, 1055), i=223, next=0
+                KindStringLiteral "text" [1049, 1055), i=224, next=0
+    KindExpressionStatement [1057, 1144), i=225, next=0
+      KindBinaryExpression [1057, 1143), i=226, next=0
+        KindPropertyAccessExpression [1057, 1126), i=227, next=230
+          KindIdentifier "newTextChannel2" [1057, 1114), i=228, next=229
+          KindIdentifier "phoneNumber" [1115, 1126), i=229, next=0
+        KindEqualsToken [1126, 1128), i=230, next=231
+        KindStringLiteral "613-555-1234" [1128, 1143), i=231, next=0

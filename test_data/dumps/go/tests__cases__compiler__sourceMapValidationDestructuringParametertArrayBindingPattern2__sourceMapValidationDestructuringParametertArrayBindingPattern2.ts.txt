@@ -1,0 +1,190 @@
+KindSourceFile [0, 704), i=1, next=0
+  NodeList [0, 704), i=2, next=0
+    KindVariableStatement [0, 51), i=3, next=19
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindVariableDeclarationList [7, 51), i=6, next=0
+        NodeList [11, 51), i=7, next=0
+          KindVariableDeclaration [11, 51), i=8, next=0
+            KindIdentifier "console" [11, 19), i=9, next=10
+            KindTypeLiteral [20, 51), i=10, next=0
+              NodeList [22, 48), i=11, next=0
+                KindMethodSignature [22, 48), i=12, next=0
+                  KindIdentifier "log" [22, 31), i=13, next=14
+                  NodeList [32, 40), i=14, next=18
+                    KindParameter [32, 40), i=15, next=0
+                      KindIdentifier "msg" [32, 35), i=16, next=17
+                      KindAnyKeyword [36, 40), i=17, next=0
+                  KindVoidKeyword [42, 47), i=18, next=0
+    KindTypeAliasDeclaration [51, 93), i=19, next=28
+      KindIdentifier "Robot" [57, 63), i=20, next=21
+      KindTupleType [65, 92), i=21, next=0
+        NodeList [67, 91), i=22, next=0
+          KindStringKeyword [67, 73), i=23, next=24
+          KindTupleType [74, 91), i=24, next=0
+            NodeList [76, 90), i=25, next=0
+              KindStringKeyword [76, 82), i=26, next=27
+              KindStringKeyword [83, 90), i=27, next=0
+    KindVariableStatement [93, 151), i=28, next=42
+      KindVariableDeclarationList [93, 150), i=29, next=0
+        NodeList [98, 150), i=30, next=0
+          KindVariableDeclaration [98, 150), i=31, next=0
+            KindIdentifier "robotA" [98, 105), i=32, next=33
+            KindTypeReference [106, 112), i=33, next=35
+              KindIdentifier "Robot" [106, 112), i=34, next=0
+            KindArrayLiteralExpression [114, 150), i=35, next=0
+              NodeList [116, 149), i=36, next=0
+                KindStringLiteral "trimmer" [116, 125), i=37, next=38
+                KindArrayLiteralExpression [126, 149), i=38, next=0
+                  NodeList [128, 148), i=39, next=0
+                    KindStringLiteral "trimming" [128, 138), i=40, next=41
+                    KindStringLiteral "edging" [139, 148), i=41, next=0
+    KindFunctionDeclaration [151, 218), i=42, next=62
+      KindIdentifier "foo1" [163, 168), i=43, next=44
+      NodeList [169, 186), i=44, next=53
+        KindParameter [169, 186), i=45, next=0
+          KindArrayBindingPattern [169, 179), i=46, next=51
+            NodeList [170, 178), i=47, next=0
+              KindBindingElement [170, 170), i=48, next=49
+              KindBindingElement [171, 178), i=49, next=0
+                KindIdentifier "skillA" [171, 178), i=50, next=0
+          KindTypeReference [180, 186), i=51, next=0
+            KindIdentifier "Robot" [180, 186), i=52, next=0
+      KindBlock [187, 218), i=53, next=0
+        NodeList [189, 215), i=54, next=0
+          KindExpressionStatement [189, 215), i=55, next=0
+            KindCallExpression [189, 214), i=56, next=0
+              KindPropertyAccessExpression [189, 206), i=57, next=60
+                KindIdentifier "console" [189, 202), i=58, next=59
+                KindIdentifier "log" [203, 206), i=59, next=0
+              NodeList [207, 213), i=60, next=0
+                KindIdentifier "skillA" [207, 213), i=61, next=0
+    KindFunctionDeclaration [218, 283), i=62, next=81
+      KindIdentifier "foo2" [230, 235), i=63, next=64
+      NodeList [236, 251), i=64, next=72
+        KindParameter [236, 251), i=65, next=0
+          KindArrayBindingPattern [236, 244), i=66, next=70
+            NodeList [237, 243), i=67, next=0
+              KindBindingElement [237, 243), i=68, next=0
+                KindIdentifier "nameMB" [237, 243), i=69, next=0
+          KindTypeReference [245, 251), i=70, next=0
+            KindIdentifier "Robot" [245, 251), i=71, next=0
+      KindBlock [252, 283), i=72, next=0
+        NodeList [254, 280), i=73, next=0
+          KindExpressionStatement [254, 280), i=74, next=0
+            KindCallExpression [254, 279), i=75, next=0
+              KindPropertyAccessExpression [254, 271), i=76, next=79
+                KindIdentifier "console" [254, 267), i=77, next=78
+                KindIdentifier "log" [268, 271), i=78, next=0
+              NodeList [272, 278), i=79, next=0
+                KindIdentifier "nameMB" [272, 278), i=80, next=0
+    KindFunctionDeclaration [283, 382), i=81, next=107
+      KindIdentifier "foo3" [295, 300), i=82, next=83
+      NodeList [301, 350), i=83, next=98
+        KindParameter [301, 350), i=84, next=0
+          KindArrayBindingPattern [301, 343), i=85, next=96
+            NodeList [302, 342), i=86, next=0
+              KindBindingElement [302, 308), i=87, next=89
+                KindIdentifier "nameMA" [302, 308), i=88, next=0
+              KindBindingElement [309, 342), i=89, next=0
+                KindArrayBindingPattern [309, 342), i=90, next=0
+                  NodeList [311, 341), i=91, next=0
+                    KindBindingElement [311, 324), i=92, next=94
+                      KindIdentifier "primarySkillA" [311, 324), i=93, next=0
+                    KindBindingElement [325, 341), i=94, next=0
+                      KindIdentifier "secondarySkillA" [325, 341), i=95, next=0
+          KindTypeReference [344, 350), i=96, next=0
+            KindIdentifier "Robot" [344, 350), i=97, next=0
+      KindBlock [351, 382), i=98, next=0
+        NodeList [353, 379), i=99, next=0
+          KindExpressionStatement [353, 379), i=100, next=0
+            KindCallExpression [353, 378), i=101, next=0
+              KindPropertyAccessExpression [353, 370), i=102, next=105
+                KindIdentifier "console" [353, 366), i=103, next=104
+                KindIdentifier "log" [367, 370), i=104, next=0
+              NodeList [371, 377), i=105, next=0
+                KindIdentifier "nameMA" [371, 377), i=106, next=0
+    KindFunctionDeclaration [382, 468), i=107, next=127
+      KindIdentifier "foo4" [394, 399), i=108, next=109
+      NodeList [400, 427), i=109, next=118
+        KindParameter [400, 427), i=110, next=0
+          KindArrayBindingPattern [400, 420), i=111, next=116
+            NodeList [401, 419), i=112, next=0
+              KindBindingElement [401, 419), i=113, next=0
+                KindDotDotDotToken [401, 404), i=114, next=115
+                KindIdentifier "multiRobotAInfo" [404, 419), i=115, next=0
+          KindTypeReference [421, 427), i=116, next=0
+            KindIdentifier "Robot" [421, 427), i=117, next=0
+      KindBlock [428, 468), i=118, next=0
+        NodeList [430, 465), i=119, next=0
+          KindExpressionStatement [430, 465), i=120, next=0
+            KindCallExpression [430, 464), i=121, next=0
+              KindPropertyAccessExpression [430, 447), i=122, next=125
+                KindIdentifier "console" [430, 443), i=123, next=124
+                KindIdentifier "log" [444, 447), i=124, next=0
+              NodeList [448, 463), i=125, next=0
+                KindIdentifier "multiRobotAInfo" [448, 463), i=126, next=0
+    KindExpressionStatement [468, 485), i=127, next=132
+      KindCallExpression [468, 484), i=128, next=0
+        KindIdentifier "foo1" [468, 476), i=129, next=130
+        NodeList [477, 483), i=130, next=0
+          KindIdentifier "robotA" [477, 483), i=131, next=0
+    KindExpressionStatement [485, 527), i=132, next=143
+      KindCallExpression [485, 526), i=133, next=0
+        KindIdentifier "foo1" [485, 491), i=134, next=135
+        NodeList [492, 525), i=135, next=0
+          KindArrayLiteralExpression [492, 525), i=136, next=0
+            NodeList [493, 524), i=137, next=0
+              KindStringLiteral "roomba" [493, 501), i=138, next=139
+              KindArrayLiteralExpression [502, 524), i=139, next=0
+                NodeList [504, 523), i=140, next=0
+                  KindStringLiteral "vacuum" [504, 512), i=141, next=142
+                  KindStringLiteral "mopping" [513, 523), i=142, next=0
+    KindExpressionStatement [527, 544), i=143, next=148
+      KindCallExpression [527, 543), i=144, next=0
+        KindIdentifier "foo2" [527, 535), i=145, next=146
+        NodeList [536, 542), i=146, next=0
+          KindIdentifier "robotA" [536, 542), i=147, next=0
+    KindExpressionStatement [544, 586), i=148, next=159
+      KindCallExpression [544, 585), i=149, next=0
+        KindIdentifier "foo2" [544, 550), i=150, next=151
+        NodeList [551, 584), i=151, next=0
+          KindArrayLiteralExpression [551, 584), i=152, next=0
+            NodeList [552, 583), i=153, next=0
+              KindStringLiteral "roomba" [552, 560), i=154, next=155
+              KindArrayLiteralExpression [561, 583), i=155, next=0
+                NodeList [563, 582), i=156, next=0
+                  KindStringLiteral "vacuum" [563, 571), i=157, next=158
+                  KindStringLiteral "mopping" [572, 582), i=158, next=0
+    KindExpressionStatement [586, 603), i=159, next=164
+      KindCallExpression [586, 602), i=160, next=0
+        KindIdentifier "foo3" [586, 594), i=161, next=162
+        NodeList [595, 601), i=162, next=0
+          KindIdentifier "robotA" [595, 601), i=163, next=0
+    KindExpressionStatement [603, 645), i=164, next=175
+      KindCallExpression [603, 644), i=165, next=0
+        KindIdentifier "foo3" [603, 609), i=166, next=167
+        NodeList [610, 643), i=167, next=0
+          KindArrayLiteralExpression [610, 643), i=168, next=0
+            NodeList [611, 642), i=169, next=0
+              KindStringLiteral "roomba" [611, 619), i=170, next=171
+              KindArrayLiteralExpression [620, 642), i=171, next=0
+                NodeList [622, 641), i=172, next=0
+                  KindStringLiteral "vacuum" [622, 630), i=173, next=174
+                  KindStringLiteral "mopping" [631, 641), i=174, next=0
+    KindExpressionStatement [645, 662), i=175, next=180
+      KindCallExpression [645, 661), i=176, next=0
+        KindIdentifier "foo4" [645, 653), i=177, next=178
+        NodeList [654, 660), i=178, next=0
+          KindIdentifier "robotA" [654, 660), i=179, next=0
+    KindExpressionStatement [662, 704), i=180, next=0
+      KindCallExpression [662, 703), i=181, next=0
+        KindIdentifier "foo4" [662, 668), i=182, next=183
+        NodeList [669, 702), i=183, next=0
+          KindArrayLiteralExpression [669, 702), i=184, next=0
+            NodeList [670, 701), i=185, next=0
+              KindStringLiteral "roomba" [670, 678), i=186, next=187
+              KindArrayLiteralExpression [679, 701), i=187, next=0
+                NodeList [681, 700), i=188, next=0
+                  KindStringLiteral "vacuum" [681, 689), i=189, next=190
+                  KindStringLiteral "mopping" [690, 700), i=190, next=0

@@ -1,0 +1,172 @@
+KindSourceFile [0, 953), i=1, next=0
+  NodeList [0, 951), i=2, next=0
+    KindTypeAliasDeclaration [0, 67), i=3, next=12
+      KindIdentifier "SyncSequenceFactory" [4, 24), i=4, next=5
+      KindFunctionType [26, 66), i=5, next=0
+        KindTypeReference [32, 66), i=6, next=0
+          KindIdentifier "Generator" [32, 42), i=7, next=8
+          NodeList [43, 65), i=8, next=0
+            KindStringKeyword [43, 49), i=9, next=10
+            KindStringKeyword [50, 57), i=10, next=11
+            KindStringKeyword [58, 65), i=11, next=0
+    KindTypeAliasDeclaration [67, 142), i=12, next=21
+      KindIdentifier "AsyncSequenceFactory" [73, 94), i=13, next=14
+      KindFunctionType [96, 141), i=14, next=0
+        KindTypeReference [102, 141), i=15, next=0
+          KindIdentifier "AsyncGenerator" [102, 117), i=16, next=17
+          NodeList [118, 140), i=17, next=0
+            KindStringKeyword [118, 124), i=18, next=19
+            KindStringKeyword [125, 132), i=19, next=20
+            KindStringKeyword [133, 140), i=20, next=0
+    KindTypeAliasDeclaration [142, 209), i=21, next=29
+      KindIdentifier "SequenceFactory" [148, 164), i=22, next=23
+      KindUnionType [166, 209), i=23, next=0
+        NodeList [166, 209), i=24, next=0
+          KindTypeReference [166, 186), i=25, next=27
+            KindIdentifier "SyncSequenceFactory" [166, 186), i=26, next=0
+          KindTypeReference [188, 209), i=27, next=0
+            KindIdentifier "AsyncSequenceFactory" [188, 209), i=28, next=0
+    KindVariableStatement [209, 389), i=29, next=64
+      KindVariableDeclarationList [209, 389), i=30, next=0
+        NodeList [216, 389), i=31, next=0
+          KindVariableDeclaration [216, 389), i=32, next=0
+            KindIdentifier "syncFactory" [216, 228), i=33, next=34
+            KindTypeReference [229, 249), i=34, next=36
+              KindIdentifier "SyncSequenceFactory" [229, 249), i=35, next=0
+            KindFunctionExpression [251, 389), i=36, next=0
+              KindAsteriskToken [260, 261), i=37, next=38
+              KindBlock [264, 389), i=38, next=0
+                NodeList [265, 387), i=39, next=0
+                  KindVariableStatement [265, 282), i=40, next=46
+                    KindVariableDeclarationList [265, 281), i=41, next=0
+                      NodeList [271, 281), i=42, next=0
+                        KindVariableDeclaration [271, 281), i=43, next=0
+                          KindIdentifier "name" [271, 276), i=44, next=45
+                          KindStringLiteral "" [278, 281), i=45, next=0
+                  KindWhileStatement [282, 340), i=46, next=57
+                    KindPrefixUnaryExpression [291, 296), i=47, next=49
+                      KindIdentifier "name" [292, 296), i=48, next=0
+                    KindBlock [297, 340), i=49, next=0
+                      NodeList [298, 336), i=50, next=0
+                        KindExpressionStatement [298, 336), i=51, next=0
+                          KindBinaryExpression [298, 336), i=52, next=0
+                            KindIdentifier "name" [298, 307), i=53, next=54
+                            KindEqualsToken [307, 309), i=54, next=55
+                            KindYieldExpression [309, 336), i=55, next=0
+                              KindStringLiteral "What is your name?" [315, 336), i=56, next=0
+                  KindReturnStatement [340, 387), i=57, next=0
+                    KindTemplateExpression [349, 387), i=58, next=0
+                      KindTemplateHead [349, 381), i=59, next=60
+                      NodeList [381, 387), i=60, next=0
+                        KindTemplateSpan [381, 387), i=61, next=0
+                          KindIdentifier "name" [381, 385), i=62, next=63
+                          KindTemplateTail [385, 387), i=63, next=0
+    KindVariableStatement [389, 578), i=64, next=101
+      KindVariableDeclarationList [389, 578), i=65, next=0
+        NodeList [397, 578), i=66, next=0
+          KindVariableDeclaration [397, 578), i=67, next=0
+            KindIdentifier "asyncFactory" [397, 410), i=68, next=69
+            KindTypeReference [411, 432), i=69, next=71
+              KindIdentifier "AsyncSequenceFactory" [411, 432), i=70, next=0
+            KindFunctionExpression [434, 578), i=71, next=0
+              NodeList [434, 440), i=72, next=74
+                KindAsyncKeyword [434, 440), i=73, next=0
+              KindAsteriskToken [449, 450), i=74, next=75
+              KindBlock [453, 578), i=75, next=0
+                NodeList [454, 576), i=76, next=0
+                  KindVariableStatement [454, 471), i=77, next=83
+                    KindVariableDeclarationList [454, 470), i=78, next=0
+                      NodeList [460, 470), i=79, next=0
+                        KindVariableDeclaration [460, 470), i=80, next=0
+                          KindIdentifier "name" [460, 465), i=81, next=82
+                          KindStringLiteral "" [467, 470), i=82, next=0
+                  KindWhileStatement [471, 529), i=83, next=94
+                    KindPrefixUnaryExpression [480, 485), i=84, next=86
+                      KindIdentifier "name" [481, 485), i=85, next=0
+                    KindBlock [486, 529), i=86, next=0
+                      NodeList [487, 525), i=87, next=0
+                        KindExpressionStatement [487, 525), i=88, next=0
+                          KindBinaryExpression [487, 525), i=89, next=0
+                            KindIdentifier "name" [487, 496), i=90, next=91
+                            KindEqualsToken [496, 498), i=91, next=92
+                            KindYieldExpression [498, 525), i=92, next=0
+                              KindStringLiteral "What is your name?" [504, 525), i=93, next=0
+                  KindReturnStatement [529, 576), i=94, next=0
+                    KindTemplateExpression [538, 576), i=95, next=0
+                      KindTemplateHead [538, 570), i=96, next=97
+                      NodeList [570, 576), i=97, next=0
+                        KindTemplateSpan [570, 576), i=98, next=0
+                          KindIdentifier "name" [570, 574), i=99, next=100
+                          KindTemplateTail [574, 576), i=100, next=0
+    KindVariableStatement [578, 761), i=101, next=136
+      KindVariableDeclarationList [578, 761), i=102, next=0
+        NodeList [586, 761), i=103, next=0
+          KindVariableDeclaration [586, 761), i=104, next=0
+            KindIdentifier "looserSyncFactory" [586, 604), i=105, next=106
+            KindTypeReference [605, 621), i=106, next=108
+              KindIdentifier "SequenceFactory" [605, 621), i=107, next=0
+            KindFunctionExpression [623, 761), i=108, next=0
+              KindAsteriskToken [632, 633), i=109, next=110
+              KindBlock [636, 761), i=110, next=0
+                NodeList [637, 759), i=111, next=0
+                  KindVariableStatement [637, 654), i=112, next=118
+                    KindVariableDeclarationList [637, 653), i=113, next=0
+                      NodeList [643, 653), i=114, next=0
+                        KindVariableDeclaration [643, 653), i=115, next=0
+                          KindIdentifier "name" [643, 648), i=116, next=117
+                          KindStringLiteral "" [650, 653), i=117, next=0
+                  KindWhileStatement [654, 712), i=118, next=129
+                    KindPrefixUnaryExpression [663, 668), i=119, next=121
+                      KindIdentifier "name" [664, 668), i=120, next=0
+                    KindBlock [669, 712), i=121, next=0
+                      NodeList [670, 708), i=122, next=0
+                        KindExpressionStatement [670, 708), i=123, next=0
+                          KindBinaryExpression [670, 708), i=124, next=0
+                            KindIdentifier "name" [670, 679), i=125, next=126
+                            KindEqualsToken [679, 681), i=126, next=127
+                            KindYieldExpression [681, 708), i=127, next=0
+                              KindStringLiteral "What is your name?" [687, 708), i=128, next=0
+                  KindReturnStatement [712, 759), i=129, next=0
+                    KindTemplateExpression [721, 759), i=130, next=0
+                      KindTemplateHead [721, 753), i=131, next=132
+                      NodeList [753, 759), i=132, next=0
+                        KindTemplateSpan [753, 759), i=133, next=0
+                          KindIdentifier "name" [753, 757), i=134, next=135
+                          KindTemplateTail [757, 759), i=135, next=0
+    KindVariableStatement [761, 951), i=136, next=0
+      KindVariableDeclarationList [761, 951), i=137, next=0
+        NodeList [769, 951), i=138, next=0
+          KindVariableDeclaration [769, 951), i=139, next=0
+            KindIdentifier "looserAsyncFactory" [769, 788), i=140, next=141
+            KindTypeReference [789, 805), i=141, next=143
+              KindIdentifier "SequenceFactory" [789, 805), i=142, next=0
+            KindFunctionExpression [807, 951), i=143, next=0
+              NodeList [807, 813), i=144, next=146
+                KindAsyncKeyword [807, 813), i=145, next=0
+              KindAsteriskToken [822, 823), i=146, next=147
+              KindBlock [826, 951), i=147, next=0
+                NodeList [827, 949), i=148, next=0
+                  KindVariableStatement [827, 844), i=149, next=155
+                    KindVariableDeclarationList [827, 843), i=150, next=0
+                      NodeList [833, 843), i=151, next=0
+                        KindVariableDeclaration [833, 843), i=152, next=0
+                          KindIdentifier "name" [833, 838), i=153, next=154
+                          KindStringLiteral "" [840, 843), i=154, next=0
+                  KindWhileStatement [844, 902), i=155, next=166
+                    KindPrefixUnaryExpression [853, 858), i=156, next=158
+                      KindIdentifier "name" [854, 858), i=157, next=0
+                    KindBlock [859, 902), i=158, next=0
+                      NodeList [860, 898), i=159, next=0
+                        KindExpressionStatement [860, 898), i=160, next=0
+                          KindBinaryExpression [860, 898), i=161, next=0
+                            KindIdentifier "name" [860, 869), i=162, next=163
+                            KindEqualsToken [869, 871), i=163, next=164
+                            KindYieldExpression [871, 898), i=164, next=0
+                              KindStringLiteral "What is your name?" [877, 898), i=165, next=0
+                  KindReturnStatement [902, 949), i=166, next=0
+                    KindTemplateExpression [911, 949), i=167, next=0
+                      KindTemplateHead [911, 943), i=168, next=169
+                      NodeList [943, 949), i=169, next=0
+                        KindTemplateSpan [943, 949), i=170, next=0
+                          KindIdentifier "name" [943, 947), i=171, next=172
+                          KindTemplateTail [947, 949), i=172, next=0

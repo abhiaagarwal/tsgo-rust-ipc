@@ -1,0 +1,50 @@
+KindSourceFile [0, 164), i=1, next=0
+  NodeList [0, 162), i=2, next=0
+    KindVariableStatement [0, 14), i=3, next=9
+      KindVariableDeclarationList [0, 13), i=4, next=0
+        NodeList [3, 13), i=5, next=0
+          KindVariableDeclaration [3, 13), i=6, next=0
+            KindIdentifier "count" [3, 9), i=7, next=8
+            KindNumericLiteral [11, 13), i=8, next=0
+    KindVariableStatement [14, 29), i=9, next=15
+      KindVariableDeclarationList [14, 28), i=10, next=0
+        NodeList [19, 28), i=11, next=0
+          KindVariableDeclaration [19, 28), i=12, next=0
+            KindIdentifier "obj" [19, 23), i=13, next=14
+            KindObjectLiteralExpression [25, 28), i=14, next=0
+    KindFunctionDeclaration [29, 72), i=15, next=22
+      KindIdentifier "incr" [39, 44), i=16, next=17
+      KindBlock [46, 72), i=17, next=0
+        NodeList [48, 69), i=18, next=0
+          KindReturnStatement [48, 69), i=19, next=0
+            KindPrefixUnaryExpression [60, 68), i=20, next=0
+              KindIdentifier "count" [63, 68), i=21, next=0
+    KindVariableStatement [72, 102), i=22, next=31
+      KindVariableDeclarationList [72, 102), i=23, next=0
+        NodeList [81, 102), i=24, next=0
+          KindVariableDeclaration [81, 102), i=25, next=0
+            KindIdentifier "oobj" [81, 86), i=26, next=27
+            KindObjectLiteralExpression [88, 102), i=27, next=0
+              NodeList [90, 99), i=28, next=0
+                KindShorthandPropertyAssignment [90, 99), i=29, next=0
+                  KindIdentifier "obj" [90, 99), i=30, next=0
+    KindExpressionStatement [102, 129), i=31, next=40
+      KindBinaryExpression [102, 128), i=32, next=0
+        KindElementAccessExpression [102, 117), i=33, next=37
+          KindIdentifier "obj" [102, 109), i=34, next=35
+          KindCallExpression [110, 116), i=35, next=0
+            KindIdentifier "incr" [110, 114), i=36, next=0
+        KindQuestionQuestionEqualsToken [117, 121), i=37, next=38
+        KindCallExpression [121, 128), i=38, next=0
+          KindIdentifier "incr" [121, 126), i=39, next=0
+    KindExpressionStatement [129, 162), i=40, next=0
+      KindBinaryExpression [129, 161), i=41, next=0
+        KindElementAccessExpression [129, 150), i=42, next=48
+          KindElementAccessExpression [129, 142), i=43, next=46
+            KindIdentifier "oobj" [129, 135), i=44, next=45
+            KindStringLiteral "obj" [136, 141), i=45, next=0
+          KindCallExpression [143, 149), i=46, next=0
+            KindIdentifier "incr" [143, 147), i=47, next=0
+        KindQuestionQuestionEqualsToken [150, 154), i=48, next=49
+        KindCallExpression [154, 161), i=49, next=0
+          KindIdentifier "incr" [154, 159), i=50, next=0

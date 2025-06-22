@@ -1,0 +1,179 @@
+KindSourceFile [0, 644), i=1, next=0
+  NodeList [0, 643), i=2, next=0
+    KindInterfaceDeclaration [0, 53), i=3, next=12
+      KindIdentifier "Thing1" [9, 16), i=4, next=5
+      NodeList [18, 51), i=5, next=0
+        KindPropertySignature [18, 33), i=6, next=9
+          KindIdentifier "a" [18, 24), i=7, next=8
+          KindNumberKeyword [25, 32), i=8, next=0
+        KindMethodSignature [33, 51), i=9, next=0
+          KindIdentifier "self" [33, 42), i=10, next=11
+          KindThisType [45, 50), i=11, next=0
+    KindInterfaceDeclaration [53, 106), i=12, next=21
+      KindIdentifier "Thing2" [64, 71), i=13, next=14
+      NodeList [73, 104), i=14, next=0
+        KindPropertySignature [73, 88), i=15, next=18
+          KindIdentifier "b" [73, 79), i=16, next=17
+          KindNumberKeyword [80, 87), i=17, next=0
+        KindMethodSignature [88, 104), i=18, next=0
+          KindIdentifier "me" [88, 95), i=19, next=20
+          KindThisType [98, 103), i=20, next=0
+    KindTypeAliasDeclaration [106, 138), i=21, next=29
+      KindIdentifier "Thing3" [112, 119), i=22, next=23
+      KindIntersectionType [121, 137), i=23, next=0
+        NodeList [121, 137), i=24, next=0
+          KindTypeReference [121, 128), i=25, next=27
+            KindIdentifier "Thing1" [121, 128), i=26, next=0
+          KindTypeReference [130, 137), i=27, next=0
+            KindIdentifier "Thing2" [130, 137), i=28, next=0
+    KindTypeAliasDeclaration [138, 171), i=29, next=37
+      KindIdentifier "Thing4" [143, 150), i=30, next=31
+      KindIntersectionType [152, 170), i=31, next=0
+        NodeList [152, 170), i=32, next=0
+          KindTypeReference [152, 159), i=33, next=35
+            KindIdentifier "Thing3" [152, 159), i=34, next=0
+          KindArrayType [161, 170), i=35, next=0
+            KindStringKeyword [161, 168), i=36, next=0
+    KindFunctionDeclaration [171, 245), i=37, next=68
+      KindIdentifier "f1" [181, 184), i=38, next=39
+      NodeList [185, 194), i=39, next=44
+        KindParameter [185, 194), i=40, next=0
+          KindIdentifier "t" [185, 186), i=41, next=42
+          KindTypeReference [187, 194), i=42, next=0
+            KindIdentifier "Thing3" [187, 194), i=43, next=0
+      KindBlock [195, 245), i=44, next=0
+        NodeList [197, 243), i=45, next=0
+          KindExpressionStatement [197, 215), i=46, next=54
+            KindBinaryExpression [197, 214), i=47, next=0
+              KindIdentifier "t" [197, 203), i=48, next=49
+              KindEqualsToken [203, 205), i=49, next=50
+              KindCallExpression [205, 214), i=50, next=0
+                KindPropertyAccessExpression [205, 212), i=51, next=0
+                  KindIdentifier "t" [205, 207), i=52, next=53
+                  KindIdentifier "self" [208, 212), i=53, next=0
+          KindExpressionStatement [215, 243), i=54, next=0
+            KindBinaryExpression [215, 242), i=55, next=0
+              KindIdentifier "t" [215, 221), i=56, next=57
+              KindEqualsToken [221, 223), i=57, next=58
+              KindCallExpression [223, 242), i=58, next=0
+                KindPropertyAccessExpression [223, 240), i=59, next=0
+                  KindCallExpression [223, 237), i=60, next=67
+                    KindPropertyAccessExpression [223, 235), i=61, next=0
+                      KindCallExpression [223, 230), i=62, next=66
+                        KindPropertyAccessExpression [223, 228), i=63, next=0
+                          KindIdentifier "t" [223, 225), i=64, next=65
+                          KindIdentifier "me" [226, 228), i=65, next=0
+                      KindIdentifier "self" [231, 235), i=66, next=0
+                  KindIdentifier "me" [238, 240), i=67, next=0
+    KindInterfaceDeclaration [245, 297), i=68, next=79
+      KindIdentifier "Thing5" [256, 263), i=69, next=70
+      NodeList [263, 278), i=70, next=75
+        KindHeritageClause [263, 278), i=71, next=0
+          NodeList [271, 278), i=72, next=0
+            KindExpressionWithTypeArguments [271, 278), i=73, next=0
+              KindIdentifier "Thing4" [271, 278), i=74, next=0
+      NodeList [280, 295), i=75, next=0
+        KindPropertySignature [280, 295), i=76, next=0
+          KindIdentifier "c" [280, 286), i=77, next=78
+          KindStringKeyword [287, 294), i=78, next=0
+    KindFunctionDeclaration [297, 371), i=79, next=110
+      KindIdentifier "f2" [307, 310), i=80, next=81
+      NodeList [311, 320), i=81, next=86
+        KindParameter [311, 320), i=82, next=0
+          KindIdentifier "t" [311, 312), i=83, next=84
+          KindTypeReference [313, 320), i=84, next=0
+            KindIdentifier "Thing5" [313, 320), i=85, next=0
+      KindBlock [321, 371), i=86, next=0
+        NodeList [323, 369), i=87, next=0
+          KindExpressionStatement [323, 341), i=88, next=96
+            KindBinaryExpression [323, 340), i=89, next=0
+              KindIdentifier "t" [323, 329), i=90, next=91
+              KindEqualsToken [329, 331), i=91, next=92
+              KindCallExpression [331, 340), i=92, next=0
+                KindPropertyAccessExpression [331, 338), i=93, next=0
+                  KindIdentifier "t" [331, 333), i=94, next=95
+                  KindIdentifier "self" [334, 338), i=95, next=0
+          KindExpressionStatement [341, 369), i=96, next=0
+            KindBinaryExpression [341, 368), i=97, next=0
+              KindIdentifier "t" [341, 347), i=98, next=99
+              KindEqualsToken [347, 349), i=99, next=100
+              KindCallExpression [349, 368), i=100, next=0
+                KindPropertyAccessExpression [349, 366), i=101, next=0
+                  KindCallExpression [349, 363), i=102, next=109
+                    KindPropertyAccessExpression [349, 361), i=103, next=0
+                      KindCallExpression [349, 356), i=104, next=108
+                        KindPropertyAccessExpression [349, 354), i=105, next=0
+                          KindIdentifier "t" [349, 351), i=106, next=107
+                          KindIdentifier "me" [352, 354), i=107, next=0
+                      KindIdentifier "self" [357, 361), i=108, next=0
+                  KindIdentifier "me" [364, 366), i=109, next=0
+    KindInterfaceDeclaration [371, 431), i=110, next=128
+      KindIdentifier "Component" [382, 392), i=111, next=112
+      NodeList [394, 429), i=112, next=0
+        KindMethodSignature [394, 429), i=113, next=0
+          KindIdentifier "extend" [394, 405), i=114, next=115
+          NodeList [406, 407), i=115, next=118
+            KindTypeParameter [406, 407), i=116, next=0
+              KindIdentifier "T" [406, 407), i=117, next=0
+          NodeList [409, 417), i=118, next=123
+            KindParameter [409, 417), i=119, next=0
+              KindIdentifier "props" [409, 414), i=120, next=121
+              KindTypeReference [415, 417), i=121, next=0
+                KindIdentifier "T" [415, 417), i=122, next=0
+          KindIntersectionType [419, 428), i=123, next=0
+            NodeList [419, 428), i=124, next=0
+              KindThisType [419, 424), i=125, next=126
+              KindTypeReference [426, 428), i=126, next=0
+                KindIdentifier "T" [426, 428), i=127, next=0
+    KindInterfaceDeclaration [431, 489), i=128, next=139
+      KindIdentifier "Label" [442, 448), i=129, next=130
+      NodeList [448, 466), i=130, next=135
+        KindHeritageClause [448, 466), i=131, next=0
+          NodeList [456, 466), i=132, next=0
+            KindExpressionWithTypeArguments [456, 466), i=133, next=0
+              KindIdentifier "Component" [456, 466), i=134, next=0
+      NodeList [468, 487), i=135, next=0
+        KindPropertySignature [468, 487), i=136, next=0
+          KindIdentifier "title" [468, 478), i=137, next=138
+          KindStringKeyword [479, 486), i=138, next=0
+    KindFunctionDeclaration [489, 643), i=139, next=0
+      KindIdentifier "test" [499, 504), i=140, next=141
+      NodeList [505, 517), i=141, next=146
+        KindParameter [505, 517), i=142, next=0
+          KindIdentifier "label" [505, 510), i=143, next=144
+          KindTypeReference [511, 517), i=144, next=0
+            KindIdentifier "Label" [511, 517), i=145, next=0
+      KindBlock [518, 643), i=146, next=0
+        NodeList [520, 634), i=147, next=0
+          KindVariableStatement [520, 592), i=148, next=172
+            KindVariableDeclarationList [520, 591), i=149, next=0
+              NodeList [530, 591), i=150, next=0
+                KindVariableDeclaration [530, 591), i=151, next=0
+                  KindIdentifier "extended" [530, 539), i=152, next=153
+                  KindCallExpression [541, 591), i=153, next=0
+                    KindPropertyAccessExpression [541, 573), i=154, next=166
+                      KindCallExpression [541, 566), i=155, next=165
+                        KindPropertyAccessExpression [541, 554), i=156, next=159
+                          KindIdentifier "label" [541, 547), i=157, next=158
+                          KindIdentifier "extend" [548, 554), i=158, next=0
+                        NodeList [555, 565), i=159, next=0
+                          KindObjectLiteralExpression [555, 565), i=160, next=0
+                            NodeList [556, 563), i=161, next=0
+                              KindPropertyAssignment [556, 563), i=162, next=0
+                                KindIdentifier "id" [556, 559), i=163, next=164
+                                KindNumericLiteral [560, 563), i=164, next=0
+                      KindIdentifier "extend" [567, 573), i=165, next=0
+                    NodeList [574, 590), i=166, next=0
+                      KindObjectLiteralExpression [574, 590), i=167, next=0
+                        NodeList [575, 588), i=168, next=0
+                          KindPropertyAssignment [575, 588), i=169, next=0
+                            KindIdentifier "tag" [575, 579), i=170, next=171
+                            KindStringLiteral "hello" [580, 588), i=171, next=0
+          KindExpressionStatement [592, 609), i=172, next=176
+            KindPropertyAccessExpression [592, 608), i=173, next=0
+              KindIdentifier "extended" [592, 605), i=174, next=175
+              KindIdentifier "id" [606, 608), i=175, next=0
+          KindExpressionStatement [609, 634), i=176, next=0
+            KindPropertyAccessExpression [609, 633), i=177, next=0
+              KindIdentifier "extended" [609, 629), i=178, next=179
+              KindIdentifier "tag" [630, 633), i=179, next=0

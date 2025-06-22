@@ -1,0 +1,163 @@
+KindSourceFile [0, 446), i=1, next=0
+  NodeList [0, 446), i=2, next=0
+    KindClassDeclaration [0, 71), i=3, next=17
+      KindIdentifier "C" [5, 7), i=4, next=5
+      NodeList [9, 68), i=5, next=0
+        KindPropertyDeclaration [9, 27), i=6, next=9
+          KindIdentifier "foo" [9, 18), i=7, next=8
+          KindStringKeyword [19, 26), i=8, next=0
+        KindMethodDeclaration [27, 44), i=9, next=12
+          KindIdentifier "thing" [27, 38), i=10, next=11
+          KindBlock [40, 44), i=11, next=0
+        KindMethodDeclaration [44, 68), i=12, next=0
+          NodeList [44, 56), i=13, next=15
+            KindStaticKeyword [44, 56), i=14, next=0
+          KindIdentifier "other" [56, 62), i=15, next=16
+          KindBlock [64, 68), i=16, next=0
+    KindClassDeclaration [71, 115), i=17, next=28
+      KindIdentifier "D" [80, 82), i=18, next=19
+      NodeList [82, 92), i=19, next=24
+        KindHeritageClause [82, 92), i=20, next=0
+          NodeList [90, 92), i=21, next=0
+            KindExpressionWithTypeArguments [90, 92), i=22, next=0
+              KindIdentifier "C" [90, 92), i=23, next=0
+      NodeList [94, 112), i=24, next=0
+        KindPropertyDeclaration [94, 112), i=25, next=0
+          KindIdentifier "bar" [94, 103), i=26, next=27
+          KindStringKeyword [104, 111), i=27, next=0
+    KindVariableStatement [115, 128), i=28, next=35
+      KindVariableDeclarationList [115, 127), i=29, next=0
+        NodeList [122, 127), i=30, next=0
+          KindVariableDeclaration [122, 127), i=31, next=0
+            KindIdentifier "d" [122, 124), i=32, next=33
+            KindTypeReference [125, 127), i=33, next=0
+              KindIdentifier "D" [125, 127), i=34, next=0
+    KindVariableStatement [128, 144), i=35, next=43
+      KindVariableDeclarationList [128, 143), i=36, next=0
+        NodeList [133, 143), i=37, next=0
+          KindVariableDeclaration [133, 143), i=38, next=0
+            KindIdentifier "r" [133, 135), i=39, next=40
+            KindPropertyAccessExpression [137, 143), i=40, next=0
+              KindIdentifier "d" [137, 139), i=41, next=42
+              KindIdentifier "foo" [140, 143), i=42, next=0
+    KindVariableStatement [144, 161), i=43, next=51
+      KindVariableDeclarationList [144, 160), i=44, next=0
+        NodeList [149, 160), i=45, next=0
+          KindVariableDeclaration [149, 160), i=46, next=0
+            KindIdentifier "r2" [149, 152), i=47, next=48
+            KindPropertyAccessExpression [154, 160), i=48, next=0
+              KindIdentifier "d" [154, 156), i=49, next=50
+              KindIdentifier "bar" [157, 160), i=50, next=0
+    KindVariableStatement [161, 182), i=51, next=60
+      KindVariableDeclarationList [161, 181), i=52, next=0
+        NodeList [166, 181), i=53, next=0
+          KindVariableDeclaration [166, 181), i=54, next=0
+            KindIdentifier "r3" [166, 169), i=55, next=56
+            KindCallExpression [171, 181), i=56, next=0
+              KindPropertyAccessExpression [171, 179), i=57, next=0
+                KindIdentifier "d" [171, 173), i=58, next=59
+                KindIdentifier "thing" [174, 179), i=59, next=0
+    KindVariableStatement [182, 203), i=60, next=69
+      KindVariableDeclarationList [182, 202), i=61, next=0
+        NodeList [187, 202), i=62, next=0
+          KindVariableDeclaration [187, 202), i=63, next=0
+            KindIdentifier "r4" [187, 190), i=64, next=65
+            KindCallExpression [192, 202), i=65, next=0
+              KindPropertyAccessExpression [192, 200), i=66, next=0
+                KindIdentifier "D" [192, 194), i=67, next=68
+                KindIdentifier "other" [195, 200), i=68, next=0
+    KindClassDeclaration [203, 288), i=69, next=100
+      KindIdentifier "C2" [212, 215), i=70, next=71
+      NodeList [216, 217), i=71, next=74
+        KindTypeParameter [216, 217), i=72, next=0
+          KindIdentifier "T" [216, 217), i=73, next=0
+      NodeList [220, 285), i=74, next=0
+        KindPropertyDeclaration [220, 233), i=75, next=79
+          KindIdentifier "foo" [220, 229), i=76, next=77
+          KindTypeReference [230, 232), i=77, next=0
+            KindIdentifier "T" [230, 232), i=78, next=0
+        KindMethodDeclaration [233, 254), i=79, next=87
+          KindIdentifier "thing" [233, 244), i=80, next=81
+          NodeList [245, 249), i=81, next=86
+            KindParameter [245, 249), i=82, next=0
+              KindIdentifier "x" [245, 246), i=83, next=84
+              KindTypeReference [247, 249), i=84, next=0
+                KindIdentifier "T" [247, 249), i=85, next=0
+          KindBlock [250, 254), i=86, next=0
+        KindMethodDeclaration [254, 285), i=87, next=0
+          NodeList [254, 266), i=88, next=90
+            KindStaticKeyword [254, 266), i=89, next=0
+          KindIdentifier "other" [266, 272), i=90, next=91
+          NodeList [273, 274), i=91, next=94
+            KindTypeParameter [273, 274), i=92, next=0
+              KindIdentifier "T" [273, 274), i=93, next=0
+          NodeList [276, 280), i=94, next=99
+            KindParameter [276, 280), i=95, next=0
+              KindIdentifier "x" [276, 277), i=96, next=97
+              KindTypeReference [278, 280), i=97, next=0
+                KindIdentifier "T" [278, 280), i=98, next=0
+          KindBlock [281, 285), i=99, next=0
+    KindClassDeclaration [288, 340), i=100, next=117
+      KindIdentifier "D2" [297, 300), i=101, next=102
+      NodeList [301, 302), i=102, next=105
+        KindTypeParameter [301, 302), i=103, next=0
+          KindIdentifier "T" [301, 302), i=104, next=0
+      NodeList [303, 317), i=105, next=113
+        KindHeritageClause [303, 317), i=106, next=0
+          NodeList [311, 317), i=107, next=0
+            KindExpressionWithTypeArguments [311, 317), i=108, next=0
+              KindIdentifier "C2" [311, 314), i=109, next=110
+              NodeList [315, 316), i=110, next=0
+                KindTypeReference [315, 316), i=111, next=0
+                  KindIdentifier "T" [315, 316), i=112, next=0
+      NodeList [319, 337), i=113, next=0
+        KindPropertyDeclaration [319, 337), i=114, next=0
+          KindIdentifier "bar" [319, 328), i=115, next=116
+          KindStringKeyword [329, 336), i=116, next=0
+    KindVariableStatement [340, 363), i=117, next=126
+      KindVariableDeclarationList [340, 362), i=118, next=0
+        NodeList [347, 362), i=119, next=0
+          KindVariableDeclaration [347, 362), i=120, next=0
+            KindIdentifier "d2" [347, 350), i=121, next=122
+            KindTypeReference [351, 362), i=122, next=0
+              KindIdentifier "D2" [351, 354), i=123, next=124
+              NodeList [355, 361), i=124, next=0
+                KindStringKeyword [355, 361), i=125, next=0
+    KindVariableStatement [363, 381), i=126, next=134
+      KindVariableDeclarationList [363, 380), i=127, next=0
+        NodeList [368, 380), i=128, next=0
+          KindVariableDeclaration [368, 380), i=129, next=0
+            KindIdentifier "r5" [368, 371), i=130, next=131
+            KindPropertyAccessExpression [373, 380), i=131, next=0
+              KindIdentifier "d2" [373, 376), i=132, next=133
+              KindIdentifier "foo" [377, 380), i=133, next=0
+    KindVariableStatement [381, 399), i=134, next=142
+      KindVariableDeclarationList [381, 398), i=135, next=0
+        NodeList [386, 398), i=136, next=0
+          KindVariableDeclaration [386, 398), i=137, next=0
+            KindIdentifier "r6" [386, 389), i=138, next=139
+            KindPropertyAccessExpression [391, 398), i=139, next=0
+              KindIdentifier "d2" [391, 394), i=140, next=141
+              KindIdentifier "bar" [395, 398), i=141, next=0
+    KindVariableStatement [399, 423), i=142, next=153
+      KindVariableDeclarationList [399, 422), i=143, next=0
+        NodeList [404, 422), i=144, next=0
+          KindVariableDeclaration [404, 422), i=145, next=0
+            KindIdentifier "r7" [404, 407), i=146, next=147
+            KindCallExpression [409, 422), i=147, next=0
+              KindPropertyAccessExpression [409, 418), i=148, next=151
+                KindIdentifier "d2" [409, 412), i=149, next=150
+                KindIdentifier "thing" [413, 418), i=150, next=0
+              NodeList [419, 421), i=151, next=0
+                KindStringLiteral "" [419, 421), i=152, next=0
+    KindVariableStatement [423, 446), i=153, next=0
+      KindVariableDeclarationList [423, 445), i=154, next=0
+        NodeList [428, 445), i=155, next=0
+          KindVariableDeclaration [428, 445), i=156, next=0
+            KindIdentifier "r8" [428, 431), i=157, next=158
+            KindCallExpression [433, 445), i=158, next=0
+              KindPropertyAccessExpression [433, 442), i=159, next=162
+                KindIdentifier "D2" [433, 436), i=160, next=161
+                KindIdentifier "other" [437, 442), i=161, next=0
+              NodeList [443, 444), i=162, next=0
+                KindNumericLiteral [443, 444), i=163, next=0

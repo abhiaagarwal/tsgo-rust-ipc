@@ -1,0 +1,170 @@
+KindSourceFile [0, 834), i=1, next=0
+  NodeList [0, 834), i=2, next=0
+    KindModuleDeclaration [0, 834), i=3, next=0
+      KindIdentifier "Foo" [6, 10), i=4, next=5
+      KindModuleDeclaration [11, 834), i=5, next=0
+        NodeList [11, 11), i=6, next=8
+          KindExportKeyword [11, 11), i=7, next=0
+        KindIdentifier "Bar" [11, 14), i=8, next=9
+        KindModuleBlock [14, 834), i=9, next=0
+          NodeList [16, 831), i=10, next=0
+            KindExpressionStatement [16, 35), i=11, next=13
+              KindStringLiteral "use strict" [16, 34), i=12, next=0
+            KindClassDeclaration [35, 210), i=13, next=38
+              KindIdentifier "Greeter" [48, 56), i=14, next=15
+              NodeList [58, 203), i=15, next=0
+                KindConstructor [58, 117), i=16, next=24
+                  NodeList [80, 103), i=17, next=23
+                    KindParameter [80, 103), i=18, next=0
+                      NodeList [80, 86), i=19, next=21
+                        KindPublicKeyword [80, 86), i=20, next=0
+                      KindIdentifier "greeting" [86, 95), i=21, next=22
+                      KindStringKeyword [96, 103), i=22, next=0
+                  KindBlock [104, 117), i=23, next=0
+                KindMethodDeclaration [117, 203), i=24, next=0
+                  KindIdentifier "greet" [117, 134), i=25, next=26
+                  KindBlock [136, 203), i=26, next=0
+                    NodeList [138, 192), i=27, next=0
+                      KindReturnStatement [138, 192), i=28, next=0
+                        KindBinaryExpression [158, 191), i=29, next=0
+                          KindBinaryExpression [158, 181), i=30, next=36
+                            KindStringLiteral "<h1>" [158, 165), i=31, next=32
+                            KindPlusToken [165, 167), i=32, next=33
+                            KindPropertyAccessExpression [167, 181), i=33, next=0
+                              KindThisKeyword [167, 172), i=34, next=35
+                              KindIdentifier "greeting" [173, 181), i=35, next=0
+                          KindPlusToken [181, 183), i=36, next=37
+                          KindStringLiteral "</h1>" [183, 191), i=37, next=0
+            KindFunctionDeclaration [210, 315), i=38, next=57
+              KindIdentifier "foo" [228, 232), i=39, next=40
+              NodeList [233, 249), i=40, next=44
+                KindParameter [233, 249), i=41, next=0
+                  KindIdentifier "greeting" [233, 241), i=42, next=43
+                  KindStringKeyword [242, 249), i=43, next=0
+              KindTypeReference [251, 267), i=44, next=50
+                KindQualifiedName [251, 267), i=45, next=0
+                  KindQualifiedName [251, 259), i=46, next=49
+                    KindIdentifier "Foo" [251, 255), i=47, next=48
+                    KindIdentifier "Bar" [256, 259), i=48, next=0
+                  KindIdentifier "Greeter" [260, 267), i=49, next=0
+              KindBlock [267, 315), i=50, next=0
+                NodeList [269, 308), i=51, next=0
+                  KindReturnStatement [269, 308), i=52, next=0
+                    KindNewExpression [285, 307), i=53, next=0
+                      KindIdentifier "Greeter" [289, 297), i=54, next=55
+                      NodeList [298, 306), i=55, next=0
+                        KindIdentifier "greeting" [298, 306), i=56, next=0
+            KindVariableStatement [315, 366), i=57, next=66
+              KindVariableDeclarationList [315, 365), i=58, next=0
+                NodeList [326, 365), i=59, next=0
+                  KindVariableDeclaration [326, 365), i=60, next=0
+                    KindIdentifier "greeter" [326, 334), i=61, next=62
+                    KindNewExpression [336, 365), i=62, next=0
+                      KindIdentifier "Greeter" [340, 348), i=63, next=64
+                      NodeList [349, 364), i=64, next=0
+                        KindStringLiteral "Hello, world!" [349, 364), i=65, next=0
+            KindVariableStatement [366, 398), i=66, next=75
+              KindVariableDeclarationList [366, 397), i=67, next=0
+                NodeList [375, 397), i=68, next=0
+                  KindVariableDeclaration [375, 397), i=69, next=0
+                    KindIdentifier "str" [375, 379), i=70, next=71
+                    KindCallExpression [381, 397), i=71, next=0
+                      KindPropertyAccessExpression [381, 395), i=72, next=0
+                        KindIdentifier "greeter" [381, 389), i=73, next=74
+                        KindIdentifier "greet" [390, 395), i=74, next=0
+            KindFunctionDeclaration [398, 715), i=75, next=137
+              KindIdentifier "foo2" [414, 419), i=76, next=77
+              NodeList [420, 464), i=77, next=86
+                KindParameter [420, 436), i=78, next=81
+                  KindIdentifier "greeting" [420, 428), i=79, next=80
+                  KindStringKeyword [429, 436), i=80, next=0
+                KindParameter [437, 464), i=81, next=0
+                  KindDotDotDotToken [437, 441), i=82, next=83
+                  KindIdentifier "restGreetings" [441, 454), i=83, next=84
+                  KindArrayType [455, 464), i=84, next=0
+                    KindStringKeyword [455, 462), i=85, next=0
+              KindBlock [465, 715), i=86, next=0
+                NodeList [467, 708), i=87, next=0
+                  KindVariableStatement [467, 506), i=88, next=97
+                    KindVariableDeclarationList [467, 505), i=89, next=0
+                      NodeList [480, 505), i=90, next=0
+                        KindVariableDeclaration [480, 505), i=91, next=0
+                          KindIdentifier "greeters" [480, 489), i=92, next=93
+                          KindArrayType [490, 500), i=93, next=96
+                            KindTypeReference [490, 498), i=94, next=0
+                              KindIdentifier "Greeter" [490, 498), i=95, next=0
+                          KindArrayLiteralExpression [502, 505), i=96, next=0
+                  KindExpressionStatement [506, 552), i=97, next=107
+                    KindBinaryExpression [506, 551), i=98, next=0
+                      KindElementAccessExpression [506, 527), i=99, next=102
+                        KindIdentifier "greeters" [506, 524), i=100, next=101
+                        KindNumericLiteral [525, 526), i=101, next=0
+                      KindEqualsToken [527, 529), i=102, next=103
+                      KindNewExpression [529, 551), i=103, next=0
+                        KindIdentifier "Greeter" [533, 541), i=104, next=105
+                        NodeList [542, 550), i=105, next=0
+                          KindIdentifier "greeting" [542, 550), i=106, next=0
+                  KindForStatement [552, 680), i=107, next=135
+                    KindVariableDeclarationList [567, 576), i=108, next=113
+                      NodeList [570, 576), i=109, next=0
+                        KindVariableDeclaration [570, 576), i=110, next=0
+                          KindIdentifier "i" [570, 572), i=111, next=112
+                          KindNumericLiteral [574, 576), i=112, next=0
+                    KindBinaryExpression [577, 602), i=113, next=119
+                      KindIdentifier "i" [577, 579), i=114, next=115
+                      KindLessThanToken [579, 581), i=115, next=116
+                      KindPropertyAccessExpression [581, 602), i=116, next=0
+                        KindIdentifier "restGreetings" [581, 595), i=117, next=118
+                        KindIdentifier "length" [596, 602), i=118, next=0
+                    KindPostfixUnaryExpression [603, 607), i=119, next=121
+                      KindIdentifier "i" [603, 605), i=120, next=0
+                    KindBlock [608, 680), i=121, next=0
+                      NodeList [610, 669), i=122, next=0
+                        KindExpressionStatement [610, 669), i=123, next=0
+                          KindCallExpression [610, 668), i=124, next=0
+                            KindPropertyAccessExpression [610, 637), i=125, next=128
+                              KindIdentifier "greeters" [610, 632), i=126, next=127
+                              KindIdentifier "push" [633, 637), i=127, next=0
+                            NodeList [638, 667), i=128, next=0
+                              KindNewExpression [638, 667), i=129, next=0
+                                KindIdentifier "Greeter" [641, 649), i=130, next=131
+                                NodeList [650, 666), i=131, next=0
+                                  KindElementAccessExpression [650, 666), i=132, next=0
+                                    KindIdentifier "restGreetings" [650, 663), i=133, next=134
+                                    KindIdentifier "i" [664, 665), i=134, next=0
+                  KindReturnStatement [680, 708), i=135, next=0
+                    KindIdentifier "greeters" [698, 707), i=136, next=0
+            KindVariableStatement [715, 759), i=137, next=148
+              KindVariableDeclarationList [715, 758), i=138, next=0
+                NodeList [726, 758), i=139, next=0
+                  KindVariableDeclaration [726, 758), i=140, next=0
+                    KindIdentifier "b" [726, 728), i=141, next=142
+                    KindCallExpression [730, 758), i=142, next=0
+                      KindIdentifier "foo2" [730, 735), i=143, next=144
+                      NodeList [736, 757), i=144, next=0
+                        KindStringLiteral "Hello" [736, 743), i=145, next=146
+                        KindStringLiteral "World" [744, 752), i=146, next=147
+                        KindStringLiteral "!" [753, 757), i=147, next=0
+            KindForStatement [759, 831), i=148, next=0
+              KindVariableDeclarationList [770, 779), i=149, next=154
+                NodeList [773, 779), i=150, next=0
+                  KindVariableDeclaration [773, 779), i=151, next=0
+                    KindIdentifier "j" [773, 775), i=152, next=153
+                    KindNumericLiteral [777, 779), i=153, next=0
+              KindBinaryExpression [780, 793), i=154, next=160
+                KindIdentifier "j" [780, 782), i=155, next=156
+                KindLessThanToken [782, 784), i=156, next=157
+                KindPropertyAccessExpression [784, 793), i=157, next=0
+                  KindIdentifier "b" [784, 786), i=158, next=159
+                  KindIdentifier "length" [787, 793), i=159, next=0
+              KindPostfixUnaryExpression [794, 798), i=160, next=162
+                KindIdentifier "j" [794, 796), i=161, next=0
+              KindBlock [799, 831), i=162, next=0
+                NodeList [801, 824), i=163, next=0
+                  KindExpressionStatement [801, 824), i=164, next=0
+                    KindCallExpression [801, 823), i=165, next=0
+                      KindPropertyAccessExpression [801, 821), i=166, next=0
+                        KindElementAccessExpression [801, 815), i=167, next=170
+                          KindIdentifier "b" [801, 812), i=168, next=169
+                          KindIdentifier "j" [813, 814), i=169, next=0
+                        KindIdentifier "greet" [816, 821), i=170, next=0

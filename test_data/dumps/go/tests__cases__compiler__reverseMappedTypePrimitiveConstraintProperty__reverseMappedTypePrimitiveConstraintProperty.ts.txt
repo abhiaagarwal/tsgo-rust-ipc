@@ -1,0 +1,60 @@
+KindSourceFile [0, 259), i=1, next=0
+  NodeList [0, 258), i=2, next=0
+    KindFunctionDeclaration [0, 121), i=3, next=38
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "test" [16, 21), i=6, next=7
+      NodeList [22, 84), i=7, next=22
+        KindTypeParameter [22, 83), i=8, next=0
+          KindIdentifier "T" [22, 26), i=9, next=10
+          KindTypeLiteral [34, 83), i=10, next=0
+            NodeList [36, 81), i=11, next=0
+              KindPropertySignature [36, 50), i=12, next=15
+                KindIdentifier "prop" [36, 41), i=13, next=14
+                KindStringKeyword [42, 49), i=14, next=0
+              KindPropertySignature [50, 81), i=15, next=0
+                KindIdentifier "nested" [50, 57), i=16, next=17
+                KindTypeLiteral [58, 81), i=17, next=0
+                  NodeList [60, 79), i=18, next=0
+                    KindPropertySignature [60, 79), i=19, next=0
+                      KindIdentifier "nestedProp" [60, 71), i=20, next=21
+                      KindStringKeyword [72, 79), i=21, next=0
+      NodeList [87, 116), i=22, next=36
+        KindParameter [87, 116), i=23, next=0
+          KindIdentifier "obj" [87, 90), i=24, next=25
+          KindMappedType [91, 116), i=25, next=0
+            KindTypeParameter [95, 107), i=26, next=31
+              KindIdentifier "K" [95, 96), i=27, next=28
+              KindTypeOperator [99, 107), i=28, next=0
+                KindTypeReference [105, 107), i=29, next=0
+                  KindIdentifier "T" [105, 107), i=30, next=0
+            KindIndexedAccessType [109, 114), i=31, next=0
+              KindTypeReference [109, 111), i=32, next=34
+                KindIdentifier "T" [109, 111), i=33, next=0
+              KindTypeReference [112, 113), i=34, next=0
+                KindIdentifier "K" [112, 113), i=35, next=0
+      KindTypeReference [118, 120), i=36, next=0
+        KindIdentifier "T" [118, 120), i=37, next=0
+    KindVariableStatement [121, 258), i=38, next=0
+      KindVariableDeclarationList [121, 257), i=39, next=0
+        NodeList [128, 257), i=40, next=0
+          KindVariableDeclaration [128, 257), i=41, next=0
+            KindIdentifier "result" [128, 135), i=42, next=43
+            KindCallExpression [137, 257), i=43, next=0
+              KindIdentifier "test" [137, 142), i=44, next=45
+              NodeList [143, 256), i=45, next=0
+                KindObjectLiteralExpression [143, 256), i=46, next=0
+                  NodeList [144, 254), i=47, next=0
+                    KindPropertyAssignment [144, 158), i=48, next=51
+                      KindIdentifier "prop" [144, 151), i=49, next=50
+                      KindStringLiteral "foo" [152, 158), i=50, next=0
+                    KindPropertyAssignment [159, 237), i=51, next=58
+                      KindIdentifier "nested" [159, 207), i=52, next=53
+                      KindObjectLiteralExpression [208, 237), i=53, next=0
+                        NodeList [210, 233), i=54, next=0
+                          KindPropertyAssignment [210, 232), i=55, next=0
+                            KindIdentifier "nestedProp" [210, 225), i=56, next=57
+                            KindStringLiteral "bar" [226, 232), i=57, next=0
+                    KindPropertyAssignment [238, 253), i=58, next=0
+                      KindIdentifier "extra" [238, 246), i=59, next=60
+                      KindStringLiteral "baz" [247, 253), i=60, next=0

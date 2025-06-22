@@ -1,0 +1,91 @@
+KindSourceFile [0, 272), i=1, next=0
+  NodeList [0, 272), i=2, next=0
+    KindTypeAliasDeclaration [0, 50), i=3, next=22
+      KindIdentifier "Foo" [4, 8), i=4, next=5
+      NodeList [9, 10), i=5, next=8
+        KindTypeParameter [9, 10), i=6, next=0
+          KindIdentifier "V" [9, 10), i=7, next=0
+      KindMappedType [13, 50), i=8, next=0
+        KindTypeParameter [22, 34), i=9, next=14
+          KindIdentifier "K" [22, 23), i=10, next=11
+          KindTypeOperator [26, 34), i=11, next=0
+            KindTypeReference [32, 34), i=12, next=0
+              KindIdentifier "V" [32, 34), i=13, next=0
+        KindTypeReference [36, 46), i=14, next=0
+          KindIdentifier "Foo" [36, 40), i=15, next=16
+          NodeList [41, 45), i=16, next=0
+            KindIndexedAccessType [41, 45), i=17, next=0
+              KindTypeReference [41, 42), i=18, next=20
+                KindIdentifier "V" [41, 42), i=19, next=0
+              KindTypeReference [43, 44), i=20, next=0
+                KindIdentifier "K" [43, 44), i=21, next=0
+    KindTypeAliasDeclaration [50, 135), i=22, next=49
+      KindIdentifier "Bar" [58, 62), i=23, next=24
+      NodeList [63, 64), i=24, next=27
+        KindTypeParameter [63, 64), i=25, next=0
+          KindIdentifier "V" [63, 64), i=26, next=0
+      KindMappedType [67, 135), i=27, next=0
+        KindTypeParameter [76, 88), i=28, next=33
+          KindIdentifier "K" [76, 77), i=29, next=30
+          KindTypeOperator [80, 88), i=30, next=0
+            KindTypeReference [86, 88), i=31, next=0
+              KindIdentifier "V" [86, 88), i=32, next=0
+        KindConditionalType [90, 131), i=33, next=0
+          KindIndexedAccessType [90, 95), i=34, next=39
+            KindTypeReference [90, 92), i=35, next=37
+              KindIdentifier "V" [90, 92), i=36, next=0
+            KindTypeReference [93, 94), i=37, next=0
+              KindIdentifier "K" [93, 94), i=38, next=0
+          KindObjectKeyword [103, 110), i=39, next=40
+          KindTypeReference [112, 122), i=40, next=48
+            KindIdentifier "Bar" [112, 116), i=41, next=42
+            NodeList [117, 121), i=42, next=0
+              KindIndexedAccessType [117, 121), i=43, next=0
+                KindTypeReference [117, 118), i=44, next=46
+                  KindIdentifier "V" [117, 118), i=45, next=0
+                KindTypeReference [119, 120), i=46, next=0
+                  KindIdentifier "K" [119, 120), i=47, next=0
+          KindStringKeyword [124, 131), i=48, next=0
+    KindFunctionDeclaration [135, 229), i=49, next=77
+      KindIdentifier "test" [147, 152), i=50, next=51
+      NodeList [153, 154), i=51, next=54
+        KindTypeParameter [153, 154), i=52, next=0
+          KindIdentifier "V" [153, 154), i=53, next=0
+      NodeList [156, 169), i=54, next=62
+        KindParameter [156, 169), i=55, next=0
+          KindIdentifier "value" [156, 161), i=56, next=57
+          KindTypeReference [162, 169), i=57, next=0
+            KindIdentifier "Foo" [162, 166), i=58, next=59
+            NodeList [167, 168), i=59, next=0
+              KindTypeReference [167, 168), i=60, next=0
+                KindIdentifier "V" [167, 168), i=61, next=0
+      KindTypeReference [171, 173), i=62, next=64
+        KindIdentifier "V" [171, 173), i=63, next=0
+      KindBlock [173, 229), i=64, next=0
+        NodeList [175, 226), i=65, next=0
+          KindExpressionStatement [175, 198), i=66, next=73
+            KindCallExpression [175, 197), i=67, next=0
+              KindPropertyAccessExpression [175, 190), i=68, next=71
+                KindIdentifier "console" [175, 186), i=69, next=70
+                KindIdentifier "log" [187, 190), i=70, next=0
+              NodeList [191, 196), i=71, next=0
+                KindIdentifier "value" [191, 196), i=72, next=0
+          KindReturnStatement [198, 226), i=73, next=0
+            KindAsExpression [208, 225), i=74, next=0
+              KindIdentifier "undefined" [208, 218), i=75, next=76
+              KindAnyKeyword [221, 225), i=76, next=0
+    KindVariableStatement [229, 258), i=77, next=87
+      KindVariableDeclarationList [229, 257), i=78, next=0
+        NodeList [238, 257), i=79, next=0
+          KindVariableDeclaration [238, 257), i=80, next=0
+            KindIdentifier "bar" [238, 242), i=81, next=82
+            KindTypeReference [243, 252), i=82, next=86
+              KindIdentifier "Bar" [243, 247), i=83, next=84
+              NodeList [248, 251), i=84, next=0
+                KindAnyKeyword [248, 251), i=85, next=0
+            KindObjectLiteralExpression [254, 257), i=86, next=0
+    KindExpressionStatement [258, 272), i=87, next=0
+      KindCallExpression [258, 271), i=88, next=0
+        KindIdentifier "test" [258, 266), i=89, next=90
+        NodeList [267, 270), i=90, next=0
+          KindIdentifier "bar" [267, 270), i=91, next=0

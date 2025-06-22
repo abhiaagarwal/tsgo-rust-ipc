@@ -1,0 +1,81 @@
+KindSourceFile [0, 492), i=1, next=0
+  NodeList [0, 486), i=2, next=0
+    KindTypeAliasDeclaration [0, 27), i=3, next=7
+      KindIdentifier "handler1" [4, 13), i=4, next=5
+      KindFunctionType [15, 26), i=5, next=0
+        KindVoidKeyword [21, 26), i=6, next=0
+    KindInterfaceDeclaration [27, 80), i=7, next=16
+      NodeList [27, 35), i=8, next=10
+        KindExportKeyword [27, 35), i=9, next=0
+      KindIdentifier "I1" [45, 48), i=10, next=11
+      NodeList [50, 77), i=11, next=0
+        KindPropertySignature [50, 77), i=12, next=0
+          KindIdentifier "getHandler" [50, 66), i=13, next=14
+          KindTypeReference [67, 76), i=14, next=0
+            KindIdentifier "handler1" [67, 76), i=15, next=0
+    KindTypeAliasDeclaration [80, 131), i=16, next=22
+      NodeList [80, 103), i=17, next=19
+        KindExportKeyword [80, 103), i=18, next=0
+      KindIdentifier "handler2" [108, 117), i=19, next=20
+      KindFunctionType [119, 130), i=20, next=0
+        KindVoidKeyword [125, 130), i=21, next=0
+    KindTypeAliasDeclaration [131, 189), i=22, next=26
+      KindIdentifier "handler3" [166, 175), i=23, next=24
+      KindFunctionType [177, 188), i=24, next=0
+        KindVoidKeyword [183, 188), i=25, next=0
+    KindInterfaceDeclaration [189, 255), i=26, next=40
+      NodeList [189, 197), i=27, next=29
+        KindExportKeyword [189, 197), i=28, next=0
+      KindIdentifier "I3" [207, 210), i=29, next=30
+      NodeList [211, 229), i=30, next=35
+        KindTypeParameter [211, 229), i=31, next=0
+          KindIdentifier "T" [211, 212), i=32, next=33
+          KindTypeReference [220, 229), i=33, next=0
+            KindIdentifier "handler3" [220, 229), i=34, next=0
+      NodeList [232, 252), i=35, next=0
+        KindPropertySignature [232, 252), i=36, next=0
+          KindIdentifier "getHandler" [232, 248), i=37, next=38
+          KindTypeReference [249, 251), i=38, next=0
+            KindIdentifier "T" [249, 251), i=39, next=0
+    KindTypeAliasDeclaration [255, 329), i=40, next=44
+      KindIdentifier "handler4" [306, 315), i=41, next=42
+      KindFunctionType [317, 328), i=42, next=0
+        KindVoidKeyword [323, 328), i=43, next=0
+    KindTypeAliasDeclaration [329, 371), i=44, next=53
+      KindIdentifier "handler5" [335, 344), i=45, next=46
+      KindUnionType [346, 370), i=46, next=0
+        NodeList [346, 370), i=47, next=0
+          KindTypeReference [346, 355), i=48, next=50
+            KindIdentifier "handler4" [346, 355), i=49, next=0
+          KindParenthesizedType [357, 370), i=50, next=0
+            KindFunctionType [359, 369), i=51, next=0
+              KindNumberKeyword [363, 369), i=52, next=0
+    KindVariableStatement [371, 389), i=53, next=60
+      KindVariableDeclarationList [371, 388), i=54, next=0
+        NodeList [376, 388), i=55, next=0
+          KindVariableDeclaration [376, 388), i=56, next=0
+            KindIdentifier "x" [376, 378), i=57, next=58
+            KindTypeReference [379, 388), i=58, next=0
+              KindIdentifier "handler5" [379, 388), i=59, next=0
+    KindExpressionStatement [389, 395), i=60, next=63
+      KindCallExpression [389, 394), i=61, next=0
+        KindIdentifier "x" [389, 392), i=62, next=0
+    KindTypeAliasDeclaration [395, 452), i=63, next=67
+      KindIdentifier "handler6" [429, 438), i=64, next=65
+      KindFunctionType [440, 451), i=65, next=0
+        KindVoidKeyword [446, 451), i=66, next=0
+    KindVariableStatement [452, 477), i=67, next=77
+      KindVariableDeclarationList [452, 476), i=68, next=0
+        NodeList [457, 476), i=69, next=0
+          KindVariableDeclaration [457, 476), i=70, next=0
+            KindIdentifier "y" [457, 459), i=71, next=72
+            KindTypeReference [460, 476), i=72, next=0
+              KindIdentifier "Array" [460, 466), i=73, next=74
+              NodeList [467, 475), i=74, next=0
+                KindTypeReference [467, 475), i=75, next=0
+                  KindIdentifier "handler6" [467, 475), i=76, next=0
+    KindExpressionStatement [477, 486), i=77, next=0
+      KindCallExpression [477, 485), i=78, next=0
+        KindElementAccessExpression [477, 483), i=79, next=0
+          KindIdentifier "y" [477, 480), i=80, next=81
+          KindNumericLiteral [481, 482), i=81, next=0

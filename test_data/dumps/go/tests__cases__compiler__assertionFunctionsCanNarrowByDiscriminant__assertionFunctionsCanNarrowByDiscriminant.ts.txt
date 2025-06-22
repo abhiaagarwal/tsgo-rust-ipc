@@ -1,0 +1,118 @@
+KindSourceFile [0, 581), i=1, next=0
+  NodeList [0, 539), i=2, next=0
+    KindInterfaceDeclaration [0, 56), i=3, next=14
+      KindIdentifier "Cat" [9, 13), i=4, next=5
+      NodeList [15, 53), i=5, next=0
+        KindPropertySignature [15, 33), i=6, next=10
+          KindIdentifier "type" [15, 25), i=7, next=8
+          KindLiteralType [26, 32), i=8, next=0
+            KindStringLiteral "cat" [26, 32), i=9, next=0
+        KindPropertySignature [33, 53), i=10, next=0
+          KindIdentifier "canMeow" [33, 46), i=11, next=12
+          KindLiteralType [47, 52), i=12, next=0
+            KindTrueKeyword [47, 52), i=13, next=0
+    KindInterfaceDeclaration [56, 116), i=14, next=25
+      KindIdentifier "Dog" [69, 73), i=15, next=16
+      NodeList [75, 113), i=16, next=0
+        KindPropertySignature [75, 93), i=17, next=21
+          KindIdentifier "type" [75, 85), i=18, next=19
+          KindLiteralType [86, 92), i=19, next=0
+            KindStringLiteral "dog" [86, 92), i=20, next=0
+        KindPropertySignature [93, 113), i=21, next=0
+          KindIdentifier "canBark" [93, 106), i=22, next=23
+          KindLiteralType [107, 112), i=23, next=0
+            KindTrueKeyword [107, 112), i=24, next=0
+    KindTypeAliasDeclaration [116, 144), i=25, next=33
+      KindIdentifier "Animal" [124, 131), i=26, next=27
+      KindUnionType [133, 143), i=27, next=0
+        NodeList [133, 143), i=28, next=0
+          KindTypeReference [133, 137), i=29, next=31
+            KindIdentifier "Cat" [133, 137), i=30, next=0
+          KindTypeReference [139, 143), i=31, next=0
+            KindIdentifier "Dog" [139, 143), i=32, next=0
+    KindFunctionDeclaration [144, 221), i=33, next=53
+      NodeList [144, 155), i=34, next=36
+        KindDeclareKeyword [144, 155), i=35, next=0
+      KindIdentifier "assertEqual" [164, 176), i=36, next=37
+      NodeList [177, 178), i=37, next=40
+        KindTypeParameter [177, 178), i=38, next=0
+          KindIdentifier "T" [177, 178), i=39, next=0
+      NodeList [180, 199), i=40, next=48
+        KindParameter [180, 190), i=41, next=44
+          KindIdentifier "value" [180, 185), i=42, next=43
+          KindAnyKeyword [186, 190), i=43, next=0
+        KindParameter [191, 199), i=44, next=0
+          KindIdentifier "type" [191, 196), i=45, next=46
+          KindTypeReference [197, 199), i=46, next=0
+            KindIdentifier "T" [197, 199), i=47, next=0
+      KindTypePredicate [201, 220), i=48, next=0
+        KindAssertsKeyword [201, 209), i=49, next=50
+        KindIdentifier "value" [209, 215), i=50, next=51
+        KindTypeReference [218, 220), i=51, next=0
+          KindIdentifier "T" [218, 220), i=52, next=0
+    KindVariableStatement [221, 281), i=53, next=69
+      KindVariableDeclarationList [221, 280), i=54, next=0
+        NodeList [230, 280), i=55, next=0
+          KindVariableDeclaration [230, 280), i=56, next=0
+            KindIdentifier "animal" [230, 237), i=57, next=58
+            KindAsExpression [239, 280), i=58, next=0
+              KindObjectLiteralExpression [239, 270), i=59, next=67
+                NodeList [241, 268), i=60, next=0
+                  KindPropertyAssignment [241, 253), i=61, next=64
+                    KindIdentifier "type" [241, 246), i=62, next=63
+                    KindStringLiteral "cat" [247, 253), i=63, next=0
+                  KindPropertyAssignment [254, 268), i=64, next=0
+                    KindIdentifier "canMeow" [254, 262), i=65, next=66
+                    KindTrueKeyword [263, 268), i=66, next=0
+              KindTypeReference [273, 280), i=67, next=0
+                KindIdentifier "Animal" [273, 280), i=68, next=0
+    KindExpressionStatement [281, 324), i=69, next=80
+      KindCallExpression [281, 323), i=70, next=0
+        KindIdentifier "assertEqual" [281, 294), i=71, next=72
+        NodeList [295, 322), i=72, next=0
+          KindPropertyAccessExpression [295, 306), i=73, next=76
+            KindIdentifier "animal" [295, 301), i=74, next=75
+            KindIdentifier "type" [302, 306), i=75, next=0
+          KindAsExpression [307, 322), i=76, next=0
+            KindStringLiteral "cat" [307, 313), i=77, next=78
+            KindTypeReference [316, 322), i=78, next=0
+              KindIdentifier "const" [316, 322), i=79, next=0
+    KindExpressionStatement [324, 343), i=80, next=84
+      KindPropertyAccessExpression [324, 342), i=81, next=0
+        KindIdentifier "animal" [324, 334), i=82, next=83
+        KindIdentifier "canMeow" [335, 342), i=83, next=0
+    KindVariableStatement [343, 462), i=84, next=103
+      KindVariableDeclarationList [343, 461), i=85, next=0
+        NodeList [392, 461), i=86, next=0
+          KindVariableDeclaration [392, 461), i=87, next=0
+            KindIdentifier "animalOrUndef" [392, 406), i=88, next=89
+            KindAsExpression [408, 461), i=89, next=0
+              KindObjectLiteralExpression [408, 439), i=90, next=98
+                NodeList [410, 437), i=91, next=0
+                  KindPropertyAssignment [410, 422), i=92, next=95
+                    KindIdentifier "type" [410, 415), i=93, next=94
+                    KindStringLiteral "cat" [416, 422), i=94, next=0
+                  KindPropertyAssignment [423, 437), i=95, next=0
+                    KindIdentifier "canMeow" [423, 431), i=96, next=97
+                    KindTrueKeyword [432, 437), i=97, next=0
+              KindUnionType [442, 461), i=98, next=0
+                NodeList [442, 461), i=99, next=0
+                  KindTypeReference [442, 449), i=100, next=102
+                    KindIdentifier "Animal" [442, 449), i=101, next=0
+                  KindUndefinedKeyword [451, 461), i=102, next=0
+    KindExpressionStatement [462, 513), i=103, next=115
+      KindCallExpression [462, 512), i=104, next=0
+        KindIdentifier "assertEqual" [462, 475), i=105, next=106
+        NodeList [476, 511), i=106, next=0
+          KindPropertyAccessExpression [476, 495), i=107, next=111
+            KindIdentifier "animalOrUndef" [476, 489), i=108, next=109
+            KindQuestionDotToken [489, 491), i=109, next=110
+            KindIdentifier "type" [491, 495), i=110, next=0
+          KindAsExpression [496, 511), i=111, next=0
+            KindStringLiteral "cat" [496, 502), i=112, next=113
+            KindTypeReference [505, 511), i=113, next=0
+              KindIdentifier "const" [505, 511), i=114, next=0
+    KindExpressionStatement [513, 539), i=115, next=0
+      KindPropertyAccessExpression [513, 538), i=116, next=0
+        KindIdentifier "animalOrUndef" [513, 530), i=117, next=118
+        KindIdentifier "canMeow" [531, 538), i=118, next=0

@@ -1,0 +1,55 @@
+KindSourceFile [0, 328), i=1, next=0
+  NodeList [0, 327), i=2, next=0
+    KindImportDeclaration [0, 55), i=3, next=11
+      KindImportClause [26, 36), i=4, next=10
+        KindNamedImports [26, 36), i=5, next=0
+          NodeList [28, 35), i=6, next=0
+            KindImportSpecifier [28, 35), i=7, next=0
+              KindIdentifier "h" [28, 29), i=8, next=9
+              KindIdentifier "_h" [32, 35), i=9, next=0
+      KindStringLiteral "./index.js" [41, 54), i=10, next=0
+    KindImportEqualsDeclaration [55, 92), i=11, next=15
+      KindIdentifier "mod" [63, 67), i=12, next=13
+      KindExternalModuleReference [69, 91), i=13, next=0
+        KindStringLiteral "./index.js" [78, 90), i=14, next=0
+    KindImportDeclaration [92, 133), i=15, next=22
+      KindImportClause [100, 104), i=16, next=21
+        KindNamedImports [100, 104), i=17, next=0
+          NodeList [102, 103), i=18, next=0
+            KindImportSpecifier [102, 103), i=19, next=0
+              KindIdentifier "f" [102, 103), i=20, next=0
+      KindStringLiteral "./subfolder/index.js" [109, 132), i=21, next=0
+    KindImportEqualsDeclaration [133, 181), i=22, next=26
+      KindIdentifier "mod2" [141, 146), i=23, next=24
+      KindExternalModuleReference [148, 180), i=24, next=0
+        KindStringLiteral "./subfolder/index.js" [157, 179), i=25, next=0
+    KindFunctionDeclaration [181, 327), i=26, next=0
+      NodeList [181, 195), i=27, next=30
+        KindExportKeyword [181, 189), i=28, next=29
+        KindAsyncKeyword [189, 195), i=29, next=0
+      KindIdentifier "h" [204, 206), i=30, next=31
+      KindBlock [208, 327), i=31, next=0
+        NodeList [210, 324), i=32, next=0
+          KindVariableStatement [210, 257), i=33, next=43
+            KindVariableDeclarationList [210, 256), i=34, next=0
+              NodeList [221, 256), i=35, next=0
+                KindVariableDeclaration [221, 256), i=36, next=0
+                  KindIdentifier "mod3" [221, 226), i=37, next=38
+                  KindAwaitExpression [228, 256), i=38, next=0
+                    KindCallExpression [234, 256), i=39, next=0
+                      KindImportKeyword [234, 241), i=40, next=41
+                      NodeList [243, 255), i=41, next=0
+                        KindStringLiteral "./index.js" [243, 255), i=42, next=0
+          KindVariableStatement [257, 314), i=43, next=53
+            KindVariableDeclarationList [257, 313), i=44, next=0
+              NodeList [268, 313), i=45, next=0
+                KindVariableDeclaration [268, 313), i=46, next=0
+                  KindIdentifier "mod4" [268, 273), i=47, next=48
+                  KindAwaitExpression [275, 313), i=48, next=0
+                    KindCallExpression [281, 313), i=49, next=0
+                      KindImportKeyword [281, 288), i=50, next=51
+                      NodeList [290, 312), i=51, next=0
+                        KindStringLiteral "./subfolder/index.js" [290, 312), i=52, next=0
+          KindExpressionStatement [314, 324), i=53, next=0
+            KindCallExpression [314, 323), i=54, next=0
+              KindIdentifier "f" [314, 321), i=55, next=0

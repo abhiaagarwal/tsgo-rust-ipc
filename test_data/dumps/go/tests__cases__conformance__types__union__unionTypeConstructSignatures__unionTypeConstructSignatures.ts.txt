@@ -1,0 +1,685 @@
+KindSourceFile [0, 4787), i=1, next=0
+  NodeList [0, 4785), i=2, next=0
+    KindVariableStatement [0, 29), i=3, next=13
+      KindVariableDeclarationList [0, 28), i=4, next=0
+        NodeList [3, 28), i=5, next=0
+          KindVariableDeclaration [3, 28), i=6, next=0
+            KindIdentifier "numOrDate" [3, 13), i=7, next=8
+            KindUnionType [14, 28), i=8, next=0
+              NodeList [14, 28), i=9, next=0
+                KindNumberKeyword [14, 21), i=10, next=11
+                KindTypeReference [23, 28), i=11, next=0
+                  KindIdentifier "Date" [23, 28), i=12, next=0
+    KindVariableStatement [29, 66), i=13, next=22
+      KindVariableDeclarationList [29, 65), i=14, next=0
+        NodeList [34, 65), i=15, next=0
+          KindVariableDeclaration [34, 65), i=16, next=0
+            KindIdentifier "strOrBoolean" [34, 47), i=17, next=18
+            KindUnionType [48, 65), i=18, next=0
+              NodeList [48, 65), i=19, next=0
+                KindStringKeyword [48, 55), i=20, next=21
+                KindBooleanKeyword [57, 65), i=21, next=0
+    KindVariableStatement [66, 98), i=22, next=31
+      KindVariableDeclarationList [66, 97), i=23, next=0
+        NodeList [71, 97), i=24, next=0
+          KindVariableDeclaration [71, 97), i=25, next=0
+            KindIdentifier "strOrNum" [71, 80), i=26, next=27
+            KindUnionType [81, 97), i=27, next=0
+              NodeList [81, 97), i=28, next=0
+                KindStringKeyword [81, 88), i=29, next=30
+                KindNumberKeyword [90, 97), i=30, next=0
+    KindVariableStatement [98, 479), i=31, next=55
+      KindVariableDeclarationList [98, 478), i=32, next=0
+        NodeList [392, 478), i=33, next=0
+          KindVariableDeclaration [392, 478), i=34, next=0
+            KindIdentifier "unionOfDifferentReturnType" [392, 419), i=35, next=36
+            KindUnionType [420, 478), i=36, next=0
+              NodeList [420, 478), i=37, next=0
+                KindTypeLiteral [420, 449), i=38, next=46
+                  NodeList [422, 447), i=39, next=0
+                    KindConstructSignature [422, 447), i=40, next=0
+                      NodeList [428, 437), i=41, next=45
+                        KindParameter [428, 437), i=42, next=0
+                          KindIdentifier "a" [428, 429), i=43, next=44
+                          KindNumberKeyword [430, 437), i=44, next=0
+                      KindNumberKeyword [439, 446), i=45, next=0
+                KindTypeLiteral [451, 478), i=46, next=0
+                  NodeList [453, 476), i=47, next=0
+                    KindConstructSignature [453, 476), i=48, next=0
+                      NodeList [459, 468), i=49, next=53
+                        KindParameter [459, 468), i=50, next=0
+                          KindIdentifier "a" [459, 460), i=51, next=52
+                          KindNumberKeyword [461, 468), i=52, next=0
+                      KindTypeReference [470, 475), i=53, next=0
+                        KindIdentifier "Date" [470, 475), i=54, next=0
+    KindExpressionStatement [479, 528), i=55, next=63
+      KindBinaryExpression [479, 527), i=56, next=0
+        KindIdentifier "numOrDate" [479, 490), i=57, next=58
+        KindEqualsToken [490, 492), i=58, next=59
+        KindNewExpression [492, 527), i=59, next=0
+          KindIdentifier "unionOfDifferentReturnType" [496, 523), i=60, next=61
+          NodeList [524, 526), i=61, next=0
+            KindNumericLiteral [524, 526), i=62, next=0
+    KindExpressionStatement [528, 585), i=63, next=71
+      KindBinaryExpression [528, 584), i=64, next=0
+        KindIdentifier "strOrBoolean" [528, 542), i=65, next=66
+        KindEqualsToken [542, 544), i=66, next=67
+        KindNewExpression [544, 584), i=67, next=0
+          KindIdentifier "unionOfDifferentReturnType" [548, 575), i=68, next=69
+          NodeList [576, 583), i=69, next=0
+            KindStringLiteral "hello" [576, 583), i=70, next=0
+    KindExpressionStatement [585, 634), i=71, next=76
+      KindNewExpression [585, 633), i=72, next=0
+        KindIdentifier "unionOfDifferentReturnType1" [599, 627), i=73, next=74
+        NodeList [628, 632), i=74, next=0
+          KindTrueKeyword [628, 632), i=75, next=0
+    KindVariableStatement [634, 810), i=76, next=112
+      KindVariableDeclarationList [634, 809), i=77, next=0
+        NodeList [671, 809), i=78, next=0
+          KindVariableDeclaration [671, 809), i=79, next=0
+            KindIdentifier "unionOfDifferentReturnType1" [671, 699), i=80, next=81
+            KindUnionType [700, 809), i=81, next=0
+              NodeList [700, 809), i=82, next=0
+                KindTypeLiteral [700, 754), i=83, next=97
+                  NodeList [702, 752), i=84, next=0
+                    KindConstructSignature [702, 727), i=85, next=91
+                      NodeList [708, 717), i=86, next=90
+                        KindParameter [708, 717), i=87, next=0
+                          KindIdentifier "a" [708, 709), i=88, next=89
+                          KindNumberKeyword [710, 717), i=89, next=0
+                      KindNumberKeyword [719, 726), i=90, next=0
+                    KindConstructSignature [727, 752), i=91, next=0
+                      NodeList [733, 742), i=92, next=96
+                        KindParameter [733, 742), i=93, next=0
+                          KindIdentifier "a" [733, 734), i=94, next=95
+                          KindStringKeyword [735, 742), i=95, next=0
+                      KindStringKeyword [744, 751), i=96, next=0
+                KindTypeLiteral [756, 809), i=97, next=0
+                  NodeList [758, 807), i=98, next=0
+                    KindConstructSignature [758, 781), i=99, next=106
+                      NodeList [764, 773), i=100, next=104
+                        KindParameter [764, 773), i=101, next=0
+                          KindIdentifier "a" [764, 765), i=102, next=103
+                          KindNumberKeyword [766, 773), i=103, next=0
+                      KindTypeReference [775, 780), i=104, next=0
+                        KindIdentifier "Date" [775, 780), i=105, next=0
+                    KindConstructSignature [781, 807), i=106, next=0
+                      NodeList [787, 796), i=107, next=111
+                        KindParameter [787, 796), i=108, next=0
+                          KindIdentifier "a" [787, 788), i=109, next=110
+                          KindStringKeyword [789, 796), i=110, next=0
+                      KindBooleanKeyword [798, 806), i=111, next=0
+    KindExpressionStatement [810, 860), i=112, next=120
+      KindBinaryExpression [810, 859), i=113, next=0
+        KindIdentifier "numOrDate" [810, 821), i=114, next=115
+        KindEqualsToken [821, 823), i=115, next=116
+        KindNewExpression [823, 859), i=116, next=0
+          KindIdentifier "unionOfDifferentReturnType1" [827, 855), i=117, next=118
+          NodeList [856, 858), i=118, next=0
+            KindNumericLiteral [856, 858), i=119, next=0
+    KindExpressionStatement [860, 918), i=120, next=128
+      KindBinaryExpression [860, 917), i=121, next=0
+        KindIdentifier "strOrBoolean" [860, 874), i=122, next=123
+        KindEqualsToken [874, 876), i=123, next=124
+        KindNewExpression [876, 917), i=124, next=0
+          KindIdentifier "unionOfDifferentReturnType1" [880, 908), i=125, next=126
+          NodeList [909, 916), i=126, next=0
+            KindStringLiteral "hello" [909, 916), i=127, next=0
+    KindExpressionStatement [918, 958), i=128, next=133
+      KindNewExpression [918, 957), i=129, next=0
+        KindIdentifier "unionOfDifferentReturnType1" [923, 951), i=130, next=131
+        NodeList [952, 956), i=131, next=0
+          KindTrueKeyword [952, 956), i=132, next=0
+    KindExpressionStatement [958, 1024), i=133, next=136
+      KindNewExpression [958, 1023), i=134, next=0
+        KindIdentifier "unionOfDifferentReturnType1" [993, 1021), i=135, next=0
+    KindVariableStatement [1024, 1149), i=136, next=160
+      KindVariableDeclarationList [1024, 1148), i=137, next=0
+        NodeList [1058, 1148), i=138, next=0
+          KindVariableDeclaration [1058, 1148), i=139, next=0
+            KindIdentifier "unionOfDifferentParameterTypes" [1058, 1089), i=140, next=141
+            KindUnionType [1090, 1148), i=141, next=0
+              NodeList [1090, 1148), i=142, next=0
+                KindTypeLiteral [1090, 1119), i=143, next=151
+                  NodeList [1092, 1117), i=144, next=0
+                    KindConstructSignature [1092, 1117), i=145, next=0
+                      NodeList [1098, 1107), i=146, next=150
+                        KindParameter [1098, 1107), i=147, next=0
+                          KindIdentifier "a" [1098, 1099), i=148, next=149
+                          KindNumberKeyword [1100, 1107), i=149, next=0
+                      KindNumberKeyword [1109, 1116), i=150, next=0
+                KindTypeLiteral [1121, 1148), i=151, next=0
+                  NodeList [1123, 1146), i=152, next=0
+                    KindConstructSignature [1123, 1146), i=153, next=0
+                      NodeList [1129, 1138), i=154, next=158
+                        KindParameter [1129, 1138), i=155, next=0
+                          KindIdentifier "a" [1129, 1130), i=156, next=157
+                          KindStringKeyword [1131, 1138), i=157, next=0
+                      KindTypeReference [1140, 1145), i=158, next=0
+                        KindIdentifier "Date" [1140, 1145), i=159, next=0
+    KindExpressionStatement [1149, 1190), i=160, next=165
+      KindNewExpression [1149, 1189), i=161, next=0
+        KindIdentifier "unionOfDifferentParameterTypes" [1154, 1185), i=162, next=163
+        NodeList [1186, 1188), i=163, next=0
+          KindNumericLiteral [1186, 1188), i=164, next=0
+    KindExpressionStatement [1190, 1265), i=165, next=170
+      KindNewExpression [1190, 1264), i=166, next=0
+        KindIdentifier "unionOfDifferentParameterTypes" [1224, 1255), i=167, next=168
+        NodeList [1256, 1263), i=168, next=0
+          KindStringLiteral "hello" [1256, 1263), i=169, next=0
+    KindExpressionStatement [1265, 1333), i=170, next=173
+      KindNewExpression [1265, 1332), i=171, next=0
+        KindIdentifier "unionOfDifferentParameterTypes" [1299, 1330), i=172, next=0
+    KindVariableStatement [1333, 1490), i=173, next=203
+      KindVariableDeclarationList [1333, 1489), i=174, next=0
+        NodeList [1369, 1489), i=175, next=0
+          KindVariableDeclaration [1369, 1489), i=176, next=0
+            KindIdentifier "unionOfDifferentNumberOfSignatures" [1369, 1404), i=177, next=178
+            KindUnionType [1405, 1489), i=178, next=0
+              NodeList [1405, 1489), i=179, next=0
+                KindTypeLiteral [1405, 1434), i=180, next=188
+                  NodeList [1407, 1432), i=181, next=0
+                    KindConstructSignature [1407, 1432), i=182, next=0
+                      NodeList [1413, 1422), i=183, next=187
+                        KindParameter [1413, 1422), i=184, next=0
+                          KindIdentifier "a" [1413, 1414), i=185, next=186
+                          KindNumberKeyword [1415, 1422), i=186, next=0
+                      KindNumberKeyword [1424, 1431), i=187, next=0
+                KindTypeLiteral [1436, 1489), i=188, next=0
+                  NodeList [1438, 1487), i=189, next=0
+                    KindConstructSignature [1438, 1461), i=190, next=197
+                      NodeList [1444, 1453), i=191, next=195
+                        KindParameter [1444, 1453), i=192, next=0
+                          KindIdentifier "a" [1444, 1445), i=193, next=194
+                          KindNumberKeyword [1446, 1453), i=194, next=0
+                      KindTypeReference [1455, 1460), i=195, next=0
+                        KindIdentifier "Date" [1455, 1460), i=196, next=0
+                    KindConstructSignature [1461, 1487), i=197, next=0
+                      NodeList [1467, 1476), i=198, next=202
+                        KindParameter [1467, 1476), i=199, next=0
+                          KindIdentifier "a" [1467, 1468), i=200, next=201
+                          KindStringKeyword [1469, 1476), i=201, next=0
+                      KindBooleanKeyword [1478, 1486), i=202, next=0
+    KindExpressionStatement [1490, 1533), i=203, next=206
+      KindNewExpression [1490, 1532), i=204, next=0
+        KindIdentifier "unionOfDifferentNumberOfSignatures" [1495, 1530), i=205, next=0
+    KindExpressionStatement [1533, 1608), i=206, next=211
+      KindNewExpression [1533, 1607), i=207, next=0
+        KindIdentifier "unionOfDifferentNumberOfSignatures" [1568, 1603), i=208, next=209
+        NodeList [1604, 1606), i=209, next=0
+          KindNumericLiteral [1604, 1606), i=210, next=0
+    KindExpressionStatement [1608, 1688), i=211, next=216
+      KindNewExpression [1608, 1687), i=212, next=0
+        KindIdentifier "unionOfDifferentNumberOfSignatures" [1643, 1678), i=213, next=214
+        NodeList [1679, 1686), i=214, next=0
+          KindStringLiteral "hello" [1679, 1686), i=215, next=0
+    KindVariableStatement [1688, 1831), i=216, next=242
+      KindVariableDeclarationList [1688, 1830), i=217, next=0
+        NodeList [1725, 1830), i=218, next=0
+          KindVariableDeclaration [1725, 1830), i=219, next=0
+            KindIdentifier "unionWithDifferentParameterCount" [1725, 1758), i=220, next=221
+            KindUnionType [1759, 1830), i=221, next=0
+              NodeList [1759, 1830), i=222, next=0
+                KindTypeLiteral [1759, 1788), i=223, next=231
+                  NodeList [1761, 1786), i=224, next=0
+                    KindConstructSignature [1761, 1786), i=225, next=0
+                      NodeList [1767, 1776), i=226, next=230
+                        KindParameter [1767, 1776), i=227, next=0
+                          KindIdentifier "a" [1767, 1768), i=228, next=229
+                          KindStringKeyword [1769, 1776), i=229, next=0
+                      KindStringKeyword [1778, 1785), i=230, next=0
+                KindTypeLiteral [1790, 1830), i=231, next=0
+                  NodeList [1792, 1828), i=232, next=0
+                    KindConstructSignature [1792, 1828), i=233, next=0
+                      NodeList [1798, 1818), i=234, next=241
+                        KindParameter [1798, 1807), i=235, next=238
+                          KindIdentifier "a" [1798, 1799), i=236, next=237
+                          KindStringKeyword [1800, 1807), i=237, next=0
+                        KindParameter [1808, 1818), i=238, next=0
+                          KindIdentifier "b" [1808, 1810), i=239, next=240
+                          KindNumberKeyword [1811, 1818), i=240, next=0
+                      KindNumberKeyword [1820, 1827), i=241, next=0
+    KindExpressionStatement [1831, 1872), i=242, next=245
+      KindNewExpression [1831, 1871), i=243, next=0
+        KindIdentifier "unionWithDifferentParameterCount" [1836, 1869), i=244, next=0
+    KindExpressionStatement [1872, 1938), i=245, next=250
+      KindNewExpression [1872, 1937), i=246, next=0
+        KindIdentifier "unionWithDifferentParameterCount" [1895, 1928), i=247, next=248
+        NodeList [1929, 1936), i=248, next=0
+          KindStringLiteral "hello" [1929, 1936), i=249, next=0
+    KindExpressionStatement [1938, 2008), i=250, next=0
+      KindNewExpression [1938, 2007), i=251, next=0
+        KindIdentifier "unionWithDifferentParameterCount" [1961, 1994), i=252, next=253
+        NodeList [1995, 2006), i=253, next=0
+          KindStringLiteral "hello" [1995, 2002), i=254, next=255
+          KindNumericLiteral [2003, 2006), i=255, next=0
+    KindVariableStatement [2008, 2134), i=256, next=31
+      KindVariableDeclarationList [2008, 2133), i=257, next=0
+        NodeList [2020, 2133), i=258, next=0
+          KindVariableDeclaration [2020, 2133), i=259, next=0
+            KindIdentifier "unionWithOptionalParameter1" [2020, 2048), i=260, next=5
+            KindUnionType [2049, 2133), i=261, next=0
+              NodeList [2049, 2133), i=262, next=0
+                KindTypeLiteral [2049, 2090), i=263, next=19
+                  NodeList [2051, 2088), i=264, next=0
+                    KindConstructSignature [2051, 2088), i=265, next=0
+                      NodeList [2057, 2078), i=266, next=18
+                        KindParameter [2057, 2066), i=267, next=14
+                          KindIdentifier "a" [2057, 2058), i=268, next=13
+                          KindStringKeyword [2059, 2066), i=269, next=0
+                        KindParameter [2067, 2078), i=270, next=0
+                          KindIdentifier "b" [2067, 2069), i=271, next=16
+                          KindQuestionToken [2069, 2070), i=272, next=17
+                          KindNumberKeyword [2071, 2078), i=273, next=0
+                      KindStringKeyword [2080, 2087), i=274, next=0
+                KindTypeLiteral [2092, 2133), i=275, next=0
+                  NodeList [2094, 2131), i=276, next=0
+                    KindConstructSignature [2094, 2131), i=277, next=0
+                      NodeList [2100, 2121), i=278, next=30
+                        KindParameter [2100, 2109), i=279, next=26
+                          KindIdentifier "a" [2100, 2101), i=280, next=25
+                          KindStringKeyword [2102, 2109), i=281, next=0
+                        KindParameter [2110, 2121), i=282, next=0
+                          KindIdentifier "b" [2110, 2112), i=283, next=28
+                          KindQuestionToken [2112, 2113), i=284, next=29
+                          KindNumberKeyword [2114, 2121), i=285, next=0
+                      KindNumberKeyword [2123, 2130), i=286, next=0
+    KindExpressionStatement [2134, 2188), i=287, next=39
+      KindBinaryExpression [2134, 2187), i=288, next=0
+        KindIdentifier "strOrNum" [2134, 2144), i=289, next=34
+        KindEqualsToken [2144, 2146), i=290, next=35
+        KindNewExpression [2146, 2187), i=291, next=0
+          KindIdentifier "unionWithOptionalParameter1" [2150, 2178), i=292, next=37
+          NodeList [2179, 2186), i=293, next=0
+            KindStringLiteral "hello" [2179, 2186), i=294, next=0
+    KindExpressionStatement [2188, 2246), i=295, next=48
+      KindBinaryExpression [2188, 2245), i=296, next=0
+        KindIdentifier "strOrNum" [2188, 2198), i=297, next=42
+        KindEqualsToken [2198, 2200), i=298, next=43
+        KindNewExpression [2200, 2245), i=299, next=0
+          KindIdentifier "unionWithOptionalParameter1" [2204, 2232), i=300, next=45
+          NodeList [2233, 2244), i=301, next=0
+            KindStringLiteral "hello" [2233, 2240), i=302, next=47
+            KindNumericLiteral [2241, 2244), i=303, next=0
+    KindExpressionStatement [2246, 2309), i=304, next=57
+      KindBinaryExpression [2246, 2308), i=305, next=0
+        KindIdentifier "strOrNum" [2246, 2256), i=306, next=51
+        KindEqualsToken [2256, 2258), i=307, next=52
+        KindNewExpression [2258, 2308), i=308, next=0
+          KindIdentifier "unionWithOptionalParameter1" [2262, 2290), i=309, next=54
+          NodeList [2291, 2307), i=310, next=0
+            KindStringLiteral "hello" [2291, 2298), i=311, next=56
+            KindStringLiteral "hello" [2299, 2307), i=312, next=0
+    KindExpressionStatement [2309, 2383), i=313, next=63
+      KindBinaryExpression [2309, 2382), i=314, next=0
+        KindIdentifier "strOrNum" [2309, 2346), i=315, next=60
+        KindEqualsToken [2346, 2348), i=316, next=61
+        KindNewExpression [2348, 2382), i=317, next=0
+          KindIdentifier "unionWithOptionalParameter1" [2352, 2380), i=318, next=0
+    KindVariableStatement [2383, 2511), i=319, next=93
+      KindVariableDeclarationList [2383, 2510), i=320, next=0
+        NodeList [2399, 2510), i=321, next=0
+          KindVariableDeclaration [2399, 2510), i=322, next=0
+            KindIdentifier "unionWithOptionalParameter2" [2399, 2427), i=323, next=68
+            KindUnionType [2428, 2510), i=324, next=0
+              NodeList [2428, 2510), i=325, next=0
+                KindTypeLiteral [2428, 2469), i=326, next=82
+                  NodeList [2430, 2467), i=327, next=0
+                    KindConstructSignature [2430, 2467), i=328, next=0
+                      NodeList [2436, 2457), i=329, next=81
+                        KindParameter [2436, 2445), i=330, next=77
+                          KindIdentifier "a" [2436, 2437), i=331, next=76
+                          KindStringKeyword [2438, 2445), i=332, next=0
+                        KindParameter [2446, 2457), i=333, next=0
+                          KindIdentifier "b" [2446, 2448), i=334, next=79
+                          KindQuestionToken [2448, 2449), i=335, next=80
+                          KindNumberKeyword [2450, 2457), i=336, next=0
+                      KindStringKeyword [2459, 2466), i=337, next=0
+                KindTypeLiteral [2471, 2510), i=338, next=0
+                  NodeList [2473, 2508), i=339, next=0
+                    KindConstructSignature [2473, 2508), i=340, next=0
+                      NodeList [2479, 2499), i=341, next=92
+                        KindParameter [2479, 2488), i=342, next=89
+                          KindIdentifier "a" [2479, 2480), i=343, next=88
+                          KindStringKeyword [2481, 2488), i=344, next=0
+                        KindParameter [2489, 2499), i=345, next=0
+                          KindIdentifier "b" [2489, 2491), i=346, next=91
+                          KindNumberKeyword [2492, 2499), i=347, next=0
+                      KindNumberKeyword [2501, 2508), i=348, next=0
+    KindExpressionStatement [2511, 2565), i=349, next=101
+      KindBinaryExpression [2511, 2564), i=350, next=0
+        KindIdentifier "strOrNum" [2511, 2521), i=351, next=96
+        KindEqualsToken [2521, 2523), i=352, next=97
+        KindNewExpression [2523, 2564), i=353, next=0
+          KindIdentifier "unionWithOptionalParameter2" [2527, 2555), i=354, next=99
+          NodeList [2556, 2563), i=355, next=0
+            KindStringLiteral "hello" [2556, 2563), i=356, next=0
+    KindExpressionStatement [2565, 2650), i=357, next=110
+      KindBinaryExpression [2565, 2649), i=358, next=0
+        KindIdentifier "strOrNum" [2565, 2602), i=359, next=104
+        KindEqualsToken [2602, 2604), i=360, next=105
+        KindNewExpression [2604, 2649), i=361, next=0
+          KindIdentifier "unionWithOptionalParameter2" [2608, 2636), i=362, next=107
+          NodeList [2637, 2648), i=363, next=0
+            KindStringLiteral "hello" [2637, 2644), i=364, next=109
+            KindNumericLiteral [2645, 2648), i=365, next=0
+    KindExpressionStatement [2650, 2740), i=366, next=119
+      KindBinaryExpression [2650, 2739), i=367, next=0
+        KindIdentifier "strOrNum" [2650, 2687), i=368, next=113
+        KindEqualsToken [2687, 2689), i=369, next=114
+        KindNewExpression [2689, 2739), i=370, next=0
+          KindIdentifier "unionWithOptionalParameter2" [2693, 2721), i=371, next=116
+          NodeList [2722, 2738), i=372, next=0
+            KindStringLiteral "hello" [2722, 2729), i=373, next=118
+            KindStringLiteral "hello" [2730, 2738), i=374, next=0
+    KindExpressionStatement [2740, 2814), i=375, next=125
+      KindBinaryExpression [2740, 2813), i=376, next=0
+        KindIdentifier "strOrNum" [2740, 2777), i=377, next=122
+        KindEqualsToken [2777, 2779), i=378, next=123
+        KindNewExpression [2779, 2813), i=379, next=0
+          KindIdentifier "unionWithOptionalParameter2" [2783, 2811), i=380, next=0
+    KindVariableStatement [2814, 2950), i=381, next=152
+      KindVariableDeclarationList [2814, 2949), i=382, next=0
+        NodeList [2848, 2949), i=383, next=0
+          KindVariableDeclaration [2848, 2949), i=384, next=0
+            KindIdentifier "unionWithOptionalParameter3" [2848, 2876), i=385, next=130
+            KindUnionType [2877, 2949), i=386, next=0
+              NodeList [2877, 2949), i=387, next=0
+                KindTypeLiteral [2877, 2918), i=388, next=144
+                  NodeList [2879, 2916), i=389, next=0
+                    KindConstructSignature [2879, 2916), i=390, next=0
+                      NodeList [2885, 2906), i=391, next=143
+                        KindParameter [2885, 2894), i=392, next=139
+                          KindIdentifier "a" [2885, 2886), i=393, next=138
+                          KindStringKeyword [2887, 2894), i=394, next=0
+                        KindParameter [2895, 2906), i=395, next=0
+                          KindIdentifier "b" [2895, 2897), i=396, next=141
+                          KindQuestionToken [2897, 2898), i=397, next=142
+                          KindNumberKeyword [2899, 2906), i=398, next=0
+                      KindStringKeyword [2908, 2915), i=399, next=0
+                KindTypeLiteral [2920, 2949), i=400, next=0
+                  NodeList [2922, 2947), i=401, next=0
+                    KindConstructSignature [2922, 2947), i=402, next=0
+                      NodeList [2928, 2937), i=403, next=151
+                        KindParameter [2928, 2937), i=404, next=0
+                          KindIdentifier "a" [2928, 2929), i=405, next=150
+                          KindStringKeyword [2930, 2937), i=406, next=0
+                      KindNumberKeyword [2939, 2946), i=407, next=0
+    KindExpressionStatement [2950, 3004), i=408, next=160
+      KindBinaryExpression [2950, 3003), i=409, next=0
+        KindIdentifier "strOrNum" [2950, 2960), i=410, next=155
+        KindEqualsToken [2960, 2962), i=411, next=156
+        KindNewExpression [2962, 3003), i=412, next=0
+          KindIdentifier "unionWithOptionalParameter3" [2966, 2994), i=413, next=158
+          NodeList [2995, 3002), i=414, next=0
+            KindStringLiteral "hello" [2995, 3002), i=415, next=0
+    KindExpressionStatement [3004, 3089), i=416, next=169
+      KindBinaryExpression [3004, 3088), i=417, next=0
+        KindIdentifier "strOrNum" [3004, 3041), i=418, next=163
+        KindEqualsToken [3041, 3043), i=419, next=164
+        KindNewExpression [3043, 3088), i=420, next=0
+          KindIdentifier "unionWithOptionalParameter3" [3047, 3075), i=421, next=166
+          NodeList [3076, 3087), i=422, next=0
+            KindStringLiteral "hello" [3076, 3083), i=423, next=168
+            KindNumericLiteral [3084, 3087), i=424, next=0
+    KindExpressionStatement [3089, 3158), i=425, next=178
+      KindBinaryExpression [3089, 3157), i=426, next=0
+        KindIdentifier "strOrNum" [3089, 3105), i=427, next=172
+        KindEqualsToken [3105, 3107), i=428, next=173
+        KindNewExpression [3107, 3157), i=429, next=0
+          KindIdentifier "unionWithOptionalParameter3" [3111, 3139), i=430, next=175
+          NodeList [3140, 3156), i=431, next=0
+            KindStringLiteral "hello" [3140, 3147), i=432, next=177
+            KindStringLiteral "hello" [3148, 3156), i=433, next=0
+    KindExpressionStatement [3158, 3219), i=434, next=184
+      KindBinaryExpression [3158, 3218), i=435, next=0
+        KindIdentifier "strOrNum" [3158, 3182), i=436, next=181
+        KindEqualsToken [3182, 3184), i=437, next=182
+        KindNewExpression [3184, 3218), i=438, next=0
+          KindIdentifier "unionWithOptionalParameter3" [3188, 3216), i=439, next=0
+    KindVariableStatement [3219, 3370), i=440, next=217
+      KindVariableDeclarationList [3219, 3369), i=441, next=0
+        NodeList [3253, 3369), i=442, next=0
+          KindVariableDeclaration [3253, 3369), i=443, next=0
+            KindIdentifier "unionWithRestParameter1" [3253, 3277), i=444, next=189
+            KindUnionType [3278, 3369), i=445, next=0
+              NodeList [3278, 3369), i=446, next=0
+                KindTypeLiteral [3278, 3323), i=447, next=204
+                  NodeList [3280, 3321), i=448, next=0
+                    KindConstructSignature [3280, 3321), i=449, next=0
+                      NodeList [3286, 3311), i=450, next=203
+                        KindParameter [3286, 3295), i=451, next=198
+                          KindIdentifier "a" [3286, 3287), i=452, next=197
+                          KindStringKeyword [3288, 3295), i=453, next=0
+                        KindParameter [3296, 3311), i=454, next=0
+                          KindDotDotDotToken [3296, 3300), i=455, next=200
+                          KindIdentifier "b" [3300, 3301), i=456, next=201
+                          KindArrayType [3302, 3311), i=457, next=0
+                            KindNumberKeyword [3302, 3309), i=458, next=0
+                      KindStringKeyword [3313, 3320), i=459, next=0
+                KindTypeLiteral [3325, 3369), i=460, next=0
+                  NodeList [3327, 3367), i=461, next=0
+                    KindConstructSignature [3327, 3367), i=462, next=0
+                      NodeList [3333, 3358), i=463, next=216
+                        KindParameter [3333, 3342), i=464, next=211
+                          KindIdentifier "a" [3333, 3334), i=465, next=210
+                          KindStringKeyword [3335, 3342), i=466, next=0
+                        KindParameter [3343, 3358), i=467, next=0
+                          KindDotDotDotToken [3343, 3347), i=468, next=213
+                          KindIdentifier "b" [3347, 3348), i=469, next=214
+                          KindArrayType [3349, 3358), i=470, next=0
+                            KindNumberKeyword [3349, 3356), i=471, next=0
+                      KindNumberKeyword [3360, 3367), i=472, next=0
+    KindExpressionStatement [3370, 3420), i=473, next=225
+      KindBinaryExpression [3370, 3419), i=474, next=0
+        KindIdentifier "strOrNum" [3370, 3380), i=475, next=220
+        KindEqualsToken [3380, 3382), i=476, next=221
+        KindNewExpression [3382, 3419), i=477, next=0
+          KindIdentifier "unionWithRestParameter1" [3386, 3410), i=478, next=223
+          NodeList [3411, 3418), i=479, next=0
+            KindStringLiteral "hello" [3411, 3418), i=480, next=0
+    KindExpressionStatement [3420, 3474), i=481, next=234
+      KindBinaryExpression [3420, 3473), i=482, next=0
+        KindIdentifier "strOrNum" [3420, 3430), i=483, next=228
+        KindEqualsToken [3430, 3432), i=484, next=229
+        KindNewExpression [3432, 3473), i=485, next=0
+          KindIdentifier "unionWithRestParameter1" [3436, 3460), i=486, next=231
+          NodeList [3461, 3472), i=487, next=0
+            KindStringLiteral "hello" [3461, 3468), i=488, next=233
+            KindNumericLiteral [3469, 3472), i=489, next=0
+    KindExpressionStatement [3474, 3532), i=490, next=244
+      KindBinaryExpression [3474, 3531), i=491, next=0
+        KindIdentifier "strOrNum" [3474, 3484), i=492, next=237
+        KindEqualsToken [3484, 3486), i=493, next=238
+        KindNewExpression [3486, 3531), i=494, next=0
+          KindIdentifier "unionWithRestParameter1" [3490, 3514), i=495, next=240
+          NodeList [3515, 3530), i=496, next=0
+            KindStringLiteral "hello" [3515, 3522), i=497, next=242
+            KindNumericLiteral [3523, 3526), i=498, next=243
+            KindNumericLiteral [3527, 3530), i=499, next=0
+    KindExpressionStatement [3532, 3591), i=500, next=253
+      KindBinaryExpression [3532, 3590), i=501, next=0
+        KindIdentifier "strOrNum" [3532, 3542), i=502, next=247
+        KindEqualsToken [3542, 3544), i=503, next=248
+        KindNewExpression [3544, 3590), i=504, next=0
+          KindIdentifier "unionWithRestParameter1" [3548, 3572), i=505, next=250
+          NodeList [3573, 3589), i=506, next=0
+            KindStringLiteral "hello" [3573, 3580), i=507, next=252
+            KindStringLiteral "hello" [3581, 3589), i=508, next=0
+    KindExpressionStatement [3591, 3661), i=509, next=3
+      KindBinaryExpression [3591, 3660), i=510, next=0
+        KindIdentifier "strOrNum" [3591, 3628), i=511, next=0
+        KindEqualsToken [3628, 3630), i=512, next=1
+        KindNewExpression [3630, 3660), i=513, next=0
+          KindIdentifier "unionWithRestParameter1" [3634, 3658), i=514, next=0
+    KindVariableStatement [3661, 3789), i=515, next=34
+      KindVariableDeclarationList [3661, 3788), i=516, next=0
+        NodeList [3677, 3788), i=517, next=0
+          KindVariableDeclaration [3677, 3788), i=518, next=0
+            KindIdentifier "unionWithRestParameter2" [3677, 3701), i=519, next=8
+            KindUnionType [3702, 3788), i=520, next=0
+              NodeList [3702, 3788), i=521, next=0
+                KindTypeLiteral [3702, 3747), i=522, next=23
+                  NodeList [3704, 3745), i=523, next=0
+                    KindConstructSignature [3704, 3745), i=524, next=0
+                      NodeList [3710, 3735), i=525, next=22
+                        KindParameter [3710, 3719), i=526, next=17
+                          KindIdentifier "a" [3710, 3711), i=527, next=16
+                          KindStringKeyword [3712, 3719), i=528, next=0
+                        KindParameter [3720, 3735), i=529, next=0
+                          KindDotDotDotToken [3720, 3724), i=530, next=19
+                          KindIdentifier "b" [3724, 3725), i=531, next=20
+                          KindArrayType [3726, 3735), i=532, next=0
+                            KindNumberKeyword [3726, 3733), i=533, next=0
+                      KindStringKeyword [3737, 3744), i=534, next=0
+                KindTypeLiteral [3749, 3788), i=535, next=0
+                  NodeList [3751, 3786), i=536, next=0
+                    KindConstructSignature [3751, 3786), i=537, next=0
+                      NodeList [3757, 3777), i=538, next=33
+                        KindParameter [3757, 3766), i=539, next=30
+                          KindIdentifier "a" [3757, 3758), i=540, next=29
+                          KindStringKeyword [3759, 3766), i=541, next=0
+                        KindParameter [3767, 3777), i=542, next=0
+                          KindIdentifier "b" [3767, 3769), i=543, next=32
+                          KindNumberKeyword [3770, 3777), i=544, next=0
+                      KindNumberKeyword [3779, 3786), i=545, next=0
+    KindExpressionStatement [3789, 3839), i=546, next=42
+      KindBinaryExpression [3789, 3838), i=547, next=0
+        KindIdentifier "strOrNum" [3789, 3799), i=548, next=37
+        KindEqualsToken [3799, 3801), i=549, next=38
+        KindNewExpression [3801, 3838), i=550, next=0
+          KindIdentifier "unionWithRestParameter2" [3805, 3829), i=551, next=40
+          NodeList [3830, 3837), i=552, next=0
+            KindStringLiteral "hello" [3830, 3837), i=553, next=0
+    KindExpressionStatement [3839, 3920), i=554, next=51
+      KindBinaryExpression [3839, 3919), i=555, next=0
+        KindIdentifier "strOrNum" [3839, 3876), i=556, next=45
+        KindEqualsToken [3876, 3878), i=557, next=46
+        KindNewExpression [3878, 3919), i=558, next=0
+          KindIdentifier "unionWithRestParameter2" [3882, 3906), i=559, next=48
+          NodeList [3907, 3918), i=560, next=0
+            KindStringLiteral "hello" [3907, 3914), i=561, next=50
+            KindNumericLiteral [3915, 3918), i=562, next=0
+    KindExpressionStatement [3920, 4005), i=563, next=61
+      KindBinaryExpression [3920, 4004), i=564, next=0
+        KindIdentifier "strOrNum" [3920, 3957), i=565, next=54
+        KindEqualsToken [3957, 3959), i=566, next=55
+        KindNewExpression [3959, 4004), i=567, next=0
+          KindIdentifier "unionWithRestParameter2" [3963, 3987), i=568, next=57
+          NodeList [3988, 4003), i=569, next=0
+            KindStringLiteral "hello" [3988, 3995), i=570, next=59
+            KindNumericLiteral [3996, 3999), i=571, next=60
+            KindNumericLiteral [4000, 4003), i=572, next=0
+    KindExpressionStatement [4005, 4091), i=573, next=70
+      KindBinaryExpression [4005, 4090), i=574, next=0
+        KindIdentifier "strOrNum" [4005, 4042), i=575, next=64
+        KindEqualsToken [4042, 4044), i=576, next=65
+        KindNewExpression [4044, 4090), i=577, next=0
+          KindIdentifier "unionWithRestParameter2" [4048, 4072), i=578, next=67
+          NodeList [4073, 4089), i=579, next=0
+            KindStringLiteral "hello" [4073, 4080), i=580, next=69
+            KindStringLiteral "hello" [4081, 4089), i=581, next=0
+    KindExpressionStatement [4091, 4161), i=582, next=76
+      KindBinaryExpression [4091, 4160), i=583, next=0
+        KindIdentifier "strOrNum" [4091, 4128), i=584, next=73
+        KindEqualsToken [4128, 4130), i=585, next=74
+        KindNewExpression [4130, 4160), i=586, next=0
+          KindIdentifier "unionWithRestParameter2" [4134, 4158), i=587, next=0
+    KindVariableStatement [4161, 4296), i=588, next=104
+      KindVariableDeclarationList [4161, 4295), i=589, next=0
+        NodeList [4195, 4295), i=590, next=0
+          KindVariableDeclaration [4195, 4295), i=591, next=0
+            KindIdentifier "unionWithRestParameter3" [4195, 4219), i=592, next=81
+            KindUnionType [4220, 4295), i=593, next=0
+              NodeList [4220, 4295), i=594, next=0
+                KindTypeLiteral [4220, 4265), i=595, next=96
+                  NodeList [4222, 4263), i=596, next=0
+                    KindConstructSignature [4222, 4263), i=597, next=0
+                      NodeList [4228, 4253), i=598, next=95
+                        KindParameter [4228, 4237), i=599, next=90
+                          KindIdentifier "a" [4228, 4229), i=600, next=89
+                          KindStringKeyword [4230, 4237), i=601, next=0
+                        KindParameter [4238, 4253), i=602, next=0
+                          KindDotDotDotToken [4238, 4242), i=603, next=92
+                          KindIdentifier "b" [4242, 4243), i=604, next=93
+                          KindArrayType [4244, 4253), i=605, next=0
+                            KindNumberKeyword [4244, 4251), i=606, next=0
+                      KindStringKeyword [4255, 4262), i=607, next=0
+                KindTypeLiteral [4267, 4295), i=608, next=0
+                  NodeList [4269, 4293), i=609, next=0
+                    KindConstructSignature [4269, 4293), i=610, next=0
+                      NodeList [4275, 4284), i=611, next=103
+                        KindParameter [4275, 4284), i=612, next=0
+                          KindIdentifier "a" [4275, 4276), i=613, next=102
+                          KindStringKeyword [4277, 4284), i=614, next=0
+                      KindNumberKeyword [4286, 4293), i=615, next=0
+    KindExpressionStatement [4296, 4346), i=616, next=112
+      KindBinaryExpression [4296, 4345), i=617, next=0
+        KindIdentifier "strOrNum" [4296, 4306), i=618, next=107
+        KindEqualsToken [4306, 4308), i=619, next=108
+        KindNewExpression [4308, 4345), i=620, next=0
+          KindIdentifier "unionWithRestParameter3" [4312, 4336), i=621, next=110
+          NodeList [4337, 4344), i=622, next=0
+            KindStringLiteral "hello" [4337, 4344), i=623, next=0
+    KindExpressionStatement [4346, 4427), i=624, next=121
+      KindBinaryExpression [4346, 4426), i=625, next=0
+        KindIdentifier "strOrNum" [4346, 4383), i=626, next=115
+        KindEqualsToken [4383, 4385), i=627, next=116
+        KindNewExpression [4385, 4426), i=628, next=0
+          KindIdentifier "unionWithRestParameter3" [4389, 4413), i=629, next=118
+          NodeList [4414, 4425), i=630, next=0
+            KindStringLiteral "hello" [4414, 4421), i=631, next=120
+            KindNumericLiteral [4422, 4425), i=632, next=0
+    KindExpressionStatement [4427, 4491), i=633, next=131
+      KindBinaryExpression [4427, 4490), i=634, next=0
+        KindIdentifier "strOrNum" [4427, 4443), i=635, next=124
+        KindEqualsToken [4443, 4445), i=636, next=125
+        KindNewExpression [4445, 4490), i=637, next=0
+          KindIdentifier "unionWithRestParameter3" [4449, 4473), i=638, next=127
+          NodeList [4474, 4489), i=639, next=0
+            KindStringLiteral "hello" [4474, 4481), i=640, next=129
+            KindNumericLiteral [4482, 4485), i=641, next=130
+            KindNumericLiteral [4486, 4489), i=642, next=0
+    KindExpressionStatement [4491, 4556), i=643, next=140
+      KindBinaryExpression [4491, 4555), i=644, next=0
+        KindIdentifier "strOrNum" [4491, 4507), i=645, next=134
+        KindEqualsToken [4507, 4509), i=646, next=135
+        KindNewExpression [4509, 4555), i=647, next=0
+          KindIdentifier "unionWithRestParameter3" [4513, 4537), i=648, next=137
+          NodeList [4538, 4554), i=649, next=0
+            KindStringLiteral "hello" [4538, 4545), i=650, next=139
+            KindStringLiteral "hello" [4546, 4554), i=651, next=0
+    KindExpressionStatement [4556, 4613), i=652, next=146
+      KindBinaryExpression [4556, 4612), i=653, next=0
+        KindIdentifier "strOrNum" [4556, 4580), i=654, next=143
+        KindEqualsToken [4580, 4582), i=655, next=144
+        KindNewExpression [4582, 4612), i=656, next=0
+          KindIdentifier "unionWithRestParameter3" [4586, 4610), i=657, next=0
+    KindVariableStatement [4613, 4743), i=658, next=169
+      KindVariableDeclarationList [4613, 4742), i=659, next=0
+        NodeList [4647, 4742), i=660, next=0
+          KindVariableDeclaration [4647, 4742), i=661, next=0
+            KindIdentifier "unionWithAbstractSignature" [4647, 4674), i=662, next=151
+            KindUnionType [4675, 4742), i=663, next=0
+              NodeList [4675, 4742), i=664, next=0
+                KindParenthesizedType [4675, 4712), i=665, next=162
+                  KindConstructorType [4677, 4711), i=666, next=0
+                    NodeList [4677, 4685), i=667, next=157
+                      KindAbstractKeyword [4677, 4685), i=668, next=0
+                    NodeList [4691, 4700), i=669, next=161
+                      KindParameter [4691, 4700), i=670, next=0
+                        KindIdentifier "a" [4691, 4692), i=671, next=160
+                        KindStringKeyword [4693, 4700), i=672, next=0
+                    KindStringKeyword [4704, 4711), i=673, next=0
+                KindParenthesizedType [4714, 4742), i=674, next=0
+                  KindConstructorType [4716, 4741), i=675, next=0
+                    NodeList [4721, 4730), i=676, next=168
+                      KindParameter [4721, 4730), i=677, next=0
+                        KindIdentifier "a" [4721, 4722), i=678, next=167
+                        KindStringKeyword [4723, 4730), i=679, next=0
+                    KindStringKeyword [4734, 4741), i=680, next=0
+    KindExpressionStatement [4743, 4785), i=681, next=0
+      KindNewExpression [4743, 4784), i=682, next=0
+        KindIdentifier "unionWithAbstractSignature" [4748, 4775), i=683, next=172
+        NodeList [4776, 4783), i=684, next=0
+          KindStringLiteral "hello" [4776, 4783), i=685, next=0

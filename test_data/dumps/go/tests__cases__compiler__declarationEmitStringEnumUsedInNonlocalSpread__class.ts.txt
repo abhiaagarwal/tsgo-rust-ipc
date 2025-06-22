@@ -1,0 +1,57 @@
+KindSourceFile [0, 333), i=1, next=0
+  NodeList [0, 332), i=2, next=0
+    KindEnumDeclaration [0, 82), i=3, next=15
+      NodeList [0, 12), i=4, next=7
+        KindExportKeyword [0, 6), i=5, next=6
+        KindConstKeyword [6, 12), i=6, next=0
+      KindIdentifier "TestEnum" [17, 26), i=7, next=8
+      NodeList [28, 79), i=8, next=0
+        KindEnumMember [28, 50), i=9, next=12
+          KindIdentifier "Test1" [28, 39), i=10, next=11
+          KindStringLiteral "123123" [41, 50), i=11, next=0
+        KindEnumMember [51, 78), i=12, next=0
+          KindIdentifier "Test2" [51, 62), i=13, next=14
+          KindStringLiteral "12312312312" [64, 78), i=14, next=0
+    KindInterfaceDeclaration [82, 175), i=15, next=32
+      NodeList [82, 92), i=16, next=18
+        KindExportKeyword [82, 92), i=17, next=0
+      KindIdentifier "ITest" [102, 108), i=18, next=19
+      NodeList [110, 172), i=19, next=0
+        KindPropertySignature [110, 141), i=20, next=26
+          KindComputedPropertyName [110, 132), i=21, next=25
+            KindPropertyAccessExpression [117, 131), i=22, next=0
+              KindIdentifier "TestEnum" [117, 125), i=23, next=24
+              KindIdentifier "Test1" [126, 131), i=24, next=0
+          KindStringKeyword [133, 140), i=25, next=0
+        KindPropertySignature [141, 172), i=26, next=0
+          KindComputedPropertyName [141, 163), i=27, next=31
+            KindPropertyAccessExpression [148, 162), i=28, next=0
+              KindIdentifier "TestEnum" [148, 156), i=29, next=30
+              KindIdentifier "Test2" [157, 162), i=30, next=0
+          KindStringKeyword [164, 171), i=31, next=0
+    KindClassDeclaration [175, 332), i=32, next=0
+      NodeList [175, 185), i=33, next=35
+        KindExportKeyword [175, 185), i=34, next=0
+      KindIdentifier "A" [191, 193), i=35, next=36
+      NodeList [195, 329), i=36, next=0
+        KindMethodDeclaration [195, 329), i=37, next=0
+          KindIdentifier "getA" [195, 205), i=38, next=39
+          KindTypeReference [208, 214), i=39, next=41
+            KindIdentifier "ITest" [208, 214), i=40, next=0
+          KindBlock [214, 329), i=41, next=0
+            NodeList [216, 322), i=42, next=0
+              KindReturnStatement [216, 322), i=43, next=0
+                KindObjectLiteralExpression [232, 321), i=44, next=0
+                  NodeList [234, 310), i=45, next=0
+                    KindPropertyAssignment [234, 271), i=46, next=52
+                      KindComputedPropertyName [234, 264), i=47, next=51
+                        KindPropertyAccessExpression [249, 263), i=48, next=0
+                          KindIdentifier "TestEnum" [249, 257), i=49, next=50
+                          KindIdentifier "Test1" [258, 263), i=50, next=0
+                      KindStringLiteral "123" [265, 271), i=51, next=0
+                    KindPropertyAssignment [272, 309), i=52, next=0
+                      KindComputedPropertyName [272, 302), i=53, next=57
+                        KindPropertyAccessExpression [287, 301), i=54, next=0
+                          KindIdentifier "TestEnum" [287, 295), i=55, next=56
+                          KindIdentifier "Test2" [296, 301), i=56, next=0
+                      KindStringLiteral "123" [303, 309), i=57, next=0

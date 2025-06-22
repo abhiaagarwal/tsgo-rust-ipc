@@ -1,0 +1,64 @@
+KindSourceFile [0, 246), i=1, next=0
+  NodeList [0, 244), i=2, next=0
+    KindInterfaceDeclaration [0, 98), i=3, next=27
+      KindIdentifier "Alpha" [9, 15), i=4, next=5
+      NodeList [16, 17), i=5, next=8
+        KindTypeParameter [16, 17), i=6, next=0
+          KindIdentifier "T" [16, 17), i=7, next=0
+      NodeList [20, 95), i=8, next=0
+        KindMethodSignature [20, 56), i=9, next=21
+          KindIdentifier "takesArgOfT" [20, 37), i=10, next=11
+          NodeList [38, 44), i=11, next=16
+            KindParameter [38, 44), i=12, next=0
+              KindIdentifier "arg" [38, 41), i=13, next=14
+              KindTypeReference [42, 44), i=14, next=0
+                KindIdentifier "T" [42, 44), i=15, next=0
+          KindTypeReference [46, 55), i=16, next=0
+            KindIdentifier "Alpha" [46, 52), i=17, next=18
+            NodeList [53, 54), i=18, next=0
+              KindTypeReference [53, 54), i=19, next=0
+                KindIdentifier "T" [53, 54), i=20, next=0
+        KindMethodSignature [56, 95), i=21, next=0
+          KindIdentifier "makeBetaOfNumber" [56, 78), i=22, next=23
+          KindTypeReference [81, 94), i=23, next=0
+            KindIdentifier "Beta" [81, 86), i=24, next=25
+            NodeList [87, 93), i=25, next=0
+              KindNumberKeyword [87, 93), i=26, next=0
+    KindInterfaceDeclaration [98, 139), i=27, next=40
+      KindIdentifier "Beta" [109, 114), i=28, next=29
+      NodeList [115, 116), i=29, next=32
+        KindTypeParameter [115, 116), i=30, next=0
+          KindIdentifier "T" [115, 116), i=31, next=0
+      NodeList [117, 134), i=32, next=0
+        KindHeritageClause [117, 134), i=33, next=0
+          NodeList [125, 134), i=34, next=0
+            KindExpressionWithTypeArguments [125, 134), i=35, next=0
+              KindIdentifier "Alpha" [125, 131), i=36, next=37
+              NodeList [132, 133), i=37, next=0
+                KindTypeReference [132, 133), i=38, next=0
+                  KindIdentifier "T" [132, 133), i=39, next=0
+    KindVariableStatement [139, 168), i=40, next=49
+      KindVariableDeclarationList [139, 167), i=41, next=0
+        NodeList [146, 167), i=42, next=0
+          KindVariableDeclaration [146, 167), i=43, next=0
+            KindIdentifier "alpha" [146, 152), i=44, next=45
+            KindTypeReference [153, 167), i=45, next=0
+              KindIdentifier "Alpha" [153, 159), i=46, next=47
+              NodeList [160, 166), i=47, next=0
+                KindNumberKeyword [160, 166), i=48, next=0
+    KindVariableStatement [168, 214), i=49, next=58
+      KindVariableDeclarationList [168, 213), i=50, next=0
+        NodeList [173, 213), i=51, next=0
+          KindVariableDeclaration [173, 213), i=52, next=0
+            KindIdentifier "betaOfNumber" [173, 186), i=53, next=54
+            KindCallExpression [188, 213), i=54, next=0
+              KindPropertyAccessExpression [188, 211), i=55, next=0
+                KindIdentifier "alpha" [188, 194), i=56, next=57
+                KindIdentifier "makeBetaOfNumber" [195, 211), i=57, next=0
+    KindExpressionStatement [214, 244), i=58, next=0
+      KindCallExpression [214, 243), i=59, next=0
+        KindPropertyAccessExpression [214, 240), i=60, next=63
+          KindIdentifier "betaOfNumber" [214, 228), i=61, next=62
+          KindIdentifier "takesArgOfT" [229, 240), i=62, next=0
+        NodeList [241, 242), i=63, next=0
+          KindNumericLiteral [241, 242), i=64, next=0

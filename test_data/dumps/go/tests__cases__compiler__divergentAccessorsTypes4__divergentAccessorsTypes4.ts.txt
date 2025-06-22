@@ -1,0 +1,114 @@
+KindSourceFile [0, 441), i=1, next=0
+  NodeList [0, 431), i=2, next=0
+    KindClassDeclaration [0, 104), i=3, next=26
+      KindIdentifier "One" [5, 9), i=4, next=5
+      NodeList [11, 102), i=5, next=0
+        KindGetAccessor [11, 48), i=6, next=13
+          KindIdentifier "prop1" [17, 23), i=7, next=8
+          KindStringKeyword [26, 33), i=8, next=9
+          KindBlock [33, 48), i=9, next=0
+            NodeList [35, 46), i=10, next=0
+              KindReturnStatement [35, 46), i=11, next=0
+                KindStringLiteral "" [42, 45), i=12, next=0
+        KindSetAccessor [48, 84), i=13, next=23
+          KindIdentifier "prop1" [54, 60), i=14, next=15
+          NodeList [61, 79), i=15, next=22
+            KindParameter [61, 79), i=16, next=0
+              KindIdentifier "s" [61, 62), i=17, next=18
+              KindUnionType [63, 79), i=18, next=0
+                NodeList [63, 79), i=19, next=0
+                  KindStringKeyword [63, 70), i=20, next=21
+                  KindNumberKeyword [72, 79), i=21, next=0
+          KindBlock [80, 84), i=22, next=0
+        KindPropertyDeclaration [84, 102), i=23, next=0
+          KindIdentifier "prop2" [84, 93), i=24, next=25
+          KindNumberKeyword [94, 101), i=25, next=0
+    KindClassDeclaration [104, 270), i=26, next=66
+      KindIdentifier "Two" [111, 115), i=27, next=28
+      NodeList [117, 267), i=28, next=0
+        KindGetAccessor [117, 160), i=29, next=37
+          KindIdentifier "prop1" [123, 129), i=30, next=31
+          KindLiteralType [132, 140), i=31, next=33
+            KindStringLiteral "hello" [132, 140), i=32, next=0
+          KindBlock [140, 160), i=33, next=0
+            NodeList [142, 158), i=34, next=0
+              KindReturnStatement [142, 158), i=35, next=0
+                KindStringLiteral "hello" [149, 157), i=36, next=0
+        KindSetAccessor [160, 197), i=37, next=48
+          KindIdentifier "prop1" [166, 172), i=38, next=39
+          NodeList [173, 192), i=39, next=47
+            KindParameter [173, 192), i=40, next=0
+              KindIdentifier "s" [173, 174), i=41, next=42
+              KindUnionType [175, 192), i=42, next=0
+                NodeList [175, 192), i=43, next=0
+                  KindLiteralType [175, 183), i=44, next=46
+                    KindStringLiteral "hello" [175, 183), i=45, next=0
+                  KindNumberKeyword [185, 192), i=46, next=0
+          KindBlock [193, 197), i=47, next=0
+        KindGetAccessor [197, 235), i=48, next=55
+          KindIdentifier "prop2" [204, 210), i=49, next=50
+          KindStringKeyword [213, 220), i=50, next=51
+          KindBlock [220, 235), i=51, next=0
+            NodeList [222, 233), i=52, next=0
+              KindReturnStatement [222, 233), i=53, next=0
+                KindStringLiteral "" [229, 232), i=54, next=0
+        KindSetAccessor [235, 267), i=55, next=0
+          KindIdentifier "prop2" [241, 247), i=56, next=57
+          NodeList [248, 262), i=57, next=65
+            KindParameter [248, 262), i=58, next=0
+              KindIdentifier "s" [248, 249), i=59, next=60
+              KindUnionType [250, 262), i=60, next=0
+                NodeList [250, 262), i=61, next=0
+                  KindStringKeyword [250, 257), i=62, next=63
+                  KindLiteralType [259, 262), i=63, next=0
+                    KindNumericLiteral [259, 262), i=64, next=0
+          KindBlock [263, 267), i=65, next=0
+    KindVariableStatement [270, 299), i=66, next=79
+      NodeList [270, 279), i=67, next=69
+        KindDeclareKeyword [270, 279), i=68, next=0
+      KindVariableDeclarationList [279, 298), i=69, next=0
+        NodeList [285, 298), i=70, next=0
+          KindVariableDeclaration [285, 298), i=71, next=0
+            KindIdentifier "i" [285, 287), i=72, next=73
+            KindIntersectionType [288, 298), i=73, next=0
+              NodeList [288, 298), i=74, next=0
+                KindTypeReference [288, 292), i=75, next=77
+                  KindIdentifier "One" [288, 292), i=76, next=0
+                KindTypeReference [294, 298), i=77, next=0
+                  KindIdentifier "Two" [294, 298), i=78, next=0
+    KindExpressionStatement [299, 320), i=79, next=83
+      KindPropertyAccessExpression [299, 319), i=80, next=0
+        KindIdentifier "i" [299, 313), i=81, next=82
+        KindIdentifier "prop1" [314, 319), i=82, next=0
+    KindExpressionStatement [320, 354), i=83, next=90
+      KindBinaryExpression [320, 353), i=84, next=0
+        KindPropertyAccessExpression [320, 348), i=85, next=88
+          KindIdentifier "i" [320, 342), i=86, next=87
+          KindIdentifier "prop1" [343, 348), i=87, next=0
+        KindEqualsToken [348, 350), i=88, next=89
+        KindNumericLiteral [350, 353), i=89, next=0
+    KindExpressionStatement [354, 373), i=90, next=97
+      KindBinaryExpression [354, 372), i=91, next=0
+        KindPropertyAccessExpression [354, 362), i=92, next=95
+          KindIdentifier "i" [354, 356), i=93, next=94
+          KindIdentifier "prop1" [357, 362), i=94, next=0
+        KindEqualsToken [362, 364), i=95, next=96
+        KindStringLiteral "hello" [364, 372), i=96, next=0
+    KindExpressionStatement [373, 392), i=97, next=101
+      KindPropertyAccessExpression [373, 391), i=98, next=0
+        KindIdentifier "i" [373, 385), i=99, next=100
+        KindIdentifier "prop2" [386, 391), i=100, next=0
+    KindExpressionStatement [392, 412), i=101, next=108
+      KindBinaryExpression [392, 411), i=102, next=0
+        KindPropertyAccessExpression [392, 406), i=103, next=106
+          KindIdentifier "i" [392, 400), i=104, next=105
+          KindIdentifier "prop2" [401, 406), i=105, next=0
+        KindEqualsToken [406, 408), i=106, next=107
+        KindNumericLiteral [408, 411), i=107, next=0
+    KindExpressionStatement [412, 431), i=108, next=0
+      KindBinaryExpression [412, 430), i=109, next=0
+        KindPropertyAccessExpression [412, 420), i=110, next=113
+          KindIdentifier "i" [412, 414), i=111, next=112
+          KindIdentifier "prop2" [415, 420), i=112, next=0
+        KindEqualsToken [420, 422), i=113, next=114
+        KindStringLiteral "hello" [422, 430), i=114, next=0

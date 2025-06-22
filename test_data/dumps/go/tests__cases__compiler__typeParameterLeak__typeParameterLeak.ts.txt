@@ -1,0 +1,117 @@
+KindSourceFile [0, 379), i=1, next=0
+  NodeList [0, 377), i=2, next=0
+    KindInterfaceDeclaration [0, 28), i=3, next=13
+      KindIdentifier "Box" [9, 13), i=4, next=5
+      NodeList [14, 15), i=5, next=8
+        KindTypeParameter [14, 15), i=6, next=0
+          KindIdentifier "T" [14, 15), i=7, next=0
+      NodeList [18, 26), i=8, next=0
+        KindPropertySignature [18, 26), i=9, next=0
+          KindIdentifier "data" [18, 23), i=10, next=11
+          KindTypeReference [24, 26), i=11, next=0
+            KindIdentifier "T" [24, 26), i=12, next=0
+    KindTypeAliasDeclaration [28, 86), i=13, next=33
+      KindIdentifier "BoxTypes" [34, 43), i=14, next=15
+      KindUnionType [45, 85), i=15, next=0
+        NodeList [45, 85), i=16, next=0
+          KindTypeReference [45, 64), i=17, next=25
+            KindIdentifier "Box" [45, 49), i=18, next=19
+            NodeList [50, 63), i=19, next=0
+              KindTypeLiteral [50, 63), i=20, next=0
+                NodeList [51, 61), i=21, next=0
+                  KindPropertySignature [51, 61), i=22, next=0
+                    KindIdentifier "x" [51, 53), i=23, next=24
+                    KindStringKeyword [54, 61), i=24, next=0
+          KindTypeReference [66, 85), i=25, next=0
+            KindIdentifier "Box" [66, 70), i=26, next=27
+            NodeList [71, 84), i=27, next=0
+              KindTypeLiteral [71, 84), i=28, next=0
+                NodeList [72, 82), i=29, next=0
+                  KindPropertySignature [72, 82), i=30, next=0
+                    KindIdentifier "y" [72, 74), i=31, next=32
+                    KindStringKeyword [75, 82), i=32, next=0
+    KindTypeAliasDeclaration [86, 204), i=33, next=64
+      KindIdentifier "BoxFactoryFactory" [94, 112), i=34, next=35
+      NodeList [113, 117), i=35, next=38
+        KindTypeParameter [113, 117), i=36, next=0
+          KindIdentifier "TBox" [113, 117), i=37, next=0
+      KindConditionalType [120, 203), i=38, next=0
+        KindTypeReference [120, 125), i=39, next=41
+          KindIdentifier "TBox" [120, 125), i=40, next=0
+        KindTypeReference [133, 146), i=41, next=47
+          KindIdentifier "Box" [133, 137), i=42, next=43
+          NodeList [138, 145), i=43, next=0
+            KindInferType [138, 145), i=44, next=0
+              KindTypeParameter [143, 145), i=45, next=0
+                KindIdentifier "T" [143, 145), i=46, next=0
+        KindTypeLiteral [148, 195), i=47, next=63
+          NodeList [150, 192), i=48, next=0
+            KindCallSignature [150, 192), i=49, next=0
+              NodeList [155, 161), i=50, next=55
+                KindParameter [155, 161), i=51, next=0
+                  KindIdentifier "arg" [155, 158), i=52, next=53
+                  KindTypeReference [159, 161), i=53, next=0
+                    KindIdentifier "T" [159, 161), i=54, next=0
+              KindUnionType [163, 192), i=55, next=0
+                NodeList [163, 192), i=56, next=0
+                  KindTypeReference [163, 180), i=57, next=62
+                    KindIdentifier "BoxFactory" [163, 174), i=58, next=59
+                    NodeList [175, 179), i=59, next=0
+                      KindTypeReference [175, 179), i=60, next=0
+                        KindIdentifier "TBox" [175, 179), i=61, next=0
+                  KindUndefinedKeyword [182, 192), i=62, next=0
+        KindNeverKeyword [197, 203), i=63, next=0
+    KindInterfaceDeclaration [204, 252), i=64, next=74
+      KindIdentifier "BoxFactory" [217, 228), i=65, next=66
+      NodeList [229, 230), i=66, next=69
+        KindTypeParameter [229, 230), i=67, next=0
+          KindIdentifier "A" [229, 230), i=68, next=0
+      NodeList [233, 249), i=69, next=0
+        KindMethodSignature [233, 249), i=70, next=0
+          KindIdentifier "getBox" [233, 243), i=71, next=72
+          KindTypeReference [246, 248), i=72, next=0
+            KindIdentifier "A" [246, 248), i=73, next=0
+    KindVariableStatement [252, 301), i=74, next=86
+      NodeList [252, 263), i=75, next=77
+        KindDeclareKeyword [252, 263), i=76, next=0
+      KindVariableDeclarationList [263, 300), i=77, next=0
+        NodeList [269, 300), i=78, next=0
+          KindVariableDeclaration [269, 300), i=79, next=0
+            KindIdentifier "f" [269, 271), i=80, next=81
+            KindTypeReference [272, 300), i=81, next=0
+              KindIdentifier "BoxFactoryFactory" [272, 290), i=82, next=83
+              NodeList [291, 299), i=83, next=0
+                KindTypeReference [291, 299), i=84, next=0
+                  KindIdentifier "BoxTypes" [291, 299), i=85, next=0
+    KindVariableStatement [301, 343), i=86, next=106
+      KindVariableDeclarationList [301, 342), i=87, next=0
+        NodeList [308, 342), i=88, next=0
+          KindVariableDeclaration [308, 342), i=89, next=0
+            KindIdentifier "b" [308, 310), i=90, next=91
+            KindCallExpression [312, 342), i=91, next=0
+              KindPropertyAccessExpression [312, 340), i=92, next=0
+                KindCallExpression [312, 332), i=93, next=104
+                  KindIdentifier "f" [312, 314), i=94, next=95
+                  NodeList [315, 331), i=95, next=0
+                    KindObjectLiteralExpression [315, 331), i=96, next=0
+                      NodeList [316, 329), i=97, next=0
+                        KindPropertyAssignment [316, 322), i=98, next=101
+                          KindIdentifier "x" [316, 318), i=99, next=100
+                          KindStringLiteral "" [319, 322), i=100, next=0
+                        KindPropertyAssignment [323, 329), i=101, next=0
+                          KindIdentifier "y" [323, 325), i=102, next=103
+                          KindStringLiteral "" [326, 329), i=103, next=0
+                KindQuestionDotToken [332, 334), i=104, next=105
+                KindIdentifier "getBox" [334, 340), i=105, next=0
+    KindIfStatement [343, 377), i=106, next=0
+      KindIdentifier "b" [349, 350), i=107, next=108
+      KindBlock [351, 377), i=108, next=0
+        NodeList [353, 374), i=109, next=0
+          KindVariableStatement [353, 374), i=110, next=0
+            KindVariableDeclarationList [353, 373), i=111, next=0
+              NodeList [362, 373), i=112, next=0
+                KindVariableDeclaration [362, 373), i=113, next=0
+                  KindIdentifier "x" [362, 364), i=114, next=115
+                  KindPropertyAccessExpression [366, 373), i=115, next=0
+                    KindIdentifier "b" [366, 368), i=116, next=117
+                    KindIdentifier "data" [369, 373), i=117, next=0

@@ -1,0 +1,75 @@
+KindSourceFile [0, 187), i=1, next=0
+  NodeList [0, 187), i=2, next=0
+    KindInterfaceDeclaration [0, 29), i=3, next=15
+      KindIdentifier "A" [9, 11), i=4, next=5
+      NodeList [13, 27), i=5, next=0
+        KindPropertySignature [13, 19), i=6, next=10
+          KindIdentifier "x" [13, 15), i=7, next=8
+          KindLiteralType [16, 18), i=8, next=0
+            KindNumericLiteral [16, 18), i=9, next=0
+        KindPropertySignature [19, 27), i=10, next=0
+          KindIdentifier "y" [19, 21), i=11, next=12
+          KindArrayType [22, 26), i=12, next=0
+            KindTypeReference [22, 24), i=13, next=0
+              KindIdentifier "C" [22, 24), i=14, next=0
+    KindInterfaceDeclaration [29, 61), i=15, next=27
+      KindIdentifier "B" [40, 42), i=16, next=17
+      NodeList [44, 59), i=17, next=0
+        KindPropertySignature [44, 50), i=18, next=22
+          KindIdentifier "x" [44, 46), i=19, next=20
+          KindLiteralType [47, 49), i=20, next=0
+            KindNumericLiteral [47, 49), i=21, next=0
+        KindPropertySignature [50, 59), i=22, next=0
+          KindIdentifier "y" [50, 52), i=23, next=24
+          KindArrayType [53, 58), i=24, next=0
+            KindTypeReference [53, 56), i=25, next=0
+              KindIdentifier "CD" [53, 56), i=26, next=0
+    KindInterfaceDeclaration [61, 84), i=27, next=34
+      KindIdentifier "C" [72, 74), i=28, next=29
+      NodeList [76, 82), i=29, next=0
+        KindPropertySignature [76, 82), i=30, next=0
+          KindIdentifier "x" [76, 78), i=31, next=32
+          KindLiteralType [79, 81), i=32, next=0
+            KindNumericLiteral [79, 81), i=33, next=0
+    KindInterfaceDeclaration [84, 107), i=34, next=41
+      KindIdentifier "D" [95, 97), i=35, next=36
+      NodeList [99, 105), i=36, next=0
+        KindPropertySignature [99, 105), i=37, next=0
+          KindIdentifier "x" [99, 101), i=38, next=39
+          KindLiteralType [102, 104), i=39, next=0
+            KindNumericLiteral [102, 104), i=40, next=0
+    KindTypeAliasDeclaration [107, 125), i=41, next=49
+      KindIdentifier "AB" [113, 116), i=42, next=43
+      KindUnionType [118, 124), i=43, next=0
+        NodeList [118, 124), i=44, next=0
+          KindTypeReference [118, 120), i=45, next=47
+            KindIdentifier "A" [118, 120), i=46, next=0
+          KindTypeReference [122, 124), i=47, next=0
+            KindIdentifier "B" [122, 124), i=48, next=0
+    KindTypeAliasDeclaration [125, 143), i=49, next=57
+      KindIdentifier "CD" [131, 134), i=50, next=51
+      KindUnionType [136, 142), i=51, next=0
+        NodeList [136, 142), i=52, next=0
+          KindTypeReference [136, 138), i=53, next=55
+            KindIdentifier "C" [136, 138), i=54, next=0
+          KindTypeReference [140, 142), i=55, next=0
+            KindIdentifier "D" [140, 142), i=56, next=0
+    KindVariableStatement [143, 170), i=57, next=70
+      NodeList [143, 152), i=58, next=60
+        KindDeclareKeyword [143, 152), i=59, next=0
+      KindVariableDeclarationList [152, 169), i=60, next=0
+        NodeList [156, 169), i=61, next=0
+          KindVariableDeclaration [156, 162), i=62, next=66
+            KindIdentifier "x" [156, 158), i=63, next=64
+            KindTypeReference [159, 162), i=64, next=0
+              KindIdentifier "AB" [159, 162), i=65, next=0
+          KindVariableDeclaration [163, 169), i=66, next=0
+            KindIdentifier "y" [163, 165), i=67, next=68
+            KindTypeReference [166, 169), i=68, next=0
+              KindIdentifier "CD" [166, 169), i=69, next=0
+    KindForOfStatement [170, 187), i=70, next=0
+      KindIdentifier "y" [177, 178), i=71, next=72
+      KindPropertyAccessExpression [181, 185), i=72, next=75
+        KindIdentifier "x" [181, 183), i=73, next=74
+        KindIdentifier "y" [184, 185), i=74, next=0
+      KindEmptyStatement [186, 187), i=75, next=0

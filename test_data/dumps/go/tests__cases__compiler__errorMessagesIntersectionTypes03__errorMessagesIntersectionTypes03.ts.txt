@@ -1,0 +1,101 @@
+KindSourceFile [0, 317), i=1, next=0
+  NodeList [0, 317), i=2, next=0
+    KindInterfaceDeclaration [0, 24), i=3, next=8
+      KindIdentifier "A" [9, 11), i=4, next=5
+      NodeList [13, 21), i=5, next=0
+        KindPropertySignature [13, 21), i=6, next=0
+          KindIdentifier "a" [13, 20), i=7, next=0
+    KindInterfaceDeclaration [24, 52), i=8, next=13
+      KindIdentifier "B" [37, 39), i=9, next=10
+      NodeList [41, 49), i=10, next=0
+        KindPropertySignature [41, 49), i=11, next=0
+          KindIdentifier "b" [41, 48), i=12, next=0
+    KindFunctionDeclaration [52, 317), i=13, next=0
+      KindIdentifier "f" [64, 66), i=14, next=15
+      NodeList [67, 94), i=15, next=26
+        KindTypeParameter [67, 68), i=16, next=18
+          KindIdentifier "T" [67, 68), i=17, next=0
+        KindTypeParameter [69, 81), i=18, next=22
+          KindIdentifier "U" [69, 71), i=19, next=20
+          KindTypeReference [79, 81), i=20, next=0
+            KindIdentifier "A" [79, 81), i=21, next=0
+        KindTypeParameter [82, 94), i=22, next=0
+          KindIdentifier "V" [82, 84), i=23, next=24
+          KindTypeReference [92, 94), i=24, next=0
+            KindIdentifier "U" [92, 94), i=25, next=0
+      KindVoidKeyword [98, 103), i=26, next=27
+      KindBlock [103, 317), i=27, next=0
+        NodeList [105, 314), i=28, next=0
+          KindVariableStatement [105, 120), i=29, next=36
+            KindVariableDeclarationList [105, 119), i=30, next=0
+              NodeList [114, 119), i=31, next=0
+                KindVariableDeclaration [114, 119), i=32, next=0
+                  KindIdentifier "t" [114, 116), i=33, next=34
+                  KindTypeReference [117, 119), i=34, next=0
+                    KindIdentifier "T" [117, 119), i=35, next=0
+          KindVariableStatement [120, 135), i=36, next=43
+            KindVariableDeclarationList [120, 134), i=37, next=0
+              NodeList [129, 134), i=38, next=0
+                KindVariableDeclaration [129, 134), i=39, next=0
+                  KindIdentifier "u" [129, 131), i=40, next=41
+                  KindTypeReference [132, 134), i=41, next=0
+                    KindIdentifier "U" [132, 134), i=42, next=0
+          KindVariableStatement [135, 150), i=43, next=50
+            KindVariableDeclarationList [135, 149), i=44, next=0
+              NodeList [144, 149), i=45, next=0
+                KindVariableDeclaration [144, 149), i=46, next=0
+                  KindIdentifier "v" [144, 146), i=47, next=48
+                  KindTypeReference [147, 149), i=48, next=0
+                    KindIdentifier "V" [147, 149), i=49, next=0
+          KindVariableStatement [150, 177), i=50, next=61
+            KindVariableDeclarationList [150, 176), i=51, next=0
+              NodeList [161, 176), i=52, next=0
+                KindVariableDeclaration [161, 176), i=53, next=0
+                  KindIdentifier "a_and_b" [161, 169), i=54, next=55
+                  KindIntersectionType [170, 176), i=55, next=0
+                    NodeList [170, 176), i=56, next=0
+                      KindTypeReference [170, 172), i=57, next=59
+                        KindIdentifier "A" [170, 172), i=58, next=0
+                      KindTypeReference [174, 176), i=59, next=0
+                        KindIdentifier "B" [174, 176), i=60, next=0
+          KindVariableStatement [177, 202), i=61, next=72
+            KindVariableDeclarationList [177, 201), i=62, next=0
+              NodeList [186, 201), i=63, next=0
+                KindVariableDeclaration [186, 201), i=64, next=0
+                  KindIdentifier "t_and_b" [186, 194), i=65, next=66
+                  KindIntersectionType [195, 201), i=66, next=0
+                    NodeList [195, 201), i=67, next=0
+                      KindTypeReference [195, 197), i=68, next=70
+                        KindIdentifier "T" [195, 197), i=69, next=0
+                      KindTypeReference [199, 201), i=70, next=0
+                        KindIdentifier "B" [199, 201), i=71, next=0
+          KindExpressionStatement [202, 222), i=72, next=77
+            KindBinaryExpression [202, 221), i=73, next=0
+              KindIdentifier "t" [202, 211), i=74, next=75
+              KindEqualsToken [211, 213), i=75, next=76
+              KindIdentifier "a_and_b" [213, 221), i=76, next=0
+          KindExpressionStatement [222, 240), i=77, next=82
+            KindBinaryExpression [222, 239), i=78, next=0
+              KindIdentifier "u" [222, 229), i=79, next=80
+              KindEqualsToken [229, 231), i=80, next=81
+              KindIdentifier "a_and_b" [231, 239), i=81, next=0
+          KindExpressionStatement [240, 258), i=82, next=87
+            KindBinaryExpression [240, 257), i=83, next=0
+              KindIdentifier "v" [240, 247), i=84, next=85
+              KindEqualsToken [247, 249), i=85, next=86
+              KindIdentifier "a_and_b" [249, 257), i=86, next=0
+          KindExpressionStatement [258, 278), i=87, next=92
+            KindBinaryExpression [258, 277), i=88, next=0
+              KindIdentifier "t" [258, 267), i=89, next=90
+              KindEqualsToken [267, 269), i=90, next=91
+              KindIdentifier "t_and_b" [269, 277), i=91, next=0
+          KindExpressionStatement [278, 296), i=92, next=97
+            KindBinaryExpression [278, 295), i=93, next=0
+              KindIdentifier "u" [278, 285), i=94, next=95
+              KindEqualsToken [285, 287), i=95, next=96
+              KindIdentifier "t_and_b" [287, 295), i=96, next=0
+          KindExpressionStatement [296, 314), i=97, next=0
+            KindBinaryExpression [296, 313), i=98, next=0
+              KindIdentifier "v" [296, 303), i=99, next=100
+              KindEqualsToken [303, 305), i=100, next=101
+              KindIdentifier "t_and_b" [305, 313), i=101, next=0

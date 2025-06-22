@@ -1,0 +1,711 @@
+KindSourceFile [0, 2314), i=1, next=0
+  NodeList [0, 2312), i=2, next=0
+    KindTypeAliasDeclaration [0, 30), i=3, next=13
+      KindIdentifier "Maybe" [4, 10), i=4, next=5
+      NodeList [11, 12), i=5, next=8
+        KindTypeParameter [11, 12), i=6, next=0
+          KindIdentifier "T" [11, 12), i=7, next=0
+      KindUnionType [15, 29), i=8, next=0
+        NodeList [15, 29), i=9, next=0
+          KindTypeReference [15, 17), i=10, next=12
+            KindIdentifier "T" [15, 17), i=11, next=0
+          KindUndefinedKeyword [19, 29), i=12, next=0
+    KindFunctionDeclaration [30, 105), i=13, next=42
+      NodeList [30, 39), i=14, next=16
+        KindDeclareKeyword [30, 39), i=15, next=0
+      KindIdentifier "concatMaybe" [48, 60), i=16, next=17
+      NodeList [61, 62), i=17, next=20
+        KindTypeParameter [61, 62), i=18, next=0
+          KindIdentifier "T" [61, 62), i=19, next=0
+      NodeList [64, 98), i=20, next=39
+        KindParameter [64, 98), i=21, next=0
+          KindDotDotDotToken [64, 67), i=22, next=23
+          KindIdentifier "args" [67, 71), i=23, next=24
+          KindArrayType [72, 98), i=24, next=0
+            KindParenthesizedType [72, 96), i=25, next=0
+              KindUnionType [74, 95), i=26, next=0
+                NodeList [74, 95), i=27, next=0
+                  KindTypeReference [74, 82), i=28, next=33
+                    KindIdentifier "Maybe" [74, 79), i=29, next=30
+                    NodeList [80, 81), i=30, next=0
+                      KindTypeReference [80, 81), i=31, next=0
+                        KindIdentifier "T" [80, 81), i=32, next=0
+                  KindArrayType [84, 95), i=33, next=0
+                    KindTypeReference [84, 93), i=34, next=0
+                      KindIdentifier "Maybe" [84, 90), i=35, next=36
+                      NodeList [91, 92), i=36, next=0
+                        KindTypeReference [91, 92), i=37, next=0
+                          KindIdentifier "T" [91, 92), i=38, next=0
+      KindArrayType [100, 104), i=39, next=0
+        KindTypeReference [100, 102), i=40, next=0
+          KindIdentifier "T" [100, 102), i=41, next=0
+    KindExpressionStatement [105, 133), i=42, next=52
+      KindCallExpression [105, 132), i=43, next=0
+        KindIdentifier "concatMaybe" [105, 118), i=44, next=45
+        NodeList [119, 131), i=45, next=0
+          KindArrayLiteralExpression [119, 128), i=46, next=51
+            NodeList [120, 127), i=47, next=0
+              KindNumericLiteral [120, 121), i=48, next=49
+              KindNumericLiteral [122, 124), i=49, next=50
+              KindNumericLiteral [125, 127), i=50, next=0
+          KindNumericLiteral [129, 131), i=51, next=0
+    KindVariableStatement [133, 357), i=52, next=138
+      KindVariableDeclarationList [133, 356), i=53, next=0
+        NodeList [167, 356), i=54, next=0
+          KindVariableDeclaration [167, 356), i=55, next=0
+            KindIdentifier "g" [167, 169), i=56, next=57
+            KindFunctionType [170, 249), i=57, next=94
+              NodeList [172, 179), i=58, next=65
+                KindTypeParameter [172, 173), i=59, next=61
+                  KindIdentifier "U" [172, 173), i=60, next=0
+                KindTypeParameter [174, 176), i=61, next=63
+                  KindIdentifier "R" [174, 176), i=62, next=0
+                KindTypeParameter [177, 179), i=63, next=0
+                  KindIdentifier "S" [177, 179), i=64, next=0
+              NodeList [181, 234), i=65, next=89
+                KindParameter [181, 234), i=66, next=0
+                  KindIdentifier "com" [181, 184), i=67, next=68
+                  KindFunctionType [185, 234), i=68, next=0
+                    KindUnionType [191, 234), i=69, next=0
+                      NodeList [191, 234), i=70, next=0
+                        KindTypeReference [191, 209), i=71, next=80
+                          KindIdentifier "Iterator" [191, 200), i=72, next=73
+                          NodeList [201, 208), i=73, next=0
+                            KindTypeReference [201, 202), i=74, next=76
+                              KindIdentifier "S" [201, 202), i=75, next=0
+                            KindTypeReference [203, 205), i=76, next=78
+                              KindIdentifier "U" [203, 205), i=77, next=0
+                            KindTypeReference [206, 208), i=78, next=0
+                              KindIdentifier "R" [206, 208), i=79, next=0
+                        KindTypeReference [211, 234), i=80, next=0
+                          KindIdentifier "AsyncIterator" [211, 225), i=81, next=82
+                          NodeList [226, 233), i=82, next=0
+                            KindTypeReference [226, 227), i=83, next=85
+                              KindIdentifier "S" [226, 227), i=84, next=0
+                            KindTypeReference [228, 230), i=85, next=87
+                              KindIdentifier "U" [228, 230), i=86, next=0
+                            KindTypeReference [231, 233), i=87, next=0
+                              KindIdentifier "R" [231, 233), i=88, next=0
+              KindTypeReference [238, 249), i=89, next=0
+                KindIdentifier "Promise" [238, 246), i=90, next=91
+                NodeList [247, 248), i=91, next=0
+                  KindTypeReference [247, 248), i=92, next=0
+                    KindIdentifier "U" [247, 248), i=93, next=0
+            KindArrowFunction [251, 356), i=94, next=0
+              NodeList [251, 257), i=95, next=97
+                KindAsyncKeyword [251, 257), i=96, next=0
+              NodeList [259, 266), i=97, next=104
+                KindTypeParameter [259, 260), i=98, next=100
+                  KindIdentifier "U" [259, 260), i=99, next=0
+                KindTypeParameter [261, 263), i=100, next=102
+                  KindIdentifier "R" [261, 263), i=101, next=0
+                KindTypeParameter [264, 266), i=102, next=0
+                  KindIdentifier "S" [264, 266), i=103, next=0
+              NodeList [268, 321), i=104, next=128
+                KindParameter [268, 321), i=105, next=0
+                  KindIdentifier "com" [268, 271), i=106, next=107
+                  KindFunctionType [272, 321), i=107, next=0
+                    KindUnionType [278, 321), i=108, next=0
+                      NodeList [278, 321), i=109, next=0
+                        KindTypeReference [278, 296), i=110, next=119
+                          KindIdentifier "Iterator" [278, 287), i=111, next=112
+                          NodeList [288, 295), i=112, next=0
+                            KindTypeReference [288, 289), i=113, next=115
+                              KindIdentifier "S" [288, 289), i=114, next=0
+                            KindTypeReference [290, 292), i=115, next=117
+                              KindIdentifier "U" [290, 292), i=116, next=0
+                            KindTypeReference [293, 295), i=117, next=0
+                              KindIdentifier "R" [293, 295), i=118, next=0
+                        KindTypeReference [298, 321), i=119, next=0
+                          KindIdentifier "AsyncIterator" [298, 312), i=120, next=121
+                          NodeList [313, 320), i=121, next=0
+                            KindTypeReference [313, 314), i=122, next=124
+                              KindIdentifier "S" [313, 314), i=123, next=0
+                            KindTypeReference [315, 317), i=124, next=126
+                              KindIdentifier "U" [315, 317), i=125, next=0
+                            KindTypeReference [318, 320), i=126, next=0
+                              KindIdentifier "R" [318, 320), i=127, next=0
+              KindTypeReference [323, 334), i=128, next=133
+                KindIdentifier "Promise" [323, 331), i=129, next=130
+                NodeList [332, 333), i=130, next=0
+                  KindTypeReference [332, 333), i=131, next=0
+                    KindIdentifier "U" [332, 333), i=132, next=0
+              KindEqualsGreaterThanToken [334, 337), i=133, next=134
+              KindBlock [337, 356), i=134, next=0
+                NodeList [339, 353), i=135, next=0
+                  KindThrowStatement [339, 353), i=136, next=0
+                    KindIdentifier "com" [348, 352), i=137, next=0
+    KindInterfaceDeclaration [357, 410), i=138, next=152
+      KindIdentifier "Foo1" [370, 375), i=139, next=140
+      NodeList [376, 377), i=140, next=143
+        KindTypeParameter [376, 377), i=141, next=0
+          KindIdentifier "T" [376, 377), i=142, next=0
+      NodeList [380, 407), i=143, next=0
+        KindMethodSignature [380, 407), i=144, next=0
+          KindIdentifier "test" [380, 390), i=145, next=146
+          NodeList [391, 399), i=146, next=151
+            KindParameter [391, 399), i=147, next=0
+              KindIdentifier "value" [391, 396), i=148, next=149
+              KindTypeReference [397, 399), i=149, next=0
+                KindIdentifier "T" [397, 399), i=150, next=0
+          KindVoidKeyword [401, 406), i=151, next=0
+    KindInterfaceDeclaration [410, 480), i=152, next=173
+      KindIdentifier "Bar1" [423, 428), i=153, next=154
+      NodeList [429, 430), i=154, next=157
+        KindTypeParameter [429, 430), i=155, next=0
+          KindIdentifier "T" [429, 430), i=156, next=0
+      NodeList [433, 477), i=157, next=0
+        KindMethodSignature [433, 477), i=158, next=0
+          KindIdentifier "test" [433, 443), i=159, next=160
+          NodeList [444, 469), i=160, next=172
+            KindParameter [444, 469), i=161, next=0
+              KindIdentifier "value" [444, 449), i=162, next=163
+              KindUnionType [450, 469), i=163, next=0
+                NodeList [450, 469), i=164, next=0
+                  KindTypeReference [450, 452), i=165, next=167
+                    KindIdentifier "T" [450, 452), i=166, next=0
+                  KindTypeReference [454, 469), i=167, next=0
+                    KindIdentifier "PromiseLike" [454, 466), i=168, next=169
+                    NodeList [467, 468), i=169, next=0
+                      KindTypeReference [467, 468), i=170, next=0
+                        KindIdentifier "T" [467, 468), i=171, next=0
+          KindVoidKeyword [471, 476), i=172, next=0
+    KindVariableStatement [480, 540), i=173, next=204
+      NodeList [480, 491), i=174, next=176
+        KindDeclareKeyword [480, 491), i=175, next=0
+      KindVariableDeclarationList [491, 539), i=176, next=0
+        NodeList [495, 539), i=177, next=0
+          KindVariableDeclaration [495, 539), i=178, next=0
+            KindIdentifier "f1" [495, 498), i=179, next=180
+            KindFunctionType [499, 539), i=180, next=0
+              NodeList [501, 502), i=181, next=184
+                KindTypeParameter [501, 502), i=182, next=0
+                  KindIdentifier "T" [501, 502), i=183, next=0
+              NodeList [504, 524), i=184, next=199
+                KindParameter [504, 524), i=185, next=0
+                  KindIdentifier "x" [504, 505), i=186, next=187
+                  KindUnionType [506, 524), i=187, next=0
+                    NodeList [506, 524), i=188, next=0
+                      KindTypeReference [506, 514), i=189, next=194
+                        KindIdentifier "Foo1" [506, 511), i=190, next=191
+                        NodeList [512, 513), i=191, next=0
+                          KindTypeReference [512, 513), i=192, next=0
+                            KindIdentifier "T" [512, 513), i=193, next=0
+                      KindTypeReference [516, 524), i=194, next=0
+                        KindIdentifier "Bar1" [516, 521), i=195, next=196
+                        NodeList [522, 523), i=196, next=0
+                          KindTypeReference [522, 523), i=197, next=0
+                            KindIdentifier "T" [522, 523), i=198, next=0
+              KindTypeReference [528, 539), i=199, next=0
+                KindIdentifier "Promise" [528, 536), i=200, next=201
+                NodeList [537, 538), i=201, next=0
+                  KindTypeReference [537, 538), i=202, next=0
+                    KindIdentifier "T" [537, 538), i=203, next=0
+    KindVariableStatement [540, 598), i=204, next=235
+      NodeList [540, 549), i=205, next=207
+        KindDeclareKeyword [540, 549), i=206, next=0
+      KindVariableDeclarationList [549, 597), i=207, next=0
+        NodeList [553, 597), i=208, next=0
+          KindVariableDeclaration [553, 597), i=209, next=0
+            KindIdentifier "f2" [553, 556), i=210, next=211
+            KindFunctionType [557, 597), i=211, next=0
+              NodeList [559, 560), i=212, next=215
+                KindTypeParameter [559, 560), i=213, next=0
+                  KindIdentifier "U" [559, 560), i=214, next=0
+              NodeList [562, 582), i=215, next=230
+                KindParameter [562, 582), i=216, next=0
+                  KindIdentifier "x" [562, 563), i=217, next=218
+                  KindUnionType [564, 582), i=218, next=0
+                    NodeList [564, 582), i=219, next=0
+                      KindTypeReference [564, 572), i=220, next=225
+                        KindIdentifier "Foo1" [564, 569), i=221, next=222
+                        NodeList [570, 571), i=222, next=0
+                          KindTypeReference [570, 571), i=223, next=0
+                            KindIdentifier "U" [570, 571), i=224, next=0
+                      KindTypeReference [574, 582), i=225, next=0
+                        KindIdentifier "Bar1" [574, 579), i=226, next=227
+                        NodeList [580, 581), i=227, next=0
+                          KindTypeReference [580, 581), i=228, next=0
+                            KindIdentifier "U" [580, 581), i=229, next=0
+              KindTypeReference [586, 597), i=230, next=0
+                KindIdentifier "Promise" [586, 594), i=231, next=232
+                NodeList [595, 596), i=232, next=0
+                  KindTypeReference [595, 596), i=233, next=0
+                    KindIdentifier "U" [595, 596), i=234, next=0
+    KindExpressionStatement [598, 610), i=235, next=240
+      KindBinaryExpression [598, 609), i=236, next=0
+        KindIdentifier "f1" [598, 604), i=237, next=238
+        KindEqualsToken [604, 606), i=238, next=239
+        KindIdentifier "f2" [606, 609), i=239, next=0
+    KindExpressionStatement [610, 620), i=240, next=245
+      KindBinaryExpression [610, 619), i=241, next=0
+        KindIdentifier "f2" [610, 614), i=242, next=243
+        KindEqualsToken [614, 616), i=243, next=244
+        KindIdentifier "f1" [616, 619), i=244, next=0
+    KindTypeAliasDeclaration [620, 670), i=245, next=4
+      KindIdentifier "Foo2" [628, 633), i=246, next=247
+      NodeList [634, 635), i=247, next=250
+        KindTypeParameter [634, 635), i=248, next=0
+          KindIdentifier "T" [634, 635), i=249, next=0
+      KindTypeLiteral [638, 670), i=250, next=0
+        NodeList [640, 667), i=251, next=0
+          KindMethodSignature [640, 667), i=252, next=0
+            KindIdentifier "test" [640, 650), i=253, next=254
+            NodeList [651, 659), i=254, next=3
+              KindParameter [651, 659), i=255, next=0
+                KindIdentifier "value" [651, 656), i=256, next=1
+                KindTypeReference [657, 659), i=257, next=0
+                  KindIdentifier "T" [657, 659), i=258, next=0
+            KindVoidKeyword [661, 666), i=259, next=0
+    KindTypeAliasDeclaration [670, 737), i=260, next=26
+      KindIdentifier "Bar2" [678, 683), i=261, next=6
+      NodeList [684, 685), i=262, next=9
+        KindTypeParameter [684, 685), i=263, next=0
+          KindIdentifier "T" [684, 685), i=264, next=0
+      KindTypeLiteral [688, 737), i=265, next=0
+        NodeList [690, 734), i=266, next=0
+          KindMethodSignature [690, 734), i=267, next=0
+            KindIdentifier "test" [690, 700), i=268, next=13
+            NodeList [701, 726), i=269, next=25
+              KindParameter [701, 726), i=270, next=0
+                KindIdentifier "value" [701, 706), i=271, next=16
+                KindUnionType [707, 726), i=272, next=0
+                  NodeList [707, 726), i=273, next=0
+                    KindTypeReference [707, 709), i=274, next=20
+                      KindIdentifier "T" [707, 709), i=275, next=0
+                    KindTypeReference [711, 726), i=276, next=0
+                      KindIdentifier "PromiseLike" [711, 723), i=277, next=22
+                      NodeList [724, 725), i=278, next=0
+                        KindTypeReference [724, 725), i=279, next=0
+                          KindIdentifier "T" [724, 725), i=280, next=0
+            KindVoidKeyword [728, 733), i=281, next=0
+    KindVariableStatement [737, 797), i=282, next=57
+      NodeList [737, 748), i=283, next=29
+        KindDeclareKeyword [737, 748), i=284, next=0
+      KindVariableDeclarationList [748, 796), i=285, next=0
+        NodeList [752, 796), i=286, next=0
+          KindVariableDeclaration [752, 796), i=287, next=0
+            KindIdentifier "g1" [752, 755), i=288, next=33
+            KindFunctionType [756, 796), i=289, next=0
+              NodeList [758, 759), i=290, next=37
+                KindTypeParameter [758, 759), i=291, next=0
+                  KindIdentifier "T" [758, 759), i=292, next=0
+              NodeList [761, 781), i=293, next=52
+                KindParameter [761, 781), i=294, next=0
+                  KindIdentifier "x" [761, 762), i=295, next=40
+                  KindUnionType [763, 781), i=296, next=0
+                    NodeList [763, 781), i=297, next=0
+                      KindTypeReference [763, 771), i=298, next=47
+                        KindIdentifier "Foo2" [763, 768), i=299, next=44
+                        NodeList [769, 770), i=300, next=0
+                          KindTypeReference [769, 770), i=301, next=0
+                            KindIdentifier "T" [769, 770), i=302, next=0
+                      KindTypeReference [773, 781), i=303, next=0
+                        KindIdentifier "Bar2" [773, 778), i=304, next=49
+                        NodeList [779, 780), i=305, next=0
+                          KindTypeReference [779, 780), i=306, next=0
+                            KindIdentifier "T" [779, 780), i=307, next=0
+              KindTypeReference [785, 796), i=308, next=0
+                KindIdentifier "Promise" [785, 793), i=309, next=54
+                NodeList [794, 795), i=310, next=0
+                  KindTypeReference [794, 795), i=311, next=0
+                    KindIdentifier "T" [794, 795), i=312, next=0
+    KindVariableStatement [797, 855), i=313, next=88
+      NodeList [797, 806), i=314, next=60
+        KindDeclareKeyword [797, 806), i=315, next=0
+      KindVariableDeclarationList [806, 854), i=316, next=0
+        NodeList [810, 854), i=317, next=0
+          KindVariableDeclaration [810, 854), i=318, next=0
+            KindIdentifier "g2" [810, 813), i=319, next=64
+            KindFunctionType [814, 854), i=320, next=0
+              NodeList [816, 817), i=321, next=68
+                KindTypeParameter [816, 817), i=322, next=0
+                  KindIdentifier "U" [816, 817), i=323, next=0
+              NodeList [819, 839), i=324, next=83
+                KindParameter [819, 839), i=325, next=0
+                  KindIdentifier "x" [819, 820), i=326, next=71
+                  KindUnionType [821, 839), i=327, next=0
+                    NodeList [821, 839), i=328, next=0
+                      KindTypeReference [821, 829), i=329, next=78
+                        KindIdentifier "Foo2" [821, 826), i=330, next=75
+                        NodeList [827, 828), i=331, next=0
+                          KindTypeReference [827, 828), i=332, next=0
+                            KindIdentifier "U" [827, 828), i=333, next=0
+                      KindTypeReference [831, 839), i=334, next=0
+                        KindIdentifier "Bar2" [831, 836), i=335, next=80
+                        NodeList [837, 838), i=336, next=0
+                          KindTypeReference [837, 838), i=337, next=0
+                            KindIdentifier "U" [837, 838), i=338, next=0
+              KindTypeReference [843, 854), i=339, next=0
+                KindIdentifier "Promise" [843, 851), i=340, next=85
+                NodeList [852, 853), i=341, next=0
+                  KindTypeReference [852, 853), i=342, next=0
+                    KindIdentifier "U" [852, 853), i=343, next=0
+    KindExpressionStatement [855, 867), i=344, next=93
+      KindBinaryExpression [855, 866), i=345, next=0
+        KindIdentifier "g1" [855, 861), i=346, next=91
+        KindEqualsToken [861, 863), i=347, next=92
+        KindIdentifier "g2" [863, 866), i=348, next=0
+    KindExpressionStatement [867, 877), i=349, next=98
+      KindBinaryExpression [867, 876), i=350, next=0
+        KindIdentifier "g2" [867, 871), i=351, next=96
+        KindEqualsToken [871, 873), i=352, next=97
+        KindIdentifier "g1" [873, 876), i=353, next=0
+    KindFunctionDeclaration [877, 962), i=354, next=119
+      NodeList [877, 912), i=355, next=101
+        KindDeclareKeyword [877, 912), i=356, next=0
+      KindIdentifier "foo1" [921, 926), i=357, next=102
+      NodeList [927, 928), i=358, next=105
+        KindTypeParameter [927, 928), i=359, next=0
+          KindIdentifier "T" [927, 928), i=360, next=0
+      NodeList [930, 957), i=361, next=117
+        KindParameter [930, 957), i=362, next=0
+          KindIdentifier "obj" [930, 933), i=363, next=108
+          KindIntersectionType [934, 957), i=364, next=0
+            NodeList [934, 957), i=365, next=0
+              KindArrayType [934, 943), i=366, next=112
+                KindStringKeyword [934, 941), i=367, next=0
+              KindTypeReference [945, 957), i=368, next=0
+                KindIdentifier "Iterable" [945, 954), i=369, next=114
+                NodeList [955, 956), i=370, next=0
+                  KindTypeReference [955, 956), i=371, next=0
+                    KindIdentifier "T" [955, 956), i=372, next=0
+      KindTypeReference [959, 961), i=373, next=0
+        KindIdentifier "T" [959, 961), i=374, next=0
+    KindFunctionDeclaration [962, 1011), i=375, next=137
+      NodeList [962, 971), i=376, next=122
+        KindDeclareKeyword [962, 971), i=377, next=0
+      KindIdentifier "foo2" [980, 985), i=378, next=123
+      NodeList [986, 987), i=379, next=126
+        KindTypeParameter [986, 987), i=380, next=0
+          KindIdentifier "T" [986, 987), i=381, next=0
+      NodeList [989, 1006), i=382, next=135
+        KindParameter [989, 1006), i=383, next=0
+          KindIdentifier "obj" [989, 992), i=384, next=129
+          KindIntersectionType [993, 1006), i=385, next=0
+            NodeList [993, 1006), i=386, next=0
+              KindArrayType [993, 1002), i=387, next=133
+                KindStringKeyword [993, 1000), i=388, next=0
+              KindTypeReference [1004, 1006), i=389, next=0
+                KindIdentifier "T" [1004, 1006), i=390, next=0
+      KindTypeReference [1008, 1010), i=391, next=0
+        KindIdentifier "T" [1008, 1010), i=392, next=0
+    KindVariableStatement [1011, 1040), i=393, next=146
+      NodeList [1011, 1022), i=394, next=140
+        KindDeclareKeyword [1011, 1022), i=395, next=0
+      KindVariableDeclarationList [1022, 1039), i=396, next=0
+        NodeList [1026, 1039), i=397, next=0
+          KindVariableDeclaration [1026, 1039), i=398, next=0
+            KindIdentifier "sa" [1026, 1029), i=399, next=144
+            KindArrayType [1030, 1039), i=400, next=0
+              KindStringKeyword [1030, 1037), i=401, next=0
+    KindVariableStatement [1040, 1087), i=402, next=162
+      NodeList [1040, 1049), i=403, next=149
+        KindDeclareKeyword [1040, 1049), i=404, next=0
+      KindVariableDeclarationList [1049, 1086), i=405, next=0
+        NodeList [1053, 1086), i=406, next=0
+          KindVariableDeclaration [1053, 1086), i=407, next=0
+            KindIdentifier "sx" [1053, 1056), i=408, next=153
+            KindIntersectionType [1057, 1086), i=409, next=0
+              NodeList [1057, 1086), i=410, next=0
+                KindArrayType [1057, 1066), i=411, next=157
+                  KindStringKeyword [1057, 1064), i=412, next=0
+                KindTypeLiteral [1068, 1086), i=413, next=0
+                  NodeList [1070, 1084), i=414, next=0
+                    KindPropertySignature [1070, 1084), i=415, next=0
+                      KindIdentifier "extra" [1070, 1076), i=416, next=161
+                      KindNumberKeyword [1077, 1084), i=417, next=0
+    KindVariableStatement [1087, 1109), i=418, next=171
+      KindVariableDeclarationList [1087, 1108), i=419, next=0
+        NodeList [1094, 1108), i=420, next=0
+          KindVariableDeclaration [1094, 1108), i=421, next=0
+            KindIdentifier "x1" [1094, 1097), i=422, next=167
+            KindCallExpression [1099, 1108), i=423, next=0
+              KindIdentifier "foo1" [1099, 1104), i=424, next=169
+              NodeList [1105, 1107), i=425, next=0
+                KindIdentifier "sa" [1105, 1107), i=426, next=0
+    KindVariableStatement [1109, 1140), i=427, next=180
+      KindVariableDeclarationList [1109, 1139), i=428, next=0
+        NodeList [1125, 1139), i=429, next=0
+          KindVariableDeclaration [1125, 1139), i=430, next=0
+            KindIdentifier "y1" [1125, 1128), i=431, next=176
+            KindCallExpression [1130, 1139), i=432, next=0
+              KindIdentifier "foo1" [1130, 1135), i=433, next=178
+              NodeList [1136, 1138), i=434, next=0
+                KindIdentifier "sx" [1136, 1138), i=435, next=0
+    KindVariableStatement [1140, 1173), i=436, next=189
+      KindVariableDeclarationList [1140, 1172), i=437, next=0
+        NodeList [1158, 1172), i=438, next=0
+          KindVariableDeclaration [1158, 1172), i=439, next=0
+            KindIdentifier "x2" [1158, 1161), i=440, next=185
+            KindCallExpression [1163, 1172), i=441, next=0
+              KindIdentifier "foo2" [1163, 1168), i=442, next=187
+              NodeList [1169, 1171), i=443, next=0
+                KindIdentifier "sa" [1169, 1171), i=444, next=0
+    KindVariableStatement [1173, 1205), i=445, next=198
+      KindVariableDeclarationList [1173, 1204), i=446, next=0
+        NodeList [1190, 1204), i=447, next=0
+          KindVariableDeclaration [1190, 1204), i=448, next=0
+            KindIdentifier "y2" [1190, 1193), i=449, next=194
+            KindCallExpression [1195, 1204), i=450, next=0
+              KindIdentifier "foo2" [1195, 1200), i=451, next=196
+              NodeList [1201, 1203), i=452, next=0
+                KindIdentifier "sx" [1201, 1203), i=453, next=0
+    KindClassDeclaration [1205, 1294), i=454, next=210
+      NodeList [1205, 1262), i=455, next=201
+        KindDeclareKeyword [1205, 1262), i=456, next=0
+      KindIdentifier "Component" [1268, 1278), i=457, next=202
+      NodeList [1279, 1280), i=458, next=205
+        KindTypeParameter [1279, 1280), i=459, next=0
+          KindIdentifier "P" [1279, 1280), i=460, next=0
+      NodeList [1283, 1292), i=461, next=0
+        KindPropertyDeclaration [1283, 1292), i=462, next=0
+          KindIdentifier "props" [1283, 1289), i=463, next=208
+          KindTypeReference [1290, 1292), i=464, next=0
+            KindIdentifier "P" [1290, 1292), i=465, next=0
+    KindTypeAliasDeclaration [1294, 1361), i=466, next=228
+      NodeList [1294, 1304), i=467, next=213
+        KindExportKeyword [1294, 1304), i=468, next=0
+      KindIdentifier "ComponentClass" [1309, 1324), i=469, next=214
+      NodeList [1325, 1326), i=470, next=217
+        KindTypeParameter [1325, 1326), i=471, next=0
+          KindIdentifier "P" [1325, 1326), i=472, next=0
+      KindConstructorType [1329, 1360), i=473, next=0
+        NodeList [1335, 1343), i=474, next=223
+          KindParameter [1335, 1343), i=475, next=0
+            KindIdentifier "props" [1335, 1340), i=476, next=221
+            KindTypeReference [1341, 1343), i=477, next=0
+              KindIdentifier "P" [1341, 1343), i=478, next=0
+        KindTypeReference [1347, 1360), i=479, next=0
+          KindIdentifier "Component" [1347, 1357), i=480, next=225
+          NodeList [1358, 1359), i=481, next=0
+            KindTypeReference [1358, 1359), i=482, next=0
+              KindIdentifier "P" [1358, 1359), i=483, next=0
+    KindTypeAliasDeclaration [1361, 1417), i=484, next=243
+      NodeList [1361, 1369), i=485, next=231
+        KindExportKeyword [1361, 1369), i=486, next=0
+      KindIdentifier "FunctionComponent" [1374, 1392), i=487, next=232
+      NodeList [1393, 1394), i=488, next=235
+        KindTypeParameter [1393, 1394), i=489, next=0
+          KindIdentifier "P" [1393, 1394), i=490, next=0
+      KindFunctionType [1397, 1416), i=491, next=0
+        NodeList [1399, 1407), i=492, next=241
+          KindParameter [1399, 1407), i=493, next=0
+            KindIdentifier "props" [1399, 1404), i=494, next=239
+            KindTypeReference [1405, 1407), i=495, next=0
+              KindIdentifier "P" [1405, 1407), i=496, next=0
+        KindLiteralType [1411, 1416), i=497, next=0
+          KindNullKeyword [1411, 1416), i=498, next=0
+    KindTypeAliasDeclaration [1417, 1493), i=499, next=6
+      NodeList [1417, 1427), i=500, next=246
+        KindExportKeyword [1417, 1427), i=501, next=0
+      KindIdentifier "ComponentType" [1432, 1446), i=502, next=247
+      NodeList [1447, 1448), i=503, next=250
+        KindTypeParameter [1447, 1448), i=504, next=0
+          KindIdentifier "P" [1447, 1448), i=505, next=0
+      KindUnionType [1451, 1492), i=506, next=0
+        NodeList [1451, 1492), i=507, next=0
+          KindTypeReference [1451, 1472), i=508, next=1
+            KindIdentifier "FunctionComponent" [1451, 1469), i=509, next=254
+            NodeList [1470, 1471), i=510, next=0
+              KindTypeReference [1470, 1471), i=511, next=0
+                KindIdentifier "P" [1470, 1471), i=512, next=0
+          KindTypeReference [1474, 1492), i=513, next=0
+            KindIdentifier "ComponentClass" [1474, 1489), i=514, next=3
+            NodeList [1490, 1491), i=515, next=0
+              KindTypeReference [1490, 1491), i=516, next=0
+                KindIdentifier "P" [1490, 1491), i=517, next=0
+    KindInterfaceDeclaration [1493, 1551), i=518, next=14
+      NodeList [1493, 1503), i=519, next=9
+        KindExportKeyword [1493, 1503), i=520, next=0
+      KindIdentifier "RouteComponentProps" [1513, 1533), i=521, next=10
+      NodeList [1535, 1549), i=522, next=0
+        KindPropertySignature [1535, 1549), i=523, next=0
+          KindIdentifier "route" [1535, 1541), i=524, next=13
+          KindStringKeyword [1542, 1549), i=525, next=0
+    KindFunctionDeclaration [1551, 1742), i=526, next=53
+      NodeList [1551, 1562), i=527, next=17
+        KindDeclareKeyword [1551, 1562), i=528, next=0
+      KindIdentifier "withRouter" [1571, 1582), i=529, next=18
+      NodeList [1583, 1647), i=530, next=30
+        KindTypeParameter [1583, 1616), i=531, next=23
+          KindIdentifier "P" [1583, 1588), i=532, next=21
+          KindTypeReference [1596, 1616), i=533, next=0
+            KindIdentifier "RouteComponentProps" [1596, 1616), i=534, next=0
+        KindTypeParameter [1617, 1647), i=535, next=0
+          KindIdentifier "C" [1617, 1622), i=536, next=25
+          KindTypeReference [1630, 1647), i=537, next=0
+            KindIdentifier "ComponentType" [1630, 1644), i=538, next=27
+            NodeList [1645, 1646), i=539, next=0
+              KindTypeReference [1645, 1646), i=540, next=0
+                KindIdentifier "P" [1645, 1646), i=541, next=0
+      NodeList [1651, 1686), i=542, next=42
+        KindParameter [1651, 1686), i=543, next=0
+          KindIdentifier "component" [1651, 1664), i=544, next=33
+          KindIntersectionType [1665, 1686), i=545, next=0
+            NodeList [1665, 1686), i=546, next=0
+              KindTypeReference [1665, 1667), i=547, next=37
+                KindIdentifier "C" [1665, 1667), i=548, next=0
+              KindTypeReference [1669, 1686), i=549, next=0
+                KindIdentifier "ComponentType" [1669, 1683), i=550, next=39
+                NodeList [1684, 1685), i=551, next=0
+                  KindTypeReference [1684, 1685), i=552, next=0
+                    KindIdentifier "P" [1684, 1685), i=553, next=0
+      KindTypeReference [1690, 1741), i=554, next=0
+        KindIdentifier "ComponentClass" [1690, 1705), i=555, next=44
+        NodeList [1706, 1740), i=556, next=0
+          KindTypeReference [1706, 1740), i=557, next=0
+            KindIdentifier "Omit" [1706, 1710), i=558, next=47
+            NodeList [1711, 1739), i=559, next=0
+              KindTypeReference [1711, 1712), i=560, next=50
+                KindIdentifier "P" [1711, 1712), i=561, next=0
+              KindTypeOperator [1713, 1739), i=562, next=0
+                KindTypeReference [1719, 1739), i=563, next=0
+                  KindIdentifier "RouteComponentProps" [1719, 1739), i=564, next=0
+    KindInterfaceDeclaration [1742, 1810), i=565, next=64
+      KindIdentifier "Props" [1755, 1761), i=566, next=55
+      NodeList [1761, 1789), i=567, next=60
+        KindHeritageClause [1761, 1789), i=568, next=0
+          NodeList [1769, 1789), i=569, next=0
+            KindExpressionWithTypeArguments [1769, 1789), i=570, next=0
+              KindIdentifier "RouteComponentProps" [1769, 1789), i=571, next=0
+      NodeList [1791, 1808), i=572, next=0
+        KindPropertySignature [1791, 1808), i=573, next=0
+          KindIdentifier "username" [1791, 1800), i=574, next=63
+          KindStringKeyword [1801, 1808), i=575, next=0
+    KindVariableStatement [1810, 1862), i=576, next=76
+      NodeList [1810, 1821), i=577, next=67
+        KindDeclareKeyword [1810, 1821), i=578, next=0
+      KindVariableDeclarationList [1821, 1861), i=579, next=0
+        NodeList [1827, 1861), i=580, next=0
+          KindVariableDeclaration [1827, 1861), i=581, next=0
+            KindIdentifier "MyComponent" [1827, 1839), i=582, next=71
+            KindTypeReference [1840, 1861), i=583, next=0
+              KindIdentifier "ComponentType" [1840, 1854), i=584, next=73
+              NodeList [1855, 1860), i=585, next=0
+                KindTypeReference [1855, 1860), i=586, next=0
+                  KindIdentifier "Props" [1855, 1860), i=587, next=0
+    KindExpressionStatement [1862, 1890), i=588, next=81
+      KindCallExpression [1862, 1889), i=589, next=0
+        KindIdentifier "withRouter" [1862, 1876), i=590, next=79
+        NodeList [1877, 1888), i=591, next=0
+          KindIdentifier "MyComponent" [1877, 1888), i=592, next=0
+    KindTypeAliasDeclaration [1890, 1951), i=593, next=100
+      KindIdentifier "AB" [1922, 1925), i=594, next=83
+      NodeList [1926, 1927), i=595, next=86
+        KindTypeParameter [1926, 1927), i=596, next=0
+          KindIdentifier "T" [1926, 1927), i=597, next=0
+      KindUnionType [1930, 1950), i=598, next=0
+        NodeList [1930, 1950), i=599, next=0
+          KindTypeLiteral [1930, 1939), i=600, next=94
+            NodeList [1932, 1937), i=601, next=0
+              KindPropertySignature [1932, 1937), i=602, next=0
+                KindIdentifier "a" [1932, 1934), i=603, next=92
+                KindTypeReference [1935, 1937), i=604, next=0
+                  KindIdentifier "T" [1935, 1937), i=605, next=0
+          KindTypeLiteral [1941, 1950), i=606, next=0
+            NodeList [1943, 1948), i=607, next=0
+              KindPropertySignature [1943, 1948), i=608, next=0
+                KindIdentifier "b" [1943, 1945), i=609, next=98
+                KindTypeReference [1946, 1948), i=610, next=0
+                  KindIdentifier "T" [1946, 1948), i=611, next=0
+    KindFunctionDeclaration [1951, 2068), i=612, next=127
+      NodeList [1951, 2024), i=613, next=103
+        KindDeclareKeyword [1951, 2024), i=614, next=0
+      KindIdentifier "foo" [2033, 2037), i=615, next=104
+      NodeList [2038, 2042), i=616, next=109
+        KindTypeParameter [2038, 2039), i=617, next=107
+          KindIdentifier "T" [2038, 2039), i=618, next=0
+        KindTypeParameter [2040, 2042), i=619, next=0
+          KindIdentifier "U" [2040, 2042), i=620, next=0
+      NodeList [2044, 2058), i=621, next=121
+        KindParameter [2044, 2058), i=622, next=0
+          KindIdentifier "obj" [2044, 2047), i=623, next=112
+          KindIntersectionType [2048, 2058), i=624, next=0
+            NodeList [2048, 2058), i=625, next=0
+              KindTypeReference [2048, 2050), i=626, next=116
+                KindIdentifier "T" [2048, 2050), i=627, next=0
+              KindTypeReference [2052, 2058), i=628, next=0
+                KindIdentifier "AB" [2052, 2055), i=629, next=118
+                NodeList [2056, 2057), i=630, next=0
+                  KindTypeReference [2056, 2057), i=631, next=0
+                    KindIdentifier "U" [2056, 2057), i=632, next=0
+      KindTupleType [2060, 2067), i=633, next=0
+        NodeList [2062, 2066), i=634, next=0
+          KindTypeReference [2062, 2063), i=635, next=125
+            KindIdentifier "T" [2062, 2063), i=636, next=0
+          KindTypeReference [2064, 2066), i=637, next=0
+            KindIdentifier "U" [2064, 2066), i=638, next=0
+    KindVariableStatement [2068, 2097), i=639, next=138
+      NodeList [2068, 2077), i=640, next=130
+        KindDeclareKeyword [2068, 2077), i=641, next=0
+      KindVariableDeclarationList [2077, 2096), i=642, next=0
+        NodeList [2081, 2096), i=643, next=0
+          KindVariableDeclaration [2081, 2096), i=644, next=0
+            KindIdentifier "ab" [2081, 2084), i=645, next=134
+            KindTypeReference [2085, 2096), i=646, next=0
+              KindIdentifier "AB" [2085, 2088), i=647, next=136
+              NodeList [2089, 2095), i=648, next=0
+                KindStringKeyword [2089, 2095), i=649, next=0
+    KindVariableStatement [2097, 2117), i=650, next=147
+      KindVariableDeclarationList [2097, 2116), i=651, next=0
+        NodeList [2104, 2116), i=652, next=0
+          KindVariableDeclaration [2104, 2116), i=653, next=0
+            KindIdentifier "z" [2104, 2106), i=654, next=143
+            KindCallExpression [2108, 2116), i=655, next=0
+              KindIdentifier "foo" [2108, 2112), i=656, next=145
+              NodeList [2113, 2115), i=657, next=0
+                KindIdentifier "ab" [2113, 2115), i=658, next=0
+    KindVariableStatement [2117, 2236), i=659, next=171
+      NodeList [2117, 2177), i=660, next=150
+        KindDeclareKeyword [2117, 2177), i=661, next=0
+      KindVariableDeclarationList [2177, 2235), i=662, next=0
+        NodeList [2181, 2235), i=663, next=0
+          KindVariableDeclaration [2181, 2235), i=664, next=0
+            KindIdentifier "a" [2181, 2183), i=665, next=154
+            KindFunctionType [2184, 2235), i=666, next=0
+              NodeList [2186, 2187), i=667, next=158
+                KindTypeParameter [2186, 2187), i=668, next=0
+                  KindIdentifier "T" [2186, 2187), i=669, next=0
+              KindIntersectionType [2193, 2235), i=670, next=0
+                NodeList [2193, 2235), i=671, next=0
+                  KindParenthesizedType [2193, 2225), i=672, next=170
+                    KindConditionalType [2195, 2224), i=673, next=0
+                      KindTypeReference [2195, 2196), i=674, next=164
+                        KindIdentifier "T" [2195, 2196), i=675, next=0
+                      KindLiteralType [2204, 2209), i=676, next=166
+                        KindTrueKeyword [2204, 2209), i=677, next=0
+                      KindLiteralType [2211, 2216), i=678, next=168
+                        KindTrueKeyword [2211, 2216), i=679, next=0
+                      KindLiteralType [2218, 2224), i=680, next=0
+                        KindFalseKeyword [2218, 2224), i=681, next=0
+                  KindBooleanKeyword [2227, 2235), i=682, next=0
+    KindVariableStatement [2236, 2304), i=683, next=195
+      NodeList [2236, 2245), i=684, next=174
+        KindDeclareKeyword [2236, 2245), i=685, next=0
+      KindVariableDeclarationList [2245, 2303), i=686, next=0
+        NodeList [2249, 2303), i=687, next=0
+          KindVariableDeclaration [2249, 2303), i=688, next=0
+            KindIdentifier "b" [2249, 2251), i=689, next=178
+            KindFunctionType [2252, 2303), i=690, next=0
+              NodeList [2254, 2255), i=691, next=182
+                KindTypeParameter [2254, 2255), i=692, next=0
+                  KindIdentifier "T" [2254, 2255), i=693, next=0
+              KindIntersectionType [2261, 2303), i=694, next=0
+                NodeList [2261, 2303), i=695, next=0
+                  KindParenthesizedType [2261, 2293), i=696, next=194
+                    KindConditionalType [2263, 2292), i=697, next=0
+                      KindTypeReference [2263, 2264), i=698, next=188
+                        KindIdentifier "T" [2263, 2264), i=699, next=0
+                      KindLiteralType [2272, 2277), i=700, next=190
+                        KindTrueKeyword [2272, 2277), i=701, next=0
+                      KindLiteralType [2279, 2284), i=702, next=192
+                        KindTrueKeyword [2279, 2284), i=703, next=0
+                      KindLiteralType [2286, 2292), i=704, next=0
+                        KindFalseKeyword [2286, 2292), i=705, next=0
+                  KindBooleanKeyword [2295, 2303), i=706, next=0
+    KindExpressionStatement [2304, 2312), i=707, next=0
+      KindBinaryExpression [2304, 2311), i=708, next=0
+        KindIdentifier "a" [2304, 2307), i=709, next=198
+        KindEqualsToken [2307, 2309), i=710, next=199
+        KindIdentifier "b" [2309, 2311), i=711, next=0

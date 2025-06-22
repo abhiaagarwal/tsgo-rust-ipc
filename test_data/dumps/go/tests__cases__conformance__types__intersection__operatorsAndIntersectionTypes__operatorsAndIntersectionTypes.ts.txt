@@ -1,0 +1,198 @@
+KindSourceFile [0, 864), i=1, next=0
+  NodeList [0, 862), i=2, next=0
+    KindTypeAliasDeclaration [0, 31), i=3, next=12
+      KindIdentifier "Guid" [4, 9), i=4, next=5
+      KindIntersectionType [11, 30), i=5, next=0
+        NodeList [11, 30), i=6, next=0
+          KindStringKeyword [11, 18), i=7, next=8
+          KindTypeLiteral [20, 30), i=8, next=0
+            NodeList [22, 28), i=9, next=0
+              KindPropertySignature [22, 28), i=10, next=0
+                KindIdentifier "$Guid" [22, 28), i=11, next=0
+    KindTypeAliasDeclaration [31, 103), i=12, next=21
+      KindIdentifier "SerialNo" [68, 77), i=13, next=14
+      KindIntersectionType [79, 102), i=14, next=0
+        NodeList [79, 102), i=15, next=0
+          KindNumberKeyword [79, 86), i=16, next=17
+          KindTypeLiteral [88, 102), i=17, next=0
+            NodeList [90, 100), i=18, next=0
+              KindPropertySignature [90, 100), i=19, next=0
+                KindIdentifier "$SerialNo" [90, 100), i=20, next=0
+    KindFunctionDeclaration [103, 216), i=21, next=30
+      KindIdentifier "createGuid" [138, 149), i=22, next=23
+      KindBlock [151, 216), i=23, next=0
+        NodeList [153, 213), i=24, next=0
+          KindReturnStatement [153, 213), i=25, next=0
+            KindAsExpression [165, 212), i=26, next=0
+              KindStringLiteral "21EC2020-3AEA-4069-A2DD-08002B30309D" [165, 204), i=27, next=28
+              KindTypeReference [207, 212), i=28, next=0
+                KindIdentifier "Guid" [207, 212), i=29, next=0
+    KindFunctionDeclaration [216, 281), i=30, next=39
+      KindIdentifier "createSerialNo" [228, 243), i=31, next=32
+      KindBlock [245, 281), i=32, next=0
+        NodeList [247, 278), i=33, next=0
+          KindReturnStatement [247, 278), i=34, next=0
+            KindAsExpression [259, 277), i=35, next=0
+              KindNumericLiteral [259, 265), i=36, next=37
+              KindTypeReference [268, 277), i=37, next=0
+                KindIdentifier "SerialNo" [268, 277), i=38, next=0
+    KindVariableStatement [281, 324), i=39, next=53
+      KindVariableDeclarationList [281, 323), i=40, next=0
+        NodeList [288, 323), i=41, next=0
+          KindVariableDeclaration [288, 323), i=42, next=0
+            KindIdentifier "map1" [288, 293), i=43, next=44
+            KindTypeLiteral [294, 318), i=44, next=52
+              NodeList [296, 316), i=45, next=0
+                KindIndexSignature [296, 316), i=46, next=0
+                  NodeList [298, 307), i=47, next=51
+                    KindParameter [298, 307), i=48, next=0
+                      KindIdentifier "x" [298, 299), i=49, next=50
+                      KindStringKeyword [300, 307), i=50, next=0
+                  KindNumberKeyword [309, 316), i=51, next=0
+            KindObjectLiteralExpression [320, 323), i=52, next=0
+    KindVariableStatement [324, 350), i=53, next=60
+      KindVariableDeclarationList [324, 349), i=54, next=0
+        NodeList [329, 349), i=55, next=0
+          KindVariableDeclaration [329, 349), i=56, next=0
+            KindIdentifier "guid" [329, 334), i=57, next=58
+            KindCallExpression [336, 349), i=58, next=0
+              KindIdentifier "createGuid" [336, 347), i=59, next=0
+    KindExpressionStatement [350, 369), i=60, next=67
+      KindBinaryExpression [350, 368), i=61, next=0
+        KindElementAccessExpression [350, 362), i=62, next=65
+          KindIdentifier "map1" [350, 356), i=63, next=64
+          KindIdentifier "guid" [357, 361), i=64, next=0
+        KindEqualsToken [362, 364), i=65, next=66
+        KindNumericLiteral [364, 368), i=66, next=0
+    KindVariableStatement [369, 439), i=67, next=81
+      KindVariableDeclarationList [369, 438), i=68, next=0
+        NodeList [403, 438), i=69, next=0
+          KindVariableDeclaration [403, 438), i=70, next=0
+            KindIdentifier "map2" [403, 408), i=71, next=72
+            KindTypeLiteral [409, 433), i=72, next=80
+              NodeList [411, 431), i=73, next=0
+                KindIndexSignature [411, 431), i=74, next=0
+                  NodeList [413, 422), i=75, next=79
+                    KindParameter [413, 422), i=76, next=0
+                      KindIdentifier "x" [413, 414), i=77, next=78
+                      KindNumberKeyword [415, 422), i=78, next=0
+                  KindStringKeyword [424, 431), i=79, next=0
+            KindObjectLiteralExpression [435, 438), i=80, next=0
+    KindVariableStatement [439, 473), i=81, next=88
+      KindVariableDeclarationList [439, 472), i=82, next=0
+        NodeList [444, 472), i=83, next=0
+          KindVariableDeclaration [444, 472), i=84, next=0
+            KindIdentifier "serialNo" [444, 453), i=85, next=86
+            KindCallExpression [455, 472), i=86, next=0
+              KindIdentifier "createSerialNo" [455, 470), i=87, next=0
+    KindExpressionStatement [473, 500), i=88, next=95
+      KindBinaryExpression [473, 499), i=89, next=0
+        KindElementAccessExpression [473, 489), i=90, next=93
+          KindIdentifier "map2" [473, 479), i=91, next=92
+          KindIdentifier "serialNo" [480, 488), i=92, next=0
+        KindEqualsToken [489, 491), i=93, next=94
+        KindStringLiteral "hello" [491, 499), i=94, next=0
+    KindVariableStatement [500, 565), i=95, next=107
+      KindVariableDeclarationList [500, 564), i=96, next=0
+        NodeList [542, 564), i=97, next=0
+          KindVariableDeclaration [542, 564), i=98, next=0
+            KindIdentifier "s1" [542, 545), i=99, next=100
+            KindBinaryExpression [547, 564), i=100, next=0
+              KindBinaryExpression [547, 558), i=101, next=105
+                KindStringLiteral "{" [547, 551), i=102, next=103
+                KindPlusToken [551, 553), i=103, next=104
+                KindIdentifier "guid" [553, 558), i=104, next=0
+              KindPlusToken [558, 560), i=105, next=106
+              KindStringLiteral "}" [560, 564), i=106, next=0
+    KindVariableStatement [565, 597), i=107, next=116
+      KindVariableDeclarationList [565, 596), i=108, next=0
+        NodeList [572, 596), i=109, next=0
+          KindVariableDeclaration [572, 596), i=110, next=0
+            KindIdentifier "s2" [572, 575), i=111, next=112
+            KindCallExpression [577, 596), i=112, next=0
+              KindPropertyAccessExpression [577, 594), i=113, next=0
+                KindIdentifier "guid" [577, 582), i=114, next=115
+                KindIdentifier "toLowerCase" [583, 594), i=115, next=0
+    KindVariableStatement [597, 622), i=116, next=125
+      KindVariableDeclarationList [597, 621), i=117, next=0
+        NodeList [604, 621), i=118, next=0
+          KindVariableDeclaration [604, 621), i=119, next=0
+            KindIdentifier "s3" [604, 607), i=120, next=121
+            KindBinaryExpression [609, 621), i=121, next=0
+              KindIdentifier "guid" [609, 614), i=122, next=123
+              KindPlusToken [614, 616), i=123, next=124
+              KindIdentifier "guid" [616, 621), i=124, next=0
+    KindVariableStatement [622, 651), i=125, next=134
+      KindVariableDeclarationList [622, 650), i=126, next=0
+        NodeList [629, 650), i=127, next=0
+          KindVariableDeclaration [629, 650), i=128, next=0
+            KindIdentifier "s4" [629, 632), i=129, next=130
+            KindBinaryExpression [634, 650), i=130, next=0
+              KindIdentifier "guid" [634, 639), i=131, next=132
+              KindPlusToken [639, 641), i=132, next=133
+              KindIdentifier "serialNo" [641, 650), i=133, next=0
+    KindVariableStatement [651, 688), i=134, next=145
+      KindVariableDeclarationList [651, 687), i=135, next=0
+        NodeList [658, 687), i=136, next=0
+          KindVariableDeclaration [658, 687), i=137, next=0
+            KindIdentifier "s5" [658, 661), i=138, next=139
+            KindCallExpression [663, 687), i=139, next=0
+              KindPropertyAccessExpression [663, 684), i=140, next=143
+                KindIdentifier "serialNo" [663, 672), i=141, next=142
+                KindIdentifier "toPrecision" [673, 684), i=142, next=0
+              NodeList [685, 686), i=143, next=0
+                KindNumericLiteral [685, 686), i=144, next=0
+    KindVariableStatement [688, 714), i=145, next=154
+      KindVariableDeclarationList [688, 713), i=146, next=0
+        NodeList [695, 713), i=147, next=0
+          KindVariableDeclaration [695, 713), i=148, next=0
+            KindIdentifier "n1" [695, 698), i=149, next=150
+            KindBinaryExpression [700, 713), i=150, next=0
+              KindIdentifier "serialNo" [700, 709), i=151, next=152
+              KindAsteriskToken [709, 711), i=152, next=153
+              KindNumericLiteral [711, 713), i=153, next=0
+    KindVariableStatement [714, 747), i=154, next=163
+      KindVariableDeclarationList [714, 746), i=155, next=0
+        NodeList [721, 746), i=156, next=0
+          KindVariableDeclaration [721, 746), i=157, next=0
+            KindIdentifier "n2" [721, 724), i=158, next=159
+            KindBinaryExpression [726, 746), i=159, next=0
+              KindIdentifier "serialNo" [726, 735), i=160, next=161
+              KindPlusToken [735, 737), i=161, next=162
+              KindIdentifier "serialNo" [737, 746), i=162, next=0
+    KindVariableStatement [747, 772), i=163, next=172
+      KindVariableDeclarationList [747, 771), i=164, next=0
+        NodeList [754, 771), i=165, next=0
+          KindVariableDeclaration [754, 771), i=166, next=0
+            KindIdentifier "b1" [754, 757), i=167, next=168
+            KindBinaryExpression [759, 771), i=168, next=0
+              KindIdentifier "guid" [759, 764), i=169, next=170
+              KindEqualsEqualsEqualsToken [764, 768), i=170, next=171
+              KindStringLiteral "" [768, 771), i=171, next=0
+    KindVariableStatement [772, 799), i=172, next=181
+      KindVariableDeclarationList [772, 798), i=173, next=0
+        NodeList [779, 798), i=174, next=0
+          KindVariableDeclaration [779, 798), i=175, next=0
+            KindIdentifier "b2" [779, 782), i=176, next=177
+            KindBinaryExpression [784, 798), i=177, next=0
+              KindIdentifier "guid" [784, 789), i=178, next=179
+              KindEqualsEqualsEqualsToken [789, 793), i=179, next=180
+              KindIdentifier "guid" [793, 798), i=180, next=0
+    KindVariableStatement [799, 827), i=181, next=190
+      KindVariableDeclarationList [799, 826), i=182, next=0
+        NodeList [806, 826), i=183, next=0
+          KindVariableDeclaration [806, 826), i=184, next=0
+            KindIdentifier "b3" [806, 809), i=185, next=186
+            KindBinaryExpression [811, 826), i=186, next=0
+              KindIdentifier "serialNo" [811, 820), i=187, next=188
+              KindEqualsEqualsEqualsToken [820, 824), i=188, next=189
+              KindNumericLiteral [824, 826), i=189, next=0
+    KindVariableStatement [827, 862), i=190, next=0
+      KindVariableDeclarationList [827, 861), i=191, next=0
+        NodeList [834, 861), i=192, next=0
+          KindVariableDeclaration [834, 861), i=193, next=0
+            KindIdentifier "b4" [834, 837), i=194, next=195
+            KindBinaryExpression [839, 861), i=195, next=0
+              KindIdentifier "serialNo" [839, 848), i=196, next=197
+              KindEqualsEqualsEqualsToken [848, 852), i=197, next=198
+              KindIdentifier "serialNo" [852, 861), i=198, next=0

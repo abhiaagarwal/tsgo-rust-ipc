@@ -1,0 +1,51 @@
+KindSourceFile [0, 180), i=1, next=0
+  NodeList [0, 180), i=2, next=0
+    KindTypeAliasDeclaration [0, 19), i=3, next=11
+      KindIdentifier "S" [4, 6), i=4, next=5
+      KindUnionType [8, 18), i=5, next=0
+        NodeList [8, 18), i=6, next=0
+          KindLiteralType [8, 12), i=7, next=9
+            KindStringLiteral "a" [8, 12), i=8, next=0
+          KindLiteralType [14, 18), i=9, next=0
+            KindStringLiteral "b" [14, 18), i=10, next=0
+    KindTypeAliasDeclaration [19, 38), i=11, next=20
+      KindIdentifier "T" [25, 27), i=12, next=13
+      KindUnionType [29, 37), i=13, next=0
+        NodeList [29, 37), i=14, next=0
+          KindArrayType [29, 33), i=15, next=18
+            KindTypeReference [29, 31), i=16, next=0
+              KindIdentifier "S" [29, 31), i=17, next=0
+          KindTypeReference [35, 37), i=18, next=0
+            KindIdentifier "S" [35, 37), i=19, next=0
+    KindVariableStatement [38, 53), i=20, next=27
+      KindVariableDeclarationList [38, 52), i=21, next=0
+        NodeList [45, 52), i=22, next=0
+          KindVariableDeclaration [45, 52), i=23, next=0
+            KindIdentifier "foo" [45, 49), i=24, next=25
+            KindTypeReference [50, 52), i=25, next=0
+              KindIdentifier "T" [50, 52), i=26, next=0
+    KindSwitchStatement [53, 180), i=27, next=0
+      KindIdentifier "foo" [63, 66), i=28, next=29
+      KindCaseBlock [67, 180), i=29, next=0
+        NodeList [69, 177), i=30, next=0
+          KindCaseClause [69, 84), i=31, next=33
+            KindStringLiteral "a" [79, 83), i=32, next=0
+          KindCaseClause [84, 115), i=33, next=37
+            KindStringLiteral "b" [94, 98), i=34, next=35
+            NodeList [99, 115), i=35, next=0
+              KindBreakStatement [99, 115), i=36, next=0
+          KindDefaultClause [115, 177), i=37, next=0
+            NodeList [129, 177), i=38, next=0
+              KindExpressionStatement [129, 161), i=39, next=51
+                KindBinaryExpression [129, 160), i=40, next=0
+                  KindIdentifier "foo" [129, 142), i=41, next=42
+                  KindEqualsToken [142, 144), i=42, next=43
+                  KindElementAccessExpression [144, 160), i=43, next=0
+                    KindParenthesizedExpression [144, 157), i=44, next=50
+                      KindAsExpression [146, 156), i=45, next=0
+                        KindIdentifier "foo" [146, 149), i=46, next=47
+                        KindArrayType [152, 156), i=47, next=0
+                          KindTypeReference [152, 154), i=48, next=0
+                            KindIdentifier "S" [152, 154), i=49, next=0
+                    KindNumericLiteral [158, 159), i=50, next=0
+              KindBreakStatement [161, 177), i=51, next=0

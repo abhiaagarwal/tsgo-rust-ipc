@@ -1,0 +1,86 @@
+KindSourceFile [0, 303), i=1, next=0
+  NodeList [0, 302), i=2, next=0
+    KindForStatement [0, 44), i=3, next=23
+      KindVariableDeclarationList [5, 22), i=4, next=12
+        NodeList [8, 22), i=5, next=0
+          KindVariableDeclaration [8, 14), i=6, next=9
+            KindIdentifier "i" [8, 10), i=7, next=8
+            KindNumericLiteral [12, 14), i=8, next=0
+          KindVariableDeclaration [15, 22), i=9, next=0
+            KindIdentifier "j" [15, 17), i=10, next=11
+            KindNumericLiteral [19, 22), i=11, next=0
+      KindBinaryExpression [23, 29), i=12, next=16
+        KindIdentifier "i" [23, 25), i=13, next=14
+        KindLessThanToken [25, 27), i=14, next=15
+        KindIdentifier "j" [27, 29), i=15, next=0
+      KindBinaryExpression [30, 39), i=16, next=22
+        KindPostfixUnaryExpression [30, 34), i=17, next=19
+          KindIdentifier "i" [30, 32), i=18, next=0
+        KindCommaToken [34, 35), i=19, next=20
+        KindPostfixUnaryExpression [35, 39), i=20, next=0
+          KindIdentifier "j" [35, 37), i=21, next=0
+      KindBlock [40, 44), i=22, next=0
+    KindFunctionDeclaration [44, 151), i=23, next=39
+      KindIdentifier "foo" [104, 108), i=24, next=25
+      NodeList [109, 129), i=25, next=32
+        KindParameter [109, 118), i=26, next=29
+          KindIdentifier "x" [109, 110), i=27, next=28
+          KindNumberKeyword [111, 118), i=28, next=0
+        KindParameter [119, 129), i=29, next=0
+          KindIdentifier "y" [119, 121), i=30, next=31
+          KindStringKeyword [122, 129), i=31, next=0
+      KindBlock [130, 151), i=32, next=0
+        NodeList [132, 149), i=33, next=0
+          KindReturnStatement [132, 149), i=34, next=0
+            KindBinaryExpression [143, 148), i=35, next=0
+              KindIdentifier "x" [143, 145), i=36, next=37
+              KindCommaToken [145, 146), i=37, next=38
+              KindIdentifier "y" [146, 148), i=38, next=0
+    KindVariableStatement [151, 187), i=39, next=49
+      KindVariableDeclarationList [151, 186), i=40, next=0
+        NodeList [155, 186), i=41, next=0
+          KindVariableDeclaration [155, 186), i=42, next=0
+            KindIdentifier "resultIsString" [155, 170), i=43, next=44
+            KindCallExpression [172, 186), i=44, next=0
+              KindIdentifier "foo" [172, 176), i=45, next=46
+              NodeList [177, 185), i=46, next=0
+                KindNumericLiteral [177, 178), i=47, next=48
+                KindStringLiteral "123" [179, 185), i=48, next=0
+    KindFunctionDeclaration [187, 302), i=49, next=0
+      KindIdentifier "foo1" [214, 219), i=50, next=51
+      NodeList [220, 226), i=51, next=56
+        KindTypeParameter [220, 222), i=52, next=54
+          KindIdentifier "T1" [220, 222), i=53, next=0
+        KindTypeParameter [223, 226), i=54, next=0
+          KindIdentifier "T2" [223, 226), i=55, next=0
+      KindBlock [229, 302), i=56, next=0
+        NodeList [231, 300), i=57, next=0
+          KindVariableStatement [231, 246), i=58, next=65
+            KindVariableDeclarationList [231, 245), i=59, next=0
+              NodeList [239, 245), i=60, next=0
+                KindVariableDeclaration [239, 245), i=61, next=0
+                  KindIdentifier "x" [239, 241), i=62, next=63
+                  KindTypeReference [242, 245), i=63, next=0
+                    KindIdentifier "T1" [242, 245), i=64, next=0
+          KindVariableStatement [246, 261), i=65, next=72
+            KindVariableDeclarationList [246, 260), i=66, next=0
+              NodeList [254, 260), i=67, next=0
+                KindVariableDeclaration [254, 260), i=68, next=0
+                  KindIdentifier "y" [254, 256), i=69, next=70
+                  KindTypeReference [257, 260), i=70, next=0
+                    KindIdentifier "T2" [257, 260), i=71, next=0
+          KindExpressionStatement [261, 271), i=72, next=77
+            KindBinaryExpression [261, 270), i=73, next=0
+              KindIdentifier "x" [261, 267), i=74, next=75
+              KindCommaToken [267, 268), i=75, next=76
+              KindIdentifier "y" [268, 270), i=76, next=0
+          KindVariableStatement [271, 300), i=77, next=0
+            KindVariableDeclarationList [271, 299), i=78, next=0
+              NodeList [279, 299), i=79, next=0
+                KindVariableDeclaration [279, 299), i=80, next=0
+                  KindIdentifier "resultIsT1" [279, 290), i=81, next=82
+                  KindParenthesizedExpression [292, 299), i=82, next=0
+                    KindBinaryExpression [294, 298), i=83, next=0
+                      KindIdentifier "y" [294, 295), i=84, next=85
+                      KindCommaToken [295, 296), i=85, next=86
+                      KindIdentifier "x" [296, 298), i=86, next=0

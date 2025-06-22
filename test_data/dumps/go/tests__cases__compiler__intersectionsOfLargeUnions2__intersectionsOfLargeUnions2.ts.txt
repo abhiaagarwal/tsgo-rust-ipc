@@ -1,0 +1,192 @@
+KindSourceFile [0, 959), i=1, next=0
+  NodeList [0, 957), i=2, next=0
+    KindModuleDeclaration [0, 176), i=3, next=29
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "global" [7, 14), i=6, next=7
+      KindModuleBlock [14, 176), i=7, next=0
+        NodeList [16, 173), i=8, next=0
+          KindInterfaceDeclaration [16, 96), i=9, next=19
+            KindIdentifier "ElementTagNameMap" [31, 49), i=10, next=11
+            NodeList [51, 89), i=11, next=0
+              KindIndexSignature [51, 89), i=12, next=0
+                NodeList [62, 75), i=13, next=17
+                  KindParameter [62, 75), i=14, next=0
+                    KindIdentifier "index" [62, 67), i=15, next=16
+                    KindNumberKeyword [68, 75), i=16, next=0
+                KindTypeReference [77, 89), i=17, next=0
+                  KindIdentifier "HTMLElement" [77, 89), i=18, next=0
+          KindInterfaceDeclaration [96, 173), i=19, next=0
+            KindIdentifier "HTMLElement" [113, 125), i=20, next=21
+            NodeList [127, 166), i=21, next=0
+              KindIndexSignature [127, 166), i=22, next=0
+                NodeList [138, 151), i=23, next=27
+                  KindParameter [138, 151), i=24, next=0
+                    KindIdentifier "index" [138, 143), i=25, next=26
+                    KindNumberKeyword [144, 151), i=26, next=0
+                KindTypeReference [153, 165), i=27, next=0
+                  KindIdentifier "HTMLElement" [153, 165), i=28, next=0
+    KindFunctionDeclaration [176, 338), i=29, next=69
+      NodeList [176, 186), i=30, next=32
+        KindExportKeyword [176, 186), i=31, next=0
+      KindIdentifier "assertIsElement" [195, 211), i=32, next=33
+      NodeList [212, 229), i=33, next=42
+        KindParameter [212, 229), i=34, next=0
+          KindIdentifier "node" [212, 216), i=35, next=36
+          KindUnionType [217, 229), i=36, next=0
+            NodeList [217, 229), i=37, next=0
+              KindTypeReference [217, 222), i=38, next=40
+                KindIdentifier "Node" [217, 222), i=39, next=0
+              KindLiteralType [224, 229), i=40, next=0
+                KindNullKeyword [224, 229), i=41, next=0
+      KindTypePredicate [231, 247), i=42, next=46
+        KindIdentifier "node" [231, 236), i=43, next=44
+        KindTypeReference [239, 247), i=44, next=0
+          KindIdentifier "Element" [239, 247), i=45, next=0
+      KindBlock [247, 338), i=46, next=0
+        NodeList [249, 335), i=47, next=0
+          KindVariableStatement [249, 307), i=48, next=64
+            KindVariableDeclarationList [249, 306), i=49, next=0
+              NodeList [258, 306), i=50, next=0
+                KindVariableDeclaration [258, 306), i=51, next=0
+                  KindIdentifier "nodeType" [258, 267), i=52, next=53
+                  KindConditionalExpression [269, 306), i=53, next=0
+                    KindBinaryExpression [269, 283), i=54, next=58
+                      KindIdentifier "node" [269, 274), i=55, next=56
+                      KindEqualsEqualsEqualsToken [274, 278), i=56, next=57
+                      KindNullKeyword [278, 283), i=57, next=0
+                    KindQuestionToken [283, 285), i=58, next=59
+                    KindNullKeyword [285, 290), i=59, next=60
+                    KindColonToken [290, 292), i=60, next=61
+                    KindPropertyAccessExpression [292, 306), i=61, next=0
+                      KindIdentifier "node" [292, 297), i=62, next=63
+                      KindIdentifier "nodeType" [298, 306), i=63, next=0
+          KindReturnStatement [307, 335), i=64, next=0
+            KindBinaryExpression [319, 334), i=65, next=0
+              KindIdentifier "nodeType" [319, 328), i=66, next=67
+              KindEqualsEqualsEqualsToken [328, 332), i=67, next=68
+              KindNumericLiteral [332, 334), i=68, next=0
+    KindFunctionDeclaration [338, 661), i=69, next=130
+      NodeList [338, 350), i=70, next=72
+        KindExportKeyword [338, 350), i=71, next=0
+      KindIdentifier "assertNodeTagName" [359, 377), i=72, next=73
+      NodeList [378, 454), i=73, next=86
+        KindTypeParameter [378, 417), i=74, next=79
+          KindIdentifier "T" [378, 385), i=75, next=76
+          KindTypeOperator [393, 417), i=76, next=0
+            KindTypeReference [399, 417), i=77, next=0
+              KindIdentifier "ElementTagNameMap" [399, 417), i=78, next=0
+        KindTypeParameter [418, 454), i=79, next=0
+          KindIdentifier "U" [418, 425), i=80, next=81
+          KindIndexedAccessType [433, 454), i=81, next=0
+            KindTypeReference [433, 451), i=82, next=84
+              KindIdentifier "ElementTagNameMap" [433, 451), i=83, next=0
+            KindTypeReference [452, 453), i=84, next=0
+              KindIdentifier "T" [452, 453), i=85, next=0
+      NodeList [456, 485), i=86, next=99
+        KindParameter [456, 473), i=87, next=95
+          KindIdentifier "node" [456, 460), i=88, next=89
+          KindUnionType [461, 473), i=89, next=0
+            NodeList [461, 473), i=90, next=0
+              KindTypeReference [461, 466), i=91, next=93
+                KindIdentifier "Node" [461, 466), i=92, next=0
+              KindLiteralType [468, 473), i=93, next=0
+                KindNullKeyword [468, 473), i=94, next=0
+        KindParameter [474, 485), i=95, next=0
+          KindIdentifier "tagName" [474, 482), i=96, next=97
+          KindTypeReference [483, 485), i=97, next=0
+            KindIdentifier "T" [483, 485), i=98, next=0
+      KindTypePredicate [487, 497), i=99, next=103
+        KindIdentifier "node" [487, 492), i=100, next=101
+        KindTypeReference [495, 497), i=101, next=0
+          KindIdentifier "U" [495, 497), i=102, next=0
+      KindBlock [497, 661), i=103, next=0
+        NodeList [499, 658), i=104, next=0
+          KindIfStatement [499, 639), i=105, next=128
+            KindCallExpression [509, 530), i=106, next=110
+              KindIdentifier "assertIsElement" [509, 524), i=107, next=108
+              NodeList [525, 529), i=108, next=0
+                KindIdentifier "node" [525, 529), i=109, next=0
+            KindBlock [531, 639), i=110, next=0
+              NodeList [533, 632), i=111, next=0
+                KindVariableStatement [533, 590), i=112, next=123
+                  KindVariableDeclarationList [533, 589), i=113, next=0
+                    NodeList [548, 589), i=114, next=0
+                      KindVariableDeclaration [548, 589), i=115, next=0
+                        KindIdentifier "nodeTagName" [548, 560), i=116, next=117
+                        KindCallExpression [562, 589), i=117, next=0
+                          KindPropertyAccessExpression [562, 587), i=118, next=0
+                            KindPropertyAccessExpression [562, 575), i=119, next=122
+                              KindIdentifier "node" [562, 567), i=120, next=121
+                              KindIdentifier "tagName" [568, 575), i=121, next=0
+                            KindIdentifier "toLowerCase" [576, 587), i=122, next=0
+                KindReturnStatement [590, 632), i=123, next=0
+                  KindBinaryExpression [607, 631), i=124, next=0
+                    KindIdentifier "nodeTagName" [607, 619), i=125, next=126
+                    KindEqualsEqualsEqualsToken [619, 623), i=126, next=127
+                    KindIdentifier "tagName" [623, 631), i=127, next=0
+          KindReturnStatement [639, 658), i=128, next=0
+            KindFalseKeyword [651, 657), i=129, next=0
+    KindFunctionDeclaration [661, 957), i=130, next=0
+      NodeList [661, 673), i=131, next=133
+        KindExportKeyword [661, 673), i=132, next=0
+      KindIdentifier "assertNodeProperty" [682, 701), i=133, next=134
+      NodeList [702, 828), i=134, next=158
+        KindTypeParameter [702, 741), i=135, next=140
+          KindIdentifier "T" [702, 709), i=136, next=137
+          KindTypeOperator [717, 741), i=137, next=0
+            KindTypeReference [723, 741), i=138, next=0
+              KindIdentifier "ElementTagNameMap" [723, 741), i=139, next=0
+        KindTypeParameter [742, 784), i=140, next=148
+          KindIdentifier "P" [742, 749), i=141, next=142
+          KindTypeOperator [757, 784), i=142, next=0
+            KindIndexedAccessType [763, 784), i=143, next=0
+              KindTypeReference [763, 781), i=144, next=146
+                KindIdentifier "ElementTagNameMap" [763, 781), i=145, next=0
+              KindTypeReference [782, 783), i=146, next=0
+                KindIdentifier "T" [782, 783), i=147, next=0
+        KindTypeParameter [785, 828), i=148, next=0
+          KindIdentifier "V" [785, 792), i=149, next=150
+          KindIndexedAccessType [800, 828), i=150, next=0
+            KindIndexedAccessType [800, 825), i=151, next=156
+              KindTypeReference [800, 822), i=152, next=154
+                KindIdentifier "HTMLElementTagNameMap" [800, 822), i=153, next=0
+              KindTypeReference [823, 824), i=154, next=0
+                KindIdentifier "T" [823, 824), i=155, next=0
+            KindTypeReference [826, 827), i=156, next=0
+              KindIdentifier "P" [826, 827), i=157, next=0
+      NodeList [830, 878), i=158, next=179
+        KindParameter [830, 847), i=159, next=167
+          KindIdentifier "node" [830, 834), i=160, next=161
+          KindUnionType [835, 847), i=161, next=0
+            NodeList [835, 847), i=162, next=0
+              KindTypeReference [835, 840), i=163, next=165
+                KindIdentifier "Node" [835, 840), i=164, next=0
+              KindLiteralType [842, 847), i=165, next=0
+                KindNullKeyword [842, 847), i=166, next=0
+        KindParameter [848, 859), i=167, next=171
+          KindIdentifier "tagName" [848, 856), i=168, next=169
+          KindTypeReference [857, 859), i=169, next=0
+            KindIdentifier "T" [857, 859), i=170, next=0
+        KindParameter [860, 868), i=171, next=175
+          KindIdentifier "prop" [860, 865), i=172, next=173
+          KindTypeReference [866, 868), i=173, next=0
+            KindIdentifier "P" [866, 868), i=174, next=0
+        KindParameter [869, 878), i=175, next=0
+          KindIdentifier "value" [869, 875), i=176, next=177
+          KindTypeReference [876, 878), i=177, next=0
+            KindIdentifier "V" [876, 878), i=178, next=0
+      KindBlock [879, 957), i=179, next=0
+        NodeList [881, 954), i=180, next=0
+          KindIfStatement [881, 954), i=181, next=0
+            KindCallExpression [891, 923), i=182, next=187
+              KindIdentifier "assertNodeTagName" [891, 908), i=183, next=184
+              NodeList [909, 922), i=184, next=0
+                KindIdentifier "node" [909, 913), i=185, next=186
+                KindIdentifier "tagName" [914, 922), i=186, next=0
+            KindBlock [924, 954), i=187, next=0
+              NodeList [926, 947), i=188, next=0
+                KindExpressionStatement [926, 947), i=189, next=0
+                  KindElementAccessExpression [926, 946), i=190, next=0
+                    KindIdentifier "node" [926, 940), i=191, next=192
+                    KindIdentifier "prop" [941, 945), i=192, next=0

@@ -1,0 +1,70 @@
+KindSourceFile [0, 350), i=1, next=0
+  NodeList [0, 350), i=2, next=0
+    KindTypeAliasDeclaration [0, 40), i=3, next=11
+      KindIdentifier "CanvasDirection" [4, 20), i=4, next=5
+      KindUnionType [22, 39), i=5, next=0
+        NodeList [22, 39), i=6, next=0
+          KindLiteralType [22, 30), i=7, next=9
+            KindStringLiteral "RIGHT" [22, 30), i=8, next=0
+          KindLiteralType [32, 39), i=9, next=0
+            KindStringLiteral "LEFT" [32, 39), i=10, next=0
+    KindInterfaceDeclaration [40, 122), i=11, next=23
+      KindIdentifier "GraphActions" [51, 64), i=12, next=13
+      NodeList [66, 120), i=13, next=0
+        KindPropertySignature [66, 120), i=14, next=0
+          KindIdentifier "setDirection" [66, 81), i=15, next=16
+          KindFunctionType [82, 119), i=16, next=0
+            NodeList [84, 110), i=17, next=22
+              KindParameter [84, 110), i=18, next=0
+                KindIdentifier "direction" [84, 93), i=19, next=20
+                KindTypeReference [94, 110), i=20, next=0
+                  KindIdentifier "CanvasDirection" [94, 110), i=21, next=0
+            KindVoidKeyword [114, 119), i=22, next=0
+    KindFunctionDeclaration [122, 175), i=23, next=37
+      NodeList [122, 138), i=24, next=27
+        KindExportKeyword [122, 130), i=25, next=26
+        KindDeclareKeyword [130, 138), i=26, next=0
+      KindIdentifier "create" [147, 154), i=27, next=28
+      NodeList [155, 156), i=28, next=31
+        KindTypeParameter [155, 156), i=29, next=0
+          KindIdentifier "T" [155, 156), i=30, next=0
+      NodeList [158, 167), i=31, next=36
+        KindParameter [158, 167), i=32, next=0
+          KindIdentifier "config" [158, 164), i=33, next=34
+          KindTypeReference [165, 167), i=34, next=0
+            KindIdentifier "T" [165, 167), i=35, next=0
+      KindVoidKeyword [169, 174), i=36, next=0
+    KindFunctionDeclaration [175, 243), i=37, next=47
+      NodeList [175, 184), i=38, next=40
+        KindDeclareKeyword [175, 184), i=39, next=0
+      KindIdentifier "takesDirection" [193, 208), i=40, next=41
+      NodeList [209, 235), i=41, next=46
+        KindParameter [209, 235), i=42, next=0
+          KindIdentifier "direction" [209, 218), i=43, next=44
+          KindTypeReference [219, 235), i=44, next=0
+            KindIdentifier "CanvasDirection" [219, 235), i=45, next=0
+      KindVoidKeyword [237, 242), i=46, next=0
+    KindExpressionStatement [243, 350), i=47, next=0
+      KindCallExpression [243, 349), i=48, next=0
+        KindIdentifier "create" [243, 251), i=49, next=50
+        NodeList [252, 264), i=50, next=53
+          KindTypeReference [252, 264), i=51, next=0
+            KindIdentifier "GraphActions" [252, 264), i=52, next=0
+        NodeList [266, 348), i=53, next=0
+          KindObjectLiteralExpression [266, 348), i=54, next=0
+            NodeList [267, 346), i=55, next=0
+              KindPropertyAssignment [267, 345), i=56, next=0
+                KindIdentifier "setDirection" [267, 282), i=57, next=58
+                KindArrowFunction [283, 345), i=58, next=0
+                  NodeList [285, 304), i=59, next=63
+                    KindParameter [285, 304), i=60, next=0
+                      KindIdentifier "direction" [285, 294), i=61, next=62
+                      KindStringLiteral "RIGHT" [296, 304), i=62, next=0
+                  KindEqualsGreaterThanToken [305, 308), i=63, next=64
+                  KindBlock [308, 345), i=64, next=0
+                    NodeList [310, 341), i=65, next=0
+                      KindExpressionStatement [310, 341), i=66, next=0
+                        KindCallExpression [310, 340), i=67, next=0
+                          KindIdentifier "takesDirection" [310, 329), i=68, next=69
+                          NodeList [330, 339), i=69, next=0
+                            KindIdentifier "direction" [330, 339), i=70, next=0

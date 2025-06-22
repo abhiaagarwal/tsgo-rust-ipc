@@ -1,0 +1,44 @@
+KindSourceFile [0, 123), i=1, next=0
+  NodeList [0, 122), i=2, next=0
+    KindVariableStatement [0, 47), i=3, next=18
+      KindVariableDeclarationList [0, 46), i=4, next=0
+        NodeList [5, 46), i=5, next=0
+          KindVariableDeclaration [5, 46), i=6, next=0
+            KindIdentifier "a" [5, 7), i=7, next=8
+            KindLiteralType [8, 14), i=8, next=10
+              KindStringLiteral "baz" [8, 14), i=9, next=0
+            KindSatisfiesExpression [16, 46), i=10, next=0
+              KindStringLiteral "foo" [16, 22), i=11, next=12
+              KindUnionType [32, 46), i=12, next=0
+                NodeList [32, 46), i=13, next=0
+                  KindLiteralType [32, 38), i=14, next=16
+                    KindStringLiteral "foo" [32, 38), i=15, next=0
+                  KindLiteralType [40, 46), i=16, next=0
+                    KindStringLiteral "bar" [40, 46), i=17, next=0
+    KindVariableStatement [47, 122), i=18, next=0
+      KindVariableDeclarationList [47, 121), i=19, next=0
+        NodeList [53, 121), i=20, next=0
+          KindVariableDeclaration [53, 121), i=21, next=0
+            KindIdentifier "b" [53, 55), i=22, next=23
+            KindTypeLiteral [56, 71), i=23, next=29
+              NodeList [58, 69), i=24, next=0
+                KindPropertySignature [58, 69), i=25, next=0
+                  KindIdentifier "xyz" [58, 62), i=26, next=27
+                  KindLiteralType [63, 69), i=27, next=0
+                    KindStringLiteral "baz" [63, 69), i=28, next=0
+            KindSatisfiesExpression [73, 121), i=29, next=0
+              KindObjectLiteralExpression [73, 88), i=30, next=35
+                NodeList [75, 86), i=31, next=0
+                  KindPropertyAssignment [75, 86), i=32, next=0
+                    KindIdentifier "xyz" [75, 79), i=33, next=34
+                    KindStringLiteral "foo" [80, 86), i=34, next=0
+              KindTypeLiteral [98, 121), i=35, next=0
+                NodeList [100, 119), i=36, next=0
+                  KindPropertySignature [100, 119), i=37, next=0
+                    KindIdentifier "xyz" [100, 104), i=38, next=39
+                    KindUnionType [105, 119), i=39, next=0
+                      NodeList [105, 119), i=40, next=0
+                        KindLiteralType [105, 111), i=41, next=43
+                          KindStringLiteral "foo" [105, 111), i=42, next=0
+                        KindLiteralType [113, 119), i=43, next=0
+                          KindStringLiteral "bar" [113, 119), i=44, next=0

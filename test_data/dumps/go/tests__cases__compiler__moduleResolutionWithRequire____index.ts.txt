@@ -1,0 +1,40 @@
+KindSourceFile [0, 165), i=1, next=0
+  NodeList [0, 163), i=2, next=0
+    KindVariableStatement [0, 27), i=3, next=11
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindVariableDeclarationList [7, 26), i=6, next=0
+        NodeList [13, 26), i=7, next=0
+          KindVariableDeclaration [13, 26), i=8, next=0
+            KindIdentifier "require" [13, 21), i=9, next=10
+            KindAnyKeyword [22, 26), i=10, next=0
+    KindFunctionDeclaration [27, 163), i=11, next=0
+      KindIdentifier "foo" [37, 41), i=12, next=13
+      KindBlock [43, 163), i=13, next=0
+        NodeList [45, 160), i=14, next=0
+          KindVariableStatement [45, 98), i=15, next=24
+            KindVariableDeclarationList [45, 97), i=16, next=0
+              NodeList [56, 97), i=17, next=0
+                KindVariableDeclaration [56, 97), i=18, next=0
+                  KindIdentifier "a" [56, 58), i=19, next=20
+                  KindCallExpression [60, 97), i=20, next=0
+                    KindIdentifier "require" [60, 68), i=21, next=22
+                    NodeList [69, 96), i=22, next=0
+                      KindStringLiteral "../outside-of-rootdir/foo" [69, 96), i=23, next=0
+          KindVariableStatement [98, 160), i=24, next=0
+            KindVariableDeclarationList [98, 159), i=25, next=0
+              NodeList [109, 159), i=26, next=0
+                KindVariableDeclaration [109, 159), i=27, next=0
+                  KindObjectBindingPattern [109, 119), i=28, next=32
+                    NodeList [111, 117), i=29, next=0
+                      KindBindingElement [111, 117), i=30, next=0
+                        KindIdentifier "other" [111, 117), i=31, next=0
+                  KindTypeLiteral [120, 138), i=32, next=37
+                    NodeList [122, 136), i=33, next=0
+                      KindPropertySignature [122, 136), i=34, next=0
+                        KindIdentifier "other" [122, 128), i=35, next=36
+                        KindStringKeyword [129, 136), i=36, next=0
+                  KindCallExpression [140, 159), i=37, next=0
+                    KindIdentifier "require" [140, 148), i=38, next=39
+                    NodeList [149, 158), i=39, next=0
+                      KindStringLiteral "./other" [149, 158), i=40, next=0

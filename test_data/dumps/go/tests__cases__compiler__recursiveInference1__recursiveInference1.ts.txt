@@ -1,0 +1,44 @@
+KindSourceFile [0, 93), i=1, next=0
+  NodeList [0, 93), i=2, next=0
+    KindFunctionDeclaration [0, 71), i=3, next=36
+      KindIdentifier "fib" [8, 12), i=4, next=5
+      NodeList [13, 21), i=5, next=9
+        KindParameter [13, 21), i=6, next=0
+          KindIdentifier "x" [13, 14), i=7, next=8
+          KindNumberKeyword [15, 21), i=8, next=0
+      KindBlock [22, 71), i=9, next=0
+        NodeList [24, 69), i=10, next=0
+          KindReturnStatement [24, 69), i=11, next=0
+            KindConditionalExpression [31, 68), i=12, next=0
+              KindBinaryExpression [31, 38), i=13, next=17
+                KindIdentifier "x" [31, 33), i=14, next=15
+                KindLessThanEqualsToken [33, 36), i=15, next=16
+                KindNumericLiteral [36, 38), i=16, next=0
+              KindQuestionToken [38, 40), i=17, next=18
+              KindIdentifier "x" [40, 42), i=18, next=19
+              KindColonToken [42, 44), i=19, next=20
+              KindBinaryExpression [44, 68), i=20, next=0
+                KindCallExpression [44, 55), i=21, next=28
+                  KindIdentifier "fib" [44, 48), i=22, next=23
+                  NodeList [49, 54), i=23, next=0
+                    KindBinaryExpression [49, 54), i=24, next=0
+                      KindIdentifier "x" [49, 50), i=25, next=26
+                      KindMinusToken [50, 52), i=26, next=27
+                      KindNumericLiteral [52, 54), i=27, next=0
+                KindPlusToken [55, 57), i=28, next=29
+                KindCallExpression [57, 68), i=29, next=0
+                  KindIdentifier "fib" [57, 61), i=30, next=31
+                  NodeList [62, 67), i=31, next=0
+                    KindBinaryExpression [62, 67), i=32, next=0
+                      KindIdentifier "x" [62, 63), i=33, next=34
+                      KindMinusToken [63, 65), i=34, next=35
+                      KindNumericLiteral [65, 67), i=35, next=0
+    KindVariableStatement [71, 93), i=36, next=0
+      KindVariableDeclarationList [71, 92), i=37, next=0
+        NodeList [76, 92), i=38, next=0
+          KindVariableDeclaration [76, 92), i=39, next=0
+            KindIdentifier "result" [76, 83), i=40, next=41
+            KindCallExpression [85, 92), i=41, next=0
+              KindIdentifier "fib" [85, 89), i=42, next=43
+              NodeList [90, 91), i=43, next=0
+                KindNumericLiteral [90, 91), i=44, next=0

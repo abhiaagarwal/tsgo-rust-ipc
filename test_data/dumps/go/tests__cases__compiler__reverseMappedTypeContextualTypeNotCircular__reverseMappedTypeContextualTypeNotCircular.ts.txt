@@ -1,0 +1,84 @@
+KindSourceFile [0, 432), i=1, next=0
+  NodeList [0, 432), i=2, next=0
+    KindTypeAliasDeclaration [0, 38), i=3, next=18
+      KindIdentifier "Selector" [4, 13), i=4, next=5
+      NodeList [14, 18), i=5, next=10
+        KindTypeParameter [14, 15), i=6, next=8
+          KindIdentifier "S" [14, 15), i=7, next=0
+        KindTypeParameter [16, 18), i=8, next=0
+          KindIdentifier "R" [16, 18), i=9, next=0
+      KindFunctionType [21, 37), i=10, next=0
+        NodeList [23, 31), i=11, next=16
+          KindParameter [23, 31), i=12, next=0
+            KindIdentifier "state" [23, 28), i=13, next=14
+            KindTypeReference [29, 31), i=14, next=0
+              KindIdentifier "S" [29, 31), i=15, next=0
+        KindTypeReference [35, 37), i=16, next=0
+          KindIdentifier "R" [35, 37), i=17, next=0
+    KindFunctionDeclaration [38, 161), i=18, next=53
+      NodeList [38, 49), i=19, next=21
+        KindDeclareKeyword [38, 49), i=20, next=0
+      KindIdentifier "createStructuredSelector" [58, 83), i=21, next=22
+      NodeList [84, 88), i=22, next=27
+        KindTypeParameter [84, 85), i=23, next=25
+          KindIdentifier "S" [84, 85), i=24, next=0
+        KindTypeParameter [86, 88), i=25, next=0
+          KindIdentifier "T" [86, 88), i=26, next=0
+      NodeList [90, 141), i=27, next=46
+        KindParameter [90, 140), i=28, next=0
+          KindIdentifier "selectors" [90, 103), i=29, next=30
+          KindMappedType [104, 140), i=30, next=0
+            KindTypeParameter [107, 119), i=31, next=36
+              KindIdentifier "K" [107, 108), i=32, next=33
+              KindTypeOperator [111, 119), i=33, next=0
+                KindTypeReference [117, 119), i=34, next=0
+                  KindIdentifier "T" [117, 119), i=35, next=0
+            KindTypeReference [121, 139), i=36, next=0
+              KindIdentifier "Selector" [121, 130), i=37, next=38
+              NodeList [131, 138), i=38, next=0
+                KindTypeReference [131, 132), i=39, next=41
+                  KindIdentifier "S" [131, 132), i=40, next=0
+                KindIndexedAccessType [133, 138), i=41, next=0
+                  KindTypeReference [133, 135), i=42, next=44
+                    KindIdentifier "T" [133, 135), i=43, next=0
+                  KindTypeReference [136, 137), i=44, next=0
+                    KindIdentifier "K" [136, 137), i=45, next=0
+      KindTypeReference [145, 160), i=46, next=0
+        KindIdentifier "Selector" [145, 154), i=47, next=48
+        NodeList [155, 159), i=48, next=0
+          KindTypeReference [155, 156), i=49, next=51
+            KindIdentifier "S" [155, 156), i=50, next=0
+          KindTypeReference [157, 159), i=51, next=0
+            KindIdentifier "T" [157, 159), i=52, next=0
+    KindVariableStatement [161, 193), i=53, next=62
+      KindVariableDeclarationList [161, 192), i=54, next=0
+        NodeList [170, 192), i=55, next=0
+          KindVariableDeclaration [170, 192), i=56, next=0
+            KindIdentifier "editable" [170, 179), i=57, next=58
+            KindArrowFunction [181, 192), i=58, next=0
+              KindEqualsGreaterThanToken [184, 187), i=59, next=60
+              KindParenthesizedExpression [187, 192), i=60, next=0
+                KindObjectLiteralExpression [189, 191), i=61, next=0
+    KindVariableStatement [193, 432), i=62, next=0
+      KindVariableDeclarationList [193, 431), i=63, next=0
+        NodeList [202, 431), i=64, next=0
+          KindVariableDeclaration [202, 431), i=65, next=0
+            KindIdentifier "mapStateToProps" [202, 218), i=66, next=67
+            KindCallExpression [220, 431), i=67, next=0
+              KindIdentifier "createStructuredSelector" [220, 245), i=68, next=69
+              NodeList [246, 430), i=69, next=0
+                KindObjectLiteralExpression [246, 430), i=70, next=0
+                  NodeList [247, 300), i=71, next=0
+                    KindPropertyAssignment [247, 299), i=72, next=0
+                      KindIdentifier "editable" [247, 259), i=73, next=74
+                      KindArrowFunction [260, 299), i=74, next=0
+                        NodeList [262, 284), i=75, next=82
+                          KindParameter [262, 272), i=76, next=79
+                            KindIdentifier "state" [262, 267), i=77, next=78
+                            KindAnyKeyword [268, 272), i=78, next=0
+                          KindParameter [273, 284), i=79, next=0
+                            KindIdentifier "props" [273, 279), i=80, next=81
+                            KindAnyKeyword [280, 284), i=81, next=0
+                        KindEqualsGreaterThanToken [285, 288), i=82, next=83
+                        KindCallExpression [288, 299), i=83, next=0
+                          KindIdentifier "editable" [288, 297), i=84, next=0

@@ -1,0 +1,132 @@
+KindSourceFile [0, 528), i=1, next=0
+  NodeList [0, 527), i=2, next=0
+    KindTypeAliasDeclaration [0, 37), i=3, next=17
+      KindIdentifier "Tuple" [4, 10), i=4, next=5
+      NodeList [11, 12), i=5, next=8
+        KindTypeParameter [11, 12), i=6, next=0
+          KindIdentifier "T" [11, 12), i=7, next=0
+      KindTypeOperator [15, 36), i=8, next=0
+        KindTupleType [24, 36), i=9, next=0
+          NodeList [26, 35), i=10, next=0
+            KindTypeReference [26, 27), i=11, next=13
+              KindIdentifier "T" [26, 27), i=12, next=0
+            KindRestType [28, 35), i=13, next=0
+              KindArrayType [32, 35), i=14, next=0
+                KindTypeReference [32, 33), i=15, next=0
+                  KindIdentifier "T" [32, 33), i=16, next=0
+    KindFunctionDeclaration [37, 367), i=17, next=97
+      NodeList [37, 46), i=18, next=20
+        KindDeclareKeyword [37, 46), i=19, next=0
+      KindIdentifier "bindAll" [55, 63), i=20, next=21
+      NodeList [64, 146), i=21, next=42
+        KindTypeParameter [64, 94), i=22, next=26
+          KindIdentifier "TTarget" [64, 74), i=23, next=24
+          KindTypeReference [82, 94), i=24, next=0
+            KindIdentifier "EventTarget" [82, 94), i=25, next=0
+        KindTypeParameter [95, 146), i=26, next=0
+          KindIdentifier "TTypes" [95, 104), i=27, next=28
+          KindTypeReference [112, 146), i=28, next=0
+            KindIdentifier "Tuple" [112, 118), i=29, next=30
+            NodeList [119, 145), i=30, next=0
+              KindIntersectionType [119, 145), i=31, next=0
+                NodeList [119, 145), i=32, next=0
+                  KindTypeOperator [119, 132), i=33, next=36
+                    KindTypeReference [124, 132), i=34, next=0
+                      KindIdentifier "TTarget" [124, 132), i=35, next=0
+                  KindTemplateLiteralType [134, 145), i=36, next=0
+                    KindTemplateHead [134, 140), i=37, next=38
+                    NodeList [140, 145), i=38, next=0
+                      KindTemplateLiteralTypeSpan [140, 145), i=39, next=0
+                        KindAnyKeyword [140, 143), i=40, next=41
+                        KindTemplateTail [143, 145), i=41, next=0
+      NodeList [149, 358), i=42, next=96
+        KindParameter [149, 167), i=43, next=47
+          KindIdentifier "target" [149, 158), i=44, next=45
+          KindTypeReference [159, 167), i=45, next=0
+            KindIdentifier "TTarget" [159, 167), i=46, next=0
+        KindParameter [168, 358), i=47, next=0
+          KindIdentifier "bindings" [168, 179), i=48, next=49
+          KindMappedType [180, 358), i=49, next=0
+            KindTypeParameter [188, 205), i=50, next=55
+              KindIdentifier "K" [188, 189), i=51, next=52
+              KindTypeOperator [192, 205), i=52, next=0
+                KindTypeReference [198, 205), i=53, next=0
+                  KindIdentifier "TTypes" [198, 205), i=54, next=0
+            KindTypeLiteral [207, 353), i=55, next=0
+              NodeList [209, 347), i=56, next=0
+                KindPropertySignature [209, 232), i=57, next=64
+                  KindIdentifier "type" [209, 220), i=58, next=59
+                  KindIndexedAccessType [221, 231), i=59, next=0
+                    KindTypeReference [221, 228), i=60, next=62
+                      KindIdentifier "TTypes" [221, 228), i=61, next=0
+                    KindTypeReference [229, 230), i=62, next=0
+                      KindIdentifier "K" [229, 230), i=63, next=0
+                KindPropertySignature [232, 347), i=64, next=0
+                  KindIdentifier "listener" [232, 247), i=65, next=66
+                  KindFunctionType [248, 346), i=66, next=0
+                    NodeList [250, 330), i=67, next=95
+                      KindParameter [250, 330), i=68, next=0
+                        KindIdentifier "ev" [250, 261), i=69, next=70
+                        KindIndexedAccessType [262, 330), i=70, next=0
+                          KindTypeReference [262, 327), i=71, next=93
+                            KindIdentifier "Parameters" [262, 273), i=72, next=73
+                            NodeList [274, 326), i=73, next=0
+                              KindTypeReference [274, 326), i=74, next=0
+                                KindIdentifier "Extract" [274, 281), i=75, next=76
+                                NodeList [282, 325), i=76, next=0
+                                  KindIndexedAccessType [282, 300), i=77, next=85
+                                    KindTypeReference [282, 289), i=78, next=80
+                                      KindIdentifier "TTarget" [282, 289), i=79, next=0
+                                    KindIndexedAccessType [290, 299), i=80, next=0
+                                      KindTypeReference [290, 296), i=81, next=83
+                                        KindIdentifier "TTypes" [290, 296), i=82, next=0
+                                      KindTypeReference [297, 298), i=83, next=0
+                                        KindIdentifier "K" [297, 298), i=84, next=0
+                                  KindFunctionType [301, 325), i=85, next=0
+                                    NodeList [303, 317), i=86, next=92
+                                      KindParameter [303, 317), i=87, next=0
+                                        KindDotDotDotToken [303, 306), i=88, next=89
+                                        KindIdentifier "args" [306, 310), i=89, next=90
+                                        KindArrayType [311, 317), i=90, next=0
+                                          KindAnyKeyword [311, 315), i=91, next=0
+                                    KindAnyKeyword [321, 325), i=92, next=0
+                          KindLiteralType [328, 329), i=93, next=0
+                            KindNumericLiteral [328, 329), i=94, next=0
+                    KindVoidKeyword [341, 346), i=95, next=0
+      KindVoidKeyword [361, 366), i=96, next=0
+    KindExpressionStatement [367, 527), i=97, next=0
+      KindCallExpression [367, 526), i=98, next=0
+        KindIdentifier "bindAll" [367, 376), i=99, next=100
+        NodeList [377, 525), i=100, next=0
+          KindAsExpression [377, 400), i=101, next=105
+            KindObjectLiteralExpression [377, 379), i=102, next=103
+            KindTypeReference [382, 400), i=103, next=0
+              KindIdentifier "HTMLButtonElement" [382, 400), i=104, next=0
+          KindArrayLiteralExpression [401, 525), i=105, next=0
+            NodeList [403, 523), i=106, next=0
+              KindObjectLiteralExpression [403, 461), i=107, next=120
+                NodeList [407, 457), i=108, next=0
+                  KindPropertyAssignment [407, 427), i=109, next=112
+                    KindIdentifier "type" [407, 416), i=110, next=111
+                    KindStringLiteral "onclick" [417, 427), i=111, next=0
+                  KindPropertyAssignment [428, 456), i=112, next=0
+                    KindIdentifier "listener" [428, 441), i=113, next=114
+                    KindArrowFunction [442, 456), i=114, next=0
+                      NodeList [444, 449), i=115, next=118
+                        KindParameter [444, 449), i=116, next=0
+                          KindIdentifier "event" [444, 449), i=117, next=0
+                      KindEqualsGreaterThanToken [450, 453), i=118, next=119
+                      KindBlock [453, 456), i=119, next=0
+              KindObjectLiteralExpression [462, 522), i=120, next=0
+                NodeList [466, 518), i=121, next=0
+                  KindPropertyAssignment [466, 488), i=122, next=125
+                    KindIdentifier "type" [466, 475), i=123, next=124
+                    KindStringLiteral "onkeydown" [476, 488), i=124, next=0
+                  KindPropertyAssignment [489, 517), i=125, next=0
+                    KindIdentifier "listener" [489, 502), i=126, next=127
+                    KindArrowFunction [503, 517), i=127, next=0
+                      NodeList [505, 510), i=128, next=131
+                        KindParameter [505, 510), i=129, next=0
+                          KindIdentifier "event" [505, 510), i=130, next=0
+                      KindEqualsGreaterThanToken [511, 514), i=131, next=132
+                      KindBlock [514, 517), i=132, next=0

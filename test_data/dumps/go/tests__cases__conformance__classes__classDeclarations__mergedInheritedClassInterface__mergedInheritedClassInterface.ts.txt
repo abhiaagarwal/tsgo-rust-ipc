@@ -1,0 +1,138 @@
+KindSourceFile [0, 852), i=1, next=0
+  NodeList [0, 850), i=2, next=0
+    KindInterfaceDeclaration [0, 75), i=3, next=13
+      KindIdentifier "BaseInterface" [9, 23), i=4, next=5
+      NodeList [25, 72), i=5, next=0
+        KindPropertySignature [25, 48), i=6, next=9
+          KindIdentifier "required" [25, 39), i=7, next=8
+          KindNumberKeyword [40, 47), i=8, next=0
+        KindPropertySignature [48, 72), i=9, next=0
+          KindIdentifier "optional" [48, 62), i=10, next=11
+          KindQuestionToken [62, 63), i=11, next=12
+          KindNumberKeyword [64, 71), i=12, next=0
+    KindClassDeclaration [75, 146), i=13, next=22
+      KindIdentifier "BaseClass" [84, 94), i=14, next=15
+      NodeList [96, 143), i=15, next=0
+        KindMethodDeclaration [96, 118), i=16, next=19
+          KindIdentifier "baseMethod" [96, 112), i=17, next=18
+          KindBlock [114, 118), i=18, next=0
+        KindPropertyDeclaration [118, 143), i=19, next=0
+          KindIdentifier "baseNumber" [118, 134), i=20, next=21
+          KindNumberKeyword [135, 142), i=21, next=0
+    KindInterfaceDeclaration [146, 217), i=22, next=33
+      KindIdentifier "Child" [159, 165), i=23, next=24
+      NodeList [165, 187), i=24, next=29
+        KindHeritageClause [165, 187), i=25, next=0
+          NodeList [173, 187), i=26, next=0
+            KindExpressionWithTypeArguments [173, 187), i=27, next=0
+              KindIdentifier "BaseInterface" [173, 187), i=28, next=0
+      NodeList [189, 214), i=29, next=0
+        KindPropertySignature [189, 214), i=30, next=0
+          KindIdentifier "additional" [189, 205), i=31, next=32
+          KindNumberKeyword [206, 213), i=32, next=0
+    KindClassDeclaration [217, 299), i=33, next=47
+      KindIdentifier "Child" [226, 232), i=34, next=35
+      NodeList [232, 250), i=35, next=40
+        KindHeritageClause [232, 250), i=36, next=0
+          NodeList [240, 250), i=37, next=0
+            KindExpressionWithTypeArguments [240, 250), i=38, next=0
+              KindIdentifier "BaseClass" [240, 250), i=39, next=0
+      NodeList [252, 296), i=40, next=0
+        KindPropertyDeclaration [252, 278), i=41, next=44
+          KindIdentifier "classNumber" [252, 269), i=42, next=43
+          KindNumberKeyword [270, 277), i=43, next=0
+        KindMethodDeclaration [278, 296), i=44, next=0
+          KindIdentifier "method" [278, 290), i=45, next=46
+          KindBlock [292, 296), i=46, next=0
+    KindInterfaceDeclaration [299, 382), i=47, next=58
+      KindIdentifier "ChildNoBaseClass" [312, 329), i=48, next=49
+      NodeList [329, 351), i=49, next=54
+        KindHeritageClause [329, 351), i=50, next=0
+          NodeList [337, 351), i=51, next=0
+            KindExpressionWithTypeArguments [337, 351), i=52, next=0
+              KindIdentifier "BaseInterface" [337, 351), i=53, next=0
+      NodeList [353, 379), i=54, next=0
+        KindPropertySignature [353, 379), i=55, next=0
+          KindIdentifier "additional2" [353, 370), i=56, next=57
+          KindStringKeyword [371, 378), i=57, next=0
+    KindClassDeclaration [382, 456), i=58, next=67
+      KindIdentifier "ChildNoBaseClass" [389, 406), i=59, next=60
+      NodeList [408, 453), i=60, next=0
+        KindPropertyDeclaration [408, 434), i=61, next=64
+          KindIdentifier "classString" [408, 425), i=62, next=63
+          KindStringKeyword [426, 433), i=63, next=0
+        KindMethodDeclaration [434, 453), i=64, next=0
+          KindIdentifier "method2" [434, 447), i=65, next=66
+          KindBlock [449, 453), i=66, next=0
+    KindClassDeclaration [456, 504), i=67, next=74
+      KindIdentifier "Grandchild" [463, 474), i=68, next=69
+      NodeList [474, 499), i=69, next=0
+        KindHeritageClause [474, 499), i=70, next=0
+          NodeList [482, 499), i=71, next=0
+            KindExpressionWithTypeArguments [482, 499), i=72, next=0
+              KindIdentifier "ChildNoBaseClass" [482, 499), i=73, next=0
+    KindVariableStatement [504, 572), i=74, next=81
+      KindVariableDeclarationList [504, 571), i=75, next=0
+        NodeList [557, 571), i=76, next=0
+          KindVariableDeclaration [557, 571), i=77, next=0
+            KindIdentifier "child" [557, 563), i=78, next=79
+            KindTypeReference [565, 571), i=79, next=0
+              KindIdentifier "Child" [565, 571), i=80, next=0
+    KindExpressionStatement [572, 589), i=81, next=85
+      KindPropertyAccessExpression [572, 588), i=82, next=0
+        KindIdentifier "child" [572, 579), i=83, next=84
+        KindIdentifier "required" [580, 588), i=84, next=0
+    KindExpressionStatement [589, 606), i=85, next=89
+      KindPropertyAccessExpression [589, 605), i=86, next=0
+        KindIdentifier "child" [589, 596), i=87, next=88
+        KindIdentifier "optional" [597, 605), i=88, next=0
+    KindExpressionStatement [606, 625), i=89, next=93
+      KindPropertyAccessExpression [606, 624), i=90, next=0
+        KindIdentifier "child" [606, 613), i=91, next=92
+        KindIdentifier "additional" [614, 624), i=92, next=0
+    KindExpressionStatement [625, 644), i=93, next=97
+      KindPropertyAccessExpression [625, 643), i=94, next=0
+        KindIdentifier "child" [625, 632), i=95, next=96
+        KindIdentifier "baseNumber" [633, 643), i=96, next=0
+    KindExpressionStatement [644, 664), i=97, next=101
+      KindPropertyAccessExpression [644, 663), i=98, next=0
+        KindIdentifier "child" [644, 651), i=99, next=100
+        KindIdentifier "classNumber" [652, 663), i=100, next=0
+    KindExpressionStatement [664, 685), i=101, next=106
+      KindCallExpression [664, 684), i=102, next=0
+        KindPropertyAccessExpression [664, 682), i=103, next=0
+          KindIdentifier "child" [664, 671), i=104, next=105
+          KindIdentifier "baseMethod" [672, 682), i=105, next=0
+    KindExpressionStatement [685, 702), i=106, next=111
+      KindCallExpression [685, 701), i=107, next=0
+        KindPropertyAccessExpression [685, 699), i=108, next=0
+          KindIdentifier "child" [685, 692), i=109, next=110
+          KindIdentifier "method" [693, 699), i=110, next=0
+    KindVariableStatement [702, 733), i=111, next=118
+      KindVariableDeclarationList [702, 732), i=112, next=0
+        NodeList [709, 732), i=113, next=0
+          KindVariableDeclaration [709, 732), i=114, next=0
+            KindIdentifier "grandchild" [709, 720), i=115, next=116
+            KindTypeReference [721, 732), i=116, next=0
+              KindIdentifier "Grandchild" [721, 732), i=117, next=0
+    KindExpressionStatement [733, 755), i=118, next=122
+      KindPropertyAccessExpression [733, 754), i=119, next=0
+        KindIdentifier "grandchild" [733, 745), i=120, next=121
+        KindIdentifier "required" [746, 754), i=121, next=0
+    KindExpressionStatement [755, 777), i=122, next=126
+      KindPropertyAccessExpression [755, 776), i=123, next=0
+        KindIdentifier "grandchild" [755, 767), i=124, next=125
+        KindIdentifier "optional" [768, 776), i=125, next=0
+    KindExpressionStatement [777, 802), i=126, next=130
+      KindPropertyAccessExpression [777, 801), i=127, next=0
+        KindIdentifier "grandchild" [777, 789), i=128, next=129
+        KindIdentifier "additional2" [790, 801), i=129, next=0
+    KindExpressionStatement [802, 827), i=130, next=134
+      KindPropertyAccessExpression [802, 826), i=131, next=0
+        KindIdentifier "grandchild" [802, 814), i=132, next=133
+        KindIdentifier "classString" [815, 826), i=133, next=0
+    KindExpressionStatement [827, 850), i=134, next=0
+      KindCallExpression [827, 849), i=135, next=0
+        KindPropertyAccessExpression [827, 847), i=136, next=0
+          KindIdentifier "grandchild" [827, 839), i=137, next=138
+          KindIdentifier "method2" [840, 847), i=138, next=0

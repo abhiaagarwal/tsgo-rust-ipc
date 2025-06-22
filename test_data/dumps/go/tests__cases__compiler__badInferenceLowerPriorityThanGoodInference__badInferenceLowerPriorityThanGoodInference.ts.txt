@@ -1,0 +1,129 @@
+KindSourceFile [0, 432), i=1, next=0
+  NodeList [0, 430), i=2, next=0
+    KindInterfaceDeclaration [0, 56), i=3, next=22
+      KindIdentifier "Foo" [9, 13), i=4, next=5
+      NodeList [14, 15), i=5, next=8
+        KindTypeParameter [14, 15), i=6, next=0
+          KindIdentifier "A" [14, 15), i=7, next=0
+      NodeList [18, 53), i=8, next=0
+        KindPropertySignature [18, 29), i=9, next=13
+          KindIdentifier "a" [18, 25), i=10, next=11
+          KindTypeReference [26, 28), i=11, next=0
+            KindIdentifier "A" [26, 28), i=12, next=0
+        KindPropertySignature [29, 53), i=13, next=0
+          KindIdentifier "b" [29, 36), i=14, next=15
+          KindFunctionType [37, 52), i=15, next=0
+            NodeList [39, 43), i=16, next=21
+              KindParameter [39, 43), i=17, next=0
+                KindIdentifier "x" [39, 40), i=18, next=19
+                KindTypeReference [41, 43), i=19, next=0
+                  KindIdentifier "A" [41, 43), i=20, next=0
+            KindVoidKeyword [47, 52), i=21, next=0
+    KindFunctionDeclaration [56, 117), i=22, next=40
+      NodeList [56, 67), i=23, next=25
+        KindDeclareKeyword [56, 67), i=24, next=0
+      KindIdentifier "canYouInferThis" [76, 92), i=25, next=26
+      NodeList [93, 94), i=26, next=29
+        KindTypeParameter [93, 94), i=27, next=0
+          KindIdentifier "A" [93, 94), i=28, next=0
+      NodeList [96, 112), i=29, next=38
+        KindParameter [96, 112), i=30, next=0
+          KindIdentifier "fn" [96, 98), i=31, next=32
+          KindFunctionType [99, 112), i=32, next=0
+            KindTypeReference [105, 112), i=33, next=0
+              KindIdentifier "Foo" [105, 109), i=34, next=35
+              NodeList [110, 111), i=35, next=0
+                KindTypeReference [110, 111), i=36, next=0
+                  KindIdentifier "A" [110, 111), i=37, next=0
+      KindTypeReference [114, 116), i=38, next=0
+        KindIdentifier "A" [114, 116), i=39, next=0
+    KindVariableStatement [117, 204), i=40, next=68
+      KindVariableDeclarationList [117, 204), i=41, next=0
+        NodeList [126, 204), i=42, next=0
+          KindVariableDeclaration [126, 204), i=43, next=0
+            KindIdentifier "result" [126, 133), i=44, next=45
+            KindCallExpression [135, 204), i=45, next=0
+              KindIdentifier "canYouInferThis" [135, 151), i=46, next=47
+              NodeList [152, 203), i=47, next=0
+                KindArrowFunction [152, 203), i=48, next=0
+                  KindEqualsGreaterThanToken [154, 157), i=49, next=50
+                  KindParenthesizedExpression [157, 203), i=50, next=0
+                    KindObjectLiteralExpression [159, 202), i=51, next=0
+                      NodeList [160, 199), i=52, next=0
+                        KindPropertyAssignment [160, 181), i=53, next=60
+                          KindIdentifier "a" [160, 167), i=54, next=55
+                          KindObjectLiteralExpression [168, 181), i=55, next=0
+                            NodeList [170, 179), i=56, next=0
+                              KindPropertyAssignment [170, 179), i=57, next=0
+                                KindIdentifier "BLAH" [170, 175), i=58, next=59
+                                KindNumericLiteral [176, 179), i=59, next=0
+                        KindPropertyAssignment [182, 199), i=60, next=0
+                          KindIdentifier "b" [182, 189), i=61, next=62
+                          KindArrowFunction [190, 199), i=62, next=0
+                            NodeList [190, 192), i=63, next=66
+                              KindParameter [190, 192), i=64, next=0
+                                KindIdentifier "x" [190, 192), i=65, next=0
+                            KindEqualsGreaterThanToken [192, 195), i=66, next=67
+                            KindBlock [195, 199), i=67, next=0
+    KindExpressionStatement [204, 220), i=68, next=72
+      KindPropertyAccessExpression [204, 219), i=69, next=0
+        KindIdentifier "result" [204, 214), i=70, next=71
+        KindIdentifier "BLAH" [215, 219), i=71, next=0
+    KindFunctionDeclaration [220, 316), i=72, next=91
+      KindIdentifier "goofus" [256, 263), i=73, next=74
+      NodeList [265, 283), i=74, next=79
+        KindTypeParameter [265, 283), i=75, next=0
+          KindIdentifier "ARGS" [265, 269), i=76, next=77
+          KindArrayType [277, 283), i=77, next=0
+            KindAnyKeyword [277, 281), i=78, next=0
+      NodeList [286, 311), i=79, next=90
+        KindParameter [286, 311), i=80, next=0
+          KindIdentifier "f" [286, 287), i=81, next=82
+          KindFunctionType [288, 311), i=82, next=0
+            NodeList [290, 303), i=83, next=89
+              KindParameter [290, 303), i=84, next=0
+                KindDotDotDotToken [290, 293), i=85, next=86
+                KindIdentifier "args" [293, 297), i=86, next=87
+                KindTypeReference [298, 303), i=87, next=0
+                  KindIdentifier "ARGS" [298, 303), i=88, next=0
+            KindAnyKeyword [307, 311), i=89, next=0
+      KindBlock [313, 316), i=90, next=0
+    KindExpressionStatement [316, 369), i=91, next=110
+      KindCallExpression [316, 368), i=92, next=0
+        KindIdentifier "goofus" [316, 326), i=93, next=94
+        NodeList [327, 367), i=94, next=0
+          KindArrowFunction [327, 367), i=95, next=0
+            NodeList [328, 337), i=96, next=100
+              KindParameter [328, 337), i=97, next=0
+                KindIdentifier "a" [328, 329), i=98, next=99
+                KindStringKeyword [330, 337), i=99, next=0
+            KindEqualsGreaterThanToken [338, 341), i=100, next=101
+            KindParenthesizedExpression [341, 367), i=101, next=0
+              KindObjectLiteralExpression [343, 366), i=102, next=0
+                NodeList [344, 364), i=103, next=0
+                  KindMethodDeclaration [344, 364), i=104, next=0
+                    KindIdentifier "dog" [344, 348), i=105, next=106
+                    KindBlock [350, 364), i=106, next=0
+                      NodeList [352, 362), i=107, next=0
+                        KindReturnStatement [352, 362), i=108, next=0
+                          KindIdentifier "a" [359, 361), i=109, next=0
+    KindExpressionStatement [369, 430), i=110, next=0
+      KindCallExpression [369, 429), i=111, next=0
+        KindIdentifier "goofus" [369, 377), i=112, next=113
+        NodeList [378, 428), i=113, next=0
+          KindArrowFunction [378, 428), i=114, next=0
+            NodeList [379, 388), i=115, next=119
+              KindParameter [379, 388), i=116, next=0
+                KindIdentifier "a" [379, 380), i=117, next=118
+                KindStringKeyword [381, 388), i=118, next=0
+            KindEqualsGreaterThanToken [389, 392), i=119, next=120
+            KindParenthesizedExpression [392, 428), i=120, next=0
+              KindObjectLiteralExpression [394, 427), i=121, next=0
+                NodeList [395, 425), i=122, next=0
+                  KindPropertyAssignment [395, 425), i=123, next=0
+                    KindIdentifier "dog" [395, 399), i=124, next=125
+                    KindFunctionExpression [400, 425), i=125, next=0
+                      KindBlock [411, 425), i=126, next=0
+                        NodeList [413, 423), i=127, next=0
+                          KindReturnStatement [413, 423), i=128, next=0
+                            KindIdentifier "a" [420, 422), i=129, next=0

@@ -1,0 +1,98 @@
+KindSourceFile [0, 650), i=1, next=0
+  NodeList [0, 649), i=2, next=0
+    KindInterfaceDeclaration [0, 83), i=3, next=15
+      KindIdentifier "TestTscEdit" [9, 21), i=4, next=5
+      NodeList [23, 81), i=5, next=0
+        KindPropertySignature [23, 42), i=6, next=9
+          KindIdentifier "caption" [23, 33), i=7, next=8
+          KindStringKeyword [34, 41), i=8, next=0
+        KindPropertySignature [42, 81), i=9, next=0
+          KindIdentifier "commandLineArgs" [42, 60), i=10, next=11
+          KindQuestionToken [60, 61), i=11, next=12
+          KindTypeOperator [62, 80), i=12, next=0
+            KindArrayType [71, 80), i=13, next=0
+              KindStringKeyword [71, 78), i=14, next=0
+    KindInterfaceDeclaration [83, 174), i=15, next=26
+      KindIdentifier "TestTscCompile" [94, 109), i=16, next=17
+      NodeList [111, 172), i=17, next=0
+        KindPropertySignature [111, 134), i=18, next=21
+          KindIdentifier "subScenario" [111, 125), i=19, next=20
+          KindStringKeyword [126, 133), i=20, next=0
+        KindPropertySignature [134, 172), i=21, next=0
+          KindIdentifier "commandLineArgs" [134, 152), i=22, next=23
+          KindTypeOperator [153, 171), i=23, next=0
+            KindArrayType [162, 171), i=24, next=0
+              KindStringKeyword [162, 169), i=25, next=0
+    KindInterfaceDeclaration [174, 325), i=26, next=45
+      KindIdentifier "VerifyTscEditDiscrepanciesInput" [185, 217), i=27, next=28
+      NodeList [219, 323), i=28, next=0
+        KindPropertySignature [219, 236), i=29, next=32
+          KindIdentifier "index" [219, 227), i=30, next=31
+          KindNumberKeyword [228, 235), i=31, next=0
+        KindPropertySignature [236, 269), i=32, next=38
+          KindIdentifier "edits" [236, 244), i=33, next=34
+          KindTypeOperator [245, 268), i=34, next=0
+            KindArrayType [254, 268), i=35, next=0
+              KindTypeReference [254, 266), i=36, next=0
+                KindIdentifier "TestTscEdit" [254, 266), i=37, next=0
+        KindPropertySignature [269, 323), i=38, next=0
+          KindIdentifier "commandLineArgs" [269, 287), i=39, next=40
+          KindIndexedAccessType [288, 322), i=40, next=0
+            KindTypeReference [288, 303), i=41, next=43
+              KindIdentifier "TestTscCompile" [288, 303), i=42, next=0
+            KindLiteralType [304, 321), i=43, next=0
+              KindStringLiteral "commandLineArgs" [304, 321), i=44, next=0
+    KindFunctionDeclaration [325, 376), i=45, next=53
+      KindIdentifier "testTscCompile" [335, 350), i=46, next=47
+      NodeList [351, 372), i=47, next=52
+        KindParameter [351, 372), i=48, next=0
+          KindIdentifier "input" [351, 356), i=49, next=50
+          KindTypeReference [357, 372), i=50, next=0
+            KindIdentifier "TestTscCompile" [357, 372), i=51, next=0
+      KindBlock [373, 376), i=52, next=0
+    KindFunctionDeclaration [376, 649), i=53, next=0
+      KindIdentifier "verifyTscEditDiscrepancies" [386, 413), i=54, next=55
+      NodeList [414, 487), i=55, next=67
+        KindParameter [414, 487), i=56, next=0
+          KindObjectBindingPattern [414, 454), i=57, next=65
+            NodeList [415, 452), i=58, next=0
+              KindBindingElement [415, 423), i=59, next=61
+                KindIdentifier "index" [415, 423), i=60, next=0
+              KindBindingElement [424, 432), i=61, next=63
+                KindIdentifier "edits" [424, 432), i=62, next=0
+              KindBindingElement [433, 451), i=63, next=0
+                KindIdentifier "commandLineArgs" [433, 451), i=64, next=0
+          KindTypeReference [455, 487), i=65, next=0
+            KindIdentifier "VerifyTscEditDiscrepanciesInput" [455, 487), i=66, next=0
+      KindBlock [488, 649), i=67, next=0
+        NodeList [490, 647), i=68, next=0
+          KindVariableStatement [490, 526), i=69, next=80
+            KindVariableDeclarationList [490, 525), i=70, next=0
+              NodeList [498, 525), i=71, next=0
+                KindVariableDeclaration [498, 525), i=72, next=0
+                  KindObjectBindingPattern [498, 510), i=73, next=77
+                    NodeList [500, 508), i=74, next=0
+                      KindBindingElement [500, 508), i=75, next=0
+                        KindIdentifier "caption" [500, 508), i=76, next=0
+                  KindElementAccessExpression [512, 525), i=77, next=0
+                    KindIdentifier "edits" [512, 518), i=78, next=79
+                    KindIdentifier "index" [519, 524), i=79, next=0
+          KindExpressionStatement [526, 647), i=80, next=0
+            KindCallExpression [526, 646), i=81, next=0
+              KindIdentifier "testTscCompile" [526, 543), i=82, next=83
+              NodeList [544, 645), i=83, next=0
+                KindObjectLiteralExpression [544, 645), i=84, next=0
+                  NodeList [545, 641), i=85, next=0
+                    KindPropertyAssignment [545, 570), i=86, next=89
+                      KindIdentifier "subScenario" [545, 561), i=87, next=88
+                      KindIdentifier "caption" [562, 570), i=88, next=0
+                    KindPropertyAssignment [571, 640), i=89, next=0
+                      KindIdentifier "commandLineArgs" [571, 591), i=90, next=91
+                      KindBinaryExpression [592, 640), i=91, next=0
+                        KindPropertyAccessExpression [592, 621), i=92, next=97
+                          KindElementAccessExpression [592, 605), i=93, next=96
+                            KindIdentifier "edits" [592, 598), i=94, next=95
+                            KindIdentifier "index" [599, 604), i=95, next=0
+                          KindIdentifier "commandLineArgs" [606, 621), i=96, next=0
+                        KindBarBarToken [621, 624), i=97, next=98
+                        KindIdentifier "commandLineArgs" [624, 640), i=98, next=0

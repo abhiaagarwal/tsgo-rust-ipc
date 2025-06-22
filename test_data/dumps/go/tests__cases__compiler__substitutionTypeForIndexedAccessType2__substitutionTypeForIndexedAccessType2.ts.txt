@@ -1,0 +1,46 @@
+KindSourceFile [0, 392), i=1, next=0
+  NodeList [0, 392), i=2, next=0
+    KindInterfaceDeclaration [0, 41), i=3, next=12
+      KindIdentifier "Foo" [9, 13), i=4, next=5
+      NodeList [15, 39), i=5, next=0
+        KindPropertySignature [15, 39), i=6, next=0
+          KindIdentifier "foo" [15, 21), i=7, next=8
+          KindUnionType [22, 39), i=8, next=0
+            NodeList [22, 39), i=9, next=0
+              KindStringKeyword [22, 29), i=10, next=11
+              KindUndefinedKeyword [30, 39), i=11, next=0
+    KindTypeAliasDeclaration [41, 73), i=12, next=20
+      KindIdentifier "Str" [47, 51), i=13, next=14
+      NodeList [52, 68), i=14, next=18
+        KindTypeParameter [52, 68), i=15, next=0
+          KindIdentifier "T" [52, 53), i=16, next=17
+          KindStringKeyword [61, 68), i=17, next=0
+      KindTypeReference [71, 73), i=18, next=0
+        KindIdentifier "T" [71, 73), i=19, next=0
+    KindTypeAliasDeclaration [73, 392), i=20, next=0
+      KindIdentifier "Bar" [79, 83), i=21, next=22
+      NodeList [84, 85), i=22, next=25
+        KindTypeParameter [84, 85), i=23, next=0
+          KindIdentifier "T" [84, 85), i=24, next=0
+      KindConditionalType [88, 392), i=25, next=0
+        KindTypeReference [88, 93), i=26, next=28
+          KindIdentifier "T" [88, 93), i=27, next=0
+        KindTypeReference [101, 105), i=28, next=30
+          KindIdentifier "Foo" [101, 105), i=29, next=0
+        KindConditionalType [111, 380), i=30, next=46
+          KindIndexedAccessType [111, 120), i=31, next=36
+            KindTypeReference [111, 113), i=32, next=34
+              KindIdentifier "T" [111, 113), i=33, next=0
+            KindLiteralType [114, 119), i=34, next=0
+              KindStringLiteral "foo" [114, 119), i=35, next=0
+          KindStringKeyword [128, 135), i=36, next=37
+          KindTypeReference [352, 366), i=37, next=45
+            KindIdentifier "Str" [352, 356), i=38, next=39
+            NodeList [357, 365), i=39, next=0
+              KindIndexedAccessType [357, 365), i=40, next=0
+                KindTypeReference [357, 358), i=41, next=43
+                  KindIdentifier "T" [357, 358), i=42, next=0
+                KindLiteralType [359, 364), i=43, next=0
+                  KindStringLiteral "foo" [359, 364), i=44, next=0
+          KindNeverKeyword [374, 380), i=45, next=0
+        KindNeverKeyword [386, 392), i=46, next=0

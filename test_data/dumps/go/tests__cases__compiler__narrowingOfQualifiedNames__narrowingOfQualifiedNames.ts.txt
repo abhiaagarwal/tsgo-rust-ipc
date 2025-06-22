@@ -1,0 +1,400 @@
+KindSourceFile [0, 2185), i=1, next=0
+  NodeList [0, 2185), i=2, next=0
+    KindInterfaceDeclaration [0, 83), i=3, next=17
+      KindIdentifier "IProperties" [9, 21), i=4, next=5
+      NodeList [23, 81), i=5, next=0
+        KindPropertySignature [23, 81), i=6, next=0
+          KindIdentifier "foo" [23, 31), i=7, next=8
+          KindQuestionToken [31, 32), i=8, next=9
+          KindTypeLiteral [33, 81), i=9, next=0
+            NodeList [35, 75), i=10, next=0
+              KindPropertySignature [35, 55), i=11, next=14
+                KindIdentifier "aaa" [35, 47), i=12, next=13
+                KindStringKeyword [48, 55), i=13, next=0
+              KindPropertySignature [55, 75), i=14, next=0
+                KindIdentifier "bbb" [55, 67), i=15, next=16
+                KindStringKeyword [68, 75), i=16, next=0
+    KindFunctionDeclaration [83, 485), i=17, next=64
+      KindIdentifier "init" [93, 98), i=18, next=19
+      NodeList [99, 122), i=19, next=24
+        KindParameter [99, 122), i=20, next=0
+          KindIdentifier "properties" [99, 109), i=21, next=22
+          KindTypeReference [110, 122), i=22, next=0
+            KindIdentifier "IProperties" [110, 122), i=23, next=0
+      KindBlock [123, 485), i=24, next=0
+        NodeList [125, 483), i=25, next=0
+          KindIfStatement [125, 483), i=26, next=0
+            KindPropertyAccessExpression [134, 148), i=27, next=30
+              KindIdentifier "properties" [134, 144), i=28, next=29
+              KindIdentifier "foo" [145, 148), i=29, next=0
+            KindBlock [149, 483), i=30, next=0
+              NodeList [151, 477), i=31, next=0
+                KindTypeAliasDeclaration [151, 195), i=32, next=38
+                  KindIdentifier "FooOK" [164, 170), i=33, next=34
+                  KindTypeQuery [172, 194), i=34, next=0
+                    KindQualifiedName [179, 194), i=35, next=0
+                      KindIdentifier "properties" [179, 190), i=36, next=37
+                      KindIdentifier "foo" [191, 194), i=37, next=0
+                KindExpressionStatement [195, 219), i=38, next=42
+                  KindPropertyAccessExpression [195, 218), i=39, next=0
+                    KindIdentifier "properties" [195, 214), i=40, next=41
+                    KindIdentifier "foo" [215, 218), i=41, next=0
+                KindForOfStatement [219, 477), i=42, next=0
+                  KindVariableDeclarationList [274, 281), i=43, next=47
+                    NodeList [279, 281), i=44, next=0
+                      KindVariableDeclaration [279, 281), i=45, next=0
+                        KindIdentifier "x" [279, 281), i=46, next=0
+                  KindArrayLiteralExpression [284, 294), i=47, next=52
+                    NodeList [286, 293), i=48, next=0
+                      KindNumericLiteral [286, 287), i=49, next=50
+                      KindNumericLiteral [288, 290), i=50, next=51
+                      KindNumericLiteral [291, 293), i=51, next=0
+                  KindBlock [295, 477), i=52, next=0
+                    NodeList [297, 419), i=53, next=0
+                      KindExpressionStatement [297, 323), i=54, next=58
+                        KindPropertyAccessExpression [297, 322), i=55, next=0
+                          KindIdentifier "properties" [297, 318), i=56, next=57
+                          KindIdentifier "foo" [319, 322), i=57, next=0
+                      KindTypeAliasDeclaration [323, 419), i=58, next=0
+                        KindIdentifier "FooOrUndefined" [379, 394), i=59, next=60
+                        KindTypeQuery [396, 418), i=60, next=0
+                          KindQualifiedName [403, 418), i=61, next=0
+                            KindIdentifier "properties" [403, 414), i=62, next=63
+                            KindIdentifier "foo" [415, 418), i=63, next=0
+    KindInterfaceDeclaration [485, 576), i=64, next=81
+      KindIdentifier "DeepOptional" [496, 509), i=65, next=66
+      NodeList [511, 574), i=66, next=0
+        KindPropertySignature [511, 574), i=67, next=0
+          KindIdentifier "a" [511, 517), i=68, next=69
+          KindQuestionToken [517, 518), i=69, next=70
+          KindTypeLiteral [519, 574), i=70, next=0
+            NodeList [521, 568), i=71, next=0
+              KindPropertySignature [521, 568), i=72, next=0
+                KindIdentifier "b" [521, 531), i=73, next=74
+                KindQuestionToken [531, 532), i=74, next=75
+                KindTypeLiteral [533, 568), i=75, next=0
+                  NodeList [535, 558), i=76, next=0
+                    KindPropertySignature [535, 558), i=77, next=0
+                      KindIdentifier "c" [535, 549), i=78, next=79
+                      KindQuestionToken [549, 550), i=79, next=80
+                      KindStringKeyword [551, 558), i=80, next=0
+    KindFunctionDeclaration [576, 1685), i=81, next=32
+      KindIdentifier "init2" [586, 592), i=82, next=83
+      NodeList [593, 610), i=83, next=88
+        KindParameter [593, 610), i=84, next=0
+          KindIdentifier "foo" [593, 596), i=85, next=86
+          KindTypeReference [597, 610), i=86, next=0
+            KindIdentifier "DeepOptional" [597, 610), i=87, next=0
+      KindBlock [611, 1685), i=88, next=0
+        NodeList [613, 1683), i=89, next=0
+          KindIfStatement [613, 1683), i=90, next=0
+            KindPropertyAccessExpression [622, 627), i=91, next=94
+              KindIdentifier "foo" [622, 625), i=92, next=93
+              KindIdentifier "a" [626, 627), i=93, next=0
+            KindBlock [628, 1683), i=94, next=0
+              NodeList [630, 1677), i=95, next=0
+                KindTypeAliasDeclaration [630, 661), i=96, next=102
+                  KindIdentifier "A" [643, 645), i=97, next=98
+                  KindTypeQuery [647, 660), i=98, next=0
+                    KindQualifiedName [654, 660), i=99, next=0
+                      KindIdentifier "foo" [654, 658), i=100, next=101
+                      KindIdentifier "a" [659, 660), i=101, next=0
+                KindTypeAliasDeclaration [661, 694), i=102, next=110
+                  KindIdentifier "B" [674, 676), i=103, next=104
+                  KindTypeQuery [678, 693), i=104, next=0
+                    KindQualifiedName [685, 693), i=105, next=0
+                      KindQualifiedName [685, 691), i=106, next=109
+                        KindIdentifier "foo" [685, 689), i=107, next=108
+                        KindIdentifier "a" [690, 691), i=108, next=0
+                      KindIdentifier "b" [692, 693), i=109, next=0
+                KindTypeAliasDeclaration [694, 729), i=110, next=120
+                  KindIdentifier "C" [707, 709), i=111, next=112
+                  KindTypeQuery [711, 728), i=112, next=0
+                    KindQualifiedName [718, 728), i=113, next=0
+                      KindQualifiedName [718, 726), i=114, next=119
+                        KindQualifiedName [718, 724), i=115, next=118
+                          KindIdentifier "foo" [718, 722), i=116, next=117
+                          KindIdentifier "a" [723, 724), i=117, next=0
+                        KindIdentifier "b" [725, 726), i=118, next=0
+                      KindIdentifier "c" [727, 728), i=119, next=0
+                KindForOfStatement [729, 1677), i=120, next=0
+                  KindVariableDeclarationList [743, 750), i=121, next=125
+                    NodeList [748, 750), i=122, next=0
+                      KindVariableDeclaration [748, 750), i=123, next=0
+                        KindIdentifier "_" [748, 750), i=124, next=0
+                  KindArrayLiteralExpression [753, 757), i=125, next=128
+                    NodeList [755, 756), i=126, next=0
+                      KindNumericLiteral [755, 756), i=127, next=0
+                  KindBlock [758, 1677), i=128, next=0
+                    NodeList [760, 1667), i=129, next=0
+                      KindTypeAliasDeclaration [760, 795), i=130, next=136
+                        KindIdentifier "A" [777, 779), i=131, next=132
+                        KindTypeQuery [781, 794), i=132, next=0
+                          KindQualifiedName [788, 794), i=133, next=0
+                            KindIdentifier "foo" [788, 792), i=134, next=135
+                            KindIdentifier "a" [793, 794), i=135, next=0
+                      KindTypeAliasDeclaration [795, 832), i=136, next=144
+                        KindIdentifier "B" [812, 814), i=137, next=138
+                        KindTypeQuery [816, 831), i=138, next=0
+                          KindQualifiedName [823, 831), i=139, next=0
+                            KindQualifiedName [823, 829), i=140, next=143
+                              KindIdentifier "foo" [823, 827), i=141, next=142
+                              KindIdentifier "a" [828, 829), i=142, next=0
+                            KindIdentifier "b" [830, 831), i=143, next=0
+                      KindTypeAliasDeclaration [832, 871), i=144, next=154
+                        KindIdentifier "C" [849, 851), i=145, next=146
+                        KindTypeQuery [853, 870), i=146, next=0
+                          KindQualifiedName [860, 870), i=147, next=0
+                            KindQualifiedName [860, 868), i=148, next=153
+                              KindQualifiedName [860, 866), i=149, next=152
+                                KindIdentifier "foo" [860, 864), i=150, next=151
+                                KindIdentifier "a" [865, 866), i=151, next=0
+                              KindIdentifier "b" [867, 868), i=152, next=0
+                            KindIdentifier "c" [869, 870), i=153, next=0
+                      KindIfStatement [871, 1667), i=154, next=0
+                        KindPropertyAccessExpression [889, 896), i=155, next=160
+                          KindPropertyAccessExpression [889, 894), i=156, next=159
+                            KindIdentifier "foo" [889, 892), i=157, next=158
+                            KindIdentifier "a" [893, 894), i=158, next=0
+                          KindIdentifier "b" [895, 896), i=159, next=0
+                        KindBlock [897, 1667), i=160, next=0
+                          NodeList [899, 1653), i=161, next=0
+                            KindTypeAliasDeclaration [899, 938), i=162, next=168
+                              KindIdentifier "A" [920, 922), i=163, next=164
+                              KindTypeQuery [924, 937), i=164, next=0
+                                KindQualifiedName [931, 937), i=165, next=0
+                                  KindIdentifier "foo" [931, 935), i=166, next=167
+                                  KindIdentifier "a" [936, 937), i=167, next=0
+                            KindTypeAliasDeclaration [938, 979), i=168, next=176
+                              KindIdentifier "B" [959, 961), i=169, next=170
+                              KindTypeQuery [963, 978), i=170, next=0
+                                KindQualifiedName [970, 978), i=171, next=0
+                                  KindQualifiedName [970, 976), i=172, next=175
+                                    KindIdentifier "foo" [970, 974), i=173, next=174
+                                    KindIdentifier "a" [975, 976), i=174, next=0
+                                  KindIdentifier "b" [977, 978), i=175, next=0
+                            KindTypeAliasDeclaration [979, 1022), i=176, next=186
+                              KindIdentifier "C" [1000, 1002), i=177, next=178
+                              KindTypeQuery [1004, 1021), i=178, next=0
+                                KindQualifiedName [1011, 1021), i=179, next=0
+                                  KindQualifiedName [1011, 1019), i=180, next=185
+                                    KindQualifiedName [1011, 1017), i=181, next=184
+                                      KindIdentifier "foo" [1011, 1015), i=182, next=183
+                                      KindIdentifier "a" [1016, 1017), i=183, next=0
+                                    KindIdentifier "b" [1018, 1019), i=184, next=0
+                                  KindIdentifier "c" [1020, 1021), i=185, next=0
+                            KindForOfStatement [1022, 1653), i=186, next=0
+                              KindVariableDeclarationList [1044, 1051), i=187, next=191
+                                NodeList [1049, 1051), i=188, next=0
+                                  KindVariableDeclaration [1049, 1051), i=189, next=0
+                                    KindIdentifier "_" [1049, 1051), i=190, next=0
+                              KindArrayLiteralExpression [1054, 1058), i=191, next=194
+                                NodeList [1056, 1057), i=192, next=0
+                                  KindNumericLiteral [1056, 1057), i=193, next=0
+                              KindBlock [1059, 1653), i=194, next=0
+                                NodeList [1061, 1635), i=195, next=0
+                                  KindTypeAliasDeclaration [1061, 1104), i=196, next=202
+                                    KindIdentifier "A" [1086, 1088), i=197, next=198
+                                    KindTypeQuery [1090, 1103), i=198, next=0
+                                      KindQualifiedName [1097, 1103), i=199, next=0
+                                        KindIdentifier "foo" [1097, 1101), i=200, next=201
+                                        KindIdentifier "a" [1102, 1103), i=201, next=0
+                                  KindTypeAliasDeclaration [1104, 1149), i=202, next=210
+                                    KindIdentifier "B" [1129, 1131), i=203, next=204
+                                    KindTypeQuery [1133, 1148), i=204, next=0
+                                      KindQualifiedName [1140, 1148), i=205, next=0
+                                        KindQualifiedName [1140, 1146), i=206, next=209
+                                          KindIdentifier "foo" [1140, 1144), i=207, next=208
+                                          KindIdentifier "a" [1145, 1146), i=208, next=0
+                                        KindIdentifier "b" [1147, 1148), i=209, next=0
+                                  KindTypeAliasDeclaration [1149, 1196), i=210, next=220
+                                    KindIdentifier "C" [1174, 1176), i=211, next=212
+                                    KindTypeQuery [1178, 1195), i=212, next=0
+                                      KindQualifiedName [1185, 1195), i=213, next=0
+                                        KindQualifiedName [1185, 1193), i=214, next=219
+                                          KindQualifiedName [1185, 1191), i=215, next=218
+                                            KindIdentifier "foo" [1185, 1189), i=216, next=217
+                                            KindIdentifier "a" [1190, 1191), i=217, next=0
+                                          KindIdentifier "b" [1192, 1193), i=218, next=0
+                                        KindIdentifier "c" [1194, 1195), i=219, next=0
+                                  KindIfStatement [1196, 1635), i=220, next=0
+                                    KindPropertyAccessExpression [1222, 1231), i=221, next=228
+                                      KindPropertyAccessExpression [1222, 1229), i=222, next=227
+                                        KindPropertyAccessExpression [1222, 1227), i=223, next=226
+                                          KindIdentifier "foo" [1222, 1225), i=224, next=225
+                                          KindIdentifier "a" [1226, 1227), i=225, next=0
+                                        KindIdentifier "b" [1228, 1229), i=226, next=0
+                                      KindIdentifier "c" [1230, 1231), i=227, next=0
+                                    KindBlock [1232, 1635), i=228, next=0
+                                      NodeList [1234, 1613), i=229, next=0
+                                        KindTypeAliasDeclaration [1234, 1281), i=230, next=236
+                                          KindIdentifier "A" [1263, 1265), i=231, next=232
+                                          KindTypeQuery [1267, 1280), i=232, next=0
+                                            KindQualifiedName [1274, 1280), i=233, next=0
+                                              KindIdentifier "foo" [1274, 1278), i=234, next=235
+                                              KindIdentifier "a" [1279, 1280), i=235, next=0
+                                        KindTypeAliasDeclaration [1281, 1330), i=236, next=244
+                                          KindIdentifier "B" [1310, 1312), i=237, next=238
+                                          KindTypeQuery [1314, 1329), i=238, next=0
+                                            KindQualifiedName [1321, 1329), i=239, next=0
+                                              KindQualifiedName [1321, 1327), i=240, next=243
+                                                KindIdentifier "foo" [1321, 1325), i=241, next=242
+                                                KindIdentifier "a" [1326, 1327), i=242, next=0
+                                              KindIdentifier "b" [1328, 1329), i=243, next=0
+                                        KindTypeAliasDeclaration [1330, 1381), i=244, next=254
+                                          KindIdentifier "C" [1359, 1361), i=245, next=246
+                                          KindTypeQuery [1363, 1380), i=246, next=0
+                                            KindQualifiedName [1370, 1380), i=247, next=0
+                                              KindQualifiedName [1370, 1378), i=248, next=253
+                                                KindQualifiedName [1370, 1376), i=249, next=252
+                                                  KindIdentifier "foo" [1370, 1374), i=250, next=251
+                                                  KindIdentifier "a" [1375, 1376), i=251, next=0
+                                                KindIdentifier "b" [1377, 1378), i=252, next=0
+                                              KindIdentifier "c" [1379, 1380), i=253, next=0
+                                        KindForOfStatement [1381, 1613), i=254, next=0
+                                          KindVariableDeclarationList [1411, 1418), i=255, next=3
+                                            NodeList [1416, 1418), i=256, next=0
+                                              KindVariableDeclaration [1416, 1418), i=257, next=0
+                                                KindIdentifier "_" [1416, 1418), i=258, next=0
+                                          KindArrayLiteralExpression [1421, 1425), i=259, next=6
+                                            NodeList [1423, 1424), i=260, next=0
+                                              KindNumericLiteral [1423, 1424), i=261, next=0
+                                          KindBlock [1426, 1613), i=262, next=0
+                                            NodeList [1428, 1587), i=263, next=0
+                                              KindTypeAliasDeclaration [1428, 1479), i=264, next=14
+                                                KindIdentifier "A" [1461, 1463), i=265, next=10
+                                                KindTypeQuery [1465, 1478), i=266, next=0
+                                                  KindQualifiedName [1472, 1478), i=267, next=0
+                                                    KindIdentifier "foo" [1472, 1476), i=268, next=13
+                                                    KindIdentifier "a" [1477, 1478), i=269, next=0
+                                              KindTypeAliasDeclaration [1479, 1532), i=270, next=22
+                                                KindIdentifier "B" [1512, 1514), i=271, next=16
+                                                KindTypeQuery [1516, 1531), i=272, next=0
+                                                  KindQualifiedName [1523, 1531), i=273, next=0
+                                                    KindQualifiedName [1523, 1529), i=274, next=21
+                                                      KindIdentifier "foo" [1523, 1527), i=275, next=20
+                                                      KindIdentifier "a" [1528, 1529), i=276, next=0
+                                                    KindIdentifier "b" [1530, 1531), i=277, next=0
+                                              KindTypeAliasDeclaration [1532, 1587), i=278, next=0
+                                                KindIdentifier "C" [1565, 1567), i=279, next=24
+                                                KindTypeQuery [1569, 1586), i=280, next=0
+                                                  KindQualifiedName [1576, 1586), i=281, next=0
+                                                    KindQualifiedName [1576, 1584), i=282, next=31
+                                                      KindQualifiedName [1576, 1582), i=283, next=30
+                                                        KindIdentifier "foo" [1576, 1580), i=284, next=29
+                                                        KindIdentifier "a" [1581, 1582), i=285, next=0
+                                                      KindIdentifier "b" [1583, 1584), i=286, next=0
+                                                    KindIdentifier "c" [1585, 1586), i=287, next=0
+    KindTypeAliasDeclaration [1685, 1752), i=288, next=44
+      KindIdentifier "Fish" [1713, 1718), i=289, next=34
+      KindTypeLiteral [1720, 1752), i=290, next=0
+        NodeList [1722, 1750), i=291, next=0
+          KindPropertySignature [1722, 1736), i=292, next=40
+            KindIdentifier "type" [1722, 1727), i=293, next=38
+            KindLiteralType [1728, 1735), i=294, next=0
+              KindStringLiteral "fish" [1728, 1735), i=295, next=0
+          KindPropertySignature [1736, 1750), i=296, next=0
+            KindIdentifier "hasFins" [1736, 1744), i=297, next=42
+            KindLiteralType [1745, 1750), i=298, next=0
+              KindTrueKeyword [1745, 1750), i=299, next=0
+    KindTypeAliasDeclaration [1752, 1795), i=300, next=56
+      KindIdentifier "Dog" [1757, 1761), i=301, next=46
+      KindTypeLiteral [1763, 1795), i=302, next=0
+        NodeList [1765, 1793), i=303, next=0
+          KindPropertySignature [1765, 1778), i=304, next=52
+            KindIdentifier "type" [1765, 1770), i=305, next=50
+            KindLiteralType [1771, 1777), i=306, next=0
+              KindStringLiteral "dog" [1771, 1777), i=307, next=0
+          KindPropertySignature [1778, 1793), i=308, next=0
+            KindIdentifier "saysWoof" [1778, 1787), i=309, next=54
+            KindLiteralType [1788, 1793), i=310, next=0
+              KindTrueKeyword [1788, 1793), i=311, next=0
+    KindTypeAliasDeclaration [1795, 1819), i=312, next=64
+      KindIdentifier "Pet" [1801, 1805), i=313, next=58
+      KindUnionType [1807, 1818), i=314, next=0
+        NodeList [1807, 1818), i=315, next=0
+          KindTypeReference [1807, 1812), i=316, next=62
+            KindIdentifier "Fish" [1807, 1812), i=317, next=0
+          KindTypeReference [1814, 1818), i=318, next=0
+            KindIdentifier "Dog" [1814, 1818), i=319, next=0
+    KindFunctionDeclaration [1819, 2014), i=320, next=107
+      KindIdentifier "handleDogBroken" [1829, 1845), i=321, next=66
+      NodeList [1846, 1865), i=322, next=71
+        KindTypeParameter [1846, 1865), i=323, next=0
+          KindIdentifier "PetType" [1846, 1853), i=324, next=69
+          KindTypeReference [1861, 1865), i=325, next=0
+            KindIdentifier "Pet" [1861, 1865), i=326, next=0
+      NodeList [1867, 1879), i=327, next=76
+        KindParameter [1867, 1879), i=328, next=0
+          KindIdentifier "pet" [1867, 1870), i=329, next=74
+          KindTypeReference [1871, 1879), i=330, next=0
+            KindIdentifier "PetType" [1871, 1879), i=331, next=0
+      KindBlock [1880, 2014), i=332, next=0
+        NodeList [1882, 2012), i=333, next=0
+          KindIfStatement [1882, 2012), i=334, next=0
+            KindBinaryExpression [1890, 1908), i=335, next=85
+              KindPropertyAccessExpression [1890, 1898), i=336, next=83
+                KindIdentifier "pet" [1890, 1893), i=337, next=82
+                KindIdentifier "type" [1894, 1898), i=338, next=0
+              KindEqualsEqualsEqualsToken [1898, 1902), i=339, next=84
+              KindStringLiteral "dog" [1902, 1908), i=340, next=0
+            KindBlock [1909, 2012), i=341, next=0
+              NodeList [1911, 2006), i=342, next=0
+                KindVariableStatement [1911, 1948), i=343, next=95
+                  KindVariableDeclarationList [1911, 1947), i=344, next=0
+                    NodeList [1925, 1947), i=345, next=0
+                      KindVariableDeclaration [1925, 1947), i=346, next=0
+                        KindIdentifier "_okay1" [1925, 1932), i=347, next=92
+                        KindPropertyAccessExpression [1934, 1947), i=348, next=0
+                          KindIdentifier "pet" [1934, 1938), i=349, next=94
+                          KindIdentifier "saysWoof" [1939, 1947), i=350, next=0
+                KindVariableStatement [1948, 2006), i=351, next=0
+                  KindVariableDeclarationList [1948, 2005), i=352, next=0
+                    NodeList [1962, 2005), i=353, next=0
+                      KindVariableDeclaration [1962, 2005), i=354, next=0
+                        KindIdentifier "_okay2" [1962, 1969), i=355, next=100
+                        KindTypeQuery [1970, 1990), i=356, next=104
+                          KindQualifiedName [1977, 1990), i=357, next=0
+                            KindIdentifier "pet" [1977, 1981), i=358, next=103
+                            KindIdentifier "saysWoof" [1982, 1990), i=359, next=0
+                        KindPropertyAccessExpression [1992, 2005), i=360, next=0
+                          KindIdentifier "pet" [1992, 1996), i=361, next=106
+                          KindIdentifier "saysWoof" [1997, 2005), i=362, next=0
+    KindFunctionDeclaration [2014, 2185), i=363, next=0
+      KindIdentifier "handleDogWorking" [2024, 2041), i=364, next=109
+      NodeList [2042, 2050), i=365, next=114
+        KindParameter [2042, 2050), i=366, next=0
+          KindIdentifier "pet" [2042, 2045), i=367, next=112
+          KindTypeReference [2046, 2050), i=368, next=0
+            KindIdentifier "Pet" [2046, 2050), i=369, next=0
+      KindBlock [2051, 2185), i=370, next=0
+        NodeList [2053, 2183), i=371, next=0
+          KindIfStatement [2053, 2183), i=372, next=0
+            KindBinaryExpression [2061, 2079), i=373, next=123
+              KindPropertyAccessExpression [2061, 2069), i=374, next=121
+                KindIdentifier "pet" [2061, 2064), i=375, next=120
+                KindIdentifier "type" [2065, 2069), i=376, next=0
+              KindEqualsEqualsEqualsToken [2069, 2073), i=377, next=122
+              KindStringLiteral "dog" [2073, 2079), i=378, next=0
+            KindBlock [2080, 2183), i=379, next=0
+              NodeList [2082, 2177), i=380, next=0
+                KindVariableStatement [2082, 2119), i=381, next=133
+                  KindVariableDeclarationList [2082, 2118), i=382, next=0
+                    NodeList [2096, 2118), i=383, next=0
+                      KindVariableDeclaration [2096, 2118), i=384, next=0
+                        KindIdentifier "_okay1" [2096, 2103), i=385, next=130
+                        KindPropertyAccessExpression [2105, 2118), i=386, next=0
+                          KindIdentifier "pet" [2105, 2109), i=387, next=132
+                          KindIdentifier "saysWoof" [2110, 2118), i=388, next=0
+                KindVariableStatement [2119, 2177), i=389, next=0
+                  KindVariableDeclarationList [2119, 2176), i=390, next=0
+                    NodeList [2133, 2176), i=391, next=0
+                      KindVariableDeclaration [2133, 2176), i=392, next=0
+                        KindIdentifier "_okay2" [2133, 2140), i=393, next=138
+                        KindTypeQuery [2141, 2161), i=394, next=142
+                          KindQualifiedName [2148, 2161), i=395, next=0
+                            KindIdentifier "pet" [2148, 2152), i=396, next=141
+                            KindIdentifier "saysWoof" [2153, 2161), i=397, next=0
+                        KindPropertyAccessExpression [2163, 2176), i=398, next=0
+                          KindIdentifier "pet" [2163, 2167), i=399, next=144
+                          KindIdentifier "saysWoof" [2168, 2176), i=400, next=0

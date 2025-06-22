@@ -1,0 +1,96 @@
+KindSourceFile [0, 581), i=1, next=0
+  NodeList [0, 579), i=2, next=0
+    KindTypeAliasDeclaration [0, 155), i=3, next=34
+      NodeList [0, 6), i=4, next=6
+        KindExportKeyword [0, 6), i=5, next=0
+      KindIdentifier "Brand" [11, 17), i=6, next=7
+      NodeList [18, 84), i=7, next=17
+        KindTypeParameter [18, 26), i=8, next=10
+          KindIdentifier "Base" [18, 26), i=9, next=0
+        KindTypeParameter [27, 39), i=10, next=12
+          KindIdentifier "Branding" [27, 39), i=11, next=0
+        KindTypeParameter [40, 84), i=12, next=0
+          KindIdentifier "ReservedName" [40, 56), i=13, next=14
+          KindStringKeyword [64, 71), i=14, next=15
+          KindLiteralType [73, 84), i=15, next=0
+            KindStringLiteral "__type__" [73, 84), i=16, next=0
+      KindIntersectionType [89, 154), i=17, next=0
+        NodeList [89, 154), i=18, next=0
+          KindTypeReference [89, 94), i=19, next=21
+            KindIdentifier "Base" [89, 94), i=20, next=0
+          KindMappedType [96, 130), i=21, next=28
+            KindTypeParameter [100, 117), i=22, next=26
+              KindIdentifier "K" [100, 101), i=23, next=24
+              KindTypeReference [104, 117), i=24, next=0
+                KindIdentifier "ReservedName" [104, 117), i=25, next=0
+            KindTypeReference [119, 128), i=26, next=0
+              KindIdentifier "Branding" [119, 128), i=27, next=0
+          KindTypeLiteral [132, 154), i=28, next=0
+            NodeList [134, 152), i=29, next=0
+              KindPropertySignature [134, 152), i=30, next=0
+                KindIdentifier "__witness__" [134, 146), i=31, next=32
+                KindTypeReference [147, 152), i=32, next=0
+                  KindIdentifier "Base" [147, 152), i=33, next=0
+    KindTypeAliasDeclaration [155, 283), i=34, next=51
+      NodeList [155, 165), i=35, next=37
+        KindExportKeyword [155, 165), i=36, next=0
+      KindIdentifier "BoundedInteger" [170, 185), i=37, next=38
+      NodeList [186, 245), i=38, next=45
+        KindTypeParameter [186, 215), i=39, next=42
+          KindIdentifier "LowerBound" [186, 200), i=40, next=41
+          KindNumberKeyword [208, 215), i=41, next=0
+        KindTypeParameter [216, 245), i=42, next=0
+          KindIdentifier "UpperBound" [216, 230), i=43, next=44
+          KindNumberKeyword [238, 245), i=44, next=0
+      KindTypeReference [250, 282), i=45, next=0
+        KindIdentifier "Brand" [250, 256), i=46, next=47
+        NodeList [257, 281), i=47, next=0
+          KindNumberKeyword [257, 263), i=48, next=49
+          KindLiteralType [264, 281), i=49, next=0
+            KindStringLiteral "BoundedInteger" [264, 281), i=50, next=0
+    KindVariableStatement [283, 579), i=51, next=0
+      NodeList [283, 293), i=52, next=54
+        KindExportKeyword [283, 293), i=53, next=0
+      KindVariableDeclarationList [293, 579), i=54, next=0
+        NodeList [299, 579), i=55, next=0
+          KindVariableDeclaration [299, 579), i=56, next=0
+            KindIdentifier "toBoundedInteger" [299, 316), i=57, next=58
+            KindArrowFunction [318, 579), i=58, next=0
+              NodeList [323, 375), i=59, next=66
+                KindTypeParameter [323, 348), i=60, next=63
+                  KindIdentifier "LowerBound" [323, 333), i=61, next=62
+                  KindNumberKeyword [341, 348), i=62, next=0
+                KindTypeParameter [349, 375), i=63, next=0
+                  KindIdentifier "UpperBound" [349, 360), i=64, next=65
+                  KindNumberKeyword [368, 375), i=65, next=0
+              NodeList [377, 449), i=66, next=79
+                KindParameter [377, 449), i=67, next=0
+                  KindIdentifier "bounds" [377, 383), i=68, next=69
+                  KindTypeLiteral [384, 449), i=69, next=0
+                    NodeList [386, 444), i=70, next=0
+                      KindPropertySignature [386, 415), i=71, next=75
+                        KindIdentifier "lowerBound" [386, 402), i=72, next=73
+                        KindTypeReference [403, 414), i=73, next=0
+                          KindIdentifier "LowerBound" [403, 414), i=74, next=0
+                      KindPropertySignature [415, 444), i=75, next=0
+                        KindIdentifier "upperBound" [415, 431), i=76, next=77
+                        KindTypeReference [432, 443), i=77, next=0
+                          KindIdentifier "UpperBound" [432, 443), i=78, next=0
+              KindEqualsGreaterThanToken [450, 453), i=79, next=80
+              KindArrowFunction [453, 579), i=80, next=0
+                NodeList [458, 473), i=81, next=85
+                  KindParameter [458, 473), i=82, next=0
+                    KindIdentifier "n" [458, 465), i=83, next=84
+                    KindNumberKeyword [466, 473), i=84, next=0
+                KindTypeReference [479, 518), i=85, next=92
+                  KindIdentifier "BoundedInteger" [479, 494), i=86, next=87
+                  NodeList [495, 517), i=87, next=0
+                    KindTypeReference [495, 505), i=88, next=90
+                      KindIdentifier "LowerBound" [495, 505), i=89, next=0
+                    KindTypeReference [506, 517), i=90, next=0
+                      KindIdentifier "UpperBound" [506, 517), i=91, next=0
+                KindEqualsGreaterThanToken [518, 521), i=92, next=93
+                KindParenthesizedExpression [521, 579), i=93, next=0
+                  KindAsExpression [569, 578), i=94, next=0
+                    KindObjectLiteralExpression [569, 571), i=95, next=96
+                    KindAnyKeyword [574, 578), i=96, next=0

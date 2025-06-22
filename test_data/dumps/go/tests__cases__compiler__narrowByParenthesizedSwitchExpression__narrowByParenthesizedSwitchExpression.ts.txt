@@ -1,0 +1,86 @@
+KindSourceFile [0, 329), i=1, next=0
+  NodeList [0, 328), i=2, next=0
+    KindInterfaceDeclaration [0, 41), i=3, next=14
+      KindIdentifier "Base" [9, 14), i=4, next=5
+      NodeList [16, 39), i=5, next=0
+        KindPropertySignature [16, 39), i=6, next=0
+          KindIdentifier "type" [16, 23), i=7, next=8
+          KindUnionType [24, 38), i=8, next=0
+            NodeList [24, 38), i=9, next=0
+              KindLiteralType [24, 30), i=10, next=12
+                KindStringLiteral "foo" [24, 30), i=11, next=0
+              KindLiteralType [32, 38), i=12, next=0
+                KindStringLiteral "bar" [32, 38), i=13, next=0
+    KindInterfaceDeclaration [41, 103), i=14, next=29
+      KindIdentifier "Foo" [52, 56), i=15, next=16
+      NodeList [56, 69), i=16, next=21
+        KindHeritageClause [56, 69), i=17, next=0
+          NodeList [64, 69), i=18, next=0
+            KindExpressionWithTypeArguments [64, 69), i=19, next=0
+              KindIdentifier "Base" [64, 69), i=20, next=0
+      NodeList [71, 101), i=21, next=0
+        KindPropertySignature [71, 86), i=22, next=26
+          KindIdentifier "type" [71, 78), i=23, next=24
+          KindLiteralType [79, 85), i=24, next=0
+            KindStringLiteral "foo" [79, 85), i=25, next=0
+        KindPropertySignature [86, 101), i=26, next=0
+          KindIdentifier "foo" [86, 92), i=27, next=28
+          KindStringKeyword [93, 100), i=28, next=0
+    KindInterfaceDeclaration [103, 165), i=29, next=44
+      KindIdentifier "Bar" [114, 118), i=30, next=31
+      NodeList [118, 131), i=31, next=36
+        KindHeritageClause [118, 131), i=32, next=0
+          NodeList [126, 131), i=33, next=0
+            KindExpressionWithTypeArguments [126, 131), i=34, next=0
+              KindIdentifier "Base" [126, 131), i=35, next=0
+      NodeList [133, 163), i=36, next=0
+        KindPropertySignature [133, 148), i=37, next=41
+          KindIdentifier "type" [133, 140), i=38, next=39
+          KindLiteralType [141, 147), i=39, next=0
+            KindStringLiteral "bar" [141, 147), i=40, next=0
+        KindPropertySignature [148, 163), i=41, next=0
+          KindIdentifier "bar" [148, 154), i=42, next=43
+          KindNumberKeyword [155, 162), i=43, next=0
+    KindFunctionDeclaration [165, 213), i=44, next=57
+      KindIdentifier "getV" [175, 180), i=45, next=46
+      KindUnionType [183, 193), i=46, next=52
+        NodeList [183, 193), i=47, next=0
+          KindTypeReference [183, 187), i=48, next=50
+            KindIdentifier "Foo" [183, 187), i=49, next=0
+          KindTypeReference [189, 193), i=50, next=0
+            KindIdentifier "Bar" [189, 193), i=51, next=0
+      KindBlock [193, 213), i=52, next=0
+        NodeList [195, 211), i=53, next=0
+          KindReturnStatement [195, 211), i=54, next=0
+            KindNonNullExpression [204, 210), i=55, next=0
+              KindNullKeyword [204, 209), i=56, next=0
+    KindVariableStatement [213, 232), i=57, next=64
+      KindVariableDeclarationList [213, 231), i=58, next=0
+        NodeList [220, 231), i=59, next=0
+          KindVariableDeclaration [220, 231), i=60, next=0
+            KindIdentifier "v" [220, 222), i=61, next=62
+            KindCallExpression [224, 231), i=62, next=0
+              KindIdentifier "getV" [224, 229), i=63, next=0
+    KindSwitchStatement [232, 328), i=64, next=0
+      KindParenthesizedExpression [242, 250), i=65, next=69
+        KindPropertyAccessExpression [243, 249), i=66, next=0
+          KindIdentifier "v" [243, 244), i=67, next=68
+          KindIdentifier "type" [245, 249), i=68, next=0
+      KindCaseBlock [251, 328), i=69, next=0
+        NodeList [253, 326), i=70, next=0
+          KindCaseClause [253, 289), i=71, next=79
+            KindStringLiteral "bar" [260, 266), i=72, next=73
+            NodeList [267, 289), i=73, next=0
+              KindExpressionStatement [267, 278), i=74, next=78
+                KindPropertyAccessExpression [267, 277), i=75, next=0
+                  KindIdentifier "v" [267, 273), i=76, next=77
+                  KindIdentifier "bar" [274, 277), i=77, next=0
+              KindBreakStatement [278, 289), i=78, next=0
+          KindCaseClause [289, 326), i=79, next=0
+            KindStringLiteral "foo" [297, 303), i=80, next=81
+            NodeList [304, 326), i=81, next=0
+              KindExpressionStatement [304, 315), i=82, next=86
+                KindPropertyAccessExpression [304, 314), i=83, next=0
+                  KindIdentifier "v" [304, 310), i=84, next=85
+                  KindIdentifier "foo" [311, 314), i=85, next=0
+              KindBreakStatement [315, 326), i=86, next=0

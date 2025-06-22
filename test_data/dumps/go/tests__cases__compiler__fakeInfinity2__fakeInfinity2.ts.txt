@@ -1,0 +1,48 @@
+KindSourceFile [0, 210), i=1, next=0
+  NodeList [0, 208), i=2, next=0
+    KindEnumDeclaration [0, 53), i=3, next=15
+      NodeList [0, 6), i=4, next=6
+        KindExportKeyword [0, 6), i=5, next=0
+      KindIdentifier "Foo" [11, 15), i=6, next=7
+      NodeList [17, 50), i=7, next=0
+        KindEnumMember [17, 32), i=8, next=11
+          KindIdentifier "A" [17, 24), i=9, next=10
+          KindNumericLiteral [26, 32), i=10, next=0
+        KindEnumMember [33, 49), i=11, next=0
+          KindIdentifier "B" [33, 40), i=12, next=13
+          KindPrefixUnaryExpression [42, 49), i=13, next=0
+            KindNumericLiteral [44, 49), i=14, next=0
+    KindModuleDeclaration [53, 181), i=15, next=38
+      KindIdentifier "X" [66, 68), i=16, next=17
+      KindModuleBlock [68, 181), i=17, next=0
+        NodeList [70, 178), i=18, next=0
+          KindTypeAliasDeclaration [70, 91), i=19, next=23
+            KindIdentifier "A" [80, 82), i=20, next=21
+            KindLiteralType [84, 90), i=21, next=0
+              KindNumericLiteral [84, 90), i=22, next=0
+          KindTypeAliasDeclaration [91, 112), i=23, next=27
+            KindIdentifier "B" [101, 103), i=24, next=25
+            KindLiteralType [105, 111), i=25, next=0
+              KindNumericLiteral [105, 111), i=26, next=0
+          KindFunctionDeclaration [112, 178), i=27, next=0
+            NodeList [112, 126), i=28, next=30
+              KindExportKeyword [112, 126), i=29, next=0
+            KindIdentifier "f" [135, 137), i=30, next=31
+            KindTypeReference [140, 142), i=31, next=33
+              KindIdentifier "A" [140, 142), i=32, next=0
+            KindBlock [142, 178), i=33, next=0
+              NodeList [144, 171), i=34, next=0
+                KindThrowStatement [144, 171), i=35, next=0
+                  KindNewExpression [159, 171), i=36, next=0
+                    KindIdentifier "Error" [163, 169), i=37, next=0
+    KindVariableStatement [181, 208), i=38, next=0
+      NodeList [181, 191), i=39, next=41
+        KindExportKeyword [181, 191), i=40, next=0
+      KindVariableDeclarationList [191, 207), i=41, next=0
+        NodeList [197, 207), i=42, next=0
+          KindVariableDeclaration [197, 207), i=43, next=0
+            KindIdentifier "m" [197, 199), i=44, next=45
+            KindCallExpression [201, 207), i=45, next=0
+              KindPropertyAccessExpression [201, 205), i=46, next=0
+                KindIdentifier "X" [201, 203), i=47, next=48
+                KindIdentifier "f" [204, 205), i=48, next=0

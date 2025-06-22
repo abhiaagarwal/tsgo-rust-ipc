@@ -1,0 +1,190 @@
+KindSourceFile [0, 872), i=1, next=0
+  NodeList [0, 872), i=2, next=0
+    KindClassDeclaration [0, 24), i=3, next=9
+      KindIdentifier "Base" [5, 10), i=4, next=5
+      NodeList [12, 22), i=5, next=0
+        KindMethodDeclaration [12, 22), i=6, next=0
+          KindIdentifier "foo" [12, 16), i=7, next=8
+          KindBlock [18, 22), i=8, next=0
+    KindClassDeclaration [24, 67), i=9, next=20
+      KindIdentifier "Derived1" [31, 40), i=10, next=11
+      NodeList [40, 53), i=11, next=16
+        KindHeritageClause [40, 53), i=12, next=0
+          NodeList [48, 53), i=13, next=0
+            KindExpressionWithTypeArguments [48, 53), i=14, next=0
+              KindIdentifier "Base" [48, 53), i=15, next=0
+      NodeList [55, 65), i=16, next=0
+        KindMethodDeclaration [55, 65), i=17, next=0
+          KindIdentifier "bar" [55, 59), i=18, next=19
+          KindBlock [61, 65), i=19, next=0
+    KindClassDeclaration [67, 110), i=20, next=31
+      KindIdentifier "Derived2" [74, 83), i=21, next=22
+      NodeList [83, 96), i=22, next=27
+        KindHeritageClause [83, 96), i=23, next=0
+          NodeList [91, 96), i=24, next=0
+            KindExpressionWithTypeArguments [91, 96), i=25, next=0
+              KindIdentifier "Base" [91, 96), i=26, next=0
+      NodeList [98, 108), i=27, next=0
+        KindMethodDeclaration [98, 108), i=28, next=0
+          KindIdentifier "baz" [98, 102), i=29, next=30
+          KindBlock [104, 108), i=30, next=0
+    KindClassDeclaration [110, 153), i=31, next=42
+      KindIdentifier "Derived3" [117, 126), i=32, next=33
+      NodeList [126, 139), i=33, next=38
+        KindHeritageClause [126, 139), i=34, next=0
+          NodeList [134, 139), i=35, next=0
+            KindExpressionWithTypeArguments [134, 139), i=36, next=0
+              KindIdentifier "Base" [134, 139), i=37, next=0
+      NodeList [141, 151), i=38, next=0
+        KindMethodDeclaration [141, 151), i=39, next=0
+          KindIdentifier "biz" [141, 145), i=40, next=41
+          KindBlock [147, 151), i=41, next=0
+    KindInterfaceDeclaration [153, 360), i=42, next=80
+      KindIdentifier "Document2" [165, 175), i=43, next=44
+      NodeList [177, 358), i=44, next=0
+        KindMethodSignature [177, 225), i=45, next=54
+          KindIdentifier "createElement" [177, 195), i=46, next=47
+          NodeList [196, 213), i=47, next=52
+            KindParameter [196, 213), i=48, next=0
+              KindIdentifier "tagName" [196, 203), i=49, next=50
+              KindLiteralType [204, 213), i=50, next=0
+                KindStringLiteral "canvas" [204, 213), i=51, next=0
+          KindTypeReference [215, 224), i=52, next=0
+            KindIdentifier "Derived1" [215, 224), i=53, next=0
+        KindMethodSignature [225, 270), i=54, next=63
+          KindIdentifier "createElement" [225, 243), i=55, next=56
+          NodeList [244, 258), i=56, next=61
+            KindParameter [244, 258), i=57, next=0
+              KindIdentifier "tagName" [244, 251), i=58, next=59
+              KindLiteralType [252, 258), i=59, next=0
+                KindStringLiteral "div" [252, 258), i=60, next=0
+          KindTypeReference [260, 269), i=61, next=0
+            KindIdentifier "Derived2" [260, 269), i=62, next=0
+        KindMethodSignature [270, 316), i=63, next=72
+          KindIdentifier "createElement" [270, 288), i=64, next=65
+          NodeList [289, 304), i=65, next=70
+            KindParameter [289, 304), i=66, next=0
+              KindIdentifier "tagName" [289, 296), i=67, next=68
+              KindLiteralType [297, 304), i=68, next=0
+                KindStringLiteral "span" [297, 304), i=69, next=0
+          KindTypeReference [306, 315), i=70, next=0
+            KindIdentifier "Derived3" [306, 315), i=71, next=0
+        KindMethodSignature [316, 358), i=72, next=0
+          KindIdentifier "createElement" [316, 334), i=73, next=74
+          NodeList [335, 350), i=74, next=78
+            KindParameter [335, 350), i=75, next=0
+              KindIdentifier "tagName" [335, 342), i=76, next=77
+              KindStringKeyword [343, 350), i=77, next=0
+          KindTypeReference [352, 357), i=78, next=0
+            KindIdentifier "Base" [352, 357), i=79, next=0
+    KindVariableStatement [360, 380), i=80, next=87
+      KindVariableDeclarationList [360, 379), i=81, next=0
+        NodeList [365, 379), i=82, next=0
+          KindVariableDeclaration [365, 379), i=83, next=0
+            KindIdentifier "d2" [365, 368), i=84, next=85
+            KindTypeReference [369, 379), i=85, next=0
+              KindIdentifier "Document2" [369, 379), i=86, next=0
+    KindVariableStatement [380, 444), i=87, next=100
+      KindVariableDeclarationList [380, 444), i=88, next=0
+        NodeList [401, 444), i=89, next=0
+          KindVariableDeclaration [401, 444), i=90, next=0
+            KindIdentifier "htmlElement" [401, 413), i=91, next=92
+            KindTypeReference [414, 419), i=92, next=94
+              KindIdentifier "Base" [414, 419), i=93, next=0
+            KindCallExpression [421, 444), i=94, next=0
+              KindPropertyAccessExpression [421, 438), i=95, next=98
+                KindIdentifier "d2" [421, 424), i=96, next=97
+                KindIdentifier "createElement" [425, 438), i=97, next=0
+              NodeList [439, 443), i=98, next=0
+                KindStringLiteral "yo" [439, 443), i=99, next=0
+    KindVariableStatement [444, 506), i=100, next=113
+      KindVariableDeclarationList [444, 505), i=101, next=0
+        NodeList [448, 505), i=102, next=0
+          KindVariableDeclaration [448, 505), i=103, next=0
+            KindIdentifier "htmlCanvasElement" [448, 466), i=104, next=105
+            KindTypeReference [467, 476), i=105, next=107
+              KindIdentifier "Derived1" [467, 476), i=106, next=0
+            KindCallExpression [478, 505), i=107, next=0
+              KindPropertyAccessExpression [478, 495), i=108, next=111
+                KindIdentifier "d2" [478, 481), i=109, next=110
+                KindIdentifier "createElement" [482, 495), i=110, next=0
+              NodeList [496, 504), i=111, next=0
+                KindStringLiteral "canvas" [496, 504), i=112, next=0
+    KindVariableStatement [506, 562), i=113, next=126
+      KindVariableDeclarationList [506, 561), i=114, next=0
+        NodeList [510, 561), i=115, next=0
+          KindVariableDeclaration [510, 561), i=116, next=0
+            KindIdentifier "htmlDivElement" [510, 525), i=117, next=118
+            KindTypeReference [526, 535), i=118, next=120
+              KindIdentifier "Derived2" [526, 535), i=119, next=0
+            KindCallExpression [537, 561), i=120, next=0
+              KindPropertyAccessExpression [537, 554), i=121, next=124
+                KindIdentifier "d2" [537, 540), i=122, next=123
+                KindIdentifier "createElement" [541, 554), i=123, next=0
+              NodeList [555, 560), i=124, next=0
+                KindStringLiteral "div" [555, 560), i=125, next=0
+    KindVariableStatement [562, 620), i=126, next=139
+      KindVariableDeclarationList [562, 619), i=127, next=0
+        NodeList [566, 619), i=128, next=0
+          KindVariableDeclaration [566, 619), i=129, next=0
+            KindIdentifier "htmlSpanElement" [566, 582), i=130, next=131
+            KindTypeReference [583, 592), i=131, next=133
+              KindIdentifier "Derived3" [583, 592), i=132, next=0
+            KindCallExpression [594, 619), i=133, next=0
+              KindPropertyAccessExpression [594, 611), i=134, next=137
+                KindIdentifier "d2" [594, 597), i=135, next=136
+                KindIdentifier "createElement" [598, 611), i=136, next=0
+              NodeList [612, 618), i=137, next=0
+                KindStringLiteral "span" [612, 618), i=138, next=0
+    KindVariableStatement [620, 693), i=139, next=152
+      KindVariableDeclarationList [620, 693), i=140, next=0
+        NodeList [645, 693), i=141, next=0
+          KindVariableDeclaration [645, 693), i=142, next=0
+            KindIdentifier "htmlElement2" [645, 658), i=143, next=144
+            KindTypeReference [659, 668), i=144, next=146
+              KindIdentifier "Derived1" [659, 668), i=145, next=0
+            KindCallExpression [670, 693), i=146, next=0
+              KindPropertyAccessExpression [670, 687), i=147, next=150
+                KindIdentifier "d2" [670, 673), i=148, next=149
+                KindIdentifier "createElement" [674, 687), i=149, next=0
+              NodeList [688, 692), i=150, next=0
+                KindStringLiteral "yo" [688, 692), i=151, next=0
+    KindVariableStatement [693, 756), i=152, next=165
+      KindVariableDeclarationList [693, 755), i=153, next=0
+        NodeList [697, 755), i=154, next=0
+          KindVariableDeclaration [697, 755), i=155, next=0
+            KindIdentifier "htmlCanvasElement2" [697, 716), i=156, next=157
+            KindTypeReference [717, 726), i=157, next=159
+              KindIdentifier "Derived3" [717, 726), i=158, next=0
+            KindCallExpression [728, 755), i=159, next=0
+              KindPropertyAccessExpression [728, 745), i=160, next=163
+                KindIdentifier "d2" [728, 731), i=161, next=162
+                KindIdentifier "createElement" [732, 745), i=162, next=0
+              NodeList [746, 754), i=163, next=0
+                KindStringLiteral "canvas" [746, 754), i=164, next=0
+    KindVariableStatement [756, 813), i=165, next=178
+      KindVariableDeclarationList [756, 812), i=166, next=0
+        NodeList [760, 812), i=167, next=0
+          KindVariableDeclaration [760, 812), i=168, next=0
+            KindIdentifier "htmlDivElement2" [760, 776), i=169, next=170
+            KindTypeReference [777, 786), i=170, next=172
+              KindIdentifier "Derived1" [777, 786), i=171, next=0
+            KindCallExpression [788, 812), i=172, next=0
+              KindPropertyAccessExpression [788, 805), i=173, next=176
+                KindIdentifier "d2" [788, 791), i=174, next=175
+                KindIdentifier "createElement" [792, 805), i=175, next=0
+              NodeList [806, 811), i=176, next=0
+                KindStringLiteral "div" [806, 811), i=177, next=0
+    KindVariableStatement [813, 872), i=178, next=0
+      KindVariableDeclarationList [813, 871), i=179, next=0
+        NodeList [817, 871), i=180, next=0
+          KindVariableDeclaration [817, 871), i=181, next=0
+            KindIdentifier "htmlSpanElement2" [817, 834), i=182, next=183
+            KindTypeReference [835, 844), i=183, next=185
+              KindIdentifier "Derived1" [835, 844), i=184, next=0
+            KindCallExpression [846, 871), i=185, next=0
+              KindPropertyAccessExpression [846, 863), i=186, next=189
+                KindIdentifier "d2" [846, 849), i=187, next=188
+                KindIdentifier "createElement" [850, 863), i=188, next=0
+              NodeList [864, 870), i=189, next=0
+                KindStringLiteral "span" [864, 870), i=190, next=0

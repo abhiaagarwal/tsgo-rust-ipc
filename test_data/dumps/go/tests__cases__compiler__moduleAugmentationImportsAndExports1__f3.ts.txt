@@ -1,0 +1,42 @@
+KindSourceFile [0, 179), i=1, next=0
+  NodeList [0, 176), i=2, next=0
+    KindImportDeclaration [0, 23), i=3, next=10
+      KindImportClause [6, 10), i=4, next=9
+        KindNamedImports [6, 10), i=5, next=0
+          NodeList [8, 9), i=6, next=0
+            KindImportSpecifier [8, 9), i=7, next=0
+              KindIdentifier "A" [8, 9), i=8, next=0
+      KindStringLiteral "./f1" [15, 22), i=9, next=0
+    KindImportDeclaration [23, 48), i=10, next=17
+      KindImportClause [31, 35), i=11, next=16
+        KindNamedImports [31, 35), i=12, next=0
+          NodeList [33, 34), i=13, next=0
+            KindImportSpecifier [33, 34), i=14, next=0
+              KindIdentifier "B" [33, 34), i=15, next=0
+      KindStringLiteral "./f2" [40, 47), i=16, next=0
+    KindExpressionStatement [48, 103), i=17, next=30
+      KindBinaryExpression [48, 103), i=18, next=0
+        KindPropertyAccessExpression [48, 67), i=19, next=24
+          KindPropertyAccessExpression [48, 63), i=20, next=23
+            KindIdentifier "A" [48, 53), i=21, next=22
+            KindIdentifier "prototype" [54, 63), i=22, next=0
+          KindIdentifier "foo" [64, 67), i=23, next=0
+        KindEqualsToken [67, 69), i=24, next=25
+        KindFunctionExpression [69, 103), i=25, next=0
+          KindBlock [81, 103), i=26, next=0
+            NodeList [83, 101), i=27, next=0
+              KindReturnStatement [83, 101), i=28, next=0
+                KindIdentifier "undefined" [90, 100), i=29, next=0
+    KindModuleDeclaration [103, 176), i=30, next=0
+      NodeList [103, 112), i=31, next=33
+        KindDeclareKeyword [103, 112), i=32, next=0
+      KindStringLiteral "./f1" [119, 126), i=33, next=34
+      KindModuleBlock [126, 176), i=34, next=0
+        NodeList [128, 173), i=35, next=0
+          KindInterfaceDeclaration [128, 173), i=36, next=0
+            KindIdentifier "A" [143, 145), i=37, next=38
+            NodeList [147, 166), i=38, next=0
+              KindMethodSignature [147, 166), i=39, next=0
+                KindIdentifier "foo" [147, 160), i=40, next=41
+                KindTypeReference [163, 165), i=41, next=0
+                  KindIdentifier "B" [163, 165), i=42, next=0

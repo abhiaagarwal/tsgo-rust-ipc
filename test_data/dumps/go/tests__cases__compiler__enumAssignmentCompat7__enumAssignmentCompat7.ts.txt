@@ -1,0 +1,79 @@
+KindSourceFile [0, 334), i=1, next=0
+  NodeList [0, 334), i=2, next=0
+    KindModuleDeclaration [0, 47), i=3, next=15
+      KindIdentifier "first" [9, 15), i=4, next=5
+      KindModuleBlock [15, 47), i=5, next=0
+        NodeList [17, 45), i=6, next=0
+          KindEnumDeclaration [17, 45), i=7, next=0
+            NodeList [17, 28), i=8, next=10
+              KindExportKeyword [17, 28), i=9, next=0
+            KindIdentifier "E" [33, 35), i=10, next=11
+            NodeList [37, 43), i=11, next=0
+              KindEnumMember [37, 43), i=12, next=0
+                KindIdentifier "A" [37, 39), i=13, next=14
+                KindNumericLiteral [41, 43), i=14, next=0
+    KindModuleDeclaration [47, 97), i=15, next=27
+      KindIdentifier "second" [58, 65), i=16, next=17
+      KindModuleBlock [65, 97), i=17, next=0
+        NodeList [67, 95), i=18, next=0
+          KindEnumDeclaration [67, 95), i=19, next=0
+            NodeList [67, 78), i=20, next=22
+              KindExportKeyword [67, 78), i=21, next=0
+            KindIdentifier "E" [83, 85), i=22, next=23
+            NodeList [87, 93), i=23, next=0
+              KindEnumMember [87, 93), i=24, next=0
+                KindIdentifier "A" [87, 89), i=25, next=26
+                KindNumericLiteral [91, 93), i=26, next=0
+    KindClassDeclaration [97, 149), i=27, next=40
+      KindIdentifier "Base" [104, 109), i=28, next=29
+      NodeList [111, 147), i=29, next=0
+        KindMethodDeclaration [111, 147), i=30, next=0
+          KindIdentifier "method" [111, 122), i=31, next=32
+          NodeList [123, 137), i=32, next=39
+            KindParameter [123, 137), i=33, next=0
+              KindIdentifier "param" [123, 128), i=34, next=35
+              KindTypeReference [129, 137), i=35, next=0
+                KindQualifiedName [129, 137), i=36, next=0
+                  KindIdentifier "first" [129, 135), i=37, next=38
+                  KindIdentifier "E" [136, 137), i=38, next=0
+          KindBlock [138, 147), i=39, next=0
+    KindClassDeclaration [149, 226), i=40, next=60
+      KindIdentifier "Derived" [156, 164), i=41, next=42
+      NodeList [164, 177), i=42, next=47
+        KindHeritageClause [164, 177), i=43, next=0
+          NodeList [172, 177), i=44, next=0
+            KindExpressionWithTypeArguments [172, 177), i=45, next=0
+              KindIdentifier "Base" [172, 177), i=46, next=0
+      NodeList [179, 224), i=47, next=0
+        KindMethodDeclaration [179, 224), i=48, next=0
+          NodeList [179, 192), i=49, next=51
+            KindOverrideKeyword [179, 192), i=50, next=0
+          KindIdentifier "method" [192, 199), i=51, next=52
+          NodeList [200, 215), i=52, next=59
+            KindParameter [200, 215), i=53, next=0
+              KindIdentifier "param" [200, 205), i=54, next=55
+              KindTypeReference [206, 215), i=55, next=0
+                KindQualifiedName [206, 215), i=56, next=0
+                  KindIdentifier "second" [206, 213), i=57, next=58
+                  KindIdentifier "E" [214, 215), i=58, next=0
+          KindBlock [216, 224), i=59, next=0
+    KindFunctionDeclaration [226, 267), i=60, next=66
+      KindIdentifier "overloadingFunction" [236, 256), i=61, next=62
+      KindTypeReference [259, 267), i=62, next=0
+        KindQualifiedName [259, 267), i=63, next=0
+          KindIdentifier "first" [259, 265), i=64, next=65
+          KindIdentifier "E" [266, 267), i=65, next=0
+    KindFunctionDeclaration [267, 334), i=66, next=0
+      KindIdentifier "overloadingFunction" [276, 296), i=67, next=68
+      KindTypeReference [299, 308), i=68, next=72
+        KindQualifiedName [299, 308), i=69, next=0
+          KindIdentifier "second" [299, 306), i=70, next=71
+          KindIdentifier "E" [307, 308), i=71, next=0
+      KindBlock [308, 334), i=72, next=0
+        NodeList [310, 332), i=73, next=0
+          KindReturnStatement [310, 332), i=74, next=0
+            KindPropertyAccessExpression [321, 332), i=75, next=0
+              KindPropertyAccessExpression [321, 330), i=76, next=79
+                KindIdentifier "second" [321, 328), i=77, next=78
+                KindIdentifier "E" [329, 330), i=78, next=0
+              KindIdentifier "B" [331, 332), i=79, next=0

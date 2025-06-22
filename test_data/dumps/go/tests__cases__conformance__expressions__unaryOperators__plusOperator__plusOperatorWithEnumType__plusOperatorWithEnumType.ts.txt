@@ -1,0 +1,70 @@
+KindSourceFile [0, 293), i=1, next=0
+  NodeList [0, 293), i=2, next=0
+    KindEnumDeclaration [0, 13), i=3, next=5
+      KindIdentifier "ENUM" [4, 9), i=4, next=0
+    KindEmptyStatement [13, 14), i=5, next=6
+    KindEnumDeclaration [14, 38), i=6, next=15
+      KindIdentifier "ENUM1" [19, 25), i=7, next=8
+      NodeList [27, 36), i=8, next=0
+        KindEnumMember [27, 29), i=9, next=11
+          KindIdentifier "A" [27, 29), i=10, next=0
+        KindEnumMember [30, 32), i=11, next=13
+          KindIdentifier "B" [30, 32), i=12, next=0
+        KindEnumMember [33, 36), i=13, next=0
+          KindStringLiteral "" [33, 36), i=14, next=0
+    KindEmptyStatement [38, 39), i=15, next=16
+    KindVariableStatement [39, 86), i=16, next=23
+      KindVariableDeclarationList [39, 85), i=17, next=0
+        NodeList [61, 85), i=18, next=0
+          KindVariableDeclaration [61, 85), i=19, next=0
+            KindIdentifier "ResultIsNumber1" [61, 77), i=20, next=21
+            KindPrefixUnaryExpression [79, 85), i=21, next=0
+              KindIdentifier "ENUM" [81, 85), i=22, next=0
+    KindVariableStatement [86, 116), i=23, next=30
+      KindVariableDeclarationList [86, 115), i=24, next=0
+        NodeList [90, 115), i=25, next=0
+          KindVariableDeclaration [90, 115), i=26, next=0
+            KindIdentifier "ResultIsNumber2" [90, 106), i=27, next=28
+            KindPrefixUnaryExpression [108, 115), i=28, next=0
+              KindIdentifier "ENUM1" [110, 115), i=29, next=0
+    KindVariableStatement [116, 177), i=30, next=39
+      KindVariableDeclarationList [116, 176), i=31, next=0
+        NodeList [146, 176), i=32, next=0
+          KindVariableDeclaration [146, 176), i=33, next=0
+            KindIdentifier "ResultIsNumber3" [146, 162), i=34, next=35
+            KindPrefixUnaryExpression [164, 176), i=35, next=0
+              KindElementAccessExpression [166, 176), i=36, next=0
+                KindIdentifier "ENUM1" [166, 171), i=37, next=38
+                KindStringLiteral "A" [172, 175), i=38, next=0
+    KindVariableStatement [177, 224), i=39, next=54
+      KindVariableDeclarationList [177, 223), i=40, next=0
+        NodeList [181, 223), i=41, next=0
+          KindVariableDeclaration [181, 223), i=42, next=0
+            KindIdentifier "ResultIsNumber4" [181, 197), i=43, next=44
+            KindPrefixUnaryExpression [199, 223), i=44, next=0
+              KindParenthesizedExpression [201, 223), i=45, next=0
+                KindBinaryExpression [202, 222), i=46, next=0
+                  KindElementAccessExpression [202, 209), i=47, next=50
+                    KindIdentifier "ENUM" [202, 206), i=48, next=49
+                    KindNumericLiteral [207, 208), i=49, next=0
+                  KindPlusToken [209, 211), i=50, next=51
+                  KindElementAccessExpression [211, 222), i=51, next=0
+                    KindIdentifier "ENUM1" [211, 217), i=52, next=53
+                    KindStringLiteral "B" [218, 221), i=53, next=0
+    KindExpressionStatement [224, 261), i=54, next=57
+      KindPrefixUnaryExpression [224, 260), i=55, next=0
+        KindIdentifier "ENUM" [256, 260), i=56, next=0
+    KindExpressionStatement [261, 269), i=57, next=60
+      KindPrefixUnaryExpression [261, 268), i=58, next=0
+        KindIdentifier "ENUM1" [263, 268), i=59, next=0
+    KindExpressionStatement [269, 279), i=60, next=65
+      KindPrefixUnaryExpression [269, 278), i=61, next=0
+        KindPropertyAccessExpression [271, 278), i=62, next=0
+          KindIdentifier "ENUM1" [271, 276), i=63, next=64
+          KindIdentifier "B" [277, 278), i=64, next=0
+    KindExpressionStatement [279, 293), i=65, next=0
+      KindBinaryExpression [279, 292), i=66, next=0
+        KindPrefixUnaryExpression [279, 285), i=67, next=69
+          KindIdentifier "ENUM" [281, 285), i=68, next=0
+        KindCommaToken [285, 286), i=69, next=70
+        KindIdentifier "ENUM1" [286, 292), i=70, next=0

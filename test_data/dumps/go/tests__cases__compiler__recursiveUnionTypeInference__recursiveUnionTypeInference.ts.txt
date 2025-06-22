@@ -1,0 +1,37 @@
+KindSourceFile [0, 101), i=1, next=0
+  NodeList [0, 99), i=2, next=0
+    KindInterfaceDeclaration [0, 32), i=3, next=13
+      KindIdentifier "Foo" [9, 13), i=4, next=5
+      NodeList [14, 15), i=5, next=8
+        KindTypeParameter [14, 15), i=6, next=0
+          KindIdentifier "T" [14, 15), i=7, next=0
+      NodeList [18, 29), i=8, next=0
+        KindPropertySignature [18, 29), i=9, next=0
+          KindIdentifier "x" [18, 25), i=10, next=11
+          KindTypeReference [26, 28), i=11, next=0
+            KindIdentifier "T" [26, 28), i=12, next=0
+    KindFunctionDeclaration [32, 99), i=13, next=0
+      KindIdentifier "bar" [44, 48), i=14, next=15
+      NodeList [49, 50), i=15, next=18
+        KindTypeParameter [49, 50), i=16, next=0
+          KindIdentifier "T" [49, 50), i=17, next=0
+      NodeList [52, 70), i=18, next=29
+        KindParameter [52, 70), i=19, next=0
+          KindIdentifier "x" [52, 53), i=20, next=21
+          KindUnionType [54, 70), i=21, next=0
+            NodeList [54, 70), i=22, next=0
+              KindTypeReference [54, 61), i=23, next=28
+                KindIdentifier "Foo" [54, 58), i=24, next=25
+                NodeList [59, 60), i=25, next=0
+                  KindTypeReference [59, 60), i=26, next=0
+                    KindIdentifier "T" [59, 60), i=27, next=0
+              KindStringKeyword [63, 70), i=28, next=0
+      KindTypeReference [72, 74), i=29, next=31
+        KindIdentifier "T" [72, 74), i=30, next=0
+      KindBlock [74, 99), i=31, next=0
+        NodeList [76, 96), i=32, next=0
+          KindReturnStatement [76, 96), i=33, next=0
+            KindCallExpression [88, 95), i=34, next=0
+              KindIdentifier "bar" [88, 92), i=35, next=36
+              NodeList [93, 94), i=36, next=0
+                KindIdentifier "x" [93, 94), i=37, next=0

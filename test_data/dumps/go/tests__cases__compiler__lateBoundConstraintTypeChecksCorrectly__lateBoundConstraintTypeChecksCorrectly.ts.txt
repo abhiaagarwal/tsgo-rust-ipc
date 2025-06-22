@@ -1,0 +1,95 @@
+KindSourceFile [0, 456), i=1, next=0
+  NodeList [0, 454), i=2, next=0
+    KindVariableStatement [0, 37), i=3, next=12
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindVariableDeclarationList [7, 36), i=6, next=0
+        NodeList [13, 36), i=7, next=0
+          KindVariableDeclaration [13, 36), i=8, next=0
+            KindIdentifier "fooProp" [13, 21), i=9, next=10
+            KindTypeOperator [22, 36), i=10, next=0
+              KindSymbolKeyword [29, 36), i=11, next=0
+    KindVariableStatement [37, 76), i=12, next=21
+      NodeList [37, 46), i=13, next=15
+        KindDeclareKeyword [37, 46), i=14, next=0
+      KindVariableDeclarationList [46, 75), i=15, next=0
+        NodeList [52, 75), i=16, next=0
+          KindVariableDeclaration [52, 75), i=17, next=0
+            KindIdentifier "barProp" [52, 60), i=18, next=19
+            KindTypeOperator [61, 75), i=19, next=0
+              KindSymbolKeyword [68, 75), i=20, next=0
+    KindTypeAliasDeclaration [76, 129), i=21, next=29
+      KindIdentifier "BothProps" [84, 94), i=22, next=23
+      KindUnionType [96, 128), i=23, next=0
+        NodeList [96, 128), i=24, next=0
+          KindTypeQuery [96, 111), i=25, next=27
+            KindIdentifier "fooProp" [103, 111), i=26, next=0
+          KindTypeQuery [113, 128), i=27, next=0
+            KindIdentifier "barProp" [120, 128), i=28, next=0
+    KindInterfaceDeclaration [129, 200), i=29, next=46
+      NodeList [129, 139), i=30, next=32
+        KindExportKeyword [129, 139), i=31, next=0
+      KindIdentifier "Foo" [149, 153), i=32, next=33
+      NodeList [154, 155), i=33, next=36
+        KindTypeParameter [154, 155), i=34, next=0
+          KindIdentifier "T" [154, 155), i=35, next=0
+      NodeList [158, 197), i=36, next=0
+        KindPropertySignature [158, 175), i=37, next=42
+          KindComputedPropertyName [158, 171), i=38, next=40
+            KindIdentifier "fooProp" [163, 170), i=39, next=0
+          KindTypeReference [172, 174), i=40, next=0
+            KindIdentifier "T" [172, 174), i=41, next=0
+        KindPropertySignature [175, 197), i=42, next=0
+          KindComputedPropertyName [175, 188), i=43, next=45
+            KindIdentifier "barProp" [180, 187), i=44, next=0
+          KindStringKeyword [189, 196), i=45, next=0
+    KindFunctionDeclaration [200, 454), i=46, next=0
+      KindIdentifier "f" [212, 214), i=47, next=48
+      NodeList [215, 236), i=48, next=55
+        KindTypeParameter [215, 236), i=49, next=0
+          KindIdentifier "T" [215, 216), i=50, next=51
+          KindTypeReference [224, 236), i=51, next=0
+            KindIdentifier "Foo" [224, 228), i=52, next=53
+            NodeList [229, 235), i=53, next=0
+              KindNumberKeyword [229, 235), i=54, next=0
+      NodeList [238, 242), i=55, next=60
+        KindParameter [238, 242), i=56, next=0
+          KindIdentifier "x" [238, 239), i=57, next=58
+          KindTypeReference [240, 242), i=58, next=0
+            KindIdentifier "T" [240, 242), i=59, next=0
+      KindBlock [243, 454), i=60, next=0
+        NodeList [245, 451), i=61, next=0
+          KindVariableStatement [245, 274), i=62, next=70
+            KindVariableDeclarationList [245, 273), i=63, next=0
+              NodeList [256, 273), i=64, next=0
+                KindVariableDeclaration [256, 273), i=65, next=0
+                  KindIdentifier "abc" [256, 260), i=66, next=67
+                  KindElementAccessExpression [262, 273), i=67, next=0
+                    KindIdentifier "x" [262, 264), i=68, next=69
+                    KindIdentifier "fooProp" [265, 272), i=69, next=0
+          KindVariableStatement [274, 402), i=70, next=83
+            KindVariableDeclarationList [274, 401), i=71, next=0
+              NodeList [365, 401), i=72, next=0
+                KindVariableDeclaration [365, 401), i=73, next=0
+                  KindIdentifier "def" [365, 369), i=74, next=75
+                  KindIndexedAccessType [370, 388), i=75, next=80
+                    KindTypeReference [370, 372), i=76, next=78
+                      KindIdentifier "T" [370, 372), i=77, next=0
+                    KindTypeQuery [373, 387), i=78, next=0
+                      KindIdentifier "fooProp" [379, 387), i=79, next=0
+                  KindElementAccessExpression [390, 401), i=80, next=0
+                    KindIdentifier "x" [390, 392), i=81, next=82
+                    KindIdentifier "fooProp" [393, 400), i=82, next=0
+          KindVariableStatement [402, 451), i=83, next=0
+            KindVariableDeclarationList [402, 450), i=84, next=0
+              NodeList [413, 450), i=85, next=0
+                KindVariableDeclaration [413, 450), i=86, next=0
+                  KindIdentifier "def2" [413, 418), i=87, next=88
+                  KindIndexedAccessType [419, 437), i=88, next=93
+                    KindTypeReference [419, 421), i=89, next=91
+                      KindIdentifier "T" [419, 421), i=90, next=0
+                    KindTypeQuery [422, 436), i=91, next=0
+                      KindIdentifier "barProp" [428, 436), i=92, next=0
+                  KindElementAccessExpression [439, 450), i=93, next=0
+                    KindIdentifier "x" [439, 441), i=94, next=95
+                    KindIdentifier "barProp" [442, 449), i=95, next=0

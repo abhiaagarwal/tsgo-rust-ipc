@@ -1,0 +1,518 @@
+KindSourceFile [0, 2914), i=1, next=0
+  NodeList [0, 2910), i=2, next=0
+    KindClassDeclaration [0, 194), i=3, next=28
+      KindIdentifier "BasicMonster" [5, 18), i=4, next=5
+      NodeList [20, 191), i=5, next=0
+        KindConstructor [20, 92), i=6, next=19
+          NodeList [38, 80), i=7, next=18
+            KindParameter [38, 57), i=8, next=13
+              NodeList [38, 44), i=9, next=11
+                KindPublicKeyword [38, 44), i=10, next=0
+              KindIdentifier "name" [44, 49), i=11, next=12
+              KindStringKeyword [50, 57), i=12, next=0
+            KindParameter [58, 80), i=13, next=0
+              NodeList [58, 65), i=14, next=16
+                KindPublicKeyword [58, 65), i=15, next=0
+              KindIdentifier "health" [65, 72), i=16, next=17
+              KindNumberKeyword [73, 80), i=17, next=0
+          KindBlock [81, 92), i=18, next=0
+        KindMethodDeclaration [92, 168), i=19, next=25
+          KindIdentifier "attack" [92, 106), i=20, next=21
+          NodeList [107, 113), i=21, next=24
+            KindParameter [107, 113), i=22, next=0
+              KindIdentifier "target" [107, 113), i=23, next=0
+          KindBlock [114, 168), i=24, next=0
+        KindPropertyDeclaration [168, 191), i=25, next=0
+          KindIdentifier "isAlive" [168, 183), i=26, next=27
+          KindTrueKeyword [185, 190), i=27, next=0
+    KindVariableStatement [194, 234), i=28, next=38
+      KindVariableDeclarationList [194, 233), i=29, next=0
+        NodeList [201, 233), i=30, next=0
+          KindVariableDeclaration [201, 233), i=31, next=0
+            KindIdentifier "m1" [201, 204), i=32, next=33
+            KindNewExpression [206, 233), i=33, next=0
+              KindIdentifier "BasicMonster" [210, 223), i=34, next=35
+              NodeList [224, 232), i=35, next=0
+                KindStringLiteral "1" [224, 227), i=36, next=37
+                KindNumericLiteral [228, 232), i=37, next=0
+    KindVariableStatement [234, 272), i=38, next=48
+      KindVariableDeclarationList [234, 271), i=39, next=0
+        NodeList [239, 271), i=40, next=0
+          KindVariableDeclaration [239, 271), i=41, next=0
+            KindIdentifier "m2" [239, 242), i=42, next=43
+            KindNewExpression [244, 271), i=43, next=0
+              KindIdentifier "BasicMonster" [248, 261), i=44, next=45
+              NodeList [262, 270), i=45, next=0
+                KindStringLiteral "2" [262, 265), i=46, next=47
+                KindNumericLiteral [266, 270), i=47, next=0
+    KindExpressionStatement [272, 288), i=48, next=55
+      KindCallExpression [272, 287), i=49, next=0
+        KindPropertyAccessExpression [272, 283), i=50, next=53
+          KindIdentifier "m1" [272, 276), i=51, next=52
+          KindIdentifier "attack" [277, 283), i=52, next=0
+        NodeList [284, 286), i=53, next=0
+          KindIdentifier "m2" [284, 286), i=54, next=0
+    KindExpressionStatement [288, 304), i=55, next=62
+      KindBinaryExpression [288, 303), i=56, next=0
+        KindPropertyAccessExpression [288, 299), i=57, next=60
+          KindIdentifier "m1" [288, 292), i=58, next=59
+          KindIdentifier "health" [293, 299), i=59, next=0
+        KindEqualsToken [299, 301), i=60, next=61
+        KindNumericLiteral [301, 303), i=61, next=0
+    KindExpressionStatement [304, 348), i=62, next=77
+      KindCallExpression [304, 347), i=63, next=0
+        KindPropertyAccessExpression [304, 317), i=64, next=67
+          KindIdentifier "console" [304, 313), i=65, next=66
+          KindIdentifier "log" [314, 317), i=66, next=0
+        NodeList [318, 346), i=67, next=0
+          KindCallExpression [318, 346), i=68, next=0
+            KindPropertyAccessExpression [318, 344), i=69, next=0
+              KindParenthesizedExpression [318, 335), i=70, next=76
+                KindTypeAssertionExpression [319, 334), i=71, next=0
+                  KindAnyKeyword [320, 323), i=72, next=73
+                  KindPropertyAccessExpression [324, 334), i=73, next=0
+                    KindIdentifier "m5" [324, 326), i=74, next=75
+                    KindIdentifier "isAlive" [327, 334), i=75, next=0
+              KindIdentifier "toString" [336, 344), i=76, next=0
+    KindClassDeclaration [348, 973), i=77, next=137
+      KindIdentifier "GetSetMonster" [357, 371), i=78, next=79
+      NodeList [373, 970), i=79, next=0
+        KindConstructor [373, 447), i=80, next=93
+          NodeList [391, 435), i=81, next=92
+            KindParameter [391, 410), i=82, next=87
+              NodeList [391, 397), i=83, next=85
+                KindPublicKeyword [391, 397), i=84, next=0
+              KindIdentifier "name" [397, 402), i=85, next=86
+              KindStringKeyword [403, 410), i=86, next=0
+            KindParameter [411, 435), i=87, next=0
+              NodeList [411, 419), i=88, next=90
+                KindPrivateKeyword [411, 419), i=89, next=0
+              KindIdentifier "_health" [419, 427), i=90, next=91
+              KindNumberKeyword [428, 435), i=91, next=0
+          KindBlock [436, 447), i=92, next=0
+        KindMethodDeclaration [447, 523), i=93, next=99
+          KindIdentifier "attack" [447, 461), i=94, next=95
+          NodeList [462, 468), i=95, next=98
+            KindParameter [462, 468), i=96, next=0
+              KindIdentifier "target" [462, 468), i=97, next=0
+          KindBlock [469, 523), i=98, next=0
+        KindGetAccessor [523, 753), i=99, next=110
+          KindIdentifier "isAlive" [700, 708), i=100, next=101
+          KindBlock [710, 753), i=101, next=0
+            NodeList [712, 746), i=102, next=0
+              KindReturnStatement [712, 746), i=103, next=0
+                KindBinaryExpression [728, 745), i=104, next=0
+                  KindPropertyAccessExpression [728, 741), i=105, next=108
+                    KindThisKeyword [728, 733), i=106, next=107
+                    KindIdentifier "_health" [734, 741), i=107, next=0
+                  KindGreaterThanToken [741, 743), i=108, next=109
+                  KindNumericLiteral [743, 745), i=109, next=0
+        KindSetAccessor [753, 970), i=110, next=0
+          KindIdentifier "health" [817, 824), i=111, next=112
+          NodeList [825, 838), i=112, next=116
+            KindParameter [825, 838), i=113, next=0
+              KindIdentifier "value" [825, 830), i=114, next=115
+              KindNumberKeyword [831, 838), i=115, next=0
+          KindBlock [839, 970), i=116, next=0
+            NodeList [841, 965), i=117, next=0
+              KindIfStatement [841, 935), i=118, next=130
+                KindBinaryExpression [855, 864), i=119, next=123
+                  KindIdentifier "value" [855, 860), i=120, next=121
+                  KindLessThanToken [860, 862), i=121, next=122
+                  KindNumericLiteral [862, 864), i=122, next=0
+                KindBlock [865, 935), i=123, next=0
+                  NodeList [867, 928), i=124, next=0
+                    KindThrowStatement [867, 928), i=125, next=0
+                      KindNewExpression [886, 928), i=126, next=0
+                        KindIdentifier "Error" [890, 896), i=127, next=128
+                        NodeList [897, 927), i=128, next=0
+                          KindStringLiteral "Health must be non-negative." [897, 927), i=129, next=0
+              KindExpressionStatement [935, 965), i=130, next=0
+                KindBinaryExpression [935, 965), i=131, next=0
+                  KindPropertyAccessExpression [935, 957), i=132, next=135
+                    KindThisKeyword [935, 949), i=133, next=134
+                    KindIdentifier "_health" [950, 957), i=134, next=0
+                  KindEqualsToken [957, 959), i=135, next=136
+                  KindIdentifier "value" [959, 965), i=136, next=0
+    KindVariableStatement [973, 1013), i=137, next=147
+      KindVariableDeclarationList [973, 1012), i=138, next=0
+        NodeList [980, 1012), i=139, next=0
+          KindVariableDeclaration [980, 1012), i=140, next=0
+            KindIdentifier "m3" [980, 983), i=141, next=142
+            KindNewExpression [985, 1012), i=142, next=0
+              KindIdentifier "BasicMonster" [989, 1002), i=143, next=144
+              NodeList [1003, 1011), i=144, next=0
+                KindStringLiteral "1" [1003, 1006), i=145, next=146
+                KindNumericLiteral [1007, 1011), i=146, next=0
+    KindVariableStatement [1013, 1051), i=147, next=157
+      KindVariableDeclarationList [1013, 1050), i=148, next=0
+        NodeList [1018, 1050), i=149, next=0
+          KindVariableDeclaration [1018, 1050), i=150, next=0
+            KindIdentifier "m4" [1018, 1021), i=151, next=152
+            KindNewExpression [1023, 1050), i=152, next=0
+              KindIdentifier "BasicMonster" [1027, 1040), i=153, next=154
+              NodeList [1041, 1049), i=154, next=0
+                KindStringLiteral "2" [1041, 1044), i=155, next=156
+                KindNumericLiteral [1045, 1049), i=156, next=0
+    KindExpressionStatement [1051, 1067), i=157, next=164
+      KindCallExpression [1051, 1066), i=158, next=0
+        KindPropertyAccessExpression [1051, 1062), i=159, next=162
+          KindIdentifier "m3" [1051, 1055), i=160, next=161
+          KindIdentifier "attack" [1056, 1062), i=161, next=0
+        NodeList [1063, 1065), i=162, next=0
+          KindIdentifier "m4" [1063, 1065), i=163, next=0
+    KindExpressionStatement [1067, 1083), i=164, next=171
+      KindBinaryExpression [1067, 1082), i=165, next=0
+        KindPropertyAccessExpression [1067, 1078), i=166, next=169
+          KindIdentifier "m3" [1067, 1071), i=167, next=168
+          KindIdentifier "health" [1072, 1078), i=168, next=0
+        KindEqualsToken [1078, 1080), i=169, next=170
+        KindNumericLiteral [1080, 1082), i=170, next=0
+    KindVariableStatement [1083, 1121), i=171, next=185
+      KindVariableDeclarationList [1083, 1121), i=172, next=0
+        NodeList [1088, 1121), i=173, next=0
+          KindVariableDeclaration [1088, 1121), i=174, next=0
+            KindIdentifier "x" [1088, 1090), i=175, next=176
+            KindCallExpression [1092, 1121), i=176, next=0
+              KindPropertyAccessExpression [1092, 1119), i=177, next=0
+                KindParenthesizedExpression [1092, 1110), i=178, next=184
+                  KindTypeAssertionExpression [1094, 1109), i=179, next=0
+                    KindAnyKeyword [1095, 1098), i=180, next=181
+                    KindPropertyAccessExpression [1099, 1109), i=181, next=0
+                      KindIdentifier "m5" [1099, 1101), i=182, next=183
+                      KindIdentifier "isAlive" [1102, 1109), i=183, next=0
+                KindIdentifier "toString" [1111, 1119), i=184, next=0
+    KindClassDeclaration [1121, 1395), i=185, next=225
+      KindIdentifier "OverloadedMonster" [1130, 1148), i=186, next=187
+      NodeList [1150, 1392), i=187, next=0
+        KindConstructor [1150, 1182), i=188, next=193
+          NodeList [1168, 1180), i=189, next=0
+            KindParameter [1168, 1180), i=190, next=0
+              KindIdentifier "name" [1168, 1172), i=191, next=192
+              KindStringKeyword [1173, 1180), i=192, next=0
+        KindConstructor [1182, 1255), i=193, next=207
+          NodeList [1200, 1243), i=194, next=206
+            KindParameter [1200, 1219), i=195, next=200
+              NodeList [1200, 1206), i=196, next=198
+                KindPublicKeyword [1200, 1206), i=197, next=0
+              KindIdentifier "name" [1206, 1211), i=198, next=199
+              KindStringKeyword [1212, 1219), i=199, next=0
+            KindParameter [1220, 1243), i=200, next=0
+              NodeList [1220, 1227), i=201, next=203
+                KindPublicKeyword [1220, 1227), i=202, next=0
+              KindIdentifier "health" [1227, 1234), i=203, next=204
+              KindQuestionToken [1234, 1235), i=204, next=205
+              KindNumberKeyword [1236, 1243), i=205, next=0
+          KindBlock [1244, 1255), i=206, next=0
+        KindMethodDeclaration [1255, 1272), i=207, next=209
+          KindIdentifier "attack" [1255, 1269), i=208, next=0
+        KindMethodDeclaration [1272, 1293), i=209, next=215
+          KindIdentifier "attack" [1272, 1284), i=210, next=211
+          NodeList [1285, 1291), i=211, next=0
+            KindParameter [1285, 1291), i=212, next=0
+              KindIdentifier "a" [1285, 1286), i=213, next=214
+              KindAnyKeyword [1287, 1291), i=214, next=0
+        KindMethodDeclaration [1293, 1369), i=215, next=222
+          KindIdentifier "attack" [1293, 1305), i=216, next=217
+          NodeList [1306, 1313), i=217, next=221
+            KindParameter [1306, 1313), i=218, next=0
+              KindIdentifier "target" [1306, 1312), i=219, next=220
+              KindQuestionToken [1312, 1313), i=220, next=0
+          KindBlock [1314, 1369), i=221, next=0
+        KindPropertyDeclaration [1369, 1392), i=222, next=0
+          KindIdentifier "isAlive" [1369, 1384), i=223, next=224
+          KindTrueKeyword [1386, 1391), i=224, next=0
+    KindVariableStatement [1395, 1435), i=225, next=234
+      KindVariableDeclarationList [1395, 1434), i=226, next=0
+        NodeList [1402, 1434), i=227, next=0
+          KindVariableDeclaration [1402, 1434), i=228, next=0
+            KindIdentifier "m5" [1402, 1405), i=229, next=230
+            KindNewExpression [1407, 1434), i=230, next=0
+              KindIdentifier "OverloadedMonster" [1411, 1429), i=231, next=232
+              NodeList [1430, 1433), i=232, next=0
+                KindStringLiteral "1" [1430, 1433), i=233, next=0
+    KindVariableStatement [1435, 1473), i=234, next=243
+      KindVariableDeclarationList [1435, 1472), i=235, next=0
+        NodeList [1440, 1472), i=236, next=0
+          KindVariableDeclaration [1440, 1472), i=237, next=0
+            KindIdentifier "m6" [1440, 1443), i=238, next=239
+            KindNewExpression [1445, 1472), i=239, next=0
+              KindIdentifier "OverloadedMonster" [1449, 1467), i=240, next=241
+              NodeList [1468, 1471), i=241, next=0
+                KindStringLiteral "2" [1468, 1471), i=242, next=0
+    KindExpressionStatement [1473, 1489), i=243, next=250
+      KindCallExpression [1473, 1488), i=244, next=0
+        KindPropertyAccessExpression [1473, 1484), i=245, next=248
+          KindIdentifier "m5" [1473, 1477), i=246, next=247
+          KindIdentifier "attack" [1478, 1484), i=247, next=0
+        NodeList [1485, 1487), i=248, next=0
+          KindIdentifier "m6" [1485, 1487), i=249, next=0
+    KindExpressionStatement [1489, 1505), i=250, next=1
+      KindBinaryExpression [1489, 1504), i=251, next=0
+        KindPropertyAccessExpression [1489, 1500), i=252, next=255
+          KindIdentifier "m5" [1489, 1493), i=253, next=254
+          KindIdentifier "health" [1494, 1500), i=254, next=0
+        KindEqualsToken [1500, 1502), i=255, next=0
+        KindNumericLiteral [1502, 1504), i=256, next=0
+    KindVariableStatement [1505, 1543), i=257, next=15
+      KindVariableDeclarationList [1505, 1543), i=258, next=0
+        NodeList [1510, 1543), i=259, next=0
+          KindVariableDeclaration [1510, 1543), i=260, next=0
+            KindIdentifier "y" [1510, 1512), i=261, next=6
+            KindCallExpression [1514, 1543), i=262, next=0
+              KindPropertyAccessExpression [1514, 1541), i=263, next=0
+                KindParenthesizedExpression [1514, 1532), i=264, next=14
+                  KindTypeAssertionExpression [1516, 1531), i=265, next=0
+                    KindAnyKeyword [1517, 1520), i=266, next=11
+                    KindPropertyAccessExpression [1521, 1531), i=267, next=0
+                      KindIdentifier "m5" [1521, 1523), i=268, next=13
+                      KindIdentifier "isAlive" [1524, 1531), i=269, next=0
+                KindIdentifier "toString" [1533, 1541), i=270, next=0
+    KindClassDeclaration [1543, 1657), i=271, next=38
+      KindIdentifier "SplatMonster" [1552, 1565), i=272, next=17
+      NodeList [1567, 1654), i=273, next=0
+        KindConstructor [1567, 1607), i=274, next=26
+          NodeList [1585, 1602), i=275, next=25
+            KindParameter [1585, 1602), i=276, next=0
+              KindDotDotDotToken [1585, 1588), i=277, next=22
+              KindIdentifier "args" [1588, 1592), i=278, next=23
+              KindArrayType [1593, 1602), i=279, next=0
+                KindStringKeyword [1593, 1600), i=280, next=0
+          KindBlock [1603, 1607), i=281, next=0
+        KindMethodDeclaration [1607, 1654), i=282, next=0
+          KindIdentifier "roar" [1607, 1617), i=283, next=28
+          NodeList [1618, 1649), i=284, next=37
+            KindParameter [1618, 1630), i=285, next=32
+              KindIdentifier "name" [1618, 1622), i=286, next=31
+              KindStringKeyword [1623, 1630), i=287, next=0
+            KindParameter [1631, 1649), i=288, next=0
+              KindDotDotDotToken [1631, 1635), i=289, next=34
+              KindIdentifier "args" [1635, 1639), i=290, next=35
+              KindArrayType [1640, 1649), i=291, next=0
+                KindNumberKeyword [1640, 1647), i=292, next=0
+          KindBlock [1650, 1654), i=293, next=0
+    KindFunctionDeclaration [1657, 1694), i=294, next=44
+      KindIdentifier "foo" [1671, 1675), i=295, next=40
+      KindBlock [1677, 1694), i=296, next=0
+        NodeList [1679, 1692), i=297, next=0
+          KindReturnStatement [1679, 1692), i=298, next=0
+            KindTrueKeyword [1686, 1691), i=299, next=0
+    KindClassDeclaration [1694, 1780), i=300, next=58
+      KindIdentifier "PrototypeMonster" [1701, 1718), i=301, next=46
+      NodeList [1720, 1777), i=302, next=0
+        KindPropertyDeclaration [1720, 1742), i=303, next=51
+          KindIdentifier "age" [1720, 1729), i=304, next=49
+          KindNumberKeyword [1730, 1737), i=305, next=50
+          KindNumericLiteral [1739, 1741), i=306, next=0
+        KindPropertyDeclaration [1742, 1761), i=307, next=54
+          KindIdentifier "name" [1742, 1752), i=308, next=53
+          KindStringKeyword [1753, 1760), i=309, next=0
+        KindPropertyDeclaration [1761, 1777), i=310, next=0
+          KindIdentifier "b" [1761, 1768), i=311, next=56
+          KindCallExpression [1770, 1776), i=312, next=0
+            KindIdentifier "foo" [1770, 1774), i=313, next=0
+    KindClassDeclaration [1780, 1898), i=314, next=77
+      KindIdentifier "SuperParent" [1789, 1801), i=315, next=60
+      NodeList [1803, 1895), i=316, next=0
+        KindConstructor [1803, 1842), i=317, next=67
+          NodeList [1821, 1830), i=318, next=66
+            KindParameter [1821, 1830), i=319, next=0
+              KindIdentifier "a" [1821, 1822), i=320, next=65
+              KindNumberKeyword [1823, 1830), i=321, next=0
+          KindBlock [1831, 1842), i=322, next=0
+        KindMethodDeclaration [1842, 1873), i=323, next=74
+          KindIdentifier "b" [1842, 1851), i=324, next=69
+          NodeList [1852, 1861), i=325, next=73
+            KindParameter [1852, 1861), i=326, next=0
+              KindIdentifier "b" [1852, 1853), i=327, next=72
+              KindStringKeyword [1854, 1861), i=328, next=0
+          KindBlock [1862, 1873), i=329, next=0
+        KindMethodDeclaration [1873, 1895), i=330, next=0
+          KindIdentifier "c" [1873, 1882), i=331, next=76
+          KindBlock [1884, 1895), i=332, next=0
+    KindClassDeclaration [1898, 2075), i=333, next=113
+      KindIdentifier "SuperChild" [1907, 1918), i=334, next=79
+      NodeList [1918, 1938), i=335, next=84
+        KindHeritageClause [1918, 1938), i=336, next=0
+          NodeList [1926, 1938), i=337, next=0
+            KindExpressionWithTypeArguments [1926, 1938), i=338, next=0
+              KindIdentifier "SuperParent" [1926, 1938), i=339, next=0
+      NodeList [1940, 2072), i=340, next=0
+        KindConstructor [1940, 1987), i=341, next=93
+          KindBlock [1959, 1987), i=342, next=0
+            NodeList [1961, 1980), i=343, next=0
+              KindExpressionStatement [1961, 1980), i=344, next=0
+                KindCallExpression [1961, 1979), i=345, next=0
+                  KindSuperKeyword [1961, 1976), i=346, next=91
+                  NodeList [1977, 1978), i=347, next=0
+                    KindNumericLiteral [1977, 1978), i=348, next=0
+        KindMethodDeclaration [1987, 2032), i=349, next=104
+          KindIdentifier "b" [1987, 1996), i=350, next=95
+          KindBlock [1998, 2032), i=351, next=0
+            NodeList [2000, 2025), i=352, next=0
+              KindExpressionStatement [2000, 2025), i=353, next=0
+                KindCallExpression [2000, 2024), i=354, next=0
+                  KindPropertyAccessExpression [2000, 2017), i=355, next=102
+                    KindSuperKeyword [2000, 2015), i=356, next=101
+                    KindIdentifier "b" [2016, 2017), i=357, next=0
+                  NodeList [2018, 2023), i=358, next=0
+                    KindStringLiteral "str" [2018, 2023), i=359, next=0
+        KindMethodDeclaration [2032, 2072), i=360, next=0
+          KindIdentifier "c" [2032, 2041), i=361, next=106
+          KindBlock [2043, 2072), i=362, next=0
+            NodeList [2045, 2065), i=363, next=0
+              KindExpressionStatement [2045, 2065), i=364, next=0
+                KindCallExpression [2045, 2064), i=365, next=0
+                  KindPropertyAccessExpression [2045, 2062), i=366, next=0
+                    KindSuperKeyword [2045, 2060), i=367, next=112
+                    KindIdentifier "c" [2061, 2062), i=368, next=0
+    KindClassDeclaration [2075, 2192), i=369, next=134
+      KindIdentifier "Statics" [2084, 2092), i=370, next=115
+      NodeList [2094, 2189), i=371, next=0
+        KindPropertyDeclaration [2094, 2115), i=372, next=121
+          NodeList [2094, 2106), i=373, next=119
+            KindStaticKeyword [2094, 2106), i=374, next=0
+          KindIdentifier "foo" [2106, 2110), i=375, next=120
+          KindNumericLiteral [2112, 2114), i=376, next=0
+        KindPropertyDeclaration [2115, 2140), i=377, next=126
+          NodeList [2115, 2127), i=378, next=124
+            KindStaticKeyword [2115, 2127), i=379, next=0
+          KindIdentifier "bar" [2127, 2131), i=380, next=125
+          KindStringKeyword [2132, 2139), i=381, next=0
+        KindMethodDeclaration [2140, 2189), i=382, next=0
+          NodeList [2140, 2154), i=383, next=129
+            KindStaticKeyword [2140, 2154), i=384, next=0
+          KindIdentifier "baz" [2154, 2158), i=385, next=130
+          KindBlock [2160, 2189), i=386, next=0
+            NodeList [2162, 2182), i=387, next=0
+              KindReturnStatement [2162, 2182), i=388, next=0
+                KindStringLiteral "" [2178, 2181), i=389, next=0
+    KindVariableStatement [2192, 2221), i=390, next=141
+      KindVariableDeclarationList [2192, 2220), i=391, next=0
+        NodeList [2199, 2220), i=392, next=0
+          KindVariableDeclaration [2199, 2220), i=393, next=0
+            KindIdentifier "stat" [2199, 2204), i=394, next=139
+            KindNewExpression [2206, 2220), i=395, next=0
+              KindIdentifier "Statics" [2210, 2218), i=396, next=0
+    KindInterfaceDeclaration [2221, 2276), i=397, next=150
+      KindIdentifier "IFoo" [2234, 2239), i=398, next=143
+      NodeList [2241, 2273), i=399, next=0
+        KindPropertySignature [2241, 2257), i=400, next=147
+          KindIdentifier "x" [2241, 2248), i=401, next=146
+          KindNumberKeyword [2249, 2256), i=402, next=0
+        KindPropertySignature [2257, 2273), i=403, next=0
+          KindIdentifier "z" [2257, 2264), i=404, next=149
+          KindStringKeyword [2265, 2272), i=405, next=0
+    KindClassDeclaration [2276, 2446), i=406, next=185
+      KindIdentifier "ImplementsInterface" [2285, 2305), i=407, next=152
+      NodeList [2305, 2321), i=408, next=157
+        KindHeritageClause [2305, 2321), i=409, next=0
+          NodeList [2316, 2321), i=410, next=0
+            KindExpressionWithTypeArguments [2316, 2321), i=411, next=0
+              KindIdentifier "IFoo" [2316, 2321), i=412, next=0
+      NodeList [2323, 2443), i=413, next=0
+        KindPropertyDeclaration [2323, 2346), i=414, next=163
+          NodeList [2323, 2335), i=415, next=161
+            KindPublicKeyword [2323, 2335), i=416, next=0
+          KindIdentifier "x" [2335, 2337), i=417, next=162
+          KindNumberKeyword [2338, 2345), i=418, next=0
+        KindPropertyDeclaration [2346, 2369), i=419, next=168
+          NodeList [2346, 2358), i=420, next=166
+            KindPublicKeyword [2346, 2358), i=421, next=0
+          KindIdentifier "z" [2358, 2360), i=422, next=167
+          KindStringKeyword [2361, 2368), i=423, next=0
+        KindConstructor [2369, 2443), i=424, next=0
+          KindBlock [2388, 2443), i=425, next=0
+            NodeList [2390, 2436), i=426, next=0
+              KindExpressionStatement [2390, 2411), i=427, next=178
+                KindBinaryExpression [2390, 2410), i=428, next=0
+                  KindPropertyAccessExpression [2390, 2406), i=429, next=176
+                    KindThisKeyword [2390, 2404), i=430, next=175
+                    KindIdentifier "x" [2405, 2406), i=431, next=0
+                  KindEqualsToken [2406, 2408), i=432, next=177
+                  KindNumericLiteral [2408, 2410), i=433, next=0
+              KindExpressionStatement [2411, 2436), i=434, next=0
+                KindBinaryExpression [2411, 2435), i=435, next=0
+                  KindPropertyAccessExpression [2411, 2427), i=436, next=183
+                    KindThisKeyword [2411, 2425), i=437, next=182
+                    KindIdentifier "z" [2426, 2427), i=438, next=0
+                  KindEqualsToken [2427, 2429), i=439, next=184
+                  KindStringLiteral "foo" [2429, 2435), i=440, next=0
+    KindClassDeclaration [2446, 2656), i=441, next=230
+      KindIdentifier "Visibility" [2455, 2466), i=442, next=187
+      NodeList [2468, 2653), i=443, next=0
+        KindMethodDeclaration [2468, 2490), i=444, next=193
+          NodeList [2468, 2480), i=445, next=191
+            KindPublicKeyword [2468, 2480), i=446, next=0
+          KindIdentifier "foo" [2480, 2484), i=447, next=192
+          KindBlock [2486, 2490), i=448, next=0
+        KindMethodDeclaration [2490, 2513), i=449, next=198
+          NodeList [2490, 2503), i=450, next=196
+            KindPrivateKeyword [2490, 2503), i=451, next=0
+          KindIdentifier "bar" [2503, 2507), i=452, next=197
+          KindBlock [2509, 2513), i=453, next=0
+        KindPropertyDeclaration [2513, 2537), i=454, next=203
+          NodeList [2513, 2526), i=455, next=201
+            KindPrivateKeyword [2513, 2526), i=456, next=0
+          KindIdentifier "x" [2526, 2528), i=457, next=202
+          KindNumberKeyword [2529, 2536), i=458, next=0
+        KindPropertyDeclaration [2537, 2560), i=459, next=208
+          NodeList [2537, 2549), i=460, next=206
+            KindPublicKeyword [2537, 2549), i=461, next=0
+          KindIdentifier "y" [2549, 2551), i=462, next=207
+          KindNumberKeyword [2552, 2559), i=463, next=0
+        KindPropertyDeclaration [2560, 2583), i=464, next=213
+          NodeList [2560, 2572), i=465, next=211
+            KindPublicKeyword [2560, 2572), i=466, next=0
+          KindIdentifier "z" [2572, 2574), i=467, next=212
+          KindNumberKeyword [2575, 2582), i=468, next=0
+        KindConstructor [2583, 2653), i=469, next=0
+          KindBlock [2602, 2653), i=470, next=0
+            NodeList [2604, 2646), i=471, next=0
+              KindExpressionStatement [2604, 2625), i=472, next=223
+                KindBinaryExpression [2604, 2624), i=473, next=0
+                  KindPropertyAccessExpression [2604, 2620), i=474, next=221
+                    KindThisKeyword [2604, 2618), i=475, next=220
+                    KindIdentifier "x" [2619, 2620), i=476, next=0
+                  KindEqualsToken [2620, 2622), i=477, next=222
+                  KindNumericLiteral [2622, 2624), i=478, next=0
+              KindExpressionStatement [2625, 2646), i=479, next=0
+                KindBinaryExpression [2625, 2645), i=480, next=0
+                  KindPropertyAccessExpression [2625, 2641), i=481, next=228
+                    KindThisKeyword [2625, 2639), i=482, next=227
+                    KindIdentifier "y" [2640, 2641), i=483, next=0
+                  KindEqualsToken [2641, 2643), i=484, next=229
+                  KindNumericLiteral [2643, 2645), i=485, next=0
+    KindClassDeclaration [2656, 2752), i=486, next=246
+      KindIdentifier "BaseClassWithConstructor" [2665, 2690), i=487, next=232
+      NodeList [2692, 2749), i=488, next=0
+        KindConstructor [2692, 2749), i=489, next=0
+          NodeList [2710, 2744), i=490, next=245
+            KindParameter [2710, 2726), i=491, next=240
+              NodeList [2710, 2716), i=492, next=238
+                KindPublicKeyword [2710, 2716), i=493, next=0
+              KindIdentifier "x" [2716, 2718), i=494, next=239
+              KindNumberKeyword [2719, 2726), i=495, next=0
+            KindParameter [2727, 2744), i=496, next=0
+              NodeList [2727, 2734), i=497, next=243
+                KindPublicKeyword [2727, 2734), i=498, next=0
+              KindIdentifier "s" [2734, 2736), i=499, next=244
+              KindStringKeyword [2737, 2744), i=500, next=0
+          KindBlock [2745, 2749), i=501, next=0
+    KindClassDeclaration [2752, 2852), i=502, next=253
+      KindIdentifier "ChildClassWithoutConstructor" [2786, 2815), i=503, next=248
+      NodeList [2815, 2848), i=504, next=0
+        KindHeritageClause [2815, 2848), i=505, next=0
+          NodeList [2823, 2848), i=506, next=0
+            KindExpressionWithTypeArguments [2823, 2848), i=507, next=0
+              KindIdentifier "BaseClassWithConstructor" [2823, 2848), i=508, next=0
+    KindVariableStatement [2852, 2910), i=509, next=0
+      KindVariableDeclarationList [2852, 2909), i=510, next=0
+        NodeList [2861, 2909), i=511, next=0
+          KindVariableDeclaration [2861, 2909), i=512, next=0
+            KindIdentifier "ccwc" [2861, 2866), i=513, next=2
+            KindNewExpression [2868, 2909), i=514, next=0
+              KindIdentifier "ChildClassWithoutConstructor" [2872, 2901), i=515, next=4
+              NodeList [2902, 2908), i=516, next=0
+                KindNumericLiteral [2902, 2903), i=517, next=6
+                KindStringLiteral "s" [2904, 2908), i=518, next=0

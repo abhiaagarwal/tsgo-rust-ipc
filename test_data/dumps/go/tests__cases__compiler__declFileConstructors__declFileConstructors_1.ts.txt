@@ -1,0 +1,115 @@
+KindSourceFile [0, 1040), i=1, next=0
+  NodeList [0, 1040), i=2, next=0
+    KindClassDeclaration [0, 108), i=3, next=8
+      KindIdentifier "GlobalSimpleConstructor" [5, 29), i=4, next=5
+      NodeList [31, 105), i=5, next=0
+        KindConstructor [31, 105), i=6, next=0
+          KindBlock [96, 105), i=7, next=0
+    KindClassDeclaration [108, 345), i=8, next=27
+      KindIdentifier "GlobalConstructorWithParameters" [115, 147), i=9, next=10
+      NodeList [149, 342), i=10, next=0
+        KindConstructor [149, 342), i=11, next=0
+          NodeList [217, 312), i=12, next=19
+            KindParameter [217, 255), i=13, next=16
+              KindIdentifier "a" [217, 247), i=14, next=15
+              KindStringKeyword [248, 255), i=15, next=0
+            KindParameter [256, 312), i=16, next=0
+              KindIdentifier "b" [256, 304), i=17, next=18
+              KindNumberKeyword [305, 312), i=18, next=0
+          KindBlock [313, 342), i=19, next=0
+            NodeList [315, 335), i=20, next=0
+              KindVariableStatement [315, 335), i=21, next=0
+                KindVariableDeclarationList [315, 334), i=22, next=0
+                  NodeList [328, 334), i=23, next=0
+                    KindVariableDeclaration [328, 334), i=24, next=0
+                      KindIdentifier "d" [328, 330), i=25, next=26
+                      KindIdentifier "a" [332, 334), i=26, next=0
+    KindClassDeclaration [345, 487), i=27, next=52
+      KindIdentifier "GlobalConstructorWithRestParamters" [354, 389), i=28, next=29
+      NodeList [391, 484), i=29, next=0
+        KindConstructor [391, 484), i=30, next=0
+          NodeList [409, 438), i=31, next=40
+            KindParameter [409, 418), i=32, next=35
+              KindIdentifier "a" [409, 410), i=33, next=34
+              KindStringKeyword [411, 418), i=34, next=0
+            KindParameter [419, 438), i=35, next=0
+              KindDotDotDotToken [419, 423), i=36, next=37
+              KindIdentifier "rests" [423, 428), i=37, next=38
+              KindArrayType [429, 438), i=38, next=0
+                KindStringKeyword [429, 436), i=39, next=0
+          KindBlock [439, 484), i=40, next=0
+            NodeList [441, 477), i=41, next=0
+              KindReturnStatement [441, 477), i=42, next=0
+                KindBinaryExpression [457, 476), i=43, next=0
+                  KindIdentifier "a" [457, 459), i=44, next=45
+                  KindPlusToken [459, 461), i=45, next=46
+                  KindCallExpression [461, 476), i=46, next=0
+                    KindPropertyAccessExpression [461, 472), i=47, next=50
+                      KindIdentifier "rests" [461, 467), i=48, next=49
+                      KindIdentifier "join" [468, 472), i=49, next=0
+                    NodeList [473, 475), i=50, next=0
+                      KindStringLiteral "" [473, 475), i=51, next=0
+    KindClassDeclaration [487, 624), i=52, next=71
+      KindIdentifier "GlobalConstructorWithOverloads" [496, 527), i=53, next=54
+      NodeList [529, 621), i=54, next=0
+        KindConstructor [529, 558), i=55, next=60
+          NodeList [547, 556), i=56, next=0
+            KindParameter [547, 556), i=57, next=0
+              KindIdentifier "a" [547, 548), i=58, next=59
+              KindStringKeyword [549, 556), i=59, next=0
+        KindConstructor [558, 587), i=60, next=65
+          NodeList [576, 585), i=61, next=0
+            KindParameter [576, 585), i=62, next=0
+              KindIdentifier "a" [576, 577), i=63, next=64
+              KindNumberKeyword [578, 585), i=64, next=0
+        KindConstructor [587, 621), i=65, next=0
+          NodeList [605, 611), i=66, next=70
+            KindParameter [605, 611), i=67, next=0
+              KindIdentifier "a" [605, 606), i=68, next=69
+              KindAnyKeyword [607, 611), i=69, next=0
+          KindBlock [612, 621), i=70, next=0
+    KindClassDeclaration [624, 727), i=71, next=82
+      KindIdentifier "GlobalConstructorWithPublicParameterProperty" [633, 678), i=72, next=73
+      NodeList [680, 724), i=73, next=0
+        KindConstructor [680, 724), i=74, next=0
+          NodeList [698, 714), i=75, next=81
+            KindParameter [698, 714), i=76, next=0
+              NodeList [698, 704), i=77, next=79
+                KindPublicKeyword [698, 704), i=78, next=0
+              KindIdentifier "x" [704, 706), i=79, next=80
+              KindStringKeyword [707, 714), i=80, next=0
+          KindBlock [715, 724), i=81, next=0
+    KindClassDeclaration [727, 832), i=82, next=93
+      KindIdentifier "GlobalConstructorWithPrivateParameterProperty" [736, 782), i=83, next=84
+      NodeList [784, 829), i=84, next=0
+        KindConstructor [784, 829), i=85, next=0
+          NodeList [802, 819), i=86, next=92
+            KindParameter [802, 819), i=87, next=0
+              NodeList [802, 809), i=88, next=90
+                KindPrivateKeyword [802, 809), i=89, next=0
+              KindIdentifier "x" [809, 811), i=90, next=91
+              KindStringKeyword [812, 819), i=91, next=0
+          KindBlock [820, 829), i=92, next=0
+    KindClassDeclaration [832, 938), i=93, next=105
+      KindIdentifier "GlobalConstructorWithOptionalParameterProperty" [841, 888), i=94, next=95
+      NodeList [890, 935), i=95, next=0
+        KindConstructor [890, 935), i=96, next=0
+          NodeList [908, 925), i=97, next=104
+            KindParameter [908, 925), i=98, next=0
+              NodeList [908, 914), i=99, next=101
+                KindPublicKeyword [908, 914), i=100, next=0
+              KindIdentifier "x" [914, 916), i=101, next=102
+              KindQuestionToken [916, 917), i=102, next=103
+              KindStringKeyword [918, 925), i=103, next=0
+          KindBlock [926, 935), i=104, next=0
+    KindClassDeclaration [938, 1040), i=105, next=0
+      KindIdentifier "GlobalConstructorWithParameterInitializer" [947, 989), i=106, next=107
+      NodeList [991, 1037), i=107, next=0
+        KindConstructor [991, 1037), i=108, next=0
+          NodeList [1009, 1027), i=109, next=115
+            KindParameter [1009, 1027), i=110, next=0
+              NodeList [1009, 1015), i=111, next=113
+                KindPublicKeyword [1009, 1015), i=112, next=0
+              KindIdentifier "x" [1015, 1017), i=113, next=114
+              KindStringLiteral "hello" [1019, 1027), i=114, next=0
+          KindBlock [1028, 1037), i=115, next=0

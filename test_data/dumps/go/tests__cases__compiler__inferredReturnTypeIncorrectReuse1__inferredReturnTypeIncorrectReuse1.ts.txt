@@ -1,0 +1,226 @@
+KindSourceFile [0, 791), i=1, next=0
+  NodeList [0, 790), i=2, next=0
+    KindTypeAliasDeclaration [0, 106), i=3, next=34
+      NodeList [0, 6), i=4, next=6
+        KindExportKeyword [0, 6), i=5, next=0
+      KindIdentifier "inferPipe" [11, 21), i=6, next=7
+      NodeList [22, 29), i=7, next=12
+        KindTypeParameter [22, 23), i=8, next=10
+          KindIdentifier "t" [22, 23), i=9, next=0
+        KindTypeParameter [24, 29), i=10, next=0
+          KindIdentifier "pipe" [24, 29), i=11, next=0
+      KindConditionalType [32, 106), i=12, next=0
+        KindTypeReference [32, 41), i=13, next=15
+          KindIdentifier "pipe" [32, 41), i=14, next=0
+        KindFunctionType [49, 68), i=15, next=22
+          NodeList [51, 56), i=16, next=21
+            KindParameter [51, 56), i=17, next=0
+              KindIdentifier "In" [51, 53), i=18, next=19
+              KindTypeReference [54, 56), i=19, next=0
+                KindIdentifier "t" [54, 56), i=20, next=0
+          KindUnknownKeyword [60, 68), i=21, next=0
+        KindFunctionType [70, 98), i=22, next=33
+          NodeList [72, 77), i=23, next=28
+            KindParameter [72, 77), i=24, next=0
+              KindIdentifier "In" [72, 74), i=25, next=26
+              KindTypeReference [75, 77), i=26, next=0
+                KindIdentifier "t" [75, 77), i=27, next=0
+          KindTypeReference [81, 98), i=28, next=0
+            KindIdentifier "ReturnType" [81, 92), i=29, next=30
+            NodeList [93, 97), i=30, next=0
+              KindTypeReference [93, 97), i=31, next=0
+                KindIdentifier "pipe" [93, 97), i=32, next=0
+        KindNeverKeyword [100, 106), i=33, next=0
+    KindInterfaceDeclaration [106, 201), i=34, next=67
+      KindIdentifier "Type" [117, 122), i=35, next=36
+      NodeList [123, 124), i=36, next=39
+        KindTypeParameter [123, 124), i=37, next=0
+          KindIdentifier "t" [123, 124), i=38, next=0
+      NodeList [127, 199), i=39, next=0
+        KindMethodSignature [127, 199), i=40, next=0
+          KindIdentifier "pipe" [127, 136), i=41, next=42
+          NodeList [137, 166), i=42, next=52
+            KindTypeParameter [137, 166), i=43, next=0
+              KindIdentifier "fn" [137, 139), i=44, next=45
+              KindFunctionType [147, 166), i=45, next=0
+                NodeList [149, 154), i=46, next=51
+                  KindParameter [149, 154), i=47, next=0
+                    KindIdentifier "In" [149, 151), i=48, next=49
+                    KindTypeReference [152, 154), i=49, next=0
+                      KindIdentifier "t" [152, 154), i=50, next=0
+                KindUnknownKeyword [158, 166), i=51, next=0
+          NodeList [168, 174), i=52, next=57
+            KindParameter [168, 174), i=53, next=0
+              KindIdentifier "fn" [168, 170), i=54, next=55
+              KindTypeReference [171, 174), i=55, next=0
+                KindIdentifier "fn" [171, 174), i=56, next=0
+          KindTypeReference [176, 199), i=57, next=0
+            KindIdentifier "Type" [176, 181), i=58, next=59
+            NodeList [182, 198), i=59, next=0
+              KindTypeReference [182, 198), i=60, next=0
+                KindIdentifier "inferPipe" [182, 191), i=61, next=62
+                NodeList [192, 197), i=62, next=0
+                  KindTypeReference [192, 193), i=63, next=65
+                    KindIdentifier "t" [192, 193), i=64, next=0
+                  KindTypeReference [194, 197), i=65, next=0
+                    KindIdentifier "fn" [194, 197), i=66, next=0
+    KindVariableStatement [201, 232), i=67, next=78
+      NodeList [201, 210), i=68, next=70
+        KindDeclareKeyword [201, 210), i=69, next=0
+      KindVariableDeclarationList [210, 232), i=70, next=0
+        NodeList [216, 232), i=71, next=0
+          KindVariableDeclaration [216, 232), i=72, next=0
+            KindIdentifier "t" [216, 218), i=73, next=74
+            KindTypeReference [219, 232), i=74, next=0
+              KindIdentifier "Type" [219, 224), i=75, next=76
+              NodeList [225, 231), i=76, next=0
+                KindStringKeyword [225, 231), i=77, next=0
+    KindVariableStatement [232, 313), i=78, next=99
+      NodeList [232, 276), i=79, next=81
+        KindExportKeyword [232, 276), i=80, next=0
+      KindVariableDeclarationList [276, 313), i=81, next=0
+        NodeList [282, 313), i=82, next=0
+          KindVariableDeclaration [282, 313), i=83, next=0
+            KindIdentifier "out" [282, 286), i=84, next=85
+            KindCallExpression [288, 313), i=85, next=0
+              KindPropertyAccessExpression [288, 295), i=86, next=89
+                KindIdentifier "t" [288, 290), i=87, next=88
+                KindIdentifier "pipe" [291, 295), i=88, next=0
+              NodeList [296, 312), i=89, next=0
+                KindArrowFunction [296, 312), i=90, next=0
+                  NodeList [296, 297), i=91, next=94
+                    KindParameter [296, 297), i=92, next=0
+                      KindIdentifier "s" [296, 297), i=93, next=0
+                  KindEqualsGreaterThanToken [297, 300), i=94, next=95
+                  KindCallExpression [300, 312), i=95, next=0
+                    KindIdentifier "parseInt" [300, 309), i=96, next=97
+                    NodeList [310, 311), i=97, next=0
+                      KindIdentifier "s" [310, 311), i=98, next=0
+    KindTypeAliasDeclaration [313, 580), i=99, next=162
+      NodeList [313, 321), i=100, next=102
+        KindExportKeyword [313, 321), i=101, next=0
+      KindIdentifier "inferPipe2" [326, 337), i=102, next=103
+      NodeList [338, 345), i=103, next=108
+        KindTypeParameter [338, 339), i=104, next=106
+          KindIdentifier "t" [338, 339), i=105, next=0
+        KindTypeParameter [340, 345), i=106, next=0
+          KindIdentifier "pipe" [340, 345), i=107, next=0
+      KindConditionalType [348, 580), i=108, next=0
+        KindTypeReference [348, 354), i=109, next=111
+          KindIdentifier "pipe" [348, 354), i=110, next=0
+        KindFunctionType [362, 381), i=111, next=118
+          NodeList [364, 369), i=112, next=117
+            KindParameter [364, 369), i=113, next=0
+              KindIdentifier "In" [364, 366), i=114, next=115
+              KindTypeReference [367, 369), i=115, next=0
+                KindIdentifier "t" [367, 369), i=116, next=0
+          KindUnknownKeyword [373, 381), i=117, next=0
+        KindFunctionType [383, 571), i=118, next=161
+          NodeList [387, 392), i=119, next=124
+            KindParameter [387, 392), i=120, next=0
+              KindIdentifier "In" [387, 389), i=121, next=122
+              KindTypeReference [390, 392), i=122, next=0
+                KindIdentifier "t" [390, 392), i=123, next=0
+          KindConditionalType [396, 571), i=124, next=0
+            KindTypeReference [396, 413), i=125, next=130
+              KindIdentifier "ReturnType" [396, 407), i=126, next=127
+              NodeList [408, 412), i=127, next=0
+                KindTypeReference [408, 412), i=128, next=0
+                  KindIdentifier "pipe" [408, 412), i=129, next=0
+            KindInferType [421, 444), i=130, next=134
+              KindTypeParameter [427, 444), i=131, next=0
+                KindIdentifier "n" [427, 429), i=132, next=133
+                KindNumberKeyword [437, 444), i=133, next=0
+            KindTypeReference [446, 448), i=134, next=136
+              KindIdentifier "n" [446, 448), i=135, next=0
+            KindConditionalType [452, 571), i=136, next=0
+              KindTypeReference [452, 469), i=137, next=142
+                KindIdentifier "ReturnType" [452, 463), i=138, next=139
+                NodeList [464, 468), i=139, next=0
+                  KindTypeReference [464, 468), i=140, next=0
+                    KindIdentifier "pipe" [464, 468), i=141, next=0
+              KindInferType [477, 500), i=142, next=146
+                KindTypeParameter [483, 500), i=143, next=0
+                  KindIdentifier "s" [483, 485), i=144, next=145
+                  KindStringKeyword [493, 500), i=145, next=0
+              KindTypeReference [502, 504), i=146, next=148
+                KindIdentifier "s" [502, 504), i=147, next=0
+              KindConditionalType [508, 571), i=148, next=0
+                KindTypeReference [508, 525), i=149, next=154
+                  KindIdentifier "ReturnType" [508, 519), i=150, next=151
+                  NodeList [520, 524), i=151, next=0
+                    KindTypeReference [520, 524), i=152, next=0
+                      KindIdentifier "pipe" [520, 524), i=153, next=0
+                KindInferType [533, 557), i=154, next=158
+                  KindTypeParameter [539, 557), i=155, next=0
+                    KindIdentifier "b" [539, 541), i=156, next=157
+                    KindBooleanKeyword [549, 557), i=157, next=0
+                KindTypeReference [559, 561), i=158, next=160
+                  KindIdentifier "b" [559, 561), i=159, next=0
+                KindNeverKeyword [565, 571), i=160, next=0
+        KindNeverKeyword [574, 580), i=161, next=0
+    KindInterfaceDeclaration [580, 674), i=162, next=195
+      KindIdentifier "Type2" [591, 597), i=163, next=164
+      NodeList [598, 599), i=164, next=167
+        KindTypeParameter [598, 599), i=165, next=0
+          KindIdentifier "t" [598, 599), i=166, next=0
+      NodeList [602, 672), i=167, next=0
+        KindMethodSignature [602, 672), i=168, next=0
+          KindIdentifier "pipe" [602, 608), i=169, next=170
+          NodeList [609, 638), i=170, next=180
+            KindTypeParameter [609, 638), i=171, next=0
+              KindIdentifier "fn" [609, 611), i=172, next=173
+              KindFunctionType [619, 638), i=173, next=0
+                NodeList [621, 626), i=174, next=179
+                  KindParameter [621, 626), i=175, next=0
+                    KindIdentifier "In" [621, 623), i=176, next=177
+                    KindTypeReference [624, 626), i=177, next=0
+                      KindIdentifier "t" [624, 626), i=178, next=0
+                KindUnknownKeyword [630, 638), i=179, next=0
+          NodeList [640, 646), i=180, next=185
+            KindParameter [640, 646), i=181, next=0
+              KindIdentifier "fn" [640, 642), i=182, next=183
+              KindTypeReference [643, 646), i=183, next=0
+                KindIdentifier "fn" [643, 646), i=184, next=0
+          KindTypeReference [648, 672), i=185, next=0
+            KindIdentifier "Type" [648, 653), i=186, next=187
+            NodeList [654, 671), i=187, next=0
+              KindTypeReference [654, 671), i=188, next=0
+                KindIdentifier "inferPipe2" [654, 664), i=189, next=190
+                NodeList [665, 670), i=190, next=0
+                  KindTypeReference [665, 666), i=191, next=193
+                    KindIdentifier "t" [665, 666), i=192, next=0
+                  KindTypeReference [667, 670), i=193, next=0
+                    KindIdentifier "fn" [667, 670), i=194, next=0
+    KindVariableStatement [674, 707), i=195, next=206
+      NodeList [674, 683), i=196, next=198
+        KindDeclareKeyword [674, 683), i=197, next=0
+      KindVariableDeclarationList [683, 707), i=198, next=0
+        NodeList [689, 707), i=199, next=0
+          KindVariableDeclaration [689, 707), i=200, next=0
+            KindIdentifier "t2" [689, 692), i=201, next=202
+            KindTypeReference [693, 707), i=202, next=0
+              KindIdentifier "Type2" [693, 699), i=203, next=204
+              NodeList [700, 706), i=204, next=0
+                KindStringKeyword [700, 706), i=205, next=0
+    KindVariableStatement [707, 790), i=206, next=0
+      NodeList [707, 751), i=207, next=209
+        KindExportKeyword [707, 751), i=208, next=0
+      KindVariableDeclarationList [751, 790), i=209, next=0
+        NodeList [757, 790), i=210, next=0
+          KindVariableDeclaration [757, 790), i=211, next=0
+            KindIdentifier "out2" [757, 762), i=212, next=213
+            KindCallExpression [764, 790), i=213, next=0
+              KindPropertyAccessExpression [764, 772), i=214, next=217
+                KindIdentifier "t2" [764, 767), i=215, next=216
+                KindIdentifier "pipe" [768, 772), i=216, next=0
+              NodeList [773, 789), i=217, next=0
+                KindArrowFunction [773, 789), i=218, next=0
+                  NodeList [773, 774), i=219, next=222
+                    KindParameter [773, 774), i=220, next=0
+                      KindIdentifier "s" [773, 774), i=221, next=0
+                  KindEqualsGreaterThanToken [774, 777), i=222, next=223
+                  KindCallExpression [777, 789), i=223, next=0
+                    KindIdentifier "parseInt" [777, 786), i=224, next=225
+                    NodeList [787, 788), i=225, next=0
+                      KindIdentifier "s" [787, 788), i=226, next=0

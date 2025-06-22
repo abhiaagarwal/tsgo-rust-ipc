@@ -1,0 +1,55 @@
+KindSourceFile [0, 253), i=1, next=0
+  NodeList [0, 251), i=2, next=0
+    KindImportDeclaration [0, 71), i=3, next=10
+      KindImportClause [50, 56), i=4, next=9
+        KindNamedImports [50, 56), i=5, next=0
+          NodeList [52, 54), i=6, next=0
+            KindImportSpecifier [52, 54), i=7, next=0
+              KindIdentifier "X" [52, 54), i=8, next=0
+      KindStringLiteral "foobar" [61, 70), i=9, next=0
+    KindImportEqualsDeclaration [71, 104), i=10, next=14
+      KindIdentifier "X2" [79, 82), i=11, next=12
+      KindExternalModuleReference [84, 103), i=12, next=0
+        KindStringLiteral "foobarx" [93, 102), i=13, next=0
+    KindVariableStatement [104, 121), i=14, next=22
+      KindVariableDeclarationList [104, 120), i=15, next=0
+        NodeList [111, 120), i=16, next=0
+          KindVariableDeclaration [111, 120), i=17, next=0
+            KindIdentifier "x" [111, 113), i=18, next=19
+            KindTypeReference [114, 116), i=19, next=21
+              KindIdentifier "X" [114, 116), i=20, next=0
+            KindIdentifier "X" [118, 120), i=21, next=0
+    KindVariableStatement [121, 141), i=22, next=30
+      KindVariableDeclarationList [121, 140), i=23, next=0
+        NodeList [128, 140), i=24, next=0
+          KindVariableDeclaration [128, 140), i=25, next=0
+            KindIdentifier "x2" [128, 131), i=26, next=27
+            KindTypeReference [132, 135), i=27, next=29
+              KindIdentifier "X2" [132, 135), i=28, next=0
+            KindIdentifier "X2" [137, 140), i=29, next=0
+    KindImportEqualsDeclaration [141, 171), i=30, next=34
+      KindIdentifier "B" [151, 153), i=31, next=32
+      KindExternalModuleReference [155, 170), i=32, next=0
+        KindStringLiteral "./a" [164, 169), i=33, next=0
+    KindVariableStatement [171, 197), i=34, next=47
+      KindVariableDeclarationList [171, 196), i=35, next=0
+        NodeList [178, 196), i=36, next=0
+          KindVariableDeclaration [178, 196), i=37, next=0
+            KindIdentifier "b" [178, 180), i=38, next=39
+            KindTypeReference [181, 183), i=39, next=41
+              KindIdentifier "B" [181, 183), i=40, next=0
+            KindNewExpression [185, 196), i=41, next=0
+              KindIdentifier "B" [189, 191), i=42, next=43
+              NodeList [192, 195), i=43, next=0
+                KindPropertyAccessExpression [192, 195), i=44, next=0
+                  KindIdentifier "B" [192, 193), i=45, next=46
+                  KindIdentifier "b" [194, 195), i=46, next=0
+    KindImportEqualsDeclaration [197, 235), i=47, next=51
+      KindIdentifier "fooLength" [207, 217), i=48, next=49
+      KindExternalModuleReference [219, 234), i=49, next=0
+        KindStringLiteral "./b" [228, 233), i=50, next=0
+    KindExpressionStatement [235, 251), i=51, next=0
+      KindBinaryExpression [235, 250), i=52, next=0
+        KindIdentifier "fooLength" [235, 246), i=53, next=54
+        KindPlusToken [246, 248), i=54, next=55
+        KindNumericLiteral [248, 250), i=55, next=0

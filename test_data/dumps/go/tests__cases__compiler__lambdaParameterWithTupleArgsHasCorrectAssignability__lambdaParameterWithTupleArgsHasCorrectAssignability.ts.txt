@@ -1,0 +1,131 @@
+KindSourceFile [0, 607), i=1, next=0
+  NodeList [0, 605), i=2, next=0
+    KindTypeAliasDeclaration [0, 22), i=3, next=6
+      KindIdentifier "MyTupleItem" [4, 16), i=4, next=5
+      KindTypeLiteral [18, 21), i=5, next=0
+    KindTypeAliasDeclaration [22, 71), i=6, next=16
+      KindIdentifier "MyTuple" [28, 36), i=7, next=8
+      KindTupleType [38, 70), i=8, next=0
+        NodeList [40, 69), i=9, next=0
+          KindTypeReference [40, 51), i=10, next=12
+            KindIdentifier "MyTupleItem" [40, 51), i=11, next=0
+          KindRestType [52, 69), i=12, next=0
+            KindArrayType [56, 69), i=13, next=0
+              KindTypeReference [56, 67), i=14, next=0
+                KindIdentifier "MyTupleItem" [56, 67), i=15, next=0
+    KindTypeAliasDeclaration [71, 142), i=16, next=31
+      KindIdentifier "GenericFunction" [79, 95), i=17, next=18
+      NodeList [96, 113), i=18, next=23
+        KindTypeParameter [96, 113), i=19, next=0
+          KindIdentifier "T" [96, 97), i=20, next=21
+          KindTypeReference [105, 113), i=21, next=0
+            KindIdentifier "MyTuple" [105, 113), i=22, next=0
+      KindFunctionType [116, 141), i=23, next=0
+        NodeList [118, 132), i=24, next=30
+          KindParameter [118, 132), i=25, next=0
+            KindDotDotDotToken [118, 121), i=26, next=27
+            KindIdentifier "fromArgs" [121, 129), i=27, next=28
+            KindTypeReference [130, 132), i=28, next=0
+              KindIdentifier "T" [130, 132), i=29, next=0
+        KindVoidKeyword [136, 141), i=30, next=0
+    KindClassDeclaration [142, 231), i=31, next=49
+      KindIdentifier "GenericClass" [151, 164), i=32, next=33
+      NodeList [165, 182), i=33, next=38
+        KindTypeParameter [165, 182), i=34, next=0
+          KindIdentifier "T" [165, 166), i=35, next=36
+          KindTypeReference [174, 182), i=36, next=0
+            KindIdentifier "MyTuple" [174, 182), i=37, next=0
+      NodeList [185, 228), i=38, next=0
+        KindPropertyDeclaration [185, 228), i=39, next=0
+          KindIdentifier "from" [185, 195), i=40, next=41
+          KindUnionType [196, 227), i=41, next=0
+            NodeList [196, 227), i=42, next=0
+              KindTypeReference [196, 215), i=43, next=48
+                KindIdentifier "GenericFunction" [196, 212), i=44, next=45
+                NodeList [213, 214), i=45, next=0
+                  KindTypeReference [213, 214), i=46, next=0
+                    KindIdentifier "T" [213, 214), i=47, next=0
+              KindUndefinedKeyword [217, 227), i=48, next=0
+    KindFunctionDeclaration [231, 369), i=49, next=77
+      KindIdentifier "createClass" [243, 255), i=50, next=51
+      NodeList [256, 273), i=51, next=56
+        KindTypeParameter [256, 273), i=52, next=0
+          KindIdentifier "T" [256, 257), i=53, next=54
+          KindTypeReference [265, 273), i=54, next=0
+            KindIdentifier "MyTuple" [265, 273), i=55, next=0
+      NodeList [275, 296), i=56, next=64
+        KindParameter [275, 296), i=57, next=0
+          KindIdentifier "f" [275, 276), i=58, next=59
+          KindTypeReference [277, 296), i=59, next=0
+            KindIdentifier "GenericFunction" [277, 293), i=60, next=61
+            NodeList [294, 295), i=61, next=0
+              KindTypeReference [294, 295), i=62, next=0
+                KindIdentifier "T" [294, 295), i=63, next=0
+      KindTypeReference [298, 314), i=64, next=69
+        KindIdentifier "GenericClass" [298, 311), i=65, next=66
+        NodeList [312, 313), i=66, next=0
+          KindTypeReference [312, 313), i=67, next=0
+            KindIdentifier "T" [312, 313), i=68, next=0
+      KindBlock [314, 369), i=69, next=0
+        NodeList [316, 366), i=70, next=0
+          KindReturnStatement [316, 366), i=71, next=0
+            KindNewExpression [328, 365), i=72, next=0
+              KindIdentifier "GenericClass" [332, 345), i=73, next=74
+              NodeList [346, 347), i=74, next=0
+                KindTypeReference [346, 347), i=75, next=0
+                  KindIdentifier "T" [346, 347), i=76, next=0
+    KindFunctionDeclaration [369, 434), i=77, next=90
+      KindIdentifier "consumeClass" [381, 394), i=78, next=79
+      NodeList [395, 429), i=79, next=89
+        KindParameter [395, 429), i=80, next=0
+          KindIdentifier "c" [395, 396), i=81, next=82
+          KindTypeReference [397, 429), i=82, next=0
+            KindIdentifier "GenericClass" [397, 410), i=83, next=84
+            NodeList [411, 428), i=84, next=0
+              KindTupleType [411, 428), i=85, next=0
+                NodeList [412, 427), i=86, next=0
+                  KindStringKeyword [412, 418), i=87, next=88
+                  KindBooleanKeyword [419, 427), i=88, next=0
+      KindBlock [430, 434), i=89, next=0
+    KindExpressionStatement [434, 512), i=90, next=110
+      KindCallExpression [434, 511), i=91, next=0
+        KindIdentifier "consumeClass" [434, 466), i=92, next=93
+        NodeList [467, 510), i=93, next=0
+          KindCallExpression [467, 510), i=94, next=0
+            KindIdentifier "createClass" [467, 478), i=95, next=96
+            NodeList [479, 509), i=96, next=0
+              KindArrowFunction [479, 509), i=97, next=0
+                NodeList [479, 482), i=98, next=101
+                  KindParameter [479, 482), i=99, next=0
+                    KindIdentifier "str" [479, 482), i=100, next=0
+                KindEqualsGreaterThanToken [482, 485), i=101, next=102
+                KindCallExpression [485, 509), i=102, next=0
+                  KindPropertyAccessExpression [485, 497), i=103, next=106
+                    KindIdentifier "console" [485, 493), i=104, next=105
+                    KindIdentifier "log" [494, 497), i=105, next=0
+                  NodeList [498, 508), i=106, next=0
+                    KindPropertyAccessExpression [498, 508), i=107, next=0
+                      KindIdentifier "str" [498, 501), i=108, next=109
+                      KindIdentifier "length" [502, 508), i=109, next=0
+    KindExpressionStatement [512, 605), i=110, next=0
+      KindCallExpression [512, 604), i=111, next=0
+        KindIdentifier "consumeClass" [512, 544), i=112, next=113
+        NodeList [545, 603), i=113, next=0
+          KindCallExpression [545, 603), i=114, next=0
+            KindIdentifier "createClass" [545, 556), i=115, next=116
+            NodeList [557, 602), i=116, next=0
+              KindArrowFunction [557, 602), i=117, next=0
+                NodeList [558, 574), i=118, next=123
+                  KindParameter [558, 561), i=119, next=121
+                    KindIdentifier "str" [558, 561), i=120, next=0
+                  KindParameter [562, 574), i=121, next=0
+                    KindIdentifier "_unused_num" [562, 574), i=122, next=0
+                KindEqualsGreaterThanToken [575, 578), i=123, next=124
+                KindCallExpression [578, 602), i=124, next=0
+                  KindPropertyAccessExpression [578, 590), i=125, next=128
+                    KindIdentifier "console" [578, 586), i=126, next=127
+                    KindIdentifier "log" [587, 590), i=127, next=0
+                  NodeList [591, 601), i=128, next=0
+                    KindPropertyAccessExpression [591, 601), i=129, next=0
+                      KindIdentifier "str" [591, 594), i=130, next=131
+                      KindIdentifier "length" [595, 601), i=131, next=0

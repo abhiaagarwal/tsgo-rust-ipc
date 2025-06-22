@@ -1,0 +1,60 @@
+KindSourceFile [0, 204), i=1, next=0
+  NodeList [0, 202), i=2, next=0
+    KindModuleDeclaration [0, 105), i=3, next=28
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "app" [17, 21), i=6, next=7
+      KindModuleBlock [21, 105), i=7, next=0
+        NodeList [23, 102), i=8, next=0
+          KindVariableStatement [23, 102), i=9, next=0
+            KindVariableDeclarationList [23, 101), i=10, next=0
+              NodeList [30, 101), i=11, next=0
+                KindVariableDeclaration [30, 101), i=12, next=0
+                  KindIdentifier "foo" [30, 34), i=13, next=14
+                  KindTypeLiteral [35, 101), i=14, next=0
+                    NodeList [37, 96), i=15, next=0
+                      KindPropertySignature [37, 96), i=16, next=0
+                        KindIdentifier "bar" [37, 46), i=17, next=18
+                        KindTypeLiteral [47, 95), i=18, next=0
+                          NodeList [49, 88), i=19, next=0
+                            KindPropertySignature [49, 88), i=20, next=0
+                              KindIdentifier "someFun" [49, 64), i=21, next=22
+                              KindFunctionType [65, 87), i=22, next=0
+                                NodeList [67, 78), i=23, next=27
+                                  KindParameter [67, 78), i=24, next=0
+                                    KindIdentifier "arg" [67, 70), i=25, next=26
+                                    KindNumberKeyword [71, 78), i=26, next=0
+                                KindVoidKeyword [82, 87), i=27, next=0
+    KindExpressionStatement [105, 175), i=28, next=50
+      KindBinaryExpression [105, 174), i=29, next=0
+        KindPropertyAccessExpression [105, 120), i=30, next=35
+          KindPropertyAccessExpression [105, 116), i=31, next=34
+            KindIdentifier "app" [105, 112), i=32, next=33
+            KindIdentifier "foo" [113, 116), i=33, next=0
+          KindIdentifier "bar" [117, 120), i=34, next=0
+        KindEqualsToken [120, 122), i=35, next=36
+        KindCallExpression [122, 174), i=36, next=0
+          KindParenthesizedExpression [122, 172), i=37, next=0
+            KindFunctionExpression [124, 171), i=38, next=0
+              KindBlock [135, 171), i=39, next=0
+                NodeList [137, 168), i=40, next=0
+                  KindReturnStatement [137, 168), i=41, next=0
+                    KindObjectLiteralExpression [147, 167), i=42, next=0
+                      NodeList [149, 165), i=43, next=0
+                        KindMethodDeclaration [149, 165), i=44, next=0
+                          KindIdentifier "someFun" [149, 157), i=45, next=46
+                          NodeList [158, 161), i=46, next=49
+                            KindParameter [158, 161), i=47, next=0
+                              KindIdentifier "arg" [158, 161), i=48, next=0
+                          KindBlock [162, 165), i=49, next=0
+    KindExpressionStatement [175, 202), i=50, next=0
+      KindCallExpression [175, 201), i=51, next=0
+        KindPropertyAccessExpression [175, 198), i=52, next=59
+          KindPropertyAccessExpression [175, 190), i=53, next=58
+            KindPropertyAccessExpression [175, 186), i=54, next=57
+              KindIdentifier "app" [175, 182), i=55, next=56
+              KindIdentifier "foo" [183, 186), i=56, next=0
+            KindIdentifier "bar" [187, 190), i=57, next=0
+          KindIdentifier "someFun" [191, 198), i=58, next=0
+        NodeList [199, 200), i=59, next=0
+          KindNumericLiteral [199, 200), i=60, next=0

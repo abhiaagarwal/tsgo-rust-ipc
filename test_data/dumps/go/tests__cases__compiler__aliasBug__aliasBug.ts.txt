@@ -1,0 +1,85 @@
+KindSourceFile [0, 376), i=1, next=0
+  NodeList [0, 374), i=2, next=0
+    KindModuleDeclaration [0, 122), i=3, next=27
+      KindIdentifier "foo" [6, 10), i=4, next=5
+      KindModuleBlock [10, 122), i=5, next=0
+        NodeList [12, 119), i=6, next=0
+          KindClassDeclaration [12, 51), i=7, next=11
+            NodeList [12, 28), i=8, next=10
+              KindExportKeyword [12, 28), i=9, next=0
+            KindIdentifier "Provide" [34, 42), i=10, next=0
+          KindModuleDeclaration [51, 119), i=11, next=0
+            NodeList [51, 65), i=12, next=14
+              KindExportKeyword [51, 65), i=13, next=0
+            KindIdentifier "bar" [72, 76), i=14, next=15
+            KindModuleBlock [76, 119), i=15, next=0
+              NodeList [78, 118), i=16, next=0
+                KindModuleDeclaration [78, 118), i=17, next=0
+                  NodeList [78, 85), i=18, next=20
+                    KindExportKeyword [78, 85), i=19, next=0
+                  KindIdentifier "baz" [92, 96), i=20, next=21
+                  KindModuleBlock [96, 118), i=21, next=0
+                    NodeList [98, 117), i=22, next=0
+                      KindClassDeclaration [98, 117), i=23, next=0
+                        NodeList [98, 104), i=24, next=26
+                          KindExportKeyword [98, 104), i=25, next=0
+                        KindIdentifier "boo" [110, 114), i=26, next=0
+    KindImportEqualsDeclaration [122, 147), i=27, next=30
+      KindIdentifier "provide" [132, 140), i=28, next=29
+      KindIdentifier "foo" [142, 146), i=29, next=0
+    KindImportEqualsDeclaration [147, 175), i=30, next=37
+      KindIdentifier "booz" [155, 160), i=31, next=32
+      KindQualifiedName [162, 174), i=32, next=0
+        KindQualifiedName [162, 170), i=33, next=36
+          KindIdentifier "foo" [162, 166), i=34, next=35
+          KindIdentifier "bar" [167, 170), i=35, next=0
+        KindIdentifier "baz" [171, 174), i=36, next=0
+    KindVariableStatement [175, 209), i=37, next=46
+      KindVariableDeclarationList [175, 208), i=38, next=0
+        NodeList [182, 208), i=39, next=0
+          KindVariableDeclaration [182, 208), i=40, next=0
+            KindIdentifier "p" [182, 184), i=41, next=42
+            KindNewExpression [186, 208), i=42, next=0
+              KindPropertyAccessExpression [190, 206), i=43, next=0
+                KindIdentifier "provide" [190, 198), i=44, next=45
+                KindIdentifier "Provide" [199, 206), i=45, next=0
+    KindFunctionDeclaration [209, 374), i=46, next=0
+      KindIdentifier "use" [221, 225), i=47, next=48
+      KindBlock [227, 374), i=48, next=0
+        NodeList [229, 371), i=49, next=0
+          KindVariableStatement [229, 257), i=50, next=59
+            KindVariableDeclarationList [229, 256), i=51, next=0
+              NodeList [236, 256), i=52, next=0
+                KindVariableDeclaration [236, 256), i=53, next=0
+                  KindIdentifier "p1" [236, 239), i=54, next=55
+                  KindTypeReference [240, 256), i=55, next=0
+                    KindQualifiedName [240, 256), i=56, next=0
+                      KindIdentifier "provide" [240, 248), i=57, next=58
+                      KindIdentifier "Provide" [249, 256), i=58, next=0
+          KindVariableStatement [257, 315), i=59, next=68
+            KindVariableDeclarationList [257, 314), i=60, next=0
+              NodeList [298, 314), i=61, next=0
+                KindVariableDeclaration [298, 314), i=62, next=0
+                  KindIdentifier "p2" [298, 301), i=63, next=64
+                  KindTypeReference [302, 314), i=64, next=0
+                    KindQualifiedName [302, 314), i=65, next=0
+                      KindIdentifier "foo" [302, 306), i=66, next=67
+                      KindIdentifier "Provide" [307, 314), i=67, next=0
+          KindVariableStatement [315, 335), i=68, next=77
+            KindVariableDeclarationList [315, 334), i=69, next=0
+              NodeList [322, 334), i=70, next=0
+                KindVariableDeclaration [322, 334), i=71, next=0
+                  KindIdentifier "p3" [322, 325), i=72, next=73
+                  KindTypeReference [326, 334), i=73, next=0
+                    KindQualifiedName [326, 334), i=74, next=0
+                      KindIdentifier "booz" [326, 330), i=75, next=76
+                      KindIdentifier "bar" [331, 334), i=76, next=0
+          KindVariableStatement [335, 371), i=77, next=0
+            KindVariableDeclarationList [335, 370), i=78, next=0
+              NodeList [342, 370), i=79, next=0
+                KindVariableDeclaration [342, 370), i=80, next=0
+                  KindIdentifier "p22" [342, 346), i=81, next=82
+                  KindNewExpression [348, 370), i=82, next=0
+                    KindPropertyAccessExpression [352, 368), i=83, next=0
+                      KindIdentifier "provide" [352, 360), i=84, next=85
+                      KindIdentifier "Provide" [361, 368), i=85, next=0

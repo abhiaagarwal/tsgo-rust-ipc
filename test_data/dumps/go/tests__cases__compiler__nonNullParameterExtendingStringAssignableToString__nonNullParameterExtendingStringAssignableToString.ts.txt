@@ -1,0 +1,64 @@
+KindSourceFile [0, 246), i=1, next=0
+  NodeList [0, 246), i=2, next=0
+    KindFunctionDeclaration [0, 38), i=3, next=12
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "foo" [16, 20), i=6, next=7
+      NodeList [21, 30), i=7, next=11
+        KindParameter [21, 30), i=8, next=0
+          KindIdentifier "p" [21, 22), i=9, next=10
+          KindStringKeyword [23, 30), i=10, next=0
+      KindVoidKeyword [32, 37), i=11, next=0
+    KindFunctionDeclaration [38, 246), i=12, next=0
+      KindIdentifier "fn" [50, 53), i=13, next=14
+      NodeList [54, 100), i=14, next=24
+        KindTypeParameter [54, 82), i=15, next=21
+          KindIdentifier "T" [54, 55), i=16, next=17
+          KindUnionType [63, 82), i=17, next=0
+            NodeList [63, 82), i=18, next=0
+              KindStringKeyword [63, 70), i=19, next=20
+              KindUndefinedKeyword [72, 82), i=20, next=0
+        KindTypeParameter [83, 100), i=21, next=0
+          KindIdentifier "U" [83, 85), i=22, next=23
+          KindStringKeyword [93, 100), i=23, next=0
+      NodeList [102, 116), i=24, next=33
+        KindParameter [102, 108), i=25, next=29
+          KindIdentifier "one" [102, 105), i=26, next=27
+          KindTypeReference [106, 108), i=27, next=0
+            KindIdentifier "T" [106, 108), i=28, next=0
+        KindParameter [109, 116), i=29, next=0
+          KindIdentifier "two" [109, 113), i=30, next=31
+          KindTypeReference [114, 116), i=31, next=0
+            KindIdentifier "U" [114, 116), i=32, next=0
+      KindBlock [117, 246), i=33, next=0
+        NodeList [119, 209), i=34, next=0
+          KindVariableStatement [119, 159), i=35, next=47
+            KindVariableDeclarationList [119, 158), i=36, next=0
+              NodeList [128, 158), i=37, next=0
+                KindVariableDeclaration [128, 158), i=38, next=0
+                  KindIdentifier "three" [128, 134), i=39, next=40
+                  KindConditionalExpression [136, 158), i=40, next=0
+                    KindCallExpression [136, 146), i=41, next=43
+                      KindIdentifier "Boolean" [136, 144), i=42, next=0
+                    KindQuestionToken [146, 148), i=43, next=44
+                    KindIdentifier "one" [148, 152), i=44, next=45
+                    KindColonToken [152, 154), i=45, next=46
+                    KindIdentifier "two" [154, 158), i=46, next=0
+          KindExpressionStatement [159, 175), i=47, next=53
+            KindCallExpression [159, 174), i=48, next=0
+              KindIdentifier "foo" [159, 168), i=49, next=50
+              NodeList [169, 173), i=50, next=0
+                KindNonNullExpression [169, 173), i=51, next=0
+                  KindIdentifier "one" [169, 172), i=52, next=0
+          KindExpressionStatement [175, 191), i=53, next=59
+            KindCallExpression [175, 190), i=54, next=0
+              KindIdentifier "foo" [175, 184), i=55, next=56
+              NodeList [185, 189), i=56, next=0
+                KindNonNullExpression [185, 189), i=57, next=0
+                  KindIdentifier "two" [185, 188), i=58, next=0
+          KindExpressionStatement [191, 209), i=59, next=0
+            KindCallExpression [191, 208), i=60, next=0
+              KindIdentifier "foo" [191, 200), i=61, next=62
+              NodeList [201, 207), i=62, next=0
+                KindNonNullExpression [201, 207), i=63, next=0
+                  KindIdentifier "three" [201, 206), i=64, next=0

@@ -1,0 +1,129 @@
+KindSourceFile [0, 529), i=1, next=0
+  NodeList [0, 527), i=2, next=0
+    KindTypeAliasDeclaration [0, 56), i=3, next=14
+      KindIdentifier "ModuleWithState" [4, 20), i=4, next=5
+      NodeList [21, 27), i=5, next=8
+        KindTypeParameter [21, 27), i=6, next=0
+          KindIdentifier "TState" [21, 27), i=7, next=0
+      KindTypeLiteral [30, 55), i=8, next=0
+        NodeList [32, 52), i=9, next=0
+          KindPropertySignature [32, 52), i=10, next=0
+            KindIdentifier "state" [32, 43), i=11, next=12
+            KindTypeReference [44, 51), i=12, next=0
+              KindIdentifier "TState" [44, 51), i=13, next=0
+    KindTypeAliasDeclaration [56, 94), i=14, next=21
+      KindIdentifier "State" [64, 70), i=15, next=16
+      KindTypeLiteral [72, 93), i=16, next=0
+        NodeList [74, 90), i=17, next=0
+          KindPropertySignature [74, 90), i=18, next=0
+            KindIdentifier "a" [74, 81), i=19, next=20
+            KindNumberKeyword [82, 89), i=20, next=0
+    KindTypeAliasDeclaration [94, 136), i=21, next=28
+      KindIdentifier "MoreState" [102, 112), i=22, next=23
+      KindTypeLiteral [114, 135), i=23, next=0
+        NodeList [116, 132), i=24, next=0
+          KindPropertySignature [116, 132), i=25, next=0
+            KindIdentifier "z" [116, 123), i=26, next=27
+            KindStringKeyword [124, 131), i=27, next=0
+    KindFunctionDeclaration [136, 258), i=28, next=55
+      NodeList [136, 147), i=29, next=31
+        KindDeclareKeyword [136, 147), i=30, next=0
+      KindIdentifier "createModule" [156, 169), i=31, next=32
+      NodeList [170, 186), i=32, next=37
+        KindTypeParameter [170, 176), i=33, next=35
+          KindIdentifier "TState" [170, 176), i=34, next=0
+        KindTypeParameter [177, 186), i=35, next=0
+          KindIdentifier "TActions" [177, 186), i=36, next=0
+      NodeList [188, 220), i=37, next=46
+        KindParameter [188, 201), i=38, next=42
+          KindIdentifier "state" [188, 193), i=39, next=40
+          KindTypeReference [194, 201), i=40, next=0
+            KindIdentifier "TState" [194, 201), i=41, next=0
+        KindParameter [202, 220), i=42, next=0
+          KindIdentifier "actions" [202, 210), i=43, next=44
+          KindTypeReference [211, 220), i=44, next=0
+            KindIdentifier "TActions" [211, 220), i=45, next=0
+      KindIntersectionType [222, 257), i=46, next=0
+        NodeList [222, 257), i=47, next=0
+          KindTypeReference [222, 246), i=48, next=53
+            KindIdentifier "ModuleWithState" [222, 238), i=49, next=50
+            NodeList [239, 245), i=50, next=0
+              KindTypeReference [239, 245), i=51, next=0
+                KindIdentifier "TState" [239, 245), i=52, next=0
+          KindTypeReference [248, 257), i=53, next=0
+            KindIdentifier "TActions" [248, 257), i=54, next=0
+    KindFunctionDeclaration [258, 392), i=55, next=89
+      NodeList [258, 269), i=56, next=58
+        KindDeclareKeyword [258, 269), i=57, next=0
+      KindIdentifier "convert" [278, 286), i=58, next=59
+      NodeList [287, 303), i=59, next=64
+        KindTypeParameter [287, 293), i=60, next=62
+          KindIdentifier "TState" [287, 293), i=61, next=0
+        KindTypeParameter [294, 303), i=62, next=0
+          KindIdentifier "TActions" [294, 303), i=63, next=0
+      NodeList [305, 342), i=64, next=76
+        KindParameter [305, 342), i=65, next=0
+          KindIdentifier "m" [305, 306), i=66, next=67
+          KindIntersectionType [307, 342), i=67, next=0
+            NodeList [307, 342), i=68, next=0
+              KindTypeReference [307, 331), i=69, next=74
+                KindIdentifier "ModuleWithState" [307, 323), i=70, next=71
+                NodeList [324, 330), i=71, next=0
+                  KindTypeReference [324, 330), i=72, next=0
+                    KindIdentifier "TState" [324, 330), i=73, next=0
+              KindTypeReference [333, 342), i=74, next=0
+                KindIdentifier "TActions" [333, 342), i=75, next=0
+      KindIntersectionType [344, 391), i=76, next=0
+        NodeList [344, 391), i=77, next=0
+          KindTypeReference [344, 380), i=78, next=87
+            KindIdentifier "ModuleWithState" [344, 360), i=79, next=80
+            NodeList [361, 379), i=80, next=0
+              KindIntersectionType [361, 379), i=81, next=0
+                NodeList [361, 379), i=82, next=0
+                  KindTypeReference [361, 367), i=83, next=85
+                    KindIdentifier "TState" [361, 367), i=84, next=0
+                  KindTypeReference [369, 379), i=85, next=0
+                    KindIdentifier "MoreState" [369, 379), i=86, next=0
+          KindTypeReference [382, 391), i=87, next=0
+            KindIdentifier "TActions" [382, 391), i=88, next=0
+    KindVariableStatement [392, 479), i=89, next=113
+      KindVariableDeclarationList [392, 478), i=90, next=0
+        NodeList [401, 478), i=91, next=0
+          KindVariableDeclaration [401, 478), i=92, next=0
+            KindIdentifier "breaks" [401, 408), i=93, next=94
+            KindCallExpression [410, 478), i=94, next=0
+              KindIdentifier "convert" [410, 418), i=95, next=96
+              NodeList [419, 475), i=96, next=0
+                KindCallExpression [419, 475), i=97, next=0
+                  KindIdentifier "createModule" [419, 437), i=98, next=99
+                  NodeList [438, 474), i=99, next=0
+                    KindObjectLiteralExpression [438, 447), i=100, next=105
+                      NodeList [439, 445), i=101, next=0
+                        KindPropertyAssignment [439, 445), i=102, next=0
+                          KindIdentifier "a" [439, 441), i=103, next=104
+                          KindNumericLiteral [442, 445), i=104, next=0
+                    KindObjectLiteralExpression [448, 474), i=105, next=0
+                      NodeList [450, 472), i=106, next=0
+                        KindMethodDeclaration [450, 472), i=107, next=0
+                          KindIdentifier "foo" [450, 454), i=108, next=109
+                          KindBlock [456, 472), i=109, next=0
+                            NodeList [458, 470), i=110, next=0
+                              KindReturnStatement [458, 470), i=111, next=0
+                                KindTrueKeyword [465, 470), i=112, next=0
+    KindExpressionStatement [479, 497), i=113, next=119
+      KindPropertyAccessExpression [479, 497), i=114, next=0
+        KindPropertyAccessExpression [479, 495), i=115, next=118
+          KindIdentifier "breaks" [479, 489), i=116, next=117
+          KindIdentifier "state" [490, 495), i=117, next=0
+        KindIdentifier "a" [496, 497), i=118, next=0
+    KindExpressionStatement [497, 513), i=119, next=125
+      KindPropertyAccessExpression [497, 513), i=120, next=0
+        KindPropertyAccessExpression [497, 511), i=121, next=124
+          KindIdentifier "breaks" [497, 505), i=122, next=123
+          KindIdentifier "state" [506, 511), i=123, next=0
+        KindIdentifier "z" [512, 513), i=124, next=0
+    KindExpressionStatement [513, 527), i=125, next=0
+      KindCallExpression [513, 527), i=126, next=0
+        KindPropertyAccessExpression [513, 525), i=127, next=0
+          KindIdentifier "breaks" [513, 521), i=128, next=129
+          KindIdentifier "foo" [522, 525), i=129, next=0

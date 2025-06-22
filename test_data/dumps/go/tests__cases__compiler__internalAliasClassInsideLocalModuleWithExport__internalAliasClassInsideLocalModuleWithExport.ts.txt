@@ -1,0 +1,75 @@
+KindSourceFile [0, 308), i=1, next=0
+  NodeList [0, 308), i=2, next=0
+    KindModuleDeclaration [0, 109), i=3, next=24
+      NodeList [0, 6), i=4, next=6
+        KindExportKeyword [0, 6), i=5, next=0
+      KindIdentifier "x" [13, 15), i=6, next=7
+      KindModuleBlock [15, 109), i=7, next=0
+        NodeList [17, 106), i=8, next=0
+          KindClassDeclaration [17, 106), i=9, next=0
+            NodeList [17, 29), i=10, next=12
+              KindExportKeyword [17, 29), i=11, next=0
+            KindIdentifier "c" [35, 37), i=12, next=13
+            NodeList [39, 99), i=13, next=0
+              KindMethodDeclaration [39, 99), i=14, next=0
+                KindIdentifier "foo" [39, 52), i=15, next=16
+                NodeList [53, 62), i=16, next=20
+                  KindParameter [53, 62), i=17, next=0
+                    KindIdentifier "a" [53, 54), i=18, next=19
+                    KindNumberKeyword [55, 62), i=19, next=0
+                KindBlock [63, 99), i=20, next=0
+                  NodeList [65, 88), i=21, next=0
+                    KindReturnStatement [65, 88), i=22, next=0
+                      KindIdentifier "a" [85, 87), i=23, next=0
+    KindModuleDeclaration [109, 275), i=24, next=63
+      NodeList [109, 119), i=25, next=27
+        KindExportKeyword [109, 119), i=26, next=0
+      KindIdentifier "m2" [126, 129), i=27, next=28
+      KindModuleBlock [129, 275), i=28, next=0
+        NodeList [131, 272), i=29, next=0
+          KindModuleDeclaration [131, 272), i=30, next=0
+            NodeList [131, 143), i=31, next=33
+              KindExportKeyword [131, 143), i=32, next=0
+            KindIdentifier "m3" [150, 153), i=33, next=34
+            KindModuleBlock [153, 272), i=34, next=0
+              NodeList [155, 265), i=35, next=0
+                KindImportEqualsDeclaration [155, 187), i=36, next=43
+                  NodeList [155, 171), i=37, next=39
+                    KindExportKeyword [155, 171), i=38, next=0
+                  KindIdentifier "c" [178, 180), i=39, next=40
+                  KindQualifiedName [182, 186), i=40, next=0
+                    KindIdentifier "x" [182, 184), i=41, next=42
+                    KindIdentifier "c" [185, 186), i=42, next=0
+                KindVariableStatement [187, 224), i=43, next=52
+                  NodeList [187, 203), i=44, next=46
+                    KindExportKeyword [187, 203), i=45, next=0
+                  KindVariableDeclarationList [203, 223), i=46, next=0
+                    NodeList [207, 223), i=47, next=0
+                      KindVariableDeclaration [207, 223), i=48, next=0
+                        KindIdentifier "cProp" [207, 213), i=49, next=50
+                        KindNewExpression [215, 223), i=50, next=0
+                          KindIdentifier "c" [219, 221), i=51, next=0
+                KindVariableStatement [224, 265), i=52, next=0
+                  KindVariableDeclarationList [224, 264), i=53, next=0
+                    NodeList [237, 264), i=54, next=0
+                      KindVariableDeclaration [237, 264), i=55, next=0
+                        KindIdentifier "cReturnVal" [237, 248), i=56, next=57
+                        KindCallExpression [250, 264), i=57, next=0
+                          KindPropertyAccessExpression [250, 260), i=58, next=61
+                            KindIdentifier "cProp" [250, 256), i=59, next=60
+                            KindIdentifier "foo" [257, 260), i=60, next=0
+                          NodeList [261, 263), i=61, next=0
+                            KindNumericLiteral [261, 263), i=62, next=0
+    KindVariableStatement [275, 308), i=63, next=0
+      NodeList [275, 285), i=64, next=66
+        KindExportKeyword [275, 285), i=65, next=0
+      KindVariableDeclarationList [285, 307), i=66, next=0
+        NodeList [289, 307), i=67, next=0
+          KindVariableDeclaration [289, 307), i=68, next=0
+            KindIdentifier "d" [289, 291), i=69, next=70
+            KindNewExpression [293, 307), i=70, next=0
+              KindPropertyAccessExpression [297, 305), i=71, next=0
+                KindPropertyAccessExpression [297, 303), i=72, next=75
+                  KindIdentifier "m2" [297, 300), i=73, next=74
+                  KindIdentifier "m3" [301, 303), i=74, next=0
+                KindIdentifier "c" [304, 305), i=75, next=0

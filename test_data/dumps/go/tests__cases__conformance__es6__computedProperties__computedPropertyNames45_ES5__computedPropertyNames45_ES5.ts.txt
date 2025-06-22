@@ -1,0 +1,49 @@
+KindSourceFile [0, 259), i=1, next=0
+  NodeList [0, 259), i=2, next=0
+    KindClassDeclaration [0, 15), i=3, next=8
+      KindIdentifier "Foo" [5, 9), i=4, next=5
+      NodeList [11, 13), i=5, next=0
+        KindPropertyDeclaration [11, 13), i=6, next=0
+          KindIdentifier "x" [11, 13), i=7, next=0
+    KindClassDeclaration [15, 36), i=8, next=15
+      KindIdentifier "Foo2" [22, 27), i=9, next=10
+      NodeList [29, 34), i=10, next=0
+        KindPropertyDeclaration [29, 32), i=11, next=13
+          KindIdentifier "x" [29, 31), i=12, next=0
+        KindPropertyDeclaration [32, 34), i=13, next=0
+          KindIdentifier "y" [32, 34), i=14, next=0
+    KindClassDeclaration [36, 91), i=15, next=26
+      KindIdentifier "C" [45, 47), i=16, next=17
+      NodeList [49, 88), i=17, next=0
+        KindGetAccessor [49, 88), i=18, next=0
+          KindComputedPropertyName [58, 67), i=19, next=21
+            KindStringLiteral "get1" [60, 66), i=20, next=0
+          KindBlock [69, 88), i=21, next=0
+            NodeList [71, 86), i=22, next=0
+              KindReturnStatement [71, 86), i=23, next=0
+                KindNewExpression [78, 86), i=24, next=0
+                  KindIdentifier "Foo" [82, 86), i=25, next=0
+    KindClassDeclaration [91, 259), i=26, next=0
+      KindIdentifier "D" [100, 102), i=27, next=28
+      NodeList [102, 112), i=28, next=33
+        KindHeritageClause [102, 112), i=29, next=0
+          NodeList [110, 112), i=30, next=0
+            KindExpressionWithTypeArguments [110, 112), i=31, next=0
+              KindIdentifier "C" [110, 112), i=32, next=0
+      NodeList [114, 256), i=33, next=0
+        KindIndexSignature [114, 226), i=34, next=41
+          NodeList [209, 218), i=35, next=39
+            KindParameter [209, 218), i=36, next=0
+              KindIdentifier "s" [209, 210), i=37, next=38
+              KindStringKeyword [211, 218), i=38, next=0
+          KindTypeReference [220, 225), i=39, next=0
+            KindIdentifier "Foo2" [220, 225), i=40, next=0
+        KindSetAccessor [226, 256), i=41, next=0
+          KindComputedPropertyName [235, 244), i=42, next=44
+            KindStringLiteral "set1" [237, 243), i=43, next=0
+          NodeList [245, 251), i=44, next=49
+            KindParameter [245, 251), i=45, next=0
+              KindIdentifier "p" [245, 246), i=46, next=47
+              KindTypeReference [247, 251), i=47, next=0
+                KindIdentifier "Foo" [247, 251), i=48, next=0
+          KindBlock [252, 256), i=49, next=0

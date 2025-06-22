@@ -1,0 +1,53 @@
+KindSourceFile [0, 264), i=1, next=0
+  NodeList [0, 264), i=2, next=0
+    KindFunctionDeclaration [0, 42), i=3, next=21
+      KindIdentifier "foo" [8, 12), i=4, next=5
+      NodeList [13, 14), i=5, next=8
+        KindTypeParameter [13, 14), i=6, next=0
+          KindIdentifier "T" [13, 14), i=7, next=0
+      NodeList [16, 25), i=8, next=15
+        KindParameter [16, 25), i=9, next=0
+          KindDotDotDotToken [16, 19), i=10, next=11
+          KindIdentifier "s" [19, 20), i=11, next=12
+          KindArrayType [21, 25), i=12, next=0
+            KindTypeReference [21, 23), i=13, next=0
+              KindIdentifier "T" [21, 23), i=14, next=0
+      KindBlock [26, 42), i=15, next=0
+        NodeList [28, 40), i=16, next=0
+          KindReturnStatement [28, 40), i=17, next=0
+            KindElementAccessExpression [35, 40), i=18, next=0
+              KindIdentifier "s" [35, 37), i=19, next=20
+              KindNumericLiteral [38, 39), i=20, next=0
+    KindClassDeclaration [42, 233), i=21, next=47
+      KindIdentifier "SymbolIterator" [49, 64), i=22, next=23
+      NodeList [66, 230), i=23, next=0
+        KindMethodDeclaration [66, 172), i=24, next=38
+          KindIdentifier "next" [66, 76), i=25, next=26
+          KindBlock [78, 172), i=26, next=0
+            NodeList [80, 165), i=27, next=0
+              KindReturnStatement [80, 165), i=28, next=0
+                KindObjectLiteralExpression [96, 164), i=29, next=0
+                  NodeList [98, 153), i=30, next=0
+                    KindPropertyAssignment [98, 127), i=31, next=35
+                      KindIdentifier "value" [98, 117), i=32, next=33
+                      KindCallExpression [118, 127), i=33, next=0
+                        KindIdentifier "Symbol" [118, 125), i=34, next=0
+                    KindPropertyAssignment [128, 153), i=35, next=0
+                      KindIdentifier "done" [128, 146), i=36, next=37
+                      KindFalseKeyword [147, 153), i=37, next=0
+        KindMethodDeclaration [172, 230), i=38, next=0
+          KindComputedPropertyName [172, 197), i=39, next=43
+            KindPropertyAccessExpression [181, 196), i=40, next=0
+              KindIdentifier "Symbol" [181, 187), i=41, next=42
+              KindIdentifier "iterator" [188, 196), i=42, next=0
+          KindBlock [199, 230), i=43, next=0
+            NodeList [201, 223), i=44, next=0
+              KindReturnStatement [201, 223), i=45, next=0
+                KindThisKeyword [217, 222), i=46, next=0
+    KindExpressionStatement [233, 264), i=47, next=0
+      KindCallExpression [233, 263), i=48, next=0
+        KindIdentifier "foo" [233, 240), i=49, next=50
+        NodeList [241, 262), i=50, next=0
+          KindSpreadElement [241, 262), i=51, next=0
+            KindNewExpression [244, 262), i=52, next=0
+              KindIdentifier "SymbolIterator" [247, 262), i=53, next=0

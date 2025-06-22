@@ -1,0 +1,125 @@
+KindSourceFile [0, 644), i=1, next=0
+  NodeList [0, 644), i=2, next=0
+    KindTypeAliasDeclaration [0, 67), i=3, next=15
+      NodeList [0, 6), i=4, next=6
+        KindExportKeyword [0, 6), i=5, next=0
+      KindIdentifier "Expression" [11, 22), i=6, next=7
+      KindUnionType [24, 66), i=7, next=0
+        NodeList [24, 66), i=8, next=0
+          KindTypeReference [24, 47), i=9, next=11
+            KindIdentifier "BooleanLogicExpression" [24, 47), i=10, next=0
+          KindLiteralType [49, 56), i=11, next=13
+            KindStringLiteral "true" [49, 56), i=12, next=0
+          KindLiteralType [58, 66), i=13, next=0
+            KindStringLiteral "false" [58, 66), i=14, next=0
+    KindTypeAliasDeclaration [67, 153), i=15, next=35
+      NodeList [67, 75), i=16, next=18
+        KindExportKeyword [67, 75), i=17, next=0
+      KindIdentifier "BooleanLogicExpression" [80, 103), i=18, next=19
+      KindUnionType [105, 152), i=19, next=0
+        NodeList [105, 152), i=20, next=0
+          KindTupleType [105, 130), i=21, next=29
+            NodeList [107, 129), i=22, next=0
+              KindLiteralType [107, 112), i=23, next=25
+                KindStringLiteral "and" [107, 112), i=24, next=0
+              KindRestType [113, 129), i=25, next=0
+                KindArrayType [117, 129), i=26, next=0
+                  KindTypeReference [117, 127), i=27, next=0
+                    KindIdentifier "Expression" [117, 127), i=28, next=0
+          KindTupleType [132, 152), i=29, next=0
+            NodeList [134, 151), i=30, next=0
+              KindLiteralType [134, 139), i=31, next=33
+                KindStringLiteral "not" [134, 139), i=32, next=0
+              KindTypeReference [140, 151), i=33, next=0
+                KindIdentifier "Expression" [140, 151), i=34, next=0
+    KindFunctionDeclaration [153, 644), i=35, next=0
+      NodeList [153, 163), i=36, next=38
+        KindExportKeyword [153, 163), i=37, next=0
+      KindIdentifier "evaluate" [172, 181), i=38, next=39
+      NodeList [182, 204), i=39, next=44
+        KindParameter [182, 204), i=40, next=0
+          KindIdentifier "expression" [182, 192), i=41, next=42
+          KindTypeReference [193, 204), i=42, next=0
+            KindIdentifier "Expression" [193, 204), i=43, next=0
+      KindBooleanKeyword [206, 214), i=44, next=45
+      KindBlock [214, 644), i=45, next=0
+        NodeList [216, 641), i=46, next=0
+          KindIfStatement [216, 641), i=47, next=0
+            KindCallExpression [224, 249), i=48, next=54
+              KindPropertyAccessExpression [224, 237), i=49, next=52
+                KindIdentifier "Array" [224, 229), i=50, next=51
+                KindIdentifier "isArray" [230, 237), i=51, next=0
+              NodeList [238, 248), i=52, next=0
+                KindIdentifier "expression" [238, 248), i=53, next=0
+            KindBlock [250, 594), i=54, next=119
+              NodeList [252, 589), i=55, next=0
+                KindVariableStatement [252, 301), i=56, next=68
+                  KindVariableDeclarationList [252, 300), i=57, next=0
+                    NodeList [263, 300), i=58, next=0
+                      KindVariableDeclaration [263, 300), i=59, next=0
+                        KindArrayBindingPattern [263, 287), i=60, next=67
+                          NodeList [265, 286), i=61, next=0
+                            KindBindingElement [265, 273), i=62, next=64
+                              KindIdentifier "operator" [265, 273), i=63, next=0
+                            KindBindingElement [274, 286), i=64, next=0
+                              KindDotDotDotToken [274, 278), i=65, next=66
+                              KindIdentifier "operands" [278, 286), i=66, next=0
+                        KindIdentifier "expression" [289, 300), i=67, next=0
+                KindSwitchStatement [301, 589), i=68, next=0
+                  KindIdentifier "operator" [315, 323), i=69, next=70
+                  KindCaseBlock [324, 589), i=70, next=0
+                    NodeList [326, 582), i=71, next=0
+                      KindCaseClause [326, 416), i=72, next=92
+                        KindStringLiteral "and" [338, 344), i=73, next=74
+                        NodeList [345, 416), i=74, next=0
+                          KindBlock [345, 416), i=75, next=0
+                            NodeList [347, 407), i=76, next=0
+                              KindReturnStatement [347, 407), i=77, next=0
+                                KindCallExpression [363, 406), i=78, next=0
+                                  KindPropertyAccessExpression [363, 378), i=79, next=82
+                                    KindIdentifier "operands" [363, 372), i=80, next=81
+                                    KindIdentifier "every" [373, 378), i=81, next=0
+                                  NodeList [379, 405), i=82, next=0
+                                    KindArrowFunction [379, 405), i=83, next=0
+                                      NodeList [380, 385), i=84, next=87
+                                        KindParameter [380, 385), i=85, next=0
+                                          KindIdentifier "child" [380, 385), i=86, next=0
+                                      KindEqualsGreaterThanToken [386, 389), i=87, next=88
+                                      KindCallExpression [389, 405), i=88, next=0
+                                        KindIdentifier "evaluate" [389, 398), i=89, next=90
+                                        NodeList [399, 404), i=90, next=0
+                                          KindIdentifier "child" [399, 404), i=91, next=0
+                      KindCaseClause [416, 486), i=92, next=105
+                        KindStringLiteral "not" [428, 434), i=93, next=94
+                        NodeList [435, 486), i=94, next=0
+                          KindBlock [435, 486), i=95, next=0
+                            NodeList [437, 477), i=96, next=0
+                              KindReturnStatement [437, 477), i=97, next=0
+                                KindPrefixUnaryExpression [453, 476), i=98, next=0
+                                  KindCallExpression [455, 476), i=99, next=0
+                                    KindIdentifier "evaluate" [455, 463), i=100, next=101
+                                    NodeList [464, 475), i=101, next=0
+                                      KindElementAccessExpression [464, 475), i=102, next=0
+                                        KindIdentifier "operands" [464, 472), i=103, next=104
+                                        KindNumericLiteral [473, 474), i=104, next=0
+                      KindDefaultClause [486, 582), i=105, next=0
+                        NodeList [502, 582), i=106, next=0
+                          KindBlock [502, 582), i=107, next=0
+                            NodeList [504, 573), i=108, next=0
+                              KindThrowStatement [504, 573), i=109, next=0
+                                KindNewExpression [519, 572), i=110, next=0
+                                  KindIdentifier "Error" [523, 529), i=111, next=112
+                                  NodeList [530, 571), i=112, next=0
+                                    KindTemplateExpression [530, 571), i=113, next=0
+                                      KindTemplateHead [530, 533), i=114, next=115
+                                      NodeList [533, 571), i=115, next=0
+                                        KindTemplateSpan [533, 571), i=116, next=0
+                                          KindIdentifier "operator" [533, 541), i=117, next=118
+                                          KindTemplateTail [541, 571), i=118, next=0
+            KindBlock [599, 641), i=119, next=0
+              NodeList [601, 636), i=120, next=0
+                KindReturnStatement [601, 636), i=121, next=0
+                  KindBinaryExpression [613, 635), i=122, next=0
+                    KindIdentifier "expression" [613, 624), i=123, next=124
+                    KindEqualsEqualsEqualsToken [624, 628), i=124, next=125
+                    KindStringLiteral "true" [628, 635), i=125, next=0

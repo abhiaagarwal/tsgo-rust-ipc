@@ -1,0 +1,313 @@
+KindSourceFile [0, 1089), i=1, next=0
+  NodeList [0, 1089), i=2, next=0
+    KindClassDeclaration [0, 30), i=3, next=9
+      KindIdentifier "C1" [5, 8), i=4, next=5
+      NodeList [10, 27), i=5, next=0
+        KindPropertyDeclaration [10, 27), i=6, next=0
+          KindIdentifier "p1" [10, 18), i=7, next=8
+          KindStringKeyword [19, 26), i=8, next=0
+    KindClassDeclaration [30, 62), i=9, next=15
+      KindIdentifier "C2" [37, 40), i=10, next=11
+      NodeList [42, 59), i=11, next=0
+        KindPropertyDeclaration [42, 59), i=12, next=0
+          KindIdentifier "p2" [42, 50), i=13, next=14
+          KindNumberKeyword [51, 58), i=14, next=0
+    KindClassDeclaration [62, 105), i=15, next=26
+      KindIdentifier "D1" [69, 72), i=16, next=17
+      NodeList [72, 83), i=17, next=22
+        KindHeritageClause [72, 83), i=18, next=0
+          NodeList [80, 83), i=19, next=0
+            KindExpressionWithTypeArguments [80, 83), i=20, next=0
+              KindIdentifier "C1" [80, 83), i=21, next=0
+      NodeList [85, 102), i=22, next=0
+        KindPropertyDeclaration [85, 102), i=23, next=0
+          KindIdentifier "p3" [85, 93), i=24, next=25
+          KindNumberKeyword [94, 101), i=25, next=0
+    KindClassDeclaration [105, 135), i=26, next=32
+      KindIdentifier "C3" [112, 115), i=27, next=28
+      NodeList [117, 133), i=28, next=0
+        KindPropertyDeclaration [117, 133), i=29, next=0
+          KindIdentifier "p4" [117, 124), i=30, next=31
+          KindNumberKeyword [125, 132), i=31, next=0
+    KindVariableStatement [135, 152), i=32, next=38
+      KindVariableDeclarationList [135, 151), i=33, next=0
+        NodeList [139, 151), i=34, next=0
+          KindVariableDeclaration [139, 151), i=35, next=0
+            KindIdentifier "str" [139, 143), i=36, next=37
+            KindStringKeyword [144, 151), i=37, next=0
+    KindVariableStatement [152, 170), i=38, next=44
+      KindVariableDeclarationList [152, 169), i=39, next=0
+        NodeList [157, 169), i=40, next=0
+          KindVariableDeclaration [157, 169), i=41, next=0
+            KindIdentifier "num" [157, 161), i=42, next=43
+            KindNumberKeyword [162, 169), i=43, next=0
+    KindVariableStatement [170, 202), i=44, next=53
+      KindVariableDeclarationList [170, 201), i=45, next=0
+        NodeList [175, 201), i=46, next=0
+          KindVariableDeclaration [175, 201), i=47, next=0
+            KindIdentifier "strOrNum" [175, 184), i=48, next=49
+            KindUnionType [185, 201), i=49, next=0
+              NodeList [185, 201), i=50, next=0
+                KindStringKeyword [185, 192), i=51, next=52
+                KindNumberKeyword [194, 201), i=52, next=0
+    KindVariableStatement [202, 225), i=53, next=64
+      KindVariableDeclarationList [202, 224), i=54, next=0
+        NodeList [209, 224), i=55, next=0
+          KindVariableDeclaration [209, 224), i=56, next=0
+            KindIdentifier "ctor1" [209, 215), i=57, next=58
+            KindUnionType [216, 224), i=58, next=0
+              NodeList [216, 224), i=59, next=0
+                KindTypeReference [216, 219), i=60, next=62
+                  KindIdentifier "C1" [216, 219), i=61, next=0
+                KindTypeReference [221, 224), i=62, next=0
+                  KindIdentifier "C2" [221, 224), i=63, next=0
+    KindExpressionStatement [225, 264), i=64, next=77
+      KindBinaryExpression [225, 263), i=65, next=0
+        KindIdentifier "str" [225, 229), i=66, next=67
+        KindEqualsToken [229, 231), i=67, next=68
+        KindBinaryExpression [231, 263), i=68, next=0
+          KindBinaryExpression [231, 251), i=69, next=73
+            KindIdentifier "ctor1" [231, 237), i=70, next=71
+            KindInstanceOfKeyword [237, 248), i=71, next=72
+            KindIdentifier "C1" [248, 251), i=72, next=0
+          KindAmpersandAmpersandToken [251, 254), i=73, next=74
+          KindPropertyAccessExpression [254, 263), i=74, next=0
+            KindIdentifier "ctor1" [254, 260), i=75, next=76
+            KindIdentifier "p1" [261, 263), i=76, next=0
+    KindExpressionStatement [264, 309), i=77, next=90
+      KindBinaryExpression [264, 308), i=78, next=0
+        KindIdentifier "num" [264, 274), i=79, next=80
+        KindEqualsToken [274, 276), i=80, next=81
+        KindBinaryExpression [276, 308), i=81, next=0
+          KindBinaryExpression [276, 296), i=82, next=86
+            KindIdentifier "ctor1" [276, 282), i=83, next=84
+            KindInstanceOfKeyword [282, 293), i=84, next=85
+            KindIdentifier "C2" [293, 296), i=85, next=0
+          KindAmpersandAmpersandToken [296, 299), i=86, next=87
+          KindPropertyAccessExpression [299, 308), i=87, next=0
+            KindIdentifier "ctor1" [299, 305), i=88, next=89
+            KindIdentifier "p2" [306, 308), i=89, next=0
+    KindExpressionStatement [309, 354), i=90, next=103
+      KindBinaryExpression [309, 353), i=91, next=0
+        KindIdentifier "str" [309, 319), i=92, next=93
+        KindEqualsToken [319, 321), i=93, next=94
+        KindBinaryExpression [321, 353), i=94, next=0
+          KindBinaryExpression [321, 341), i=95, next=99
+            KindIdentifier "ctor1" [321, 327), i=96, next=97
+            KindInstanceOfKeyword [327, 338), i=97, next=98
+            KindIdentifier "D1" [338, 341), i=98, next=0
+          KindAmpersandAmpersandToken [341, 344), i=99, next=100
+          KindPropertyAccessExpression [344, 353), i=100, next=0
+            KindIdentifier "ctor1" [344, 350), i=101, next=102
+            KindIdentifier "p1" [351, 353), i=102, next=0
+    KindExpressionStatement [354, 399), i=103, next=116
+      KindBinaryExpression [354, 398), i=104, next=0
+        KindIdentifier "num" [354, 364), i=105, next=106
+        KindEqualsToken [364, 366), i=106, next=107
+        KindBinaryExpression [366, 398), i=107, next=0
+          KindBinaryExpression [366, 386), i=108, next=112
+            KindIdentifier "ctor1" [366, 372), i=109, next=110
+            KindInstanceOfKeyword [372, 383), i=110, next=111
+            KindIdentifier "D1" [383, 386), i=111, next=0
+          KindAmpersandAmpersandToken [386, 389), i=112, next=113
+          KindPropertyAccessExpression [389, 398), i=113, next=0
+            KindIdentifier "ctor1" [389, 395), i=114, next=115
+            KindIdentifier "p3" [396, 398), i=115, next=0
+    KindVariableStatement [399, 426), i=116, next=127
+      KindVariableDeclarationList [399, 425), i=117, next=0
+        NodeList [410, 425), i=118, next=0
+          KindVariableDeclaration [410, 425), i=119, next=0
+            KindIdentifier "ctor2" [410, 416), i=120, next=121
+            KindUnionType [417, 425), i=121, next=0
+              NodeList [417, 425), i=122, next=0
+                KindTypeReference [417, 420), i=123, next=125
+                  KindIdentifier "C2" [417, 420), i=124, next=0
+                KindTypeReference [422, 425), i=125, next=0
+                  KindIdentifier "D1" [422, 425), i=126, next=0
+    KindExpressionStatement [426, 465), i=127, next=140
+      KindBinaryExpression [426, 464), i=128, next=0
+        KindIdentifier "num" [426, 430), i=129, next=130
+        KindEqualsToken [430, 432), i=130, next=131
+        KindBinaryExpression [432, 464), i=131, next=0
+          KindBinaryExpression [432, 452), i=132, next=136
+            KindIdentifier "ctor2" [432, 438), i=133, next=134
+            KindInstanceOfKeyword [438, 449), i=134, next=135
+            KindIdentifier "C2" [449, 452), i=135, next=0
+          KindAmpersandAmpersandToken [452, 455), i=136, next=137
+          KindPropertyAccessExpression [455, 464), i=137, next=0
+            KindIdentifier "ctor2" [455, 461), i=138, next=139
+            KindIdentifier "p2" [462, 464), i=139, next=0
+    KindExpressionStatement [465, 510), i=140, next=153
+      KindBinaryExpression [465, 509), i=141, next=0
+        KindIdentifier "num" [465, 475), i=142, next=143
+        KindEqualsToken [475, 477), i=143, next=144
+        KindBinaryExpression [477, 509), i=144, next=0
+          KindBinaryExpression [477, 497), i=145, next=149
+            KindIdentifier "ctor2" [477, 483), i=146, next=147
+            KindInstanceOfKeyword [483, 494), i=147, next=148
+            KindIdentifier "D1" [494, 497), i=148, next=0
+          KindAmpersandAmpersandToken [497, 500), i=149, next=150
+          KindPropertyAccessExpression [500, 509), i=150, next=0
+            KindIdentifier "ctor2" [500, 506), i=151, next=152
+            KindIdentifier "p3" [507, 509), i=152, next=0
+    KindExpressionStatement [510, 555), i=153, next=166
+      KindBinaryExpression [510, 554), i=154, next=0
+        KindIdentifier "str" [510, 520), i=155, next=156
+        KindEqualsToken [520, 522), i=156, next=157
+        KindBinaryExpression [522, 554), i=157, next=0
+          KindBinaryExpression [522, 542), i=158, next=162
+            KindIdentifier "ctor2" [522, 528), i=159, next=160
+            KindInstanceOfKeyword [528, 539), i=160, next=161
+            KindIdentifier "D1" [539, 542), i=161, next=0
+          KindAmpersandAmpersandToken [542, 545), i=162, next=163
+          KindPropertyAccessExpression [545, 554), i=163, next=0
+            KindIdentifier "ctor2" [545, 551), i=164, next=165
+            KindIdentifier "p1" [552, 554), i=165, next=0
+    KindVariableStatement [555, 609), i=166, next=184
+      KindVariableDeclarationList [555, 608), i=167, next=0
+        NodeList [565, 608), i=168, next=0
+          KindVariableDeclaration [565, 608), i=169, next=0
+            KindIdentifier "r2" [565, 568), i=170, next=171
+            KindUnionType [569, 577), i=171, next=177
+              NodeList [569, 577), i=172, next=0
+                KindTypeReference [569, 572), i=173, next=175
+                  KindIdentifier "D1" [569, 572), i=174, next=0
+                KindTypeReference [574, 577), i=175, next=0
+                  KindIdentifier "C2" [574, 577), i=176, next=0
+            KindBinaryExpression [579, 608), i=177, next=0
+              KindBinaryExpression [579, 599), i=178, next=182
+                KindIdentifier "ctor2" [579, 585), i=179, next=180
+                KindInstanceOfKeyword [585, 596), i=180, next=181
+                KindIdentifier "C1" [596, 599), i=181, next=0
+              KindAmpersandAmpersandToken [599, 602), i=182, next=183
+              KindIdentifier "ctor2" [602, 608), i=183, next=0
+    KindVariableStatement [609, 642), i=184, next=195
+      KindVariableDeclarationList [609, 641), i=185, next=0
+        NodeList [626, 641), i=186, next=0
+          KindVariableDeclaration [626, 641), i=187, next=0
+            KindIdentifier "ctor3" [626, 632), i=188, next=189
+            KindUnionType [633, 641), i=189, next=0
+              NodeList [633, 641), i=190, next=0
+                KindTypeReference [633, 636), i=191, next=193
+                  KindIdentifier "C1" [633, 636), i=192, next=0
+                KindTypeReference [638, 641), i=193, next=0
+                  KindIdentifier "C2" [638, 641), i=194, next=0
+    KindIfStatement [642, 720), i=195, next=212
+      KindBinaryExpression [647, 666), i=196, next=200
+        KindIdentifier "ctor3" [647, 652), i=197, next=198
+        KindInstanceOfKeyword [652, 663), i=198, next=199
+        KindIdentifier "C1" [663, 666), i=199, next=0
+      KindBlock [667, 691), i=200, next=206
+        NodeList [669, 683), i=201, next=0
+          KindExpressionStatement [669, 683), i=202, next=0
+            KindPropertyAccessExpression [669, 682), i=203, next=0
+              KindIdentifier "ctor3" [669, 679), i=204, next=205
+              KindIdentifier "p1" [680, 682), i=205, next=0
+      KindBlock [696, 720), i=206, next=0
+        NodeList [698, 712), i=207, next=0
+          KindExpressionStatement [698, 712), i=208, next=0
+            KindPropertyAccessExpression [698, 711), i=209, next=0
+              KindIdentifier "ctor3" [698, 708), i=210, next=211
+              KindIdentifier "p2" [709, 711), i=211, next=0
+    KindVariableStatement [720, 746), i=212, next=225
+      KindVariableDeclarationList [720, 745), i=213, next=0
+        NodeList [725, 745), i=214, next=0
+          KindVariableDeclaration [725, 745), i=215, next=0
+            KindIdentifier "ctor4" [725, 731), i=216, next=217
+            KindUnionType [732, 745), i=217, next=0
+              NodeList [732, 745), i=218, next=0
+                KindTypeReference [732, 735), i=219, next=221
+                  KindIdentifier "C1" [732, 735), i=220, next=0
+                KindTypeReference [737, 740), i=221, next=223
+                  KindIdentifier "C2" [737, 740), i=222, next=0
+                KindTypeReference [742, 745), i=223, next=0
+                  KindIdentifier "C3" [742, 745), i=224, next=0
+    KindIfStatement [746, 878), i=225, next=253
+      KindBinaryExpression [751, 770), i=226, next=230
+        KindIdentifier "ctor4" [751, 756), i=227, next=228
+        KindInstanceOfKeyword [756, 767), i=228, next=229
+        KindIdentifier "C1" [767, 770), i=229, next=0
+      KindBlock [771, 795), i=230, next=236
+        NodeList [773, 787), i=231, next=0
+          KindExpressionStatement [773, 787), i=232, next=0
+            KindPropertyAccessExpression [773, 786), i=233, next=0
+              KindIdentifier "ctor4" [773, 783), i=234, next=235
+              KindIdentifier "p1" [784, 786), i=235, next=0
+      KindIfStatement [800, 878), i=236, next=0
+        KindBinaryExpression [805, 824), i=237, next=241
+          KindIdentifier "ctor4" [805, 810), i=238, next=239
+          KindInstanceOfKeyword [810, 821), i=239, next=240
+          KindIdentifier "C2" [821, 824), i=240, next=0
+        KindBlock [825, 849), i=241, next=247
+          NodeList [827, 841), i=242, next=0
+            KindExpressionStatement [827, 841), i=243, next=0
+              KindPropertyAccessExpression [827, 840), i=244, next=0
+                KindIdentifier "ctor4" [827, 837), i=245, next=246
+                KindIdentifier "p2" [838, 840), i=246, next=0
+        KindBlock [854, 878), i=247, next=0
+          NodeList [856, 870), i=248, next=0
+            KindExpressionStatement [856, 870), i=249, next=0
+              KindPropertyAccessExpression [856, 869), i=250, next=0
+                KindIdentifier "ctor4" [856, 866), i=251, next=252
+                KindIdentifier "p4" [867, 869), i=252, next=0
+    KindVariableStatement [878, 904), i=253, next=10
+      KindVariableDeclarationList [878, 903), i=254, next=0
+        NodeList [883, 903), i=255, next=0
+          KindVariableDeclaration [883, 903), i=256, next=0
+            KindIdentifier "ctor5" [883, 889), i=257, next=2
+            KindUnionType [890, 903), i=258, next=0
+              NodeList [890, 903), i=259, next=0
+                KindTypeReference [890, 893), i=260, next=6
+                  KindIdentifier "C1" [890, 893), i=261, next=0
+                KindTypeReference [895, 898), i=262, next=8
+                  KindIdentifier "D1" [895, 898), i=263, next=0
+                KindTypeReference [900, 903), i=264, next=0
+                  KindIdentifier "C2" [900, 903), i=265, next=0
+    KindIfStatement [904, 982), i=266, next=27
+      KindBinaryExpression [909, 928), i=267, next=15
+        KindIdentifier "ctor5" [909, 914), i=268, next=13
+        KindInstanceOfKeyword [914, 925), i=269, next=14
+        KindIdentifier "C1" [925, 928), i=270, next=0
+      KindBlock [929, 953), i=271, next=21
+        NodeList [931, 945), i=272, next=0
+          KindExpressionStatement [931, 945), i=273, next=0
+            KindPropertyAccessExpression [931, 944), i=274, next=0
+              KindIdentifier "ctor5" [931, 941), i=275, next=20
+              KindIdentifier "p1" [942, 944), i=276, next=0
+      KindBlock [958, 982), i=277, next=0
+        NodeList [960, 974), i=278, next=0
+          KindExpressionStatement [960, 974), i=279, next=0
+            KindPropertyAccessExpression [960, 973), i=280, next=0
+              KindIdentifier "ctor5" [960, 970), i=281, next=26
+              KindIdentifier "p2" [971, 973), i=282, next=0
+    KindVariableStatement [982, 1008), i=283, next=40
+      KindVariableDeclarationList [982, 1007), i=284, next=0
+        NodeList [987, 1007), i=285, next=0
+          KindVariableDeclaration [987, 1007), i=286, next=0
+            KindIdentifier "ctor6" [987, 993), i=287, next=32
+            KindUnionType [994, 1007), i=288, next=0
+              NodeList [994, 1007), i=289, next=0
+                KindTypeReference [994, 997), i=290, next=36
+                  KindIdentifier "C1" [994, 997), i=291, next=0
+                KindTypeReference [999, 1002), i=292, next=38
+                  KindIdentifier "C2" [999, 1002), i=293, next=0
+                KindTypeReference [1004, 1007), i=294, next=0
+                  KindIdentifier "C3" [1004, 1007), i=295, next=0
+    KindIfStatement [1008, 1089), i=296, next=0
+      KindBinaryExpression [1013, 1055), i=297, next=51
+        KindBinaryExpression [1013, 1032), i=298, next=46
+          KindIdentifier "ctor6" [1013, 1018), i=299, next=44
+          KindInstanceOfKeyword [1018, 1029), i=300, next=45
+          KindIdentifier "C1" [1029, 1032), i=301, next=0
+        KindBarBarToken [1032, 1035), i=302, next=47
+        KindBinaryExpression [1035, 1055), i=303, next=0
+          KindIdentifier "ctor6" [1035, 1041), i=304, next=49
+          KindInstanceOfKeyword [1041, 1052), i=305, next=50
+          KindIdentifier "C2" [1052, 1055), i=306, next=0
+      KindBlock [1056, 1060), i=307, next=52
+      KindBlock [1065, 1089), i=308, next=0
+        NodeList [1067, 1081), i=309, next=0
+          KindExpressionStatement [1067, 1081), i=310, next=0
+            KindPropertyAccessExpression [1067, 1080), i=311, next=0
+              KindIdentifier "ctor6" [1067, 1077), i=312, next=57
+              KindIdentifier "p4" [1078, 1080), i=313, next=0

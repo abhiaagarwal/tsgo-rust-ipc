@@ -1,0 +1,111 @@
+KindSourceFile [0, 604), i=1, next=0
+  NodeList [0, 602), i=2, next=0
+    KindClassDeclaration [0, 97), i=3, next=15
+      KindIdentifier "Match" [9, 15), i=4, next=5
+      NodeList [17, 90), i=5, next=0
+        KindMethodDeclaration [17, 90), i=6, next=0
+          NodeList [17, 33), i=7, next=9
+            KindPublicKeyword [17, 33), i=8, next=0
+          KindIdentifier "range" [33, 39), i=9, next=10
+          KindAnyKeyword [42, 46), i=10, next=11
+          KindBlock [46, 90), i=11, next=0
+            NodeList [48, 79), i=12, next=0
+              KindReturnStatement [48, 79), i=13, next=0
+                KindIdentifier "undefined" [68, 78), i=14, next=0
+    KindClassDeclaration [97, 205), i=15, next=27
+      KindIdentifier "FileMatch" [110, 120), i=16, next=17
+      NodeList [122, 198), i=17, next=0
+        KindMethodDeclaration [122, 198), i=18, next=0
+          NodeList [122, 138), i=19, next=21
+            KindPublicKeyword [122, 138), i=20, next=0
+          KindIdentifier "resource" [138, 147), i=21, next=22
+          KindAnyKeyword [150, 154), i=22, next=23
+          KindBlock [154, 198), i=23, next=0
+            NodeList [156, 187), i=24, next=0
+              KindReturnStatement [156, 187), i=25, next=0
+                KindIdentifier "undefined" [176, 186), i=26, next=0
+    KindTypeAliasDeclaration [205, 251), i=27, next=35
+      KindIdentifier "FileMatchOrMatch" [213, 230), i=28, next=29
+      KindUnionType [232, 250), i=29, next=0
+        NodeList [232, 250), i=30, next=0
+          KindTypeReference [232, 242), i=31, next=33
+            KindIdentifier "FileMatch" [232, 242), i=32, next=0
+          KindTypeReference [244, 250), i=33, next=0
+            KindIdentifier "Match" [244, 250), i=34, next=0
+    KindVariableStatement [251, 316), i=35, next=46
+      KindVariableDeclarationList [251, 315), i=36, next=0
+        NodeList [260, 315), i=37, next=0
+          KindVariableDeclaration [260, 287), i=38, next=42
+            KindIdentifier "elementA" [260, 269), i=39, next=40
+            KindTypeReference [270, 287), i=40, next=0
+              KindIdentifier "FileMatchOrMatch" [270, 287), i=41, next=0
+          KindVariableDeclaration [288, 315), i=42, next=0
+            KindIdentifier "elementB" [288, 297), i=43, next=44
+            KindTypeReference [298, 315), i=44, next=0
+              KindIdentifier "FileMatchOrMatch" [298, 315), i=45, next=0
+    KindIfStatement [316, 602), i=46, next=0
+      KindBinaryExpression [324, 386), i=47, next=57
+        KindBinaryExpression [324, 353), i=48, next=52
+          KindIdentifier "elementA" [324, 332), i=49, next=50
+          KindInstanceOfKeyword [332, 343), i=50, next=51
+          KindIdentifier "FileMatch" [343, 353), i=51, next=0
+        KindAmpersandAmpersandToken [353, 356), i=52, next=53
+        KindBinaryExpression [356, 386), i=53, next=0
+          KindIdentifier "elementB" [356, 365), i=54, next=55
+          KindInstanceOfKeyword [365, 376), i=55, next=56
+          KindIdentifier "FileMatch" [376, 386), i=56, next=0
+      KindBlock [387, 470), i=57, next=81
+        NodeList [389, 467), i=58, next=0
+          KindVariableStatement [389, 428), i=59, next=70
+            KindVariableDeclarationList [389, 427), i=60, next=0
+              NodeList [398, 427), i=61, next=0
+                KindVariableDeclaration [398, 427), i=62, next=0
+                  KindIdentifier "a" [398, 400), i=63, next=64
+                  KindPropertyAccessExpression [402, 427), i=64, next=0
+                    KindCallExpression [402, 422), i=65, next=69
+                      KindPropertyAccessExpression [402, 420), i=66, next=0
+                        KindIdentifier "elementA" [402, 411), i=67, next=68
+                        KindIdentifier "resource" [412, 420), i=68, next=0
+                    KindIdentifier "path" [423, 427), i=69, next=0
+          KindVariableStatement [428, 467), i=70, next=0
+            KindVariableDeclarationList [428, 466), i=71, next=0
+              NodeList [437, 466), i=72, next=0
+                KindVariableDeclaration [437, 466), i=73, next=0
+                  KindIdentifier "b" [437, 439), i=74, next=75
+                  KindPropertyAccessExpression [441, 466), i=75, next=0
+                    KindCallExpression [441, 461), i=76, next=80
+                      KindPropertyAccessExpression [441, 459), i=77, next=0
+                        KindIdentifier "elementB" [441, 450), i=78, next=79
+                        KindIdentifier "resource" [451, 459), i=79, next=0
+                    KindIdentifier "path" [462, 466), i=80, next=0
+      KindIfStatement [475, 602), i=81, next=0
+        KindBinaryExpression [480, 534), i=82, next=92
+          KindBinaryExpression [480, 505), i=83, next=87
+            KindIdentifier "elementA" [480, 488), i=84, next=85
+            KindInstanceOfKeyword [488, 499), i=85, next=86
+            KindIdentifier "Match" [499, 505), i=86, next=0
+          KindAmpersandAmpersandToken [505, 508), i=87, next=88
+          KindBinaryExpression [508, 534), i=88, next=0
+            KindIdentifier "elementB" [508, 517), i=89, next=90
+            KindInstanceOfKeyword [517, 528), i=90, next=91
+            KindIdentifier "Match" [528, 534), i=91, next=0
+        KindBlock [535, 602), i=92, next=0
+          NodeList [537, 599), i=93, next=0
+            KindVariableStatement [537, 568), i=94, next=103
+              KindVariableDeclarationList [537, 567), i=95, next=0
+                NodeList [546, 567), i=96, next=0
+                  KindVariableDeclaration [546, 567), i=97, next=0
+                    KindIdentifier "a" [546, 548), i=98, next=99
+                    KindCallExpression [550, 567), i=99, next=0
+                      KindPropertyAccessExpression [550, 565), i=100, next=0
+                        KindIdentifier "elementA" [550, 559), i=101, next=102
+                        KindIdentifier "range" [560, 565), i=102, next=0
+            KindVariableStatement [568, 599), i=103, next=0
+              KindVariableDeclarationList [568, 598), i=104, next=0
+                NodeList [577, 598), i=105, next=0
+                  KindVariableDeclaration [577, 598), i=106, next=0
+                    KindIdentifier "b" [577, 579), i=107, next=108
+                    KindCallExpression [581, 598), i=108, next=0
+                      KindPropertyAccessExpression [581, 596), i=109, next=0
+                        KindIdentifier "elementB" [581, 590), i=110, next=111
+                        KindIdentifier "range" [591, 596), i=111, next=0

@@ -1,0 +1,63 @@
+KindSourceFile [0, 255), i=1, next=0
+  NodeList [0, 255), i=2, next=0
+    KindEnumDeclaration [0, 13), i=3, next=5
+      KindIdentifier "ENUM" [4, 9), i=4, next=0
+    KindEmptyStatement [13, 14), i=5, next=6
+    KindEnumDeclaration [14, 38), i=6, next=15
+      KindIdentifier "ENUM1" [19, 25), i=7, next=8
+      NodeList [27, 36), i=8, next=0
+        KindEnumMember [27, 29), i=9, next=11
+          KindIdentifier "A" [27, 29), i=10, next=0
+        KindEnumMember [30, 32), i=11, next=13
+          KindIdentifier "B" [30, 32), i=12, next=0
+        KindEnumMember [33, 36), i=13, next=0
+          KindStringLiteral "" [33, 36), i=14, next=0
+    KindEmptyStatement [38, 39), i=15, next=16
+    KindVariableStatement [39, 86), i=16, next=23
+      KindVariableDeclarationList [39, 85), i=17, next=0
+        NodeList [61, 85), i=18, next=0
+          KindVariableDeclaration [61, 85), i=19, next=0
+            KindIdentifier "ResultIsNumber1" [61, 77), i=20, next=21
+            KindPrefixUnaryExpression [79, 85), i=21, next=0
+              KindIdentifier "ENUM" [81, 85), i=22, next=0
+    KindVariableStatement [86, 137), i=23, next=32
+      KindVariableDeclarationList [86, 136), i=24, next=0
+        NodeList [106, 136), i=25, next=0
+          KindVariableDeclaration [106, 136), i=26, next=0
+            KindIdentifier "ResultIsNumber2" [106, 122), i=27, next=28
+            KindPrefixUnaryExpression [124, 136), i=28, next=0
+              KindElementAccessExpression [126, 136), i=29, next=0
+                KindIdentifier "ENUM1" [126, 131), i=30, next=31
+                KindStringLiteral "B" [132, 135), i=31, next=0
+    KindVariableStatement [137, 183), i=32, next=47
+      KindVariableDeclarationList [137, 182), i=33, next=0
+        NodeList [141, 182), i=34, next=0
+          KindVariableDeclaration [141, 182), i=35, next=0
+            KindIdentifier "ResultIsNumber3" [141, 157), i=36, next=37
+            KindPrefixUnaryExpression [159, 182), i=37, next=0
+              KindParenthesizedExpression [161, 182), i=38, next=0
+                KindBinaryExpression [162, 181), i=39, next=0
+                  KindPropertyAccessExpression [162, 169), i=40, next=43
+                    KindIdentifier "ENUM1" [162, 167), i=41, next=42
+                    KindIdentifier "B" [168, 169), i=42, next=0
+                  KindPlusToken [169, 171), i=43, next=44
+                  KindElementAccessExpression [171, 181), i=44, next=0
+                    KindIdentifier "ENUM1" [171, 177), i=45, next=46
+                    KindStringLiteral "" [178, 180), i=46, next=0
+    KindExpressionStatement [183, 220), i=47, next=50
+      KindPrefixUnaryExpression [183, 219), i=48, next=0
+        KindIdentifier "ENUM" [215, 219), i=49, next=0
+    KindExpressionStatement [220, 228), i=50, next=53
+      KindPrefixUnaryExpression [220, 227), i=51, next=0
+        KindIdentifier "ENUM1" [222, 227), i=52, next=0
+    KindExpressionStatement [228, 241), i=53, next=58
+      KindPrefixUnaryExpression [228, 240), i=54, next=0
+        KindElementAccessExpression [230, 240), i=55, next=0
+          KindIdentifier "ENUM1" [230, 235), i=56, next=57
+          KindStringLiteral "B" [236, 239), i=57, next=0
+    KindExpressionStatement [241, 255), i=58, next=0
+      KindBinaryExpression [241, 254), i=59, next=0
+        KindPrefixUnaryExpression [241, 247), i=60, next=62
+          KindIdentifier "ENUM" [243, 247), i=61, next=0
+        KindCommaToken [247, 248), i=62, next=63
+        KindIdentifier "ENUM1" [248, 254), i=63, next=0

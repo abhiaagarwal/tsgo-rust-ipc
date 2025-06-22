@@ -1,0 +1,33 @@
+KindSourceFile [0, 157), i=1, next=0
+  NodeList [0, 157), i=2, next=0
+    KindClassDeclaration [0, 48), i=3, next=12
+      KindIdentifier "Base" [5, 10), i=4, next=5
+      NodeList [12, 45), i=5, next=0
+        KindPropertyDeclaration [12, 45), i=6, next=0
+          NodeList [12, 32), i=7, next=10
+            KindPrivateKeyword [12, 25), i=8, next=9
+            KindStaticKeyword [25, 32), i=9, next=0
+          KindIdentifier "foo" [32, 36), i=10, next=11
+          KindStringKeyword [37, 44), i=11, next=0
+    KindClassDeclaration [48, 157), i=12, next=0
+      KindIdentifier "Derived" [57, 65), i=13, next=14
+      NodeList [65, 78), i=14, next=19
+        KindHeritageClause [65, 78), i=15, next=0
+          NodeList [73, 78), i=16, next=0
+            KindExpressionWithTypeArguments [73, 78), i=17, next=0
+              KindIdentifier "Base" [73, 78), i=18, next=0
+      NodeList [80, 145), i=19, next=0
+        KindPropertyDeclaration [80, 108), i=20, next=27
+          NodeList [80, 92), i=21, next=23
+            KindStaticKeyword [80, 92), i=22, next=0
+          KindIdentifier "bar" [92, 96), i=23, next=24
+          KindPropertyAccessExpression [98, 107), i=24, next=0
+            KindIdentifier "Base" [98, 103), i=25, next=26
+            KindIdentifier "foo" [104, 107), i=26, next=0
+        KindPropertyDeclaration [108, 145), i=27, next=0
+          KindIdentifier "bing" [108, 127), i=28, next=29
+          KindArrowFunction [129, 144), i=29, next=0
+            KindEqualsGreaterThanToken [132, 135), i=30, next=31
+            KindPropertyAccessExpression [135, 144), i=31, next=0
+              KindIdentifier "Base" [135, 140), i=32, next=33
+              KindIdentifier "foo" [141, 144), i=33, next=0

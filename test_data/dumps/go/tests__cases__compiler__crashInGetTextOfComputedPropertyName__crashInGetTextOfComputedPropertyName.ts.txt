@@ -1,0 +1,123 @@
+KindSourceFile [0, 843), i=1, next=0
+  NodeList [0, 670), i=2, next=0
+    KindInterfaceDeclaration [0, 32), i=3, next=12
+      NodeList [0, 6), i=4, next=6
+        KindExportKeyword [0, 6), i=5, next=0
+      KindIdentifier "A" [16, 18), i=6, next=7
+      NodeList [20, 30), i=7, next=0
+        KindPropertySignature [20, 30), i=8, next=0
+          KindIdentifier "type" [20, 25), i=9, next=10
+          KindLiteralType [26, 30), i=10, next=0
+            KindStringLiteral "a" [26, 30), i=11, next=0
+    KindInterfaceDeclaration [32, 66), i=12, next=21
+      NodeList [32, 40), i=13, next=15
+        KindExportKeyword [32, 40), i=14, next=0
+      KindIdentifier "B" [50, 52), i=15, next=16
+      NodeList [54, 64), i=16, next=0
+        KindPropertySignature [54, 64), i=17, next=0
+          KindIdentifier "type" [54, 59), i=18, next=19
+          KindLiteralType [60, 64), i=19, next=0
+            KindStringLiteral "b" [60, 64), i=20, next=0
+    KindTypeAliasDeclaration [66, 90), i=21, next=31
+      NodeList [66, 74), i=22, next=24
+        KindExportKeyword [66, 74), i=23, next=0
+      KindIdentifier "AB" [79, 82), i=24, next=25
+      KindUnionType [84, 90), i=25, next=0
+        NodeList [84, 90), i=26, next=0
+          KindTypeReference [84, 86), i=27, next=29
+            KindIdentifier "A" [84, 86), i=28, next=0
+          KindTypeReference [88, 90), i=29, next=0
+            KindIdentifier "B" [88, 90), i=30, next=0
+    KindVariableStatement [90, 118), i=31, next=37
+      KindVariableDeclarationList [90, 118), i=32, next=0
+        NodeList [99, 118), i=33, next=0
+          KindVariableDeclaration [99, 118), i=34, next=0
+            KindIdentifier "itemId" [99, 106), i=35, next=36
+            KindStringLiteral "some-id" [108, 118), i=36, next=0
+    KindVariableStatement [118, 192), i=37, next=52
+      KindVariableDeclarationList [118, 192), i=38, next=0
+        NodeList [159, 192), i=39, next=0
+          KindVariableDeclaration [159, 192), i=40, next=0
+            KindIdentifier "items" [159, 165), i=41, next=42
+            KindTypeLiteral [166, 187), i=42, next=51
+              NodeList [168, 185), i=43, next=0
+                KindIndexSignature [168, 185), i=44, next=0
+                  NodeList [170, 180), i=45, next=49
+                    KindParameter [170, 180), i=46, next=0
+                      KindIdentifier "id" [170, 172), i=47, next=48
+                      KindStringKeyword [173, 180), i=48, next=0
+                  KindTypeReference [182, 185), i=49, next=0
+                    KindIdentifier "AB" [182, 185), i=50, next=0
+            KindObjectLiteralExpression [189, 192), i=51, next=0
+    KindVariableStatement [192, 229), i=52, next=63
+      KindVariableDeclarationList [192, 229), i=53, next=0
+        NodeList [199, 229), i=54, next=0
+          KindVariableDeclaration [199, 229), i=55, next=0
+            KindObjectBindingPattern [199, 221), i=56, next=62
+              NodeList [201, 219), i=57, next=0
+                KindBindingElement [201, 219), i=58, next=0
+                  KindComputedPropertyName [201, 210), i=59, next=61
+                    KindIdentifier "itemId" [203, 209), i=60, next=0
+                  KindIdentifier "itemOk1" [211, 219), i=61, next=0
+            KindIdentifier "items" [223, 229), i=62, next=0
+    KindExpressionStatement [229, 245), i=63, next=66
+      KindTypeOfExpression [229, 245), i=64, next=0
+        KindIdentifier "itemOk1" [237, 245), i=65, next=0
+    KindInterfaceDeclaration [245, 347), i=66, next=80
+      KindIdentifier "ObjWithItems" [299, 312), i=67, next=68
+      NodeList [314, 344), i=68, next=0
+        KindPropertySignature [314, 344), i=69, next=0
+          KindIdentifier "items" [314, 325), i=70, next=71
+          KindTypeLiteral [326, 344), i=71, next=0
+            NodeList [328, 343), i=72, next=0
+              KindIndexSignature [328, 343), i=73, next=0
+                NodeList [329, 338), i=74, next=78
+                  KindParameter [329, 338), i=75, next=0
+                    KindIdentifier "s" [329, 330), i=76, next=77
+                    KindStringKeyword [331, 338), i=77, next=0
+                KindTypeReference [340, 343), i=78, next=0
+                  KindIdentifier "AB" [340, 343), i=79, next=0
+    KindVariableStatement [347, 396), i=80, next=92
+      KindVariableDeclarationList [347, 396), i=81, next=0
+        NodeList [354, 396), i=82, next=0
+          KindVariableDeclaration [354, 396), i=83, next=0
+            KindIdentifier "objWithItems" [354, 367), i=84, next=85
+            KindTypeReference [368, 381), i=85, next=87
+              KindIdentifier "ObjWithItems" [368, 381), i=86, next=0
+            KindObjectLiteralExpression [383, 396), i=87, next=0
+              NodeList [385, 395), i=88, next=0
+                KindPropertyAssignment [385, 395), i=89, next=0
+                  KindIdentifier "items" [385, 391), i=90, next=91
+                  KindObjectLiteralExpression [392, 395), i=91, next=0
+    KindVariableStatement [396, 442), i=92, next=102
+      KindVariableDeclarationList [396, 442), i=93, next=0
+        NodeList [405, 442), i=94, next=0
+          KindVariableDeclaration [405, 442), i=95, next=0
+            KindIdentifier "itemOk2" [405, 413), i=96, next=97
+            KindElementAccessExpression [415, 442), i=97, next=0
+              KindPropertyAccessExpression [415, 434), i=98, next=101
+                KindIdentifier "objWithItems" [415, 428), i=99, next=100
+                KindIdentifier "items" [429, 434), i=100, next=0
+              KindIdentifier "itemId" [435, 441), i=101, next=0
+    KindExpressionStatement [442, 458), i=102, next=105
+      KindTypeOfExpression [442, 458), i=103, next=0
+        KindIdentifier "itemOk2" [450, 458), i=104, next=0
+    KindVariableStatement [458, 585), i=105, next=121
+      KindVariableDeclarationList [458, 585), i=106, next=0
+        NodeList [475, 585), i=107, next=0
+          KindVariableDeclaration [475, 585), i=108, next=0
+            KindObjectBindingPattern [475, 570), i=109, next=120
+              NodeList [477, 524), i=110, next=0
+                KindBindingElement [477, 524), i=111, next=0
+                  KindIdentifier "items" [477, 488), i=112, next=113
+                  KindObjectBindingPattern [489, 519), i=113, next=119
+                    NodeList [491, 517), i=114, next=0
+                      KindBindingElement [491, 517), i=115, next=0
+                        KindComputedPropertyName [491, 500), i=116, next=118
+                          KindIdentifier "itemId" [493, 499), i=117, next=0
+                        KindIdentifier "itemWithTSError" [501, 517), i=118, next=0
+                  KindObjectLiteralExpression [521, 524), i=119, next=0
+            KindIdentifier "objWithItems" [572, 585), i=120, next=0
+    KindExpressionStatement [585, 670), i=121, next=0
+      KindTypeOfExpression [585, 670), i=122, next=0
+        KindIdentifier "itemWithTSError" [654, 670), i=123, next=0

@@ -1,0 +1,64 @@
+KindSourceFile [0, 166), i=1, next=0
+  NodeList [0, 164), i=2, next=0
+    KindInterfaceDeclaration [0, 29), i=3, next=13
+      KindIdentifier "Foo" [9, 13), i=4, next=5
+      NodeList [14, 15), i=5, next=8
+        KindTypeParameter [14, 15), i=6, next=0
+          KindIdentifier "T" [14, 15), i=7, next=0
+      NodeList [18, 27), i=8, next=0
+        KindPropertySignature [18, 27), i=9, next=0
+          KindIdentifier "prop" [18, 23), i=10, next=11
+          KindTypeReference [24, 26), i=11, next=0
+            KindIdentifier "T" [24, 26), i=12, next=0
+    KindFunctionDeclaration [29, 85), i=13, next=37
+      NodeList [29, 40), i=14, next=16
+        KindDeclareKeyword [29, 40), i=15, next=0
+      KindIdentifier "lift" [49, 54), i=16, next=17
+      NodeList [55, 56), i=17, next=20
+        KindTypeParameter [55, 56), i=18, next=0
+          KindIdentifier "U" [55, 56), i=19, next=0
+      NodeList [58, 75), i=20, next=32
+        KindParameter [58, 75), i=21, next=0
+          KindIdentifier "value" [58, 63), i=22, next=23
+          KindUnionType [64, 75), i=23, next=0
+            NodeList [64, 75), i=24, next=0
+              KindTypeReference [64, 66), i=25, next=27
+                KindIdentifier "U" [64, 66), i=26, next=0
+              KindTypeReference [68, 75), i=27, next=0
+                KindIdentifier "Foo" [68, 72), i=28, next=29
+                NodeList [73, 74), i=29, next=0
+                  KindTypeReference [73, 74), i=30, next=0
+                    KindIdentifier "U" [73, 74), i=31, next=0
+      KindTypeReference [77, 84), i=32, next=0
+        KindIdentifier "Foo" [77, 81), i=33, next=34
+        NodeList [82, 83), i=34, next=0
+          KindTypeReference [82, 83), i=35, next=0
+            KindIdentifier "U" [82, 83), i=36, next=0
+    KindFunctionDeclaration [85, 164), i=37, next=0
+      KindIdentifier "unlift" [97, 104), i=38, next=39
+      NodeList [105, 106), i=39, next=42
+        KindTypeParameter [105, 106), i=40, next=0
+          KindIdentifier "U" [105, 106), i=41, next=0
+      NodeList [108, 125), i=42, next=54
+        KindParameter [108, 125), i=43, next=0
+          KindIdentifier "value" [108, 113), i=44, next=45
+          KindUnionType [114, 125), i=45, next=0
+            NodeList [114, 125), i=46, next=0
+              KindTypeReference [114, 116), i=47, next=49
+                KindIdentifier "U" [114, 116), i=48, next=0
+              KindTypeReference [118, 125), i=49, next=0
+                KindIdentifier "Foo" [118, 122), i=50, next=51
+                NodeList [123, 124), i=51, next=0
+                  KindTypeReference [123, 124), i=52, next=0
+                    KindIdentifier "U" [123, 124), i=53, next=0
+      KindTypeReference [127, 129), i=54, next=56
+        KindIdentifier "U" [127, 129), i=55, next=0
+      KindBlock [129, 164), i=56, next=0
+        NodeList [131, 161), i=57, next=0
+          KindReturnStatement [131, 161), i=58, next=0
+            KindPropertyAccessExpression [143, 160), i=59, next=0
+              KindCallExpression [143, 155), i=60, next=64
+                KindIdentifier "lift" [143, 148), i=61, next=62
+                NodeList [149, 154), i=62, next=0
+                  KindIdentifier "value" [149, 154), i=63, next=0
+              KindIdentifier "prop" [156, 160), i=64, next=0

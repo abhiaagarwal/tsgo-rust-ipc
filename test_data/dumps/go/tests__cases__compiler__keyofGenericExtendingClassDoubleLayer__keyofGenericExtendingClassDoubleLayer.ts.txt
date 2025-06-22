@@ -1,0 +1,72 @@
+KindSourceFile [0, 324), i=1, next=0
+  NodeList [0, 322), i=2, next=0
+    KindClassDeclaration [0, 63), i=3, next=16
+      KindIdentifier "Model" [5, 11), i=4, next=5
+      NodeList [12, 28), i=5, next=9
+        KindTypeParameter [12, 28), i=6, next=0
+          KindIdentifier "Attributes" [12, 22), i=7, next=8
+          KindAnyKeyword [24, 28), i=8, next=0
+      NodeList [31, 60), i=9, next=0
+        KindPropertyDeclaration [31, 60), i=10, next=0
+          NodeList [31, 43), i=11, next=13
+            KindPublicKeyword [31, 43), i=12, next=0
+          KindIdentifier "createdAt" [43, 53), i=13, next=14
+          KindTypeReference [54, 59), i=14, next=0
+            KindIdentifier "Date" [54, 59), i=15, next=0
+    KindTypeAliasDeclaration [63, 114), i=16, next=29
+      KindIdentifier "ModelAttributes" [71, 87), i=17, next=18
+      NodeList [88, 89), i=18, next=21
+        KindTypeParameter [88, 89), i=19, next=0
+          KindIdentifier "T" [88, 89), i=20, next=0
+      KindTypeReference [92, 113), i=21, next=0
+        KindIdentifier "Omit" [92, 97), i=22, next=23
+        NodeList [98, 112), i=23, next=0
+          KindTypeReference [98, 99), i=24, next=26
+            KindIdentifier "T" [98, 99), i=25, next=0
+          KindTypeOperator [100, 112), i=26, next=0
+            KindTypeReference [106, 112), i=27, next=0
+              KindIdentifier "Model" [106, 112), i=28, next=0
+    KindClassDeclaration [114, 173), i=29, next=45
+      KindIdentifier "AutoModel" [123, 133), i=30, next=31
+      NodeList [134, 135), i=31, next=34
+        KindTypeParameter [134, 135), i=32, next=0
+          KindIdentifier "T" [134, 135), i=33, next=0
+      NodeList [136, 170), i=34, next=0
+        KindHeritageClause [136, 170), i=35, next=0
+          NodeList [144, 170), i=36, next=0
+            KindExpressionWithTypeArguments [144, 170), i=37, next=0
+              KindIdentifier "Model" [144, 150), i=38, next=39
+              NodeList [151, 169), i=39, next=0
+                KindTypeReference [151, 169), i=40, next=0
+                  KindIdentifier "ModelAttributes" [151, 166), i=41, next=42
+                  NodeList [167, 168), i=42, next=0
+                    KindTypeReference [167, 168), i=43, next=0
+                      KindIdentifier "T" [167, 168), i=44, next=0
+    KindClassDeclaration [173, 322), i=45, next=0
+      KindIdentifier "PersonModel" [182, 194), i=46, next=47
+      NodeList [194, 225), i=47, next=55
+        KindHeritageClause [194, 225), i=48, next=0
+          NodeList [202, 225), i=49, next=0
+            KindExpressionWithTypeArguments [202, 225), i=50, next=0
+              KindIdentifier "AutoModel" [202, 212), i=51, next=52
+              NodeList [213, 224), i=52, next=0
+                KindTypeReference [213, 224), i=53, next=0
+                  KindIdentifier "PersonModel" [213, 224), i=54, next=0
+      NodeList [227, 319), i=55, next=0
+        KindPropertyDeclaration [227, 252), i=56, next=61
+          NodeList [227, 239), i=57, next=59
+            KindPublicKeyword [227, 239), i=58, next=0
+          KindIdentifier "age" [239, 243), i=59, next=60
+          KindNumberKeyword [244, 251), i=60, next=0
+        KindMethodDeclaration [252, 319), i=61, next=0
+          KindIdentifier "toJson" [252, 266), i=62, next=63
+          KindBlock [268, 319), i=63, next=0
+            NodeList [270, 312), i=64, next=0
+              KindVariableStatement [270, 312), i=65, next=0
+                KindVariableDeclarationList [270, 311), i=66, next=0
+                  NodeList [283, 311), i=67, next=0
+                    KindVariableDeclaration [283, 311), i=68, next=0
+                      KindIdentifier "x" [283, 285), i=69, next=70
+                      KindTypeOperator [286, 297), i=70, next=72
+                        KindThisType [292, 297), i=71, next=0
+                      KindStringLiteral "createdAt" [299, 311), i=72, next=0

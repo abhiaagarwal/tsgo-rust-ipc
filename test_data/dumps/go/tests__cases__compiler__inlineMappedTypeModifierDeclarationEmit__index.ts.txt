@@ -1,0 +1,109 @@
+KindSourceFile [0, 436), i=1, next=0
+  NodeList [0, 435), i=2, next=0
+    KindImportDeclaration [0, 39), i=3, next=12
+      KindImportClause [6, 23), i=4, next=11
+        KindNamedImports [6, 23), i=5, next=0
+          NodeList [8, 21), i=6, next=0
+            KindImportSpecifier [8, 14), i=7, next=9
+              KindIdentifier "test1" [8, 14), i=8, next=0
+            KindImportSpecifier [15, 21), i=9, next=0
+              KindIdentifier "test2" [15, 21), i=10, next=0
+      KindStringLiteral "./other" [28, 38), i=11, next=0
+    KindFunctionDeclaration [39, 136), i=12, next=39
+      NodeList [39, 49), i=13, next=15
+        KindExportKeyword [39, 49), i=14, next=0
+      KindIdentifier "wrappedTest1" [58, 71), i=15, next=16
+      NodeList [72, 91), i=16, next=22
+        KindTypeParameter [72, 73), i=17, next=19
+          KindIdentifier "T" [72, 73), i=18, next=0
+        KindTypeParameter [74, 91), i=19, next=0
+          KindIdentifier "K" [74, 76), i=20, next=21
+          KindStringKeyword [84, 91), i=21, next=0
+      NodeList [93, 105), i=22, next=31
+        KindParameter [93, 99), i=23, next=27
+          KindIdentifier "obj" [93, 96), i=24, next=25
+          KindTypeReference [97, 99), i=25, next=0
+            KindIdentifier "T" [97, 99), i=26, next=0
+        KindParameter [100, 105), i=27, next=0
+          KindIdentifier "k" [100, 102), i=28, next=29
+          KindTypeReference [103, 105), i=29, next=0
+            KindIdentifier "K" [103, 105), i=30, next=0
+      KindBlock [106, 136), i=31, next=0
+        NodeList [108, 133), i=32, next=0
+          KindReturnStatement [108, 133), i=33, next=0
+            KindCallExpression [118, 132), i=34, next=0
+              KindIdentifier "test1" [118, 124), i=35, next=36
+              NodeList [125, 131), i=36, next=0
+                KindIdentifier "obj" [125, 128), i=37, next=38
+                KindIdentifier "k" [129, 131), i=38, next=0
+    KindFunctionDeclaration [136, 233), i=39, next=66
+      NodeList [136, 146), i=40, next=42
+        KindExportKeyword [136, 146), i=41, next=0
+      KindIdentifier "wrappedTest2" [155, 168), i=42, next=43
+      NodeList [169, 188), i=43, next=49
+        KindTypeParameter [169, 170), i=44, next=46
+          KindIdentifier "T" [169, 170), i=45, next=0
+        KindTypeParameter [171, 188), i=46, next=0
+          KindIdentifier "K" [171, 173), i=47, next=48
+          KindStringKeyword [181, 188), i=48, next=0
+      NodeList [190, 202), i=49, next=58
+        KindParameter [190, 196), i=50, next=54
+          KindIdentifier "obj" [190, 193), i=51, next=52
+          KindTypeReference [194, 196), i=52, next=0
+            KindIdentifier "T" [194, 196), i=53, next=0
+        KindParameter [197, 202), i=54, next=0
+          KindIdentifier "k" [197, 199), i=55, next=56
+          KindTypeReference [200, 202), i=56, next=0
+            KindIdentifier "K" [200, 202), i=57, next=0
+      KindBlock [203, 233), i=58, next=0
+        NodeList [205, 230), i=59, next=0
+          KindReturnStatement [205, 230), i=60, next=0
+            KindCallExpression [215, 229), i=61, next=0
+              KindIdentifier "test2" [215, 221), i=62, next=63
+              NodeList [222, 228), i=63, next=0
+                KindIdentifier "obj" [222, 225), i=64, next=65
+                KindIdentifier "k" [226, 228), i=65, next=0
+    KindTypeAliasDeclaration [233, 299), i=66, next=80
+      NodeList [233, 243), i=67, next=69
+        KindExportKeyword [233, 243), i=68, next=0
+      KindIdentifier "Obj" [248, 252), i=69, next=70
+      KindTypeLiteral [254, 298), i=70, next=0
+        NodeList [256, 295), i=71, next=0
+          KindPropertySignature [256, 270), i=72, next=75
+            KindIdentifier "a" [256, 261), i=73, next=74
+            KindNumberKeyword [262, 269), i=74, next=0
+          KindPropertySignature [270, 295), i=75, next=0
+            NodeList [270, 282), i=76, next=78
+              KindReadonlyKeyword [270, 282), i=77, next=0
+            KindIdentifier "foo" [282, 286), i=78, next=79
+            KindStringKeyword [287, 294), i=79, next=0
+    KindVariableStatement [299, 368), i=80, next=95
+      NodeList [299, 309), i=81, next=83
+        KindExportKeyword [299, 309), i=82, next=0
+      KindVariableDeclarationList [309, 367), i=83, next=0
+        NodeList [315, 367), i=84, next=0
+          KindVariableDeclaration [315, 367), i=85, next=0
+            KindIdentifier "processedInternally1" [315, 336), i=86, next=87
+            KindCallExpression [338, 367), i=87, next=0
+              KindIdentifier "wrappedTest1" [338, 351), i=88, next=89
+              NodeList [352, 366), i=89, next=0
+                KindAsExpression [352, 361), i=90, next=94
+                  KindObjectLiteralExpression [352, 354), i=91, next=92
+                  KindTypeReference [357, 361), i=92, next=0
+                    KindIdentifier "Obj" [357, 361), i=93, next=0
+                KindStringLiteral "a" [362, 366), i=94, next=0
+    KindVariableStatement [368, 435), i=95, next=0
+      NodeList [368, 376), i=96, next=98
+        KindExportKeyword [368, 376), i=97, next=0
+      KindVariableDeclarationList [376, 434), i=98, next=0
+        NodeList [382, 434), i=99, next=0
+          KindVariableDeclaration [382, 434), i=100, next=0
+            KindIdentifier "processedInternally2" [382, 403), i=101, next=102
+            KindCallExpression [405, 434), i=102, next=0
+              KindIdentifier "wrappedTest2" [405, 418), i=103, next=104
+              NodeList [419, 433), i=104, next=0
+                KindAsExpression [419, 428), i=105, next=109
+                  KindObjectLiteralExpression [419, 421), i=106, next=107
+                  KindTypeReference [424, 428), i=107, next=0
+                    KindIdentifier "Obj" [424, 428), i=108, next=0
+                KindStringLiteral "a" [429, 433), i=109, next=0

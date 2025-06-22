@@ -1,0 +1,178 @@
+KindSourceFile [0, 771), i=1, next=0
+  NodeList [0, 770), i=2, next=0
+    KindTypeAliasDeclaration [0, 45), i=3, next=11
+      KindIdentifier "A_Primitive" [4, 16), i=4, next=5
+      KindTypeLiteral [18, 44), i=5, next=0
+        NodeList [20, 42), i=6, next=0
+          KindPropertySignature [20, 42), i=7, next=0
+            KindIdentifier "disabled" [20, 31), i=8, next=9
+            KindQuestionToken [31, 32), i=9, next=10
+            KindBooleanKeyword [33, 41), i=10, next=0
+    KindTypeAliasDeclaration [45, 104), i=11, next=22
+      KindIdentifier "B_Primitive" [51, 63), i=12, next=13
+      KindTypeLiteral [65, 103), i=13, next=0
+        NodeList [67, 101), i=14, next=0
+          KindPropertySignature [67, 101), i=15, next=0
+            KindIdentifier "disabled" [67, 78), i=16, next=17
+            KindQuestionToken [78, 79), i=17, next=18
+            KindUnionType [80, 100), i=18, next=0
+              NodeList [80, 100), i=19, next=0
+                KindBooleanKeyword [80, 88), i=20, next=21
+                KindUndefinedKeyword [90, 100), i=21, next=0
+    KindTypeAliasDeclaration [104, 151), i=22, next=30
+      KindIdentifier "C_Primitive" [110, 122), i=23, next=24
+      KindTypeLiteral [124, 150), i=24, next=0
+        NodeList [126, 148), i=25, next=0
+          KindPropertySignature [126, 148), i=26, next=0
+            KindIdentifier "disabled" [126, 137), i=27, next=28
+            KindQuestionToken [137, 138), i=28, next=29
+            KindBooleanKeyword [139, 147), i=29, next=0
+    KindVariableStatement [151, 207), i=30, next=43
+      NodeList [151, 160), i=31, next=33
+        KindDeclareKeyword [151, 160), i=32, next=0
+      KindVariableDeclarationList [160, 206), i=33, next=0
+        NodeList [166, 206), i=34, next=0
+          KindVariableDeclaration [166, 206), i=35, next=0
+            KindIdentifier "ab_primitive" [166, 179), i=36, next=37
+            KindIntersectionType [180, 206), i=37, next=0
+              NodeList [180, 206), i=38, next=0
+                KindTypeReference [180, 192), i=39, next=41
+                  KindIdentifier "A_Primitive" [180, 192), i=40, next=0
+                KindTypeReference [194, 206), i=41, next=0
+                  KindIdentifier "B_Primitive" [194, 206), i=42, next=0
+    KindVariableStatement [207, 262), i=43, next=56
+      NodeList [207, 215), i=44, next=46
+        KindDeclareKeyword [207, 215), i=45, next=0
+      KindVariableDeclarationList [215, 261), i=46, next=0
+        NodeList [221, 261), i=47, next=0
+          KindVariableDeclaration [221, 261), i=48, next=0
+            KindIdentifier "ac_primitive" [221, 234), i=49, next=50
+            KindIntersectionType [235, 261), i=50, next=0
+              NodeList [235, 261), i=51, next=0
+                KindTypeReference [235, 247), i=52, next=54
+                  KindIdentifier "A_Primitive" [235, 247), i=53, next=0
+                KindTypeReference [249, 261), i=54, next=0
+                  KindIdentifier "C_Primitive" [249, 261), i=55, next=0
+    KindVariableStatement [262, 311), i=56, next=64
+      KindVariableDeclarationList [262, 310), i=57, next=0
+        NodeList [269, 310), i=58, next=0
+          KindVariableDeclaration [269, 310), i=59, next=0
+            KindIdentifier "ab_disabled_read" [269, 286), i=60, next=61
+            KindPropertyAccessExpression [288, 310), i=61, next=0
+              KindIdentifier "ab_primitive" [288, 301), i=62, next=63
+              KindIdentifier "disabled" [302, 310), i=63, next=0
+    KindVariableStatement [311, 359), i=64, next=72
+      KindVariableDeclarationList [311, 358), i=65, next=0
+        NodeList [317, 358), i=66, next=0
+          KindVariableDeclaration [317, 358), i=67, next=0
+            KindIdentifier "ac_disabled_read" [317, 334), i=68, next=69
+            KindPropertyAccessExpression [336, 358), i=69, next=0
+              KindIdentifier "ac_primitive" [336, 349), i=70, next=71
+              KindIdentifier "disabled" [350, 358), i=71, next=0
+    KindExpressionStatement [359, 395), i=72, next=79
+      KindBinaryExpression [359, 394), i=73, next=0
+        KindPropertyAccessExpression [359, 382), i=74, next=77
+          KindIdentifier "ab_primitive" [359, 373), i=75, next=76
+          KindIdentifier "disabled" [374, 382), i=76, next=0
+        KindEqualsToken [382, 384), i=77, next=78
+        KindIdentifier "undefined" [384, 394), i=78, next=0
+    KindExpressionStatement [395, 430), i=79, next=86
+      KindBinaryExpression [395, 429), i=80, next=0
+        KindPropertyAccessExpression [395, 417), i=81, next=84
+          KindIdentifier "ac_primitive" [395, 408), i=82, next=83
+          KindIdentifier "disabled" [409, 417), i=83, next=0
+        KindEqualsToken [417, 419), i=84, next=85
+        KindIdentifier "undefined" [419, 429), i=85, next=0
+    KindTypeAliasDeclaration [430, 464), i=86, next=93
+      KindIdentifier "Foo" [436, 440), i=87, next=88
+      KindTypeLiteral [442, 463), i=88, next=0
+        NodeList [444, 461), i=89, next=0
+          KindPropertySignature [444, 461), i=90, next=0
+            KindIdentifier "prop" [444, 451), i=91, next=92
+            KindBooleanKeyword [452, 460), i=92, next=0
+    KindTypeAliasDeclaration [464, 497), i=93, next=102
+      KindIdentifier "A_Obj" [470, 476), i=94, next=95
+      KindTypeLiteral [478, 496), i=95, next=0
+        NodeList [480, 494), i=96, next=0
+          KindPropertySignature [480, 494), i=97, next=0
+            KindIdentifier "prop" [480, 487), i=98, next=99
+            KindQuestionToken [487, 488), i=99, next=100
+            KindTypeReference [489, 493), i=100, next=0
+              KindIdentifier "Foo" [489, 493), i=101, next=0
+    KindTypeAliasDeclaration [497, 542), i=102, next=114
+      KindIdentifier "B_Obj" [503, 509), i=103, next=104
+      KindTypeLiteral [511, 541), i=104, next=0
+        NodeList [513, 539), i=105, next=0
+          KindPropertySignature [513, 539), i=106, next=0
+            KindIdentifier "prop" [513, 520), i=107, next=108
+            KindQuestionToken [520, 521), i=108, next=109
+            KindUnionType [522, 538), i=109, next=0
+              NodeList [522, 538), i=110, next=0
+                KindTypeReference [522, 526), i=111, next=113
+                  KindIdentifier "Foo" [522, 526), i=112, next=0
+                KindUndefinedKeyword [528, 538), i=113, next=0
+    KindTypeAliasDeclaration [542, 575), i=114, next=123
+      KindIdentifier "C_Obj" [548, 554), i=115, next=116
+      KindTypeLiteral [556, 574), i=116, next=0
+        NodeList [558, 572), i=117, next=0
+          KindPropertySignature [558, 572), i=118, next=0
+            KindIdentifier "prop" [558, 565), i=119, next=120
+            KindQuestionToken [565, 566), i=120, next=121
+            KindTypeReference [567, 571), i=121, next=0
+              KindIdentifier "Foo" [567, 571), i=122, next=0
+    KindVariableStatement [575, 613), i=123, next=136
+      NodeList [575, 584), i=124, next=126
+        KindDeclareKeyword [575, 584), i=125, next=0
+      KindVariableDeclarationList [584, 612), i=126, next=0
+        NodeList [590, 612), i=127, next=0
+          KindVariableDeclaration [590, 612), i=128, next=0
+            KindIdentifier "ab_obj" [590, 597), i=129, next=130
+            KindIntersectionType [598, 612), i=130, next=0
+              NodeList [598, 612), i=131, next=0
+                KindTypeReference [598, 604), i=132, next=134
+                  KindIdentifier "A_Obj" [598, 604), i=133, next=0
+                KindTypeReference [606, 612), i=134, next=0
+                  KindIdentifier "B_Obj" [606, 612), i=135, next=0
+    KindVariableStatement [613, 650), i=136, next=149
+      NodeList [613, 621), i=137, next=139
+        KindDeclareKeyword [613, 621), i=138, next=0
+      KindVariableDeclarationList [621, 649), i=139, next=0
+        NodeList [627, 649), i=140, next=0
+          KindVariableDeclaration [627, 649), i=141, next=0
+            KindIdentifier "ac_obj" [627, 634), i=142, next=143
+            KindIntersectionType [635, 649), i=143, next=0
+              NodeList [635, 649), i=144, next=0
+                KindTypeReference [635, 641), i=145, next=147
+                  KindIdentifier "A_Obj" [635, 641), i=146, next=0
+                KindTypeReference [643, 649), i=147, next=0
+                  KindIdentifier "C_Obj" [643, 649), i=148, next=0
+    KindVariableStatement [650, 685), i=149, next=157
+      KindVariableDeclarationList [650, 684), i=150, next=0
+        NodeList [657, 684), i=151, next=0
+          KindVariableDeclaration [657, 684), i=152, next=0
+            KindIdentifier "ab_prop_read" [657, 670), i=153, next=154
+            KindPropertyAccessExpression [672, 684), i=154, next=0
+              KindIdentifier "ab_obj" [672, 679), i=155, next=156
+              KindIdentifier "prop" [680, 684), i=156, next=0
+    KindVariableStatement [685, 719), i=157, next=165
+      KindVariableDeclarationList [685, 718), i=158, next=0
+        NodeList [691, 718), i=159, next=0
+          KindVariableDeclaration [691, 718), i=160, next=0
+            KindIdentifier "ac_prop_read" [691, 704), i=161, next=162
+            KindPropertyAccessExpression [706, 718), i=162, next=0
+              KindIdentifier "ac_obj" [706, 713), i=163, next=164
+              KindIdentifier "prop" [714, 718), i=164, next=0
+    KindExpressionStatement [719, 745), i=165, next=172
+      KindBinaryExpression [719, 744), i=166, next=0
+        KindPropertyAccessExpression [719, 732), i=167, next=170
+          KindIdentifier "ab_obj" [719, 727), i=168, next=169
+          KindIdentifier "prop" [728, 732), i=169, next=0
+        KindEqualsToken [732, 734), i=170, next=171
+        KindIdentifier "undefined" [734, 744), i=171, next=0
+    KindExpressionStatement [745, 770), i=172, next=0
+      KindBinaryExpression [745, 769), i=173, next=0
+        KindPropertyAccessExpression [745, 757), i=174, next=177
+          KindIdentifier "ac_obj" [745, 752), i=175, next=176
+          KindIdentifier "prop" [753, 757), i=176, next=0
+        KindEqualsToken [757, 759), i=177, next=178
+        KindIdentifier "undefined" [759, 769), i=178, next=0

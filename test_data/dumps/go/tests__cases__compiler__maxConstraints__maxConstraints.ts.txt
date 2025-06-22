@@ -1,0 +1,81 @@
+KindSourceFile [0, 229), i=1, next=0
+  NodeList [0, 229), i=2, next=0
+    KindInterfaceDeclaration [0, 60), i=3, next=17
+      KindIdentifier "Comparable" [9, 20), i=4, next=5
+      NodeList [21, 22), i=5, next=8
+        KindTypeParameter [21, 22), i=6, next=0
+          KindIdentifier "T" [21, 22), i=7, next=0
+      NodeList [25, 58), i=8, next=0
+        KindMethodSignature [25, 58), i=9, next=0
+          KindIdentifier "compareTo" [25, 39), i=10, next=11
+          NodeList [40, 48), i=11, next=16
+            KindParameter [40, 48), i=12, next=0
+              KindIdentifier "other" [40, 45), i=13, next=14
+              KindTypeReference [46, 48), i=14, next=0
+                KindIdentifier "T" [46, 48), i=15, next=0
+          KindNumberKeyword [50, 57), i=16, next=0
+    KindInterfaceDeclaration [60, 129), i=17, next=40
+      KindIdentifier "Comparer" [70, 79), i=18, next=19
+      NodeList [81, 127), i=19, next=0
+        KindCallSignature [81, 127), i=20, next=0
+          NodeList [87, 110), i=21, next=29
+            KindTypeParameter [87, 110), i=22, next=0
+              KindIdentifier "T" [87, 88), i=23, next=24
+              KindTypeReference [96, 110), i=24, next=0
+                KindIdentifier "Comparable" [96, 107), i=25, next=26
+                NodeList [108, 109), i=26, next=0
+                  KindTypeReference [108, 109), i=27, next=0
+                    KindIdentifier "T" [108, 109), i=28, next=0
+          NodeList [112, 122), i=29, next=38
+            KindParameter [112, 116), i=30, next=34
+              KindIdentifier "x" [112, 113), i=31, next=32
+              KindTypeReference [114, 116), i=32, next=0
+                KindIdentifier "T" [114, 116), i=33, next=0
+            KindParameter [117, 122), i=34, next=0
+              KindIdentifier "y" [117, 119), i=35, next=36
+              KindTypeReference [120, 122), i=36, next=0
+                KindIdentifier "T" [120, 122), i=37, next=0
+          KindTypeReference [124, 126), i=38, next=0
+            KindIdentifier "T" [124, 126), i=39, next=0
+    KindVariableStatement [129, 201), i=40, next=72
+      KindVariableDeclarationList [129, 200), i=41, next=0
+        NodeList [133, 200), i=42, next=0
+          KindVariableDeclaration [133, 200), i=43, next=0
+            KindIdentifier "max2" [133, 138), i=44, next=45
+            KindTypeReference [139, 148), i=45, next=47
+              KindIdentifier "Comparer" [139, 148), i=46, next=0
+            KindArrowFunction [150, 200), i=47, next=0
+              NodeList [152, 156), i=48, next=53
+                KindParameter [152, 153), i=49, next=51
+                  KindIdentifier "x" [152, 153), i=50, next=0
+                KindParameter [154, 156), i=51, next=0
+                  KindIdentifier "y" [154, 156), i=52, next=0
+              KindEqualsGreaterThanToken [157, 160), i=53, next=54
+              KindBlock [160, 200), i=54, next=0
+                NodeList [162, 198), i=55, next=0
+                  KindReturnStatement [162, 198), i=56, next=0
+                    KindConditionalExpression [169, 198), i=57, next=0
+                      KindParenthesizedExpression [169, 190), i=58, next=68
+                        KindBinaryExpression [171, 189), i=59, next=0
+                          KindCallExpression [171, 185), i=60, next=66
+                            KindPropertyAccessExpression [171, 182), i=61, next=64
+                              KindIdentifier "x" [171, 172), i=62, next=63
+                              KindIdentifier "compareTo" [173, 182), i=63, next=0
+                            NodeList [183, 184), i=64, next=0
+                              KindIdentifier "y" [183, 184), i=65, next=0
+                          KindGreaterThanToken [185, 187), i=66, next=67
+                          KindNumericLiteral [187, 189), i=67, next=0
+                      KindQuestionToken [190, 192), i=68, next=69
+                      KindIdentifier "x" [192, 194), i=69, next=70
+                      KindColonToken [194, 196), i=70, next=71
+                      KindIdentifier "y" [196, 198), i=71, next=0
+    KindVariableStatement [201, 229), i=72, next=0
+      KindVariableDeclarationList [201, 228), i=73, next=0
+        NodeList [205, 228), i=74, next=0
+          KindVariableDeclaration [205, 228), i=75, next=0
+            KindIdentifier "maxResult" [205, 215), i=76, next=77
+            KindCallExpression [217, 228), i=77, next=0
+              KindIdentifier "max2" [217, 222), i=78, next=79
+              NodeList [223, 227), i=79, next=0
+                KindNumericLiteral [223, 224), i=80, next=81
+                KindNumericLiteral [225, 227), i=81, next=0

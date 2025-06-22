@@ -1,0 +1,79 @@
+KindSourceFile [0, 233), i=1, next=0
+  NodeList [0, 233), i=2, next=0
+    KindTypeAliasDeclaration [0, 42), i=3, next=13
+      KindIdentifier "Obj" [4, 8), i=4, next=5
+      KindTypeLiteral [10, 41), i=5, next=0
+        NodeList [12, 38), i=6, next=0
+          KindIndexSignature [12, 38), i=7, next=0
+            NodeList [19, 28), i=8, next=12
+              KindParameter [19, 28), i=9, next=0
+                KindIdentifier "s" [19, 20), i=10, next=11
+                KindStringKeyword [21, 28), i=11, next=0
+            KindNumberKeyword [30, 37), i=12, next=0
+    KindTypeAliasDeclaration [42, 103), i=13, next=34
+      KindIdentifier "foo" [50, 54), i=14, next=15
+      KindFunctionType [56, 102), i=15, next=0
+        NodeList [58, 59), i=16, next=19
+          KindTypeParameter [58, 59), i=17, next=0
+            KindIdentifier "T" [58, 59), i=18, next=0
+        NodeList [61, 93), i=19, next=33
+          KindParameter [61, 93), i=20, next=0
+            KindIdentifier "target" [61, 67), i=21, next=22
+            KindMappedType [68, 93), i=22, next=0
+              KindTypeParameter [72, 84), i=23, next=28
+                KindIdentifier "K" [72, 73), i=24, next=25
+                KindTypeOperator [76, 84), i=25, next=0
+                  KindTypeReference [82, 84), i=26, next=0
+                    KindIdentifier "T" [82, 84), i=27, next=0
+              KindIndexedAccessType [86, 91), i=28, next=0
+                KindTypeReference [86, 88), i=29, next=31
+                  KindIdentifier "T" [86, 88), i=30, next=0
+                KindTypeReference [89, 90), i=31, next=0
+                  KindIdentifier "K" [89, 90), i=32, next=0
+        KindVoidKeyword [97, 102), i=33, next=0
+    KindTypeAliasDeclaration [103, 181), i=34, next=57
+      KindIdentifier "bar" [109, 113), i=35, next=36
+      KindFunctionType [115, 180), i=36, next=0
+        NodeList [117, 135), i=37, next=42
+          KindTypeParameter [117, 135), i=38, next=0
+            KindIdentifier "U" [117, 118), i=39, next=40
+            KindArrayType [126, 135), i=40, next=0
+              KindStringKeyword [126, 133), i=41, next=0
+        NodeList [137, 171), i=42, next=56
+          KindParameter [137, 171), i=43, next=0
+            KindIdentifier "source" [137, 143), i=44, next=45
+            KindMappedType [144, 171), i=45, next=0
+              KindTypeParameter [148, 160), i=46, next=51
+                KindIdentifier "K" [148, 149), i=47, next=48
+                KindTypeOperator [152, 160), i=48, next=0
+                  KindTypeReference [158, 160), i=49, next=0
+                    KindIdentifier "U" [158, 160), i=50, next=0
+              KindIndexedAccessType [162, 169), i=51, next=0
+                KindTypeReference [162, 166), i=52, next=54
+                  KindIdentifier "Obj" [162, 166), i=53, next=0
+                KindTypeReference [167, 168), i=54, next=0
+                  KindIdentifier "K" [167, 168), i=55, next=0
+        KindVoidKeyword [175, 180), i=56, next=0
+    KindVariableStatement [181, 204), i=57, next=66
+      NodeList [181, 192), i=58, next=60
+        KindDeclareKeyword [181, 192), i=59, next=0
+      KindVariableDeclarationList [192, 203), i=60, next=0
+        NodeList [196, 203), i=61, next=0
+          KindVariableDeclaration [196, 203), i=62, next=0
+            KindIdentifier "f" [196, 198), i=63, next=64
+            KindTypeReference [199, 203), i=64, next=0
+              KindIdentifier "foo" [199, 203), i=65, next=0
+    KindVariableStatement [204, 225), i=66, next=75
+      NodeList [204, 213), i=67, next=69
+        KindDeclareKeyword [204, 213), i=68, next=0
+      KindVariableDeclarationList [213, 224), i=69, next=0
+        NodeList [217, 224), i=70, next=0
+          KindVariableDeclaration [217, 224), i=71, next=0
+            KindIdentifier "b" [217, 219), i=72, next=73
+            KindTypeReference [220, 224), i=73, next=0
+              KindIdentifier "bar" [220, 224), i=74, next=0
+    KindExpressionStatement [225, 233), i=75, next=0
+      KindBinaryExpression [225, 232), i=76, next=0
+        KindIdentifier "b" [225, 228), i=77, next=78
+        KindEqualsToken [228, 230), i=78, next=79
+        KindIdentifier "f" [230, 232), i=79, next=0

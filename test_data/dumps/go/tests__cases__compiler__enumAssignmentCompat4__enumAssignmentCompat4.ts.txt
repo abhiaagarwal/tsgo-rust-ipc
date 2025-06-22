@@ -1,0 +1,66 @@
+KindSourceFile [0, 306), i=1, next=0
+  NodeList [0, 304), i=2, next=0
+    KindModuleDeclaration [0, 123), i=3, next=28
+      KindIdentifier "M" [9, 11), i=4, next=5
+      KindModuleBlock [11, 123), i=5, next=0
+        NodeList [13, 120), i=6, next=0
+          KindEnumDeclaration [13, 59), i=7, next=14
+            NodeList [13, 25), i=8, next=10
+              KindExportKeyword [13, 25), i=9, next=0
+            KindIdentifier "MyEnum" [30, 37), i=10, next=11
+            NodeList [39, 52), i=11, next=0
+              KindEnumMember [39, 52), i=12, next=0
+                KindIdentifier "BAR" [39, 52), i=13, next=0
+          KindVariableStatement [59, 120), i=14, next=0
+            NodeList [59, 71), i=15, next=17
+              KindExportKeyword [59, 71), i=16, next=0
+            KindVariableDeclarationList [71, 119), i=17, next=0
+              NodeList [75, 119), i=18, next=0
+                KindVariableDeclaration [75, 119), i=19, next=0
+                  KindIdentifier "object2" [75, 83), i=20, next=21
+                  KindObjectLiteralExpression [85, 119), i=21, next=0
+                    NodeList [87, 112), i=22, next=0
+                      KindPropertyAssignment [87, 112), i=23, next=0
+                        KindIdentifier "foo" [87, 100), i=24, next=25
+                        KindPropertyAccessExpression [101, 112), i=25, next=0
+                          KindIdentifier "MyEnum" [101, 108), i=26, next=27
+                          KindIdentifier "BAR" [109, 112), i=27, next=0
+    KindModuleDeclaration [123, 251), i=28, next=54
+      KindIdentifier "N" [136, 138), i=29, next=30
+      KindModuleBlock [138, 251), i=30, next=0
+        NodeList [140, 248), i=31, next=0
+          KindEnumDeclaration [140, 186), i=32, next=39
+            NodeList [140, 152), i=33, next=35
+              KindExportKeyword [140, 152), i=34, next=0
+            KindIdentifier "MyEnum" [157, 164), i=35, next=36
+            NodeList [166, 179), i=36, next=0
+              KindEnumMember [166, 179), i=37, next=0
+                KindIdentifier "FOO" [166, 179), i=38, next=0
+          KindEmptyStatement [186, 187), i=39, next=40
+          KindVariableStatement [187, 248), i=40, next=0
+            NodeList [187, 199), i=41, next=43
+              KindExportKeyword [187, 199), i=42, next=0
+            KindVariableDeclarationList [199, 247), i=43, next=0
+              NodeList [203, 247), i=44, next=0
+                KindVariableDeclaration [203, 247), i=45, next=0
+                  KindIdentifier "object1" [203, 211), i=46, next=47
+                  KindObjectLiteralExpression [213, 247), i=47, next=0
+                    NodeList [215, 240), i=48, next=0
+                      KindPropertyAssignment [215, 240), i=49, next=0
+                        KindIdentifier "foo" [215, 228), i=50, next=51
+                        KindPropertyAccessExpression [229, 240), i=51, next=0
+                          KindIdentifier "MyEnum" [229, 236), i=52, next=53
+                          KindIdentifier "FOO" [237, 240), i=53, next=0
+    KindVariableStatement [251, 304), i=54, next=0
+      KindVariableDeclarationList [251, 303), i=55, next=0
+        NodeList [258, 303), i=56, next=0
+          KindVariableDeclaration [258, 303), i=57, next=0
+            KindIdentifier "broken" [258, 265), i=58, next=59
+            KindArrayLiteralExpression [267, 303), i=59, next=0
+              NodeList [269, 300), i=60, next=0
+                KindPropertyAccessExpression [269, 284), i=61, next=64
+                  KindIdentifier "N" [269, 276), i=62, next=63
+                  KindIdentifier "object1" [277, 284), i=63, next=0
+                KindPropertyAccessExpression [285, 300), i=64, next=0
+                  KindIdentifier "M" [285, 292), i=65, next=66
+                  KindIdentifier "object2" [293, 300), i=66, next=0

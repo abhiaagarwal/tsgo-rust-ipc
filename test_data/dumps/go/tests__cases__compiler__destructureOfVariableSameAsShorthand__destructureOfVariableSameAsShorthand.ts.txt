@@ -1,0 +1,118 @@
+KindSourceFile [0, 668), i=1, next=0
+  NodeList [0, 668), i=2, next=0
+    KindInterfaceDeclaration [0, 53), i=3, next=14
+      KindIdentifier "AxiosResponse" [9, 23), i=4, next=5
+      NodeList [24, 33), i=5, next=9
+        KindTypeParameter [24, 33), i=6, next=0
+          KindIdentifier "T" [24, 25), i=7, next=8
+          KindNeverKeyword [27, 33), i=8, next=0
+      NodeList [36, 50), i=9, next=0
+        KindPropertySignature [36, 50), i=10, next=0
+          KindIdentifier "data" [36, 46), i=11, next=12
+          KindTypeReference [47, 49), i=12, next=0
+            KindIdentifier "T" [47, 49), i=13, next=0
+    KindFunctionDeclaration [53, 125), i=14, next=34
+      NodeList [53, 64), i=15, next=17
+        KindDeclareKeyword [53, 64), i=16, next=0
+      KindIdentifier "get" [73, 77), i=17, next=18
+      NodeList [78, 109), i=18, next=29
+        KindTypeParameter [78, 87), i=19, next=22
+          KindIdentifier "T" [78, 79), i=20, next=21
+          KindNeverKeyword [81, 87), i=21, next=0
+        KindTypeParameter [88, 109), i=22, next=0
+          KindIdentifier "R" [88, 90), i=23, next=24
+          KindTypeReference [92, 109), i=24, next=0
+            KindIdentifier "AxiosResponse" [92, 106), i=25, next=26
+            NodeList [107, 108), i=26, next=0
+              KindTypeReference [107, 108), i=27, next=0
+                KindIdentifier "T" [107, 108), i=28, next=0
+      KindTypeReference [113, 124), i=29, next=0
+        KindIdentifier "Promise" [113, 121), i=30, next=31
+        NodeList [122, 123), i=31, next=0
+          KindTypeReference [122, 123), i=32, next=0
+            KindIdentifier "R" [122, 123), i=33, next=0
+    KindFunctionDeclaration [125, 668), i=34, next=0
+      NodeList [125, 134), i=35, next=37
+        KindAsyncKeyword [125, 134), i=36, next=0
+      KindIdentifier "main" [143, 148), i=37, next=38
+      KindBlock [150, 668), i=38, next=0
+        NodeList [152, 665), i=39, next=0
+          KindExpressionStatement [152, 295), i=40, next=62
+            KindCallExpression [152, 295), i=41, next=0
+              KindPropertyAccessExpression [152, 208), i=42, next=46
+                KindCallExpression [152, 203), i=43, next=45
+                  KindIdentifier "get" [152, 201), i=44, next=0
+                KindIdentifier "then" [204, 208), i=45, next=0
+              NodeList [209, 294), i=46, next=0
+                KindArrowFunction [209, 294), i=47, next=0
+                  NodeList [210, 218), i=48, next=51
+                    KindParameter [210, 218), i=49, next=0
+                      KindIdentifier "response" [210, 218), i=50, next=0
+                  KindEqualsGreaterThanToken [219, 222), i=51, next=52
+                  KindBlock [222, 294), i=52, next=0
+                    NodeList [224, 287), i=53, next=0
+                      KindVariableStatement [224, 287), i=54, next=0
+                        KindVariableDeclarationList [224, 286), i=55, next=0
+                          NodeList [265, 286), i=56, next=0
+                            KindVariableDeclaration [265, 286), i=57, next=0
+                              KindIdentifier "body" [265, 270), i=58, next=59
+                              KindPropertyAccessExpression [272, 286), i=59, next=0
+                                KindIdentifier "response" [272, 281), i=60, next=61
+                                KindIdentifier "data" [282, 286), i=61, next=0
+          KindExpressionStatement [295, 361), i=62, next=78
+            KindCallExpression [295, 361), i=63, next=0
+              KindPropertyAccessExpression [295, 311), i=64, next=68
+                KindCallExpression [295, 306), i=65, next=67
+                  KindIdentifier "get" [295, 304), i=66, next=0
+                KindIdentifier "then" [307, 311), i=67, next=0
+              NodeList [312, 360), i=68, next=0
+                KindArrowFunction [312, 360), i=69, next=0
+                  NodeList [313, 321), i=70, next=76
+                    KindParameter [313, 321), i=71, next=0
+                      KindObjectBindingPattern [313, 321), i=72, next=0
+                        NodeList [314, 319), i=73, next=0
+                          KindBindingElement [314, 319), i=74, next=0
+                            KindIdentifier "data" [314, 319), i=75, next=0
+                  KindEqualsGreaterThanToken [322, 325), i=76, next=77
+                  KindBlock [325, 360), i=77, next=0
+          KindVariableStatement [361, 395), i=78, next=86
+            KindVariableDeclarationList [361, 395), i=79, next=0
+              NodeList [372, 395), i=80, next=0
+                KindVariableDeclaration [372, 395), i=81, next=0
+                  KindIdentifier "response" [372, 381), i=82, next=83
+                  KindAwaitExpression [383, 395), i=83, next=0
+                    KindCallExpression [389, 395), i=84, next=0
+                      KindIdentifier "get" [389, 393), i=85, next=0
+          KindVariableStatement [395, 450), i=86, next=94
+            KindVariableDeclarationList [395, 449), i=87, next=0
+              NodeList [428, 449), i=88, next=0
+                KindVariableDeclaration [428, 449), i=89, next=0
+                  KindIdentifier "body" [428, 433), i=90, next=91
+                  KindPropertyAccessExpression [435, 449), i=91, next=0
+                    KindIdentifier "response" [435, 444), i=92, next=93
+                    KindIdentifier "data" [445, 449), i=93, next=0
+          KindVariableStatement [450, 514), i=94, next=107
+            KindVariableDeclarationList [450, 513), i=95, next=0
+              NodeList [483, 513), i=96, next=0
+                KindVariableDeclaration [483, 513), i=97, next=0
+                  KindObjectBindingPattern [483, 492), i=98, next=102
+                    NodeList [485, 490), i=99, next=0
+                      KindBindingElement [485, 490), i=100, next=0
+                        KindIdentifier "data" [485, 490), i=101, next=0
+                  KindAwaitExpression [494, 513), i=102, next=0
+                    KindCallExpression [500, 513), i=103, next=0
+                      KindIdentifier "get" [500, 504), i=104, next=105
+                      NodeList [505, 510), i=105, next=0
+                        KindNeverKeyword [505, 510), i=106, next=0
+          KindVariableStatement [514, 665), i=107, next=0
+            KindVariableDeclarationList [514, 664), i=108, next=0
+              NodeList [626, 664), i=109, next=0
+                KindVariableDeclaration [626, 664), i=110, next=0
+                  KindObjectBindingPattern [626, 650), i=111, next=116
+                    NodeList [628, 648), i=112, next=0
+                      KindBindingElement [628, 648), i=113, next=0
+                        KindIdentifier "data" [628, 633), i=114, next=115
+                        KindIdentifier "shouldBeNever" [634, 648), i=115, next=0
+                  KindAwaitExpression [652, 664), i=116, next=0
+                    KindCallExpression [658, 664), i=117, next=0
+                      KindIdentifier "get" [658, 662), i=118, next=0

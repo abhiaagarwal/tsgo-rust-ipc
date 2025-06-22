@@ -1,0 +1,302 @@
+KindSourceFile [0, 1524), i=1, next=0
+  NodeList [0, 1523), i=2, next=0
+    KindTypeAliasDeclaration [0, 28), i=3, next=14
+      KindIdentifier "Values" [4, 11), i=4, next=5
+      NodeList [12, 13), i=5, next=8
+        KindTypeParameter [12, 13), i=6, next=0
+          KindIdentifier "T" [12, 13), i=7, next=0
+      KindIndexedAccessType [16, 27), i=8, next=0
+        KindTypeReference [16, 18), i=9, next=11
+          KindIdentifier "T" [16, 18), i=10, next=0
+        KindTypeOperator [19, 26), i=11, next=0
+          KindTypeReference [24, 26), i=12, next=0
+            KindIdentifier "T" [24, 26), i=13, next=0
+    KindTypeAliasDeclaration [28, 69), i=14, next=21
+      KindIdentifier "EventObject" [34, 46), i=15, next=16
+      KindTypeLiteral [48, 68), i=16, next=0
+        NodeList [50, 66), i=17, next=0
+          KindPropertySignature [50, 66), i=18, next=0
+            KindIdentifier "type" [50, 57), i=19, next=20
+            KindStringKeyword [58, 65), i=20, next=0
+    KindInterfaceDeclaration [69, 162), i=21, next=38
+      KindIdentifier "ActorLogic" [80, 91), i=22, next=23
+      NodeList [92, 118), i=23, next=28
+        KindTypeParameter [92, 118), i=24, next=0
+          KindIdentifier "TEvent" [92, 98), i=25, next=26
+          KindTypeReference [106, 118), i=26, next=0
+            KindIdentifier "EventObject" [106, 118), i=27, next=0
+      NodeList [121, 160), i=28, next=0
+        KindPropertySignature [121, 160), i=29, next=0
+          KindIdentifier "transition" [121, 134), i=30, next=31
+          KindFunctionType [135, 159), i=31, next=0
+            NodeList [137, 147), i=32, next=37
+              KindParameter [137, 147), i=33, next=0
+                KindIdentifier "ev" [137, 139), i=34, next=35
+                KindTypeReference [140, 147), i=35, next=0
+                  KindIdentifier "TEvent" [140, 147), i=36, next=0
+            KindUnknownKeyword [151, 159), i=37, next=0
+    KindTypeAliasDeclaration [162, 207), i=38, next=44
+      KindIdentifier "UnknownActorLogic" [168, 186), i=39, next=40
+      KindTypeReference [188, 206), i=40, next=0
+        KindIdentifier "ActorLogic" [188, 199), i=41, next=42
+        NodeList [200, 205), i=42, next=0
+          KindNeverKeyword [200, 205), i=43, next=0
+    KindInterfaceDeclaration [207, 279), i=44, next=54
+      KindIdentifier "ProvidedActor" [218, 232), i=45, next=46
+      NodeList [234, 277), i=46, next=0
+        KindPropertySignature [234, 249), i=47, next=50
+          KindIdentifier "src" [234, 240), i=48, next=49
+          KindStringKeyword [241, 248), i=49, next=0
+        KindPropertySignature [249, 277), i=50, next=0
+          KindIdentifier "logic" [249, 257), i=51, next=52
+          KindTypeReference [258, 276), i=52, next=0
+            KindIdentifier "UnknownActorLogic" [258, 276), i=53, next=0
+    KindInterfaceDeclaration [279, 375), i=54, next=69
+      KindIdentifier "ActionFunction" [290, 305), i=55, next=56
+      NodeList [306, 334), i=56, next=61
+        KindTypeParameter [306, 334), i=57, next=0
+          KindIdentifier "TActor" [306, 312), i=58, next=59
+          KindTypeReference [320, 334), i=59, next=0
+            KindIdentifier "ProvidedActor" [320, 334), i=60, next=0
+      NodeList [337, 373), i=61, next=0
+        KindCallSignature [337, 349), i=62, next=64
+          KindVoidKeyword [343, 348), i=63, next=0
+        KindPropertySignature [349, 373), i=64, next=0
+          KindIdentifier "_out_TActor" [349, 363), i=65, next=66
+          KindQuestionToken [363, 364), i=66, next=67
+          KindTypeReference [365, 372), i=67, next=0
+            KindIdentifier "TActor" [365, 372), i=68, next=0
+    KindInterfaceDeclaration [375, 469), i=69, next=84
+      KindIdentifier "AssignAction" [386, 399), i=70, next=71
+      NodeList [400, 428), i=71, next=76
+        KindTypeParameter [400, 428), i=72, next=0
+          KindIdentifier "TActor" [400, 406), i=73, next=74
+          KindTypeReference [414, 428), i=74, next=0
+            KindIdentifier "ProvidedActor" [414, 428), i=75, next=0
+      NodeList [431, 467), i=76, next=0
+        KindCallSignature [431, 443), i=77, next=79
+          KindVoidKeyword [437, 442), i=78, next=0
+        KindPropertySignature [443, 467), i=79, next=0
+          KindIdentifier "_out_TActor" [443, 457), i=80, next=81
+          KindQuestionToken [457, 458), i=81, next=82
+          KindTypeReference [459, 466), i=82, next=0
+            KindIdentifier "TActor" [459, 466), i=83, next=0
+    KindInterfaceDeclaration [469, 562), i=84, next=100
+      KindIdentifier "MachineConfig" [480, 494), i=85, next=86
+      NodeList [495, 523), i=86, next=91
+        KindTypeParameter [495, 523), i=87, next=0
+          KindIdentifier "TActor" [495, 501), i=88, next=89
+          KindTypeReference [509, 523), i=89, next=0
+            KindIdentifier "ProvidedActor" [509, 523), i=90, next=0
+      NodeList [526, 560), i=91, next=0
+        KindPropertySignature [526, 560), i=92, next=0
+          KindIdentifier "entry" [526, 534), i=93, next=94
+          KindQuestionToken [534, 535), i=94, next=95
+          KindTypeReference [536, 559), i=95, next=0
+            KindIdentifier "ActionFunction" [536, 551), i=96, next=97
+            NodeList [552, 558), i=97, next=0
+              KindTypeReference [552, 558), i=98, next=0
+                KindIdentifier "TActor" [552, 558), i=99, next=0
+    KindFunctionDeclaration [562, 695), i=100, next=132
+      NodeList [562, 571), i=101, next=103
+        KindDeclareKeyword [562, 571), i=102, next=0
+      KindIdentifier "assign" [580, 587), i=103, next=104
+      NodeList [588, 616), i=104, next=109
+        KindTypeParameter [588, 616), i=105, next=0
+          KindIdentifier "TActor" [588, 594), i=106, next=107
+          KindTypeReference [602, 616), i=107, next=0
+            KindIdentifier "ProvidedActor" [602, 616), i=108, next=0
+      NodeList [618, 670), i=109, next=127
+        KindParameter [618, 669), i=110, next=0
+          KindIdentifier "_" [618, 622), i=111, next=112
+          KindFunctionType [623, 669), i=112, next=0
+            NodeList [625, 662), i=113, next=126
+              KindParameter [625, 662), i=114, next=0
+                KindIdentifier "spawn" [625, 630), i=115, next=116
+                KindFunctionType [631, 662), i=116, next=0
+                  NodeList [633, 653), i=117, next=125
+                    KindParameter [633, 653), i=118, next=0
+                      KindIdentifier "actor" [633, 638), i=119, next=120
+                      KindIndexedAccessType [639, 653), i=120, next=0
+                        KindTypeReference [639, 646), i=121, next=123
+                          KindIdentifier "TActor" [639, 646), i=122, next=0
+                        KindLiteralType [647, 652), i=123, next=0
+                          KindStringLiteral "src" [647, 652), i=124, next=0
+                  KindVoidKeyword [657, 662), i=125, next=0
+            KindTypeLiteral [666, 669), i=126, next=0
+      KindTypeReference [673, 694), i=127, next=0
+        KindIdentifier "AssignAction" [673, 686), i=128, next=129
+        NodeList [687, 693), i=129, next=0
+          KindTypeReference [687, 693), i=130, next=0
+            KindIdentifier "TActor" [687, 693), i=131, next=0
+    KindTypeAliasDeclaration [695, 870), i=132, next=168
+      KindIdentifier "ToProvidedActor" [701, 717), i=133, next=134
+      NodeList [718, 767), i=134, next=143
+        KindTypeParameter [718, 767), i=135, next=0
+          KindIdentifier "TActors" [718, 725), i=136, next=137
+          KindTypeReference [733, 767), i=137, next=0
+            KindIdentifier "Record" [733, 740), i=138, next=139
+            NodeList [741, 766), i=139, next=0
+              KindStringKeyword [741, 747), i=140, next=141
+              KindTypeReference [748, 766), i=141, next=0
+                KindIdentifier "UnknownActorLogic" [748, 766), i=142, next=0
+      KindTypeReference [770, 869), i=143, next=0
+        KindIdentifier "Values" [770, 779), i=144, next=145
+        NodeList [780, 868), i=145, next=0
+          KindMappedType [780, 868), i=146, next=0
+            KindTypeParameter [787, 814), i=147, next=155
+              KindIdentifier "K" [787, 788), i=148, next=149
+              KindIntersectionType [791, 814), i=149, next=0
+                NodeList [791, 814), i=150, next=0
+                  KindTypeOperator [791, 805), i=151, next=154
+                    KindTypeReference [797, 805), i=152, next=0
+                      KindIdentifier "TActors" [797, 805), i=153, next=0
+                  KindStringKeyword [807, 814), i=154, next=0
+            KindTypeLiteral [816, 863), i=155, next=0
+              NodeList [818, 857), i=156, next=0
+                KindPropertySignature [818, 832), i=157, next=161
+                  KindIdentifier "src" [818, 828), i=158, next=159
+                  KindTypeReference [829, 831), i=159, next=0
+                    KindIdentifier "K" [829, 831), i=160, next=0
+                KindPropertySignature [832, 857), i=161, next=0
+                  KindIdentifier "logic" [832, 844), i=162, next=163
+                  KindIndexedAccessType [845, 856), i=163, next=0
+                    KindTypeReference [845, 853), i=164, next=166
+                      KindIdentifier "TActors" [845, 853), i=165, next=0
+                    KindTypeReference [854, 855), i=166, next=0
+                      KindIdentifier "K" [854, 855), i=167, next=0
+    KindFunctionDeclaration [870, 1158), i=168, next=226
+      NodeList [870, 879), i=169, next=171
+        KindDeclareKeyword [870, 879), i=170, next=0
+      KindIdentifier "setup" [888, 894), i=171, next=172
+      NodeList [895, 953), i=172, next=182
+        KindTypeParameter [895, 952), i=173, next=0
+          KindIdentifier "TActors" [895, 905), i=174, next=175
+          KindTypeReference [913, 947), i=175, next=181
+            KindIdentifier "Record" [913, 920), i=176, next=177
+            NodeList [921, 946), i=177, next=0
+              KindStringKeyword [921, 927), i=178, next=179
+              KindTypeReference [928, 946), i=179, next=0
+                KindIdentifier "UnknownActorLogic" [928, 946), i=180, next=0
+          KindTypeLiteral [949, 952), i=181, next=0
+      NodeList [956, 1026), i=182, next=202
+        KindParameter [956, 1026), i=183, next=0
+          KindIdentifier "implementations" [956, 971), i=184, next=185
+          KindQuestionToken [971, 972), i=185, next=186
+          KindTypeLiteral [973, 1026), i=186, next=0
+            NodeList [975, 1024), i=187, next=0
+              KindPropertySignature [975, 1024), i=188, next=0
+                KindIdentifier "actors" [975, 984), i=189, next=190
+                KindQuestionToken [984, 985), i=190, next=191
+                KindMappedType [986, 1023), i=191, next=0
+                  KindTypeParameter [990, 1008), i=192, next=197
+                    KindIdentifier "K" [990, 991), i=193, next=194
+                    KindTypeOperator [994, 1008), i=194, next=0
+                      KindTypeReference [1000, 1008), i=195, next=0
+                        KindIdentifier "TActors" [1000, 1008), i=196, next=0
+                  KindIndexedAccessType [1010, 1021), i=197, next=0
+                    KindTypeReference [1010, 1018), i=198, next=200
+                      KindIdentifier "TActors" [1010, 1018), i=199, next=0
+                    KindTypeReference [1019, 1020), i=200, next=0
+                      KindIdentifier "K" [1019, 1020), i=201, next=0
+      KindTypeLiteral [1028, 1157), i=202, next=0
+        NodeList [1030, 1155), i=203, next=0
+          KindPropertySignature [1030, 1155), i=204, next=0
+            KindIdentifier "createMachine" [1030, 1046), i=205, next=206
+            KindFunctionType [1047, 1154), i=206, next=0
+              NodeList [1049, 1116), i=207, next=220
+                KindTypeParameter [1049, 1115), i=208, next=0
+                  NodeList [1049, 1059), i=209, next=211
+                    KindConstKeyword [1049, 1059), i=210, next=0
+                  KindIdentifier "TConfig" [1059, 1067), i=211, next=212
+                  KindTypeReference [1075, 1115), i=212, next=0
+                    KindIdentifier "MachineConfig" [1075, 1089), i=213, next=214
+                    NodeList [1090, 1114), i=214, next=0
+                      KindTypeReference [1090, 1114), i=215, next=0
+                        KindIdentifier "ToProvidedActor" [1090, 1105), i=216, next=217
+                        NodeList [1106, 1113), i=217, next=0
+                          KindTypeReference [1106, 1113), i=218, next=0
+                            KindIdentifier "TActors" [1106, 1113), i=219, next=0
+              NodeList [1121, 1142), i=220, next=225
+                KindParameter [1121, 1141), i=221, next=0
+                  KindIdentifier "config" [1121, 1132), i=222, next=223
+                  KindTypeReference [1133, 1141), i=223, next=0
+                    KindIdentifier "TConfig" [1133, 1141), i=224, next=0
+              KindVoidKeyword [1149, 1154), i=225, next=0
+    KindVariableStatement [1158, 1222), i=226, next=242
+      NodeList [1158, 1167), i=227, next=229
+        KindDeclareKeyword [1158, 1167), i=228, next=0
+      KindVariableDeclarationList [1167, 1221), i=229, next=0
+        NodeList [1173, 1221), i=230, next=0
+          KindVariableDeclaration [1173, 1221), i=231, next=0
+            KindIdentifier "counterLogic" [1173, 1186), i=232, next=233
+            KindTypeReference [1187, 1221), i=233, next=0
+              KindIdentifier "ActorLogic" [1187, 1198), i=234, next=235
+              NodeList [1199, 1220), i=235, next=0
+                KindTypeLiteral [1199, 1220), i=236, next=0
+                  NodeList [1200, 1218), i=237, next=0
+                    KindPropertySignature [1200, 1218), i=238, next=0
+                      KindIdentifier "type" [1200, 1205), i=239, next=240
+                      KindLiteralType [1206, 1218), i=240, next=0
+                        KindStringLiteral "INCREMENT" [1206, 1218), i=241, next=0
+    KindExpressionStatement [1222, 1415), i=242, next=29
+      KindCallExpression [1222, 1414), i=243, next=0
+        KindPropertyAccessExpression [1222, 1302), i=244, next=2
+          KindCallExpression [1222, 1288), i=245, next=1
+            KindIdentifier "setup" [1222, 1246), i=246, next=247
+            NodeList [1247, 1287), i=247, next=0
+              KindObjectLiteralExpression [1247, 1287), i=248, next=0
+                NodeList [1248, 1285), i=249, next=0
+                  KindPropertyAssignment [1248, 1284), i=250, next=0
+                    KindIdentifier "actors" [1248, 1257), i=251, next=252
+                    KindObjectLiteralExpression [1258, 1284), i=252, next=0
+                      NodeList [1260, 1282), i=253, next=0
+                        KindPropertyAssignment [1260, 1282), i=254, next=0
+                          KindIdentifier "counter" [1260, 1268), i=255, next=0
+                          KindIdentifier "counterLogic" [1269, 1282), i=256, next=0
+          KindIdentifier "createMachine" [1289, 1302), i=257, next=0
+        NodeList [1303, 1413), i=258, next=0
+          KindObjectLiteralExpression [1303, 1413), i=259, next=0
+            NodeList [1304, 1411), i=260, next=0
+              KindPropertyAssignment [1304, 1410), i=261, next=0
+                KindIdentifier "entry" [1304, 1312), i=262, next=7
+                KindCallExpression [1313, 1410), i=263, next=0
+                  KindIdentifier "assign" [1313, 1320), i=264, next=9
+                  NodeList [1321, 1409), i=265, next=0
+                    KindArrowFunction [1321, 1409), i=266, next=0
+                      NodeList [1322, 1327), i=267, next=14
+                        KindParameter [1322, 1327), i=268, next=0
+                          KindIdentifier "spawn" [1322, 1327), i=269, next=0
+                      KindEqualsGreaterThanToken [1328, 1331), i=270, next=15
+                      KindBlock [1331, 1409), i=271, next=0
+                        NodeList [1333, 1405), i=272, next=0
+                          KindExpressionStatement [1333, 1355), i=273, next=22
+                            KindCallExpression [1333, 1354), i=274, next=0
+                              KindIdentifier "spawn" [1333, 1343), i=275, next=20
+                              NodeList [1344, 1353), i=276, next=0
+                                KindStringLiteral "counter" [1344, 1353), i=277, next=0
+                          KindExpressionStatement [1355, 1381), i=278, next=27
+                            KindCallExpression [1355, 1380), i=279, next=0
+                              KindIdentifier "spawn" [1355, 1371), i=280, next=25
+                              NodeList [1372, 1379), i=281, next=0
+                                KindStringLiteral "alarm" [1372, 1379), i=282, next=0
+                          KindReturnStatement [1381, 1405), i=283, next=0
+                            KindObjectLiteralExpression [1401, 1404), i=284, next=0
+    KindExpressionStatement [1415, 1523), i=285, next=0
+      KindCallExpression [1415, 1522), i=286, next=0
+        KindPropertyAccessExpression [1415, 1488), i=287, next=35
+          KindCallExpression [1415, 1474), i=288, next=34
+            KindIdentifier "setup" [1415, 1472), i=289, next=0
+          KindIdentifier "createMachine" [1475, 1488), i=290, next=0
+        NodeList [1489, 1521), i=291, next=0
+          KindObjectLiteralExpression [1489, 1521), i=292, next=0
+            NodeList [1490, 1519), i=293, next=0
+              KindPropertyAssignment [1490, 1518), i=294, next=0
+                KindIdentifier "entry" [1490, 1498), i=295, next=40
+                KindCallExpression [1499, 1518), i=296, next=0
+                  KindIdentifier "assign" [1499, 1506), i=297, next=42
+                  NodeList [1507, 1517), i=298, next=0
+                    KindArrowFunction [1507, 1517), i=299, next=0
+                      KindEqualsGreaterThanToken [1509, 1512), i=300, next=45
+                      KindParenthesizedExpression [1512, 1517), i=301, next=0
+                        KindObjectLiteralExpression [1514, 1516), i=302, next=0

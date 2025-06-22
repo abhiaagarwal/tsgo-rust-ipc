@@ -1,0 +1,235 @@
+KindSourceFile [0, 1832), i=1, next=0
+  NodeList [0, 1832), i=2, next=0
+    KindVariableStatement [0, 16), i=3, next=9
+      KindVariableDeclarationList [0, 15), i=4, next=0
+        NodeList [3, 15), i=5, next=0
+          KindVariableDeclaration [3, 15), i=6, next=0
+            KindIdentifier "str" [3, 7), i=7, next=8
+            KindStringKeyword [8, 15), i=8, next=0
+    KindVariableStatement [16, 36), i=9, next=15
+      KindVariableDeclarationList [16, 35), i=10, next=0
+        NodeList [21, 35), i=11, next=0
+          KindVariableDeclaration [21, 35), i=12, next=0
+            KindIdentifier "bool" [21, 26), i=13, next=14
+            KindBooleanKeyword [27, 35), i=14, next=0
+    KindVariableStatement [36, 54), i=15, next=21
+      KindVariableDeclarationList [36, 53), i=16, next=0
+        NodeList [41, 53), i=17, next=0
+          KindVariableDeclaration [41, 53), i=18, next=0
+            KindIdentifier "num" [41, 45), i=19, next=20
+            KindNumberKeyword [46, 53), i=20, next=0
+    KindVariableStatement [54, 86), i=21, next=30
+      KindVariableDeclarationList [54, 85), i=22, next=0
+        NodeList [59, 85), i=23, next=0
+          KindVariableDeclaration [59, 85), i=24, next=0
+            KindIdentifier "strOrNum" [59, 68), i=25, next=26
+            KindUnionType [69, 85), i=26, next=0
+              NodeList [69, 85), i=27, next=0
+                KindStringKeyword [69, 76), i=28, next=29
+                KindNumberKeyword [78, 85), i=29, next=0
+    KindVariableStatement [86, 134), i=30, next=40
+      KindVariableDeclarationList [86, 133), i=31, next=0
+        NodeList [91, 133), i=32, next=0
+          KindVariableDeclaration [91, 133), i=33, next=0
+            KindIdentifier "strOrNumOrBool" [91, 106), i=34, next=35
+            KindUnionType [107, 133), i=35, next=0
+              NodeList [107, 133), i=36, next=0
+                KindStringKeyword [107, 114), i=37, next=38
+                KindNumberKeyword [116, 123), i=38, next=39
+                KindBooleanKeyword [125, 133), i=39, next=0
+    KindVariableStatement [134, 168), i=40, next=49
+      KindVariableDeclarationList [134, 167), i=41, next=0
+        NodeList [139, 167), i=42, next=0
+          KindVariableDeclaration [139, 167), i=43, next=0
+            KindIdentifier "numOrBool" [139, 149), i=44, next=45
+            KindUnionType [150, 167), i=45, next=0
+              NodeList [150, 167), i=46, next=0
+                KindNumberKeyword [150, 157), i=47, next=48
+                KindBooleanKeyword [159, 167), i=48, next=0
+    KindClassDeclaration [168, 192), i=49, next=56
+      KindIdentifier "C" [175, 177), i=50, next=51
+      NodeList [179, 190), i=51, next=0
+        KindPropertyDeclaration [179, 190), i=52, next=0
+          NodeList [179, 187), i=53, next=55
+            KindPrivateKeyword [179, 187), i=54, next=0
+          KindIdentifier "p" [187, 189), i=55, next=0
+    KindVariableStatement [192, 203), i=56, next=63
+      KindVariableDeclarationList [192, 202), i=57, next=0
+        NodeList [197, 202), i=58, next=0
+          KindVariableDeclaration [197, 202), i=59, next=0
+            KindIdentifier "c" [197, 199), i=60, next=61
+            KindTypeReference [200, 202), i=61, next=0
+              KindIdentifier "C" [200, 202), i=62, next=0
+    KindVariableStatement [203, 229), i=63, next=73
+      KindVariableDeclarationList [203, 228), i=64, next=0
+        NodeList [208, 228), i=65, next=0
+          KindVariableDeclaration [208, 228), i=66, next=0
+            KindIdentifier "cOrBool" [208, 216), i=67, next=68
+            KindUnionType [217, 228), i=68, next=0
+              NodeList [217, 228), i=69, next=0
+                KindTypeReference [217, 219), i=70, next=72
+                  KindIdentifier "C" [217, 219), i=71, next=0
+                KindBooleanKeyword [220, 228), i=72, next=0
+    KindVariableStatement [229, 284), i=73, next=85
+      KindVariableDeclarationList [229, 283), i=74, next=0
+        NodeList [234, 283), i=75, next=0
+          KindVariableDeclaration [234, 283), i=76, next=0
+            KindIdentifier "strOrNumOrBoolOrC" [234, 252), i=77, next=78
+            KindUnionType [253, 283), i=78, next=0
+              NodeList [253, 283), i=79, next=0
+                KindStringKeyword [253, 260), i=80, next=81
+                KindNumberKeyword [262, 269), i=81, next=82
+                KindBooleanKeyword [271, 279), i=82, next=83
+                KindTypeReference [281, 283), i=83, next=0
+                  KindIdentifier "C" [281, 283), i=84, next=0
+    KindIfStatement [284, 839), i=85, next=112
+      KindBinaryExpression [660, 732), i=86, next=98
+        KindBinaryExpression [660, 694), i=87, next=92
+          KindTypeOfExpression [660, 681), i=88, next=90
+            KindIdentifier "strOrNumOrBool" [666, 681), i=89, next=0
+          KindEqualsEqualsEqualsToken [681, 685), i=90, next=91
+          KindStringLiteral "string" [685, 694), i=91, next=0
+        KindBarBarToken [694, 697), i=92, next=93
+        KindBinaryExpression [697, 732), i=93, next=0
+          KindTypeOfExpression [697, 719), i=94, next=96
+            KindIdentifier "strOrNumOrBool" [704, 719), i=95, next=0
+          KindEqualsEqualsEqualsToken [719, 723), i=96, next=97
+          KindStringLiteral "number" [723, 732), i=97, next=0
+      KindBlock [733, 789), i=98, next=105
+        NodeList [735, 767), i=99, next=0
+          KindExpressionStatement [735, 767), i=100, next=0
+            KindBinaryExpression [735, 766), i=101, next=0
+              KindIdentifier "strOrNum" [735, 749), i=102, next=103
+              KindEqualsToken [749, 751), i=103, next=104
+              KindIdentifier "strOrNumOrBool" [751, 766), i=104, next=0
+      KindBlock [795, 839), i=105, next=0
+        NodeList [797, 825), i=106, next=0
+          KindExpressionStatement [797, 825), i=107, next=0
+            KindBinaryExpression [797, 824), i=108, next=0
+              KindIdentifier "bool" [797, 807), i=109, next=110
+              KindEqualsToken [807, 809), i=110, next=111
+              KindIdentifier "strOrNumOrBool" [809, 824), i=111, next=0
+    KindIfStatement [839, 1130), i=112, next=146
+      KindBinaryExpression [890, 1010), i=113, next=132
+        KindBinaryExpression [890, 968), i=114, next=126
+          KindBinaryExpression [890, 927), i=115, next=120
+            KindTypeOfExpression [890, 914), i=116, next=118
+              KindIdentifier "strOrNumOrBoolOrC" [896, 914), i=117, next=0
+            KindEqualsEqualsEqualsToken [914, 918), i=118, next=119
+            KindStringLiteral "string" [918, 927), i=119, next=0
+          KindBarBarToken [927, 930), i=120, next=121
+          KindBinaryExpression [930, 968), i=121, next=0
+            KindTypeOfExpression [930, 955), i=122, next=124
+              KindIdentifier "strOrNumOrBoolOrC" [937, 955), i=123, next=0
+            KindEqualsEqualsEqualsToken [955, 959), i=124, next=125
+            KindStringLiteral "number" [959, 968), i=125, next=0
+        KindBarBarToken [968, 971), i=126, next=127
+        KindBinaryExpression [971, 1010), i=127, next=0
+          KindTypeOfExpression [971, 996), i=128, next=130
+            KindIdentifier "strOrNumOrBoolOrC" [978, 996), i=129, next=0
+          KindEqualsEqualsEqualsToken [996, 1000), i=130, next=131
+          KindStringLiteral "boolean" [1000, 1010), i=131, next=0
+      KindBlock [1011, 1086), i=132, next=139
+        NodeList [1013, 1054), i=133, next=0
+          KindExpressionStatement [1013, 1054), i=134, next=0
+            KindBinaryExpression [1013, 1053), i=135, next=0
+              KindIdentifier "strOrNumOrBool" [1013, 1033), i=136, next=137
+              KindEqualsToken [1033, 1035), i=137, next=138
+              KindIdentifier "strOrNumOrBoolOrC" [1035, 1053), i=138, next=0
+      KindBlock [1092, 1130), i=139, next=0
+        NodeList [1094, 1122), i=140, next=0
+          KindExpressionStatement [1094, 1122), i=141, next=0
+            KindBinaryExpression [1094, 1121), i=142, next=0
+              KindIdentifier "c" [1094, 1101), i=143, next=144
+              KindEqualsToken [1101, 1103), i=144, next=145
+              KindIdentifier "strOrNumOrBoolOrC" [1103, 1121), i=145, next=0
+    KindIfStatement [1130, 1573), i=146, next=204
+      KindBinaryExpression [1197, 1314), i=147, next=166
+        KindBinaryExpression [1197, 1275), i=148, next=160
+          KindBinaryExpression [1197, 1234), i=149, next=154
+            KindTypeOfExpression [1197, 1221), i=150, next=152
+              KindIdentifier "strOrNumOrBoolOrC" [1203, 1221), i=151, next=0
+            KindEqualsEqualsEqualsToken [1221, 1225), i=152, next=153
+            KindStringLiteral "string" [1225, 1234), i=153, next=0
+          KindBarBarToken [1234, 1237), i=154, next=155
+          KindBinaryExpression [1237, 1275), i=155, next=0
+            KindTypeOfExpression [1237, 1262), i=156, next=158
+              KindIdentifier "strOrNumOrBoolOrC" [1244, 1262), i=157, next=0
+            KindEqualsEqualsEqualsToken [1262, 1266), i=158, next=159
+            KindStringLiteral "number" [1266, 1275), i=159, next=0
+        KindBarBarToken [1275, 1278), i=160, next=161
+        KindBinaryExpression [1278, 1314), i=161, next=0
+          KindTypeOfExpression [1278, 1300), i=162, next=164
+            KindIdentifier "strOrNumOrBool" [1285, 1300), i=163, next=0
+          KindExclamationEqualsEqualsToken [1300, 1304), i=164, next=165
+          KindStringLiteral "boolean" [1304, 1314), i=165, next=0
+      KindBlock [1315, 1474), i=166, next=192
+        NodeList [1317, 1471), i=167, next=0
+          KindVariableStatement [1317, 1381), i=168, next=181
+            KindVariableDeclarationList [1317, 1380), i=169, next=0
+              NodeList [1326, 1380), i=170, next=0
+                KindVariableDeclaration [1326, 1380), i=171, next=0
+                  KindIdentifier "r1" [1326, 1329), i=172, next=173
+                  KindUnionType [1330, 1360), i=173, next=180
+                    NodeList [1330, 1360), i=174, next=0
+                      KindStringKeyword [1330, 1337), i=175, next=176
+                      KindNumberKeyword [1339, 1346), i=176, next=177
+                      KindBooleanKeyword [1348, 1356), i=177, next=178
+                      KindTypeReference [1358, 1360), i=178, next=0
+                        KindIdentifier "C" [1358, 1360), i=179, next=0
+                  KindIdentifier "strOrNumOrBoolOrC" [1362, 1380), i=180, next=0
+          KindVariableStatement [1381, 1471), i=181, next=0
+            KindVariableDeclarationList [1381, 1470), i=182, next=0
+              NodeList [1423, 1470), i=183, next=0
+                KindVariableDeclaration [1423, 1470), i=184, next=0
+                  KindIdentifier "r2" [1423, 1426), i=185, next=186
+                  KindUnionType [1427, 1453), i=186, next=191
+                    NodeList [1427, 1453), i=187, next=0
+                      KindStringKeyword [1427, 1434), i=188, next=189
+                      KindNumberKeyword [1436, 1443), i=189, next=190
+                      KindBooleanKeyword [1445, 1453), i=190, next=0
+                  KindIdentifier "strOrNumOrBool" [1455, 1470), i=191, next=0
+      KindBlock [1480, 1573), i=192, next=0
+        NodeList [1482, 1559), i=193, next=0
+          KindExpressionStatement [1482, 1516), i=194, next=199
+            KindBinaryExpression [1482, 1515), i=195, next=0
+              KindIdentifier "cOrBool" [1482, 1495), i=196, next=197
+              KindEqualsToken [1495, 1497), i=197, next=198
+              KindIdentifier "strOrNumOrBoolOrC" [1497, 1515), i=198, next=0
+          KindExpressionStatement [1516, 1559), i=199, next=0
+            KindBinaryExpression [1516, 1558), i=200, next=0
+              KindIdentifier "bool" [1516, 1541), i=201, next=202
+              KindEqualsToken [1541, 1543), i=202, next=203
+              KindIdentifier "strOrNumOrBool" [1543, 1558), i=203, next=0
+    KindIfStatement [1573, 1832), i=204, next=0
+      KindBinaryExpression [1610, 1676), i=205, next=216
+        KindBinaryExpression [1610, 1644), i=206, next=211
+          KindTypeOfExpression [1610, 1631), i=207, next=209
+            KindIdentifier "strOrNumOrBool" [1616, 1631), i=208, next=0
+          KindEqualsEqualsEqualsToken [1631, 1635), i=209, next=210
+          KindStringLiteral "string" [1635, 1644), i=210, next=0
+        KindBarBarToken [1644, 1647), i=211, next=212
+        KindBinaryExpression [1647, 1676), i=212, next=0
+          KindIdentifier "numOrBool" [1647, 1657), i=213, next=214
+          KindExclamationEqualsEqualsToken [1657, 1661), i=214, next=215
+          KindIdentifier "strOrNumOrBool" [1661, 1676), i=215, next=0
+      KindBlock [1677, 1768), i=216, next=229
+        NodeList [1679, 1736), i=217, next=0
+          KindVariableStatement [1679, 1736), i=218, next=0
+            KindVariableDeclarationList [1679, 1735), i=219, next=0
+              NodeList [1688, 1735), i=220, next=0
+                KindVariableDeclaration [1688, 1735), i=221, next=0
+                  KindIdentifier "r3" [1688, 1691), i=222, next=223
+                  KindUnionType [1692, 1718), i=223, next=228
+                    NodeList [1692, 1718), i=224, next=0
+                      KindStringKeyword [1692, 1699), i=225, next=226
+                      KindNumberKeyword [1701, 1708), i=226, next=227
+                      KindBooleanKeyword [1710, 1718), i=227, next=0
+                  KindIdentifier "strOrNumOrBool" [1720, 1735), i=228, next=0
+      KindBlock [1774, 1832), i=229, next=0
+        NodeList [1776, 1809), i=230, next=0
+          KindExpressionStatement [1776, 1809), i=231, next=0
+            KindBinaryExpression [1776, 1808), i=232, next=0
+              KindIdentifier "numOrBool" [1776, 1791), i=233, next=234
+              KindEqualsToken [1791, 1793), i=234, next=235
+              KindIdentifier "strOrNumOrBool" [1793, 1808), i=235, next=0

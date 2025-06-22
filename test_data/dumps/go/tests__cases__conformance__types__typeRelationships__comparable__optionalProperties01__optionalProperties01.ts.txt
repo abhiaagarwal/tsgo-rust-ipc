@@ -1,0 +1,44 @@
+KindSourceFile [0, 195), i=1, next=0
+  NodeList [0, 193), i=2, next=0
+    KindInterfaceDeclaration [0, 84), i=3, next=16
+      KindIdentifier "Foo" [9, 13), i=4, next=5
+      NodeList [15, 81), i=5, next=0
+        KindPropertySignature [15, 37), i=6, next=9
+          KindIdentifier "required1" [15, 28), i=7, next=8
+          KindStringKeyword [29, 36), i=8, next=0
+        KindPropertySignature [37, 59), i=9, next=12
+          KindIdentifier "required2" [37, 50), i=10, next=11
+          KindStringKeyword [51, 58), i=11, next=0
+        KindPropertySignature [59, 81), i=12, next=0
+          KindIdentifier "optional" [59, 71), i=13, next=14
+          KindQuestionToken [71, 72), i=14, next=15
+          KindStringKeyword [73, 80), i=15, next=0
+    KindVariableStatement [84, 131), i=16, next=29
+      KindVariableDeclarationList [84, 130), i=17, next=0
+        NodeList [93, 130), i=18, next=0
+          KindVariableDeclaration [93, 130), i=19, next=0
+            KindIdentifier "foo1" [93, 98), i=20, next=21
+            KindAsExpression [100, 130), i=21, next=0
+              KindObjectLiteralExpression [100, 123), i=22, next=27
+                NodeList [102, 121), i=23, next=0
+                  KindPropertyAssignment [102, 121), i=24, next=0
+                    KindIdentifier "required1" [102, 112), i=25, next=26
+                    KindStringLiteral "hello" [113, 121), i=26, next=0
+              KindTypeReference [126, 130), i=27, next=0
+                KindIdentifier "Foo" [126, 130), i=28, next=0
+    KindVariableStatement [131, 193), i=29, next=0
+      KindVariableDeclarationList [131, 192), i=30, next=0
+        NodeList [138, 192), i=31, next=0
+          KindVariableDeclaration [138, 192), i=32, next=0
+            KindIdentifier "foo2" [138, 143), i=33, next=34
+            KindAsExpression [145, 192), i=34, next=0
+              KindObjectLiteralExpression [145, 185), i=35, next=43
+                NodeList [147, 183), i=36, next=0
+                  KindPropertyAssignment [147, 166), i=37, next=40
+                    KindIdentifier "required1" [147, 157), i=38, next=39
+                    KindStringLiteral "hello" [158, 166), i=39, next=0
+                  KindPropertyAssignment [167, 183), i=40, next=0
+                    KindIdentifier "optional" [167, 176), i=41, next=42
+                    KindStringLiteral "bar" [177, 183), i=42, next=0
+              KindTypeReference [188, 192), i=43, next=0
+                KindIdentifier "Foo" [188, 192), i=44, next=0

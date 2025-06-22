@@ -1,0 +1,73 @@
+KindSourceFile [0, 319), i=1, next=0
+  NodeList [0, 317), i=2, next=0
+    KindFunctionDeclaration [0, 151), i=3, next=45
+      KindIdentifier "f1" [8, 11), i=4, next=5
+      NodeList [12, 76), i=5, next=22
+        KindParameter [12, 24), i=6, next=10
+          KindIdentifier "c1" [12, 14), i=7, next=8
+          KindTypeReference [15, 24), i=8, next=0
+            KindIdentifier "Function" [15, 24), i=9, next=0
+        KindParameter [25, 42), i=10, next=14
+          KindIdentifier "c2" [25, 28), i=11, next=12
+          KindFunctionType [29, 42), i=12, next=0
+            KindObjectKeyword [35, 42), i=13, next=0
+        KindParameter [43, 76), i=14, next=0
+          KindIdentifier "callable" [43, 53), i=15, next=16
+          KindUnionType [54, 76), i=16, next=0
+            NodeList [54, 76), i=17, next=0
+              KindTypeQuery [54, 64), i=18, next=20
+                KindIdentifier "c1" [61, 64), i=19, next=0
+              KindTypeQuery [66, 76), i=20, next=0
+                KindIdentifier "c2" [73, 76), i=21, next=0
+      KindBlock [77, 151), i=22, next=0
+        NodeList [79, 148), i=23, next=0
+          KindVariableStatement [79, 100), i=24, next=31
+            KindVariableDeclarationList [79, 99), i=25, next=0
+              NodeList [90, 99), i=26, next=0
+                KindVariableDeclaration [90, 99), i=27, next=0
+                  KindIdentifier "a" [90, 92), i=28, next=29
+                  KindCallExpression [94, 99), i=29, next=0
+                    KindIdentifier "c1" [94, 97), i=30, next=0
+          KindVariableStatement [100, 121), i=31, next=38
+            KindVariableDeclarationList [100, 120), i=32, next=0
+              NodeList [111, 120), i=33, next=0
+                KindVariableDeclaration [111, 120), i=34, next=0
+                  KindIdentifier "b" [111, 113), i=35, next=36
+                  KindCallExpression [115, 120), i=36, next=0
+                    KindIdentifier "c2" [115, 118), i=37, next=0
+          KindVariableStatement [121, 148), i=38, next=0
+            KindVariableDeclarationList [121, 147), i=39, next=0
+              NodeList [132, 147), i=40, next=0
+                KindVariableDeclaration [132, 147), i=41, next=0
+                  KindIdentifier "c" [132, 134), i=42, next=43
+                  KindCallExpression [136, 147), i=43, next=0
+                    KindIdentifier "callable" [136, 145), i=44, next=0
+    KindFunctionDeclaration [151, 317), i=45, next=0
+      KindIdentifier "f2" [163, 166), i=46, next=47
+      NodeList [167, 205), i=47, next=56
+        KindParameter [167, 205), i=48, next=0
+          KindIdentifier "fetcherParams" [167, 180), i=49, next=50
+          KindUnionType [181, 205), i=50, next=0
+            NodeList [181, 205), i=51, next=0
+              KindObjectKeyword [181, 188), i=52, next=53
+              KindParenthesizedType [190, 205), i=53, next=0
+                KindFunctionType [192, 204), i=54, next=0
+                  KindObjectKeyword [197, 204), i=55, next=0
+      KindBlock [206, 317), i=56, next=0
+        NodeList [208, 314), i=57, next=0
+          KindVariableStatement [208, 314), i=58, next=0
+            KindVariableDeclarationList [208, 314), i=59, next=0
+              NodeList [219, 314), i=60, next=0
+                KindVariableDeclaration [219, 314), i=61, next=0
+                  KindIdentifier "data" [219, 224), i=62, next=63
+                  KindConditionalExpression [226, 314), i=63, next=0
+                    KindBinaryExpression [226, 262), i=64, next=69
+                      KindTypeOfExpression [226, 247), i=65, next=67
+                        KindIdentifier "fetcherParams" [233, 247), i=66, next=0
+                      KindEqualsEqualsEqualsToken [247, 251), i=67, next=68
+                      KindStringLiteral "function" [251, 262), i=68, next=0
+                    KindQuestionToken [262, 273), i=69, next=70
+                    KindCallExpression [273, 289), i=70, next=72
+                      KindIdentifier "fetcherParams" [273, 287), i=71, next=0
+                    KindColonToken [289, 300), i=72, next=73
+                    KindIdentifier "fetcherParams" [300, 314), i=73, next=0

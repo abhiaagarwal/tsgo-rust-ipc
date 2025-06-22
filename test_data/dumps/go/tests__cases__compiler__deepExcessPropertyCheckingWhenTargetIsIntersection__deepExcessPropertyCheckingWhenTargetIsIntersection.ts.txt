@@ -1,0 +1,145 @@
+KindSourceFile [0, 666), i=1, next=0
+  NodeList [0, 664), i=2, next=0
+    KindInterfaceDeclaration [0, 101), i=3, next=30
+      KindIdentifier "StatelessComponent" [9, 28), i=4, next=5
+      NodeList [29, 35), i=5, next=9
+        KindTypeParameter [29, 35), i=6, next=0
+          KindIdentifier "P" [29, 30), i=7, next=8
+          KindTypeLiteral [32, 35), i=8, next=0
+      NodeList [38, 98), i=9, next=0
+        KindCallSignature [38, 98), i=10, next=0
+          NodeList [43, 90), i=11, next=28
+            KindParameter [43, 75), i=12, next=24
+              KindIdentifier "props" [43, 48), i=13, next=14
+              KindIntersectionType [49, 75), i=14, next=0
+                NodeList [49, 75), i=15, next=0
+                  KindTypeReference [49, 51), i=16, next=18
+                    KindIdentifier "P" [49, 51), i=17, next=0
+                  KindTypeLiteral [53, 75), i=18, next=0
+                    NodeList [55, 73), i=19, next=0
+                      KindPropertySignature [55, 73), i=20, next=0
+                        KindIdentifier "children" [55, 64), i=21, next=22
+                        KindQuestionToken [64, 65), i=22, next=23
+                        KindNumberKeyword [66, 73), i=23, next=0
+            KindParameter [76, 90), i=24, next=0
+              KindIdentifier "context" [76, 84), i=25, next=26
+              KindQuestionToken [84, 85), i=26, next=27
+              KindAnyKeyword [86, 90), i=27, next=0
+          KindLiteralType [92, 97), i=28, next=0
+            KindNullKeyword [92, 97), i=29, next=0
+    KindVariableStatement [101, 190), i=30, next=49
+      KindVariableDeclarationList [101, 190), i=31, next=0
+        NodeList [111, 190), i=32, next=0
+          KindVariableDeclaration [111, 190), i=33, next=0
+            KindIdentifier "TestComponent" [111, 125), i=34, next=35
+            KindTypeReference [126, 156), i=35, next=40
+              KindIdentifier "StatelessComponent" [126, 145), i=36, next=37
+              NodeList [146, 155), i=37, next=0
+                KindTypeReference [146, 155), i=38, next=0
+                  KindIdentifier "TestProps" [146, 155), i=39, next=0
+            KindArrowFunction [158, 190), i=40, next=0
+              NodeList [160, 165), i=41, next=44
+                KindParameter [160, 165), i=42, next=0
+                  KindIdentifier "props" [160, 165), i=43, next=0
+              KindEqualsGreaterThanToken [166, 169), i=44, next=45
+              KindBlock [169, 190), i=45, next=0
+                NodeList [171, 187), i=46, next=0
+                  KindReturnStatement [171, 187), i=47, next=0
+                    KindNullKeyword [181, 186), i=48, next=0
+    KindInterfaceDeclaration [190, 243), i=49, next=56
+      KindIdentifier "ITestProps" [204, 215), i=50, next=51
+      NodeList [217, 240), i=51, next=0
+        KindPropertySignature [217, 240), i=52, next=0
+          KindIdentifier "ariaLabel" [217, 230), i=53, next=54
+          KindQuestionToken [230, 231), i=54, next=55
+          KindStringKeyword [232, 239), i=55, next=0
+    KindInterfaceDeclaration [243, 299), i=56, next=66
+      KindIdentifier "NestedProp" [257, 268), i=57, next=58
+      NodeList [269, 275), i=58, next=61
+        KindTypeParameter [269, 275), i=59, next=0
+          KindIdentifier "TProps" [269, 275), i=60, next=0
+      NodeList [278, 296), i=61, next=0
+        KindPropertySignature [278, 296), i=62, next=0
+          KindIdentifier "props" [278, 287), i=63, next=64
+          KindTypeReference [288, 295), i=64, next=0
+            KindIdentifier "TProps" [288, 295), i=65, next=0
+    KindInterfaceDeclaration [299, 361), i=66, next=76
+      KindIdentifier "TestProps" [313, 323), i=67, next=68
+      NodeList [325, 358), i=68, next=0
+        KindPropertySignature [325, 358), i=69, next=0
+          KindIdentifier "icon" [325, 333), i=70, next=71
+          KindTypeReference [334, 357), i=71, next=0
+            KindIdentifier "NestedProp" [334, 345), i=72, next=73
+            NodeList [346, 356), i=73, next=0
+              KindTypeReference [346, 356), i=74, next=0
+                KindIdentifier "ITestProps" [346, 356), i=75, next=0
+    KindExpressionStatement [361, 456), i=76, next=96
+      KindCallExpression [361, 455), i=77, next=0
+        KindIdentifier "TestComponent" [361, 379), i=78, next=79
+        NodeList [380, 454), i=79, next=0
+          KindObjectLiteralExpression [380, 454), i=80, next=0
+            NodeList [381, 453), i=81, next=0
+              KindPropertyAssignment [381, 453), i=82, next=0
+                KindIdentifier "icon" [381, 385), i=83, next=84
+                KindObjectLiteralExpression [386, 453), i=84, next=0
+                  NodeList [388, 451), i=85, next=0
+                    KindPropertyAssignment [388, 451), i=86, next=0
+                      KindIdentifier "props" [388, 394), i=87, next=88
+                      KindObjectLiteralExpression [395, 451), i=88, next=0
+                        NodeList [397, 449), i=89, next=0
+                          KindPropertyAssignment [397, 424), i=90, next=93
+                            KindIdentifier "INVALID_PROP_NAME" [397, 415), i=91, next=92
+                            KindStringLiteral "share" [416, 424), i=92, next=0
+                          KindPropertyAssignment [425, 449), i=93, next=0
+                            KindIdentifier "ariaLabel" [425, 435), i=94, next=95
+                            KindStringLiteral "test label" [436, 449), i=95, next=0
+    KindVariableStatement [456, 569), i=96, next=126
+      KindVariableDeclarationList [456, 569), i=97, next=0
+        NodeList [465, 569), i=98, next=0
+          KindVariableDeclaration [465, 569), i=99, next=0
+            KindIdentifier "TestComponent2" [465, 480), i=100, next=101
+            KindTypeReference [481, 535), i=101, next=117
+              KindIdentifier "StatelessComponent" [481, 500), i=102, next=103
+              NodeList [501, 534), i=103, next=0
+                KindUnionType [501, 534), i=104, next=0
+                  NodeList [501, 534), i=105, next=0
+                    KindTypeReference [501, 510), i=106, next=108
+                      KindIdentifier "TestProps" [501, 510), i=107, next=0
+                    KindTypeLiteral [512, 534), i=108, next=0
+                      NodeList [514, 533), i=109, next=0
+                        KindPropertySignature [514, 533), i=110, next=0
+                          KindIdentifier "props2" [514, 520), i=111, next=112
+                          KindTypeLiteral [521, 533), i=112, next=0
+                            NodeList [523, 532), i=113, next=0
+                              KindPropertySignature [523, 532), i=114, next=0
+                                KindIdentifier "x" [523, 524), i=115, next=116
+                                KindNumberKeyword [525, 532), i=116, next=0
+            KindArrowFunction [537, 569), i=117, next=0
+              NodeList [539, 544), i=118, next=121
+                KindParameter [539, 544), i=119, next=0
+                  KindIdentifier "props" [539, 544), i=120, next=0
+              KindEqualsGreaterThanToken [545, 548), i=121, next=122
+              KindBlock [548, 569), i=122, next=0
+                NodeList [550, 566), i=123, next=0
+                  KindReturnStatement [550, 566), i=124, next=0
+                    KindNullKeyword [560, 565), i=125, next=0
+    KindExpressionStatement [569, 664), i=126, next=0
+      KindCallExpression [569, 663), i=127, next=0
+        KindIdentifier "TestComponent2" [569, 587), i=128, next=129
+        NodeList [588, 662), i=129, next=0
+          KindObjectLiteralExpression [588, 662), i=130, next=0
+            NodeList [589, 661), i=131, next=0
+              KindPropertyAssignment [589, 661), i=132, next=0
+                KindIdentifier "icon" [589, 593), i=133, next=134
+                KindObjectLiteralExpression [594, 661), i=134, next=0
+                  NodeList [596, 659), i=135, next=0
+                    KindPropertyAssignment [596, 659), i=136, next=0
+                      KindIdentifier "props" [596, 602), i=137, next=138
+                      KindObjectLiteralExpression [603, 659), i=138, next=0
+                        NodeList [605, 657), i=139, next=0
+                          KindPropertyAssignment [605, 632), i=140, next=143
+                            KindIdentifier "INVALID_PROP_NAME" [605, 623), i=141, next=142
+                            KindStringLiteral "share" [624, 632), i=142, next=0
+                          KindPropertyAssignment [633, 657), i=143, next=0
+                            KindIdentifier "ariaLabel" [633, 643), i=144, next=145
+                            KindStringLiteral "test label" [644, 657), i=145, next=0

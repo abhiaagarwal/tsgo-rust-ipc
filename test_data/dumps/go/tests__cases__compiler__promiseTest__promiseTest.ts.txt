@@ -1,0 +1,95 @@
+KindSourceFile [0, 262), i=1, next=0
+  NodeList [0, 250), i=2, next=0
+    KindInterfaceDeclaration [0, 150), i=3, next=60
+      KindIdentifier "Promise" [9, 17), i=4, next=5
+      NodeList [18, 19), i=5, next=8
+        KindTypeParameter [18, 19), i=6, next=0
+          KindIdentifier "T" [18, 19), i=7, next=0
+      NodeList [22, 148), i=8, next=0
+        KindMethodSignature [22, 83), i=9, next=34
+          KindIdentifier "then" [22, 31), i=10, next=11
+          NodeList [32, 33), i=11, next=14
+            KindTypeParameter [32, 33), i=12, next=0
+              KindIdentifier "A" [32, 33), i=13, next=0
+          NodeList [35, 69), i=14, next=29
+            KindParameter [35, 69), i=15, next=0
+              KindIdentifier "success" [35, 42), i=16, next=17
+              KindQuestionToken [42, 43), i=17, next=18
+              KindFunctionType [44, 69), i=18, next=0
+                NodeList [46, 54), i=19, next=24
+                  KindParameter [46, 54), i=20, next=0
+                    KindIdentifier "value" [46, 51), i=21, next=22
+                    KindTypeReference [52, 54), i=22, next=0
+                      KindIdentifier "T" [52, 54), i=23, next=0
+                KindTypeReference [58, 69), i=24, next=0
+                  KindIdentifier "Promise" [58, 66), i=25, next=26
+                  NodeList [67, 68), i=26, next=0
+                    KindTypeReference [67, 68), i=27, next=0
+                      KindIdentifier "A" [67, 68), i=28, next=0
+          KindTypeReference [71, 82), i=29, next=0
+            KindIdentifier "Promise" [71, 79), i=30, next=31
+            NodeList [80, 81), i=31, next=0
+              KindTypeReference [80, 81), i=32, next=0
+                KindIdentifier "A" [80, 81), i=33, next=0
+        KindMethodSignature [83, 135), i=34, next=56
+          KindIdentifier "then" [83, 92), i=35, next=36
+          NodeList [93, 94), i=36, next=39
+            KindTypeParameter [93, 94), i=37, next=0
+              KindIdentifier "B" [93, 94), i=38, next=0
+          NodeList [96, 121), i=39, next=51
+            KindParameter [96, 121), i=40, next=0
+              KindIdentifier "success" [96, 103), i=41, next=42
+              KindQuestionToken [103, 104), i=42, next=43
+              KindFunctionType [105, 121), i=43, next=0
+                NodeList [107, 115), i=44, next=49
+                  KindParameter [107, 115), i=45, next=0
+                    KindIdentifier "value" [107, 112), i=46, next=47
+                    KindTypeReference [113, 115), i=47, next=0
+                      KindIdentifier "T" [113, 115), i=48, next=0
+                KindTypeReference [119, 121), i=49, next=0
+                  KindIdentifier "B" [119, 121), i=50, next=0
+          KindTypeReference [123, 134), i=51, next=0
+            KindIdentifier "Promise" [123, 131), i=52, next=53
+            NodeList [132, 133), i=53, next=0
+              KindTypeReference [132, 133), i=54, next=0
+                KindIdentifier "B" [132, 133), i=55, next=0
+        KindPropertySignature [135, 148), i=56, next=0
+          KindIdentifier "data" [135, 144), i=57, next=58
+          KindTypeReference [145, 147), i=58, next=0
+            KindIdentifier "T" [145, 147), i=59, next=0
+    KindVariableStatement [150, 182), i=60, next=70
+      KindVariableDeclarationList [150, 181), i=61, next=0
+        NodeList [155, 181), i=62, next=0
+          KindVariableDeclaration [155, 181), i=63, next=0
+            KindIdentifier "p" [155, 157), i=64, next=65
+            KindTypeReference [158, 174), i=65, next=69
+              KindIdentifier "Promise" [158, 166), i=66, next=67
+              NodeList [167, 173), i=67, next=0
+                KindNumberKeyword [167, 173), i=68, next=0
+            KindNullKeyword [176, 181), i=69, next=0
+    KindVariableStatement [182, 232), i=70, next=88
+      KindVariableDeclarationList [182, 231), i=71, next=0
+        NodeList [186, 231), i=72, next=0
+          KindVariableDeclaration [186, 231), i=73, next=0
+            KindIdentifier "p2" [186, 189), i=74, next=75
+            KindCallExpression [191, 231), i=75, next=0
+              KindPropertyAccessExpression [191, 198), i=76, next=79
+                KindIdentifier "p" [191, 193), i=77, next=78
+                KindIdentifier "then" [194, 198), i=78, next=0
+              NodeList [199, 229), i=79, next=0
+                KindFunctionExpression [199, 229), i=80, next=0
+                  NodeList [209, 210), i=81, next=84
+                    KindParameter [209, 210), i=82, next=0
+                      KindIdentifier "x" [209, 210), i=83, next=0
+                  KindBlock [211, 229), i=84, next=0
+                    NodeList [213, 227), i=85, next=0
+                      KindReturnStatement [213, 227), i=86, next=0
+                        KindIdentifier "p" [224, 226), i=87, next=0
+    KindVariableStatement [232, 250), i=88, next=0
+      KindVariableDeclarationList [232, 249), i=89, next=0
+        NodeList [237, 249), i=90, next=0
+          KindVariableDeclaration [237, 249), i=91, next=0
+            KindIdentifier "x" [237, 239), i=92, next=93
+            KindPropertyAccessExpression [241, 249), i=93, next=0
+              KindIdentifier "p2" [241, 244), i=94, next=95
+              KindIdentifier "data" [245, 249), i=95, next=0

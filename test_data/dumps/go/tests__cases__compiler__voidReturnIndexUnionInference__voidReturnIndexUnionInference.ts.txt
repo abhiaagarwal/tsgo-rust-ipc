@@ -1,0 +1,104 @@
+KindSourceFile [0, 552), i=1, next=0
+  NodeList [0, 550), i=2, next=0
+    KindFunctionDeclaration [0, 213), i=3, next=53
+      NodeList [0, 6), i=4, next=6
+        KindExportKeyword [0, 6), i=5, next=0
+      KindIdentifier "safeInvoke" [15, 26), i=6, next=7
+      NodeList [27, 32), i=7, next=12
+        KindTypeParameter [27, 29), i=8, next=10
+          KindIdentifier "A1" [27, 29), i=9, next=0
+        KindTypeParameter [30, 32), i=10, next=0
+          KindIdentifier "R" [30, 32), i=11, next=0
+      NodeList [34, 97), i=12, next=33
+        KindParameter [34, 82), i=13, next=29
+          KindIdentifier "func" [34, 44), i=14, next=15
+          KindUnionType [45, 82), i=15, next=0
+            NodeList [45, 82), i=16, next=0
+              KindParenthesizedType [45, 63), i=17, next=26
+                KindFunctionType [47, 62), i=18, next=0
+                  NodeList [48, 56), i=19, next=24
+                    KindParameter [48, 56), i=20, next=0
+                      KindIdentifier "arg1" [48, 52), i=21, next=22
+                      KindTypeReference [53, 56), i=22, next=0
+                        KindIdentifier "A1" [53, 56), i=23, next=0
+                  KindTypeReference [60, 62), i=24, next=0
+                    KindIdentifier "R" [60, 62), i=25, next=0
+              KindLiteralType [65, 70), i=26, next=28
+                KindNullKeyword [65, 70), i=27, next=0
+              KindUndefinedKeyword [72, 82), i=28, next=0
+        KindParameter [83, 97), i=29, next=0
+          KindIdentifier "arg1" [83, 93), i=30, next=31
+          KindTypeReference [94, 97), i=31, next=0
+            KindIdentifier "A1" [94, 97), i=32, next=0
+      KindUnionType [101, 115), i=33, next=38
+        NodeList [101, 115), i=34, next=0
+          KindTypeReference [101, 103), i=35, next=37
+            KindIdentifier "R" [101, 103), i=36, next=0
+          KindUndefinedKeyword [105, 115), i=37, next=0
+      KindBlock [115, 213), i=38, next=0
+        NodeList [117, 210), i=39, next=0
+          KindIfStatement [117, 210), i=40, next=0
+            KindIdentifier "func" [127, 131), i=41, next=42
+            KindBlock [132, 169), i=42, next=49
+              NodeList [134, 162), i=43, next=0
+                KindReturnStatement [134, 162), i=44, next=0
+                  KindCallExpression [150, 161), i=45, next=0
+                    KindIdentifier "func" [150, 155), i=46, next=47
+                    NodeList [156, 160), i=47, next=0
+                      KindIdentifier "arg1" [156, 160), i=48, next=0
+            KindBlock [174, 210), i=49, next=0
+              NodeList [176, 203), i=50, next=0
+                KindReturnStatement [176, 203), i=51, next=0
+                  KindIdentifier "undefined" [192, 202), i=52, next=0
+    KindInterfaceDeclaration [213, 308), i=53, next=72
+      KindIdentifier "Props" [226, 232), i=54, next=55
+      NodeList [234, 305), i=55, next=0
+        KindMethodSignature [234, 271), i=56, next=64
+          KindIdentifier "onFoo" [234, 245), i=57, next=58
+          KindQuestionToken [245, 246), i=58, next=59
+          NodeList [247, 260), i=59, next=63
+            KindParameter [247, 260), i=60, next=0
+              KindIdentifier "value" [247, 252), i=61, next=62
+              KindStringKeyword [253, 260), i=62, next=0
+          KindBooleanKeyword [262, 270), i=63, next=0
+        KindMethodSignature [271, 305), i=64, next=0
+          KindIdentifier "onBar" [271, 282), i=65, next=66
+          KindQuestionToken [282, 283), i=66, next=67
+          NodeList [284, 297), i=67, next=71
+            KindParameter [284, 297), i=68, next=0
+              KindIdentifier "value" [284, 289), i=69, next=70
+              KindStringKeyword [290, 297), i=70, next=0
+          KindVoidKeyword [299, 304), i=71, next=0
+    KindFunctionDeclaration [308, 550), i=72, next=0
+      KindIdentifier "bad" [320, 324), i=73, next=74
+      NodeList [325, 340), i=74, next=79
+        KindTypeParameter [325, 340), i=75, next=0
+          KindIdentifier "P" [325, 326), i=76, next=77
+          KindTypeReference [334, 340), i=77, next=0
+            KindIdentifier "Props" [334, 340), i=78, next=0
+      NodeList [342, 360), i=79, next=87
+        KindParameter [342, 360), i=80, next=0
+          KindIdentifier "props" [342, 347), i=81, next=82
+          KindTypeReference [348, 360), i=82, next=0
+            KindIdentifier "Readonly" [348, 357), i=83, next=84
+            NodeList [358, 359), i=84, next=0
+              KindTypeReference [358, 359), i=85, next=0
+                KindIdentifier "P" [358, 359), i=86, next=0
+      KindBlock [361, 550), i=87, next=0
+        NodeList [363, 547), i=88, next=0
+          KindExpressionStatement [363, 401), i=89, next=97
+            KindCallExpression [363, 400), i=90, next=0
+              KindIdentifier "safeInvoke" [363, 379), i=91, next=92
+              NodeList [380, 399), i=92, next=0
+                KindPropertyAccessExpression [380, 391), i=93, next=96
+                  KindIdentifier "props" [380, 385), i=94, next=95
+                  KindIdentifier "onFoo" [386, 391), i=95, next=0
+                KindStringLiteral "blah" [392, 399), i=96, next=0
+          KindExpressionStatement [401, 547), i=97, next=0
+            KindCallExpression [401, 546), i=98, next=0
+              KindIdentifier "safeInvoke" [401, 525), i=99, next=100
+              NodeList [526, 545), i=100, next=0
+                KindPropertyAccessExpression [526, 537), i=101, next=104
+                  KindIdentifier "props" [526, 531), i=102, next=103
+                  KindIdentifier "onBar" [532, 537), i=103, next=0
+                KindStringLiteral "blah" [538, 545), i=104, next=0

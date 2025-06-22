@@ -1,0 +1,98 @@
+KindSourceFile [0, 825), i=1, next=0
+  NodeList [0, 825), i=2, next=0
+    KindModuleDeclaration [0, 825), i=3, next=0
+      KindIdentifier "Bugs" [6, 11), i=4, next=5
+      KindModuleBlock [11, 825), i=5, next=0
+        NodeList [13, 822), i=6, next=0
+          KindInterfaceDeclaration [13, 222), i=7, next=21
+            NodeList [13, 37), i=8, next=10
+              KindExportKeyword [13, 37), i=9, next=0
+            KindIdentifier "IToken" [47, 54), i=10, next=11
+            NodeList [56, 203), i=11, next=0
+              KindPropertySignature [56, 108), i=12, next=15
+                KindIdentifier "startIndex" [56, 100), i=13, next=14
+                KindNumberKeyword [101, 107), i=14, next=0
+              KindPropertySignature [108, 154), i=15, next=18
+                KindIdentifier "type" [108, 146), i=16, next=17
+                KindStringKeyword [147, 153), i=17, next=0
+              KindPropertySignature [154, 203), i=18, next=0
+                KindIdentifier "bracket" [154, 195), i=19, next=20
+                KindNumberKeyword [196, 202), i=20, next=0
+          KindInterfaceDeclaration [222, 302), i=21, next=25
+            NodeList [222, 264), i=22, next=24
+              KindExportKeyword [222, 264), i=23, next=0
+            KindIdentifier "IState" [274, 281), i=24, next=0
+          KindInterfaceDeclaration [302, 483), i=25, next=42
+            NodeList [302, 328), i=26, next=28
+              KindExportKeyword [302, 328), i=27, next=0
+            KindIdentifier "IStateToken" [338, 350), i=28, next=29
+            NodeList [350, 365), i=29, next=34
+              KindHeritageClause [350, 365), i=30, next=0
+                NodeList [358, 365), i=31, next=0
+                  KindExpressionWithTypeArguments [358, 365), i=32, next=0
+                    KindIdentifier "IToken" [358, 365), i=33, next=0
+            NodeList [367, 464), i=34, next=0
+              KindPropertySignature [367, 415), i=35, next=39
+                KindIdentifier "state" [367, 406), i=36, next=37
+                KindTypeReference [407, 414), i=37, next=0
+                  KindIdentifier "IState" [407, 414), i=38, next=0
+              KindPropertySignature [415, 464), i=39, next=0
+                KindIdentifier "length" [415, 455), i=40, next=41
+                KindNumberKeyword [456, 463), i=41, next=0
+          KindFunctionDeclaration [483, 822), i=42, next=0
+            KindIdentifier "bug3" [527, 532), i=43, next=44
+            KindBlock [534, 822), i=44, next=0
+              NodeList [536, 803), i=45, next=0
+                KindVariableStatement [536, 594), i=46, next=55
+                  KindVariableDeclarationList [536, 593), i=47, next=0
+                    NodeList [573, 593), i=48, next=0
+                      KindVariableDeclaration [573, 593), i=49, next=0
+                        KindIdentifier "tokens" [573, 580), i=50, next=51
+                        KindArrayType [581, 589), i=51, next=54
+                          KindTypeReference [581, 587), i=52, next=0
+                            KindIdentifier "IToken" [581, 587), i=53, next=0
+                        KindArrayLiteralExpression [590, 593), i=54, next=0
+                KindExpressionStatement [594, 681), i=55, next=72
+                  KindCallExpression [594, 680), i=56, next=0
+                    KindPropertyAccessExpression [594, 639), i=57, next=60
+                      KindIdentifier "tokens" [594, 634), i=58, next=59
+                      KindIdentifier "push" [635, 639), i=59, next=0
+                    NodeList [640, 679), i=60, next=0
+                      KindObjectLiteralExpression [640, 679), i=61, next=0
+                        NodeList [641, 677), i=62, next=0
+                          KindPropertyAssignment [641, 655), i=63, next=66
+                            KindIdentifier "startIndex" [641, 652), i=64, next=65
+                            KindNumericLiteral [653, 655), i=65, next=0
+                          KindPropertyAssignment [656, 665), i=66, next=69
+                            KindIdentifier "type" [656, 661), i=67, next=68
+                            KindStringLiteral "" [662, 665), i=68, next=0
+                          KindPropertyAssignment [666, 677), i=69, next=0
+                            KindIdentifier "bracket" [666, 674), i=70, next=71
+                            KindNumericLiteral [675, 677), i=71, next=0
+                KindExpressionStatement [681, 803), i=72, next=0
+                  KindCallExpression [681, 802), i=73, next=0
+                    KindPropertyAccessExpression [681, 726), i=74, next=77
+                      KindIdentifier "tokens" [681, 721), i=75, next=76
+                      KindIdentifier "push" [722, 726), i=76, next=0
+                    NodeList [727, 801), i=77, next=0
+                      KindTypeAssertionExpression [727, 801), i=78, next=0
+                        KindTypeReference [728, 734), i=79, next=81
+                          KindIdentifier "IToken" [728, 734), i=80, next=0
+                        KindParenthesizedExpression [735, 801), i=81, next=0
+                          KindObjectLiteralExpression [736, 800), i=82, next=0
+                            NodeList [737, 798), i=83, next=0
+                              KindPropertyAssignment [737, 751), i=84, next=87
+                                KindIdentifier "startIndex" [737, 748), i=85, next=86
+                                KindNumericLiteral [749, 751), i=86, next=0
+                              KindPropertyAssignment [752, 761), i=87, next=90
+                                KindIdentifier "type" [752, 757), i=88, next=89
+                                KindStringLiteral "" [758, 761), i=89, next=0
+                              KindPropertyAssignment [762, 773), i=90, next=93
+                                KindIdentifier "bracket" [762, 770), i=91, next=92
+                                KindNumericLiteral [771, 773), i=92, next=0
+                              KindPropertyAssignment [774, 786), i=93, next=96
+                                KindIdentifier "state" [774, 780), i=94, next=95
+                                KindNullKeyword [781, 786), i=95, next=0
+                              KindPropertyAssignment [787, 798), i=96, next=0
+                                KindIdentifier "length" [787, 794), i=97, next=98
+                                KindNumericLiteral [795, 798), i=98, next=0

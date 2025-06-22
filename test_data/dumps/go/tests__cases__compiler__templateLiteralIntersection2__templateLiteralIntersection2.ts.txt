@@ -1,0 +1,117 @@
+KindSourceFile [0, 440), i=1, next=0
+  NodeList [0, 439), i=2, next=0
+    KindTypeAliasDeclaration [0, 41), i=3, next=13
+      KindIdentifier "Path" [4, 9), i=4, next=5
+      KindIntersectionType [11, 40), i=5, next=0
+        NodeList [11, 40), i=6, next=0
+          KindStringKeyword [11, 18), i=7, next=8
+          KindTypeLiteral [20, 40), i=8, next=0
+            NodeList [22, 38), i=9, next=0
+              KindPropertySignature [22, 38), i=10, next=0
+                KindIdentifier "_pathBrand" [22, 33), i=11, next=12
+                KindAnyKeyword [34, 38), i=12, next=0
+    KindTypeAliasDeclaration [41, 79), i=13, next=26
+      KindIdentifier "JoinedPath" [47, 58), i=14, next=15
+      KindTemplateLiteralType [60, 78), i=15, next=0
+        KindTemplateHead [60, 64), i=16, next=17
+        NodeList [64, 78), i=17, next=0
+          KindTemplateLiteralTypeSpan [64, 72), i=18, next=22
+            KindTypeReference [64, 68), i=19, next=21
+              KindIdentifier "Path" [64, 68), i=20, next=0
+            KindTemplateMiddle [68, 72), i=21, next=0
+          KindTemplateLiteralTypeSpan [72, 78), i=22, next=0
+            KindTypeReference [72, 76), i=23, next=25
+              KindIdentifier "Path" [72, 76), i=24, next=0
+            KindTemplateTail [76, 78), i=25, next=0
+    KindFunctionDeclaration [79, 130), i=26, next=36
+      NodeList [79, 88), i=27, next=29
+        KindDeclareKeyword [79, 88), i=28, next=0
+      KindIdentifier "joinedPath" [97, 108), i=29, next=30
+      NodeList [109, 122), i=30, next=35
+        KindParameter [109, 122), i=31, next=0
+          KindIdentifier "p" [109, 110), i=32, next=33
+          KindTypeReference [111, 122), i=33, next=0
+            KindIdentifier "JoinedPath" [111, 122), i=34, next=0
+      KindVoidKeyword [124, 129), i=35, next=0
+    KindExpressionStatement [130, 154), i=36, next=41
+      KindCallExpression [130, 153), i=37, next=0
+        KindIdentifier "joinedPath" [130, 142), i=38, next=39
+        NodeList [143, 152), i=39, next=0
+          KindStringLiteral "foo/bar" [143, 152), i=40, next=0
+    KindVariableStatement [154, 185), i=41, next=50
+      NodeList [154, 163), i=42, next=44
+        KindDeclareKeyword [154, 163), i=43, next=0
+      KindVariableDeclarationList [163, 184), i=44, next=0
+        NodeList [169, 184), i=45, next=0
+          KindVariableDeclaration [169, 184), i=46, next=0
+            KindIdentifier "somePath" [169, 178), i=47, next=48
+            KindTypeReference [179, 184), i=48, next=0
+              KindIdentifier "Path" [179, 184), i=49, next=0
+    KindExpressionStatement [185, 225), i=50, next=63
+      KindCallExpression [185, 224), i=51, next=0
+        KindIdentifier "joinedPath" [185, 197), i=52, next=53
+        NodeList [198, 223), i=53, next=0
+          KindTemplateExpression [198, 223), i=54, next=0
+            KindTemplateHead [198, 201), i=55, next=56
+            NodeList [201, 223), i=56, next=0
+              KindTemplateSpan [201, 213), i=57, next=60
+                KindIdentifier "somePath" [201, 209), i=58, next=59
+                KindTemplateMiddle [209, 213), i=59, next=0
+              KindTemplateSpan [213, 223), i=60, next=0
+                KindIdentifier "somePath" [213, 221), i=61, next=62
+                KindTemplateTail [221, 223), i=62, next=0
+    KindTypeAliasDeclaration [225, 260), i=63, next=71
+      KindIdentifier "StartsWithA" [232, 244), i=64, next=65
+      KindTemplateLiteralType [246, 259), i=65, next=0
+        KindTemplateHead [246, 251), i=66, next=67
+        NodeList [251, 259), i=67, next=0
+          KindTemplateLiteralTypeSpan [251, 259), i=68, next=0
+            KindStringKeyword [251, 257), i=69, next=70
+            KindTemplateTail [257, 259), i=70, next=0
+    KindTypeAliasDeclaration [260, 291), i=71, next=79
+      KindIdentifier "EndsWithA" [265, 275), i=72, next=73
+      KindTemplateLiteralType [277, 290), i=73, next=0
+        KindTemplateHead [277, 281), i=74, next=75
+        NodeList [281, 290), i=75, next=0
+          KindTemplateLiteralTypeSpan [281, 290), i=76, next=0
+            KindStringKeyword [281, 287), i=77, next=78
+            KindTemplateTail [287, 290), i=78, next=0
+    KindFunctionDeclaration [291, 354), i=79, next=93
+      NodeList [291, 301), i=80, next=82
+        KindDeclareKeyword [291, 301), i=81, next=0
+      KindIdentifier "withinAs" [310, 319), i=82, next=83
+      NodeList [320, 346), i=83, next=92
+        KindParameter [320, 346), i=84, next=0
+          KindIdentifier "p" [320, 321), i=85, next=86
+          KindIntersectionType [322, 346), i=86, next=0
+            NodeList [322, 346), i=87, next=0
+              KindTypeReference [322, 334), i=88, next=90
+                KindIdentifier "StartsWithA" [322, 334), i=89, next=0
+              KindTypeReference [336, 346), i=90, next=0
+                KindIdentifier "EndsWithA" [336, 346), i=91, next=0
+      KindVoidKeyword [348, 353), i=92, next=0
+    KindExpressionStatement [354, 369), i=93, next=98
+      KindCallExpression [354, 368), i=94, next=0
+        KindIdentifier "withinAs" [354, 364), i=95, next=96
+        NodeList [365, 367), i=96, next=0
+          KindStringLiteral "" [365, 367), i=97, next=0
+    KindExpressionStatement [369, 384), i=98, next=103
+      KindCallExpression [369, 383), i=99, next=0
+        KindIdentifier "withinAs" [369, 378), i=100, next=101
+        NodeList [379, 382), i=101, next=0
+          KindStringLiteral "a" [379, 382), i=102, next=0
+    KindExpressionStatement [384, 400), i=103, next=108
+      KindCallExpression [384, 399), i=104, next=0
+        KindIdentifier "withinAs" [384, 393), i=105, next=106
+        NodeList [394, 398), i=106, next=0
+          KindStringLiteral "ab" [394, 398), i=107, next=0
+    KindExpressionStatement [400, 417), i=108, next=113
+      KindCallExpression [400, 416), i=109, next=0
+        KindIdentifier "withinAs" [400, 409), i=110, next=111
+        NodeList [410, 415), i=111, next=0
+          KindStringLiteral "aba" [410, 415), i=112, next=0
+    KindExpressionStatement [417, 439), i=113, next=0
+      KindCallExpression [417, 438), i=114, next=0
+        KindIdentifier "withinAs" [417, 426), i=115, next=116
+        NodeList [427, 437), i=116, next=0
+          KindStringLiteral "abavvvva" [427, 437), i=117, next=0

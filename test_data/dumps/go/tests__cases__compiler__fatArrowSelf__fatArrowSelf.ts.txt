@@ -1,0 +1,85 @@
+KindSourceFile [0, 544), i=1, next=0
+  NodeList [0, 544), i=2, next=0
+    KindModuleDeclaration [0, 216), i=3, next=36
+      KindIdentifier "Events" [6, 13), i=4, next=5
+      KindModuleBlock [13, 216), i=5, next=0
+        NodeList [15, 213), i=6, next=0
+          KindInterfaceDeclaration [15, 90), i=7, next=18
+            NodeList [15, 27), i=8, next=10
+              KindExportKeyword [15, 27), i=9, next=0
+            KindIdentifier "ListenerCallback" [37, 54), i=10, next=11
+            NodeList [56, 83), i=11, next=0
+              KindCallSignature [56, 83), i=12, next=0
+                NodeList [67, 76), i=13, next=17
+                  KindParameter [67, 76), i=14, next=0
+                    KindIdentifier "value" [67, 72), i=15, next=16
+                    KindAnyKeyword [73, 76), i=16, next=0
+                KindVoidKeyword [78, 82), i=17, next=0
+          KindClassDeclaration [90, 213), i=18, next=0
+            NodeList [90, 102), i=19, next=21
+              KindExportKeyword [90, 102), i=20, next=0
+            KindIdentifier "EventEmitter" [108, 121), i=21, next=22
+            NodeList [123, 206), i=22, next=0
+              KindMethodDeclaration [123, 206), i=23, next=0
+                NodeList [123, 140), i=24, next=26
+                  KindPublicKeyword [123, 140), i=25, next=0
+                KindIdentifier "addListener" [140, 152), i=26, next=27
+                NodeList [153, 191), i=27, next=35
+                  KindParameter [153, 164), i=28, next=31
+                    KindIdentifier "type" [153, 157), i=29, next=30
+                    KindStringKeyword [158, 164), i=30, next=0
+                  KindParameter [165, 191), i=31, next=0
+                    KindIdentifier "listener" [165, 174), i=32, next=33
+                    KindTypeReference [175, 191), i=33, next=0
+                      KindIdentifier "ListenerCallback" [175, 191), i=34, next=0
+                KindBlock [192, 206), i=35, next=0
+    KindModuleDeclaration [216, 544), i=36, next=0
+      KindIdentifier "Consumer" [226, 235), i=37, next=38
+      KindModuleBlock [235, 544), i=38, next=0
+        NodeList [237, 541), i=39, next=0
+          KindClassDeclaration [237, 541), i=40, next=0
+            KindIdentifier "EventEmitterConsummer" [248, 270), i=41, next=42
+            NodeList [272, 534), i=42, next=0
+              KindConstructor [272, 336), i=43, next=54
+                NodeList [295, 331), i=44, next=53
+                  KindParameter [295, 331), i=45, next=0
+                    NodeList [295, 302), i=46, next=48
+                      KindPrivateKeyword [295, 302), i=47, next=0
+                    KindIdentifier "emitter" [302, 310), i=48, next=49
+                    KindTypeReference [311, 331), i=49, next=0
+                      KindQualifiedName [311, 331), i=50, next=0
+                        KindIdentifier "Events" [311, 318), i=51, next=52
+                        KindIdentifier "EventEmitter" [319, 331), i=52, next=0
+                KindBlock [332, 336), i=53, next=0
+              KindMethodDeclaration [336, 486), i=54, next=81
+                NodeList [336, 355), i=55, next=57
+                  KindPrivateKeyword [336, 355), i=56, next=0
+                KindIdentifier "register" [355, 364), i=57, next=58
+                KindBlock [366, 486), i=58, next=0
+                  NodeList [368, 475), i=59, next=0
+                    KindExpressionStatement [368, 475), i=60, next=0
+                      KindCallExpression [368, 474), i=61, next=0
+                        KindPropertyAccessExpression [368, 406), i=62, next=67
+                          KindPropertyAccessExpression [368, 394), i=63, next=66
+                            KindThisKeyword [368, 386), i=64, next=65
+                            KindIdentifier "emitter" [387, 394), i=65, next=0
+                          KindIdentifier "addListener" [395, 406), i=66, next=0
+                        NodeList [407, 473), i=67, next=0
+                          KindStringLiteral "change" [407, 415), i=68, next=69
+                          KindArrowFunction [416, 473), i=69, next=0
+                            NodeList [418, 419), i=70, next=73
+                              KindParameter [418, 419), i=71, next=0
+                                KindIdentifier "e" [418, 419), i=72, next=0
+                            KindEqualsGreaterThanToken [420, 423), i=73, next=74
+                            KindBlock [423, 473), i=74, next=0
+                              NodeList [425, 458), i=75, next=0
+                                KindExpressionStatement [425, 458), i=76, next=0
+                                  KindCallExpression [425, 457), i=77, next=0
+                                    KindPropertyAccessExpression [425, 455), i=78, next=0
+                                      KindThisKeyword [425, 447), i=79, next=80
+                                      KindIdentifier "changed" [448, 455), i=80, next=0
+              KindMethodDeclaration [486, 534), i=81, next=0
+                NodeList [486, 511), i=82, next=84
+                  KindPrivateKeyword [486, 511), i=83, next=0
+                KindIdentifier "changed" [511, 519), i=84, next=85
+                KindBlock [521, 534), i=85, next=0

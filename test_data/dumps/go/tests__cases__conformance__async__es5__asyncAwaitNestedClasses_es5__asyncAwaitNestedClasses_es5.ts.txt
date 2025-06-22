@@ -1,0 +1,67 @@
+KindSourceFile [0, 305), i=1, next=0
+  NodeList [0, 305), i=2, next=0
+    KindClassDeclaration [0, 288), i=3, next=59
+      KindIdentifier "A" [5, 7), i=4, next=5
+      NodeList [9, 285), i=5, next=0
+        KindPropertyDeclaration [9, 285), i=6, next=0
+          NodeList [9, 21), i=7, next=9
+            KindStaticKeyword [9, 21), i=8, next=0
+          KindIdentifier "B" [21, 23), i=9, next=10
+          KindClassExpression [25, 285), i=10, next=0
+            KindIdentifier "B" [31, 33), i=11, next=12
+            NodeList [35, 278), i=12, next=0
+              KindMethodDeclaration [35, 153), i=13, next=39
+                NodeList [35, 51), i=14, next=16
+                  KindStaticKeyword [35, 51), i=15, next=0
+                KindIdentifier "func2" [51, 57), i=16, next=17
+                KindTypeReference [60, 74), i=17, next=21
+                  KindIdentifier "Promise" [60, 68), i=18, next=19
+                  NodeList [69, 73), i=19, next=0
+                    KindVoidKeyword [69, 73), i=20, next=0
+                KindBlock [74, 153), i=21, next=0
+                  NodeList [76, 142), i=22, next=0
+                    KindReturnStatement [76, 142), i=23, next=0
+                      KindNewExpression [96, 141), i=24, next=0
+                        KindIdentifier "Promise" [100, 108), i=25, next=26
+                        NodeList [109, 140), i=26, next=0
+                          KindArrowFunction [109, 140), i=27, next=0
+                            NodeList [110, 117), i=28, next=31
+                              KindParameter [110, 117), i=29, next=0
+                                KindIdentifier "resolve" [110, 117), i=30, next=0
+                            KindEqualsGreaterThanToken [118, 121), i=31, next=32
+                            KindBlock [121, 140), i=32, next=0
+                              NodeList [123, 138), i=33, next=0
+                                KindExpressionStatement [123, 138), i=34, next=0
+                                  KindCallExpression [123, 137), i=35, next=0
+                                    KindIdentifier "resolve" [123, 131), i=36, next=37
+                                    NodeList [132, 136), i=37, next=0
+                                      KindNullKeyword [132, 136), i=38, next=0
+              KindPropertyDeclaration [153, 278), i=39, next=0
+                NodeList [153, 169), i=40, next=42
+                  KindStaticKeyword [153, 169), i=41, next=0
+                KindIdentifier "C" [169, 171), i=42, next=43
+                KindClassExpression [173, 278), i=43, next=0
+                  KindIdentifier "C" [179, 181), i=44, next=45
+                  NodeList [183, 267), i=45, next=0
+                    KindMethodDeclaration [183, 267), i=46, next=0
+                      NodeList [183, 209), i=47, next=50
+                        KindStaticKeyword [183, 203), i=48, next=49
+                        KindAsyncKeyword [203, 209), i=49, next=0
+                      KindIdentifier "func" [209, 214), i=50, next=51
+                      KindBlock [216, 267), i=51, next=0
+                        NodeList [218, 252), i=52, next=0
+                          KindExpressionStatement [218, 252), i=53, next=0
+                            KindAwaitExpression [218, 251), i=54, next=0
+                              KindCallExpression [241, 251), i=55, next=0
+                                KindPropertyAccessExpression [241, 249), i=56, next=0
+                                  KindIdentifier "B" [241, 243), i=57, next=58
+                                  KindIdentifier "func2" [244, 249), i=58, next=0
+    KindExpressionStatement [288, 305), i=59, next=0
+      KindCallExpression [288, 304), i=60, next=0
+        KindPropertyAccessExpression [288, 302), i=61, next=0
+          KindPropertyAccessExpression [288, 297), i=62, next=67
+            KindPropertyAccessExpression [288, 295), i=63, next=66
+              KindIdentifier "A" [288, 293), i=64, next=65
+              KindIdentifier "B" [294, 295), i=65, next=0
+            KindIdentifier "C" [296, 297), i=66, next=0
+          KindIdentifier "func" [298, 302), i=67, next=0

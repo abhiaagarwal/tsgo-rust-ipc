@@ -1,0 +1,63 @@
+KindSourceFile [0, 287), i=1, next=0
+  NodeList [0, 287), i=2, next=0
+    KindClassDeclaration [0, 15), i=3, next=8
+      KindIdentifier "Bar" [5, 9), i=4, next=5
+      NodeList [11, 13), i=5, next=0
+        KindPropertyDeclaration [11, 13), i=6, next=0
+          KindIdentifier "x" [11, 13), i=7, next=0
+    KindClassDeclaration [15, 44), i=8, next=18
+      KindIdentifier "Foo" [22, 26), i=9, next=10
+      NodeList [26, 38), i=10, next=15
+        KindHeritageClause [26, 38), i=11, next=0
+          NodeList [34, 38), i=12, next=0
+            KindExpressionWithTypeArguments [34, 38), i=13, next=0
+              KindIdentifier "Bar" [34, 38), i=14, next=0
+      NodeList [40, 42), i=15, next=0
+        KindPropertyDeclaration [40, 42), i=16, next=0
+          KindIdentifier "y" [40, 42), i=17, next=0
+    KindClassDeclaration [44, 231), i=18, next=44
+      KindIdentifier "FooIterator" [51, 63), i=19, next=20
+      NodeList [65, 228), i=20, next=0
+        KindMethodDeclaration [65, 170), i=21, next=35
+          KindIdentifier "next" [65, 75), i=22, next=23
+          KindBlock [77, 170), i=23, next=0
+            NodeList [79, 163), i=24, next=0
+              KindReturnStatement [79, 163), i=25, next=0
+                KindObjectLiteralExpression [95, 162), i=26, next=0
+                  NodeList [97, 151), i=27, next=0
+                    KindPropertyAssignment [97, 125), i=28, next=32
+                      KindIdentifier "value" [97, 116), i=29, next=30
+                      KindNewExpression [117, 125), i=30, next=0
+                        KindIdentifier "Foo" [121, 125), i=31, next=0
+                    KindPropertyAssignment [126, 151), i=32, next=0
+                      KindIdentifier "done" [126, 144), i=33, next=34
+                      KindFalseKeyword [145, 151), i=34, next=0
+        KindMethodDeclaration [170, 228), i=35, next=0
+          KindComputedPropertyName [170, 195), i=36, next=40
+            KindPropertyAccessExpression [179, 194), i=37, next=0
+              KindIdentifier "Symbol" [179, 185), i=38, next=39
+              KindIdentifier "iterator" [186, 194), i=39, next=0
+          KindBlock [197, 228), i=40, next=0
+            NodeList [199, 221), i=41, next=0
+              KindReturnStatement [199, 221), i=42, next=0
+                KindThisKeyword [215, 220), i=43, next=0
+    KindVariableStatement [231, 257), i=44, next=54
+      KindVariableDeclarationList [231, 256), i=45, next=0
+        NodeList [238, 256), i=46, next=0
+          KindVariableDeclaration [238, 245), i=47, next=51
+            KindIdentifier "a" [238, 240), i=48, next=49
+            KindTypeReference [241, 245), i=49, next=0
+              KindIdentifier "Bar" [241, 245), i=50, next=0
+          KindVariableDeclaration [246, 256), i=51, next=0
+            KindIdentifier "b" [246, 248), i=52, next=53
+            KindStringKeyword [249, 256), i=53, next=0
+    KindExpressionStatement [257, 287), i=54, next=0
+      KindBinaryExpression [257, 286), i=55, next=0
+        KindArrayLiteralExpression [257, 268), i=56, next=61
+          NodeList [260, 267), i=57, next=0
+            KindIdentifier "a" [260, 261), i=58, next=59
+            KindSpreadElement [262, 267), i=59, next=0
+              KindIdentifier "b" [266, 267), i=60, next=0
+        KindEqualsToken [268, 270), i=61, next=62
+        KindNewExpression [270, 286), i=62, next=0
+          KindIdentifier "FooIterator" [274, 286), i=63, next=0

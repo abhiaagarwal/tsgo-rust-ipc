@@ -1,0 +1,88 @@
+KindSourceFile [0, 390), i=1, next=0
+  NodeList [0, 388), i=2, next=0
+    KindVariableStatement [0, 76), i=3, next=22
+      KindVariableDeclarationList [0, 76), i=4, next=0
+        NodeList [5, 76), i=5, next=0
+          KindVariableDeclaration [5, 76), i=6, next=0
+            KindIdentifier "Foo" [5, 9), i=7, next=8
+            KindIntersectionType [10, 18), i=8, next=14
+              NodeList [10, 18), i=9, next=0
+                KindTypeReference [10, 13), i=10, next=12
+                  KindIdentifier "C1" [10, 13), i=11, next=0
+                KindTypeReference [15, 18), i=12, next=0
+                  KindIdentifier "C2" [15, 18), i=13, next=0
+            KindClassExpression [20, 76), i=14, next=0
+              NodeList [33, 69), i=15, next=0
+                KindMethodDeclaration [33, 51), i=16, next=19
+                  KindIdentifier "m1" [33, 45), i=17, next=18
+                  KindBlock [47, 51), i=18, next=0
+                KindMethodDeclaration [51, 69), i=19, next=0
+                  KindIdentifier "m2" [51, 63), i=20, next=21
+                  KindBlock [65, 69), i=21, next=0
+    KindInterfaceDeclaration [76, 114), i=22, next=28
+      KindIdentifier "I1" [89, 92), i=23, next=24
+      NodeList [94, 111), i=24, next=0
+        KindMethodSignature [94, 111), i=25, next=0
+          KindIdentifier "m1" [94, 102), i=26, next=27
+          KindVoidKeyword [105, 110), i=27, next=0
+    KindInterfaceDeclaration [114, 169), i=28, next=37
+      KindIdentifier "I2" [127, 130), i=29, next=30
+      NodeList [132, 166), i=30, next=0
+        KindMethodSignature [132, 149), i=31, next=34
+          KindIdentifier "m1" [132, 140), i=32, next=33
+          KindVoidKeyword [143, 148), i=33, next=0
+        KindMethodSignature [149, 166), i=34, next=0
+          KindIdentifier "m2" [149, 157), i=35, next=36
+          KindVoidKeyword [160, 165), i=36, next=0
+    KindInterfaceDeclaration [169, 220), i=37, next=49
+      KindIdentifier "C1" [182, 185), i=38, next=39
+      NodeList [187, 217), i=39, next=0
+        KindConstructSignature [187, 217), i=40, next=0
+          NodeList [197, 211), i=41, next=47
+            KindParameter [197, 211), i=42, next=0
+              KindDotDotDotToken [197, 200), i=43, next=44
+              KindIdentifier "args" [200, 204), i=44, next=45
+              KindArrayType [205, 211), i=45, next=0
+                KindAnyKeyword [205, 209), i=46, next=0
+          KindTypeReference [213, 216), i=47, next=0
+            KindIdentifier "I1" [213, 216), i=48, next=0
+    KindInterfaceDeclaration [220, 271), i=49, next=61
+      KindIdentifier "C2" [233, 236), i=50, next=51
+      NodeList [238, 268), i=51, next=0
+        KindConstructSignature [238, 268), i=52, next=0
+          NodeList [248, 262), i=53, next=59
+            KindParameter [248, 262), i=54, next=0
+              KindDotDotDotToken [248, 251), i=55, next=56
+              KindIdentifier "args" [251, 255), i=56, next=57
+              KindArrayType [256, 262), i=57, next=0
+                KindAnyKeyword [256, 260), i=58, next=0
+          KindTypeReference [264, 267), i=59, next=0
+            KindIdentifier "I2" [264, 267), i=60, next=0
+    KindClassDeclaration [271, 388), i=61, next=0
+      NodeList [271, 281), i=62, next=64
+        KindExportKeyword [271, 281), i=63, next=0
+      KindIdentifier "Bar" [287, 291), i=64, next=65
+      NodeList [291, 303), i=65, next=70
+        KindHeritageClause [291, 303), i=66, next=0
+          NodeList [299, 303), i=67, next=0
+            KindExpressionWithTypeArguments [299, 303), i=68, next=0
+              KindIdentifier "Foo" [299, 303), i=69, next=0
+      NodeList [305, 385), i=70, next=0
+        KindMethodDeclaration [305, 345), i=71, next=80
+          KindIdentifier "m1" [305, 313), i=72, next=73
+          KindBlock [315, 345), i=73, next=0
+            NodeList [317, 338), i=74, next=0
+              KindExpressionStatement [317, 338), i=75, next=0
+                KindCallExpression [317, 337), i=76, next=0
+                  KindPropertyAccessExpression [317, 335), i=77, next=0
+                    KindSuperKeyword [317, 332), i=78, next=79
+                    KindIdentifier "m1" [333, 335), i=79, next=0
+        KindMethodDeclaration [345, 385), i=80, next=0
+          KindIdentifier "m2" [345, 353), i=81, next=82
+          KindBlock [355, 385), i=82, next=0
+            NodeList [357, 378), i=83, next=0
+              KindExpressionStatement [357, 378), i=84, next=0
+                KindCallExpression [357, 377), i=85, next=0
+                  KindPropertyAccessExpression [357, 375), i=86, next=0
+                    KindSuperKeyword [357, 372), i=87, next=88
+                    KindIdentifier "m2" [373, 375), i=88, next=0

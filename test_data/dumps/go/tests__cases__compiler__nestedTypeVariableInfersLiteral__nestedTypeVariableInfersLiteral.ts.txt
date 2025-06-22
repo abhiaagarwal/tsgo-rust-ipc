@@ -1,0 +1,178 @@
+KindSourceFile [0, 720), i=1, next=0
+  NodeList [0, 712), i=2, next=0
+    KindFunctionDeclaration [0, 72), i=3, next=27
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindIdentifier "direct" [16, 23), i=6, next=7
+      NodeList [24, 40), i=7, next=11
+        KindTypeParameter [24, 40), i=8, next=0
+          KindIdentifier "A" [24, 25), i=9, next=10
+          KindStringKeyword [33, 40), i=10, next=0
+      NodeList [42, 52), i=11, next=21
+        KindParameter [42, 52), i=12, next=0
+          KindIdentifier "a" [42, 43), i=13, next=14
+          KindUnionType [44, 52), i=14, next=0
+            NodeList [44, 52), i=15, next=0
+              KindTypeReference [44, 46), i=16, next=18
+                KindIdentifier "A" [44, 46), i=17, next=0
+              KindArrayType [48, 52), i=18, next=0
+                KindTypeReference [48, 50), i=19, next=0
+                  KindIdentifier "A" [48, 50), i=20, next=0
+      KindTypeReference [54, 72), i=21, next=0
+        KindIdentifier "Record" [54, 61), i=22, next=23
+        NodeList [62, 71), i=23, next=0
+          KindTypeReference [62, 63), i=24, next=26
+            KindIdentifier "A" [62, 63), i=25, next=0
+          KindStringKeyword [64, 71), i=26, next=0
+    KindFunctionDeclaration [72, 152), i=27, next=50
+      NodeList [72, 81), i=28, next=30
+        KindDeclareKeyword [72, 81), i=29, next=0
+      KindIdentifier "nested" [90, 97), i=30, next=31
+      NodeList [98, 114), i=31, next=35
+        KindTypeParameter [98, 114), i=32, next=0
+          KindIdentifier "A" [98, 99), i=33, next=34
+          KindStringKeyword [107, 114), i=34, next=0
+      NodeList [116, 132), i=35, next=44
+        KindParameter [116, 132), i=36, next=0
+          KindIdentifier "a" [116, 117), i=37, next=38
+          KindTypeLiteral [118, 132), i=38, next=0
+            NodeList [120, 130), i=39, next=0
+              KindPropertySignature [120, 130), i=40, next=0
+                KindIdentifier "fields" [120, 127), i=41, next=42
+                KindTypeReference [128, 130), i=42, next=0
+                  KindIdentifier "A" [128, 130), i=43, next=0
+      KindTypeReference [134, 152), i=44, next=0
+        KindIdentifier "Record" [134, 141), i=45, next=46
+        NodeList [142, 151), i=46, next=0
+          KindTypeReference [142, 143), i=47, next=49
+            KindIdentifier "A" [142, 143), i=48, next=0
+          KindStringKeyword [144, 151), i=49, next=0
+    KindFunctionDeclaration [152, 243), i=50, next=78
+      NodeList [152, 161), i=51, next=53
+        KindDeclareKeyword [152, 161), i=52, next=0
+      KindIdentifier "nestedUnion" [170, 182), i=53, next=54
+      NodeList [183, 199), i=54, next=58
+        KindTypeParameter [183, 199), i=55, next=0
+          KindIdentifier "A" [183, 184), i=56, next=57
+          KindStringKeyword [192, 199), i=57, next=0
+      NodeList [201, 223), i=58, next=72
+        KindParameter [201, 223), i=59, next=0
+          KindIdentifier "a" [201, 202), i=60, next=61
+          KindTypeLiteral [203, 223), i=61, next=0
+            NodeList [205, 221), i=62, next=0
+              KindPropertySignature [205, 221), i=63, next=0
+                KindIdentifier "fields" [205, 212), i=64, next=65
+                KindUnionType [213, 221), i=65, next=0
+                  NodeList [213, 221), i=66, next=0
+                    KindTypeReference [213, 215), i=67, next=69
+                      KindIdentifier "A" [213, 215), i=68, next=0
+                    KindArrayType [217, 221), i=69, next=0
+                      KindTypeReference [217, 219), i=70, next=0
+                        KindIdentifier "A" [217, 219), i=71, next=0
+      KindTypeReference [225, 243), i=72, next=0
+        KindIdentifier "Record" [225, 232), i=73, next=74
+        NodeList [233, 242), i=74, next=0
+          KindTypeReference [233, 234), i=75, next=77
+            KindIdentifier "A" [233, 234), i=76, next=0
+          KindStringKeyword [235, 242), i=77, next=0
+    KindVariableStatement [243, 284), i=78, next=87
+      KindVariableDeclarationList [243, 284), i=79, next=0
+        NodeList [252, 284), i=80, next=0
+          KindVariableDeclaration [252, 284), i=81, next=0
+            KindIdentifier "directUnionSingle" [252, 270), i=82, next=83
+            KindCallExpression [272, 284), i=83, next=0
+              KindIdentifier "direct" [272, 279), i=84, next=85
+              NodeList [280, 283), i=85, next=0
+                KindStringLiteral "z" [280, 283), i=86, next=0
+    KindVariableStatement [284, 329), i=87, next=99
+      KindVariableDeclarationList [284, 329), i=88, next=0
+        NodeList [291, 329), i=89, next=0
+          KindVariableDeclaration [291, 329), i=90, next=0
+            KindIdentifier "directUnionArray" [291, 308), i=91, next=92
+            KindCallExpression [310, 329), i=92, next=0
+              KindIdentifier "direct" [310, 317), i=93, next=94
+              NodeList [318, 328), i=94, next=0
+                KindArrayLiteralExpression [318, 328), i=95, next=0
+                  NodeList [319, 327), i=96, next=0
+                    KindStringLiteral "z" [319, 322), i=97, next=98
+                    KindStringLiteral "y" [323, 327), i=98, next=0
+    KindVariableStatement [329, 373), i=99, next=112
+      KindVariableDeclarationList [329, 373), i=100, next=0
+        NodeList [336, 373), i=101, next=0
+          KindVariableDeclaration [336, 373), i=102, next=0
+            KindIdentifier "nestedSingle" [336, 349), i=103, next=104
+            KindCallExpression [351, 373), i=104, next=0
+              KindIdentifier "nested" [351, 358), i=105, next=106
+              NodeList [359, 372), i=106, next=0
+                KindObjectLiteralExpression [359, 372), i=107, next=0
+                  NodeList [360, 371), i=108, next=0
+                    KindPropertyAssignment [360, 371), i=109, next=0
+                      KindIdentifier "fields" [360, 366), i=110, next=111
+                      KindStringLiteral "z" [367, 371), i=111, next=0
+    KindVariableStatement [373, 427), i=112, next=125
+      KindVariableDeclarationList [373, 427), i=113, next=0
+        NodeList [380, 427), i=114, next=0
+          KindVariableDeclaration [380, 427), i=115, next=0
+            KindIdentifier "nestedUnionSingle" [380, 398), i=116, next=117
+            KindCallExpression [400, 427), i=117, next=0
+              KindIdentifier "nestedUnion" [400, 412), i=118, next=119
+              NodeList [413, 426), i=119, next=0
+                KindObjectLiteralExpression [413, 426), i=120, next=0
+                  NodeList [414, 425), i=121, next=0
+                    KindPropertyAssignment [414, 425), i=122, next=0
+                      KindIdentifier "fields" [414, 420), i=123, next=124
+                      KindStringLiteral "z" [421, 425), i=124, next=0
+    KindVariableStatement [427, 487), i=125, next=141
+      KindVariableDeclarationList [427, 487), i=126, next=0
+        NodeList [434, 487), i=127, next=0
+          KindVariableDeclaration [434, 487), i=128, next=0
+            KindIdentifier "nestedUnionArray" [434, 451), i=129, next=130
+            KindCallExpression [453, 487), i=130, next=0
+              KindIdentifier "nestedUnion" [453, 465), i=131, next=132
+              NodeList [466, 486), i=132, next=0
+                KindObjectLiteralExpression [466, 486), i=133, next=0
+                  NodeList [467, 485), i=134, next=0
+                    KindPropertyAssignment [467, 485), i=135, next=0
+                      KindIdentifier "fields" [467, 473), i=136, next=137
+                      KindArrayLiteralExpression [474, 485), i=137, next=0
+                        NodeList [476, 484), i=138, next=0
+                          KindStringLiteral "z" [476, 479), i=139, next=140
+                          KindStringLiteral "y" [480, 484), i=140, next=0
+    KindFunctionDeclaration [487, 543), i=141, next=154
+      NodeList [487, 498), i=142, next=144
+        KindDeclareKeyword [487, 498), i=143, next=0
+      KindIdentifier "hasZField" [507, 517), i=144, next=145
+      NodeList [518, 536), i=145, next=153
+        KindParameter [518, 536), i=146, next=0
+          KindIdentifier "arg" [518, 521), i=147, next=148
+          KindTypeLiteral [522, 536), i=148, next=0
+            NodeList [524, 534), i=149, next=0
+              KindPropertySignature [524, 534), i=150, next=0
+                KindIdentifier "z" [524, 526), i=151, next=152
+                KindStringKeyword [527, 534), i=152, next=0
+      KindVoidKeyword [538, 543), i=153, next=0
+    KindExpressionStatement [543, 575), i=154, next=159
+      KindCallExpression [543, 575), i=155, next=0
+        KindIdentifier "hasZField" [543, 556), i=156, next=157
+        NodeList [557, 574), i=157, next=0
+          KindIdentifier "directUnionSingle" [557, 574), i=158, next=0
+    KindExpressionStatement [575, 610), i=159, next=164
+      KindCallExpression [575, 610), i=160, next=0
+        KindIdentifier "hasZField" [575, 592), i=161, next=162
+        NodeList [593, 609), i=162, next=0
+          KindIdentifier "directUnionArray" [593, 609), i=163, next=0
+    KindExpressionStatement [610, 641), i=164, next=169
+      KindCallExpression [610, 641), i=165, next=0
+        KindIdentifier "hasZField" [610, 627), i=166, next=167
+        NodeList [628, 640), i=167, next=0
+          KindIdentifier "nestedSingle" [628, 640), i=168, next=0
+    KindExpressionStatement [641, 677), i=169, next=174
+      KindCallExpression [641, 677), i=170, next=0
+        KindIdentifier "hasZField" [641, 658), i=171, next=172
+        NodeList [659, 676), i=172, next=0
+          KindIdentifier "nestedUnionSingle" [659, 676), i=173, next=0
+    KindExpressionStatement [677, 712), i=174, next=0
+      KindCallExpression [677, 712), i=175, next=0
+        KindIdentifier "hasZField" [677, 694), i=176, next=177
+        NodeList [695, 711), i=177, next=0
+          KindIdentifier "nestedUnionArray" [695, 711), i=178, next=0

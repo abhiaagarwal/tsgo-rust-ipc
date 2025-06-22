@@ -1,0 +1,46 @@
+KindSourceFile [0, 161), i=1, next=0
+  NodeList [0, 160), i=2, next=0
+    KindTypeAliasDeclaration [0, 38), i=3, next=16
+      KindIdentifier "Box" [4, 8), i=4, next=5
+      KindTypeLiteral [10, 37), i=5, next=0
+        NodeList [12, 35), i=6, next=0
+          KindPropertySignature [12, 35), i=7, next=0
+            KindIdentifier "content" [12, 22), i=8, next=9
+            KindQuestionToken [22, 23), i=9, next=10
+            KindUnionType [24, 34), i=10, next=0
+              NodeList [24, 34), i=11, next=0
+                KindTypeReference [24, 28), i=12, next=14
+                  KindIdentifier "Foo" [24, 28), i=13, next=0
+                KindTypeReference [30, 34), i=14, next=0
+                  KindIdentifier "Box" [30, 34), i=15, next=0
+    KindVariableStatement [38, 61), i=16, next=25
+      NodeList [38, 47), i=17, next=19
+        KindDeclareKeyword [38, 47), i=18, next=0
+      KindVariableDeclarationList [47, 60), i=19, next=0
+        NodeList [53, 60), i=20, next=0
+          KindVariableDeclaration [53, 60), i=21, next=0
+            KindIdentifier "b" [53, 55), i=22, next=23
+            KindTypeReference [56, 60), i=23, next=0
+              KindIdentifier "Box" [56, 60), i=24, next=0
+    KindClassDeclaration [61, 160), i=25, next=0
+      KindIdentifier "Foo" [68, 72), i=26, next=27
+      NodeList [74, 158), i=27, next=0
+        KindGetAccessor [74, 158), i=28, next=0
+          KindIdentifier "foo" [80, 84), i=29, next=30
+          KindBlock [86, 158), i=30, next=0
+            NodeList [88, 154), i=31, next=0
+              KindReturnStatement [88, 154), i=32, next=0
+                KindObjectLiteralExpression [99, 153), i=33, next=0
+                  NodeList [101, 147), i=34, next=0
+                    KindPropertyAssignment [101, 134), i=35, next=45
+                      KindIdentifier "content" [101, 115), i=36, next=37
+                      KindAsExpression [116, 134), i=37, next=0
+                        KindThisKeyword [116, 121), i=38, next=39
+                        KindUnionType [124, 134), i=39, next=0
+                          NodeList [124, 134), i=40, next=0
+                            KindTypeReference [124, 128), i=41, next=43
+                              KindIdentifier "Foo" [124, 128), i=42, next=0
+                            KindTypeReference [130, 134), i=43, next=0
+                              KindIdentifier "Box" [130, 134), i=44, next=0
+                    KindSpreadAssignment [135, 146), i=45, next=0
+                      KindIdentifier "b" [145, 146), i=46, next=0

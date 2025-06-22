@@ -1,0 +1,99 @@
+KindSourceFile [0, 491), i=1, next=0
+  NodeList [0, 491), i=2, next=0
+    KindFunctionDeclaration [0, 211), i=3, next=44
+      KindIdentifier "testNonNullInference" [8, 29), i=4, next=5
+      NodeList [30, 47), i=5, next=10
+        KindParameter [30, 47), i=6, next=0
+          KindIdentifier "numbers" [30, 37), i=7, next=8
+          KindArrayType [38, 47), i=8, next=0
+            KindNumberKeyword [38, 45), i=9, next=0
+      KindBlock [48, 211), i=10, next=0
+        NodeList [50, 208), i=11, next=0
+          KindVariableStatement [50, 65), i=12, next=17
+            KindVariableDeclarationList [50, 64), i=13, next=0
+              NodeList [59, 64), i=14, next=0
+                KindVariableDeclaration [59, 64), i=15, next=0
+                  KindIdentifier "last" [59, 64), i=16, next=0
+          KindForOfStatement [65, 183), i=17, next=39
+            KindVariableDeclarationList [78, 85), i=18, next=22
+              NodeList [83, 85), i=19, next=0
+                KindVariableDeclaration [83, 85), i=20, next=0
+                  KindIdentifier "n" [83, 85), i=21, next=0
+            KindIdentifier "numbers" [88, 96), i=22, next=23
+            KindBlock [97, 183), i=23, next=0
+              NodeList [99, 176), i=24, next=0
+                KindIfStatement [99, 155), i=25, next=34
+                  KindBinaryExpression [113, 118), i=26, next=30
+                    KindIdentifier "n" [113, 114), i=27, next=28
+                    KindPercentToken [114, 116), i=28, next=29
+                    KindNumericLiteral [116, 118), i=29, next=0
+                  KindBlock [119, 155), i=30, next=0
+                    NodeList [121, 144), i=31, next=0
+                      KindReturnStatement [121, 144), i=32, next=0
+                        KindIdentifier "n" [141, 143), i=33, next=0
+                KindExpressionStatement [155, 176), i=34, next=0
+                  KindBinaryExpression [155, 175), i=35, next=0
+                    KindIdentifier "last" [155, 171), i=36, next=37
+                    KindEqualsToken [171, 173), i=37, next=38
+                    KindIdentifier "n" [173, 175), i=38, next=0
+          KindExpressionStatement [183, 196), i=39, next=41
+            KindIdentifier "last" [183, 195), i=40, next=0
+          KindExpressionStatement [196, 208), i=41, next=0
+            KindNonNullExpression [196, 207), i=42, next=0
+              KindIdentifier "last" [196, 206), i=43, next=0
+    KindFunctionDeclaration [211, 491), i=44, next=0
+      KindIdentifier "testNonNullInferenceWithArrays" [223, 254), i=45, next=46
+      NodeList [255, 272), i=46, next=51
+        KindParameter [255, 272), i=47, next=0
+          KindIdentifier "numbers" [255, 262), i=48, next=49
+          KindArrayType [263, 272), i=49, next=0
+            KindNumberKeyword [263, 270), i=50, next=0
+      KindBlock [273, 491), i=51, next=0
+        NodeList [275, 488), i=52, next=0
+          KindVariableStatement [275, 292), i=53, next=58
+            KindVariableDeclarationList [275, 291), i=54, next=0
+              NodeList [284, 291), i=55, next=0
+                KindVariableDeclaration [284, 291), i=56, next=0
+                  KindIdentifier "result" [284, 291), i=57, next=0
+          KindVariableStatement [292, 313), i=58, next=64
+            KindVariableDeclarationList [292, 312), i=59, next=0
+              NodeList [303, 312), i=60, next=0
+                KindVariableDeclaration [303, 312), i=61, next=0
+                  KindIdentifier "arr" [303, 307), i=62, next=63
+                  KindArrayLiteralExpression [309, 312), i=63, next=0
+          KindForOfStatement [313, 459), i=64, next=95
+            KindVariableDeclarationList [326, 333), i=65, next=69
+              NodeList [331, 333), i=66, next=0
+                KindVariableDeclaration [331, 333), i=67, next=0
+                  KindIdentifier "n" [331, 333), i=68, next=0
+            KindIdentifier "numbers" [336, 344), i=69, next=70
+            KindBlock [345, 459), i=70, next=0
+              NodeList [347, 452), i=71, next=0
+                KindIfStatement [347, 405), i=72, next=83
+                  KindBinaryExpression [361, 366), i=73, next=77
+                    KindIdentifier "n" [361, 362), i=74, next=75
+                    KindPercentToken [362, 364), i=75, next=76
+                    KindNumericLiteral [364, 366), i=76, next=0
+                  KindBlock [367, 405), i=77, next=0
+                    NodeList [369, 394), i=78, next=0
+                      KindReturnStatement [369, 394), i=79, next=0
+                        KindArrayLiteralExpression [389, 393), i=80, next=0
+                          NodeList [391, 392), i=81, next=0
+                            KindIdentifier "n" [391, 392), i=82, next=0
+                KindExpressionStatement [405, 429), i=83, next=90
+                  KindCallExpression [405, 428), i=84, next=0
+                    KindPropertyAccessExpression [405, 425), i=85, next=88
+                      KindIdentifier "arr" [405, 420), i=86, next=87
+                      KindIdentifier "push" [421, 425), i=87, next=0
+                    NodeList [426, 427), i=88, next=0
+                      KindIdentifier "n" [426, 427), i=89, next=0
+                KindExpressionStatement [429, 452), i=90, next=0
+                  KindBinaryExpression [429, 451), i=91, next=0
+                    KindIdentifier "result" [429, 445), i=92, next=93
+                    KindEqualsToken [445, 447), i=93, next=94
+                    KindIdentifier "arr" [447, 451), i=94, next=0
+          KindExpressionStatement [459, 474), i=95, next=97
+            KindIdentifier "result" [459, 473), i=96, next=0
+          KindExpressionStatement [474, 488), i=97, next=0
+            KindNonNullExpression [474, 487), i=98, next=0
+              KindIdentifier "result" [474, 486), i=99, next=0

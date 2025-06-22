@@ -1,0 +1,61 @@
+KindSourceFile [0, 247), i=1, next=0
+  NodeList [0, 247), i=2, next=0
+    KindImportDeclaration [0, 33), i=3, next=8
+      KindImportClause [6, 14), i=4, next=7
+        KindNamespaceImport [6, 14), i=5, next=0
+          KindIdentifier "ns" [11, 14), i=6, next=0
+      KindStringLiteral "./reexport" [19, 32), i=7, next=0
+    KindModuleDeclaration [33, 172), i=8, next=29
+      NodeList [33, 44), i=9, next=11
+        KindDeclareKeyword [33, 44), i=10, next=0
+      KindStringLiteral "./reexport" [51, 64), i=11, next=12
+      KindModuleBlock [64, 172), i=12, next=0
+        NodeList [66, 169), i=13, next=0
+          KindModuleDeclaration [66, 169), i=14, next=0
+            NodeList [66, 78), i=15, next=17
+              KindExportKeyword [66, 78), i=16, next=0
+            KindIdentifier "Root" [88, 93), i=17, next=18
+            KindModuleBlock [93, 169), i=18, next=0
+              NodeList [95, 162), i=19, next=0
+                KindInterfaceDeclaration [95, 162), i=20, next=0
+                  NodeList [95, 111), i=21, next=23
+                    KindExportKeyword [95, 111), i=22, next=0
+                  KindIdentifier "Foo" [121, 125), i=23, next=24
+                  NodeList [127, 151), i=24, next=0
+                    KindPropertySignature [127, 151), i=25, next=0
+                      KindIdentifier "self" [127, 145), i=26, next=27
+                      KindTypeReference [146, 150), i=27, next=0
+                        KindIdentifier "Foo" [146, 150), i=28, next=0
+    KindVariableStatement [172, 205), i=29, next=42
+      NodeList [172, 183), i=30, next=32
+        KindDeclareKeyword [172, 183), i=31, next=0
+      KindVariableDeclarationList [183, 204), i=32, next=0
+        NodeList [189, 204), i=33, next=0
+          KindVariableDeclaration [189, 204), i=34, next=0
+            KindIdentifier "f" [189, 191), i=35, next=36
+            KindTypeReference [192, 204), i=36, next=0
+              KindQualifiedName [192, 204), i=37, next=0
+                KindQualifiedName [192, 200), i=38, next=41
+                  KindIdentifier "ns" [192, 195), i=39, next=40
+                  KindIdentifier "Root" [196, 200), i=40, next=0
+                KindIdentifier "Foo" [201, 204), i=41, next=0
+    KindExpressionStatement [205, 213), i=42, next=46
+      KindPropertyAccessExpression [205, 212), i=43, next=0
+        KindIdentifier "f" [205, 210), i=44, next=45
+        KindIdentifier "x" [211, 212), i=45, next=0
+    KindExpressionStatement [213, 222), i=46, next=50
+      KindPropertyAccessExpression [213, 221), i=47, next=0
+        KindIdentifier "f" [213, 216), i=48, next=49
+        KindIdentifier "self" [217, 221), i=49, next=0
+    KindExpressionStatement [222, 233), i=50, next=56
+      KindPropertyAccessExpression [222, 232), i=51, next=0
+        KindPropertyAccessExpression [222, 230), i=52, next=55
+          KindIdentifier "f" [222, 225), i=53, next=54
+          KindIdentifier "self" [226, 230), i=54, next=0
+        KindIdentifier "x" [231, 232), i=55, next=0
+    KindExpressionStatement [233, 247), i=56, next=0
+      KindPropertyAccessExpression [233, 246), i=57, next=0
+        KindPropertyAccessExpression [233, 241), i=58, next=61
+          KindIdentifier "f" [233, 236), i=59, next=60
+          KindIdentifier "self" [237, 241), i=60, next=0
+        KindIdentifier "self" [242, 246), i=61, next=0

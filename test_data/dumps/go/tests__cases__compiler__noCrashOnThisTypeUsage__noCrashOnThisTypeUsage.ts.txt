@@ -1,0 +1,129 @@
+KindSourceFile [0, 688), i=1, next=0
+  NodeList [0, 688), i=2, next=0
+    KindInterfaceDeclaration [0, 160), i=3, next=35
+      KindIdentifier "IListenable" [9, 21), i=4, next=5
+      NodeList [23, 157), i=5, next=0
+        KindPropertySignature [23, 63), i=6, next=15
+          KindIdentifier "changeListeners" [23, 44), i=7, next=8
+          KindUnionType [45, 63), i=8, next=0
+            NodeList [45, 63), i=9, next=0
+              KindArrayType [45, 56), i=10, next=13
+                KindTypeReference [45, 54), i=11, next=0
+                  KindIdentifier "Function" [45, 54), i=12, next=0
+              KindLiteralType [58, 63), i=13, next=0
+                KindNullKeyword [58, 63), i=14, next=0
+        KindMethodSignature [63, 157), i=15, next=0
+          KindIdentifier "observe" [63, 76), i=16, next=17
+          NodeList [77, 150), i=17, next=34
+            KindParameter [77, 123), i=18, next=30
+              KindIdentifier "handler" [77, 84), i=19, next=20
+              KindFunctionType [85, 123), i=20, next=0
+                NodeList [87, 114), i=21, next=29
+                  KindParameter [87, 98), i=22, next=25
+                    KindIdentifier "change" [87, 93), i=23, next=24
+                    KindAnyKeyword [94, 98), i=24, next=0
+                  KindParameter [99, 114), i=25, next=0
+                    KindIdentifier "oldValue" [99, 108), i=26, next=27
+                    KindQuestionToken [108, 109), i=27, next=28
+                    KindAnyKeyword [110, 114), i=28, next=0
+                KindVoidKeyword [118, 123), i=29, next=0
+            KindParameter [124, 150), i=30, next=0
+              KindIdentifier "fireImmediately" [124, 140), i=31, next=32
+              KindQuestionToken [140, 141), i=32, next=33
+              KindBooleanKeyword [142, 150), i=33, next=0
+          KindVoidKeyword [152, 157), i=34, next=0
+    KindFunctionDeclaration [160, 232), i=35, next=50
+      KindIdentifier "notifyListeners" [172, 188), i=36, next=37
+      NodeList [189, 190), i=37, next=40
+        KindTypeParameter [189, 190), i=38, next=0
+          KindIdentifier "T" [189, 190), i=39, next=0
+      NodeList [192, 226), i=40, next=49
+        KindParameter [192, 215), i=41, next=45
+          KindIdentifier "listenable" [192, 202), i=42, next=43
+          KindTypeReference [203, 215), i=43, next=0
+            KindIdentifier "IListenable" [203, 215), i=44, next=0
+        KindParameter [216, 226), i=45, next=0
+          KindIdentifier "change" [216, 223), i=46, next=47
+          KindTypeReference [224, 226), i=47, next=0
+            KindIdentifier "T" [224, 226), i=48, next=0
+      KindBlock [227, 232), i=49, next=0
+    KindClassDeclaration [232, 688), i=50, next=0
+      NodeList [232, 242), i=51, next=53
+        KindExportKeyword [232, 242), i=52, next=0
+      KindIdentifier "ObservableValue" [248, 264), i=53, next=54
+      NodeList [265, 266), i=54, next=57
+        KindTypeParameter [265, 266), i=55, next=0
+          KindIdentifier "T" [265, 266), i=56, next=0
+      NodeList [269, 685), i=57, next=0
+        KindConstructor [269, 548), i=58, next=100
+          NodeList [287, 312), i=59, next=66
+            KindParameter [287, 312), i=60, next=0
+              NodeList [287, 303), i=61, next=63
+                KindPublicKeyword [287, 303), i=62, next=0
+              KindIdentifier "value" [303, 309), i=63, next=64
+              KindTypeReference [310, 312), i=64, next=0
+                KindIdentifier "T" [310, 312), i=65, next=0
+          KindBlock [319, 548), i=66, next=0
+            NodeList [321, 541), i=67, next=0
+              KindVariableStatement [321, 357), i=68, next=76
+                KindVariableDeclarationList [321, 356), i=69, next=0
+                  NodeList [336, 356), i=70, next=0
+                    KindVariableDeclaration [336, 356), i=71, next=0
+                      KindIdentifier "newValue" [336, 345), i=72, next=73
+                      KindTypeReference [346, 348), i=73, next=75
+                        KindIdentifier "T" [346, 348), i=74, next=0
+                      KindIdentifier "value" [350, 356), i=75, next=0
+              KindVariableStatement [357, 394), i=76, next=83
+                KindVariableDeclarationList [357, 393), i=77, next=0
+                  NodeList [372, 393), i=78, next=0
+                    KindVariableDeclaration [372, 393), i=79, next=0
+                      KindIdentifier "oldValue" [372, 381), i=80, next=81
+                      KindAnyKeyword [382, 386), i=81, next=82
+                      KindNullKeyword [388, 393), i=82, next=0
+              KindExpressionStatement [394, 541), i=83, next=0
+                KindCallExpression [394, 540), i=84, next=0
+                  KindIdentifier "notifyListeners" [394, 419), i=85, next=86
+                  NodeList [420, 539), i=86, next=0
+                    KindThisKeyword [420, 424), i=87, next=88
+                    KindObjectLiteralExpression [425, 539), i=88, next=0
+                      NodeList [427, 528), i=89, next=0
+                        KindPropertyAssignment [427, 455), i=90, next=93
+                          KindIdentifier "type" [427, 445), i=91, next=92
+                          KindStringLiteral "update" [446, 455), i=92, next=0
+                        KindPropertyAssignment [456, 482), i=93, next=96
+                          KindIdentifier "object" [456, 476), i=94, next=95
+                          KindThisKeyword [477, 482), i=95, next=0
+                        KindShorthandPropertyAssignment [483, 505), i=96, next=98
+                          KindIdentifier "newValue" [483, 505), i=97, next=0
+                        KindShorthandPropertyAssignment [506, 528), i=98, next=0
+                          KindIdentifier "oldValue" [506, 528), i=99, next=0
+        KindPropertyDeclaration [548, 594), i=100, next=110
+          KindIdentifier "changeListeners" [548, 569), i=101, next=102
+          KindUnionType [570, 588), i=102, next=109
+            NodeList [570, 588), i=103, next=0
+              KindArrayType [570, 581), i=104, next=107
+                KindTypeReference [570, 579), i=105, next=0
+                  KindIdentifier "Function" [570, 579), i=106, next=0
+              KindLiteralType [583, 588), i=107, next=0
+                KindNullKeyword [583, 588), i=108, next=0
+          KindArrayLiteralExpression [590, 593), i=109, next=0
+        KindMethodDeclaration [594, 685), i=110, next=0
+          KindIdentifier "observe" [594, 607), i=111, next=112
+          NodeList [608, 681), i=112, next=129
+            KindParameter [608, 654), i=113, next=125
+              KindIdentifier "handler" [608, 615), i=114, next=115
+              KindFunctionType [616, 654), i=115, next=0
+                NodeList [618, 645), i=116, next=124
+                  KindParameter [618, 629), i=117, next=120
+                    KindIdentifier "change" [618, 624), i=118, next=119
+                    KindAnyKeyword [625, 629), i=119, next=0
+                  KindParameter [630, 645), i=120, next=0
+                    KindIdentifier "oldValue" [630, 639), i=121, next=122
+                    KindQuestionToken [639, 640), i=122, next=123
+                    KindAnyKeyword [641, 645), i=123, next=0
+                KindVoidKeyword [649, 654), i=124, next=0
+            KindParameter [655, 681), i=125, next=0
+              KindIdentifier "fireImmediately" [655, 671), i=126, next=127
+              KindQuestionToken [671, 672), i=127, next=128
+              KindBooleanKeyword [673, 681), i=128, next=0
+          KindBlock [682, 685), i=129, next=0

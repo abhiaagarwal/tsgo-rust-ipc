@@ -1,0 +1,137 @@
+KindSourceFile [0, 610), i=1, next=0
+  NodeList [0, 610), i=2, next=0
+    KindVariableStatement [0, 28), i=3, next=11
+      NodeList [0, 6), i=4, next=6
+        KindExportKeyword [0, 6), i=5, next=0
+      KindVariableDeclarationList [6, 27), i=6, next=0
+        NodeList [10, 27), i=7, next=0
+          KindVariableDeclaration [10, 27), i=8, next=0
+            KindIdentifier "exportedFoo" [10, 22), i=9, next=10
+            KindAnyKeyword [23, 27), i=10, next=0
+    KindVariableStatement [28, 54), i=11, next=17
+      KindVariableDeclarationList [28, 53), i=12, next=0
+        NodeList [33, 53), i=13, next=0
+          KindVariableDeclaration [33, 53), i=14, next=0
+            KindIdentifier "nonexportedFoo" [33, 48), i=15, next=16
+            KindAnyKeyword [49, 53), i=16, next=0
+    KindExpressionStatement [54, 95), i=17, next=22
+      KindBinaryExpression [54, 94), i=18, next=0
+        KindIdentifier "exportedFoo" [54, 87), i=19, next=20
+        KindEqualsToken [87, 89), i=20, next=21
+        KindNullKeyword [89, 94), i=21, next=0
+    KindExpressionStatement [95, 119), i=22, next=27
+      KindBinaryExpression [95, 118), i=23, next=0
+        KindIdentifier "nonexportedFoo" [95, 111), i=24, next=25
+        KindEqualsToken [111, 113), i=25, next=26
+        KindNullKeyword [113, 118), i=26, next=0
+    KindIfStatement [119, 524), i=27, next=124
+      KindAsExpression [127, 138), i=28, next=31
+        KindNullKeyword [127, 131), i=29, next=30
+        KindAnyKeyword [134, 138), i=30, next=0
+      KindBlock [139, 198), i=31, next=46
+        NodeList [141, 195), i=32, next=0
+          KindExpressionStatement [141, 195), i=33, next=0
+            KindParenthesizedExpression [141, 194), i=34, next=0
+              KindBinaryExpression [148, 193), i=35, next=0
+                KindObjectLiteralExpression [148, 179), i=36, next=42
+                  NodeList [149, 177), i=37, next=0
+                    KindShorthandPropertyAssignment [149, 161), i=38, next=40
+                      KindIdentifier "exportedFoo" [149, 161), i=39, next=0
+                    KindShorthandPropertyAssignment [162, 177), i=40, next=0
+                      KindIdentifier "nonexportedFoo" [162, 177), i=41, next=0
+                KindEqualsToken [179, 181), i=42, next=43
+                KindAsExpression [181, 193), i=43, next=0
+                  KindNullKeyword [181, 186), i=44, next=45
+                  KindAnyKeyword [189, 193), i=45, next=0
+      KindIfStatement [204, 524), i=46, next=0
+        KindAsExpression [209, 220), i=47, next=50
+          KindNullKeyword [209, 213), i=48, next=49
+          KindAnyKeyword [216, 220), i=49, next=0
+        KindBlock [221, 287), i=50, next=67
+          NodeList [223, 284), i=51, next=0
+            KindExpressionStatement [223, 284), i=52, next=0
+              KindParenthesizedExpression [223, 283), i=53, next=0
+                KindBinaryExpression [227, 282), i=54, next=0
+                  KindObjectLiteralExpression [227, 268), i=55, next=63
+                    NodeList [228, 266), i=56, next=0
+                      KindPropertyAssignment [228, 245), i=57, next=60
+                        KindIdentifier "foo" [228, 232), i=58, next=59
+                        KindIdentifier "exportedFoo" [233, 245), i=59, next=0
+                      KindPropertyAssignment [246, 266), i=60, next=0
+                        KindIdentifier "bar" [246, 250), i=61, next=62
+                        KindIdentifier "nonexportedFoo" [251, 266), i=62, next=0
+                  KindEqualsToken [268, 270), i=63, next=64
+                  KindAsExpression [270, 282), i=64, next=0
+                    KindNullKeyword [270, 275), i=65, next=66
+                    KindAnyKeyword [278, 282), i=66, next=0
+        KindIfStatement [293, 524), i=67, next=0
+          KindAsExpression [298, 309), i=68, next=71
+            KindNullKeyword [298, 302), i=69, next=70
+            KindAnyKeyword [305, 309), i=70, next=0
+          KindBlock [310, 385), i=71, next=92
+            NodeList [312, 382), i=72, next=0
+              KindExpressionStatement [312, 382), i=73, next=0
+                KindParenthesizedExpression [312, 381), i=74, next=0
+                  KindBinaryExpression [316, 380), i=75, next=0
+                    KindObjectLiteralExpression [316, 366), i=76, next=88
+                      NodeList [317, 364), i=77, next=0
+                        KindPropertyAssignment [317, 364), i=78, next=0
+                          KindIdentifier "foo" [317, 321), i=79, next=80
+                          KindObjectLiteralExpression [322, 364), i=80, next=0
+                            NodeList [324, 362), i=81, next=0
+                              KindPropertyAssignment [324, 341), i=82, next=85
+                                KindIdentifier "bar" [324, 328), i=83, next=84
+                                KindIdentifier "exportedFoo" [329, 341), i=84, next=0
+                              KindPropertyAssignment [342, 362), i=85, next=0
+                                KindIdentifier "baz" [342, 346), i=86, next=87
+                                KindIdentifier "nonexportedFoo" [347, 362), i=87, next=0
+                    KindEqualsToken [366, 368), i=88, next=89
+                    KindAsExpression [368, 380), i=89, next=0
+                      KindNullKeyword [368, 373), i=90, next=91
+                      KindAnyKeyword [376, 380), i=91, next=0
+          KindIfStatement [391, 524), i=92, next=0
+            KindAsExpression [396, 407), i=93, next=96
+              KindNullKeyword [396, 400), i=94, next=95
+              KindAnyKeyword [403, 407), i=95, next=0
+            KindBlock [408, 462), i=96, next=109
+              NodeList [410, 459), i=97, next=0
+                KindExpressionStatement [410, 459), i=98, next=0
+                  KindParenthesizedExpression [410, 458), i=99, next=0
+                    KindBinaryExpression [414, 457), i=100, next=0
+                      KindArrayLiteralExpression [414, 443), i=101, next=105
+                        NodeList [415, 442), i=102, next=0
+                          KindIdentifier "exportedFoo" [415, 426), i=103, next=104
+                          KindIdentifier "nonexportedFoo" [427, 442), i=104, next=0
+                      KindEqualsToken [443, 445), i=105, next=106
+                      KindAsExpression [445, 457), i=106, next=0
+                        KindNullKeyword [445, 450), i=107, next=108
+                        KindAnyKeyword [453, 457), i=108, next=0
+            KindBlock [468, 524), i=109, next=0
+              NodeList [470, 521), i=110, next=0
+                KindExpressionStatement [470, 521), i=111, next=0
+                  KindParenthesizedExpression [470, 520), i=112, next=0
+                    KindBinaryExpression [474, 519), i=113, next=0
+                      KindArrayLiteralExpression [474, 505), i=114, next=120
+                        NodeList [475, 504), i=115, next=0
+                          KindArrayLiteralExpression [475, 504), i=116, next=0
+                            NodeList [476, 503), i=117, next=0
+                              KindIdentifier "exportedFoo" [476, 487), i=118, next=119
+                              KindIdentifier "nonexportedFoo" [488, 503), i=119, next=0
+                      KindEqualsToken [505, 507), i=120, next=121
+                      KindAsExpression [507, 519), i=121, next=0
+                        KindNullKeyword [507, 512), i=122, next=123
+                        KindAnyKeyword [515, 519), i=123, next=0
+    KindExportDeclaration [524, 554), i=124, next=129
+      KindNamedExports [534, 553), i=125, next=0
+        NodeList [536, 551), i=126, next=0
+          KindExportSpecifier [536, 551), i=127, next=0
+            KindIdentifier "nonexportedFoo" [536, 551), i=128, next=0
+    KindExportDeclaration [554, 610), i=129, next=0
+      KindNamedExports [562, 609), i=130, next=0
+        NodeList [564, 607), i=131, next=0
+          KindExportSpecifier [564, 583), i=132, next=135
+            KindIdentifier "exportedFoo" [564, 576), i=133, next=134
+            KindIdentifier "foo" [579, 583), i=134, next=0
+          KindExportSpecifier [584, 607), i=135, next=0
+            KindIdentifier "nonexportedFoo" [584, 599), i=136, next=137
+            KindIdentifier "nfoo" [602, 607), i=137, next=0

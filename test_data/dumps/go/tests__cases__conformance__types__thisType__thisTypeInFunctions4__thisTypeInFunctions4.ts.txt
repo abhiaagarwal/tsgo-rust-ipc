@@ -1,0 +1,84 @@
+KindSourceFile [0, 424), i=1, next=0
+  NodeList [0, 424), i=2, next=0
+    KindTypeAliasDeclaration [0, 35), i=3, next=10
+      KindIdentifier "WrongObject" [4, 16), i=4, next=5
+      KindTypeLiteral [18, 34), i=5, next=0
+        NodeList [20, 33), i=6, next=0
+          KindPropertySignature [20, 33), i=7, next=0
+            KindIdentifier "value" [20, 25), i=8, next=9
+            KindNumberKeyword [26, 33), i=9, next=0
+    KindTypeAliasDeclaration [35, 72), i=10, next=17
+      KindIdentifier "CorrectObject" [40, 54), i=11, next=12
+      KindTypeLiteral [56, 71), i=12, next=0
+        NodeList [58, 70), i=13, next=0
+          KindPropertySignature [58, 70), i=14, next=0
+            KindIdentifier "name" [58, 62), i=15, next=16
+            KindStringKeyword [63, 70), i=16, next=0
+    KindFunctionDeclaration [72, 132), i=17, next=29
+      NodeList [72, 81), i=18, next=20
+        KindDeclareKeyword [72, 81), i=19, next=0
+      KindIdentifier "isCorrect" [90, 100), i=20, next=21
+      NodeList [101, 109), i=21, next=25
+        KindParameter [101, 109), i=22, next=0
+          KindIdentifier "obj" [101, 104), i=23, next=24
+          KindAnyKeyword [105, 109), i=24, next=0
+      KindTypePredicate [111, 132), i=25, next=0
+        KindIdentifier "obj" [111, 115), i=26, next=27
+        KindTypeReference [118, 132), i=27, next=0
+          KindIdentifier "CorrectObject" [118, 132), i=28, next=0
+    KindFunctionDeclaration [132, 190), i=29, next=42
+      NodeList [132, 141), i=30, next=32
+        KindDeclareKeyword [132, 141), i=31, next=0
+      KindIdentifier "callsCallback" [150, 164), i=32, next=33
+      NodeList [165, 189), i=33, next=0
+        KindParameter [165, 189), i=34, next=0
+          KindIdentifier "cb" [165, 167), i=35, next=36
+          KindFunctionType [168, 189), i=36, next=0
+            NodeList [170, 182), i=37, next=41
+              KindParameter [170, 182), i=38, next=0
+                KindIdentifier "name" [170, 174), i=39, next=40
+                KindStringKeyword [175, 182), i=40, next=0
+            KindVoidKeyword [185, 189), i=41, next=0
+    KindFunctionDeclaration [190, 424), i=42, next=0
+      KindIdentifier "problemFunction" [200, 216), i=43, next=44
+      NodeList [217, 250), i=44, next=53
+        KindParameter [217, 250), i=45, next=0
+          KindIdentifier "this" [217, 221), i=46, next=47
+          KindUnionType [222, 250), i=47, next=0
+            NodeList [222, 250), i=48, next=0
+              KindTypeReference [222, 236), i=49, next=51
+                KindIdentifier "CorrectObject" [222, 236), i=50, next=0
+              KindTypeReference [238, 250), i=51, next=0
+                KindIdentifier "WrongObject" [238, 250), i=52, next=0
+      KindVoidKeyword [252, 257), i=53, next=54
+      KindBlock [257, 424), i=54, next=0
+        NodeList [259, 422), i=55, next=0
+          KindIfStatement [259, 310), i=56, next=63
+            KindPrefixUnaryExpression [285, 301), i=57, next=62
+              KindCallExpression [286, 301), i=58, next=0
+                KindIdentifier "isCorrect" [286, 295), i=59, next=60
+                NodeList [296, 300), i=60, next=0
+                  KindThisKeyword [296, 300), i=61, next=0
+            KindReturnStatement [302, 310), i=62, next=0
+          KindExpressionStatement [310, 422), i=63, next=0
+            KindCallExpression [310, 421), i=64, next=0
+              KindIdentifier "callsCallback" [310, 329), i=65, next=66
+              NodeList [330, 420), i=66, next=0
+                KindArrowFunction [330, 420), i=67, next=0
+                  NodeList [331, 335), i=68, next=71
+                    KindParameter [331, 335), i=69, next=0
+                      KindIdentifier "name" [331, 335), i=70, next=0
+                  KindEqualsGreaterThanToken [336, 338), i=71, next=72
+                  KindBlock [338, 420), i=72, next=0
+                    NodeList [339, 414), i=73, next=0
+                      KindExpressionStatement [339, 365), i=74, next=81
+                        KindBinaryExpression [339, 364), i=75, next=0
+                          KindPropertyAccessExpression [339, 357), i=76, next=79
+                            KindThisKeyword [339, 352), i=77, next=78
+                            KindIdentifier "name" [353, 357), i=78, next=0
+                          KindEqualsToken [357, 359), i=79, next=80
+                          KindIdentifier "name" [359, 364), i=80, next=0
+                      KindTypeAliasDeclaration [365, 414), i=81, next=0
+                        KindIdentifier "T" [397, 399), i=82, next=83
+                        KindTypeQuery [401, 413), i=83, next=0
+                          KindIdentifier "this" [408, 413), i=84, next=0

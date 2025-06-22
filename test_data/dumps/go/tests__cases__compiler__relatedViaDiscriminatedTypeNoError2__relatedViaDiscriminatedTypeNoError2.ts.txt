@@ -1,0 +1,74 @@
+KindSourceFile [0, 229), i=1, next=0
+  NodeList [0, 227), i=2, next=0
+    KindTypeAliasDeclaration [0, 48), i=3, next=19
+      KindIdentifier "AObjOrBObj" [4, 15), i=4, next=5
+      KindUnionType [17, 47), i=5, next=0
+        NodeList [17, 47), i=6, next=0
+          KindTypeLiteral [17, 31), i=7, next=13
+            NodeList [19, 29), i=8, next=0
+              KindPropertySignature [19, 29), i=9, next=0
+                KindIdentifier "name" [19, 24), i=10, next=11
+                KindLiteralType [25, 29), i=11, next=0
+                  KindStringLiteral "A" [25, 29), i=12, next=0
+          KindTypeLiteral [33, 47), i=13, next=0
+            NodeList [35, 45), i=14, next=0
+              KindPropertySignature [35, 45), i=15, next=0
+                KindIdentifier "name" [35, 40), i=16, next=17
+                KindLiteralType [41, 45), i=17, next=0
+                  KindStringLiteral "B" [41, 45), i=18, next=0
+    KindTypeAliasDeclaration [48, 85), i=19, next=31
+      KindIdentifier "AOrBObj" [54, 62), i=20, next=21
+      KindTypeLiteral [64, 84), i=21, next=0
+        NodeList [66, 82), i=22, next=0
+          KindPropertySignature [66, 82), i=23, next=0
+            KindIdentifier "name" [66, 71), i=24, next=25
+            KindUnionType [72, 82), i=25, next=0
+              NodeList [72, 82), i=26, next=0
+                KindLiteralType [72, 76), i=27, next=29
+                  KindStringLiteral "A" [72, 76), i=28, next=0
+                KindLiteralType [78, 82), i=29, next=0
+                  KindStringLiteral "B" [78, 82), i=30, next=0
+    KindTypeAliasDeclaration [85, 126), i=31, next=40
+      KindIdentifier "Generic" [91, 99), i=32, next=33
+      NodeList [100, 120), i=33, next=38
+        KindTypeParameter [100, 120), i=34, next=0
+          KindIdentifier "T" [100, 101), i=35, next=36
+          KindTypeReference [109, 120), i=36, next=0
+            KindIdentifier "AObjOrBObj" [109, 120), i=37, next=0
+      KindTypeReference [123, 125), i=38, next=0
+        KindIdentifier "T" [123, 125), i=39, next=0
+    KindTypeAliasDeclaration [126, 156), i=40, next=47
+      KindIdentifier "T" [134, 136), i=41, next=42
+      KindTypeReference [138, 155), i=42, next=0
+        KindIdentifier "Generic" [138, 146), i=43, next=44
+        NodeList [147, 154), i=44, next=0
+          KindTypeReference [147, 154), i=45, next=0
+            KindIdentifier "AOrBObj" [147, 154), i=46, next=0
+    KindVariableStatement [156, 186), i=47, next=56
+      NodeList [156, 167), i=48, next=50
+        KindDeclareKeyword [156, 167), i=49, next=0
+      KindVariableDeclarationList [167, 185), i=50, next=0
+        NodeList [171, 185), i=51, next=0
+          KindVariableDeclaration [171, 185), i=52, next=0
+            KindIdentifier "x" [171, 173), i=53, next=54
+            KindTypeReference [174, 185), i=54, next=0
+              KindIdentifier "AObjOrBObj" [174, 185), i=55, next=0
+    KindVariableStatement [186, 211), i=56, next=65
+      NodeList [186, 195), i=57, next=59
+        KindDeclareKeyword [186, 195), i=58, next=0
+      KindVariableDeclarationList [195, 210), i=59, next=0
+        NodeList [199, 210), i=60, next=0
+          KindVariableDeclaration [199, 210), i=61, next=0
+            KindIdentifier "y" [199, 201), i=62, next=63
+            KindTypeReference [202, 210), i=63, next=0
+              KindIdentifier "AOrBObj" [202, 210), i=64, next=0
+    KindExpressionStatement [211, 219), i=65, next=70
+      KindBinaryExpression [211, 218), i=66, next=0
+        KindIdentifier "x" [211, 214), i=67, next=68
+        KindEqualsToken [214, 216), i=68, next=69
+        KindIdentifier "y" [216, 218), i=69, next=0
+    KindExpressionStatement [219, 227), i=70, next=0
+      KindBinaryExpression [219, 226), i=71, next=0
+        KindIdentifier "y" [219, 222), i=72, next=73
+        KindEqualsToken [222, 224), i=73, next=74
+        KindIdentifier "x" [224, 226), i=74, next=0

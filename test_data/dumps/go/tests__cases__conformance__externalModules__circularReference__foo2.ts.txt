@@ -1,0 +1,84 @@
+KindSourceFile [0, 302), i=1, next=0
+  NodeList [0, 300), i=2, next=0
+    KindImportEqualsDeclaration [0, 32), i=3, next=7
+      KindIdentifier "foo1" [6, 11), i=4, next=5
+      KindExternalModuleReference [13, 31), i=5, next=0
+        KindStringLiteral "./foo1" [22, 30), i=6, next=0
+    KindModuleDeclaration [32, 300), i=7, next=0
+      NodeList [32, 40), i=8, next=10
+        KindExportKeyword [32, 40), i=9, next=0
+      KindIdentifier "M1" [47, 50), i=10, next=11
+      KindModuleBlock [50, 300), i=11, next=0
+        NodeList [52, 297), i=12, next=0
+          KindClassDeclaration [52, 297), i=13, next=0
+            NodeList [52, 61), i=14, next=16
+              KindExportKeyword [52, 61), i=15, next=0
+            KindIdentifier "C1" [67, 70), i=16, next=17
+            NodeList [72, 293), i=17, next=0
+              KindPropertyDeclaration [72, 91), i=18, next=26
+                KindIdentifier "m1" [72, 78), i=19, next=20
+                KindTypeReference [79, 90), i=20, next=0
+                  KindQualifiedName [79, 90), i=21, next=0
+                    KindQualifiedName [79, 87), i=22, next=25
+                      KindIdentifier "foo1" [79, 84), i=23, next=24
+                      KindIdentifier "M1" [85, 87), i=24, next=0
+                    KindIdentifier "C1" [88, 90), i=25, next=0
+              KindPropertyDeclaration [91, 104), i=26, next=29
+                KindIdentifier "y" [91, 96), i=27, next=28
+                KindNumberKeyword [97, 104), i=28, next=0
+              KindConstructor [104, 293), i=29, next=0
+                KindBlock [121, 293), i=30, next=0
+                  NodeList [122, 276), i=31, next=0
+                    KindExpressionStatement [122, 154), i=32, next=44
+                      KindBinaryExpression [122, 153), i=33, next=0
+                        KindPropertyAccessExpression [122, 134), i=34, next=37
+                          KindThisKeyword [122, 131), i=35, next=36
+                          KindIdentifier "m1" [132, 134), i=36, next=0
+                        KindEqualsToken [134, 136), i=37, next=38
+                        KindNewExpression [136, 153), i=38, next=0
+                          KindPropertyAccessExpression [140, 151), i=39, next=0
+                            KindPropertyAccessExpression [140, 148), i=40, next=43
+                              KindIdentifier "foo1" [140, 145), i=41, next=42
+                              KindIdentifier "M1" [146, 148), i=42, next=0
+                            KindIdentifier "C1" [149, 151), i=43, next=0
+                    KindExpressionStatement [154, 174), i=44, next=53
+                      KindBinaryExpression [154, 173), i=45, next=0
+                        KindPropertyAccessExpression [154, 168), i=46, next=51
+                          KindPropertyAccessExpression [154, 166), i=47, next=50
+                            KindThisKeyword [154, 163), i=48, next=49
+                            KindIdentifier "m1" [164, 166), i=49, next=0
+                          KindIdentifier "y" [167, 168), i=50, next=0
+                        KindEqualsToken [168, 170), i=51, next=52
+                        KindNumericLiteral [170, 173), i=52, next=0
+                    KindExpressionStatement [174, 203), i=53, next=62
+                      KindBinaryExpression [174, 202), i=54, next=0
+                        KindPropertyAccessExpression [174, 197), i=55, next=60
+                          KindPropertyAccessExpression [174, 195), i=56, next=59
+                            KindThisKeyword [174, 192), i=57, next=58
+                            KindIdentifier "m1" [193, 195), i=58, next=0
+                          KindIdentifier "x" [196, 197), i=59, next=0
+                        KindEqualsToken [197, 199), i=60, next=61
+                        KindNumericLiteral [199, 202), i=61, next=0
+                    KindVariableStatement [203, 238), i=62, next=71
+                      KindVariableDeclarationList [203, 237), i=63, next=0
+                        NodeList [219, 237), i=64, next=0
+                          KindVariableDeclaration [219, 237), i=65, next=0
+                            KindIdentifier "tmp" [219, 223), i=66, next=67
+                            KindNewExpression [225, 237), i=67, next=0
+                              KindPropertyAccessExpression [229, 235), i=68, next=0
+                                KindIdentifier "M1" [229, 232), i=69, next=70
+                                KindIdentifier "C1" [233, 235), i=70, next=0
+                    KindExpressionStatement [238, 254), i=71, next=78
+                      KindBinaryExpression [238, 253), i=72, next=0
+                        KindPropertyAccessExpression [238, 248), i=73, next=76
+                          KindIdentifier "tmp" [238, 246), i=74, next=75
+                          KindIdentifier "y" [247, 248), i=75, next=0
+                        KindEqualsToken [248, 250), i=76, next=77
+                        KindNumericLiteral [250, 253), i=77, next=0
+                    KindExpressionStatement [254, 276), i=78, next=0
+                      KindBinaryExpression [254, 275), i=79, next=0
+                        KindPropertyAccessExpression [254, 270), i=80, next=83
+                          KindIdentifier "tmp" [254, 268), i=81, next=82
+                          KindIdentifier "x" [269, 270), i=82, next=0
+                        KindEqualsToken [270, 272), i=83, next=84
+                        KindNumericLiteral [272, 275), i=84, next=0

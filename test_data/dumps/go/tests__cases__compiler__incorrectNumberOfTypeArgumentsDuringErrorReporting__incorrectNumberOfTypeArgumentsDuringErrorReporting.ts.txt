@@ -1,0 +1,92 @@
+KindSourceFile [0, 272), i=1, next=0
+  NodeList [0, 271), i=2, next=0
+    KindInterfaceDeclaration [0, 31), i=3, next=10
+      KindIdentifier "ObjA" [9, 14), i=4, next=5
+      NodeList [16, 29), i=5, next=0
+        KindPropertySignature [16, 29), i=6, next=0
+          KindIdentifier "y" [16, 20), i=7, next=8
+          KindQuestionToken [20, 21), i=8, next=9
+          KindStringKeyword [22, 28), i=9, next=0
+    KindInterfaceDeclaration [31, 66), i=10, next=19
+      KindIdentifier "ObjB" [42, 47), i=11, next=12
+      NodeList [49, 65), i=12, next=0
+        KindIndexSignature [49, 65), i=13, next=0
+          NodeList [50, 60), i=14, next=18
+            KindParameter [50, 60), i=15, next=0
+              KindIdentifier "key" [50, 53), i=16, next=17
+              KindStringKeyword [54, 60), i=17, next=0
+          KindAnyKeyword [62, 65), i=18, next=0
+    KindInterfaceDeclaration [66, 99), i=19, next=35
+      KindIdentifier "Opts" [77, 82), i=20, next=21
+      NodeList [83, 87), i=21, next=26
+        KindTypeParameter [83, 84), i=22, next=24
+          KindIdentifier "A" [83, 84), i=23, next=0
+        KindTypeParameter [85, 87), i=24, next=0
+          KindIdentifier "B" [85, 87), i=25, next=0
+      NodeList [90, 98), i=26, next=0
+        KindPropertySignature [90, 94), i=27, next=31
+          KindIdentifier "a" [90, 91), i=28, next=29
+          KindTypeReference [92, 93), i=29, next=0
+            KindIdentifier "A" [92, 93), i=30, next=0
+        KindPropertySignature [94, 98), i=31, next=0
+          KindIdentifier "b" [94, 96), i=32, next=33
+          KindTypeReference [97, 98), i=33, next=0
+            KindIdentifier "B" [97, 98), i=34, next=0
+    KindVariableStatement [99, 188), i=35, next=65
+      KindVariableDeclarationList [99, 188), i=36, next=0
+        NodeList [106, 188), i=37, next=0
+          KindVariableDeclaration [106, 188), i=38, next=0
+            KindIdentifier "fn" [106, 109), i=39, next=40
+            KindArrowFunction [111, 188), i=40, next=0
+              NodeList [113, 155), i=41, next=52
+                KindTypeParameter [113, 130), i=42, next=46
+                  KindIdentifier "A" [113, 117), i=43, next=44
+                  KindTypeReference [125, 130), i=44, next=0
+                    KindIdentifier "ObjA" [125, 130), i=45, next=0
+                KindTypeParameter [131, 155), i=46, next=0
+                  KindIdentifier "B" [131, 135), i=47, next=48
+                  KindTypeReference [143, 148), i=48, next=50
+                    KindIdentifier "ObjB" [143, 148), i=49, next=0
+                  KindTypeReference [150, 155), i=50, next=0
+                    KindIdentifier "ObjB" [150, 155), i=51, next=0
+              NodeList [158, 173), i=52, next=62
+                KindParameter [158, 173), i=53, next=0
+                  KindIdentifier "opts" [158, 162), i=54, next=55
+                  KindTypeReference [163, 173), i=55, next=0
+                    KindIdentifier "Opts" [163, 167), i=56, next=57
+                    NodeList [168, 172), i=57, next=0
+                      KindTypeReference [168, 169), i=58, next=60
+                        KindIdentifier "A" [168, 169), i=59, next=0
+                      KindTypeReference [170, 172), i=60, next=0
+                        KindIdentifier "B" [170, 172), i=61, next=0
+              KindStringKeyword [175, 181), i=62, next=63
+              KindEqualsGreaterThanToken [181, 184), i=63, next=64
+              KindStringLiteral "Z" [184, 188), i=64, next=0
+    KindInterfaceDeclaration [188, 222), i=65, next=71
+      KindIdentifier "MyObjA" [199, 206), i=66, next=67
+      NodeList [208, 220), i=67, next=0
+        KindPropertySignature [208, 220), i=68, next=0
+          KindIdentifier "x" [208, 212), i=69, next=70
+          KindStringKeyword [213, 219), i=70, next=0
+    KindExpressionStatement [222, 271), i=71, next=0
+      KindCallExpression [222, 271), i=72, next=0
+        KindIdentifier "fn" [222, 226), i=73, next=74
+        NodeList [227, 233), i=74, next=77
+          KindTypeReference [227, 233), i=75, next=0
+            KindIdentifier "MyObjA" [227, 233), i=76, next=0
+        NodeList [235, 270), i=77, next=0
+          KindObjectLiteralExpression [235, 270), i=78, next=0
+            NodeList [236, 268), i=79, next=0
+              KindPropertyAssignment [236, 258), i=80, next=90
+                KindIdentifier "a" [236, 240), i=81, next=82
+                KindObjectLiteralExpression [241, 258), i=82, next=0
+                  NodeList [243, 257), i=83, next=0
+                    KindPropertyAssignment [243, 249), i=84, next=87
+                      KindIdentifier "x" [243, 244), i=85, next=86
+                      KindStringLiteral "X" [245, 249), i=86, next=0
+                    KindPropertyAssignment [250, 257), i=87, next=0
+                      KindIdentifier "y" [250, 252), i=88, next=89
+                      KindStringLiteral "Y" [253, 257), i=89, next=0
+              KindPropertyAssignment [259, 267), i=90, next=0
+                KindIdentifier "b" [259, 263), i=91, next=92
+                KindObjectLiteralExpression [264, 267), i=92, next=0

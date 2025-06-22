@@ -1,0 +1,99 @@
+KindSourceFile [0, 384), i=1, next=0
+  NodeList [0, 384), i=2, next=0
+    KindVariableStatement [0, 21), i=3, next=9
+      KindVariableDeclarationList [0, 20), i=4, next=0
+        NodeList [5, 20), i=5, next=0
+          KindVariableDeclaration [5, 20), i=6, next=0
+            KindIdentifier "keywordA" [5, 14), i=7, next=8
+            KindStringLiteral "a" [16, 20), i=8, next=0
+    KindVariableStatement [21, 43), i=9, next=15
+      KindVariableDeclarationList [21, 42), i=10, next=0
+        NodeList [27, 42), i=11, next=0
+          KindVariableDeclaration [27, 42), i=12, next=0
+            KindIdentifier "keywordB" [27, 36), i=13, next=14
+            KindStringLiteral "b" [38, 42), i=14, next=0
+    KindTypeAliasDeclaration [43, 77), i=15, next=23
+      KindIdentifier "A" [49, 51), i=16, next=17
+      KindTypeLiteral [53, 76), i=17, next=0
+        NodeList [55, 74), i=18, next=0
+          KindPropertySignature [55, 74), i=19, next=0
+            KindComputedPropertyName [55, 66), i=20, next=22
+              KindIdentifier "keywordA" [57, 65), i=21, next=0
+            KindNumberKeyword [67, 74), i=22, next=0
+    KindTypeAliasDeclaration [77, 110), i=23, next=31
+      KindIdentifier "B" [82, 84), i=24, next=25
+      KindTypeLiteral [86, 109), i=25, next=0
+        NodeList [88, 107), i=26, next=0
+          KindPropertySignature [88, 107), i=27, next=0
+            KindComputedPropertyName [88, 99), i=28, next=30
+              KindIdentifier "keywordB" [90, 98), i=29, next=0
+            KindStringKeyword [100, 107), i=30, next=0
+    KindVariableStatement [110, 135), i=31, next=44
+      NodeList [110, 119), i=32, next=34
+        KindDeclareKeyword [110, 119), i=33, next=0
+      KindVariableDeclarationList [119, 134), i=34, next=0
+        NodeList [125, 134), i=35, next=0
+          KindVariableDeclaration [125, 134), i=36, next=0
+            KindIdentifier "c" [125, 127), i=37, next=38
+            KindUnionType [128, 134), i=38, next=0
+              NodeList [128, 134), i=39, next=0
+                KindTypeReference [128, 130), i=40, next=42
+                  KindIdentifier "A" [128, 130), i=41, next=0
+                KindTypeReference [132, 134), i=42, next=0
+                  KindIdentifier "B" [132, 134), i=43, next=0
+    KindIfStatement [135, 180), i=44, next=53
+      KindBinaryExpression [141, 149), i=45, next=49
+        KindStringLiteral "a" [141, 144), i=46, next=47
+        KindInKeyword [144, 147), i=47, next=48
+        KindIdentifier "c" [147, 149), i=48, next=0
+      KindBlock [150, 180), i=49, next=0
+        NodeList [152, 159), i=50, next=0
+          KindExpressionStatement [152, 159), i=51, next=0
+            KindIdentifier "c" [152, 158), i=52, next=0
+    KindIfStatement [180, 235), i=53, next=62
+      KindBinaryExpression [186, 199), i=54, next=58
+        KindIdentifier "keywordA" [186, 194), i=55, next=56
+        KindInKeyword [194, 197), i=56, next=57
+        KindIdentifier "c" [197, 199), i=57, next=0
+      KindBlock [200, 235), i=58, next=0
+        NodeList [202, 209), i=59, next=0
+          KindExpressionStatement [202, 209), i=60, next=0
+            KindIdentifier "c" [202, 208), i=61, next=0
+    KindVariableStatement [235, 263), i=62, next=69
+      KindVariableDeclarationList [235, 262), i=63, next=0
+        NodeList [240, 262), i=64, next=0
+          KindVariableDeclaration [240, 262), i=65, next=0
+            KindIdentifier "stringB" [240, 248), i=66, next=67
+            KindStringKeyword [249, 256), i=67, next=68
+            KindStringLiteral "b" [258, 262), i=68, next=0
+    KindIfStatement [263, 321), i=69, next=82
+      KindBinaryExpression [269, 290), i=70, next=78
+        KindParenthesizedExpression [269, 285), i=71, next=76
+          KindAsExpression [270, 284), i=72, next=0
+            KindIdentifier "stringB" [270, 277), i=73, next=74
+            KindLiteralType [280, 284), i=74, next=0
+              KindStringLiteral "b" [280, 284), i=75, next=0
+        KindInKeyword [285, 288), i=76, next=77
+        KindIdentifier "c" [288, 290), i=77, next=0
+      KindBlock [291, 321), i=78, next=0
+        NodeList [293, 300), i=79, next=0
+          KindExpressionStatement [293, 300), i=80, next=0
+            KindIdentifier "c" [293, 299), i=81, next=0
+    KindIfStatement [321, 384), i=82, next=0
+      KindBinaryExpression [327, 356), i=83, next=96
+        KindParenthesizedExpression [327, 351), i=84, next=94
+          KindAsExpression [328, 350), i=85, next=0
+            KindIdentifier "stringB" [328, 335), i=86, next=87
+            KindParenthesizedType [338, 350), i=87, next=0
+              KindUnionType [340, 349), i=88, next=0
+                NodeList [340, 349), i=89, next=0
+                  KindLiteralType [340, 343), i=90, next=92
+                    KindStringLiteral "a" [340, 343), i=91, next=0
+                  KindLiteralType [345, 349), i=92, next=0
+                    KindStringLiteral "b" [345, 349), i=93, next=0
+        KindInKeyword [351, 354), i=94, next=95
+        KindIdentifier "c" [354, 356), i=95, next=0
+      KindBlock [357, 384), i=96, next=0
+        NodeList [359, 366), i=97, next=0
+          KindExpressionStatement [359, 366), i=98, next=0
+            KindIdentifier "c" [359, 365), i=99, next=0

@@ -1,0 +1,62 @@
+KindSourceFile [0, 152), i=1, next=0
+  NodeList [0, 150), i=2, next=0
+    KindModuleDeclaration [0, 42), i=3, next=16
+      KindIdentifier "m1" [6, 9), i=4, next=5
+      KindModuleBlock [9, 42), i=5, next=0
+        NodeList [11, 41), i=6, next=0
+          KindClassDeclaration [11, 41), i=7, next=0
+            NodeList [11, 18), i=8, next=10
+              KindExportKeyword [11, 18), i=9, next=0
+            KindIdentifier "c1" [24, 27), i=10, next=11
+            NodeList [29, 39), i=11, next=0
+              KindPropertyDeclaration [29, 39), i=12, next=0
+                NodeList [29, 36), i=13, next=15
+                  KindPublicKeyword [29, 36), i=14, next=0
+                KindIdentifier "a" [36, 38), i=15, next=0
+    KindFunctionDeclaration [42, 77), i=16, next=34
+      KindIdentifier "foo" [52, 56), i=17, next=18
+      NodeList [57, 64), i=18, next=25
+        KindParameter [57, 64), i=19, next=0
+          KindIdentifier "a" [57, 58), i=20, next=21
+          KindTypeReference [59, 64), i=21, next=0
+            KindQualifiedName [59, 64), i=22, next=0
+              KindIdentifier "m1" [59, 61), i=23, next=24
+              KindIdentifier "c1" [62, 64), i=24, next=0
+      KindBlock [65, 77), i=25, next=0
+        NodeList [66, 75), i=26, next=0
+          KindExpressionStatement [66, 75), i=27, next=0
+            KindBinaryExpression [66, 74), i=28, next=0
+              KindPropertyAccessExpression [66, 70), i=29, next=32
+                KindIdentifier "a" [66, 68), i=30, next=31
+                KindIdentifier "a" [69, 70), i=31, next=0
+              KindEqualsToken [70, 72), i=32, next=33
+              KindNumericLiteral [72, 74), i=33, next=0
+    KindEmptyStatement [77, 78), i=34, next=35
+    KindVariableStatement [78, 103), i=35, next=44
+      KindVariableDeclarationList [78, 102), i=36, next=0
+        NodeList [84, 102), i=37, next=0
+          KindVariableDeclaration [84, 102), i=38, next=0
+            KindIdentifier "myC" [84, 88), i=39, next=40
+            KindNewExpression [90, 102), i=40, next=0
+              KindPropertyAccessExpression [94, 100), i=41, next=0
+                KindIdentifier "m1" [94, 97), i=42, next=43
+                KindIdentifier "c1" [98, 100), i=43, next=0
+    KindExpressionStatement [103, 115), i=44, next=49
+      KindCallExpression [103, 114), i=45, next=0
+        KindIdentifier "foo" [103, 109), i=46, next=47
+        NodeList [110, 113), i=47, next=0
+          KindIdentifier "myC" [110, 113), i=48, next=0
+    KindExpressionStatement [115, 132), i=49, next=55
+      KindCallExpression [115, 131), i=50, next=0
+        KindIdentifier "foo" [115, 121), i=51, next=52
+        NodeList [122, 130), i=52, next=0
+          KindIdentifier "myC" [122, 125), i=53, next=54
+          KindIdentifier "myC" [126, 130), i=54, next=0
+    KindExpressionStatement [132, 142), i=55, next=60
+      KindCallExpression [132, 141), i=56, next=0
+        KindIdentifier "foo" [132, 138), i=57, next=58
+        NodeList [139, 140), i=58, next=0
+          KindNumericLiteral [139, 140), i=59, next=0
+    KindExpressionStatement [142, 150), i=60, next=0
+      KindCallExpression [142, 149), i=61, next=0
+        KindIdentifier "foo" [142, 147), i=62, next=0

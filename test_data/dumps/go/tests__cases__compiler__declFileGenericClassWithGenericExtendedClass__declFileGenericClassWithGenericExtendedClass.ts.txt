@@ -1,0 +1,58 @@
+KindSourceFile [0, 208), i=1, next=0
+  NodeList [0, 206), i=2, next=0
+    KindInterfaceDeclaration [0, 34), i=3, next=10
+      KindIdentifier "IFoo" [9, 14), i=4, next=5
+      NodeList [16, 31), i=5, next=0
+        KindPropertySignature [16, 31), i=6, next=0
+          KindIdentifier "baz" [16, 25), i=7, next=8
+          KindTypeReference [26, 30), i=8, next=0
+            KindIdentifier "Baz" [26, 30), i=9, next=0
+    KindClassDeclaration [34, 53), i=10, next=15
+      KindIdentifier "Base" [41, 46), i=11, next=12
+      NodeList [47, 48), i=12, next=0
+        KindTypeParameter [47, 48), i=13, next=0
+          KindIdentifier "T" [47, 48), i=14, next=0
+    KindClassDeclaration [53, 91), i=15, next=28
+      KindIdentifier "Derived" [60, 68), i=16, next=17
+      NodeList [69, 70), i=17, next=20
+        KindTypeParameter [69, 70), i=18, next=0
+          KindIdentifier "T" [69, 70), i=19, next=0
+      NodeList [71, 87), i=20, next=0
+        KindHeritageClause [71, 87), i=21, next=0
+          NodeList [79, 87), i=22, next=0
+            KindExpressionWithTypeArguments [79, 87), i=23, next=0
+              KindIdentifier "Base" [79, 84), i=24, next=25
+              NodeList [85, 86), i=25, next=0
+                KindTypeReference [85, 86), i=26, next=0
+                  KindIdentifier "T" [85, 86), i=27, next=0
+    KindInterfaceDeclaration [91, 141), i=28, next=41
+      KindIdentifier "IBar" [102, 107), i=29, next=30
+      NodeList [108, 109), i=30, next=33
+        KindTypeParameter [108, 109), i=31, next=0
+          KindIdentifier "T" [108, 109), i=32, next=0
+      NodeList [112, 138), i=33, next=0
+        KindPropertySignature [112, 138), i=34, next=0
+          KindIdentifier "derived" [112, 125), i=35, next=36
+          KindTypeReference [126, 137), i=36, next=0
+            KindIdentifier "Derived" [126, 134), i=37, next=38
+            NodeList [135, 136), i=38, next=0
+              KindTypeReference [135, 136), i=39, next=0
+                KindIdentifier "T" [135, 136), i=40, next=0
+    KindClassDeclaration [141, 206), i=41, next=0
+      KindIdentifier "Baz" [148, 152), i=42, next=43
+      NodeList [152, 173), i=43, next=51
+        KindHeritageClause [152, 173), i=44, next=0
+          NodeList [163, 173), i=45, next=0
+            KindExpressionWithTypeArguments [163, 173), i=46, next=0
+              KindIdentifier "IBar" [163, 168), i=47, next=48
+              NodeList [169, 172), i=48, next=0
+                KindTypeReference [169, 172), i=49, next=0
+                  KindIdentifier "Baz" [169, 172), i=50, next=0
+      NodeList [175, 203), i=51, next=0
+        KindPropertyDeclaration [175, 203), i=52, next=0
+          KindIdentifier "derived" [175, 188), i=53, next=54
+          KindTypeReference [189, 202), i=54, next=0
+            KindIdentifier "Derived" [189, 197), i=55, next=56
+            NodeList [198, 201), i=56, next=0
+              KindTypeReference [198, 201), i=57, next=0
+                KindIdentifier "Baz" [198, 201), i=58, next=0

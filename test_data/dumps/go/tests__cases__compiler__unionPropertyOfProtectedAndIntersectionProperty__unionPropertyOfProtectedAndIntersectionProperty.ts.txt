@@ -1,0 +1,105 @@
+KindSourceFile [0, 1549), i=1, next=0
+  NodeList [0, 473), i=2, next=0
+    KindClassDeclaration [0, 34), i=3, next=11
+      KindIdentifier "Foo" [5, 9), i=4, next=5
+      NodeList [11, 32), i=5, next=0
+        KindPropertyDeclaration [11, 32), i=6, next=0
+          NodeList [11, 23), i=7, next=9
+            KindProtectedKeyword [11, 23), i=8, next=0
+          KindIdentifier "foo" [23, 27), i=9, next=10
+          KindNumericLiteral [29, 31), i=10, next=0
+    KindClassDeclaration [34, 70), i=11, next=19
+      KindIdentifier "Bar" [41, 45), i=12, next=13
+      NodeList [47, 68), i=13, next=0
+        KindPropertyDeclaration [47, 68), i=14, next=0
+          NodeList [47, 59), i=15, next=17
+            KindProtectedKeyword [47, 59), i=16, next=0
+          KindIdentifier "foo" [59, 63), i=17, next=18
+          KindNumericLiteral [65, 67), i=18, next=0
+    KindTypeAliasDeclaration [70, 107), i=19, next=27
+      KindIdentifier "Nothing" [76, 84), i=20, next=21
+      NodeList [85, 98), i=21, next=26
+        KindTypeParameter [85, 98), i=22, next=0
+          KindIdentifier "V" [85, 86), i=23, next=24
+          KindTypeReference [94, 98), i=24, next=0
+            KindIdentifier "Foo" [94, 98), i=25, next=0
+      KindVoidKeyword [101, 106), i=26, next=0
+    KindTypeAliasDeclaration [107, 224), i=27, next=65
+      KindIdentifier "Broken" [113, 120), i=28, next=29
+      NodeList [121, 147), i=29, next=41
+        KindTypeParameter [121, 147), i=30, next=0
+          KindIdentifier "V" [121, 122), i=31, next=32
+          KindTypeReference [130, 147), i=32, next=0
+            KindIdentifier "Array" [130, 136), i=33, next=34
+            NodeList [137, 146), i=34, next=0
+              KindUnionType [137, 146), i=35, next=0
+                NodeList [137, 146), i=36, next=0
+                  KindTypeReference [137, 140), i=37, next=39
+                    KindIdentifier "Foo" [137, 140), i=38, next=0
+                  KindTypeReference [142, 146), i=39, next=0
+                    KindIdentifier "Bar" [142, 146), i=40, next=0
+      KindMappedType [150, 223), i=41, next=0
+        KindReadonlyKeyword [152, 163), i=42, next=43
+        KindTypeParameter [165, 177), i=43, next=48
+          KindIdentifier "P" [165, 166), i=44, next=45
+          KindTypeOperator [169, 177), i=45, next=0
+            KindTypeReference [175, 177), i=46, next=0
+              KindIdentifier "V" [175, 177), i=47, next=0
+        KindConditionalType [179, 220), i=48, next=0
+          KindIndexedAccessType [179, 184), i=49, next=54
+            KindTypeReference [179, 181), i=50, next=52
+              KindIdentifier "V" [179, 181), i=51, next=0
+            KindTypeReference [182, 183), i=52, next=0
+              KindIdentifier "P" [182, 183), i=53, next=0
+          KindTypeReference [192, 196), i=54, next=56
+            KindIdentifier "Foo" [192, 196), i=55, next=0
+          KindTypeReference [198, 212), i=56, next=64
+            KindIdentifier "Nothing" [198, 206), i=57, next=58
+            NodeList [207, 211), i=58, next=0
+              KindIndexedAccessType [207, 211), i=59, next=0
+                KindTypeReference [207, 208), i=60, next=62
+                  KindIdentifier "V" [207, 208), i=61, next=0
+                KindTypeReference [209, 210), i=62, next=0
+                  KindIdentifier "P" [209, 210), i=63, next=0
+          KindNeverKeyword [214, 220), i=64, next=0
+    KindTypeAliasDeclaration [224, 374), i=65, next=77
+      KindIdentifier "_3" [349, 352), i=66, next=67
+      KindIndexedAccessType [354, 373), i=67, next=0
+        KindParenthesizedType [354, 366), i=68, next=75
+          KindIntersectionType [356, 365), i=69, next=0
+            NodeList [356, 365), i=70, next=0
+              KindTypeReference [356, 359), i=71, next=73
+                KindIdentifier "Foo" [356, 359), i=72, next=0
+              KindTypeReference [361, 365), i=73, next=0
+                KindIdentifier "Bar" [361, 365), i=74, next=0
+        KindLiteralType [367, 372), i=75, next=0
+          KindStringLiteral "foo" [367, 372), i=76, next=0
+    KindTypeAliasDeclaration [374, 418), i=77, next=89
+      KindIdentifier "_4" [393, 396), i=78, next=79
+      KindIndexedAccessType [398, 417), i=79, next=0
+        KindParenthesizedType [398, 410), i=80, next=87
+          KindUnionType [400, 409), i=81, next=0
+            NodeList [400, 409), i=82, next=0
+              KindTypeReference [400, 403), i=83, next=85
+                KindIdentifier "Foo" [400, 403), i=84, next=0
+              KindTypeReference [405, 409), i=85, next=0
+                KindIdentifier "Bar" [405, 409), i=86, next=0
+        KindLiteralType [411, 416), i=87, next=0
+          KindStringLiteral "foo" [411, 416), i=88, next=0
+    KindTypeAliasDeclaration [418, 473), i=89, next=0
+      KindIdentifier "_5" [440, 443), i=90, next=91
+      KindIndexedAccessType [445, 472), i=91, next=0
+        KindParenthesizedType [445, 465), i=92, next=104
+          KindUnionType [447, 464), i=93, next=0
+            NodeList [447, 464), i=94, next=0
+              KindTypeReference [447, 450), i=95, next=97
+                KindIdentifier "Foo" [447, 450), i=96, next=0
+              KindParenthesizedType [452, 464), i=97, next=0
+                KindIntersectionType [454, 463), i=98, next=0
+                  NodeList [454, 463), i=99, next=0
+                    KindTypeReference [454, 457), i=100, next=102
+                      KindIdentifier "Foo" [454, 457), i=101, next=0
+                    KindTypeReference [459, 463), i=102, next=0
+                      KindIdentifier "Bar" [459, 463), i=103, next=0
+        KindLiteralType [466, 471), i=104, next=0
+          KindStringLiteral "foo" [466, 471), i=105, next=0

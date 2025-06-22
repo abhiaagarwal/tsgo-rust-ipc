@@ -1,0 +1,90 @@
+KindSourceFile [0, 456), i=1, next=0
+  NodeList [0, 456), i=2, next=0
+    KindImportDeclaration [0, 34), i=3, next=10
+      KindImportClause [6, 20), i=4, next=9
+        KindNamedImports [6, 20), i=5, next=0
+          NodeList [8, 18), i=6, next=0
+            KindImportSpecifier [8, 18), i=7, next=0
+              KindIdentifier "SomeClass" [8, 18), i=8, next=0
+      KindStringLiteral "./aux" [25, 33), i=9, next=0
+    KindImportDeclaration [34, 72), i=10, next=17
+      KindImportClause [42, 57), i=11, next=16
+        KindNamedImports [42, 57), i=12, next=0
+          NodeList [44, 55), i=13, next=0
+            KindImportSpecifier [44, 55), i=14, next=0
+              KindIdentifier "SomeClass1" [44, 55), i=15, next=0
+      KindStringLiteral "./aux1" [62, 71), i=16, next=0
+    KindFunctionDeclaration [72, 158), i=17, next=32
+      KindIdentifier "annotation" [84, 95), i=18, next=19
+      KindTypeReference [98, 113), i=19, next=21
+        KindIdentifier "ClassDecorator" [98, 113), i=20, next=0
+      KindBlock [113, 158), i=21, next=0
+        NodeList [115, 155), i=22, next=0
+          KindReturnStatement [115, 155), i=23, next=0
+            KindArrowFunction [127, 154), i=24, next=0
+              NodeList [129, 140), i=25, next=29
+                KindParameter [129, 140), i=26, next=0
+                  KindIdentifier "target" [129, 135), i=27, next=28
+                  KindAnyKeyword [136, 140), i=28, next=0
+              KindVoidKeyword [142, 147), i=29, next=30
+              KindEqualsGreaterThanToken [147, 150), i=30, next=31
+              KindBlock [150, 154), i=31, next=0
+    KindFunctionDeclaration [158, 246), i=32, next=47
+      KindIdentifier "annotation1" [170, 182), i=33, next=34
+      KindTypeReference [185, 201), i=34, next=36
+        KindIdentifier "MethodDecorator" [185, 201), i=35, next=0
+      KindBlock [201, 246), i=36, next=0
+        NodeList [203, 243), i=37, next=0
+          KindReturnStatement [203, 243), i=38, next=0
+            KindArrowFunction [215, 242), i=39, next=0
+              NodeList [217, 228), i=40, next=44
+                KindParameter [217, 228), i=41, next=0
+                  KindIdentifier "target" [217, 223), i=42, next=43
+                  KindAnyKeyword [224, 228), i=43, next=0
+              KindVoidKeyword [230, 235), i=44, next=45
+              KindEqualsGreaterThanToken [235, 238), i=45, next=46
+              KindBlock [238, 242), i=46, next=0
+    KindClassDeclaration [246, 456), i=47, next=0
+      NodeList [246, 271), i=48, next=53
+        KindDecorator [246, 263), i=49, next=52
+          KindCallExpression [251, 263), i=50, next=0
+            KindIdentifier "annotation" [251, 261), i=51, next=0
+        KindExportKeyword [263, 271), i=52, next=0
+      KindIdentifier "ClassA" [277, 284), i=53, next=54
+      NodeList [286, 453), i=54, next=0
+        KindPropertyDeclaration [286, 311), i=55, next=60
+          KindIdentifier "array" [286, 297), i=56, next=57
+          KindArrayType [298, 310), i=57, next=0
+            KindTypeReference [298, 308), i=58, next=0
+              KindIdentifier "SomeClass" [298, 308), i=59, next=0
+        KindConstructor [311, 389), i=60, next=77
+          NodeList [331, 351), i=61, next=68
+            KindParameter [331, 351), i=62, next=0
+              KindDotDotDotToken [331, 334), i=63, next=64
+              KindIdentifier "init" [334, 338), i=64, next=65
+              KindArrayType [339, 351), i=65, next=0
+                KindTypeReference [339, 349), i=66, next=0
+                  KindIdentifier "SomeClass" [339, 349), i=67, next=0
+          KindBlock [352, 389), i=68, next=0
+            NodeList [354, 382), i=69, next=0
+              KindExpressionStatement [354, 382), i=70, next=0
+                KindBinaryExpression [354, 381), i=71, next=0
+                  KindPropertyAccessExpression [354, 374), i=72, next=75
+                    KindThisKeyword [354, 368), i=73, next=74
+                    KindIdentifier "array" [369, 374), i=74, next=0
+                  KindEqualsToken [374, 376), i=75, next=76
+                  KindIdentifier "init" [376, 381), i=76, next=0
+        KindMethodDeclaration [389, 453), i=77, next=0
+          NodeList [389, 411), i=78, next=82
+            KindDecorator [389, 411), i=79, next=0
+              KindCallExpression [398, 411), i=80, next=0
+                KindIdentifier "annotation1" [398, 409), i=81, next=0
+          KindIdentifier "foo" [411, 420), i=82, next=83
+          NodeList [421, 443), i=83, next=90
+            KindParameter [421, 443), i=84, next=0
+              KindDotDotDotToken [421, 424), i=85, next=86
+              KindIdentifier "args" [424, 429), i=86, next=87
+              KindArrayType [430, 443), i=87, next=0
+                KindTypeReference [430, 441), i=88, next=0
+                  KindIdentifier "SomeClass1" [430, 441), i=89, next=0
+          KindBlock [444, 453), i=90, next=0

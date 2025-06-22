@@ -1,0 +1,44 @@
+KindSourceFile [0, 206), i=1, next=0
+  NodeList [0, 203), i=2, next=0
+    KindClassDeclaration [0, 63), i=3, next=19
+      KindIdentifier "Base" [5, 10), i=4, next=5
+      NodeList [12, 60), i=5, next=0
+        KindConstructor [12, 39), i=6, next=12
+          NodeList [30, 34), i=7, next=11
+            KindParameter [30, 34), i=8, next=0
+              KindIdentifier "opt" [30, 33), i=9, next=10
+              KindQuestionToken [33, 34), i=10, next=0
+          KindBlock [35, 39), i=11, next=0
+        KindMethodDeclaration [39, 60), i=12, next=0
+          KindIdentifier "foo" [39, 48), i=13, next=14
+          NodeList [49, 55), i=14, next=18
+            KindParameter [49, 55), i=15, next=0
+              KindIdentifier "other" [49, 54), i=16, next=17
+              KindQuestionToken [54, 55), i=17, next=0
+          KindBlock [56, 60), i=18, next=0
+    KindClassDeclaration [63, 96), i=19, next=26
+      KindIdentifier "Derived" [70, 78), i=20, next=21
+      NodeList [78, 91), i=21, next=0
+        KindHeritageClause [78, 91), i=22, next=0
+          NodeList [86, 91), i=23, next=0
+            KindExpressionWithTypeArguments [86, 91), i=24, next=0
+              KindIdentifier "Base" [86, 91), i=25, next=0
+    KindVariableStatement [96, 120), i=26, next=33
+      KindVariableDeclarationList [96, 119), i=27, next=0
+        NodeList [101, 119), i=28, next=0
+          KindVariableDeclaration [101, 119), i=29, next=0
+            KindIdentifier "d" [101, 103), i=30, next=31
+            KindNewExpression [105, 119), i=31, next=0
+              KindIdentifier "Derived" [109, 117), i=32, next=0
+    KindVariableStatement [120, 192), i=33, next=40
+      KindVariableDeclarationList [120, 191), i=34, next=0
+        NodeList [179, 191), i=35, next=0
+          KindVariableDeclaration [179, 191), i=36, next=0
+            KindIdentifier "d2" [179, 182), i=37, next=38
+            KindTypeReference [183, 191), i=38, next=0
+              KindIdentifier "Derived" [183, 191), i=39, next=0
+    KindExpressionStatement [192, 203), i=40, next=0
+      KindCallExpression [192, 202), i=41, next=0
+        KindPropertyAccessExpression [192, 200), i=42, next=0
+          KindIdentifier "d2" [192, 196), i=43, next=44
+          KindIdentifier "foo" [197, 200), i=44, next=0

@@ -1,0 +1,24 @@
+KindSourceFile [0, 123), i=1, next=0
+  NodeList [0, 121), i=2, next=0
+    KindImportDeclaration [0, 81), i=3, next=14
+      KindImportClause [6, 64), i=4, next=13
+        KindNamedImports [6, 64), i=5, next=0
+          NodeList [8, 62), i=6, next=0
+            KindImportSpecifier [8, 24), i=7, next=9
+              KindIdentifier "goodDeclaration" [8, 24), i=8, next=0
+            KindImportSpecifier [25, 46), i=9, next=11
+              KindIdentifier "shouldReuseLocalName" [25, 46), i=10, next=0
+            KindImportSpecifier [47, 62), i=11, next=0
+              KindIdentifier "shouldBeElided" [47, 62), i=12, next=0
+      KindStringLiteral "some-dep" [69, 80), i=13, next=0
+    KindVariableStatement [81, 121), i=14, next=0
+      NodeList [81, 88), i=15, next=17
+        KindExportKeyword [81, 88), i=16, next=0
+      KindVariableDeclarationList [88, 120), i=17, next=0
+        NodeList [94, 120), i=18, next=0
+          KindVariableDeclaration [94, 120), i=19, next=0
+            KindIdentifier "bar" [94, 98), i=20, next=21
+            KindExpressionWithTypeArguments [100, 120), i=21, next=0
+              KindIdentifier "goodDeclaration" [100, 116), i=22, next=23
+              NodeList [117, 119), i=23, next=0
+                KindTypeLiteral [117, 119), i=24, next=0

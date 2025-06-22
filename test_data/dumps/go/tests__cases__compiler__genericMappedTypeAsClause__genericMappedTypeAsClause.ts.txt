@@ -1,0 +1,194 @@
+KindSourceFile [0, 828), i=1, next=0
+  NodeList [0, 810), i=2, next=0
+    KindTypeAliasDeclaration [0, 50), i=3, next=13
+      KindIdentifier "Model" [4, 10), i=4, next=5
+      KindTypeLiteral [12, 49), i=5, next=0
+        NodeList [14, 46), i=6, next=0
+          KindPropertySignature [14, 30), i=7, next=10
+            KindIdentifier "a" [14, 21), i=8, next=9
+            KindStringKeyword [22, 29), i=9, next=0
+          KindPropertySignature [30, 46), i=10, next=0
+            KindIdentifier "b" [30, 37), i=11, next=12
+            KindNumberKeyword [38, 45), i=12, next=0
+    KindTypeAliasDeclaration [50, 155), i=13, next=41
+      KindIdentifier "MappedModel" [58, 70), i=14, next=15
+      NodeList [71, 92), i=15, next=19
+        KindTypeParameter [71, 92), i=16, next=0
+          KindIdentifier "Suffix" [71, 77), i=17, next=18
+          KindStringKeyword [85, 92), i=18, next=0
+      KindMappedType [95, 154), i=19, next=0
+        KindTypeParameter [104, 120), i=20, next=25
+          KindIdentifier "K" [104, 105), i=21, next=22
+          KindTypeOperator [108, 120), i=22, next=0
+            KindTypeReference [114, 120), i=23, next=0
+              KindIdentifier "Model" [114, 120), i=24, next=0
+        KindTemplateLiteralType [123, 139), i=25, next=36
+          KindTemplateHead [123, 127), i=26, next=27
+          NodeList [127, 139), i=27, next=0
+            KindTemplateLiteralTypeSpan [127, 131), i=28, next=32
+              KindTypeReference [127, 128), i=29, next=31
+                KindIdentifier "K" [127, 128), i=30, next=0
+              KindTemplateMiddle [128, 131), i=31, next=0
+            KindTemplateLiteralTypeSpan [131, 139), i=32, next=0
+              KindTypeReference [131, 137), i=33, next=35
+                KindIdentifier "Suffix" [131, 137), i=34, next=0
+              KindTemplateTail [137, 139), i=35, next=0
+        KindIndexedAccessType [141, 150), i=36, next=0
+          KindTypeReference [141, 147), i=37, next=39
+            KindIdentifier "Model" [141, 147), i=38, next=0
+          KindTypeReference [148, 149), i=39, next=0
+            KindIdentifier "K" [148, 149), i=40, next=0
+    KindVariableStatement [155, 219), i=41, next=59
+      KindVariableDeclarationList [155, 218), i=42, next=0
+        NodeList [164, 218), i=43, next=0
+          KindVariableDeclaration [164, 218), i=44, next=0
+            KindIdentifier "foo1" [164, 169), i=45, next=46
+            KindTypeReference [170, 189), i=46, next=51
+              KindIdentifier "MappedModel" [170, 182), i=47, next=48
+              NodeList [183, 188), i=48, next=0
+                KindLiteralType [183, 188), i=49, next=0
+                  KindStringLiteral "Foo" [183, 188), i=50, next=0
+            KindObjectLiteralExpression [191, 218), i=51, next=0
+              NodeList [193, 216), i=52, next=0
+                KindPropertyAssignment [193, 206), i=53, next=56
+                  KindIdentifier "aFoo" [193, 198), i=54, next=55
+                  KindStringLiteral "test" [199, 206), i=55, next=0
+                KindPropertyAssignment [207, 216), i=56, next=0
+                  KindIdentifier "bFoo" [207, 212), i=57, next=58
+                  KindNumericLiteral [213, 216), i=58, next=0
+    KindVariableStatement [219, 270), i=59, next=74
+      KindVariableDeclarationList [219, 269), i=60, next=0
+        NodeList [226, 269), i=61, next=0
+          KindVariableDeclaration [226, 269), i=62, next=0
+            KindIdentifier "foo2" [226, 231), i=63, next=64
+            KindTypeReference [232, 251), i=64, next=69
+              KindIdentifier "MappedModel" [232, 244), i=65, next=66
+              NodeList [245, 250), i=66, next=0
+                KindLiteralType [245, 250), i=67, next=0
+                  KindStringLiteral "Foo" [245, 250), i=68, next=0
+            KindObjectLiteralExpression [253, 269), i=69, next=0
+              NodeList [255, 267), i=70, next=0
+                KindPropertyAssignment [255, 267), i=71, next=0
+                  KindIdentifier "bFoo" [255, 260), i=72, next=73
+                  KindStringLiteral "bar" [261, 267), i=73, next=0
+    KindFunctionDeclaration [270, 634), i=74, next=159
+      KindIdentifier "f1" [292, 295), i=75, next=76
+      NodeList [296, 312), i=76, next=80
+        KindTypeParameter [296, 312), i=77, next=0
+          KindIdentifier "T" [296, 297), i=78, next=79
+          KindStringKeyword [305, 312), i=79, next=0
+      KindBlock [315, 634), i=80, next=0
+        NodeList [317, 621), i=81, next=0
+          KindVariableStatement [317, 353), i=82, next=93
+            KindVariableDeclarationList [317, 352), i=83, next=0
+              NodeList [328, 352), i=84, next=0
+                KindVariableDeclaration [328, 352), i=85, next=0
+                  KindIdentifier "x1" [328, 331), i=86, next=87
+                  KindTypeReference [332, 347), i=87, next=92
+                    KindIdentifier "MappedModel" [332, 344), i=88, next=89
+                    NodeList [345, 346), i=89, next=0
+                      KindTypeReference [345, 346), i=90, next=0
+                        KindIdentifier "T" [345, 346), i=91, next=0
+                  KindNumericLiteral [349, 352), i=92, next=0
+          KindVariableStatement [353, 403), i=93, next=104
+            KindVariableDeclarationList [353, 402), i=94, next=0
+              NodeList [374, 402), i=95, next=0
+                KindVariableDeclaration [374, 402), i=96, next=0
+                  KindIdentifier "x2" [374, 377), i=97, next=98
+                  KindTypeReference [378, 393), i=98, next=103
+                    KindIdentifier "MappedModel" [378, 390), i=99, next=100
+                    NodeList [391, 392), i=100, next=0
+                      KindTypeReference [391, 392), i=101, next=0
+                        KindIdentifier "T" [391, 392), i=102, next=0
+                  KindStringLiteral "test" [395, 402), i=103, next=0
+          KindVariableStatement [403, 456), i=104, next=119
+            KindVariableDeclarationList [403, 455), i=105, next=0
+              NodeList [424, 455), i=106, next=0
+                KindVariableDeclaration [424, 455), i=107, next=0
+                  KindIdentifier "x3" [424, 427), i=108, next=109
+                  KindTypeReference [428, 443), i=109, next=114
+                    KindIdentifier "MappedModel" [428, 440), i=110, next=111
+                    NodeList [441, 442), i=111, next=0
+                      KindTypeReference [441, 442), i=112, next=0
+                        KindIdentifier "T" [441, 442), i=113, next=0
+                  KindArrayLiteralExpression [445, 455), i=114, next=0
+                    NodeList [447, 454), i=115, next=0
+                      KindNumericLiteral [447, 448), i=116, next=117
+                      KindNumericLiteral [449, 451), i=117, next=118
+                      KindNumericLiteral [452, 454), i=118, next=0
+          KindVariableStatement [456, 505), i=119, next=130
+            KindVariableDeclarationList [456, 504), i=120, next=0
+              NodeList [477, 504), i=121, next=0
+                KindVariableDeclaration [477, 504), i=122, next=0
+                  KindIdentifier "x4" [477, 480), i=123, next=124
+                  KindTypeReference [481, 496), i=124, next=129
+                    KindIdentifier "MappedModel" [481, 493), i=125, next=126
+                    NodeList [494, 495), i=126, next=0
+                      KindTypeReference [494, 495), i=127, next=0
+                        KindIdentifier "T" [494, 495), i=128, next=0
+                  KindFalseKeyword [498, 504), i=129, next=0
+          KindVariableStatement [505, 568), i=130, next=148
+            KindVariableDeclarationList [505, 567), i=131, next=0
+              NodeList [526, 567), i=132, next=0
+                KindVariableDeclaration [526, 567), i=133, next=0
+                  KindIdentifier "x5" [526, 529), i=134, next=135
+                  KindTypeReference [530, 545), i=135, next=140
+                    KindIdentifier "MappedModel" [530, 542), i=136, next=137
+                    NodeList [543, 544), i=137, next=0
+                      KindTypeReference [543, 544), i=138, next=0
+                        KindIdentifier "T" [543, 544), i=139, next=0
+                  KindObjectLiteralExpression [547, 567), i=140, next=0
+                    NodeList [549, 565), i=141, next=0
+                      KindPropertyAssignment [549, 558), i=142, next=145
+                        KindIdentifier "a" [549, 551), i=143, next=144
+                        KindStringLiteral "bar" [552, 558), i=144, next=0
+                      KindPropertyAssignment [559, 565), i=145, next=0
+                        KindIdentifier "b" [559, 561), i=146, next=147
+                        KindNumericLiteral [562, 565), i=147, next=0
+          KindVariableStatement [568, 621), i=148, next=0
+            KindVariableDeclarationList [568, 620), i=149, next=0
+              NodeList [589, 620), i=150, next=0
+                KindVariableDeclaration [589, 620), i=151, next=0
+                  KindIdentifier "x6" [589, 592), i=152, next=153
+                  KindTypeReference [593, 608), i=153, next=158
+                    KindIdentifier "MappedModel" [593, 605), i=154, next=155
+                    NodeList [606, 607), i=155, next=0
+                      KindTypeReference [606, 607), i=156, next=0
+                        KindIdentifier "T" [606, 607), i=157, next=0
+                  KindIdentifier "undefined" [610, 620), i=158, next=0
+    KindTypeAliasDeclaration [634, 729), i=159, next=176
+      KindIdentifier "RemapRecord" [666, 678), i=160, next=161
+      NodeList [679, 701), i=161, next=168
+        KindTypeParameter [679, 698), i=162, next=166
+          KindIdentifier "K" [679, 680), i=163, next=164
+          KindTypeOperator [688, 698), i=164, next=0
+            KindAnyKeyword [694, 698), i=165, next=0
+        KindTypeParameter [699, 701), i=166, next=0
+          KindIdentifier "V" [699, 701), i=167, next=0
+      KindMappedType [704, 729), i=168, next=0
+        KindTypeParameter [708, 718), i=169, next=172
+          KindIdentifier "_" [708, 709), i=170, next=171
+          KindNeverKeyword [712, 718), i=171, next=0
+        KindTypeReference [721, 723), i=172, next=174
+          KindIdentifier "K" [721, 723), i=173, next=0
+        KindTypeReference [725, 727), i=174, next=0
+          KindIdentifier "V" [725, 727), i=175, next=0
+    KindInterfaceDeclaration [729, 810), i=176, next=0
+      KindIdentifier "RecordInterface2" [740, 757), i=177, next=178
+      NodeList [758, 780), i=178, next=185
+        KindTypeParameter [758, 777), i=179, next=183
+          KindIdentifier "K" [758, 759), i=180, next=181
+          KindTypeOperator [767, 777), i=181, next=0
+            KindAnyKeyword [773, 777), i=182, next=0
+        KindTypeParameter [778, 780), i=183, next=0
+          KindIdentifier "V" [778, 780), i=184, next=0
+      NodeList [781, 807), i=185, next=0
+        KindHeritageClause [781, 807), i=186, next=0
+          NodeList [789, 807), i=187, next=0
+            KindExpressionWithTypeArguments [789, 807), i=188, next=0
+              KindIdentifier "RemapRecord" [789, 801), i=189, next=190
+              NodeList [802, 806), i=190, next=0
+                KindTypeReference [802, 803), i=191, next=193
+                  KindIdentifier "K" [802, 803), i=192, next=0
+                KindTypeReference [804, 806), i=193, next=0
+                  KindIdentifier "V" [804, 806), i=194, next=0

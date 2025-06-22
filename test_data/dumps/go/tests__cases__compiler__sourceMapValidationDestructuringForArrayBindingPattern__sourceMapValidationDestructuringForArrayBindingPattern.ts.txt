@@ -1,0 +1,848 @@
+KindSourceFile [0, 2992), i=1, next=0
+  NodeList [0, 2992), i=2, next=0
+    KindVariableStatement [0, 51), i=3, next=19
+      NodeList [0, 7), i=4, next=6
+        KindDeclareKeyword [0, 7), i=5, next=0
+      KindVariableDeclarationList [7, 51), i=6, next=0
+        NodeList [11, 51), i=7, next=0
+          KindVariableDeclaration [11, 51), i=8, next=0
+            KindIdentifier "console" [11, 19), i=9, next=10
+            KindTypeLiteral [20, 51), i=10, next=0
+              NodeList [22, 48), i=11, next=0
+                KindMethodSignature [22, 48), i=12, next=0
+                  KindIdentifier "log" [22, 31), i=13, next=14
+                  NodeList [32, 40), i=14, next=18
+                    KindParameter [32, 40), i=15, next=0
+                      KindIdentifier "msg" [32, 35), i=16, next=17
+                      KindAnyKeyword [36, 40), i=17, next=0
+                  KindVoidKeyword [42, 47), i=18, next=0
+    KindTypeAliasDeclaration [51, 91), i=19, next=26
+      KindIdentifier "Robot" [57, 63), i=20, next=21
+      KindTupleType [65, 90), i=21, next=0
+        NodeList [67, 89), i=22, next=0
+          KindNumberKeyword [67, 73), i=23, next=24
+          KindStringKeyword [74, 81), i=24, next=25
+          KindStringKeyword [82, 89), i=25, next=0
+    KindTypeAliasDeclaration [91, 145), i=26, next=35
+      KindIdentifier "MultiSkilledRobot" [97, 115), i=27, next=28
+      KindTupleType [117, 144), i=28, next=0
+        NodeList [119, 143), i=29, next=0
+          KindStringKeyword [119, 125), i=30, next=31
+          KindTupleType [126, 143), i=31, next=0
+            NodeList [128, 142), i=32, next=0
+              KindStringKeyword [128, 134), i=33, next=34
+              KindStringKeyword [135, 142), i=34, next=0
+    KindVariableStatement [145, 192), i=35, next=47
+      KindVariableDeclarationList [145, 191), i=36, next=0
+        NodeList [152, 191), i=37, next=0
+          KindVariableDeclaration [152, 191), i=38, next=0
+            KindIdentifier "robotA" [152, 159), i=39, next=40
+            KindTypeReference [160, 166), i=40, next=42
+              KindIdentifier "Robot" [160, 166), i=41, next=0
+            KindArrayLiteralExpression [168, 191), i=42, next=0
+              NodeList [170, 190), i=43, next=0
+                KindNumericLiteral [170, 171), i=44, next=45
+                KindStringLiteral "mower" [172, 180), i=45, next=46
+                KindStringLiteral "mowing" [181, 190), i=46, next=0
+    KindFunctionDeclaration [192, 238), i=47, next=53
+      KindIdentifier "getRobot" [202, 211), i=48, next=49
+      KindBlock [213, 238), i=49, next=0
+        NodeList [215, 235), i=50, next=0
+          KindReturnStatement [215, 235), i=51, next=0
+            KindIdentifier "robotA" [227, 234), i=52, next=0
+    KindVariableStatement [238, 305), i=53, next=67
+      KindVariableDeclarationList [238, 304), i=54, next=0
+        NodeList [245, 304), i=55, next=0
+          KindVariableDeclaration [245, 304), i=56, next=0
+            KindIdentifier "multiRobotA" [245, 257), i=57, next=58
+            KindTypeReference [258, 276), i=58, next=60
+              KindIdentifier "MultiSkilledRobot" [258, 276), i=59, next=0
+            KindArrayLiteralExpression [278, 304), i=60, next=0
+              NodeList [280, 303), i=61, next=0
+                KindStringLiteral "mower" [280, 287), i=62, next=63
+                KindArrayLiteralExpression [288, 303), i=63, next=0
+                  NodeList [290, 302), i=64, next=0
+                    KindStringLiteral "mowing" [290, 298), i=65, next=66
+                    KindStringLiteral "" [299, 302), i=66, next=0
+    KindVariableStatement [305, 380), i=67, next=81
+      KindVariableDeclarationList [305, 379), i=68, next=0
+        NodeList [310, 379), i=69, next=0
+          KindVariableDeclaration [310, 379), i=70, next=0
+            KindIdentifier "multiRobotB" [310, 322), i=71, next=72
+            KindTypeReference [323, 341), i=72, next=74
+              KindIdentifier "MultiSkilledRobot" [323, 341), i=73, next=0
+            KindArrayLiteralExpression [343, 379), i=74, next=0
+              NodeList [345, 378), i=75, next=0
+                KindStringLiteral "trimmer" [345, 354), i=76, next=77
+                KindArrayLiteralExpression [355, 378), i=77, next=0
+                  NodeList [357, 377), i=78, next=0
+                    KindStringLiteral "trimming" [357, 367), i=79, next=80
+                    KindStringLiteral "edging" [368, 377), i=80, next=0
+    KindFunctionDeclaration [380, 436), i=81, next=87
+      KindIdentifier "getMultiRobot" [390, 404), i=82, next=83
+      KindBlock [406, 436), i=83, next=0
+        NodeList [408, 433), i=84, next=0
+          KindReturnStatement [408, 433), i=85, next=0
+            KindIdentifier "multiRobotA" [420, 432), i=86, next=0
+    KindForStatement [436, 517), i=87, next=115
+      KindVariableDeclarationList [445, 474), i=88, next=100
+        NodeList [448, 474), i=89, next=0
+          KindVariableDeclaration [448, 467), i=90, next=97
+            KindArrayBindingPattern [448, 458), i=91, next=96
+              NodeList [450, 457), i=92, next=0
+                KindBindingElement [450, 450), i=93, next=94
+                KindBindingElement [451, 457), i=94, next=0
+                  KindIdentifier "nameA" [451, 457), i=95, next=0
+            KindIdentifier "robotA" [460, 467), i=96, next=0
+          KindVariableDeclaration [468, 474), i=97, next=0
+            KindIdentifier "i" [468, 470), i=98, next=99
+            KindNumericLiteral [472, 474), i=99, next=0
+      KindBinaryExpression [475, 481), i=100, next=104
+        KindIdentifier "i" [475, 477), i=101, next=102
+        KindLessThanToken [477, 479), i=102, next=103
+        KindNumericLiteral [479, 481), i=103, next=0
+      KindPostfixUnaryExpression [482, 486), i=104, next=106
+        KindIdentifier "i" [482, 484), i=105, next=0
+      KindBlock [487, 517), i=106, next=0
+        NodeList [489, 514), i=107, next=0
+          KindExpressionStatement [489, 514), i=108, next=0
+            KindCallExpression [489, 513), i=109, next=0
+              KindPropertyAccessExpression [489, 506), i=110, next=113
+                KindIdentifier "console" [489, 502), i=111, next=112
+                KindIdentifier "log" [503, 506), i=112, next=0
+              NodeList [507, 512), i=113, next=0
+                KindIdentifier "nameA" [507, 512), i=114, next=0
+    KindForStatement [517, 600), i=115, next=144
+      KindVariableDeclarationList [524, 557), i=116, next=129
+        NodeList [527, 557), i=117, next=0
+          KindVariableDeclaration [527, 550), i=118, next=126
+            KindArrayBindingPattern [527, 537), i=119, next=124
+              NodeList [529, 536), i=120, next=0
+                KindBindingElement [529, 529), i=121, next=122
+                KindBindingElement [530, 536), i=122, next=0
+                  KindIdentifier "nameA" [530, 536), i=123, next=0
+            KindCallExpression [539, 550), i=124, next=0
+              KindIdentifier "getRobot" [539, 548), i=125, next=0
+          KindVariableDeclaration [551, 557), i=126, next=0
+            KindIdentifier "i" [551, 553), i=127, next=128
+            KindNumericLiteral [555, 557), i=128, next=0
+      KindBinaryExpression [558, 564), i=129, next=133
+        KindIdentifier "i" [558, 560), i=130, next=131
+        KindLessThanToken [560, 562), i=131, next=132
+        KindNumericLiteral [562, 564), i=132, next=0
+      KindPostfixUnaryExpression [565, 569), i=133, next=135
+        KindIdentifier "i" [565, 567), i=134, next=0
+      KindBlock [570, 600), i=135, next=0
+        NodeList [572, 597), i=136, next=0
+          KindExpressionStatement [572, 597), i=137, next=0
+            KindCallExpression [572, 596), i=138, next=0
+              KindPropertyAccessExpression [572, 589), i=139, next=142
+                KindIdentifier "console" [572, 585), i=140, next=141
+                KindIdentifier "log" [586, 589), i=141, next=0
+              NodeList [590, 595), i=142, next=0
+                KindIdentifier "nameA" [590, 595), i=143, next=0
+    KindForStatement [600, 699), i=144, next=176
+      KindVariableDeclarationList [607, 656), i=145, next=161
+        NodeList [610, 656), i=146, next=0
+          KindVariableDeclaration [610, 649), i=147, next=158
+            KindArrayBindingPattern [610, 620), i=148, next=153
+              NodeList [612, 619), i=149, next=0
+                KindBindingElement [612, 612), i=150, next=151
+                KindBindingElement [613, 619), i=151, next=0
+                  KindIdentifier "nameA" [613, 619), i=152, next=0
+            KindArrayLiteralExpression [622, 649), i=153, next=0
+              NodeList [624, 648), i=154, next=0
+                KindNumericLiteral [624, 625), i=155, next=156
+                KindStringLiteral "trimmer" [626, 636), i=156, next=157
+                KindStringLiteral "trimming" [637, 648), i=157, next=0
+          KindVariableDeclaration [650, 656), i=158, next=0
+            KindIdentifier "i" [650, 652), i=159, next=160
+            KindNumericLiteral [654, 656), i=160, next=0
+      KindBinaryExpression [657, 663), i=161, next=165
+        KindIdentifier "i" [657, 659), i=162, next=163
+        KindLessThanToken [659, 661), i=163, next=164
+        KindNumericLiteral [661, 663), i=164, next=0
+      KindPostfixUnaryExpression [664, 668), i=165, next=167
+        KindIdentifier "i" [664, 666), i=166, next=0
+      KindBlock [669, 699), i=167, next=0
+        NodeList [671, 696), i=168, next=0
+          KindExpressionStatement [671, 696), i=169, next=0
+            KindCallExpression [671, 695), i=170, next=0
+              KindPropertyAccessExpression [671, 688), i=171, next=174
+                KindIdentifier "console" [671, 684), i=172, next=173
+                KindIdentifier "log" [685, 688), i=173, next=0
+              NodeList [689, 694), i=174, next=0
+                KindIdentifier "nameA" [689, 694), i=175, next=0
+    KindForStatement [699, 818), i=176, next=209
+      KindVariableDeclarationList [706, 767), i=177, next=194
+        NodeList [709, 767), i=178, next=0
+          KindVariableDeclaration [709, 760), i=179, next=191
+            KindArrayBindingPattern [709, 746), i=180, next=190
+              NodeList [711, 745), i=181, next=0
+                KindBindingElement [711, 711), i=182, next=183
+                KindBindingElement [712, 745), i=183, next=0
+                  KindArrayBindingPattern [712, 745), i=184, next=0
+                    NodeList [714, 744), i=185, next=0
+                      KindBindingElement [714, 727), i=186, next=188
+                        KindIdentifier "primarySkillA" [714, 727), i=187, next=0
+                      KindBindingElement [728, 744), i=188, next=0
+                        KindIdentifier "secondarySkillA" [728, 744), i=189, next=0
+            KindIdentifier "multiRobotA" [748, 760), i=190, next=0
+          KindVariableDeclaration [761, 767), i=191, next=0
+            KindIdentifier "i" [761, 763), i=192, next=193
+            KindNumericLiteral [765, 767), i=193, next=0
+      KindBinaryExpression [768, 774), i=194, next=198
+        KindIdentifier "i" [768, 770), i=195, next=196
+        KindLessThanToken [770, 772), i=196, next=197
+        KindNumericLiteral [772, 774), i=197, next=0
+      KindPostfixUnaryExpression [775, 779), i=198, next=200
+        KindIdentifier "i" [775, 777), i=199, next=0
+      KindBlock [780, 818), i=200, next=0
+        NodeList [782, 815), i=201, next=0
+          KindExpressionStatement [782, 815), i=202, next=0
+            KindCallExpression [782, 814), i=203, next=0
+              KindPropertyAccessExpression [782, 799), i=204, next=207
+                KindIdentifier "console" [782, 795), i=205, next=206
+                KindIdentifier "log" [796, 799), i=206, next=0
+              NodeList [800, 813), i=207, next=0
+                KindIdentifier "primarySkillA" [800, 813), i=208, next=0
+    KindForStatement [818, 941), i=209, next=243
+      KindVariableDeclarationList [825, 890), i=210, next=228
+        NodeList [828, 890), i=211, next=0
+          KindVariableDeclaration [828, 883), i=212, next=225
+            KindArrayBindingPattern [828, 865), i=213, next=223
+              NodeList [830, 864), i=214, next=0
+                KindBindingElement [830, 830), i=215, next=216
+                KindBindingElement [831, 864), i=216, next=0
+                  KindArrayBindingPattern [831, 864), i=217, next=0
+                    NodeList [833, 863), i=218, next=0
+                      KindBindingElement [833, 846), i=219, next=221
+                        KindIdentifier "primarySkillA" [833, 846), i=220, next=0
+                      KindBindingElement [847, 863), i=221, next=0
+                        KindIdentifier "secondarySkillA" [847, 863), i=222, next=0
+            KindCallExpression [867, 883), i=223, next=0
+              KindIdentifier "getMultiRobot" [867, 881), i=224, next=0
+          KindVariableDeclaration [884, 890), i=225, next=0
+            KindIdentifier "i" [884, 886), i=226, next=227
+            KindNumericLiteral [888, 890), i=227, next=0
+      KindBinaryExpression [891, 897), i=228, next=232
+        KindIdentifier "i" [891, 893), i=229, next=230
+        KindLessThanToken [893, 895), i=230, next=231
+        KindNumericLiteral [895, 897), i=231, next=0
+      KindPostfixUnaryExpression [898, 902), i=232, next=234
+        KindIdentifier "i" [898, 900), i=233, next=0
+      KindBlock [903, 941), i=234, next=0
+        NodeList [905, 938), i=235, next=0
+          KindExpressionStatement [905, 938), i=236, next=0
+            KindCallExpression [905, 937), i=237, next=0
+              KindPropertyAccessExpression [905, 922), i=238, next=241
+                KindIdentifier "console" [905, 918), i=239, next=240
+                KindIdentifier "log" [919, 922), i=240, next=0
+              NodeList [923, 936), i=241, next=0
+                KindIdentifier "primarySkillA" [923, 936), i=242, next=0
+    KindForStatement [941, 1084), i=243, next=26
+      KindVariableDeclarationList [948, 1033), i=244, next=11
+        NodeList [951, 1033), i=245, next=0
+          KindVariableDeclaration [951, 1026), i=246, next=8
+            KindArrayBindingPattern [951, 988), i=247, next=1
+              NodeList [953, 987), i=248, next=0
+                KindBindingElement [953, 953), i=249, next=250
+                KindBindingElement [954, 987), i=250, next=0
+                  KindArrayBindingPattern [954, 987), i=251, next=0
+                    NodeList [956, 986), i=252, next=0
+                      KindBindingElement [956, 969), i=253, next=255
+                        KindIdentifier "primarySkillA" [956, 969), i=254, next=0
+                      KindBindingElement [970, 986), i=255, next=0
+                        KindIdentifier "secondarySkillA" [970, 986), i=256, next=0
+            KindArrayLiteralExpression [990, 1026), i=257, next=0
+              NodeList [992, 1025), i=258, next=0
+                KindStringLiteral "trimmer" [992, 1001), i=259, next=4
+                KindArrayLiteralExpression [1002, 1025), i=260, next=0
+                  NodeList [1004, 1024), i=261, next=0
+                    KindStringLiteral "trimming" [1004, 1014), i=262, next=7
+                    KindStringLiteral "edging" [1015, 1024), i=263, next=0
+          KindVariableDeclaration [1027, 1033), i=264, next=0
+            KindIdentifier "i" [1027, 1029), i=265, next=10
+            KindNumericLiteral [1031, 1033), i=266, next=0
+      KindBinaryExpression [1034, 1040), i=267, next=15
+        KindIdentifier "i" [1034, 1036), i=268, next=13
+        KindLessThanToken [1036, 1038), i=269, next=14
+        KindNumericLiteral [1038, 1040), i=270, next=0
+      KindPostfixUnaryExpression [1041, 1045), i=271, next=17
+        KindIdentifier "i" [1041, 1043), i=272, next=0
+      KindBlock [1046, 1084), i=273, next=0
+        NodeList [1048, 1081), i=274, next=0
+          KindExpressionStatement [1048, 1081), i=275, next=0
+            KindCallExpression [1048, 1080), i=276, next=0
+              KindPropertyAccessExpression [1048, 1065), i=277, next=24
+                KindIdentifier "console" [1048, 1061), i=278, next=23
+                KindIdentifier "log" [1062, 1065), i=279, next=0
+              NodeList [1066, 1079), i=280, next=0
+                KindIdentifier "primarySkillA" [1066, 1079), i=281, next=0
+    KindForStatement [1084, 1167), i=282, next=53
+      KindVariableDeclarationList [1093, 1122), i=283, next=38
+        NodeList [1096, 1122), i=284, next=0
+          KindVariableDeclaration [1096, 1115), i=285, next=35
+            KindArrayBindingPattern [1096, 1106), i=286, next=34
+              NodeList [1098, 1105), i=287, next=0
+                KindBindingElement [1098, 1105), i=288, next=0
+                  KindIdentifier "numberB" [1098, 1105), i=289, next=0
+            KindIdentifier "robotA" [1108, 1115), i=290, next=0
+          KindVariableDeclaration [1116, 1122), i=291, next=0
+            KindIdentifier "i" [1116, 1118), i=292, next=37
+            KindNumericLiteral [1120, 1122), i=293, next=0
+      KindBinaryExpression [1123, 1129), i=294, next=42
+        KindIdentifier "i" [1123, 1125), i=295, next=40
+        KindLessThanToken [1125, 1127), i=296, next=41
+        KindNumericLiteral [1127, 1129), i=297, next=0
+      KindPostfixUnaryExpression [1130, 1134), i=298, next=44
+        KindIdentifier "i" [1130, 1132), i=299, next=0
+      KindBlock [1135, 1167), i=300, next=0
+        NodeList [1137, 1164), i=301, next=0
+          KindExpressionStatement [1137, 1164), i=302, next=0
+            KindCallExpression [1137, 1163), i=303, next=0
+              KindPropertyAccessExpression [1137, 1154), i=304, next=51
+                KindIdentifier "console" [1137, 1150), i=305, next=50
+                KindIdentifier "log" [1151, 1154), i=306, next=0
+              NodeList [1155, 1162), i=307, next=0
+                KindIdentifier "numberB" [1155, 1162), i=308, next=0
+    KindForStatement [1167, 1252), i=309, next=81
+      KindVariableDeclarationList [1174, 1207), i=310, next=66
+        NodeList [1177, 1207), i=311, next=0
+          KindVariableDeclaration [1177, 1200), i=312, next=63
+            KindArrayBindingPattern [1177, 1187), i=313, next=61
+              NodeList [1179, 1186), i=314, next=0
+                KindBindingElement [1179, 1186), i=315, next=0
+                  KindIdentifier "numberB" [1179, 1186), i=316, next=0
+            KindCallExpression [1189, 1200), i=317, next=0
+              KindIdentifier "getRobot" [1189, 1198), i=318, next=0
+          KindVariableDeclaration [1201, 1207), i=319, next=0
+            KindIdentifier "i" [1201, 1203), i=320, next=65
+            KindNumericLiteral [1205, 1207), i=321, next=0
+      KindBinaryExpression [1208, 1214), i=322, next=70
+        KindIdentifier "i" [1208, 1210), i=323, next=68
+        KindLessThanToken [1210, 1212), i=324, next=69
+        KindNumericLiteral [1212, 1214), i=325, next=0
+      KindPostfixUnaryExpression [1215, 1219), i=326, next=72
+        KindIdentifier "i" [1215, 1217), i=327, next=0
+      KindBlock [1220, 1252), i=328, next=0
+        NodeList [1222, 1249), i=329, next=0
+          KindExpressionStatement [1222, 1249), i=330, next=0
+            KindCallExpression [1222, 1248), i=331, next=0
+              KindPropertyAccessExpression [1222, 1239), i=332, next=79
+                KindIdentifier "console" [1222, 1235), i=333, next=78
+                KindIdentifier "log" [1236, 1239), i=334, next=0
+              NodeList [1240, 1247), i=335, next=0
+                KindIdentifier "numberB" [1240, 1247), i=336, next=0
+    KindForStatement [1252, 1353), i=337, next=112
+      KindVariableDeclarationList [1259, 1308), i=338, next=97
+        NodeList [1262, 1308), i=339, next=0
+          KindVariableDeclaration [1262, 1301), i=340, next=94
+            KindArrayBindingPattern [1262, 1272), i=341, next=89
+              NodeList [1264, 1271), i=342, next=0
+                KindBindingElement [1264, 1271), i=343, next=0
+                  KindIdentifier "numberB" [1264, 1271), i=344, next=0
+            KindArrayLiteralExpression [1274, 1301), i=345, next=0
+              NodeList [1276, 1300), i=346, next=0
+                KindNumericLiteral [1276, 1277), i=347, next=92
+                KindStringLiteral "trimmer" [1278, 1288), i=348, next=93
+                KindStringLiteral "trimming" [1289, 1300), i=349, next=0
+          KindVariableDeclaration [1302, 1308), i=350, next=0
+            KindIdentifier "i" [1302, 1304), i=351, next=96
+            KindNumericLiteral [1306, 1308), i=352, next=0
+      KindBinaryExpression [1309, 1315), i=353, next=101
+        KindIdentifier "i" [1309, 1311), i=354, next=99
+        KindLessThanToken [1311, 1313), i=355, next=100
+        KindNumericLiteral [1313, 1315), i=356, next=0
+      KindPostfixUnaryExpression [1316, 1320), i=357, next=103
+        KindIdentifier "i" [1316, 1318), i=358, next=0
+      KindBlock [1321, 1353), i=359, next=0
+        NodeList [1323, 1350), i=360, next=0
+          KindExpressionStatement [1323, 1350), i=361, next=0
+            KindCallExpression [1323, 1349), i=362, next=0
+              KindPropertyAccessExpression [1323, 1340), i=363, next=110
+                KindIdentifier "console" [1323, 1336), i=364, next=109
+                KindIdentifier "log" [1337, 1340), i=365, next=0
+              NodeList [1341, 1348), i=366, next=0
+                KindIdentifier "numberB" [1341, 1348), i=367, next=0
+    KindForStatement [1353, 1435), i=368, next=139
+      KindVariableDeclarationList [1360, 1392), i=369, next=124
+        NodeList [1363, 1392), i=370, next=0
+          KindVariableDeclaration [1363, 1385), i=371, next=121
+            KindArrayBindingPattern [1363, 1371), i=372, next=120
+              NodeList [1365, 1370), i=373, next=0
+                KindBindingElement [1365, 1370), i=374, next=0
+                  KindIdentifier "nameB" [1365, 1370), i=375, next=0
+            KindIdentifier "multiRobotA" [1373, 1385), i=376, next=0
+          KindVariableDeclaration [1386, 1392), i=377, next=0
+            KindIdentifier "i" [1386, 1388), i=378, next=123
+            KindNumericLiteral [1390, 1392), i=379, next=0
+      KindBinaryExpression [1393, 1399), i=380, next=128
+        KindIdentifier "i" [1393, 1395), i=381, next=126
+        KindLessThanToken [1395, 1397), i=382, next=127
+        KindNumericLiteral [1397, 1399), i=383, next=0
+      KindPostfixUnaryExpression [1400, 1404), i=384, next=130
+        KindIdentifier "i" [1400, 1402), i=385, next=0
+      KindBlock [1405, 1435), i=386, next=0
+        NodeList [1407, 1432), i=387, next=0
+          KindExpressionStatement [1407, 1432), i=388, next=0
+            KindCallExpression [1407, 1431), i=389, next=0
+              KindPropertyAccessExpression [1407, 1424), i=390, next=137
+                KindIdentifier "console" [1407, 1420), i=391, next=136
+                KindIdentifier "log" [1421, 1424), i=392, next=0
+              NodeList [1425, 1430), i=393, next=0
+                KindIdentifier "nameB" [1425, 1430), i=394, next=0
+    KindForStatement [1435, 1521), i=395, next=167
+      KindVariableDeclarationList [1442, 1478), i=396, next=152
+        NodeList [1445, 1478), i=397, next=0
+          KindVariableDeclaration [1445, 1471), i=398, next=149
+            KindArrayBindingPattern [1445, 1453), i=399, next=147
+              NodeList [1447, 1452), i=400, next=0
+                KindBindingElement [1447, 1452), i=401, next=0
+                  KindIdentifier "nameB" [1447, 1452), i=402, next=0
+            KindCallExpression [1455, 1471), i=403, next=0
+              KindIdentifier "getMultiRobot" [1455, 1469), i=404, next=0
+          KindVariableDeclaration [1472, 1478), i=405, next=0
+            KindIdentifier "i" [1472, 1474), i=406, next=151
+            KindNumericLiteral [1476, 1478), i=407, next=0
+      KindBinaryExpression [1479, 1485), i=408, next=156
+        KindIdentifier "i" [1479, 1481), i=409, next=154
+        KindLessThanToken [1481, 1483), i=410, next=155
+        KindNumericLiteral [1483, 1485), i=411, next=0
+      KindPostfixUnaryExpression [1486, 1490), i=412, next=158
+        KindIdentifier "i" [1486, 1488), i=413, next=0
+      KindBlock [1491, 1521), i=414, next=0
+        NodeList [1493, 1518), i=415, next=0
+          KindExpressionStatement [1493, 1518), i=416, next=0
+            KindCallExpression [1493, 1517), i=417, next=0
+              KindPropertyAccessExpression [1493, 1510), i=418, next=165
+                KindIdentifier "console" [1493, 1506), i=419, next=164
+                KindIdentifier "log" [1507, 1510), i=420, next=0
+              NodeList [1511, 1516), i=421, next=0
+                KindIdentifier "nameB" [1511, 1516), i=422, next=0
+    KindForStatement [1521, 1627), i=423, next=200
+      KindVariableDeclarationList [1528, 1584), i=424, next=185
+        NodeList [1531, 1584), i=425, next=0
+          KindVariableDeclaration [1531, 1577), i=426, next=182
+            KindArrayBindingPattern [1531, 1539), i=427, next=175
+              NodeList [1533, 1538), i=428, next=0
+                KindBindingElement [1533, 1538), i=429, next=0
+                  KindIdentifier "nameB" [1533, 1538), i=430, next=0
+            KindArrayLiteralExpression [1541, 1577), i=431, next=0
+              NodeList [1543, 1576), i=432, next=0
+                KindStringLiteral "trimmer" [1543, 1552), i=433, next=178
+                KindArrayLiteralExpression [1553, 1576), i=434, next=0
+                  NodeList [1555, 1575), i=435, next=0
+                    KindStringLiteral "trimming" [1555, 1565), i=436, next=181
+                    KindStringLiteral "edging" [1566, 1575), i=437, next=0
+          KindVariableDeclaration [1578, 1584), i=438, next=0
+            KindIdentifier "i" [1578, 1580), i=439, next=184
+            KindNumericLiteral [1582, 1584), i=440, next=0
+      KindBinaryExpression [1585, 1591), i=441, next=189
+        KindIdentifier "i" [1585, 1587), i=442, next=187
+        KindLessThanToken [1587, 1589), i=443, next=188
+        KindNumericLiteral [1589, 1591), i=444, next=0
+      KindPostfixUnaryExpression [1592, 1596), i=445, next=191
+        KindIdentifier "i" [1592, 1594), i=446, next=0
+      KindBlock [1597, 1627), i=447, next=0
+        NodeList [1599, 1624), i=448, next=0
+          KindExpressionStatement [1599, 1624), i=449, next=0
+            KindCallExpression [1599, 1623), i=450, next=0
+              KindPropertyAccessExpression [1599, 1616), i=451, next=198
+                KindIdentifier "console" [1599, 1612), i=452, next=197
+                KindIdentifier "log" [1613, 1616), i=453, next=0
+              NodeList [1617, 1622), i=454, next=0
+                KindIdentifier "nameB" [1617, 1622), i=455, next=0
+    KindForStatement [1627, 1727), i=456, next=231
+      KindVariableDeclarationList [1636, 1683), i=457, next=216
+        NodeList [1639, 1683), i=458, next=0
+          KindVariableDeclaration [1639, 1676), i=459, next=213
+            KindArrayBindingPattern [1639, 1667), i=460, next=212
+              NodeList [1641, 1666), i=461, next=0
+                KindBindingElement [1641, 1649), i=462, next=208
+                  KindIdentifier "numberA2" [1641, 1649), i=463, next=0
+                KindBindingElement [1650, 1657), i=464, next=210
+                  KindIdentifier "nameA2" [1650, 1657), i=465, next=0
+                KindBindingElement [1658, 1666), i=466, next=0
+                  KindIdentifier "skillA2" [1658, 1666), i=467, next=0
+            KindIdentifier "robotA" [1669, 1676), i=468, next=0
+          KindVariableDeclaration [1677, 1683), i=469, next=0
+            KindIdentifier "i" [1677, 1679), i=470, next=215
+            KindNumericLiteral [1681, 1683), i=471, next=0
+      KindBinaryExpression [1684, 1690), i=472, next=220
+        KindIdentifier "i" [1684, 1686), i=473, next=218
+        KindLessThanToken [1686, 1688), i=474, next=219
+        KindNumericLiteral [1688, 1690), i=475, next=0
+      KindPostfixUnaryExpression [1691, 1695), i=476, next=222
+        KindIdentifier "i" [1691, 1693), i=477, next=0
+      KindBlock [1696, 1727), i=478, next=0
+        NodeList [1698, 1724), i=479, next=0
+          KindExpressionStatement [1698, 1724), i=480, next=0
+            KindCallExpression [1698, 1723), i=481, next=0
+              KindPropertyAccessExpression [1698, 1715), i=482, next=229
+                KindIdentifier "console" [1698, 1711), i=483, next=228
+                KindIdentifier "log" [1712, 1715), i=484, next=0
+              NodeList [1716, 1722), i=485, next=0
+                KindIdentifier "nameA2" [1716, 1722), i=486, next=0
+    KindForStatement [1727, 1829), i=487, next=7
+      KindVariableDeclarationList [1734, 1785), i=488, next=248
+        NodeList [1737, 1785), i=489, next=0
+          KindVariableDeclaration [1737, 1778), i=490, next=245
+            KindArrayBindingPattern [1737, 1765), i=491, next=243
+              NodeList [1739, 1764), i=492, next=0
+                KindBindingElement [1739, 1747), i=493, next=239
+                  KindIdentifier "numberA2" [1739, 1747), i=494, next=0
+                KindBindingElement [1748, 1755), i=495, next=241
+                  KindIdentifier "nameA2" [1748, 1755), i=496, next=0
+                KindBindingElement [1756, 1764), i=497, next=0
+                  KindIdentifier "skillA2" [1756, 1764), i=498, next=0
+            KindCallExpression [1767, 1778), i=499, next=0
+              KindIdentifier "getRobot" [1767, 1776), i=500, next=0
+          KindVariableDeclaration [1779, 1785), i=501, next=0
+            KindIdentifier "i" [1779, 1781), i=502, next=247
+            KindNumericLiteral [1783, 1785), i=503, next=0
+      KindBinaryExpression [1786, 1792), i=504, next=252
+        KindIdentifier "i" [1786, 1788), i=505, next=250
+        KindLessThanToken [1788, 1790), i=506, next=251
+        KindNumericLiteral [1790, 1792), i=507, next=0
+      KindPostfixUnaryExpression [1793, 1797), i=508, next=254
+        KindIdentifier "i" [1793, 1795), i=509, next=0
+      KindBlock [1798, 1829), i=510, next=0
+        NodeList [1800, 1826), i=511, next=0
+          KindExpressionStatement [1800, 1826), i=512, next=0
+            KindCallExpression [1800, 1825), i=513, next=0
+              KindPropertyAccessExpression [1800, 1817), i=514, next=5
+                KindIdentifier "console" [1800, 1813), i=515, next=4
+                KindIdentifier "log" [1814, 1817), i=516, next=0
+              NodeList [1818, 1824), i=517, next=0
+                KindIdentifier "nameA2" [1818, 1824), i=518, next=0
+    KindForStatement [1829, 1947), i=519, next=42
+      KindVariableDeclarationList [1836, 1903), i=520, next=27
+        NodeList [1839, 1903), i=521, next=0
+          KindVariableDeclaration [1839, 1896), i=522, next=24
+            KindArrayBindingPattern [1839, 1867), i=523, next=19
+              NodeList [1841, 1866), i=524, next=0
+                KindBindingElement [1841, 1849), i=525, next=15
+                  KindIdentifier "numberA2" [1841, 1849), i=526, next=0
+                KindBindingElement [1850, 1857), i=527, next=17
+                  KindIdentifier "nameA2" [1850, 1857), i=528, next=0
+                KindBindingElement [1858, 1866), i=529, next=0
+                  KindIdentifier "skillA2" [1858, 1866), i=530, next=0
+            KindArrayLiteralExpression [1869, 1896), i=531, next=0
+              NodeList [1871, 1895), i=532, next=0
+                KindNumericLiteral [1871, 1872), i=533, next=22
+                KindStringLiteral "trimmer" [1873, 1883), i=534, next=23
+                KindStringLiteral "trimming" [1884, 1895), i=535, next=0
+          KindVariableDeclaration [1897, 1903), i=536, next=0
+            KindIdentifier "i" [1897, 1899), i=537, next=26
+            KindNumericLiteral [1901, 1903), i=538, next=0
+      KindBinaryExpression [1904, 1910), i=539, next=31
+        KindIdentifier "i" [1904, 1906), i=540, next=29
+        KindLessThanToken [1906, 1908), i=541, next=30
+        KindNumericLiteral [1908, 1910), i=542, next=0
+      KindPostfixUnaryExpression [1911, 1915), i=543, next=33
+        KindIdentifier "i" [1911, 1913), i=544, next=0
+      KindBlock [1916, 1947), i=545, next=0
+        NodeList [1918, 1944), i=546, next=0
+          KindExpressionStatement [1918, 1944), i=547, next=0
+            KindCallExpression [1918, 1943), i=548, next=0
+              KindPropertyAccessExpression [1918, 1935), i=549, next=40
+                KindIdentifier "console" [1918, 1931), i=550, next=39
+                KindIdentifier "log" [1932, 1935), i=551, next=0
+              NodeList [1936, 1942), i=552, next=0
+                KindIdentifier "nameA2" [1936, 1942), i=553, next=0
+    KindForStatement [1947, 2065), i=554, next=76
+      KindVariableDeclarationList [1954, 2021), i=555, next=61
+        NodeList [1957, 2021), i=556, next=0
+          KindVariableDeclaration [1957, 2014), i=557, next=58
+            KindArrayBindingPattern [1957, 2000), i=558, next=57
+              NodeList [1959, 1999), i=559, next=0
+                KindBindingElement [1959, 1965), i=560, next=50
+                  KindIdentifier "nameMA" [1959, 1965), i=561, next=0
+                KindBindingElement [1966, 1999), i=562, next=0
+                  KindArrayBindingPattern [1966, 1999), i=563, next=0
+                    NodeList [1968, 1998), i=564, next=0
+                      KindBindingElement [1968, 1981), i=565, next=55
+                        KindIdentifier "primarySkillA" [1968, 1981), i=566, next=0
+                      KindBindingElement [1982, 1998), i=567, next=0
+                        KindIdentifier "secondarySkillA" [1982, 1998), i=568, next=0
+            KindIdentifier "multiRobotA" [2002, 2014), i=569, next=0
+          KindVariableDeclaration [2015, 2021), i=570, next=0
+            KindIdentifier "i" [2015, 2017), i=571, next=60
+            KindNumericLiteral [2019, 2021), i=572, next=0
+      KindBinaryExpression [2022, 2028), i=573, next=65
+        KindIdentifier "i" [2022, 2024), i=574, next=63
+        KindLessThanToken [2024, 2026), i=575, next=64
+        KindNumericLiteral [2026, 2028), i=576, next=0
+      KindPostfixUnaryExpression [2029, 2033), i=577, next=67
+        KindIdentifier "i" [2029, 2031), i=578, next=0
+      KindBlock [2034, 2065), i=579, next=0
+        NodeList [2036, 2062), i=580, next=0
+          KindExpressionStatement [2036, 2062), i=581, next=0
+            KindCallExpression [2036, 2061), i=582, next=0
+              KindPropertyAccessExpression [2036, 2053), i=583, next=74
+                KindIdentifier "console" [2036, 2049), i=584, next=73
+                KindIdentifier "log" [2050, 2053), i=585, next=0
+              NodeList [2054, 2060), i=586, next=0
+                KindIdentifier "nameMA" [2054, 2060), i=587, next=0
+    KindForStatement [2065, 2187), i=588, next=111
+      KindVariableDeclarationList [2072, 2143), i=589, next=96
+        NodeList [2075, 2143), i=590, next=0
+          KindVariableDeclaration [2075, 2136), i=591, next=93
+            KindArrayBindingPattern [2075, 2118), i=592, next=91
+              NodeList [2077, 2117), i=593, next=0
+                KindBindingElement [2077, 2083), i=594, next=84
+                  KindIdentifier "nameMA" [2077, 2083), i=595, next=0
+                KindBindingElement [2084, 2117), i=596, next=0
+                  KindArrayBindingPattern [2084, 2117), i=597, next=0
+                    NodeList [2086, 2116), i=598, next=0
+                      KindBindingElement [2086, 2099), i=599, next=89
+                        KindIdentifier "primarySkillA" [2086, 2099), i=600, next=0
+                      KindBindingElement [2100, 2116), i=601, next=0
+                        KindIdentifier "secondarySkillA" [2100, 2116), i=602, next=0
+            KindCallExpression [2120, 2136), i=603, next=0
+              KindIdentifier "getMultiRobot" [2120, 2134), i=604, next=0
+          KindVariableDeclaration [2137, 2143), i=605, next=0
+            KindIdentifier "i" [2137, 2139), i=606, next=95
+            KindNumericLiteral [2141, 2143), i=607, next=0
+      KindBinaryExpression [2144, 2150), i=608, next=100
+        KindIdentifier "i" [2144, 2146), i=609, next=98
+        KindLessThanToken [2146, 2148), i=610, next=99
+        KindNumericLiteral [2148, 2150), i=611, next=0
+      KindPostfixUnaryExpression [2151, 2155), i=612, next=102
+        KindIdentifier "i" [2151, 2153), i=613, next=0
+      KindBlock [2156, 2187), i=614, next=0
+        NodeList [2158, 2184), i=615, next=0
+          KindExpressionStatement [2158, 2184), i=616, next=0
+            KindCallExpression [2158, 2183), i=617, next=0
+              KindPropertyAccessExpression [2158, 2175), i=618, next=109
+                KindIdentifier "console" [2158, 2171), i=619, next=108
+                KindIdentifier "log" [2172, 2175), i=620, next=0
+              NodeList [2176, 2182), i=621, next=0
+                KindIdentifier "nameMA" [2176, 2182), i=622, next=0
+    KindForStatement [2187, 2329), i=623, next=151
+      KindVariableDeclarationList [2194, 2285), i=624, next=136
+        NodeList [2197, 2285), i=625, next=0
+          KindVariableDeclaration [2197, 2278), i=626, next=133
+            KindArrayBindingPattern [2197, 2240), i=627, next=126
+              NodeList [2199, 2239), i=628, next=0
+                KindBindingElement [2199, 2205), i=629, next=119
+                  KindIdentifier "nameMA" [2199, 2205), i=630, next=0
+                KindBindingElement [2206, 2239), i=631, next=0
+                  KindArrayBindingPattern [2206, 2239), i=632, next=0
+                    NodeList [2208, 2238), i=633, next=0
+                      KindBindingElement [2208, 2221), i=634, next=124
+                        KindIdentifier "primarySkillA" [2208, 2221), i=635, next=0
+                      KindBindingElement [2222, 2238), i=636, next=0
+                        KindIdentifier "secondarySkillA" [2222, 2238), i=637, next=0
+            KindArrayLiteralExpression [2242, 2278), i=638, next=0
+              NodeList [2244, 2277), i=639, next=0
+                KindStringLiteral "trimmer" [2244, 2253), i=640, next=129
+                KindArrayLiteralExpression [2254, 2277), i=641, next=0
+                  NodeList [2256, 2276), i=642, next=0
+                    KindStringLiteral "trimming" [2256, 2266), i=643, next=132
+                    KindStringLiteral "edging" [2267, 2276), i=644, next=0
+          KindVariableDeclaration [2279, 2285), i=645, next=0
+            KindIdentifier "i" [2279, 2281), i=646, next=135
+            KindNumericLiteral [2283, 2285), i=647, next=0
+      KindBinaryExpression [2286, 2292), i=648, next=140
+        KindIdentifier "i" [2286, 2288), i=649, next=138
+        KindLessThanToken [2288, 2290), i=650, next=139
+        KindNumericLiteral [2290, 2292), i=651, next=0
+      KindPostfixUnaryExpression [2293, 2297), i=652, next=142
+        KindIdentifier "i" [2293, 2295), i=653, next=0
+      KindBlock [2298, 2329), i=654, next=0
+        NodeList [2300, 2326), i=655, next=0
+          KindExpressionStatement [2300, 2326), i=656, next=0
+            KindCallExpression [2300, 2325), i=657, next=0
+              KindPropertyAccessExpression [2300, 2317), i=658, next=149
+                KindIdentifier "console" [2300, 2313), i=659, next=148
+                KindIdentifier "log" [2314, 2317), i=660, next=0
+              NodeList [2318, 2324), i=661, next=0
+                KindIdentifier "nameMA" [2318, 2324), i=662, next=0
+    KindForStatement [2329, 2429), i=663, next=181
+      KindVariableDeclarationList [2338, 2383), i=664, next=166
+        NodeList [2341, 2383), i=665, next=0
+          KindVariableDeclaration [2341, 2376), i=666, next=163
+            KindArrayBindingPattern [2341, 2367), i=667, next=162
+              NodeList [2343, 2366), i=668, next=0
+                KindBindingElement [2343, 2351), i=669, next=159
+                  KindIdentifier "numberA3" [2343, 2351), i=670, next=0
+                KindBindingElement [2352, 2366), i=671, next=0
+                  KindDotDotDotToken [2352, 2356), i=672, next=161
+                  KindIdentifier "robotAInfo" [2356, 2366), i=673, next=0
+            KindIdentifier "robotA" [2369, 2376), i=674, next=0
+          KindVariableDeclaration [2377, 2383), i=675, next=0
+            KindIdentifier "i" [2377, 2379), i=676, next=165
+            KindNumericLiteral [2381, 2383), i=677, next=0
+      KindBinaryExpression [2384, 2390), i=678, next=170
+        KindIdentifier "i" [2384, 2386), i=679, next=168
+        KindLessThanToken [2386, 2388), i=680, next=169
+        KindNumericLiteral [2388, 2390), i=681, next=0
+      KindPostfixUnaryExpression [2391, 2395), i=682, next=172
+        KindIdentifier "i" [2391, 2393), i=683, next=0
+      KindBlock [2396, 2429), i=684, next=0
+        NodeList [2398, 2426), i=685, next=0
+          KindExpressionStatement [2398, 2426), i=686, next=0
+            KindCallExpression [2398, 2425), i=687, next=0
+              KindPropertyAccessExpression [2398, 2415), i=688, next=179
+                KindIdentifier "console" [2398, 2411), i=689, next=178
+                KindIdentifier "log" [2412, 2415), i=690, next=0
+              NodeList [2416, 2424), i=691, next=0
+                KindIdentifier "numberA3" [2416, 2424), i=692, next=0
+    KindForStatement [2429, 2531), i=693, next=212
+      KindVariableDeclarationList [2436, 2485), i=694, next=197
+        NodeList [2439, 2485), i=695, next=0
+          KindVariableDeclaration [2439, 2478), i=696, next=194
+            KindArrayBindingPattern [2439, 2465), i=697, next=192
+              NodeList [2441, 2464), i=698, next=0
+                KindBindingElement [2441, 2449), i=699, next=189
+                  KindIdentifier "numberA3" [2441, 2449), i=700, next=0
+                KindBindingElement [2450, 2464), i=701, next=0
+                  KindDotDotDotToken [2450, 2454), i=702, next=191
+                  KindIdentifier "robotAInfo" [2454, 2464), i=703, next=0
+            KindCallExpression [2467, 2478), i=704, next=0
+              KindIdentifier "getRobot" [2467, 2476), i=705, next=0
+          KindVariableDeclaration [2479, 2485), i=706, next=0
+            KindIdentifier "i" [2479, 2481), i=707, next=196
+            KindNumericLiteral [2483, 2485), i=708, next=0
+      KindBinaryExpression [2486, 2492), i=709, next=201
+        KindIdentifier "i" [2486, 2488), i=710, next=199
+        KindLessThanToken [2488, 2490), i=711, next=200
+        KindNumericLiteral [2490, 2492), i=712, next=0
+      KindPostfixUnaryExpression [2493, 2497), i=713, next=203
+        KindIdentifier "i" [2493, 2495), i=714, next=0
+      KindBlock [2498, 2531), i=715, next=0
+        NodeList [2500, 2528), i=716, next=0
+          KindExpressionStatement [2500, 2528), i=717, next=0
+            KindCallExpression [2500, 2527), i=718, next=0
+              KindPropertyAccessExpression [2500, 2517), i=719, next=210
+                KindIdentifier "console" [2500, 2513), i=720, next=209
+                KindIdentifier "log" [2514, 2517), i=721, next=0
+              NodeList [2518, 2526), i=722, next=0
+                KindIdentifier "numberA3" [2518, 2526), i=723, next=0
+    KindForStatement [2531, 2649), i=724, next=246
+      KindVariableDeclarationList [2538, 2603), i=725, next=231
+        NodeList [2541, 2603), i=726, next=0
+          KindVariableDeclaration [2541, 2596), i=727, next=228
+            KindArrayBindingPattern [2541, 2567), i=728, next=223
+              NodeList [2543, 2566), i=729, next=0
+                KindBindingElement [2543, 2551), i=730, next=220
+                  KindIdentifier "numberA3" [2543, 2551), i=731, next=0
+                KindBindingElement [2552, 2566), i=732, next=0
+                  KindDotDotDotToken [2552, 2556), i=733, next=222
+                  KindIdentifier "robotAInfo" [2556, 2566), i=734, next=0
+            KindArrayLiteralExpression [2569, 2596), i=735, next=0
+              NodeList [2571, 2595), i=736, next=0
+                KindNumericLiteral [2571, 2572), i=737, next=226
+                KindStringLiteral "trimmer" [2573, 2583), i=738, next=227
+                KindStringLiteral "trimming" [2584, 2595), i=739, next=0
+          KindVariableDeclaration [2597, 2603), i=740, next=0
+            KindIdentifier "i" [2597, 2599), i=741, next=230
+            KindNumericLiteral [2601, 2603), i=742, next=0
+      KindBinaryExpression [2604, 2610), i=743, next=235
+        KindIdentifier "i" [2604, 2606), i=744, next=233
+        KindLessThanToken [2606, 2608), i=745, next=234
+        KindNumericLiteral [2608, 2610), i=746, next=0
+      KindPostfixUnaryExpression [2611, 2615), i=747, next=237
+        KindIdentifier "i" [2611, 2613), i=748, next=0
+      KindBlock [2616, 2649), i=749, next=0
+        NodeList [2618, 2646), i=750, next=0
+          KindExpressionStatement [2618, 2646), i=751, next=0
+            KindCallExpression [2618, 2645), i=752, next=0
+              KindPropertyAccessExpression [2618, 2635), i=753, next=244
+                KindIdentifier "console" [2618, 2631), i=754, next=243
+                KindIdentifier "log" [2632, 2635), i=755, next=0
+              NodeList [2636, 2644), i=756, next=0
+                KindIdentifier "numberA3" [2636, 2644), i=757, next=0
+    KindForStatement [2649, 2754), i=758, next=18
+      KindVariableDeclarationList [2656, 2701), i=759, next=3
+        NodeList [2659, 2701), i=760, next=0
+          KindVariableDeclaration [2659, 2694), i=761, next=0
+            KindArrayBindingPattern [2659, 2680), i=762, next=255
+              NodeList [2661, 2679), i=763, next=0
+                KindBindingElement [2661, 2679), i=764, next=0
+                  KindDotDotDotToken [2661, 2664), i=765, next=254
+                  KindIdentifier "multiRobotAInfo" [2664, 2679), i=766, next=0
+            KindIdentifier "multiRobotA" [2682, 2694), i=767, next=0
+          KindVariableDeclaration [2695, 2701), i=768, next=0
+            KindIdentifier "i" [2695, 2697), i=769, next=2
+            KindNumericLiteral [2699, 2701), i=770, next=0
+      KindBinaryExpression [2702, 2708), i=771, next=7
+        KindIdentifier "i" [2702, 2704), i=772, next=5
+        KindLessThanToken [2704, 2706), i=773, next=6
+        KindNumericLiteral [2706, 2708), i=774, next=0
+      KindPostfixUnaryExpression [2709, 2713), i=775, next=9
+        KindIdentifier "i" [2709, 2711), i=776, next=0
+      KindBlock [2714, 2754), i=777, next=0
+        NodeList [2716, 2751), i=778, next=0
+          KindExpressionStatement [2716, 2751), i=779, next=0
+            KindCallExpression [2716, 2750), i=780, next=0
+              KindPropertyAccessExpression [2716, 2733), i=781, next=16
+                KindIdentifier "console" [2716, 2729), i=782, next=15
+                KindIdentifier "log" [2730, 2733), i=783, next=0
+              NodeList [2734, 2749), i=784, next=0
+                KindIdentifier "multiRobotAInfo" [2734, 2749), i=785, next=0
+    KindForStatement [2754, 2863), i=786, next=47
+      KindVariableDeclarationList [2761, 2810), i=787, next=32
+        NodeList [2764, 2810), i=788, next=0
+          KindVariableDeclaration [2764, 2803), i=789, next=29
+            KindArrayBindingPattern [2764, 2785), i=790, next=27
+              NodeList [2766, 2784), i=791, next=0
+                KindBindingElement [2766, 2784), i=792, next=0
+                  KindDotDotDotToken [2766, 2769), i=793, next=26
+                  KindIdentifier "multiRobotAInfo" [2769, 2784), i=794, next=0
+            KindCallExpression [2787, 2803), i=795, next=0
+              KindIdentifier "getMultiRobot" [2787, 2801), i=796, next=0
+          KindVariableDeclaration [2804, 2810), i=797, next=0
+            KindIdentifier "i" [2804, 2806), i=798, next=31
+            KindNumericLiteral [2808, 2810), i=799, next=0
+      KindBinaryExpression [2811, 2817), i=800, next=36
+        KindIdentifier "i" [2811, 2813), i=801, next=34
+        KindLessThanToken [2813, 2815), i=802, next=35
+        KindNumericLiteral [2815, 2817), i=803, next=0
+      KindPostfixUnaryExpression [2818, 2822), i=804, next=38
+        KindIdentifier "i" [2818, 2820), i=805, next=0
+      KindBlock [2823, 2863), i=806, next=0
+        NodeList [2825, 2860), i=807, next=0
+          KindExpressionStatement [2825, 2860), i=808, next=0
+            KindCallExpression [2825, 2859), i=809, next=0
+              KindPropertyAccessExpression [2825, 2842), i=810, next=45
+                KindIdentifier "console" [2825, 2838), i=811, next=44
+                KindIdentifier "log" [2839, 2842), i=812, next=0
+              NodeList [2843, 2858), i=813, next=0
+                KindIdentifier "multiRobotAInfo" [2843, 2858), i=814, next=0
+    KindForStatement [2863, 2992), i=815, next=0
+      KindVariableDeclarationList [2870, 2939), i=816, next=66
+        NodeList [2873, 2939), i=817, next=0
+          KindVariableDeclaration [2873, 2932), i=818, next=63
+            KindArrayBindingPattern [2873, 2894), i=819, next=56
+              NodeList [2875, 2893), i=820, next=0
+                KindBindingElement [2875, 2893), i=821, next=0
+                  KindDotDotDotToken [2875, 2878), i=822, next=55
+                  KindIdentifier "multiRobotAInfo" [2878, 2893), i=823, next=0
+            KindArrayLiteralExpression [2896, 2932), i=824, next=0
+              NodeList [2898, 2931), i=825, next=0
+                KindStringLiteral "trimmer" [2898, 2907), i=826, next=59
+                KindArrayLiteralExpression [2908, 2931), i=827, next=0
+                  NodeList [2910, 2930), i=828, next=0
+                    KindStringLiteral "trimming" [2910, 2920), i=829, next=62
+                    KindStringLiteral "edging" [2921, 2930), i=830, next=0
+          KindVariableDeclaration [2933, 2939), i=831, next=0
+            KindIdentifier "i" [2933, 2935), i=832, next=65
+            KindNumericLiteral [2937, 2939), i=833, next=0
+      KindBinaryExpression [2940, 2946), i=834, next=70
+        KindIdentifier "i" [2940, 2942), i=835, next=68
+        KindLessThanToken [2942, 2944), i=836, next=69
+        KindNumericLiteral [2944, 2946), i=837, next=0
+      KindPostfixUnaryExpression [2947, 2951), i=838, next=72
+        KindIdentifier "i" [2947, 2949), i=839, next=0
+      KindBlock [2952, 2992), i=840, next=0
+        NodeList [2954, 2989), i=841, next=0
+          KindExpressionStatement [2954, 2989), i=842, next=0
+            KindCallExpression [2954, 2988), i=843, next=0
+              KindPropertyAccessExpression [2954, 2971), i=844, next=79
+                KindIdentifier "console" [2954, 2967), i=845, next=78
+                KindIdentifier "log" [2968, 2971), i=846, next=0
+              NodeList [2972, 2987), i=847, next=0
+                KindIdentifier "multiRobotAInfo" [2972, 2987), i=848, next=0

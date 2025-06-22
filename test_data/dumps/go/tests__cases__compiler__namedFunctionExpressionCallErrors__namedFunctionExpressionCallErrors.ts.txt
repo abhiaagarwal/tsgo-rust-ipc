@@ -1,0 +1,28 @@
+KindSourceFile [0, 263), i=1, next=0
+  NodeList [0, 263), i=2, next=0
+    KindVariableStatement [0, 35), i=3, next=11
+      KindVariableDeclarationList [0, 34), i=4, next=0
+        NodeList [3, 34), i=5, next=0
+          KindVariableDeclaration [3, 34), i=6, next=0
+            KindIdentifier "recurser" [3, 12), i=7, next=8
+            KindFunctionExpression [14, 34), i=8, next=0
+              KindIdentifier "foo" [23, 27), i=9, next=10
+              KindBlock [29, 34), i=10, next=0
+    KindExpressionStatement [35, 87), i=11, next=14
+      KindCallExpression [35, 86), i=12, next=0
+        KindIdentifier "foo" [35, 84), i=13, next=0
+    KindExpressionStatement [87, 125), i=14, next=17
+      KindCallExpression [87, 124), i=15, next=0
+        KindIdentifier "recurser" [87, 122), i=16, next=0
+    KindExpressionStatement [125, 216), i=17, next=26
+      KindParenthesizedExpression [125, 215), i=18, next=0
+        KindFunctionExpression [130, 214), i=19, next=0
+          KindIdentifier "bar" [138, 142), i=20, next=21
+          KindBlock [144, 214), i=21, next=0
+            NodeList [146, 211), i=22, next=0
+              KindExpressionStatement [146, 211), i=23, next=0
+                KindCallExpression [146, 210), i=24, next=0
+                  KindIdentifier "foo" [146, 208), i=25, next=0
+    KindExpressionStatement [216, 263), i=26, next=0
+      KindCallExpression [216, 262), i=27, next=0
+        KindIdentifier "bar" [216, 260), i=28, next=0

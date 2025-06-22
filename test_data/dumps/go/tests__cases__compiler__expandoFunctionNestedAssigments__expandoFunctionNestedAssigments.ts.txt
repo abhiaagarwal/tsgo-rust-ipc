@@ -1,0 +1,231 @@
+KindSourceFile [0, 859), i=1, next=0
+  NodeList [0, 859), i=2, next=0
+    KindFunctionDeclaration [0, 27), i=3, next=7
+      KindIdentifier "Foo" [8, 12), i=4, next=5
+      KindVoidKeyword [15, 20), i=5, next=6
+      KindBlock [20, 27), i=6, next=0
+    KindVariableStatement [27, 70), i=7, next=20
+      KindVariableDeclarationList [27, 69), i=8, next=0
+        NodeList [32, 69), i=9, next=0
+          KindVariableDeclaration [32, 69), i=10, next=0
+            KindIdentifier "d" [32, 34), i=11, next=12
+            KindNumberKeyword [35, 42), i=12, next=13
+            KindParenthesizedExpression [44, 69), i=13, next=0
+              KindBinaryExpression [46, 68), i=14, next=0
+                KindPropertyAccessExpression [46, 64), i=15, next=18
+                  KindIdentifier "Foo" [46, 49), i=16, next=17
+                  KindIdentifier "inVariableInit" [50, 64), i=17, next=0
+                KindEqualsToken [64, 66), i=18, next=19
+                KindNumericLiteral [66, 68), i=19, next=0
+    KindFunctionDeclaration [70, 127), i=20, next=33
+      KindIdentifier "bar" [84, 88), i=21, next=22
+      NodeList [89, 119), i=22, next=32
+        KindParameter [89, 119), i=23, next=0
+          KindIdentifier "p" [89, 90), i=24, next=25
+          KindParenthesizedExpression [92, 119), i=25, next=0
+            KindBinaryExpression [94, 118), i=26, next=0
+              KindPropertyAccessExpression [94, 114), i=27, next=30
+                KindIdentifier "Foo" [94, 97), i=28, next=29
+                KindIdentifier "inNestedFunction" [98, 114), i=29, next=0
+              KindEqualsToken [114, 116), i=30, next=31
+              KindNumericLiteral [116, 118), i=31, next=0
+      KindBlock [120, 127), i=32, next=0
+    KindExpressionStatement [127, 190), i=33, next=65
+      KindBinaryExpression [127, 189), i=34, next=0
+        KindPropertyAccessExpression [127, 156), i=35, next=48
+          KindParenthesizedExpression [127, 152), i=36, next=47
+            KindBinaryExpression [132, 151), i=37, next=0
+              KindPropertyAccessExpression [132, 139), i=38, next=41
+                KindIdentifier "Foo" [132, 135), i=39, next=40
+                KindIdentifier "bla" [136, 139), i=40, next=0
+              KindEqualsToken [139, 141), i=41, next=42
+              KindObjectLiteralExpression [141, 151), i=42, next=0
+                NodeList [143, 150), i=43, next=0
+                  KindPropertyAssignment [143, 150), i=44, next=0
+                    KindIdentifier "foo" [143, 147), i=45, next=46
+                    KindNumericLiteral [148, 150), i=46, next=0
+          KindIdentifier "foo" [153, 156), i=47, next=0
+        KindEqualsToken [156, 158), i=48, next=49
+        KindBinaryExpression [158, 189), i=49, next=0
+          KindParenthesizedExpression [158, 172), i=50, next=57
+            KindBinaryExpression [160, 171), i=51, next=0
+              KindPropertyAccessExpression [160, 167), i=52, next=55
+                KindIdentifier "Foo" [160, 163), i=53, next=54
+                KindIdentifier "baz" [164, 167), i=54, next=0
+              KindEqualsToken [167, 169), i=55, next=56
+              KindNumericLiteral [169, 171), i=56, next=0
+          KindPlusToken [172, 174), i=57, next=58
+          KindParenthesizedExpression [174, 189), i=58, next=0
+            KindBinaryExpression [176, 188), i=59, next=0
+              KindPropertyAccessExpression [176, 183), i=60, next=63
+                KindIdentifier "Foo" [176, 179), i=61, next=62
+                KindIdentifier "bar" [180, 183), i=62, next=0
+              KindEqualsToken [183, 186), i=63, next=64
+              KindNumericLiteral [186, 188), i=64, next=0
+    KindIfStatement [190, 236), i=65, next=81
+      KindBinaryExpression [197, 211), i=66, next=72
+        KindPropertyAccessExpression [197, 207), i=67, next=70
+          KindIdentifier "Foo" [197, 200), i=68, next=69
+          KindIdentifier "fromIf" [201, 207), i=69, next=0
+        KindEqualsToken [207, 209), i=70, next=71
+        KindNumericLiteral [209, 211), i=71, next=0
+      KindBlock [212, 236), i=72, next=0
+        NodeList [214, 233), i=73, next=0
+          KindExpressionStatement [214, 233), i=74, next=0
+            KindBinaryExpression [214, 232), i=75, next=0
+              KindPropertyAccessExpression [214, 228), i=76, next=79
+                KindIdentifier "Foo" [214, 223), i=77, next=78
+                KindIdentifier "inIf" [224, 228), i=78, next=0
+              KindEqualsToken [228, 230), i=79, next=80
+              KindNumericLiteral [230, 232), i=80, next=0
+    KindWhileStatement [236, 358), i=81, next=106
+      KindBinaryExpression [246, 272), i=82, next=88
+        KindPropertyAccessExpression [246, 268), i=83, next=86
+          KindIdentifier "Foo" [246, 249), i=84, next=85
+          KindIdentifier "fromWhileCondition" [250, 268), i=85, next=0
+        KindEqualsToken [268, 270), i=86, next=87
+        KindNumericLiteral [270, 272), i=87, next=0
+      KindBlock [273, 358), i=88, next=0
+        NodeList [275, 355), i=89, next=0
+          KindExpressionStatement [275, 303), i=90, next=97
+            KindBinaryExpression [275, 302), i=91, next=0
+              KindPropertyAccessExpression [275, 298), i=92, next=95
+                KindIdentifier "Foo" [275, 284), i=93, next=94
+                KindIdentifier "fromWhileBody" [285, 298), i=94, next=0
+              KindEqualsToken [298, 300), i=95, next=96
+              KindNumericLiteral [300, 302), i=96, next=0
+          KindBlock [303, 355), i=97, next=0
+            NodeList [310, 348), i=98, next=0
+              KindExpressionStatement [310, 348), i=99, next=0
+                KindBinaryExpression [310, 347), i=100, next=0
+                  KindPropertyAccessExpression [310, 343), i=101, next=104
+                    KindIdentifier "Foo" [310, 323), i=102, next=103
+                    KindIdentifier "fromWhileBodyNested" [324, 343), i=103, next=0
+                  KindEqualsToken [343, 345), i=104, next=105
+                  KindNumericLiteral [345, 347), i=105, next=0
+    KindDoStatement [358, 475), i=106, next=131
+      KindBlock [364, 443), i=107, next=125
+        NodeList [366, 440), i=108, next=0
+          KindExpressionStatement [366, 391), i=109, next=116
+            KindBinaryExpression [366, 390), i=110, next=0
+              KindPropertyAccessExpression [366, 386), i=111, next=114
+                KindIdentifier "Foo" [366, 375), i=112, next=113
+                KindIdentifier "fromDoBody" [376, 386), i=113, next=0
+              KindEqualsToken [386, 388), i=114, next=115
+              KindNumericLiteral [388, 390), i=115, next=0
+          KindBlock [391, 440), i=116, next=0
+            NodeList [398, 433), i=117, next=0
+              KindExpressionStatement [398, 433), i=118, next=0
+                KindBinaryExpression [398, 432), i=119, next=0
+                  KindPropertyAccessExpression [398, 428), i=120, next=123
+                    KindIdentifier "Foo" [398, 411), i=121, next=122
+                    KindIdentifier "fromDoBodyNested" [412, 428), i=122, next=0
+                  KindEqualsToken [428, 430), i=123, next=124
+                  KindNumericLiteral [430, 432), i=124, next=0
+      KindBinaryExpression [450, 473), i=125, next=0
+        KindPropertyAccessExpression [450, 469), i=126, next=129
+          KindIdentifier "Foo" [450, 453), i=127, next=128
+          KindIdentifier "fromDoCondition" [454, 469), i=128, next=0
+        KindEqualsToken [469, 471), i=129, next=130
+        KindNumericLiteral [471, 473), i=130, next=0
+    KindForStatement [475, 619), i=131, next=172
+      KindBinaryExpression [483, 498), i=132, next=138
+        KindPropertyAccessExpression [483, 494), i=133, next=136
+          KindIdentifier "Foo" [483, 486), i=134, next=135
+          KindIdentifier "forInit" [487, 494), i=135, next=0
+        KindEqualsToken [494, 496), i=136, next=137
+        KindNumericLiteral [496, 498), i=137, next=0
+      KindBinaryExpression [499, 521), i=138, next=148
+        KindParenthesizedExpression [499, 517), i=139, next=146
+          KindBinaryExpression [501, 516), i=140, next=0
+            KindPropertyAccessExpression [501, 512), i=141, next=144
+              KindIdentifier "Foo" [501, 504), i=142, next=143
+              KindIdentifier "forCond" [505, 512), i=143, next=0
+            KindEqualsToken [512, 514), i=144, next=145
+            KindNumericLiteral [514, 516), i=145, next=0
+        KindGreaterThanToken [517, 519), i=146, next=147
+        KindNumericLiteral [519, 521), i=147, next=0
+      KindBinaryExpression [522, 538), i=148, next=154
+        KindPropertyAccessExpression [522, 534), i=149, next=152
+          KindIdentifier "Foo" [522, 526), i=150, next=151
+          KindIdentifier "forIncr" [527, 534), i=151, next=0
+        KindEqualsToken [534, 536), i=152, next=153
+        KindNumericLiteral [536, 538), i=153, next=0
+      KindBlock [539, 619), i=154, next=0
+        NodeList [540, 616), i=155, next=0
+          KindExpressionStatement [540, 566), i=156, next=163
+            KindBinaryExpression [540, 565), i=157, next=0
+              KindPropertyAccessExpression [540, 561), i=158, next=161
+                KindIdentifier "Foo" [540, 549), i=159, next=160
+                KindIdentifier "fromForBody" [550, 561), i=160, next=0
+              KindEqualsToken [561, 563), i=161, next=162
+              KindNumericLiteral [563, 565), i=162, next=0
+          KindBlock [566, 616), i=163, next=0
+            NodeList [573, 609), i=164, next=0
+              KindExpressionStatement [573, 609), i=165, next=0
+                KindBinaryExpression [573, 608), i=166, next=0
+                  KindPropertyAccessExpression [573, 604), i=167, next=170
+                    KindIdentifier "Foo" [573, 586), i=168, next=169
+                    KindIdentifier "fromForBodyNested" [587, 604), i=169, next=0
+                  KindEqualsToken [604, 606), i=170, next=171
+                  KindNumericLiteral [606, 608), i=171, next=0
+    KindForOfStatement [619, 738), i=172, next=202
+      KindVariableDeclarationList [627, 632), i=173, next=177
+        NodeList [630, 632), i=174, next=0
+          KindVariableDeclaration [630, 632), i=175, next=0
+            KindIdentifier "f" [630, 632), i=176, next=0
+      KindParenthesizedExpression [635, 652), i=177, next=184
+        KindBinaryExpression [637, 651), i=178, next=0
+          KindPropertyAccessExpression [637, 646), i=179, next=182
+            KindIdentifier "Foo" [637, 640), i=180, next=181
+            KindIdentifier "forOf" [641, 646), i=181, next=0
+          KindEqualsToken [646, 648), i=182, next=183
+          KindArrayLiteralExpression [648, 651), i=183, next=0
+      KindBlock [654, 738), i=184, next=0
+        NodeList [655, 735), i=185, next=0
+          KindExpressionStatement [655, 683), i=186, next=193
+            KindBinaryExpression [655, 682), i=187, next=0
+              KindPropertyAccessExpression [655, 678), i=188, next=191
+                KindIdentifier "Foo" [655, 664), i=189, next=190
+                KindIdentifier "fromForOfBody" [665, 678), i=190, next=0
+              KindEqualsToken [678, 680), i=191, next=192
+              KindNumericLiteral [680, 682), i=192, next=0
+          KindBlock [683, 735), i=193, next=0
+            NodeList [690, 728), i=194, next=0
+              KindExpressionStatement [690, 728), i=195, next=0
+                KindBinaryExpression [690, 727), i=196, next=0
+                  KindPropertyAccessExpression [690, 723), i=197, next=200
+                    KindIdentifier "Foo" [690, 703), i=198, next=199
+                    KindIdentifier "fromForOfBodyNested" [704, 723), i=199, next=0
+                  KindEqualsToken [723, 725), i=200, next=201
+                  KindNumericLiteral [725, 727), i=201, next=0
+    KindForInStatement [738, 859), i=202, next=0
+      KindVariableDeclarationList [748, 753), i=203, next=207
+        NodeList [751, 753), i=204, next=0
+          KindVariableDeclaration [751, 753), i=205, next=0
+            KindIdentifier "f" [751, 753), i=206, next=0
+      KindParenthesizedExpression [756, 773), i=207, next=214
+        KindBinaryExpression [758, 772), i=208, next=0
+          KindPropertyAccessExpression [758, 767), i=209, next=212
+            KindIdentifier "Foo" [758, 761), i=210, next=211
+            KindIdentifier "forIn" [762, 767), i=211, next=0
+          KindEqualsToken [767, 769), i=212, next=213
+          KindArrayLiteralExpression [769, 772), i=213, next=0
+      KindBlock [775, 859), i=214, next=0
+        NodeList [776, 856), i=215, next=0
+          KindExpressionStatement [776, 804), i=216, next=223
+            KindBinaryExpression [776, 803), i=217, next=0
+              KindPropertyAccessExpression [776, 799), i=218, next=221
+                KindIdentifier "Foo" [776, 785), i=219, next=220
+                KindIdentifier "fromForInBody" [786, 799), i=220, next=0
+              KindEqualsToken [799, 801), i=221, next=222
+              KindNumericLiteral [801, 803), i=222, next=0
+          KindBlock [804, 856), i=223, next=0
+            NodeList [811, 849), i=224, next=0
+              KindExpressionStatement [811, 849), i=225, next=0
+                KindBinaryExpression [811, 848), i=226, next=0
+                  KindPropertyAccessExpression [811, 844), i=227, next=230
+                    KindIdentifier "Foo" [811, 824), i=228, next=229
+                    KindIdentifier "fromForInBodyNested" [825, 844), i=229, next=0
+                  KindEqualsToken [844, 846), i=230, next=231
+                  KindNumericLiteral [846, 848), i=231, next=0

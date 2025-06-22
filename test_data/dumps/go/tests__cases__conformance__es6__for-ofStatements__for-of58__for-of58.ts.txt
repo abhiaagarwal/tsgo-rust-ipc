@@ -1,0 +1,49 @@
+KindSourceFile [0, 126), i=1, next=0
+  NodeList [0, 125), i=2, next=0
+    KindTypeAliasDeclaration [0, 20), i=3, next=11
+      KindIdentifier "X" [4, 6), i=4, next=5
+      KindTypeLiteral [8, 19), i=5, next=0
+        NodeList [10, 17), i=6, next=0
+          KindPropertySignature [10, 17), i=7, next=0
+            KindIdentifier "x" [10, 12), i=8, next=9
+            KindLiteralType [13, 17), i=9, next=0
+              KindStringLiteral "x" [13, 17), i=10, next=0
+    KindTypeAliasDeclaration [20, 41), i=11, next=19
+      KindIdentifier "Y" [25, 27), i=12, next=13
+      KindTypeLiteral [29, 40), i=13, next=0
+        NodeList [31, 38), i=14, next=0
+          KindPropertySignature [31, 38), i=15, next=0
+            KindIdentifier "y" [31, 33), i=16, next=17
+            KindLiteralType [34, 38), i=17, next=0
+              KindStringLiteral "y" [34, 38), i=18, next=0
+    KindVariableStatement [41, 72), i=19, next=34
+      NodeList [41, 50), i=20, next=22
+        KindDeclareKeyword [41, 50), i=21, next=0
+      KindVariableDeclarationList [50, 71), i=22, next=0
+        NodeList [56, 71), i=23, next=0
+          KindVariableDeclaration [56, 71), i=24, next=0
+            KindIdentifier "arr" [56, 60), i=25, next=26
+            KindIntersectionType [61, 71), i=26, next=0
+              NodeList [61, 71), i=27, next=0
+                KindArrayType [61, 65), i=28, next=31
+                  KindTypeReference [61, 63), i=29, next=0
+                    KindIdentifier "X" [61, 63), i=30, next=0
+                KindArrayType [67, 71), i=31, next=0
+                  KindTypeReference [67, 69), i=32, next=0
+                    KindIdentifier "Y" [67, 69), i=33, next=0
+    KindForOfStatement [72, 125), i=34, next=0
+      KindVariableDeclarationList [79, 89), i=35, next=39
+        NodeList [84, 89), i=36, next=0
+          KindVariableDeclaration [84, 89), i=37, next=0
+            KindIdentifier "item" [84, 89), i=38, next=0
+      KindIdentifier "arr" [92, 96), i=39, next=40
+      KindBlock [97, 125), i=40, next=0
+        NodeList [99, 123), i=41, next=0
+          KindExpressionStatement [99, 111), i=42, next=46
+            KindPropertyAccessExpression [99, 110), i=43, next=0
+              KindIdentifier "item" [99, 108), i=44, next=45
+              KindIdentifier "x" [109, 110), i=45, next=0
+          KindExpressionStatement [111, 123), i=46, next=0
+            KindPropertyAccessExpression [111, 122), i=47, next=0
+              KindIdentifier "item" [111, 120), i=48, next=49
+              KindIdentifier "y" [121, 122), i=49, next=0

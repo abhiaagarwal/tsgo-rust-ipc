@@ -1,0 +1,188 @@
+KindSourceFile [0, 943), i=1, next=0
+  NodeList [0, 943), i=2, next=0
+    KindClassDeclaration [0, 202), i=3, next=33
+      KindIdentifier "C" [5, 7), i=4, next=5
+      NodeList [9, 199), i=5, next=0
+        KindMethodDeclaration [9, 105), i=6, next=22
+          NodeList [9, 58), i=7, next=14
+            KindDecorator [9, 58), i=8, next=0
+              KindCallExpression [16, 58), i=9, next=0
+                KindIdentifier "boundMethodLogger" [16, 33), i=10, next=11
+                NodeList [34, 57), i=11, next=0
+                  KindStringLiteral "Yadda" [34, 41), i=12, next=13
+                  KindTrueKeyword [42, 57), i=13, next=0
+          KindIdentifier "foo" [58, 67), i=14, next=15
+          KindBlock [69, 105), i=15, next=0
+            NodeList [71, 98), i=16, next=0
+              KindExpressionStatement [71, 98), i=17, next=0
+                KindCallExpression [71, 97), i=18, next=0
+                  KindPropertyAccessExpression [71, 95), i=19, next=0
+                    KindThisKeyword [71, 85), i=20, next=21
+                    KindIdentifier "fooHelper" [86, 95), i=21, next=0
+        KindMethodDeclaration [105, 199), i=22, next=0
+          KindIdentifier "fooHelper" [105, 122), i=23, next=24
+          KindBlock [124, 199), i=24, next=0
+            NodeList [126, 192), i=25, next=0
+              KindExpressionStatement [126, 192), i=26, next=0
+                KindCallExpression [126, 192), i=27, next=0
+                  KindPropertyAccessExpression [126, 147), i=28, next=31
+                    KindIdentifier "console" [126, 143), i=29, next=30
+                    KindIdentifier "log" [144, 147), i=30, next=0
+                  NodeList [148, 191), i=31, next=0
+                    KindStringLiteral "Behold! The actual method implementation!" [148, 191), i=32, next=0
+    KindEmptyStatement [202, 203), i=33, next=34
+    KindExportDeclaration [203, 218), i=34, next=39
+      KindNamedExports [211, 217), i=35, next=0
+        NodeList [213, 215), i=36, next=0
+          KindExportSpecifier [213, 215), i=37, next=0
+            KindIdentifier "C" [213, 215), i=38, next=0
+    KindFunctionDeclaration [218, 943), i=39, next=0
+      KindIdentifier "boundMethodLogger" [230, 248), i=40, next=41
+      NodeList [249, 281), i=41, next=50
+        KindTypeParameter [249, 253), i=42, next=44
+          KindIdentifier "This" [249, 253), i=43, next=0
+        KindTypeParameter [254, 273), i=44, next=48
+          KindIdentifier "Args" [254, 259), i=45, next=46
+          KindArrayType [267, 273), i=46, next=0
+            KindAnyKeyword [267, 271), i=47, next=0
+        KindTypeParameter [274, 281), i=48, next=0
+          KindIdentifier "Return" [274, 281), i=49, next=0
+      NodeList [283, 311), i=50, next=57
+        KindParameter [283, 297), i=51, next=54
+          KindIdentifier "source" [283, 289), i=52, next=53
+          KindStringKeyword [290, 297), i=53, next=0
+        KindParameter [298, 311), i=54, next=0
+          KindIdentifier "bound" [298, 304), i=55, next=56
+          KindTrueKeyword [306, 311), i=56, next=0
+      KindBlock [312, 943), i=57, next=0
+        NodeList [314, 940), i=58, next=0
+          KindReturnStatement [314, 940), i=59, next=0
+            KindFunctionExpression [326, 940), i=60, next=0
+              KindIdentifier "loggedDecorator" [335, 351), i=61, next=62
+              NodeList [352, 499), i=62, next=98
+                KindParameter [352, 407), i=63, next=78
+                  KindIdentifier "target" [352, 368), i=64, next=65
+                  KindFunctionType [369, 407), i=65, next=0
+                    NodeList [371, 396), i=66, next=76
+                      KindParameter [371, 381), i=67, next=71
+                        KindIdentifier "this" [371, 375), i=68, next=69
+                        KindTypeReference [376, 381), i=69, next=0
+                          KindIdentifier "This" [376, 381), i=70, next=0
+                      KindParameter [382, 396), i=71, next=0
+                        KindDotDotDotToken [382, 386), i=72, next=73
+                        KindIdentifier "args" [386, 390), i=73, next=74
+                        KindTypeReference [391, 396), i=74, next=0
+                          KindIdentifier "Args" [391, 396), i=75, next=0
+                    KindTypeReference [400, 407), i=76, next=0
+                      KindIdentifier "Return" [400, 407), i=77, next=0
+                KindParameter [408, 499), i=78, next=0
+                  KindIdentifier "context" [408, 425), i=79, next=80
+                  KindTypeReference [426, 499), i=80, next=0
+                    KindIdentifier "ClassMethodDecoratorContext" [426, 454), i=81, next=82
+                    NodeList [455, 498), i=82, next=0
+                      KindTypeReference [455, 459), i=83, next=85
+                        KindIdentifier "This" [455, 459), i=84, next=0
+                      KindFunctionType [460, 498), i=85, next=0
+                        NodeList [462, 487), i=86, next=96
+                          KindParameter [462, 472), i=87, next=91
+                            KindIdentifier "this" [462, 466), i=88, next=89
+                            KindTypeReference [467, 472), i=89, next=0
+                              KindIdentifier "This" [467, 472), i=90, next=0
+                          KindParameter [473, 487), i=91, next=0
+                            KindDotDotDotToken [473, 477), i=92, next=93
+                            KindIdentifier "args" [477, 481), i=93, next=94
+                            KindTypeReference [482, 487), i=94, next=0
+                              KindIdentifier "Args" [482, 487), i=95, next=0
+                        KindTypeReference [491, 498), i=96, next=0
+                          KindIdentifier "Return" [491, 498), i=97, next=0
+              KindParenthesizedType [507, 547), i=98, next=112
+                KindFunctionType [509, 546), i=99, next=0
+                  NodeList [510, 535), i=100, next=110
+                    KindParameter [510, 520), i=101, next=105
+                      KindIdentifier "this" [510, 514), i=102, next=103
+                      KindTypeReference [515, 520), i=103, next=0
+                        KindIdentifier "This" [515, 520), i=104, next=0
+                    KindParameter [521, 535), i=105, next=0
+                      KindDotDotDotToken [521, 525), i=106, next=107
+                      KindIdentifier "args" [525, 529), i=107, next=108
+                      KindTypeReference [530, 535), i=108, next=0
+                        KindIdentifier "Args" [530, 535), i=109, next=0
+                  KindTypeReference [539, 546), i=110, next=0
+                    KindIdentifier "Return" [539, 546), i=111, next=0
+              KindBlock [547, 940), i=112, next=0
+                NodeList [549, 933), i=113, next=0
+                  KindIfStatement [549, 738), i=114, next=151
+                    KindIdentifier "bound" [565, 570), i=115, next=116
+                    KindBlock [571, 738), i=116, next=0
+                      NodeList [573, 727), i=117, next=0
+                        KindExpressionStatement [573, 727), i=118, next=0
+                          KindCallExpression [573, 726), i=119, next=0
+                            KindPropertyAccessExpression [573, 609), i=120, next=123
+                              KindIdentifier "context" [573, 594), i=121, next=122
+                              KindIdentifier "addInitializer" [595, 609), i=122, next=0
+                            NodeList [610, 725), i=123, next=0
+                              KindFunctionExpression [610, 725), i=124, next=0
+                                KindBlock [621, 725), i=125, next=0
+                                  NodeList [623, 710), i=126, next=0
+                                    KindExpressionStatement [623, 710), i=127, next=0
+                                      KindBinaryExpression [623, 709), i=128, next=0
+                                        KindElementAccessExpression [623, 668), i=129, next=137
+                                          KindParenthesizedExpression [623, 654), i=130, next=134
+                                            KindAsExpression [642, 653), i=131, next=0
+                                              KindThisKeyword [642, 646), i=132, next=133
+                                              KindAnyKeyword [649, 653), i=133, next=0
+                                          KindPropertyAccessExpression [655, 667), i=134, next=0
+                                            KindIdentifier "context" [655, 662), i=135, next=136
+                                            KindIdentifier "name" [663, 667), i=136, next=0
+                                        KindEqualsToken [668, 670), i=137, next=138
+                                        KindCallExpression [670, 709), i=138, next=0
+                                          KindPropertyAccessExpression [670, 703), i=139, next=149
+                                            KindElementAccessExpression [670, 698), i=140, next=148
+                                              KindParenthesizedExpression [670, 684), i=141, next=145
+                                                KindAsExpression [672, 683), i=142, next=0
+                                                  KindThisKeyword [672, 676), i=143, next=144
+                                                  KindAnyKeyword [679, 683), i=144, next=0
+                                              KindPropertyAccessExpression [685, 697), i=145, next=0
+                                                KindIdentifier "context" [685, 692), i=146, next=147
+                                                KindIdentifier "name" [693, 697), i=147, next=0
+                                            KindIdentifier "bind" [699, 703), i=148, next=0
+                                          NodeList [704, 708), i=149, next=0
+                                            KindThisKeyword [704, 708), i=150, next=0
+                  KindReturnStatement [738, 933), i=151, next=0
+                    KindFunctionExpression [756, 933), i=152, next=0
+                      NodeList [767, 780), i=153, next=159
+                        KindParameter [767, 771), i=154, next=156
+                          KindIdentifier "this" [767, 771), i=155, next=0
+                        KindParameter [772, 780), i=156, next=0
+                          KindDotDotDotToken [772, 776), i=157, next=158
+                          KindIdentifier "args" [776, 780), i=158, next=0
+                      KindBlock [781, 933), i=159, next=0
+                        NodeList [783, 922), i=160, next=0
+                          KindExpressionStatement [783, 876), i=161, next=181
+                            KindCallExpression [783, 875), i=162, next=0
+                              KindPropertyAccessExpression [783, 808), i=163, next=166
+                                KindIdentifier "console" [783, 804), i=164, next=165
+                                KindIdentifier "log" [805, 808), i=165, next=0
+                              NodeList [809, 874), i=166, next=0
+                                KindTemplateExpression [809, 874), i=167, next=0
+                                  KindTemplateHead [809, 813), i=168, next=169
+                                  NodeList [813, 874), i=169, next=0
+                                    KindTemplateSpan [813, 848), i=170, next=173
+                                      KindIdentifier "source" [813, 819), i=171, next=172
+                                      KindTemplateMiddle [819, 848), i=172, next=0
+                                    KindTemplateSpan [848, 874), i=173, next=0
+                                      KindCallExpression [848, 871), i=174, next=180
+                                        KindPropertyAccessExpression [848, 869), i=175, next=0
+                                          KindPropertyAccessExpression [848, 860), i=176, next=179
+                                            KindIdentifier "context" [848, 855), i=177, next=178
+                                            KindIdentifier "name" [856, 860), i=178, next=0
+                                          KindIdentifier "toString" [861, 869), i=179, next=0
+                                      KindTemplateTail [871, 874), i=180, next=0
+                          KindReturnStatement [876, 922), i=181, next=0
+                            KindCallExpression [896, 921), i=182, next=0
+                              KindPropertyAccessExpression [896, 909), i=183, next=186
+                                KindIdentifier "target" [896, 903), i=184, next=185
+                                KindIdentifier "apply" [904, 909), i=185, next=0
+                              NodeList [910, 920), i=186, next=0
+                                KindThisKeyword [910, 914), i=187, next=188
+                                KindIdentifier "args" [915, 920), i=188, next=0

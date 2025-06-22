@@ -1,0 +1,146 @@
+KindSourceFile [0, 713), i=1, next=0
+  NodeList [0, 711), i=2, next=0
+    KindInterfaceDeclaration [0, 146), i=3, next=28
+      KindIdentifier "Foo" [9, 13), i=4, next=5
+      NodeList [15, 143), i=5, next=0
+        KindMethodSignature [15, 47), i=6, next=13
+          KindIdentifier "method" [15, 27), i=7, next=8
+          NodeList [28, 37), i=8, next=12
+            KindParameter [28, 37), i=9, next=0
+              KindIdentifier "a" [28, 29), i=10, next=11
+              KindNumberKeyword [30, 37), i=11, next=0
+          KindStringKeyword [39, 46), i=12, next=0
+        KindMethodSignature [47, 88), i=13, next=21
+          KindIdentifier "optionalMethod" [47, 67), i=14, next=15
+          KindQuestionToken [67, 68), i=15, next=16
+          NodeList [69, 78), i=16, next=20
+            KindParameter [69, 78), i=17, next=0
+              KindIdentifier "a" [69, 70), i=18, next=19
+              KindNumberKeyword [71, 78), i=19, next=0
+          KindStringKeyword [80, 87), i=20, next=0
+        KindPropertySignature [88, 111), i=21, next=24
+          KindIdentifier "property" [88, 102), i=22, next=23
+          KindStringKeyword [103, 110), i=23, next=0
+        KindPropertySignature [111, 143), i=24, next=0
+          KindIdentifier "optionalProperty" [111, 133), i=25, next=26
+          KindQuestionToken [133, 134), i=26, next=27
+          KindStringKeyword [135, 142), i=27, next=0
+    KindClassDeclaration [146, 281), i=28, next=50
+      KindIdentifier "Foo" [155, 159), i=29, next=30
+      NodeList [161, 278), i=30, next=0
+        KindPropertyDeclaration [161, 194), i=31, next=34
+          KindIdentifier "additionalProperty" [161, 185), i=32, next=33
+          KindStringKeyword [186, 193), i=33, next=0
+        KindMethodDeclaration [194, 278), i=34, next=0
+          KindIdentifier "additionalMethod" [194, 218), i=35, next=36
+          NodeList [219, 228), i=36, next=40
+            KindParameter [219, 228), i=37, next=0
+              KindIdentifier "a" [219, 220), i=38, next=39
+              KindNumberKeyword [221, 228), i=39, next=0
+          KindStringKeyword [230, 237), i=40, next=41
+          KindBlock [237, 278), i=41, next=0
+            NodeList [239, 271), i=42, next=0
+              KindReturnStatement [239, 271), i=43, next=0
+                KindCallExpression [255, 270), i=44, next=0
+                  KindPropertyAccessExpression [255, 267), i=45, next=48
+                    KindThisKeyword [255, 260), i=46, next=47
+                    KindIdentifier "method" [261, 267), i=47, next=0
+                  NodeList [268, 269), i=48, next=0
+                    KindNumericLiteral [268, 269), i=49, next=0
+    KindClassDeclaration [281, 382), i=50, next=70
+      KindIdentifier "Bar" [290, 294), i=51, next=52
+      NodeList [294, 306), i=52, next=57
+        KindHeritageClause [294, 306), i=53, next=0
+          NodeList [302, 306), i=54, next=0
+            KindExpressionWithTypeArguments [302, 306), i=55, next=0
+              KindIdentifier "Foo" [302, 306), i=56, next=0
+      NodeList [308, 379), i=57, next=0
+        KindMethodDeclaration [308, 379), i=58, next=0
+          KindIdentifier "method" [308, 320), i=59, next=60
+          NodeList [321, 330), i=60, next=64
+            KindParameter [321, 330), i=61, next=0
+              KindIdentifier "a" [321, 322), i=62, next=63
+              KindNumberKeyword [323, 330), i=63, next=0
+          KindBlock [331, 379), i=64, next=0
+            NodeList [333, 372), i=65, next=0
+              KindReturnStatement [333, 372), i=66, next=0
+                KindPropertyAccessExpression [349, 371), i=67, next=0
+                  KindThisKeyword [349, 354), i=68, next=69
+                  KindIdentifier "optionalProperty" [355, 371), i=69, next=0
+    KindVariableStatement [382, 408), i=70, next=77
+      KindVariableDeclarationList [382, 407), i=71, next=0
+        NodeList [391, 407), i=72, next=0
+          KindVariableDeclaration [391, 407), i=73, next=0
+            KindIdentifier "bar" [391, 395), i=74, next=75
+            KindNewExpression [397, 407), i=75, next=0
+              KindIdentifier "Bar" [401, 405), i=76, next=0
+    KindExpressionStatement [408, 424), i=77, next=84
+      KindCallExpression [408, 423), i=78, next=0
+        KindPropertyAccessExpression [408, 420), i=79, next=82
+          KindIdentifier "bar" [408, 413), i=80, next=81
+          KindIdentifier "method" [414, 420), i=81, next=0
+        NodeList [421, 422), i=82, next=0
+          KindNumericLiteral [421, 422), i=83, next=0
+    KindExpressionStatement [424, 448), i=84, next=91
+      KindCallExpression [424, 447), i=85, next=0
+        KindPropertyAccessExpression [424, 444), i=86, next=89
+          KindIdentifier "bar" [424, 429), i=87, next=88
+          KindIdentifier "optionalMethod" [430, 444), i=88, next=0
+        NodeList [445, 446), i=89, next=0
+          KindNumericLiteral [445, 446), i=90, next=0
+    KindExpressionStatement [448, 463), i=91, next=95
+      KindPropertyAccessExpression [448, 462), i=92, next=0
+        KindIdentifier "bar" [448, 453), i=93, next=94
+        KindIdentifier "property" [454, 462), i=94, next=0
+    KindExpressionStatement [463, 486), i=95, next=99
+      KindPropertyAccessExpression [463, 485), i=96, next=0
+        KindIdentifier "bar" [463, 468), i=97, next=98
+        KindIdentifier "optionalProperty" [469, 485), i=98, next=0
+    KindExpressionStatement [486, 511), i=99, next=103
+      KindPropertyAccessExpression [486, 510), i=100, next=0
+        KindIdentifier "bar" [486, 491), i=101, next=102
+        KindIdentifier "additionalProperty" [492, 510), i=102, next=0
+    KindExpressionStatement [511, 537), i=103, next=110
+      KindCallExpression [511, 536), i=104, next=0
+        KindPropertyAccessExpression [511, 533), i=105, next=108
+          KindIdentifier "bar" [511, 516), i=106, next=107
+          KindIdentifier "additionalMethod" [517, 533), i=107, next=0
+        NodeList [534, 535), i=108, next=0
+          KindNumericLiteral [534, 535), i=109, next=0
+    KindVariableStatement [537, 685), i=110, next=137
+      KindVariableDeclarationList [537, 684), i=111, next=0
+        NodeList [544, 684), i=112, next=0
+          KindVariableDeclaration [544, 684), i=113, next=0
+            KindIdentifier "obj" [544, 548), i=114, next=115
+            KindTypeLiteral [549, 684), i=115, next=0
+              NodeList [551, 681), i=116, next=0
+                KindMethodSignature [551, 583), i=117, next=124
+                  KindIdentifier "method" [551, 563), i=118, next=119
+                  NodeList [564, 573), i=119, next=123
+                    KindParameter [564, 573), i=120, next=0
+                      KindIdentifier "a" [564, 565), i=121, next=122
+                      KindNumberKeyword [566, 573), i=122, next=0
+                  KindStringKeyword [575, 582), i=123, next=0
+                KindPropertySignature [583, 606), i=124, next=127
+                  KindIdentifier "property" [583, 597), i=125, next=126
+                  KindStringKeyword [598, 605), i=126, next=0
+                KindPropertySignature [606, 639), i=127, next=130
+                  KindIdentifier "additionalProperty" [606, 630), i=128, next=129
+                  KindStringKeyword [631, 638), i=129, next=0
+                KindMethodSignature [639, 681), i=130, next=0
+                  KindIdentifier "additionalMethod" [639, 661), i=131, next=132
+                  NodeList [662, 671), i=132, next=136
+                    KindParameter [662, 671), i=133, next=0
+                      KindIdentifier "a" [662, 663), i=134, next=135
+                      KindNumberKeyword [664, 671), i=135, next=0
+                  KindStringKeyword [673, 680), i=136, next=0
+    KindExpressionStatement [685, 699), i=137, next=142
+      KindBinaryExpression [685, 698), i=138, next=0
+        KindIdentifier "bar" [685, 692), i=139, next=140
+        KindEqualsToken [692, 694), i=140, next=141
+        KindIdentifier "obj" [694, 698), i=141, next=0
+    KindExpressionStatement [699, 711), i=142, next=0
+      KindBinaryExpression [699, 710), i=143, next=0
+        KindIdentifier "obj" [699, 704), i=144, next=145
+        KindEqualsToken [704, 706), i=145, next=146
+        KindIdentifier "bar" [706, 710), i=146, next=0
