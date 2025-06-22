@@ -1,15 +1,18 @@
-use std::collections::HashMap;
-use std::sync::Arc;
+use std::{collections::HashMap, process::Stdio, sync::Arc};
 
-use rmp::decode::{read_array_len, read_bin_len, read_u8};
-use rmp::encode::{write_array_len, write_bin, write_u8};
+use rmp::{
+    decode::{read_array_len, read_bin_len, read_u8},
+    encode::{write_array_len, write_bin, write_u8},
+};
 use serde::{Deserialize, Serialize};
 use serde_json::{Value, from_str, to_string};
-use std::process::Stdio;
 use strum::FromRepr;
-use thiserror::Error;
-use tokio::io::{AsyncReadExt, AsyncWriteExt, BufReader};
-use tokio::process::{Child, ChildStdin, ChildStdout, Command};
+use tokio::{
+    io::{AsyncReadExt, AsyncWriteExt, BufReader},
+    process::{Child, ChildStdin, ChildStdout, Command},
+};
+
+use crate::errors::{Result, TsgoError};
 
 /// Message types for the tsgo protocol  
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize, FromRepr)]
@@ -58,33 +61,34 @@ impl ProtocolMessage {
         // Read array length (should be 3)
         let array_len = read_array_len(&mut cursor)?;
         if array_len != 3 {
-            return Err(TransportError::Protocol {
-                message: format!("Expected 3-element array, got {}", array_len),
-            });
+            return Err(TsgoError::InvalidProtocolArrayLength { actual: array_len });
         }
 
         // Read MessageType as uint8
         let msg_type_value = read_u8(&mut cursor)?;
         let msg_type =
-            MessageType::from_repr(msg_type_value).ok_or_else(|| TransportError::Protocol {
-                message: format!("Invalid MessageType: {}", msg_type_value),
+            MessageType::from_repr(msg_type_value).ok_or(TsgoError::InvalidMessageType {
+                message_type: msg_type_value,
             })?;
 
         // Read method name as binary data
         let method_len = read_bin_len(&mut cursor)? as usize;
         let mut method_bytes = vec![0u8; method_len];
         std::io::Read::read_exact(&mut cursor, &mut method_bytes)?;
-        let method = String::from_utf8(method_bytes).map_err(|e| TransportError::Protocol {
-            message: format!("Invalid UTF-8 in method name: {}", e),
-        })?;
+        let method =
+            String::from_utf8(method_bytes).map_err(|e| TsgoError::InvalidProtocolUtf8 {
+                field: "method name".to_string(),
+                error_message: e.to_string(),
+            })?;
 
         // Read payload as binary data
         let payload_len = read_bin_len(&mut cursor)? as usize;
         let mut payload_bytes = vec![0u8; payload_len];
         std::io::Read::read_exact(&mut cursor, &mut payload_bytes)?;
         let payload_str =
-            String::from_utf8(payload_bytes).map_err(|e| TransportError::Protocol {
-                message: format!("Invalid UTF-8 in payload: {}", e),
+            String::from_utf8(payload_bytes).map_err(|e| TsgoError::InvalidProtocolUtf8 {
+                field: "payload".to_string(),
+                error_message: e.to_string(),
             })?;
 
         // Parse payload as JSON
@@ -93,39 +97,6 @@ impl ProtocolMessage {
         Ok(ProtocolMessage(msg_type, method, payload))
     }
 }
-
-/// Error types for transport operations
-#[derive(Error, Debug)]
-pub enum TransportError {
-    #[error("IO error: {0}")]
-    Io(#[from] std::io::Error),
-
-    #[error("Serialization error: {0}")]
-    Serialization(#[from] rmp_serde::encode::Error),
-
-    #[error("Deserialization error: {0}")]
-    Deserialization(#[from] rmp_serde::decode::Error),
-
-    #[error("JSON error: {0}")]
-    Json(#[from] serde_json::Error),
-
-    #[error("Protocol error: {message}")]
-    Protocol { message: String },
-
-    #[error("Process spawn error: {0}")]
-    ProcessSpawn(String),
-
-    #[error("Invalid response: expected {expected}, got {actual}")]
-    InvalidResponse { expected: String, actual: String },
-
-    #[error("MessagePack encoding error: {0}")]
-    MessagePackWrite(#[from] rmp::encode::ValueWriteError),
-
-    #[error("MessagePack decode error: {0}")]
-    MessagePackRead(#[from] rmp::decode::ValueReadError),
-}
-
-pub type Result<T> = std::result::Result<T, TransportError>;
 
 /// Callback function type for file system operations
 pub type CallbackFunction = Arc<dyn Fn(Value) -> Result<Value> + Send + Sync>;
@@ -149,15 +120,25 @@ impl TsgoTransport {
 
         let mut child = cmd
             .spawn()
-            .map_err(|e| TransportError::ProcessSpawn(format!("Failed to spawn tsgo: {}", e)))?;
+            .map_err(|e| TsgoError::TransportProcessStartFailed {
+                reason: format!("Failed to spawn tsgo process '{}': {}", tsgo_path, e),
+            })?;
 
-        let stdin = child.stdin.take().ok_or_else(|| {
-            TransportError::ProcessSpawn("Failed to get stdin handle".to_string())
-        })?;
+        let stdin =
+            child
+                .stdin
+                .take()
+                .ok_or_else(|| TsgoError::TransportProcessHandleUnavailable {
+                    handle_type: "stdin".to_string(),
+                })?;
 
-        let stdout = child.stdout.take().ok_or_else(|| {
-            TransportError::ProcessSpawn("Failed to get stdout handle".to_string())
-        })?;
+        let stdout =
+            child
+                .stdout
+                .take()
+                .ok_or_else(|| TsgoError::TransportProcessHandleUnavailable {
+                    handle_type: "stdout".to_string(),
+                })?;
 
         let stdout = BufReader::new(stdout);
 
@@ -204,15 +185,15 @@ impl TsgoTransport {
                     return Ok(response.2);
                 }
                 MessageType::Error => {
-                    return Err(TransportError::Protocol {
-                        message: response.2.to_string(),
+                    return Err(TsgoError::ServerError {
+                        server_message: response.2.to_string(),
                     });
                 }
                 MessageType::Call => {
                     self.handle_callback(&response.1, response.2).await?;
                 }
                 _ => {
-                    return Err(TransportError::InvalidResponse {
+                    return Err(TsgoError::InvalidResponse {
                         expected: "Response or Error".to_string(),
                         actual: format!("{:?}", response.0),
                     });
@@ -223,12 +204,11 @@ impl TsgoTransport {
 
     /// Send a synchronous binary request and return binary response
     pub async fn request_binary_sync(&mut self, method: &str, payload: Vec<u8>) -> Result<Vec<u8>> {
-        let payload_json: Value =
-            from_str(
-                &String::from_utf8(payload).map_err(|e| TransportError::Protocol {
-                    message: format!("Invalid UTF-8 in binary payload: {}", e),
-                })?,
-            )?;
+        let payload_json: Value = from_str(&String::from_utf8(payload).map_err(|e| {
+            TsgoError::InvalidBinaryPayload {
+                reason: format!("Invalid UTF-8 in binary payload: {}", e),
+            }
+        })?)?;
 
         let request = ProtocolMessage(MessageType::Request, method.to_string(), payload_json);
         self.send_message(&request).await?;
@@ -241,15 +221,15 @@ impl TsgoTransport {
                     return Ok(response_str.into_bytes());
                 }
                 MessageType::Error => {
-                    return Err(TransportError::Protocol {
-                        message: response.2.to_string(),
+                    return Err(TsgoError::ServerError {
+                        server_message: response.2.to_string(),
                     });
                 }
                 MessageType::Call => {
                     self.handle_callback(&response.1, response.2).await?;
                 }
                 _ => {
-                    return Err(TransportError::InvalidResponse {
+                    return Err(TsgoError::InvalidResponse {
                         expected: "Response or Error".to_string(),
                         actual: format!("{:?}", response.0),
                     });
@@ -261,17 +241,22 @@ impl TsgoTransport {
     /// Handle incoming callback
     async fn handle_callback(&mut self, method: &str, args: Value) -> Result<()> {
         if let Some(callback) = self.callbacks.get(method).cloned() {
-            let result = callback(args)?;
+            let result = callback(args).map_err(|e| TsgoError::CallbackExecutionFailed {
+                method: method.to_string(),
+                reason: e.to_string(),
+            })?;
             let response = ProtocolMessage(MessageType::CallResponse, method.to_string(), result);
             self.send_message(&response).await?;
         } else {
-            let error_msg = format!("Unknown callback method: {}", method);
             let error = ProtocolMessage(
                 MessageType::CallError,
                 method.to_string(),
-                Value::String(error_msg),
+                Value::String(format!("Unknown callback method: {}", method)),
             );
             self.send_message(&error).await?;
+            return Err(TsgoError::UnknownCallback {
+                method: method.to_string(),
+            });
         }
         Ok(())
     }
@@ -292,16 +277,15 @@ impl TsgoTransport {
         loop {
             let bytes_read = self.stdout.read(&mut temp_buf).await?;
             if bytes_read == 0 {
-                return Err(TransportError::Io(std::io::Error::new(
-                    std::io::ErrorKind::UnexpectedEof,
-                    "Server closed connection",
-                )));
+                return Err(TsgoError::TransportConnectionClosed);
             }
 
             buffer.extend_from_slice(&temp_buf[..bytes_read]);
             match ProtocolMessage::decode(&buffer) {
                 Ok(message) => return Ok(message),
-                Err(TransportError::Protocol { message: _ }) => {
+                Err(TsgoError::InvalidProtocolArrayLength { .. })
+                | Err(TsgoError::InvalidMessageType { .. })
+                | Err(TsgoError::InvalidProtocolUtf8 { .. }) => {
                     continue;
                 }
                 Err(e) => return Err(e),
@@ -372,19 +356,13 @@ pub struct TypeResponse {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
-    use rmp_serde::{from_slice, to_vec};
-    use serde_json::{Value as JsonValue, from_str};
     use std::fs;
 
-    const TEST_CASES: &[(&str, &str)] = &[
-        ("echo_string", "Echo string"),
-        ("echo_number", "Echo number"),
-        ("echo_boolean", "Echo boolean"),
-        ("echo_array", "Echo array"),
-        ("echo_object", "Echo object"),
-        ("echo_null", "Echo null"),
-    ];
+    use rmp_serde::{from_slice, to_vec};
+    use rstest::rstest;
+    use serde_json::{Value as JsonValue, from_str};
+
+    use super::*;
 
     fn load_fixture(name: &str) -> serde_json::Result<JsonValue> {
         let path = format!("test_data/transports/{}.json", name);
@@ -393,57 +371,71 @@ mod tests {
     }
 
     /// Test protocol message encoding with real fixture data
-    #[test]
-    fn test_encode_protocol_message_fixtures() {
-        for (fixture_name, _) in TEST_CASES {
-            let fixture = load_fixture(fixture_name).unwrap();
+    #[rstest]
+    #[case::echo_string("echo_string", "Echo string")]
+    #[case::echo_number("echo_number", "Echo number")]
+    #[case::echo_boolean("echo_boolean", "Echo boolean")]
+    #[case::echo_array("echo_array", "Echo array")]
+    #[case::echo_object("echo_object", "Echo object")]
+    #[case::echo_null("echo_null", "Echo null")]
+    fn test_encode_protocol_message_fixtures(
+        #[case] fixture_name: &str,
+        #[case] _description: &str,
+    ) {
+        let fixture = load_fixture(fixture_name).unwrap();
 
-            let expected_bytes: Vec<u8> = fixture["request"]["bytes"]
-                .as_array()
-                .unwrap()
-                .iter()
-                .map(|v| v.as_u64().unwrap() as u8)
-                .collect();
+        let expected_bytes: Vec<u8> = fixture["request"]["bytes"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .map(|v| v.as_u64().unwrap() as u8)
+            .collect();
 
-            let payload = fixture["request"]["message"]["payload"].clone();
+        let payload = fixture["request"]["message"]["payload"].clone();
 
-            let message = ProtocolMessage(MessageType::Request, "echo".to_string(), payload);
+        let message = ProtocolMessage(MessageType::Request, "echo".to_string(), payload);
 
-            let encoded = message.encode().unwrap();
+        let encoded = message.encode().unwrap();
 
-            assert_eq!(
-                encoded, expected_bytes,
-                "Encoding mismatch for fixture: {}",
-                fixture_name
-            );
-        }
+        assert_eq!(
+            encoded, expected_bytes,
+            "Encoding mismatch for fixture: {}",
+            fixture_name
+        );
     }
 
     /// Test protocol message decoding with real fixture data
-    #[test]
-    fn test_decode_protocol_message_fixtures() {
-        for (fixture_name, _) in TEST_CASES {
-            let fixture = load_fixture(fixture_name).unwrap();
+    #[rstest]
+    #[case::echo_string("echo_string", "Echo string")]
+    #[case::echo_number("echo_number", "Echo number")]
+    #[case::echo_boolean("echo_boolean", "Echo boolean")]
+    #[case::echo_array("echo_array", "Echo array")]
+    #[case::echo_object("echo_object", "Echo object")]
+    #[case::echo_null("echo_null", "Echo null")]
+    fn test_decode_protocol_message_fixtures(
+        #[case] fixture_name: &str,
+        #[case] _description: &str,
+    ) {
+        let fixture = load_fixture(fixture_name).unwrap();
 
-            let response_bytes: Vec<u8> = fixture["response"]["bytes"]
-                .as_array()
-                .unwrap()
-                .iter()
-                .map(|v| v.as_u64().unwrap() as u8)
-                .collect();
+        let response_bytes: Vec<u8> = fixture["response"]["bytes"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .map(|v| v.as_u64().unwrap() as u8)
+            .collect();
 
-            let expected_payload = fixture["response"]["message"]["payload"].clone();
+        let expected_payload = fixture["response"]["message"]["payload"].clone();
 
-            let decoded = ProtocolMessage::decode(&response_bytes).unwrap();
+        let decoded = ProtocolMessage::decode(&response_bytes).unwrap();
 
-            assert_eq!(decoded.0, MessageType::Response);
-            assert_eq!(decoded.1, "echo");
-            assert_eq!(
-                decoded.2, expected_payload,
-                "Payload mismatch for fixture: {}",
-                fixture_name
-            );
-        }
+        assert_eq!(decoded.0, MessageType::Response);
+        assert_eq!(decoded.1, "echo");
+        assert_eq!(
+            decoded.2, expected_payload,
+            "Payload mismatch for fixture: {}",
+            fixture_name
+        );
     }
 
     /// Test round-trip encoding/decoding
@@ -509,14 +501,24 @@ mod tests {
 
         // Test wrong array length
         let wrong_length = &[0x92, 0xcc, 0x01, 0xc4, 0x04, b'e', b'c', b'h', b'o'];
-        assert!(ProtocolMessage::decode(wrong_length).is_err());
+        match ProtocolMessage::decode(wrong_length) {
+            Err(TsgoError::InvalidProtocolArrayLength { actual }) => {
+                assert_eq!(actual, 2);
+            }
+            other => panic!("Expected InvalidProtocolArrayLength, got: {:?}", other),
+        }
 
         // Test invalid message type
         let invalid_type = &[
             0x93, 0xcc, 0x99, 0xc4, 0x04, b'e', b'c', b'h', b'o', 0xc4, 0x04, b't', b'e', b's',
             b't',
         ];
-        assert!(ProtocolMessage::decode(invalid_type).is_err());
+        match ProtocolMessage::decode(invalid_type) {
+            Err(TsgoError::InvalidMessageType { message_type }) => {
+                assert_eq!(message_type, 0x99);
+            }
+            other => panic!("Expected InvalidMessageType, got: {:?}", other),
+        }
     }
 
     /// Test specific binary protocol format requirements

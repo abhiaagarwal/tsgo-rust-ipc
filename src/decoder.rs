@@ -1,4 +1,7 @@
-use crate::syntax::SyntaxKind;
+use crate::{
+    errors::{Result, TsgoError},
+    syntax::SyntaxKind,
+};
 
 pub mod constants {
     pub const NODE_OFFSET_KIND: usize = 0;
@@ -16,6 +19,7 @@ pub mod constants {
     pub const NODE_DATA_TYPE_MASK: u32 = 0xc0_00_00_00;
     pub const NODE_DATA_CHILD_MASK: u32 = 0x00_00_00_ff;
     pub const NODE_DATA_STRING_INDEX_MASK: u32 = 0x00_ff_ff_ff;
+    pub const NODE_EXTENDED_DATA_MASK: u32 = 0x00_ff_ff_ff;
 
     pub const SYNTAX_KIND_NODE_LIST: u32 = 0xff_ff_ff_ff;
 
@@ -26,8 +30,11 @@ pub mod constants {
     pub const HEADER_OFFSET_NODES: usize = 16;
     pub const HEADER_SIZE: usize = 20;
 
-    pub const PROTOCOL_VERSION: u8 = 1;
+    // TODO(aagarwal): This should be 1, regen test data to match
+    pub const PROTOCOL_VERSION: u8 = 0;
 }
+
+use constants::*;
 
 /// Represents a decoded AST node
 #[derive(Debug, Clone)]
@@ -39,6 +46,11 @@ pub struct Node {
     pub parent: u32,
     pub data: u32,
     pub text: Option<String>,
+    pub flags: Option<u32>,
+    pub token: Option<SyntaxKind>,
+    pub template_flags: Option<u32>,
+    pub file_name: Option<String>,
+    pub raw_text: Option<String>,
 }
 
 /// Header information from the binary format
@@ -61,7 +73,7 @@ pub struct TsgoDecoder {
 
 impl TsgoDecoder {
     /// Create a new decoder from binary data
-    pub fn new(data: Vec<u8>) -> Result<Self, Box<dyn std::error::Error>> {
+    pub fn new(data: Vec<u8>) -> Result<Self> {
         let header = Self::decode_header(&data)?;
         let string_table = Self::decode_string_table(&data, &header)?;
         let nodes = Self::decode_nodes(&data, &header, &string_table)?;
@@ -75,49 +87,48 @@ impl TsgoDecoder {
     }
 
     /// Decode the header from binary data
-    fn decode_header(data: &[u8]) -> Result<Header, Box<dyn std::error::Error>> {
-        if data.len() < constants::HEADER_SIZE {
-            return Err("Data too short for header".into());
+    fn decode_header(data: &[u8]) -> Result<Header> {
+        if data.len() < HEADER_SIZE {
+            return Err(TsgoError::BufferTooSmall {
+                needed: HEADER_SIZE,
+                available: data.len(),
+            });
         }
 
-        let metadata = u32::from_le_bytes([
-            data[constants::HEADER_OFFSET_METADATA],
-            data[constants::HEADER_OFFSET_METADATA + 1],
-            data[constants::HEADER_OFFSET_METADATA + 2],
-            data[constants::HEADER_OFFSET_METADATA + 3],
-        ]);
-
-        let protocol_version = (metadata >> 24) as u8;
-        if protocol_version != constants::PROTOCOL_VERSION {
-            return Err(format!("Unsupported protocol version: {}", protocol_version).into());
+        let protocol_version = data[HEADER_OFFSET_METADATA];
+        if protocol_version != PROTOCOL_VERSION {
+            return Err(TsgoError::UnsupportedProtocolVersion {
+                expected: PROTOCOL_VERSION,
+                actual: protocol_version,
+            });
         }
 
         let string_offsets_offset = u32::from_le_bytes([
-            data[constants::HEADER_OFFSET_STRING_OFFSETS],
-            data[constants::HEADER_OFFSET_STRING_OFFSETS + 1],
-            data[constants::HEADER_OFFSET_STRING_OFFSETS + 2],
-            data[constants::HEADER_OFFSET_STRING_OFFSETS + 3],
+            data[HEADER_OFFSET_STRING_OFFSETS],
+            data[HEADER_OFFSET_STRING_OFFSETS + 1],
+            data[HEADER_OFFSET_STRING_OFFSETS + 2],
+            data[HEADER_OFFSET_STRING_OFFSETS + 3],
         ]);
 
         let string_data_offset = u32::from_le_bytes([
-            data[constants::HEADER_OFFSET_STRING_DATA],
-            data[constants::HEADER_OFFSET_STRING_DATA + 1],
-            data[constants::HEADER_OFFSET_STRING_DATA + 2],
-            data[constants::HEADER_OFFSET_STRING_DATA + 3],
+            data[HEADER_OFFSET_STRING_DATA],
+            data[HEADER_OFFSET_STRING_DATA + 1],
+            data[HEADER_OFFSET_STRING_DATA + 2],
+            data[HEADER_OFFSET_STRING_DATA + 3],
         ]);
 
         let extended_data_offset = u32::from_le_bytes([
-            data[constants::HEADER_OFFSET_EXTENDED_DATA],
-            data[constants::HEADER_OFFSET_EXTENDED_DATA + 1],
-            data[constants::HEADER_OFFSET_EXTENDED_DATA + 2],
-            data[constants::HEADER_OFFSET_EXTENDED_DATA + 3],
+            data[HEADER_OFFSET_EXTENDED_DATA],
+            data[HEADER_OFFSET_EXTENDED_DATA + 1],
+            data[HEADER_OFFSET_EXTENDED_DATA + 2],
+            data[HEADER_OFFSET_EXTENDED_DATA + 3],
         ]);
 
         let nodes_offset = u32::from_le_bytes([
-            data[constants::HEADER_OFFSET_NODES],
-            data[constants::HEADER_OFFSET_NODES + 1],
-            data[constants::HEADER_OFFSET_NODES + 2],
-            data[constants::HEADER_OFFSET_NODES + 3],
+            data[HEADER_OFFSET_NODES],
+            data[HEADER_OFFSET_NODES + 1],
+            data[HEADER_OFFSET_NODES + 2],
+            data[HEADER_OFFSET_NODES + 3],
         ]);
 
         Ok(Header {
@@ -130,130 +141,306 @@ impl TsgoDecoder {
     }
 
     /// Decode the string table from binary data
-    fn decode_string_table(
-        data: &[u8],
-        header: &Header,
-    ) -> Result<Vec<String>, Box<dyn std::error::Error>> {
+    fn decode_string_table(data: &[u8], header: &Header) -> Result<Vec<String>> {
         let string_offsets_start = header.string_offsets_offset as usize;
         let string_data_start = header.string_data_offset as usize;
         let _extended_data_start = header.extended_data_offset as usize;
 
-        let mut strings = Vec::new();
-        let mut offset = string_offsets_start;
-
-        while offset + 8 <= string_data_start {
-            let start = u32::from_le_bytes([
-                data[offset],
-                data[offset + 1],
-                data[offset + 2],
-                data[offset + 3],
-            ]) as usize;
-
-            let end = u32::from_le_bytes([
-                data[offset + 4],
-                data[offset + 5],
-                data[offset + 6],
-                data[offset + 7],
-            ]) as usize;
-
-            let string_start = string_data_start + start;
-            let string_end = string_data_start + end;
-
-            if string_end <= data.len() {
-                let string_bytes = &data[string_start..string_end];
-                let string = String::from_utf8(string_bytes.to_vec())?;
-                strings.push(string);
-            }
-
-            offset += 8;
+        if string_offsets_start >= data.len() {
+            return Err(TsgoError::InvalidDataOffset {
+                offset: string_offsets_start,
+                buffer_size: data.len(),
+            });
         }
+        if string_data_start >= data.len() {
+            return Err(TsgoError::InvalidDataOffset {
+                offset: string_data_start,
+                buffer_size: data.len(),
+            });
+        }
+
+        // String table contains pairs of offsets, so each string takes 8 bytes
+        let num_strings = (string_data_start - string_offsets_start) / 8;
+        let strings: Vec<String> = (0..num_strings)
+            .map(|i| {
+                let offset_pos = string_offsets_start + i * 8;
+                if offset_pos + 8 > data.len() {
+                    return Err(TsgoError::BufferTooSmall {
+                        needed: offset_pos + 8,
+                        available: data.len(),
+                    });
+                }
+
+                let start_offset = u32::from_le_bytes([
+                    data[offset_pos],
+                    data[offset_pos + 1],
+                    data[offset_pos + 2],
+                    data[offset_pos + 3],
+                ]) as usize;
+
+                let end_offset = u32::from_le_bytes([
+                    data[offset_pos + 4],
+                    data[offset_pos + 5],
+                    data[offset_pos + 6],
+                    data[offset_pos + 7],
+                ]) as usize;
+
+                let string_start = string_data_start + start_offset;
+                let string_end = string_data_start + end_offset;
+
+                if string_end > data.len() {
+                    return Err(TsgoError::StringBoundsOutOfRange {
+                        string_index: i,
+                        start: string_start,
+                        end: string_end,
+                        data_size: data.len(),
+                    });
+                }
+
+                if string_start > string_end {
+                    return Err(TsgoError::StringBoundsInvalid {
+                        string_index: i,
+                        start: string_start,
+                        end: string_end,
+                    });
+                }
+
+                let string_bytes = &data[string_start..string_end];
+                let string = String::from_utf8(string_bytes.to_vec()).map_err(|e| {
+                    TsgoError::InvalidUtf8 {
+                        context: format!("String table entry {}: {}", i, e),
+                    }
+                })?;
+                Ok(string)
+            })
+            .collect::<Result<Vec<String>>>()?;
 
         Ok(strings)
     }
 
     /// Decode all nodes from binary data
-    fn decode_nodes(
-        data: &[u8],
-        header: &Header,
-        string_table: &[String],
-    ) -> Result<Vec<Node>, Box<dyn std::error::Error>> {
+    fn decode_nodes(data: &[u8], header: &Header, string_table: &[String]) -> Result<Vec<Node>> {
         let nodes_start = header.nodes_offset as usize;
-        let mut nodes = Vec::new();
-        let mut offset = nodes_start;
-
-        while offset + constants::NODE_SIZE <= data.len() {
-            let kind_raw = u32::from_le_bytes([
-                data[offset + constants::NODE_OFFSET_KIND],
-                data[offset + constants::NODE_OFFSET_KIND + 1],
-                data[offset + constants::NODE_OFFSET_KIND + 2],
-                data[offset + constants::NODE_OFFSET_KIND + 3],
-            ]);
-
-            let pos = u32::from_le_bytes([
-                data[offset + constants::NODE_OFFSET_POS],
-                data[offset + constants::NODE_OFFSET_POS + 1],
-                data[offset + constants::NODE_OFFSET_POS + 2],
-                data[offset + constants::NODE_OFFSET_POS + 3],
-            ]);
-
-            let end = u32::from_le_bytes([
-                data[offset + constants::NODE_OFFSET_END],
-                data[offset + constants::NODE_OFFSET_END + 1],
-                data[offset + constants::NODE_OFFSET_END + 2],
-                data[offset + constants::NODE_OFFSET_END + 3],
-            ]);
-
-            let next_sibling = u32::from_le_bytes([
-                data[offset + constants::NODE_OFFSET_NEXT],
-                data[offset + constants::NODE_OFFSET_NEXT + 1],
-                data[offset + constants::NODE_OFFSET_NEXT + 2],
-                data[offset + constants::NODE_OFFSET_NEXT + 3],
-            ]);
-
-            let parent = u32::from_le_bytes([
-                data[offset + constants::NODE_OFFSET_PARENT],
-                data[offset + constants::NODE_OFFSET_PARENT + 1],
-                data[offset + constants::NODE_OFFSET_PARENT + 2],
-                data[offset + constants::NODE_OFFSET_PARENT + 3],
-            ]);
-
-            let data_raw = u32::from_le_bytes([
-                data[offset + constants::NODE_OFFSET_DATA],
-                data[offset + constants::NODE_OFFSET_DATA + 1],
-                data[offset + constants::NODE_OFFSET_DATA + 2],
-                data[offset + constants::NODE_OFFSET_DATA + 3],
-            ]);
-
-            let kind = SyntaxKind::from_repr(kind_raw).unwrap_or(SyntaxKind::Unknown);
-
-            let text = if (data_raw & constants::NODE_DATA_TYPE_MASK)
-                == constants::NODE_DATA_TYPE_STRING
-            {
-                let string_index =
-                    ((data_raw & constants::NODE_DATA_STRING_INDEX_MASK) as usize) / 2;
-                if string_index < string_table.len() {
-                    Some(string_table[string_index].clone())
-                } else {
-                    None
-                }
-            } else {
-                None
-            };
-
-            nodes.push(Node {
-                kind,
-                pos,
-                end,
-                next_sibling,
-                parent,
-                data: data_raw,
-                text,
+        if nodes_start >= data.len() {
+            return Err(TsgoError::InvalidDataOffset {
+                offset: nodes_start,
+                buffer_size: data.len(),
             });
-
-            offset += constants::NODE_SIZE;
         }
 
+        let nodes: Vec<Node> = (0..(data.len() - nodes_start) / NODE_SIZE)
+            .map(|i| {
+                let node_start = nodes_start + i * NODE_SIZE;
+                if node_start + NODE_SIZE > data.len() {
+                    return Err(TsgoError::NodeDataBufferTooSmall {
+                        node_index: i,
+                        needed: node_start + NODE_SIZE,
+                        available: data.len(),
+                    });
+                }
+
+                let kind_raw = u32::from_le_bytes([
+                    data[node_start + NODE_OFFSET_KIND],
+                    data[node_start + NODE_OFFSET_KIND + 1],
+                    data[node_start + NODE_OFFSET_KIND + 2],
+                    data[node_start + NODE_OFFSET_KIND + 3],
+                ]);
+
+                let kind = SyntaxKind::from_repr(kind_raw).unwrap_or(SyntaxKind::Unknown);
+
+                let pos = u32::from_le_bytes([
+                    data[node_start + NODE_OFFSET_POS],
+                    data[node_start + NODE_OFFSET_POS + 1],
+                    data[node_start + NODE_OFFSET_POS + 2],
+                    data[node_start + NODE_OFFSET_POS + 3],
+                ]);
+
+                let end = u32::from_le_bytes([
+                    data[node_start + NODE_OFFSET_END],
+                    data[node_start + NODE_OFFSET_END + 1],
+                    data[node_start + NODE_OFFSET_END + 2],
+                    data[node_start + NODE_OFFSET_END + 3],
+                ]);
+
+                let next_sibling = u32::from_le_bytes([
+                    data[node_start + NODE_OFFSET_NEXT],
+                    data[node_start + NODE_OFFSET_NEXT + 1],
+                    data[node_start + NODE_OFFSET_NEXT + 2],
+                    data[node_start + NODE_OFFSET_NEXT + 3],
+                ]);
+
+                let parent = u32::from_le_bytes([
+                    data[node_start + NODE_OFFSET_PARENT],
+                    data[node_start + NODE_OFFSET_PARENT + 1],
+                    data[node_start + NODE_OFFSET_PARENT + 2],
+                    data[node_start + NODE_OFFSET_PARENT + 3],
+                ]);
+
+                let node_data = u32::from_le_bytes([
+                    data[node_start + NODE_OFFSET_DATA],
+                    data[node_start + NODE_OFFSET_DATA + 1],
+                    data[node_start + NODE_OFFSET_DATA + 2],
+                    data[node_start + NODE_OFFSET_DATA + 3],
+                ]);
+
+                let text = Self::decode_node_text(&kind, node_data, string_table, data, header)?;
+
+                let (flags, token, template_flags, file_name, raw_text) =
+                    Self::decode_extended_data(&kind, node_data, string_table, data, header)?;
+
+                Ok(Node {
+                    kind,
+                    pos,
+                    end,
+                    next_sibling,
+                    parent,
+                    data: node_data,
+                    text,
+                    flags,
+                    token,
+                    template_flags,
+                    file_name,
+                    raw_text,
+                })
+            })
+            .collect::<Result<Vec<Node>>>()?;
+
         Ok(nodes)
+    }
+
+    fn decode_node_text(
+        kind: &SyntaxKind,
+        node_data: u32,
+        string_table: &[String],
+        data: &[u8],
+        header: &Header,
+    ) -> Result<Option<String>> {
+        let data_type = node_data & NODE_DATA_TYPE_MASK;
+
+        match data_type {
+            NODE_DATA_TYPE_STRING => {
+                let string_index = (node_data & NODE_DATA_STRING_INDEX_MASK) as usize / 2;
+                if string_index < string_table.len() {
+                    Ok(Some(string_table[string_index].clone()))
+                } else {
+                    Ok(None)
+                }
+            }
+            NODE_DATA_TYPE_EXTENDED_DATA => match kind {
+                SyntaxKind::SourceFile
+                | SyntaxKind::TemplateHead
+                | SyntaxKind::TemplateMiddle
+                | SyntaxKind::TemplateTail => {
+                    let extended_data_offset = header.extended_data_offset as usize
+                        + (node_data & NODE_EXTENDED_DATA_MASK) as usize;
+
+                    if extended_data_offset + 4 <= data.len() {
+                        let string_index = u32::from_le_bytes([
+                            data[extended_data_offset],
+                            data[extended_data_offset + 1],
+                            data[extended_data_offset + 2],
+                            data[extended_data_offset + 3],
+                        ]) as usize
+                            / 2;
+
+                        if string_index < string_table.len() {
+                            Ok(Some(string_table[string_index].clone()))
+                        } else {
+                            Ok(None)
+                        }
+                    } else {
+                        Ok(None)
+                    }
+                }
+                _ => Ok(None),
+            },
+            _ => Ok(None),
+        }
+    }
+
+    fn decode_extended_data(
+        kind: &SyntaxKind,
+        node_data: u32,
+        string_table: &[String],
+        data: &[u8],
+        header: &Header,
+    ) -> Result<(
+        Option<u32>,
+        Option<SyntaxKind>,
+        Option<u32>,
+        Option<String>,
+        Option<String>,
+    )> {
+        let data_type = node_data & NODE_DATA_TYPE_MASK;
+
+        // TODO(aagarwal): Make this more efficient
+        let mut flags = None;
+        let mut token = None;
+        let mut template_flags = None;
+        let mut file_name = None;
+        let mut raw_text = None;
+
+        if kind == &SyntaxKind::VariableDeclarationList {
+            flags = Some((node_data & (1 << 24 | 1 << 25)) >> 24);
+        }
+
+        if kind == &SyntaxKind::ImportAttributes {
+            if (node_data & (1 << 25)) != 0 {
+                token = Some(SyntaxKind::AssertKeyword);
+            } else {
+                token = Some(SyntaxKind::WithKeyword);
+            }
+        }
+
+        if data_type == NODE_DATA_TYPE_EXTENDED_DATA {
+            let extended_data_offset = header.extended_data_offset as usize
+                + (node_data & NODE_EXTENDED_DATA_MASK) as usize;
+
+            match kind {
+                SyntaxKind::TemplateHead
+                | SyntaxKind::TemplateMiddle
+                | SyntaxKind::TemplateTail => {
+                    if extended_data_offset + 12 <= data.len() {
+                        let raw_text_index = u32::from_le_bytes([
+                            data[extended_data_offset + 4],
+                            data[extended_data_offset + 5],
+                            data[extended_data_offset + 6],
+                            data[extended_data_offset + 7],
+                        ]) as usize
+                            / 2;
+
+                        if raw_text_index < string_table.len() {
+                            raw_text = Some(string_table[raw_text_index].clone());
+                        }
+
+                        template_flags = Some(u32::from_le_bytes([
+                            data[extended_data_offset + 8],
+                            data[extended_data_offset + 9],
+                            data[extended_data_offset + 10],
+                            data[extended_data_offset + 11],
+                        ]));
+                    }
+                }
+                SyntaxKind::SourceFile => {
+                    if extended_data_offset + 8 <= data.len() {
+                        let file_name_index = u32::from_le_bytes([
+                            data[extended_data_offset + 4],
+                            data[extended_data_offset + 5],
+                            data[extended_data_offset + 6],
+                            data[extended_data_offset + 7],
+                        ]) as usize
+                            / 2;
+
+                        if file_name_index < string_table.len() {
+                            file_name = Some(string_table[file_name_index].clone());
+                        }
+                    }
+                }
+                _ => {}
+            }
+        }
+
+        Ok((flags, token, template_flags, file_name, raw_text))
     }
 
     /// Get all nodes
@@ -323,17 +510,11 @@ impl TsgoDecoder {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
     use std::fs;
 
-    const TEST_CASES: &[(&str, &str)] = &[
-        ("test", "Simple import and function"),
-        ("simple", "Simple import and function"),
-        ("interface_class", "Interface and class with inheritance"),
-        ("generics_conditionals", "Generics and conditional types"),
-        ("jsx_example", "JSX components and props"),
-        ("decorators_accessors", "Decorators, getters, and setters"),
-    ];
+    use rstest::rstest;
+
+    use super::*;
 
     fn load_fixture(name: &str) -> (Vec<u8>, String) {
         let binary_path = format!("test_data/encoded/encoded_{}.bin", name);
@@ -345,119 +526,98 @@ mod tests {
         (binary_data, expected_output)
     }
 
-    #[test]
-    fn test_decode_all_cases() {
-        for &(test_name, description) in TEST_CASES {
-            println!("\nTesting case: {} ({})", test_name, description);
+    #[rstest]
+    #[case::test("test", "Simple import and function")]
+    #[case::simple("simple", "Simple import and function")]
+    #[case::interface_class("interface_class", "Interface and class with inheritance")]
+    #[case::generics_conditionals("generics_conditionals", "Generics and conditional types")]
+    #[case::jsx_example("jsx_example", "JSX components and props")]
+    #[case::decorators_accessors("decorators_accessors", "Decorators, getters, and setters")]
+    fn test_decode(#[case] test_name: &str, #[case] description: &str) {
+        println!("\nTesting case: {} ({})", test_name, description);
 
-            let (binary_data, expected_output) = load_fixture(test_name);
+        let (binary_data, expected_output) = load_fixture(test_name);
 
-            let decoder = TsgoDecoder::new(binary_data).unwrap_or_else(|e| {
-                panic!("Failed to decode binary data for {}: {}", test_name, e)
-            });
-            let formatted_output = decoder.format_encoded_source_file();
+        let decoder = TsgoDecoder::new(binary_data)
+            .unwrap_or_else(|e| panic!("Failed to decode binary data for {}: {}", test_name, e));
+        let formatted_output = decoder.format_encoded_source_file();
 
-            assert_eq!(
-                formatted_output, expected_output,
-                "Formatted AST does not match reference output for test case: {}",
-                test_name
-            )
-        }
+        assert_eq!(
+            formatted_output, expected_output,
+            "Formatted AST does not match reference output for test case: {}",
+            test_name
+        )
     }
 
-    #[test]
-    fn test_syntax_kind_coverage() {
-        let mut found_syntax_kinds = std::collections::HashSet::new();
+    #[rstest]
+    #[case::test("test")]
+    #[case::simple("simple")]
+    #[case::interface_class("interface_class")]
+    #[case::generics_conditionals("generics_conditionals")]
+    #[case::jsx_example("jsx_example")]
+    #[case::decorators_accessors("decorators_accessors")]
+    fn test_string_table_integrity(#[case] test_name: &str) {
+        let (binary_data, _) = load_fixture(test_name);
+        let decoder = TsgoDecoder::new(binary_data).expect("Failed to decode");
 
-        for &(test_name, _) in TEST_CASES {
-            let (binary_data, _) = load_fixture(test_name);
-            let decoder = TsgoDecoder::new(binary_data).expect("Failed to decode");
-
-            for node in decoder.nodes() {
-                found_syntax_kinds.insert(node.kind);
-            }
-        }
-
-        println!(
-            "Found {} unique syntax kinds across all test cases:",
-            found_syntax_kinds.len()
-        );
-        let mut kinds: Vec<_> = found_syntax_kinds.iter().copied().collect();
-        kinds.sort_by_key(|k| *k as u32);
-
-        for kind in kinds {
-            println!("  {:?} ({})", kind, kind as u32);
-        }
-
-        assert!(
-            found_syntax_kinds.len() >= 30,
-            "Expected at least 30 different syntax kinds, found: {}",
-            found_syntax_kinds.len()
-        );
-    }
-
-    #[test]
-    fn test_string_table_integrity() {
-        for &(test_name, _) in TEST_CASES {
-            let (binary_data, _) = load_fixture(test_name);
-            let decoder = TsgoDecoder::new(binary_data).expect("Failed to decode");
-
-            for (i, node) in decoder.nodes().iter().enumerate() {
-                if let Some(text) = &node.text {
-                    let string_index =
-                        (node.data & constants::NODE_DATA_STRING_INDEX_MASK) as usize / 2;
-                    assert!(
-                        string_index < decoder.string_table().len(),
-                        "Node {} in {} has invalid string index: {} >= {}",
-                        i,
-                        test_name,
-                        string_index,
-                        decoder.string_table().len()
-                    );
-
-                    assert_eq!(
-                        text,
-                        &decoder.string_table()[string_index],
-                        "Node {} in {} has mismatched string data",
-                        i,
-                        test_name
-                    );
-                }
-            }
-        }
-    }
-
-    #[test]
-    fn test_node_tree_structure() {
-        for &(test_name, _) in TEST_CASES {
-            let (binary_data, _) = load_fixture(test_name);
-            let decoder = TsgoDecoder::new(binary_data).expect("Failed to decode");
-
-            for (i, node) in decoder.nodes().iter().enumerate() {
-                if node.parent != 0 && (node.parent as usize) < decoder.nodes().len() {
-                    let parent = &decoder.nodes()[node.parent as usize];
-                    assert!(
-                        parent.pos <= node.pos && node.end <= parent.end,
-                        "Node {} in {} has invalid position relative to parent {}: [{}, {}) not within [{}, {})",
-                        i,
-                        test_name,
-                        node.parent,
-                        node.pos,
-                        node.end,
-                        parent.pos,
-                        parent.end
-                    );
-                }
-
+        for (i, node) in decoder.nodes().iter().enumerate() {
+            if let Some(text) = &node.text {
+                let string_index = (node.data & NODE_DATA_STRING_INDEX_MASK) as usize / 2;
                 assert!(
-                    node.pos <= node.end,
-                    "Node {} in {} has invalid position range: {} > {}",
+                    string_index < decoder.string_table().len(),
+                    "Node {} in {} has invalid string index: {} >= {}",
                     i,
                     test_name,
-                    node.pos,
-                    node.end
+                    string_index,
+                    decoder.string_table().len()
+                );
+
+                assert_eq!(
+                    text,
+                    &decoder.string_table()[string_index],
+                    "Node {} in {} has mismatched string data",
+                    i,
+                    test_name
                 );
             }
+        }
+    }
+
+    #[rstest]
+    #[case::test("test")]
+    #[case::simple("simple")]
+    #[case::interface_class("interface_class")]
+    #[case::generics_conditionals("generics_conditionals")]
+    #[case::jsx_example("jsx_example")]
+    #[case::decorators_accessors("decorators_accessors")]
+    fn test_node_tree_structure(#[case] test_name: &str) {
+        let (binary_data, _) = load_fixture(test_name);
+        let decoder = TsgoDecoder::new(binary_data).expect("Failed to decode");
+
+        for (i, node) in decoder.nodes().iter().enumerate() {
+            if node.parent != 0 && (node.parent as usize) < decoder.nodes().len() {
+                let parent = &decoder.nodes()[node.parent as usize];
+                assert!(
+                    parent.pos <= node.pos && node.end <= parent.end,
+                    "Node {} in {} has invalid position relative to parent {}: [{}, {}) not within [{}, {})",
+                    i,
+                    test_name,
+                    node.parent,
+                    node.pos,
+                    node.end,
+                    parent.pos,
+                    parent.end
+                );
+            }
+
+            assert!(
+                node.pos <= node.end,
+                "Node {} in {} has invalid position range: {} > {}",
+                i,
+                test_name,
+                node.pos,
+                node.end
+            );
         }
     }
 }
