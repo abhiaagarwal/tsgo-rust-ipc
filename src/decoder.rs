@@ -476,6 +476,11 @@ impl TsgoDecoder {
             format!("  {}", get_indent(parent_node.parent, nodes))
         }
 
+        let mut next_sibling_map = std::collections::HashMap::new();
+        for (i, node) in self.nodes.iter().enumerate().skip(1) {
+            next_sibling_map.insert(i, node.next_sibling);
+        }
+
         for (i, node) in self.nodes.iter().enumerate().skip(1) {
             // Skip the nil node at index 0
             let indent = get_indent(node.parent, &self.nodes);
@@ -497,9 +502,12 @@ impl TsgoDecoder {
                 }
             }
 
+            let next_value =
+                self.data[self.header.nodes_offset as usize + i * NODE_SIZE + NODE_OFFSET_NEXT];
+
             result.push_str(&format!(
                 " [{}, {}), i={}, next={}",
-                node.pos, node.end, i, node.next_sibling
+                node.pos, node.end, i, next_value
             ));
             result.push('\n');
         }
@@ -510,88 +518,110 @@ impl TsgoDecoder {
 
 #[cfg(test)]
 mod tests {
-    use std::fs;
+    use std::{fs, path::Path};
 
     use rstest::rstest;
+    use similar_asserts::assert_eq;
 
     use super::*;
 
-    fn load_fixture(name: &str) -> (Vec<u8>, String) {
-        let binary_path = format!("test_data/encoded/encoded_{}.bin", name);
-        let expected_path = format!("test_data/encoded/formatted_{}.txt", name);
-        let binary_data = fs::read(&binary_path)
-            .unwrap_or_else(|e| panic!("Failed to read binary test data for {}: {}", name, e));
-        let expected_output = fs::read_to_string(&expected_path)
-            .unwrap_or_else(|e| panic!("Failed to read expected output for {}: {}", name, e));
-        (binary_data, expected_output)
+    fn extract_test_name(binary_path: &Path) -> String {
+        binary_path
+            .file_stem()
+            .and_then(|s| s.to_str())
+            .map(|s| s.strip_suffix(".bin").unwrap_or(s))
+            .unwrap_or("unknown")
+            .to_string()
+    }
+
+    fn find_go_dump_path(binary_path: &Path) -> std::path::PathBuf {
+        let test_name = extract_test_name(binary_path);
+        let test_path_string = format!("test_data/dumps/go/{}.txt", test_name);
+        let test_path = Path::new(&test_path_string);
+
+        if test_path.exists() {
+            test_path.to_path_buf()
+        } else {
+            panic!("No reference dump found for {}", test_name);
+        }
     }
 
     #[rstest]
-    #[case::test("test", "Simple import and function")]
-    #[case::simple("simple", "Simple import and function")]
-    #[case::interface_class("interface_class", "Interface and class with inheritance")]
-    #[case::generics_conditionals("generics_conditionals", "Generics and conditional types")]
-    #[case::jsx_example("jsx_example", "JSX components and props")]
-    #[case::decorators_accessors("decorators_accessors", "Decorators, getters, and setters")]
-    fn test_decode(#[case] test_name: &str, #[case] description: &str) {
-        println!("\nTesting case: {} ({})", test_name, description);
+    fn test_decode_and_format(#[files("test_data/encoded/*.bin")] binary_path: std::path::PathBuf) {
+        let test_name = extract_test_name(&binary_path);
 
-        let (binary_data, expected_output) = load_fixture(test_name);
+        let binary_data = fs::read(&binary_path).unwrap_or_else(|e| {
+            panic!(
+                "Failed to read binary test data from {}: {}",
+                binary_path.display(),
+                e
+            )
+        });
 
         let decoder = TsgoDecoder::new(binary_data)
             .unwrap_or_else(|e| panic!("Failed to decode binary data for {}: {}", test_name, e));
+
         let formatted_output = decoder.format_encoded_source_file();
+
+        let dump_path = find_go_dump_path(&binary_path);
+        let expected_output = fs::read_to_string(&dump_path).unwrap_or_else(|e| {
+            panic!(
+                "Failed to read expected output from {}: {}",
+                dump_path.display(),
+                e
+            )
+        });
 
         assert_eq!(
             formatted_output, expected_output,
-            "Formatted AST does not match reference output for test case: {}",
+            "Formatted AST does not match Go reference output for test case: {}",
             test_name
-        )
+        );
     }
 
     #[rstest]
-    #[case::test("test")]
-    #[case::simple("simple")]
-    #[case::interface_class("interface_class")]
-    #[case::generics_conditionals("generics_conditionals")]
-    #[case::jsx_example("jsx_example")]
-    #[case::decorators_accessors("decorators_accessors")]
-    fn test_string_table_integrity(#[case] test_name: &str) {
-        let (binary_data, _) = load_fixture(test_name);
+    fn test_string_table_integrity(
+        #[files("test_data/encoded/*.bin")] binary_path: std::path::PathBuf,
+    ) {
+        let test_name = extract_test_name(&binary_path);
+
+        let binary_data = fs::read(&binary_path).expect("Failed to read binary test data");
         let decoder = TsgoDecoder::new(binary_data).expect("Failed to decode");
 
         for (i, node) in decoder.nodes().iter().enumerate() {
             if let Some(text) = &node.text {
-                let string_index = (node.data & NODE_DATA_STRING_INDEX_MASK) as usize / 2;
-                assert!(
-                    string_index < decoder.string_table().len(),
-                    "Node {} in {} has invalid string index: {} >= {}",
-                    i,
-                    test_name,
-                    string_index,
-                    decoder.string_table().len()
-                );
+                let data_type = node.data & NODE_DATA_TYPE_MASK;
 
-                assert_eq!(
-                    text,
-                    &decoder.string_table()[string_index],
-                    "Node {} in {} has mismatched string data",
-                    i,
-                    test_name
-                );
+                if data_type == NODE_DATA_TYPE_STRING {
+                    let string_index = (node.data & NODE_DATA_STRING_INDEX_MASK) as usize / 2;
+                    assert!(
+                        string_index < decoder.string_table().len(),
+                        "Node {} in {} has invalid string index: {} >= {}",
+                        i,
+                        test_name,
+                        string_index,
+                        decoder.string_table().len()
+                    );
+
+                    assert_eq!(
+                        text,
+                        &decoder.string_table()[string_index],
+                        "Node {} in {} has mismatched string data",
+                        i,
+                        test_name
+                    );
+                }
             }
         }
     }
 
     #[rstest]
-    #[case::test("test")]
-    #[case::simple("simple")]
-    #[case::interface_class("interface_class")]
-    #[case::generics_conditionals("generics_conditionals")]
-    #[case::jsx_example("jsx_example")]
-    #[case::decorators_accessors("decorators_accessors")]
-    fn test_node_tree_structure(#[case] test_name: &str) {
-        let (binary_data, _) = load_fixture(test_name);
+    fn test_node_tree_structure(
+        #[files("test_data/encoded/*.bin")] binary_path: std::path::PathBuf,
+    ) {
+        let test_name = extract_test_name(&binary_path);
+
+        let binary_data = fs::read(&binary_path).expect("Failed to read binary test data");
         let decoder = TsgoDecoder::new(binary_data).expect("Failed to decode");
 
         for (i, node) in decoder.nodes().iter().enumerate() {

@@ -17,3 +17,7 @@ tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
 
 [dev-dependencies]
 rstest = "0.25.0"
+similar-asserts = "1.6"
+
+[profile.dev.package]
+similar.opt-level = 3
