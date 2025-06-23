@@ -206,11 +206,7 @@ impl TsgoDecoder {
                 }
 
                 let string_bytes = &data[string_start..string_end];
-                let string = String::from_utf8(string_bytes.to_vec()).map_err(|e| {
-                    TsgoError::InvalidUtf8 {
-                        context: format!("String table entry {}: {}", i, e),
-                    }
-                })?;
+                let string = String::from_utf8_lossy(string_bytes).to_string();
                 Ok(string)
             })
             .collect::<Result<Vec<String>>>()?;
@@ -564,13 +560,16 @@ mod tests {
         let formatted_output = decoder.format_encoded_source_file();
 
         let dump_path = find_go_dump_path(&binary_path);
-        let expected_output = fs::read_to_string(&dump_path).unwrap_or_else(|e| {
-            panic!(
-                "Failed to read expected output from {}: {}",
-                dump_path.display(),
-                e
-            )
-        });
+        let expected_output = {
+            let bytes = fs::read(&dump_path).unwrap_or_else(|e| {
+                panic!(
+                    "Failed to read expected output from {}: {}",
+                    dump_path.display(),
+                    e
+                )
+            });
+            String::from_utf8_lossy(&bytes).to_string()
+        };
 
         assert_eq!(
             formatted_output, expected_output,
