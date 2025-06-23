@@ -2,6 +2,8 @@ use crate::{
     errors::{Result, TsgoError},
     syntax::SyntaxKind,
 };
+use byteorder::{LittleEndian, ReadBytesExt};
+use std::io::Cursor;
 
 pub mod constants {
     pub const NODE_OFFSET_KIND: usize = 0;
@@ -30,8 +32,7 @@ pub mod constants {
     pub const HEADER_OFFSET_NODES: usize = 16;
     pub const HEADER_SIZE: usize = 20;
 
-    // TODO(aagarwal): This should be 1, regen test data to match
-    pub const PROTOCOL_VERSION: u8 = 0;
+    pub const PROTOCOL_VERSION: u8 = 1;
 }
 
 use constants::*;
@@ -95,7 +96,9 @@ impl TsgoDecoder {
             });
         }
 
-        let protocol_version = data[HEADER_OFFSET_METADATA];
+        let mut cursor = Cursor::new(data);
+        let metadata = cursor.read_u32::<LittleEndian>()?;
+        let protocol_version = (metadata >> 24) as u8;
         if protocol_version != PROTOCOL_VERSION {
             return Err(TsgoError::UnsupportedProtocolVersion {
                 expected: PROTOCOL_VERSION,
@@ -103,33 +106,11 @@ impl TsgoDecoder {
             });
         }
 
-        let string_offsets_offset = u32::from_le_bytes([
-            data[HEADER_OFFSET_STRING_OFFSETS],
-            data[HEADER_OFFSET_STRING_OFFSETS + 1],
-            data[HEADER_OFFSET_STRING_OFFSETS + 2],
-            data[HEADER_OFFSET_STRING_OFFSETS + 3],
-        ]);
-
-        let string_data_offset = u32::from_le_bytes([
-            data[HEADER_OFFSET_STRING_DATA],
-            data[HEADER_OFFSET_STRING_DATA + 1],
-            data[HEADER_OFFSET_STRING_DATA + 2],
-            data[HEADER_OFFSET_STRING_DATA + 3],
-        ]);
-
-        let extended_data_offset = u32::from_le_bytes([
-            data[HEADER_OFFSET_EXTENDED_DATA],
-            data[HEADER_OFFSET_EXTENDED_DATA + 1],
-            data[HEADER_OFFSET_EXTENDED_DATA + 2],
-            data[HEADER_OFFSET_EXTENDED_DATA + 3],
-        ]);
-
-        let nodes_offset = u32::from_le_bytes([
-            data[HEADER_OFFSET_NODES],
-            data[HEADER_OFFSET_NODES + 1],
-            data[HEADER_OFFSET_NODES + 2],
-            data[HEADER_OFFSET_NODES + 3],
-        ]);
+        cursor.set_position(HEADER_OFFSET_STRING_OFFSETS as u64);
+        let string_offsets_offset = cursor.read_u32::<LittleEndian>()?;
+        let string_data_offset = cursor.read_u32::<LittleEndian>()?;
+        let extended_data_offset = cursor.read_u32::<LittleEndian>()?;
+        let nodes_offset = cursor.read_u32::<LittleEndian>()?;
 
         Ok(Header {
             protocol_version,
@@ -159,31 +140,12 @@ impl TsgoDecoder {
             });
         }
 
-        // String table contains pairs of offsets, so each string takes 8 bytes
+        let mut cursor = Cursor::new(&data[string_offsets_start..string_data_start]);
         let num_strings = (string_data_start - string_offsets_start) / 8;
         let strings: Vec<String> = (0..num_strings)
             .map(|i| {
-                let offset_pos = string_offsets_start + i * 8;
-                if offset_pos + 8 > data.len() {
-                    return Err(TsgoError::BufferTooSmall {
-                        needed: offset_pos + 8,
-                        available: data.len(),
-                    });
-                }
-
-                let start_offset = u32::from_le_bytes([
-                    data[offset_pos],
-                    data[offset_pos + 1],
-                    data[offset_pos + 2],
-                    data[offset_pos + 3],
-                ]) as usize;
-
-                let end_offset = u32::from_le_bytes([
-                    data[offset_pos + 4],
-                    data[offset_pos + 5],
-                    data[offset_pos + 6],
-                    data[offset_pos + 7],
-                ]) as usize;
+                let start_offset = cursor.read_u32::<LittleEndian>()? as usize;
+                let end_offset = cursor.read_u32::<LittleEndian>()? as usize;
 
                 let string_start = string_data_start + start_offset;
                 let string_end = string_data_start + end_offset;
@@ -224,60 +186,20 @@ impl TsgoDecoder {
             });
         }
 
-        let nodes: Vec<Node> = (0..(data.len() - nodes_start) / NODE_SIZE)
-            .map(|i| {
-                let node_start = nodes_start + i * NODE_SIZE;
-                if node_start + NODE_SIZE > data.len() {
-                    return Err(TsgoError::NodeDataBufferTooSmall {
-                        node_index: i,
-                        needed: node_start + NODE_SIZE,
-                        available: data.len(),
-                    });
-                }
+        let nodes_data = &data[nodes_start..];
+        let mut cursor = Cursor::new(nodes_data);
+        let num_nodes = nodes_data.len() / NODE_SIZE;
 
-                let kind_raw = u32::from_le_bytes([
-                    data[node_start + NODE_OFFSET_KIND],
-                    data[node_start + NODE_OFFSET_KIND + 1],
-                    data[node_start + NODE_OFFSET_KIND + 2],
-                    data[node_start + NODE_OFFSET_KIND + 3],
-                ]);
-
+        let nodes: Vec<Node> = (0..num_nodes)
+            .map(|_i| {
+                let kind_raw = cursor.read_u32::<LittleEndian>()?;
                 let kind = SyntaxKind::from_repr(kind_raw).unwrap_or(SyntaxKind::Unknown);
 
-                let pos = u32::from_le_bytes([
-                    data[node_start + NODE_OFFSET_POS],
-                    data[node_start + NODE_OFFSET_POS + 1],
-                    data[node_start + NODE_OFFSET_POS + 2],
-                    data[node_start + NODE_OFFSET_POS + 3],
-                ]);
-
-                let end = u32::from_le_bytes([
-                    data[node_start + NODE_OFFSET_END],
-                    data[node_start + NODE_OFFSET_END + 1],
-                    data[node_start + NODE_OFFSET_END + 2],
-                    data[node_start + NODE_OFFSET_END + 3],
-                ]);
-
-                let next_sibling = u32::from_le_bytes([
-                    data[node_start + NODE_OFFSET_NEXT],
-                    data[node_start + NODE_OFFSET_NEXT + 1],
-                    data[node_start + NODE_OFFSET_NEXT + 2],
-                    data[node_start + NODE_OFFSET_NEXT + 3],
-                ]);
-
-                let parent = u32::from_le_bytes([
-                    data[node_start + NODE_OFFSET_PARENT],
-                    data[node_start + NODE_OFFSET_PARENT + 1],
-                    data[node_start + NODE_OFFSET_PARENT + 2],
-                    data[node_start + NODE_OFFSET_PARENT + 3],
-                ]);
-
-                let node_data = u32::from_le_bytes([
-                    data[node_start + NODE_OFFSET_DATA],
-                    data[node_start + NODE_OFFSET_DATA + 1],
-                    data[node_start + NODE_OFFSET_DATA + 2],
-                    data[node_start + NODE_OFFSET_DATA + 3],
-                ]);
+                let pos = cursor.read_u32::<LittleEndian>()?;
+                let end = cursor.read_u32::<LittleEndian>()?;
+                let next_sibling = cursor.read_u32::<LittleEndian>()?;
+                let parent = cursor.read_u32::<LittleEndian>()?;
+                let node_data = cursor.read_u32::<LittleEndian>()?;
 
                 let text = Self::decode_node_text(&kind, node_data, string_table, data, header)?;
 
@@ -331,13 +253,8 @@ impl TsgoDecoder {
                         + (node_data & NODE_EXTENDED_DATA_MASK) as usize;
 
                     if extended_data_offset + 4 <= data.len() {
-                        let string_index = u32::from_le_bytes([
-                            data[extended_data_offset],
-                            data[extended_data_offset + 1],
-                            data[extended_data_offset + 2],
-                            data[extended_data_offset + 3],
-                        ]) as usize
-                            / 2;
+                        let mut cursor = Cursor::new(&data[extended_data_offset..]);
+                        let string_index = cursor.read_u32::<LittleEndian>()? as usize / 2;
 
                         if string_index < string_table.len() {
                             Ok(Some(string_table[string_index].clone()))
@@ -397,35 +314,22 @@ impl TsgoDecoder {
                 | SyntaxKind::TemplateMiddle
                 | SyntaxKind::TemplateTail => {
                     if extended_data_offset + 12 <= data.len() {
-                        let raw_text_index = u32::from_le_bytes([
-                            data[extended_data_offset + 4],
-                            data[extended_data_offset + 5],
-                            data[extended_data_offset + 6],
-                            data[extended_data_offset + 7],
-                        ]) as usize
-                            / 2;
+                        let mut cursor = Cursor::new(&data[extended_data_offset..]);
+                        cursor.set_position(4); // raw_text is at offset 4
+                        let raw_text_index = cursor.read_u32::<LittleEndian>()? as usize / 2;
 
                         if raw_text_index < string_table.len() {
                             raw_text = Some(string_table[raw_text_index].clone());
                         }
 
-                        template_flags = Some(u32::from_le_bytes([
-                            data[extended_data_offset + 8],
-                            data[extended_data_offset + 9],
-                            data[extended_data_offset + 10],
-                            data[extended_data_offset + 11],
-                        ]));
+                        template_flags = Some(cursor.read_u32::<LittleEndian>()?);
                     }
                 }
                 SyntaxKind::SourceFile => {
                     if extended_data_offset + 8 <= data.len() {
-                        let file_name_index = u32::from_le_bytes([
-                            data[extended_data_offset + 4],
-                            data[extended_data_offset + 5],
-                            data[extended_data_offset + 6],
-                            data[extended_data_offset + 7],
-                        ]) as usize
-                            / 2;
+                        let mut cursor = Cursor::new(&data[extended_data_offset..]);
+                        cursor.set_position(4); // file_name is at offset 4
+                        let file_name_index = cursor.read_u32::<LittleEndian>()? as usize / 2;
 
                         if file_name_index < string_table.len() {
                             file_name = Some(string_table[file_name_index].clone());
