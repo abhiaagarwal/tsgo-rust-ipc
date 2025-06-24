@@ -4,3 +4,4 @@ pub mod decoder;
 pub mod errors;
 pub mod syntax;
 pub mod transport;
+pub mod vfs;

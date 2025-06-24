@@ -117,4 +117,11 @@ pub enum TsgoError {
 
     #[error("Message decode incomplete: expected more data")]
     IncompleteMessage,
+
+    #[error("Virtual file system error during {operation} on '{path}': {error_message}")]
+    VfsError {
+        operation: String,
+        path: String,
+        error_message: String,
+    },
 }

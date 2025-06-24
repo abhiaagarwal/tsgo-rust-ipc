@@ -1,9 +1,11 @@
+use std::io::Cursor;
+
+use byteorder::{LittleEndian, ReadBytesExt};
+
 use crate::{
     errors::{Result, TsgoError},
     syntax::SyntaxKind,
 };
-use byteorder::{LittleEndian, ReadBytesExt};
-use std::io::Cursor;
 
 pub mod constants {
     pub const NODE_OFFSET_KIND: usize = 0;
