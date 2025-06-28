@@ -1,4 +1,7 @@
-use std::{collections::HashMap, future::Future, pin::Pin, process::Stdio, sync::Arc};
+use std::{
+    collections::HashMap, error::Error, future::Future, marker::PhantomData, pin::Pin,
+    process::Stdio, sync::Arc,
+};
 
 use rmp::{
     decode::{read_array_len, read_bin_len, read_u8},
@@ -11,7 +14,6 @@ use tokio::{
     io::{AsyncReadExt, AsyncWriteExt, BufReader},
     process::{Child, ChildStdin, ChildStdout, Command},
 };
-use tsgo_vfs::VirtualFileSystem;
 
 use crate::{Result, TransportError};
 
@@ -103,26 +105,34 @@ impl ProtocolMessage {
     }
 }
 
-pub type CallbackFunction<'t> = Arc<dyn Fn(Value) -> Result<Value> + Send + Sync + 't>;
+pub type CallbackFunction<'t, CallbackError> =
+    Arc<dyn Fn(Value) -> std::result::Result<Value, CallbackError> + Send + Sync + 't>;
 
-pub type AsyncCallbackFunction<'t> = Arc<
-    dyn Fn(Value) -> Pin<Box<dyn Future<Output = Result<Value>> + Send + 't>> + Send + Sync + 't,
+pub type AsyncCallbackFunction<'t, CallbackError> = Arc<
+    dyn Fn(
+            Value,
+        )
+            -> Pin<Box<dyn Future<Output = std::result::Result<Value, CallbackError>> + Send + 't>>
+        + Send
+        + Sync
+        + 't,
 >;
 
-pub enum Callback<'t> {
-    Sync(CallbackFunction<'t>),
-    Async(AsyncCallbackFunction<'t>),
+pub enum Callback<'t, CallbackError> {
+    Sync(CallbackFunction<'t, CallbackError>),
+    Async(AsyncCallbackFunction<'t, CallbackError>),
 }
 
 /// Transport layer for communicating with tsgo server
-pub struct TsgoTransport<'t> {
+pub struct TsgoTransport<'t, CallbackError: Error> {
     child: Child,
     stdin: ChildStdin,
     stdout: BufReader<ChildStdout>,
-    callbacks: HashMap<String, Callback<'t>>,
+    callbacks: HashMap<String, Callback<'t, CallbackError>>,
+    _phantom: PhantomData<CallbackError>,
 }
 
-impl<'t> TsgoTransport<'t> {
+impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
     /// Create a new transport by spawning the tsgo process
     pub async fn new(tsgo_path: &str, cwd: Option<&str>) -> Result<Self> {
         let mut cmd = Command::new(tsgo_path);
@@ -156,6 +166,7 @@ impl<'t> TsgoTransport<'t> {
             stdin,
             stdout,
             callbacks: HashMap::new(),
+            _phantom: PhantomData,
         })
     }
 
@@ -177,7 +188,7 @@ impl<'t> TsgoTransport<'t> {
     /// Register a synchronous callback function
     pub fn register_callback<F>(&mut self, name: String, callback: F)
     where
-        F: Fn(Value) -> Result<Value> + Send + Sync + 't,
+        F: Fn(Value) -> std::result::Result<Value, CallbackError> + Send + Sync + 't,
     {
         self.callbacks
             .insert(name, Callback::Sync(Arc::new(callback)));
@@ -187,109 +198,16 @@ impl<'t> TsgoTransport<'t> {
     pub fn register_async_callback<F, Fut>(&mut self, name: String, callback: F)
     where
         F: Fn(Value) -> Fut + Send + Sync + 't,
-        Fut: Future<Output = Result<Value>> + Send + 't,
+        Fut: Future<Output = std::result::Result<Value, CallbackError>> + Send + 't,
     {
         let async_callback = Arc::new(move |value| {
             let fut = callback(value);
-            Box::pin(fut) as Pin<Box<dyn Future<Output = Result<Value>> + Send + 't>>
+            Box::pin(fut)
+                as Pin<
+                    Box<dyn Future<Output = std::result::Result<Value, CallbackError>> + Send + 't>,
+                >
         });
         self.callbacks.insert(name, Callback::Async(async_callback));
-    }
-
-    /// Register a virtual file system and set up all required callbacks
-    ///
-    /// This will register callbacks for:
-    /// - readFile
-    /// - fileExists
-    /// - directoryExists
-    /// - realpath
-    /// - getAccessibleEntries
-    pub fn register_fs(&mut self, fs: &'t Arc<dyn VirtualFileSystem + Send + Sync>) {
-        self.register_async_callback("readFile".to_string(), move |args| {
-            let path = args
-                .as_str()
-                .ok_or_else(|| TransportError::CallbackExecutionFailed {
-                    method: "readFile".to_string(),
-                    reason: "Expected string argument for path".to_string(),
-                })
-                .map(|s| s.to_string());
-
-            Box::pin(async move {
-                let path = path?;
-                let result = fs.read_file(&path).await?;
-                Ok(match result {
-                    Some(content) => Value::String(content),
-                    None => Value::Null,
-                })
-            })
-        });
-
-        self.register_callback("fileExists".to_string(), move |args| {
-            let path = args
-                .as_str()
-                .ok_or_else(|| TransportError::CallbackExecutionFailed {
-                    method: "fileExists".to_string(),
-                    reason: "Expected string argument for path".to_string(),
-                })?;
-
-            let exists = fs.file_exists(path);
-            Ok(Value::Bool(exists))
-        });
-
-        self.register_callback("directoryExists".to_string(), move |args| {
-            let path = args
-                .as_str()
-                .ok_or_else(|| TransportError::CallbackExecutionFailed {
-                    method: "directoryExists".to_string(),
-                    reason: "Expected string argument for path".to_string(),
-                })?;
-
-            let exists = fs.directory_exists(path);
-            Ok(Value::Bool(exists))
-        });
-
-        self.register_callback("realpath".to_string(), move |args| {
-            let path = args
-                .as_str()
-                .ok_or_else(|| TransportError::CallbackExecutionFailed {
-                    method: "realpath".to_string(),
-                    reason: "Expected string argument for path".to_string(),
-                })?;
-
-            let real_path = fs.realpath(path);
-            Ok(Value::String(real_path))
-        });
-
-        self.register_async_callback("getAccessibleEntries".to_string(), move |args| {
-            let path_owned = args
-                .as_str()
-                .ok_or_else(|| TransportError::CallbackExecutionFailed {
-                    method: "getAccessibleEntries".to_string(),
-                    reason: "Expected string argument for path".to_string(),
-                })
-                .map(|s| s.to_string());
-
-            Box::pin(async move {
-                let path = path_owned?;
-                let result = fs.get_accessible_entries(&path).await?;
-
-                Ok(match result {
-                    Some(entries) => serde_json::to_value(entries)?,
-                    None => Value::Null,
-                })
-            })
-        });
-    }
-
-    /// Get the list of filesystem callback method names
-    pub fn get_fs_callback_names() -> Vec<String> {
-        vec![
-            "readFile".to_string(),
-            "fileExists".to_string(),
-            "directoryExists".to_string(),
-            "realpath".to_string(),
-            "getAccessibleEntries".to_string(),
-        ]
     }
 
     /// Send a request and return the response
@@ -686,20 +604,5 @@ mod tests {
         let serialized = to_vec(&msg_type).unwrap();
         let deserialized: MessageType = from_slice(&serialized).unwrap();
         assert_eq!(msg_type, deserialized);
-    }
-
-    /// Integration test that requires tsgo binary
-    #[tokio::test]
-    #[ignore = "requires tsgo binary"]
-    async fn test_real_transport_echo() {
-        let mut transport = TsgoTransport::new("tsgo", Some(".")).await.unwrap();
-
-        let response = transport
-            .request("echo", serde_json::json!("integration_test"))
-            .await
-            .unwrap();
-        assert_eq!(response, serde_json::json!("integration_test"));
-
-        transport.close().await.unwrap();
     }
 }

@@ -4,9 +4,6 @@ pub type Result<T> = std::result::Result<T, TransportError>;
 
 #[derive(Error, Debug)]
 pub enum TransportError {
-    #[error("VFS error: {0}")]
-    Vfs(#[from] tsgo_vfs::VfsError),
-
     #[error("IO error: {0}")]
     Io(#[from] std::io::Error),
 

@@ -1,13 +1,15 @@
 [package]
 name = "tsgo-rust-ipc-integration-tests"
-version = "0.1.0"
-edition = "2024"
-rust-version = "1.85"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
 
 [dependencies]
 tsgo-rust-ipc = { path = "../crates/tsgo-rust-ipc" }
 tsgo-vfs = { workspace = true }
 tsgo-transport = { workspace = true }
+tsgo-client = { path = "../crates/tsgo-client" }
 
 tokio = { workspace = true, features = ["full"] }
 serde_json = { workspace = true }

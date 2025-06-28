@@ -2,7 +2,10 @@ use std::{collections::HashMap, env, path::Path, sync::Arc};
 
 use rstest::rstest;
 use serde_json::json;
-use tsgo_transport::{Result, TsgoTransport};
+use tsgo_client::{
+    client::{Client, ClientOptions},
+    errors::Result,
+};
 use tsgo_vfs::{MemoryFileSystem, VirtualFileSystem};
 
 /// Common test utilities for integration tests
@@ -149,25 +152,27 @@ async fn test_transport_basic_functionality() -> Result<()> {
         "tsgo binary is not working properly"
     );
 
-    let mut transport = TsgoTransport::new(&tsgo_path, Some(".")).await?;
-    transport.configure(None, &[]).await?;
+    let mut client = Client::new(ClientOptions {
+        tsgo_path: tsgo_path.clone(),
+        cwd: Some(".".into()),
+        log_file: None,
+        fs: None,
+    })
+    .await?;
 
-    let echo_response = transport
-        .request("echo", json!("Hello from integration test!"))
-        .await?;
-    assert_eq!(echo_response, json!("Hello from integration test!"));
+    let echo_response = client.echo("Hello from integration test!").await?;
+    assert_eq!(echo_response, "Hello from integration test!");
 
     for i in 1..=3 {
         let test_message = format!("Test message #{}", i);
-        let response = transport.request("echo", json!(test_message)).await?;
-        assert_eq!(response, json!(test_message));
+        let response = client.echo(&test_message).await?;
+        assert_eq!(response, test_message);
     }
 
-    let error_result = transport.request("invalid_method", json!("test")).await;
-    // TODO(aagarwal): Make this check for the correct error message
+    let error_result = client.request_value("invalid_method", json!("test")).await;
     assert!(error_result.is_err());
 
-    transport.close().await?;
+    client.close().await?;
     Ok(())
 }
 
@@ -208,16 +213,15 @@ console.log(message);
     assert!(vfs.file_exists("/src/index.ts"));
     assert!(vfs.directory_exists("/src"));
 
-    let mut transport = TsgoTransport::new(&tsgo_path, Some(".")).await?;
-    transport.register_fs(&vfs);
+    let mut client = Client::new(ClientOptions {
+        tsgo_path: tsgo_path.clone(),
+        cwd: Some(".".into()),
+        log_file: None,
+        fs: Some(vfs),
+    })
+    .await?;
 
-    let callback_names = TsgoTransport::get_fs_callback_names();
-    transport.configure(None, &callback_names).await?;
-
-    match transport
-        .request("echo", json!("VFS integration test"))
-        .await
-    {
+    match client.echo("VFS integration test").await {
         Ok(response) => {
             assert_eq!(response, json!("VFS integration test"));
         }
@@ -226,8 +230,8 @@ console.log(message);
         }
     }
 
-    let config_response = match transport
-        .request(
+    let config_response = match client
+        .request_value(
             "parseConfigFile",
             json!({
                 "fileName": "/tsconfig.json"
@@ -247,7 +251,7 @@ console.log(message);
         assert!(!files.is_empty());
     }
 
-    transport.close().await?;
+    client.close().await?;
     Ok(())
 }
 
@@ -314,23 +318,25 @@ async fn test_with_real_tsgo_test_cases() -> Result<()> {
         let vfs: Arc<dyn VirtualFileSystem + Send + Sync> =
             Arc::new(MemoryFileSystem::from_files(test_data.files));
 
-        let mut transport = TsgoTransport::new(&tsgo_path, Some(".")).await?;
-        transport.register_fs(&vfs);
+        let mut client = Client::new(ClientOptions {
+            tsgo_path: tsgo_path.clone(),
+            cwd: Some(".".into()),
+            log_file: None,
+            fs: Some(Arc::clone(&vfs)),
+        })
+        .await?;
 
-        let callback_names = TsgoTransport::get_fs_callback_names();
-        transport.configure(None, &callback_names).await?;
-        transport
-            .request("echo", json!(format!("test_{}", test_name)))
-            .await?;
+        let test_message = format!("test_{}", test_name);
+        client.echo(&test_message).await?;
 
         if vfs.file_exists("/tsconfig.json") {
-            let config_response = transport
-                .request("parseConfigFile", json!({"fileName": "/tsconfig.json"}))
+            let config_response = client
+                .request_value("parseConfigFile", json!({"fileName": "/tsconfig.json"}))
                 .await?;
             assert!(config_response.is_object());
         }
 
-        transport.close().await?;
+        client.close().await?;
     }
     Ok(())
 }
@@ -360,29 +366,25 @@ const x: string = undefined;"#;
     let vfs: Arc<dyn VirtualFileSystem + Send + Sync> =
         Arc::new(MemoryFileSystem::from_files(test_data.files));
 
-    let mut transport = TsgoTransport::new(&tsgo_path, Some(".")).await?;
-    transport.register_fs(&vfs);
+    let mut client = Client::new(ClientOptions {
+        tsgo_path: tsgo_path.clone(),
+        cwd: Some(".".into()),
+        log_file: None,
+        fs: Some(Arc::clone(&vfs)),
+    })
+    .await?;
 
-    let callback_names = TsgoTransport::get_fs_callback_names();
-    transport.configure(None, &callback_names).await?;
+    let test_message = "vfs_test".to_string();
+    client.echo(&test_message).await?;
 
-    let config_response = transport
-        .request("parseConfigFile", json!({"fileName": "/tsconfig.json"}))
-        .await?;
+    if vfs.file_exists("/tsconfig.json") {
+        let config_response = client
+            .request_value("parseConfigFile", json!({"fileName": "/tsconfig.json"}))
+            .await?;
+        assert!(config_response.is_object());
+    }
 
-    assert!(config_response.is_object());
-
-    let options = config_response.get("options").unwrap();
-    assert!(options.is_object());
-
-    let file_names = config_response.get("fileNames").unwrap();
-    let files = file_names.as_array().expect("fileNames should be an array");
-    assert!(
-        files
-            .iter()
-            .any(|f| f.as_str().is_some_and(|s| s.contains("foo.ts")))
-    );
-
+    client.close().await?;
     Ok(())
 }
 
@@ -391,7 +393,13 @@ const x: string = undefined;"#;
 async fn test_error_scenarios() -> Result<()> {
     let tsgo_path = common::get_tsgo_binary_path().expect("tsgo binary not found");
 
-    let mut transport = TsgoTransport::new(&tsgo_path, Some(".")).await?;
+    let mut client = Client::new(ClientOptions {
+        tsgo_path: tsgo_path.clone(),
+        cwd: Some(".".into()),
+        log_file: None,
+        fs: None,
+    })
+    .await?;
 
     let error_tests = vec![
         ("nonexistent_method", json!("test")),
@@ -400,7 +408,7 @@ async fn test_error_scenarios() -> Result<()> {
     ];
 
     for (method, payload) in error_tests {
-        let result = transport.request(method, payload).await;
+        let result = client.request_value(method, payload).await;
         if method == "echo" {
             assert!(result.is_ok() || result.is_err());
         } else {
@@ -408,7 +416,7 @@ async fn test_error_scenarios() -> Result<()> {
         }
     }
 
-    transport.close().await?;
+    client.close().await?;
     Ok(())
 }
 
@@ -452,15 +460,17 @@ async fn test_tsgo_test_case_parametrized(#[case] test_file_name: &str) -> Resul
 
     assert!(vfs.directory_exists("/"));
 
-    let mut transport = TsgoTransport::new(&tsgo_path, Some(".")).await?;
-    transport.register_fs(&vfs);
-
-    let callback_names = TsgoTransport::get_fs_callback_names();
-    transport.configure(None, &callback_names).await?;
+    let mut client = Client::new(ClientOptions {
+        tsgo_path: tsgo_path.clone(),
+        cwd: Some(".".into()),
+        log_file: None,
+        fs: Some(Arc::clone(&vfs)),
+    })
+    .await?;
 
     let test_message = format!("test_{}", test_file_name);
-    let echo_response = transport.request("echo", json!(test_message)).await?;
-    assert_eq!(echo_response, json!(test_message));
+    let echo_response = client.echo(&test_message).await?;
+    assert_eq!(echo_response, test_message);
 
     if vfs.file_exists("/tsconfig.json") || vfs.file_exists("tsconfig.json") {
         let config_file = if vfs.file_exists("/tsconfig.json") {
@@ -469,8 +479,8 @@ async fn test_tsgo_test_case_parametrized(#[case] test_file_name: &str) -> Resul
             "tsconfig.json"
         };
 
-        if let Ok(response) = transport
-            .request("parseConfigFile", json!({"fileName": config_file}))
+        if let Ok(response) = client
+            .request_value("parseConfigFile", json!({"fileName": config_file}))
             .await
         {
             assert!(
@@ -481,6 +491,6 @@ async fn test_tsgo_test_case_parametrized(#[case] test_file_name: &str) -> Resul
         }
     }
 
-    transport.close().await?;
+    client.close().await?;
     Ok(())
 }

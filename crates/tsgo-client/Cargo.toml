@@ -1,0 +1,19 @@
+[package]
+name = "tsgo-client"
+description = "High-level client wrapper over tsgo-transport"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+# Reuse workspace-shared dependencies wherever possible
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true, features = ["process", "io-util", "macros", "rt"] }
+thiserror = { workspace = true }
+async-trait = { workspace = true }
+strum = { workspace = true }
+
+tsgo-transport = { workspace = true }
+tsgo-vfs = { workspace = true } 
