@@ -93,7 +93,11 @@ impl ProtocolMessage {
             })?;
 
         // Parse payload as JSON
-        let payload: Value = from_str(&payload_str)?;
+        let payload: Value = if payload_str.is_empty() {
+            Value::Null
+        } else {
+            from_str(&payload_str)?
+        };
 
         Ok(ProtocolMessage(msg_type, method, payload))
     }
@@ -195,17 +199,17 @@ impl<'t> TsgoTransport<'t> {
     /// Register a virtual file system and set up all required callbacks
     ///
     /// This will register callbacks for:
-    /// - fs.readFile
-    /// - fs.fileExists
-    /// - fs.directoryExists
-    /// - fs.realpath
-    /// - fs.getAccessibleEntries
+    /// - readFile
+    /// - fileExists
+    /// - directoryExists
+    /// - realpath
+    /// - getAccessibleEntries
     pub fn register_fs(&mut self, fs: &'t Arc<dyn VirtualFileSystem + Send + Sync>) {
-        self.register_async_callback("fs.readFile".to_string(), move |args| {
+        self.register_async_callback("readFile".to_string(), move |args| {
             let path = args
                 .as_str()
                 .ok_or_else(|| TransportError::CallbackExecutionFailed {
-                    method: "fs.readFile".to_string(),
+                    method: "readFile".to_string(),
                     reason: "Expected string argument for path".to_string(),
                 })
                 .map(|s| s.to_string());
@@ -220,11 +224,11 @@ impl<'t> TsgoTransport<'t> {
             })
         });
 
-        self.register_callback("fs.fileExists".to_string(), move |args| {
+        self.register_callback("fileExists".to_string(), move |args| {
             let path = args
                 .as_str()
                 .ok_or_else(|| TransportError::CallbackExecutionFailed {
-                    method: "fs.fileExists".to_string(),
+                    method: "fileExists".to_string(),
                     reason: "Expected string argument for path".to_string(),
                 })?;
 
@@ -232,11 +236,11 @@ impl<'t> TsgoTransport<'t> {
             Ok(Value::Bool(exists))
         });
 
-        self.register_callback("fs.directoryExists".to_string(), move |args| {
+        self.register_callback("directoryExists".to_string(), move |args| {
             let path = args
                 .as_str()
                 .ok_or_else(|| TransportError::CallbackExecutionFailed {
-                    method: "fs.directoryExists".to_string(),
+                    method: "directoryExists".to_string(),
                     reason: "Expected string argument for path".to_string(),
                 })?;
 
@@ -244,11 +248,11 @@ impl<'t> TsgoTransport<'t> {
             Ok(Value::Bool(exists))
         });
 
-        self.register_callback("fs.realpath".to_string(), move |args| {
+        self.register_callback("realpath".to_string(), move |args| {
             let path = args
                 .as_str()
                 .ok_or_else(|| TransportError::CallbackExecutionFailed {
-                    method: "fs.realpath".to_string(),
+                    method: "realpath".to_string(),
                     reason: "Expected string argument for path".to_string(),
                 })?;
 
@@ -256,11 +260,11 @@ impl<'t> TsgoTransport<'t> {
             Ok(Value::String(real_path))
         });
 
-        self.register_async_callback("fs.getAccessibleEntries".to_string(), move |args| {
+        self.register_async_callback("getAccessibleEntries".to_string(), move |args| {
             let path_owned = args
                 .as_str()
                 .ok_or_else(|| TransportError::CallbackExecutionFailed {
-                    method: "fs.getAccessibleEntries".to_string(),
+                    method: "getAccessibleEntries".to_string(),
                     reason: "Expected string argument for path".to_string(),
                 })
                 .map(|s| s.to_string());
@@ -280,11 +284,11 @@ impl<'t> TsgoTransport<'t> {
     /// Get the list of filesystem callback method names
     pub fn get_fs_callback_names() -> Vec<String> {
         vec![
-            "fs.readFile".to_string(),
-            "fs.fileExists".to_string(),
-            "fs.directoryExists".to_string(),
-            "fs.realpath".to_string(),
-            "fs.getAccessibleEntries".to_string(),
+            "readFile".to_string(),
+            "fileExists".to_string(),
+            "directoryExists".to_string(),
+            "realpath".to_string(),
+            "getAccessibleEntries".to_string(),
         ]
     }
 

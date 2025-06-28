@@ -1,0 +1,23 @@
+[package]
+name = "tsgo-rust-ipc-integration-tests"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+
+[dependencies]
+tsgo-rust-ipc = { path = "../crates/tsgo-rust-ipc" }
+tsgo-vfs = { workspace = true }
+tsgo-transport = { workspace = true }
+
+tokio = { workspace = true, features = ["full"] }
+serde_json = { workspace = true }
+rstest = { workspace = true }
+similar-asserts = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true, features = ["env-filter"] }
+
+async-trait = { workspace = true }
+
+[[test]]
+name = "integration_tests"
+path = "integration_tests.rs" 
