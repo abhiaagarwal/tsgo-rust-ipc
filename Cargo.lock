@@ -836,24 +836,66 @@ dependencies = [
 ]
 
 [[package]]
-name = "tsgo-rust-ipc"
+name = "tsgo-decoder"
 version = "0.1.0"
 dependencies = [
  "byteorder",
- "dashmap",
- "dynosaur",
+ "rstest",
+ "serde_json",
+ "similar-asserts",
+ "thiserror",
+ "tsgo-syntax",
+]
+
+[[package]]
+name = "tsgo-rust-ipc"
+version = "0.1.0"
+dependencies = [
  "hex",
+ "rstest",
+ "serde_json",
+ "similar-asserts",
+ "tokio",
+ "tracing",
+ "tracing-subscriber",
+ "tsgo-decoder",
+ "tsgo-syntax",
+ "tsgo-transport",
+ "tsgo-vfs",
+]
+
+[[package]]
+name = "tsgo-syntax"
+version = "0.1.0"
+dependencies = [
+ "strum",
+]
+
+[[package]]
+name = "tsgo-transport"
+version = "0.1.0"
+dependencies = [
  "rmp",
  "rmp-serde",
  "rstest",
  "serde",
  "serde_json",
- "similar-asserts",
  "strum",
  "thiserror",
  "tokio",
- "tracing",
- "tracing-subscriber",
+ "tsgo-vfs",
+]
+
+[[package]]
+name = "tsgo-vfs"
+version = "0.1.0"
+dependencies = [
+ "dashmap",
+ "dynosaur",
+ "serde",
+ "serde_json",
+ "thiserror",
+ "tokio",
  "trait-variant",
 ]
 

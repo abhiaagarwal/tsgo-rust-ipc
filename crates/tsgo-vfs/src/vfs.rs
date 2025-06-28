@@ -8,7 +8,7 @@ use dashmap::DashMap;
 use serde::{Deserialize, Serialize};
 use tokio::fs;
 
-use crate::errors::{Result, TsgoError};
+use crate::{Result, VfsError};
 
 /// Represents the files and directories in a directory
 #[derive(Debug, Clone, Serialize, Deserialize)]
@@ -65,7 +65,7 @@ impl RealFileSystem {
 
     /// Create a new real file system using the current working directory
     pub fn with_cwd() -> Result<Self> {
-        let cwd = std::env::current_dir().map_err(|e| TsgoError::VfsError {
+        let cwd = std::env::current_dir().map_err(|e| VfsError::Operation {
             operation: "get_current_dir".to_string(),
             path: ".".to_string(),
             error_message: e.to_string(),
@@ -90,7 +90,7 @@ impl VirtualFileSystem for RealFileSystem {
         match fs::read_to_string(&resolved_path).await {
             Ok(content) => Ok(Some(content)),
             Err(e) if e.kind() == std::io::ErrorKind::NotFound => Ok(None),
-            Err(e) => Err(TsgoError::VfsError {
+            Err(e) => Err(VfsError::Operation {
                 operation: "read_file".to_string(),
                 path: path.to_string(),
                 error_message: e.to_string(),
@@ -105,7 +105,7 @@ impl VirtualFileSystem for RealFileSystem {
         if let Some(parent) = resolved_path.parent() {
             fs::create_dir_all(parent)
                 .await
-                .map_err(|e| TsgoError::VfsError {
+                .map_err(|e| VfsError::Operation {
                     operation: "create_dir_all".to_string(),
                     path: parent.to_string_lossy().to_string(),
                     error_message: e.to_string(),
@@ -114,7 +114,7 @@ impl VirtualFileSystem for RealFileSystem {
 
         fs::write(&resolved_path, content)
             .await
-            .map_err(|e| TsgoError::VfsError {
+            .map_err(|e| VfsError::Operation {
                 operation: "write_file".to_string(),
                 path: path.to_string(),
                 error_message: e.to_string(),
@@ -148,7 +148,7 @@ impl VirtualFileSystem for RealFileSystem {
             Ok(entries) => entries,
             Err(e) if e.kind() == std::io::ErrorKind::NotFound => return Ok(None),
             Err(e) => {
-                return Err(TsgoError::VfsError {
+                return Err(VfsError::Operation {
                     operation: "read_dir".to_string(),
                     path: path.to_string(),
                     error_message: e.to_string(),
@@ -162,14 +162,14 @@ impl VirtualFileSystem for RealFileSystem {
         while let Some(entry) = entries
             .next_entry()
             .await
-            .map_err(|e| TsgoError::VfsError {
+            .map_err(|e| VfsError::Operation {
                 operation: "read_dir_entry".to_string(),
                 path: path.to_string(),
                 error_message: e.to_string(),
             })?
         {
             let file_name = entry.file_name().to_string_lossy().to_string();
-            let file_type = entry.file_type().await.map_err(|e| TsgoError::VfsError {
+            let file_type = entry.file_type().await.map_err(|e| VfsError::Operation {
                 operation: "get_file_type".to_string(),
                 path: entry.path().to_string_lossy().to_string(),
                 error_message: e.to_string(),
@@ -302,7 +302,7 @@ impl MemoryFileSystem {
             return;
         }
 
-        let file_name = &components[components.len() - 1];
+        let _file_name = &components[components.len() - 1];
 
         // For simplicity, we'll store files at the root level with their full path as key
         let full_path = if components.len() == 1 {

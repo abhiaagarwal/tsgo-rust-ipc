@@ -1,0 +1,16 @@
+[package]
+name = "tsgo-decoder"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Binary format decoder for tsgo data structures"
+
+[dependencies]
+tsgo-syntax = { workspace = true }
+byteorder = { workspace = true }
+thiserror = { workspace = true }
+serde_json = { workspace = true }
+
+[dev-dependencies]
+rstest = { workspace = true }
+similar-asserts = { workspace = true } 

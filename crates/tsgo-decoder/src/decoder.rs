@@ -2,10 +2,8 @@ use std::io::Cursor;
 
 use byteorder::{LittleEndian, ReadBytesExt};
 
-use crate::{
-    errors::{Result, TsgoError},
-    syntax::SyntaxKind,
-};
+use crate::{Result, DecoderError};
+use tsgo_syntax::SyntaxKind;
 
 pub mod constants {
     pub const NODE_OFFSET_KIND: usize = 0;
@@ -92,7 +90,7 @@ impl TsgoDecoder {
     /// Decode the header from binary data
     fn decode_header(data: &[u8]) -> Result<Header> {
         if data.len() < HEADER_SIZE {
-            return Err(TsgoError::BufferTooSmall {
+            return Err(DecoderError::BufferTooSmall {
                 needed: HEADER_SIZE,
                 available: data.len(),
             });
@@ -102,7 +100,7 @@ impl TsgoDecoder {
         let metadata = cursor.read_u32::<LittleEndian>()?;
         let protocol_version = (metadata >> 24) as u8;
         if protocol_version != PROTOCOL_VERSION {
-            return Err(TsgoError::UnsupportedProtocolVersion {
+            return Err(DecoderError::UnsupportedProtocolVersion {
                 expected: PROTOCOL_VERSION,
                 actual: protocol_version,
             });
@@ -130,13 +128,13 @@ impl TsgoDecoder {
         let _extended_data_start = header.extended_data_offset as usize;
 
         if string_offsets_start >= data.len() {
-            return Err(TsgoError::InvalidDataOffset {
+            return Err(DecoderError::InvalidDataOffset {
                 offset: string_offsets_start,
                 buffer_size: data.len(),
             });
         }
         if string_data_start >= data.len() {
-            return Err(TsgoError::InvalidDataOffset {
+            return Err(DecoderError::InvalidDataOffset {
                 offset: string_data_start,
                 buffer_size: data.len(),
             });
@@ -153,7 +151,7 @@ impl TsgoDecoder {
                 let string_end = string_data_start + end_offset;
 
                 if string_end > data.len() {
-                    return Err(TsgoError::StringBoundsOutOfRange {
+                    return Err(DecoderError::StringBoundsOutOfRange {
                         string_index: i,
                         start: string_start,
                         end: string_end,
@@ -162,7 +160,7 @@ impl TsgoDecoder {
                 }
 
                 if string_start > string_end {
-                    return Err(TsgoError::StringBoundsInvalid {
+                    return Err(DecoderError::StringBoundsInvalid {
                         string_index: i,
                         start: string_start,
                         end: string_end,
@@ -182,7 +180,7 @@ impl TsgoDecoder {
     fn decode_nodes(data: &[u8], header: &Header, string_table: &[String]) -> Result<Vec<Node>> {
         let nodes_start = header.nodes_offset as usize;
         if nodes_start >= data.len() {
-            return Err(TsgoError::InvalidDataOffset {
+            return Err(DecoderError::InvalidDataOffset {
                 offset: nodes_start,
                 buffer_size: data.len(),
             });

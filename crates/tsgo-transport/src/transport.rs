@@ -12,10 +12,8 @@ use tokio::{
     process::{Child, ChildStdin, ChildStdout, Command},
 };
 
-use crate::{
-    errors::{Result, TsgoError},
-    vfs::{DynSendVirtualFileSystem, SendVirtualFileSystem},
-};
+use crate::{Result, TransportError};
+use tsgo_vfs::{DynSendVirtualFileSystem, SendVirtualFileSystem};
 
 /// Message types for the tsgo protocol  
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize, FromRepr)]
@@ -64,13 +62,13 @@ impl ProtocolMessage {
         // Read array length (should be 3)
         let array_len = read_array_len(&mut cursor)?;
         if array_len != 3 {
-            return Err(TsgoError::InvalidProtocolArrayLength { actual: array_len });
+            return Err(TransportError::InvalidProtocolArrayLength { actual: array_len });
         }
 
         // Read MessageType as uint8
         let msg_type_value = read_u8(&mut cursor)?;
         let msg_type =
-            MessageType::from_repr(msg_type_value).ok_or(TsgoError::InvalidMessageType {
+            MessageType::from_repr(msg_type_value).ok_or(TransportError::InvalidMessageType {
                 message_type: msg_type_value,
             })?;
 
@@ -79,7 +77,7 @@ impl ProtocolMessage {
         let mut method_bytes = vec![0u8; method_len];
         std::io::Read::read_exact(&mut cursor, &mut method_bytes)?;
         let method =
-            String::from_utf8(method_bytes).map_err(|e| TsgoError::InvalidProtocolUtf8 {
+            String::from_utf8(method_bytes).map_err(|e| TransportError::InvalidProtocolUtf8 {
                 field: "method name".to_string(),
                 error_message: e.to_string(),
             })?;
@@ -89,7 +87,7 @@ impl ProtocolMessage {
         let mut payload_bytes = vec![0u8; payload_len];
         std::io::Read::read_exact(&mut cursor, &mut payload_bytes)?;
         let payload_str =
-            String::from_utf8(payload_bytes).map_err(|e| TsgoError::InvalidProtocolUtf8 {
+            String::from_utf8(payload_bytes).map_err(|e| TransportError::InvalidProtocolUtf8 {
                 field: "payload".to_string(),
                 error_message: e.to_string(),
             })?;
@@ -131,7 +129,7 @@ impl<'t> TsgoTransport<'t> {
 
         let mut child = cmd
             .spawn()
-            .map_err(|e| TsgoError::TransportProcessStartFailed {
+            .map_err(|e| TransportError::TransportProcessStartFailed {
                 reason: format!("Failed to spawn tsgo process '{}': {}", tsgo_path, e),
             })?;
 
@@ -139,7 +137,7 @@ impl<'t> TsgoTransport<'t> {
             child
                 .stdin
                 .take()
-                .ok_or_else(|| TsgoError::TransportProcessHandleUnavailable {
+                .ok_or_else(|| TransportError::TransportProcessHandleUnavailable {
                     handle_type: "stdin".to_string(),
                 })?;
 
@@ -147,7 +145,7 @@ impl<'t> TsgoTransport<'t> {
             child
                 .stdout
                 .take()
-                .ok_or_else(|| TsgoError::TransportProcessHandleUnavailable {
+                .ok_or_else(|| TransportError::TransportProcessHandleUnavailable {
                     handle_type: "stdout".to_string(),
                 })?;
 
@@ -210,7 +208,7 @@ impl<'t> TsgoTransport<'t> {
         self.register_async_callback("fs.readFile".to_string(), move |args| {
             let path = args
                 .as_str()
-                .ok_or_else(|| TsgoError::CallbackExecutionFailed {
+                .ok_or_else(|| TransportError::CallbackExecutionFailed {
                     method: "fs.readFile".to_string(),
                     reason: "Expected string argument for path".to_string(),
                 })
@@ -229,7 +227,7 @@ impl<'t> TsgoTransport<'t> {
         self.register_callback("fs.fileExists".to_string(), move |args| {
             let path = args
                 .as_str()
-                .ok_or_else(|| TsgoError::CallbackExecutionFailed {
+                .ok_or_else(|| TransportError::CallbackExecutionFailed {
                     method: "fs.fileExists".to_string(),
                     reason: "Expected string argument for path".to_string(),
                 })?;
@@ -241,7 +239,7 @@ impl<'t> TsgoTransport<'t> {
         self.register_callback("fs.directoryExists".to_string(), move |args| {
             let path = args
                 .as_str()
-                .ok_or_else(|| TsgoError::CallbackExecutionFailed {
+                .ok_or_else(|| TransportError::CallbackExecutionFailed {
                     method: "fs.directoryExists".to_string(),
                     reason: "Expected string argument for path".to_string(),
                 })?;
@@ -253,7 +251,7 @@ impl<'t> TsgoTransport<'t> {
         self.register_callback("fs.realpath".to_string(), move |args| {
             let path = args
                 .as_str()
-                .ok_or_else(|| TsgoError::CallbackExecutionFailed {
+                .ok_or_else(|| TransportError::CallbackExecutionFailed {
                     method: "fs.realpath".to_string(),
                     reason: "Expected string argument for path".to_string(),
                 })?;
@@ -265,7 +263,7 @@ impl<'t> TsgoTransport<'t> {
         self.register_async_callback("fs.getAccessibleEntries".to_string(), move |args| {
             let path_owned = args
                 .as_str()
-                .ok_or_else(|| TsgoError::CallbackExecutionFailed {
+                .ok_or_else(|| TransportError::CallbackExecutionFailed {
                     method: "fs.getAccessibleEntries".to_string(),
                     reason: "Expected string argument for path".to_string(),
                 })
@@ -306,7 +304,7 @@ impl<'t> TsgoTransport<'t> {
                     return Ok(response.2);
                 }
                 MessageType::Error => {
-                    return Err(TsgoError::ServerError {
+                    return Err(TransportError::ServerError {
                         server_message: response.2.to_string(),
                     });
                 }
@@ -314,7 +312,7 @@ impl<'t> TsgoTransport<'t> {
                     self.handle_callback(&response.1, response.2).await?;
                 }
                 _ => {
-                    return Err(TsgoError::InvalidResponse {
+                    return Err(TransportError::InvalidResponse {
                         expected: "Response or Error".to_string(),
                         actual: format!("{:?}", response.0),
                     });
@@ -326,7 +324,7 @@ impl<'t> TsgoTransport<'t> {
     /// Send a binary request and return binary response
     pub async fn request_binary(&mut self, method: &str, payload: Vec<u8>) -> Result<Vec<u8>> {
         let payload_json: Value = from_str(&String::from_utf8(payload).map_err(|e| {
-            TsgoError::InvalidBinaryPayload {
+            TransportError::InvalidBinaryPayload {
                 reason: format!("Invalid UTF-8 in binary payload: {}", e),
             }
         })?)?;
@@ -342,7 +340,7 @@ impl<'t> TsgoTransport<'t> {
                     return Ok(response_str.into_bytes());
                 }
                 MessageType::Error => {
-                    return Err(TsgoError::ServerError {
+                    return Err(TransportError::ServerError {
                         server_message: response.2.to_string(),
                     });
                 }
@@ -350,7 +348,7 @@ impl<'t> TsgoTransport<'t> {
                     self.handle_callback(&response.1, response.2).await?;
                 }
                 _ => {
-                    return Err(TsgoError::InvalidResponse {
+                    return Err(TransportError::InvalidResponse {
                         expected: "Response or Error".to_string(),
                         actual: format!("{:?}", response.0),
                     });
@@ -365,13 +363,13 @@ impl<'t> TsgoTransport<'t> {
             let result =
                 match callback {
                     Callback::Sync(sync_callback) => {
-                        sync_callback(args).map_err(|e| TsgoError::CallbackExecutionFailed {
+                        sync_callback(args).map_err(|e| TransportError::CallbackExecutionFailed {
                             method: method.to_string(),
                             reason: e.to_string(),
                         })?
                     }
                     Callback::Async(async_callback) => async_callback(args).await.map_err(|e| {
-                        TsgoError::CallbackExecutionFailed {
+                        TransportError::CallbackExecutionFailed {
                             method: method.to_string(),
                             reason: e.to_string(),
                         }
@@ -386,7 +384,7 @@ impl<'t> TsgoTransport<'t> {
                 Value::String(format!("Unknown callback method: {}", method)),
             );
             self.send_message(&error).await?;
-            return Err(TsgoError::UnknownCallback {
+            return Err(TransportError::UnknownCallback {
                 method: method.to_string(),
             });
         }
@@ -409,15 +407,15 @@ impl<'t> TsgoTransport<'t> {
         loop {
             let bytes_read = self.stdout.read(&mut temp_buf).await?;
             if bytes_read == 0 {
-                return Err(TsgoError::TransportConnectionClosed);
+                return Err(TransportError::TransportConnectionClosed);
             }
 
             buffer.extend_from_slice(&temp_buf[..bytes_read]);
             match ProtocolMessage::decode(&buffer) {
                 Ok(message) => return Ok(message),
-                Err(TsgoError::InvalidProtocolArrayLength { .. })
-                | Err(TsgoError::InvalidMessageType { .. })
-                | Err(TsgoError::InvalidProtocolUtf8 { .. }) => {
+                Err(TransportError::InvalidProtocolArrayLength { .. })
+                | Err(TransportError::InvalidMessageType { .. })
+                | Err(TransportError::InvalidProtocolUtf8 { .. }) => {
                     continue;
                 }
                 Err(e) => return Err(e),
@@ -634,7 +632,7 @@ mod tests {
         // Test wrong array length
         let wrong_length = &[0x92, 0xcc, 0x01, 0xc4, 0x04, b'e', b'c', b'h', b'o'];
         match ProtocolMessage::decode(wrong_length) {
-            Err(TsgoError::InvalidProtocolArrayLength { actual }) => {
+            Err(TransportError::InvalidProtocolArrayLength { actual }) => {
                 assert_eq!(actual, 2);
             }
             other => panic!("Expected InvalidProtocolArrayLength, got: {:?}", other),
@@ -646,7 +644,7 @@ mod tests {
             b't',
         ];
         match ProtocolMessage::decode(invalid_type) {
-            Err(TsgoError::InvalidMessageType { message_type }) => {
+            Err(TransportError::InvalidMessageType { message_type }) => {
                 assert_eq!(message_type, 0x99);
             }
             other => panic!("Expected InvalidMessageType, got: {:?}", other),
