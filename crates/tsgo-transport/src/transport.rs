@@ -11,9 +11,9 @@ use tokio::{
     io::{AsyncReadExt, AsyncWriteExt, BufReader},
     process::{Child, ChildStdin, ChildStdout, Command},
 };
+use tsgo_vfs::VirtualFileSystem;
 
 use crate::{Result, TransportError};
-use tsgo_vfs::{DynSendVirtualFileSystem, SendVirtualFileSystem};
 
 /// Message types for the tsgo protocol  
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Serialize, Deserialize, FromRepr)]
@@ -133,21 +133,17 @@ impl<'t> TsgoTransport<'t> {
                 reason: format!("Failed to spawn tsgo process '{}': {}", tsgo_path, e),
             })?;
 
-        let stdin =
-            child
-                .stdin
-                .take()
-                .ok_or_else(|| TransportError::TransportProcessHandleUnavailable {
-                    handle_type: "stdin".to_string(),
-                })?;
+        let stdin = child.stdin.take().ok_or_else(|| {
+            TransportError::TransportProcessHandleUnavailable {
+                handle_type: "stdin".to_string(),
+            }
+        })?;
 
-        let stdout =
-            child
-                .stdout
-                .take()
-                .ok_or_else(|| TransportError::TransportProcessHandleUnavailable {
-                    handle_type: "stdout".to_string(),
-                })?;
+        let stdout = child.stdout.take().ok_or_else(|| {
+            TransportError::TransportProcessHandleUnavailable {
+                handle_type: "stdout".to_string(),
+            }
+        })?;
 
         let stdout = BufReader::new(stdout);
 
@@ -204,7 +200,7 @@ impl<'t> TsgoTransport<'t> {
     /// - fs.directoryExists
     /// - fs.realpath
     /// - fs.getAccessibleEntries
-    pub fn register_fs(&mut self, fs: &'t Arc<DynSendVirtualFileSystem>) {
+    pub fn register_fs(&mut self, fs: &'t Arc<dyn VirtualFileSystem + Send + Sync>) {
         self.register_async_callback("fs.readFile".to_string(), move |args| {
             let path = args
                 .as_str()
@@ -360,21 +356,20 @@ impl<'t> TsgoTransport<'t> {
     /// Handle incoming callback
     async fn handle_callback(&mut self, method: &str, args: Value) -> Result<()> {
         if let Some(callback) = self.callbacks.get(method) {
-            let result =
-                match callback {
-                    Callback::Sync(sync_callback) => {
-                        sync_callback(args).map_err(|e| TransportError::CallbackExecutionFailed {
-                            method: method.to_string(),
-                            reason: e.to_string(),
-                        })?
+            let result = match callback {
+                Callback::Sync(sync_callback) => {
+                    sync_callback(args).map_err(|e| TransportError::CallbackExecutionFailed {
+                        method: method.to_string(),
+                        reason: e.to_string(),
+                    })?
+                }
+                Callback::Async(async_callback) => async_callback(args).await.map_err(|e| {
+                    TransportError::CallbackExecutionFailed {
+                        method: method.to_string(),
+                        reason: e.to_string(),
                     }
-                    Callback::Async(async_callback) => async_callback(args).await.map_err(|e| {
-                        TransportError::CallbackExecutionFailed {
-                            method: method.to_string(),
-                            reason: e.to_string(),
-                        }
-                    })?,
-                };
+                })?,
+            };
             let response = ProtocolMessage(MessageType::CallResponse, method.to_string(), result);
             self.send_message(&response).await?;
         } else {

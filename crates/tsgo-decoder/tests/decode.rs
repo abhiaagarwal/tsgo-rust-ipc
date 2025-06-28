@@ -3,6 +3,7 @@ mod common;
 use std::fs;
 
 use rstest::rstest;
+use similar_asserts::assert_eq;
 use tsgo_decoder::{
     Node, TsgoDecoder,
     constants::{NODE_OFFSET_NEXT, NODE_SIZE},

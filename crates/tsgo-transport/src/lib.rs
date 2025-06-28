@@ -1,5 +1,5 @@
-mod transport;
 mod errors;
+mod transport;
 
+pub use errors::{Result, TransportError};
 pub use transport::*;
-pub use errors::{TransportError, Result}; 

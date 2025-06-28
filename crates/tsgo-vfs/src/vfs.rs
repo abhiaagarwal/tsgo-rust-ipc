@@ -4,6 +4,7 @@ use std::{
     sync::Arc,
 };
 
+use async_trait::async_trait;
 use dashmap::DashMap;
 use serde::{Deserialize, Serialize};
 use tokio::fs;
@@ -21,9 +22,7 @@ pub struct FileSystemEntries {
 ///
 /// This trait provides the interface that tsgo expects for file system operations.
 /// All methods that tsgo may call back into are represented here.
-#[trait_variant::make(SendVirtualFileSystem: Send + Sync)]
-#[dynosaur::dynosaur(pub DynVirtualFileSystem = dyn VirtualFileSystem)]
-#[dynosaur::dynosaur(pub DynSendVirtualFileSystem = dyn SendVirtualFileSystem)]
+#[async_trait]
 pub trait VirtualFileSystem {
     /// Read the contents of a file
     /// Returns None if the file doesn't exist, Some(content) if it does
@@ -83,6 +82,7 @@ impl RealFileSystem {
     }
 }
 
+#[async_trait]
 impl VirtualFileSystem for RealFileSystem {
     async fn read_file(&self, path: &str) -> Result<Option<String>> {
         let resolved_path = self.resolve_path(path);
@@ -355,6 +355,7 @@ impl Default for MemoryFileSystem {
     }
 }
 
+#[async_trait]
 impl VirtualFileSystem for MemoryFileSystem {
     async fn read_file(&self, path: &str) -> Result<Option<String>> {
         match self.get_node(path) {

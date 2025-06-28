@@ -1,5 +1,5 @@
-mod vfs;
 mod errors;
+mod vfs;
 
+pub use errors::{Result, VfsError};
 pub use vfs::*;
-pub use errors::{VfsError, Result}; 
