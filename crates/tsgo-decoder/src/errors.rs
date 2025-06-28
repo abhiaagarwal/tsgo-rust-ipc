@@ -59,4 +59,4 @@ pub enum DecoderError {
 
     #[error("Invalid UTF-8 string: {context}")]
     InvalidUtf8 { context: String },
-} 
+}

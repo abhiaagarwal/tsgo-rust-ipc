@@ -2,4 +2,4 @@ mod decoder;
 mod errors;
 
 pub use decoder::*;
-pub use errors::{DecoderError, Result}; 
+pub use errors::{DecoderError, Result};
