@@ -1,4 +1,3 @@
-use async_trait::async_trait;
 use serde::{Deserialize, Serialize};
 
 use crate::Result;
@@ -14,15 +13,14 @@ pub struct FileSystemEntries {
 ///
 /// This trait provides the interface that tsgo expects for file system operations.
 /// All methods that tsgo may call back into are represented here.
-#[async_trait]
 pub trait VirtualFileSystem {
     /// Read the contents of a file
     /// Returns None if the file doesn't exist, Some(content) if it does
-    async fn read_file(&self, path: &str) -> Result<Option<String>>;
+    fn read_file(&self, path: &str) -> Result<Option<String>>;
 
     /// Write content to a file (optional operation)
     /// Some VFS implementations may be read-only
-    async fn write_file(&self, path: &str, content: &str) -> Result<()>;
+    fn write_file(&self, path: &str, content: &str) -> Result<()>;
 
     /// Check if a file exists
     fn file_exists(&self, path: &str) -> bool;
@@ -36,5 +34,5 @@ pub trait VirtualFileSystem {
 
     /// Get accessible entries (files and directories) in a directory
     /// Returns None if the directory doesn't exist or can't be read
-    async fn get_accessible_entries(&self, path: &str) -> Result<Option<FileSystemEntries>>;
+    fn get_accessible_entries(&self, path: &str) -> Result<Option<FileSystemEntries>>;
 }

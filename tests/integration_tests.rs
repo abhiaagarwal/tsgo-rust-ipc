@@ -39,7 +39,7 @@ pub mod common {
     }
 
     /// Verify that tsgo binary is working by checking version
-    pub async fn verify_tsgo_binary(tsgo_path: &str) -> bool {
+    pub fn verify_tsgo_binary(tsgo_path: &str) -> bool {
         std::process::Command::new(tsgo_path)
             .arg("--version")
             .output()
@@ -143,12 +143,12 @@ pub mod common {
 }
 
 /// Test basic tsgo transport functionality
-#[tokio::test]
-async fn test_transport_basic_functionality() -> Result<()> {
+#[test]
+fn test_transport_basic_functionality() -> Result<()> {
     let tsgo_path = common::get_tsgo_binary_path().expect("tsgo binary not found.");
 
     assert!(
-        common::verify_tsgo_binary(&tsgo_path).await,
+        common::verify_tsgo_binary(&tsgo_path),
         "tsgo binary is not working properly"
     );
 
@@ -157,28 +157,27 @@ async fn test_transport_basic_functionality() -> Result<()> {
         cwd: Some(".".into()),
         log_file: None,
         fs: None,
-    })
-    .await?;
+    })?;
 
-    let echo_response = client.echo("Hello from integration test!").await?;
+    let echo_response = client.echo("Hello from integration test!")?;
     assert_eq!(echo_response, "Hello from integration test!");
 
     for i in 1..=3 {
         let test_message = format!("Test message #{}", i);
-        let response = client.echo(&test_message).await?;
+        let response = client.echo(&test_message)?;
         assert_eq!(response, test_message);
     }
 
-    let error_result = client.request_value("invalid_method", json!("test")).await;
+    let error_result = client.request_value("invalid_method", json!("test"));
     assert!(error_result.is_err());
 
-    client.close().await?;
+    client.close()?;
     Ok(())
 }
 
 /// Test transport with VFS integration using a simple test case
-#[tokio::test]
-async fn test_transport_with_simple_vfs() -> Result<()> {
+#[test]
+fn test_transport_with_simple_vfs() -> Result<()> {
     let tsgo_path = common::get_tsgo_binary_path().expect("tsgo binary not found.");
 
     let mut project_files = HashMap::new();
@@ -218,10 +217,9 @@ console.log(message);
         cwd: Some(".".into()),
         log_file: None,
         fs: Some(vfs),
-    })
-    .await?;
+    })?;
 
-    match client.echo("VFS integration test").await {
+    match client.echo("VFS integration test") {
         Ok(response) => {
             assert_eq!(response, json!("VFS integration test"));
         }
@@ -230,15 +228,12 @@ console.log(message);
         }
     }
 
-    let config_response = match client
-        .request_value(
-            "parseConfigFile",
-            json!({
-                "fileName": "/tsconfig.json"
-            }),
-        )
-        .await
-    {
+    let config_response = match client.request_value(
+        "parseConfigFile",
+        json!({
+            "fileName": "/tsconfig.json"
+        }),
+    ) {
         Ok(response) => response,
         Err(e) => {
             return Err(e);
@@ -251,13 +246,13 @@ console.log(message);
         assert!(!files.is_empty());
     }
 
-    client.close().await?;
+    client.close()?;
     Ok(())
 }
 
 /// Test parsing of tsgo test case format
-#[tokio::test]
-async fn test_tsgo_test_case_parsing() -> Result<()> {
+#[test]
+fn test_tsgo_test_case_parsing() -> Result<()> {
     let simple_content = r#"const x: number = "";"#;
     let parsed = common::parse_tsgo_test_case(simple_content);
     assert_eq!(parsed.files.len(), 1);
@@ -291,8 +286,8 @@ const x: string = undefined;"#;
 }
 
 /// Test with actual tsgo test cases
-#[tokio::test]
-async fn test_with_real_tsgo_test_cases() -> Result<()> {
+#[test]
+fn test_with_real_tsgo_test_cases() -> Result<()> {
     let tsgo_path = common::get_tsgo_binary_path().expect("tsgo binary not found");
 
     let test_cases = common::find_tsgo_test_cases()?;
@@ -323,27 +318,25 @@ async fn test_with_real_tsgo_test_cases() -> Result<()> {
             cwd: Some(".".into()),
             log_file: None,
             fs: Some(Arc::clone(&vfs)),
-        })
-        .await?;
+        })?;
 
         let test_message = format!("test_{}", test_name);
-        client.echo(&test_message).await?;
+        client.echo(&test_message)?;
 
         if vfs.file_exists("/tsconfig.json") {
-            let config_response = client
-                .request_value("parseConfigFile", json!({"fileName": "/tsconfig.json"}))
-                .await?;
+            let config_response =
+                client.request_value("parseConfigFile", json!({"fileName": "/tsconfig.json"}))?;
             assert!(config_response.is_object());
         }
 
-        client.close().await?;
+        client.close()?;
     }
     Ok(())
 }
 
 /// Test a specific complex tsgo test case
-#[tokio::test]
-async fn test_complex_tsgo_case() -> Result<()> {
+#[test]
+fn test_complex_tsgo_case() -> Result<()> {
     let tsgo_path = common::get_tsgo_binary_path().expect("tsgo binary not found.");
 
     let test_content = r#"// @filename: tsconfig.json
@@ -371,26 +364,24 @@ const x: string = undefined;"#;
         cwd: Some(".".into()),
         log_file: None,
         fs: Some(Arc::clone(&vfs)),
-    })
-    .await?;
+    })?;
 
     let test_message = "vfs_test".to_string();
-    client.echo(&test_message).await?;
+    client.echo(&test_message)?;
 
     if vfs.file_exists("/tsconfig.json") {
-        let config_response = client
-            .request_value("parseConfigFile", json!({"fileName": "/tsconfig.json"}))
-            .await?;
+        let config_response =
+            client.request_value("parseConfigFile", json!({"fileName": "/tsconfig.json"}))?;
         assert!(config_response.is_object());
     }
 
-    client.close().await?;
+    client.close()?;
     Ok(())
 }
 
 /// Integration test for error scenarios
-#[tokio::test]
-async fn test_error_scenarios() -> Result<()> {
+#[test]
+fn test_error_scenarios() -> Result<()> {
     let tsgo_path = common::get_tsgo_binary_path().expect("tsgo binary not found");
 
     let mut client = Client::new(ClientOptions {
@@ -398,8 +389,7 @@ async fn test_error_scenarios() -> Result<()> {
         cwd: Some(".".into()),
         log_file: None,
         fs: None,
-    })
-    .await?;
+    })?;
 
     let error_tests = vec![
         ("nonexistent_method", json!("test")),
@@ -408,7 +398,7 @@ async fn test_error_scenarios() -> Result<()> {
     ];
 
     for (method, payload) in error_tests {
-        let result = client.request_value(method, payload).await;
+        let result = client.request_value(method, payload);
         if method == "echo" {
             assert!(result.is_ok() || result.is_err());
         } else {
@@ -416,7 +406,7 @@ async fn test_error_scenarios() -> Result<()> {
         }
     }
 
-    client.close().await?;
+    client.close()?;
     Ok(())
 }
 
@@ -427,8 +417,7 @@ async fn test_error_scenarios() -> Result<()> {
 #[case("settingsSimpleTest.ts")]
 #[case("singleSettingsSimpleTest.ts")]
 #[case("declarationEmitBigInt.ts")]
-#[tokio::test]
-async fn test_tsgo_test_case_parametrized(#[case] test_file_name: &str) -> Result<()> {
+fn test_tsgo_test_case_parametrized(#[case] test_file_name: &str) -> Result<()> {
     let tsgo_path = common::get_tsgo_binary_path().expect("tsgo binary not found.");
 
     let test_paths = [
@@ -465,11 +454,10 @@ async fn test_tsgo_test_case_parametrized(#[case] test_file_name: &str) -> Resul
         cwd: Some(".".into()),
         log_file: None,
         fs: Some(Arc::clone(&vfs)),
-    })
-    .await?;
+    })?;
 
     let test_message = format!("test_{}", test_file_name);
-    let echo_response = client.echo(&test_message).await?;
+    let echo_response = client.echo(&test_message)?;
     assert_eq!(echo_response, test_message);
 
     if vfs.file_exists("/tsconfig.json") || vfs.file_exists("tsconfig.json") {
@@ -479,9 +467,8 @@ async fn test_tsgo_test_case_parametrized(#[case] test_file_name: &str) -> Resul
             "tsconfig.json"
         };
 
-        if let Ok(response) = client
-            .request_value("parseConfigFile", json!({"fileName": config_file}))
-            .await
+        if let Ok(response) =
+            client.request_value("parseConfigFile", json!({"fileName": config_file}))
         {
             assert!(
                 response.is_object(),
@@ -491,6 +478,6 @@ async fn test_tsgo_test_case_parametrized(#[case] test_file_name: &str) -> Resul
         }
     }
 
-    client.close().await?;
+    client.close()?;
     Ok(())
 }

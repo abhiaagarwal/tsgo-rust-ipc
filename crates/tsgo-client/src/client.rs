@@ -41,8 +41,8 @@ pub struct Client<'t> {
 
 impl<'t> Client<'t> {
     /// Spawn a new `tsgo` process and establish the transport channel.
-    pub async fn new(options: ClientOptions<'t>) -> Result<Self> {
-        let transport = TsgoTransport::new(&options.tsgo_path, options.cwd.as_deref()).await?;
+    pub fn new(options: ClientOptions<'t>) -> Result<Self> {
+        let transport = TsgoTransport::new(&options.tsgo_path, options.cwd.as_deref())?;
 
         let mut client = Self {
             transport,
@@ -64,8 +64,7 @@ impl<'t> Client<'t> {
 
         client
             .transport
-            .configure(options.log_file.as_deref(), &callback_names)
-            .await?;
+            .configure(options.log_file.as_deref(), &callback_names)?;
 
         Ok(client)
     }
@@ -74,26 +73,18 @@ impl<'t> Client<'t> {
         transport: &mut TsgoTransport<'t, ClientError>,
         fs: Arc<dyn VirtualFileSystem + Send + Sync + 't>,
     ) {
-        let fs_read = Arc::clone(&fs);
-        transport.register_async_callback("readFile".into(), move |args| {
-            let fs_inner = Arc::clone(&fs_read);
-            let path_res: std::result::Result<String, _> = args
+        let fs_clone = Arc::clone(&fs);
+        transport.register_callback("readFile".into(), move |args| {
+            let path = args
                 .as_str()
-                .ok_or_else(|| {
-                    ClientError::Transport(TransportError::CallbackExecutionFailed {
-                        method: "readFile".into(),
-                        reason: "Expected string argument for path".into(),
-                    })
-                })
-                .map(|s| s.to_owned());
-
-            Box::pin(async move {
-                let path = path_res?;
-                let result = fs_inner.read_file(&path).await?;
-                Ok(match result {
-                    Some(content) => Value::String(content),
-                    None => Value::Null,
-                })
+                .ok_or_else(|| TransportError::CallbackExecutionFailed {
+                    method: "readFile".into(),
+                    reason: "Expected string argument for path".into(),
+                })?;
+            let result = fs_clone.read_file(path)?;
+            Ok(match result {
+                Some(content) => Value::String(content),
+                None => Value::Null,
             })
         });
 
@@ -132,67 +123,61 @@ impl<'t> Client<'t> {
         });
 
         let fs_entries = Arc::clone(&fs);
-        transport.register_async_callback("getAccessibleEntries".into(), move |args| {
-            let fs_inner = Arc::clone(&fs_entries);
-            let path_res: std::result::Result<String, _> = args
+        transport.register_callback("getAccessibleEntries".into(), move |args| {
+            let path = args
                 .as_str()
                 .ok_or_else(|| TransportError::CallbackExecutionFailed {
                     method: "getAccessibleEntries".into(),
                     reason: "Expected string argument for path".into(),
-                })
-                .map(|s| s.to_owned());
-
-            Box::pin(async move {
-                let path = path_res?;
-                let result = fs_inner.get_accessible_entries(&path).await?;
-                Ok(match result {
-                    Some(entries) => serde_json::to_value(entries)?,
-                    None => Value::Null,
-                })
+                })?;
+            let result = fs_entries.get_accessible_entries(path)?;
+            Ok(match result {
+                Some(entries) => serde_json::to_value(entries)?,
+                None => Value::Null,
             })
         });
     }
 
     /// Send an arbitrary JSON request and deserialize the JSON response.
-    pub async fn request<P, R>(&mut self, method: &str, payload: P) -> Result<R>
+    pub fn request<P, R>(&mut self, method: &str, payload: P) -> Result<R>
     where
         P: Serialize,
         R: serde::de::DeserializeOwned,
     {
         let value = serde_json::to_value(payload)?;
-        let response_value = self.transport.request(method, value).await?;
+        let response_value = self.transport.request(method, value)?;
         let response: R = serde_json::from_value(response_value)?;
         Ok(response)
     }
 
     /// Convenience helper returning untyped JSON [`Value`].
-    pub async fn request_value<P>(&mut self, method: &str, payload: P) -> Result<Value>
+    pub fn request_value<P>(&mut self, method: &str, payload: P) -> Result<Value>
     where
         P: Serialize,
     {
         let value = serde_json::to_value(payload)?;
-        let response = self.transport.request(method, value).await?;
+        let response = self.transport.request(method, value)?;
         Ok(response)
     }
 
     /// Simple text round-trip (useful for latency measurements / smoke tests).
-    pub async fn echo(&mut self, message: &str) -> Result<String> {
+    pub fn echo(&mut self, message: &str) -> Result<String> {
         let val = json!(message);
-        let response = self.transport.request("echo", val).await?;
+        let response = self.transport.request("echo", val)?;
         let response: String = serde_json::from_value(response)?;
         Ok(response)
     }
 
     /// Binary echo variant.  The server treats the request payload and response
     /// as opaque byte vectors.
-    pub async fn echo_binary(&mut self, data: Vec<u8>) -> Result<Vec<u8>> {
-        let response = self.transport.request_binary("echo", data).await?;
+    pub fn echo_binary(&mut self, data: Vec<u8>) -> Result<Vec<u8>> {
+        let response = self.transport.request_binary("echo", data)?;
         Ok(response)
     }
 
     /// Gracefully terminate the underlying process.
-    pub async fn close(self) -> Result<()> {
-        self.transport.close().await?;
+    pub fn close(self) -> Result<()> {
+        self.transport.close()?;
         Ok(())
     }
 }

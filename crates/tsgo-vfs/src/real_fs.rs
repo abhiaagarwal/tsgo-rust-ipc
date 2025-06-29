@@ -1,7 +1,7 @@
-use std::path::{Path, PathBuf};
-
-use async_trait::async_trait;
-use tokio::fs;
+use std::{
+    fs::{read_dir, read_to_string, write},
+    path::{Path, PathBuf},
+};
 
 use crate::{FileSystemEntries, Result, VfsError, VirtualFileSystem};
 
@@ -40,12 +40,11 @@ impl RealFileSystem {
     }
 }
 
-#[async_trait]
 impl VirtualFileSystem for RealFileSystem {
-    async fn read_file(&self, path: &str) -> Result<Option<String>> {
+    fn read_file(&self, path: &str) -> Result<Option<String>> {
         let resolved_path = self.resolve_path(path);
 
-        match fs::read_to_string(&resolved_path).await {
+        match read_to_string(&resolved_path) {
             Ok(content) => Ok(Some(content)),
             Err(e) if e.kind() == std::io::ErrorKind::NotFound => Ok(None),
             Err(e) => Err(VfsError::Operation {
@@ -56,27 +55,23 @@ impl VirtualFileSystem for RealFileSystem {
         }
     }
 
-    async fn write_file(&self, path: &str, content: &str) -> Result<()> {
+    fn write_file(&self, path: &str, content: &str) -> Result<()> {
         let resolved_path = self.resolve_path(path);
 
         // Create parent directories if they don't exist
         if let Some(parent) = resolved_path.parent() {
-            fs::create_dir_all(parent)
-                .await
-                .map_err(|e| VfsError::Operation {
-                    operation: "create_dir_all".to_string(),
-                    path: parent.to_string_lossy().to_string(),
-                    error_message: e.to_string(),
-                })?;
+            std::fs::create_dir_all(parent).map_err(|e| VfsError::Operation {
+                operation: "create_dir_all".to_string(),
+                path: parent.to_string_lossy().to_string(),
+                error_message: e.to_string(),
+            })?;
         }
 
-        fs::write(&resolved_path, content)
-            .await
-            .map_err(|e| VfsError::Operation {
-                operation: "write_file".to_string(),
-                path: path.to_string(),
-                error_message: e.to_string(),
-            })
+        write(&resolved_path, content).map_err(|e| VfsError::Operation {
+            operation: "write_file".to_string(),
+            path: path.to_string(),
+            error_message: e.to_string(),
+        })
     }
 
     fn file_exists(&self, path: &str) -> bool {
@@ -99,10 +94,10 @@ impl VirtualFileSystem for RealFileSystem {
         }
     }
 
-    async fn get_accessible_entries(&self, path: &str) -> Result<Option<FileSystemEntries>> {
+    fn get_accessible_entries(&self, path: &str) -> Result<Option<FileSystemEntries>> {
         let resolved_path = self.resolve_path(path);
 
-        let mut entries = match fs::read_dir(&resolved_path).await {
+        let entries_iter = match read_dir(&resolved_path) {
             Ok(entries) => entries,
             Err(e) if e.kind() == std::io::ErrorKind::NotFound => return Ok(None),
             Err(e) => {
@@ -117,17 +112,15 @@ impl VirtualFileSystem for RealFileSystem {
         let mut files = Vec::new();
         let mut directories = Vec::new();
 
-        while let Some(entry) = entries
-            .next_entry()
-            .await
-            .map_err(|e| VfsError::Operation {
+        for entry_result in entries_iter {
+            let entry = entry_result.map_err(|e| VfsError::Operation {
                 operation: "read_dir_entry".to_string(),
                 path: path.to_string(),
                 error_message: e.to_string(),
-            })?
-        {
+            })?;
+
             let file_name = entry.file_name().to_string_lossy().to_string();
-            let file_type = entry.file_type().await.map_err(|e| VfsError::Operation {
+            let file_type = entry.file_type().map_err(|e| VfsError::Operation {
                 operation: "get_file_type".to_string(),
                 path: entry.path().to_string_lossy().to_string(),
                 error_message: e.to_string(),

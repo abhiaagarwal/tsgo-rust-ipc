@@ -1,6 +1,5 @@
 use std::{collections::HashMap, sync::Arc};
 
-use async_trait::async_trait;
 use dashmap::DashMap;
 
 use crate::{FileSystemEntries, Result, VirtualFileSystem};
@@ -175,9 +174,8 @@ impl Default for MemoryFileSystem {
     }
 }
 
-#[async_trait]
 impl VirtualFileSystem for MemoryFileSystem {
-    async fn read_file(&self, path: &str) -> Result<Option<String>> {
+    fn read_file(&self, path: &str) -> Result<Option<String>> {
         match self.get_node(path) {
             Some(VfsNode::File { content }) => Ok(Some(content)),
             Some(VfsNode::Directory { .. }) => Ok(None), // Path exists but is a directory
@@ -185,7 +183,7 @@ impl VirtualFileSystem for MemoryFileSystem {
         }
     }
 
-    async fn write_file(&self, path: &str, content: &str) -> Result<()> {
+    fn write_file(&self, path: &str, content: &str) -> Result<()> {
         self.add_file(path, content);
         Ok(())
     }
@@ -205,7 +203,7 @@ impl VirtualFileSystem for MemoryFileSystem {
         self.normalize_path(path)
     }
 
-    async fn get_accessible_entries(&self, path: &str) -> Result<Option<FileSystemEntries>> {
+    fn get_accessible_entries(&self, path: &str) -> Result<Option<FileSystemEntries>> {
         let normalized = self.normalize_path(path);
 
         if normalized == "/" {
@@ -284,13 +282,13 @@ mod tests {
 
     use super::*;
 
-    #[tokio::test]
-    async fn test_memory_fs_basic_operations() {
+    #[test]
+    fn test_memory_fs_basic_operations() {
         let fs = MemoryFileSystem::new();
 
         // Test file doesn't exist initially
         assert!(!fs.file_exists("test.txt"));
-        assert_eq!(fs.read_file("test.txt").await.unwrap(), None);
+        assert_eq!(fs.read_file("test.txt").unwrap(), None);
 
         // Add a file
         fs.add_file("test.txt", "Hello, world!");
@@ -298,21 +296,21 @@ mod tests {
         // Test file exists and can be read
         assert!(fs.file_exists("test.txt"));
         assert_eq!(
-            fs.read_file("test.txt").await.unwrap(),
+            fs.read_file("test.txt").unwrap(),
             Some("Hello, world!".to_string())
         );
 
         // Test write_file
-        fs.write_file("test2.txt", "Another file").await.unwrap();
+        fs.write_file("test2.txt", "Another file").unwrap();
         assert!(fs.file_exists("test2.txt"));
         assert_eq!(
-            fs.read_file("test2.txt").await.unwrap(),
+            fs.read_file("test2.txt").unwrap(),
             Some("Another file".to_string())
         );
     }
 
-    #[tokio::test]
-    async fn test_memory_fs_from_files() {
+    #[test]
+    fn test_memory_fs_from_files() {
         let mut files = HashMap::new();
         files.insert("file1.txt", "Content 1");
         files.insert("dir/file2.txt", "Content 2");
@@ -325,21 +323,21 @@ mod tests {
         assert!(fs.file_exists("dir/subdir/file3.txt"));
 
         assert_eq!(
-            fs.read_file("file1.txt").await.unwrap(),
+            fs.read_file("file1.txt").unwrap(),
             Some("Content 1".to_string())
         );
         assert_eq!(
-            fs.read_file("dir/file2.txt").await.unwrap(),
+            fs.read_file("dir/file2.txt").unwrap(),
             Some("Content 2".to_string())
         );
         assert_eq!(
-            fs.read_file("dir/subdir/file3.txt").await.unwrap(),
+            fs.read_file("dir/subdir/file3.txt").unwrap(),
             Some("Content 3".to_string())
         );
     }
 
-    #[tokio::test]
-    async fn test_memory_fs_directories() {
+    #[test]
+    fn test_memory_fs_directories() {
         let fs = MemoryFileSystem::new();
 
         fs.add_directory("mydir");
@@ -350,8 +348,8 @@ mod tests {
         assert!(fs.file_exists("mydir/file.txt"));
     }
 
-    #[tokio::test]
-    async fn test_memory_fs_realpath() {
+    #[test]
+    fn test_memory_fs_realpath() {
         let fs = MemoryFileSystem::new();
 
         assert_eq!(fs.realpath("/"), "/");

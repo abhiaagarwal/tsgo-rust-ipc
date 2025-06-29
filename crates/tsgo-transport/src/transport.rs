@@ -1,6 +1,10 @@
 use std::{
-    collections::HashMap, error::Error, future::Future, marker::PhantomData, pin::Pin,
-    process::Stdio, sync::Arc,
+    collections::HashMap,
+    error::Error,
+    io::{BufReader, Read as _, Write as _},
+    marker::PhantomData,
+    process::{Child, ChildStdin, ChildStdout, Command, Stdio},
+    sync::Arc,
 };
 
 use rmp::{
@@ -10,10 +14,6 @@ use rmp::{
 use serde::{Deserialize, Serialize};
 use serde_json::{Value, from_str, to_string};
 use strum::FromRepr;
-use tokio::{
-    io::{AsyncReadExt, AsyncWriteExt, BufReader},
-    process::{Child, ChildStdin, ChildStdout, Command},
-};
 
 use crate::{Result, TransportError};
 
@@ -108,19 +108,8 @@ impl ProtocolMessage {
 pub type CallbackFunction<'t, CallbackError> =
     Arc<dyn Fn(Value) -> std::result::Result<Value, CallbackError> + Send + Sync + 't>;
 
-pub type AsyncCallbackFunction<'t, CallbackError> = Arc<
-    dyn Fn(
-            Value,
-        )
-            -> Pin<Box<dyn Future<Output = std::result::Result<Value, CallbackError>> + Send + 't>>
-        + Send
-        + Sync
-        + 't,
->;
-
 pub enum Callback<'t, CallbackError> {
     Sync(CallbackFunction<'t, CallbackError>),
-    Async(AsyncCallbackFunction<'t, CallbackError>),
 }
 
 /// Transport layer for communicating with tsgo server
@@ -134,7 +123,7 @@ pub struct TsgoTransport<'t, CallbackError: Error> {
 
 impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
     /// Create a new transport by spawning the tsgo process
-    pub async fn new(tsgo_path: &str, cwd: Option<&str>) -> Result<Self> {
+    pub fn new(tsgo_path: &str, cwd: Option<&str>) -> Result<Self> {
         let mut cmd = Command::new(tsgo_path);
         cmd.args(["--api", "-cwd", cwd.unwrap_or(".")])
             .stdin(Stdio::piped())
@@ -171,17 +160,13 @@ impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
     }
 
     /// Configure the transport with optional settings
-    pub async fn configure(
-        &mut self,
-        log_file: Option<&str>,
-        callback_names: &[String],
-    ) -> Result<()> {
+    pub fn configure(&mut self, log_file: Option<&str>, callback_names: &[String]) -> Result<()> {
         let config = serde_json::json!({
             "logFile": log_file,
             "callbacks": callback_names
         });
 
-        self.request("configure", config).await?;
+        self.request("configure", config)?;
         Ok(())
     }
 
@@ -194,29 +179,13 @@ impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
             .insert(name, Callback::Sync(Arc::new(callback)));
     }
 
-    /// Register an asynchronous callback function
-    pub fn register_async_callback<F, Fut>(&mut self, name: String, callback: F)
-    where
-        F: Fn(Value) -> Fut + Send + Sync + 't,
-        Fut: Future<Output = std::result::Result<Value, CallbackError>> + Send + 't,
-    {
-        let async_callback = Arc::new(move |value| {
-            let fut = callback(value);
-            Box::pin(fut)
-                as Pin<
-                    Box<dyn Future<Output = std::result::Result<Value, CallbackError>> + Send + 't>,
-                >
-        });
-        self.callbacks.insert(name, Callback::Async(async_callback));
-    }
-
     /// Send a request and return the response
-    pub async fn request(&mut self, method: &str, payload: Value) -> Result<Value> {
+    pub fn request(&mut self, method: &str, payload: Value) -> Result<Value> {
         let request = ProtocolMessage(MessageType::Request, method.to_string(), payload);
-        self.send_message(&request).await?;
+        self.send_message(&request)?;
 
         loop {
-            let response = self.read_message().await?;
+            let response = self.read_message()?;
             match response.0 {
                 MessageType::Response => {
                     return Ok(response.2);
@@ -227,7 +196,7 @@ impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
                     });
                 }
                 MessageType::Call => {
-                    self.handle_callback(&response.1, response.2).await?;
+                    self.handle_callback(&response.1, response.2)?;
                 }
                 _ => {
                     return Err(TransportError::InvalidResponse {
@@ -240,7 +209,7 @@ impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
     }
 
     /// Send a binary request and return binary response
-    pub async fn request_binary(&mut self, method: &str, payload: Vec<u8>) -> Result<Vec<u8>> {
+    pub fn request_binary(&mut self, method: &str, payload: Vec<u8>) -> Result<Vec<u8>> {
         let payload_json: Value = from_str(&String::from_utf8(payload).map_err(|e| {
             TransportError::InvalidBinaryPayload {
                 reason: format!("Invalid UTF-8 in binary payload: {}", e),
@@ -248,10 +217,10 @@ impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
         })?)?;
 
         let request = ProtocolMessage(MessageType::Request, method.to_string(), payload_json);
-        self.send_message(&request).await?;
+        self.send_message(&request)?;
 
         loop {
-            let response = self.read_message().await?;
+            let response = self.read_message()?;
             match response.0 {
                 MessageType::Response => {
                     let response_str = to_string(&response.2)?;
@@ -263,7 +232,7 @@ impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
                     });
                 }
                 MessageType::Call => {
-                    self.handle_callback(&response.1, response.2).await?;
+                    self.handle_callback(&response.1, response.2)?;
                 }
                 _ => {
                     return Err(TransportError::InvalidResponse {
@@ -276,7 +245,7 @@ impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
     }
 
     /// Handle incoming callback
-    async fn handle_callback(&mut self, method: &str, args: Value) -> Result<()> {
+    fn handle_callback(&mut self, method: &str, args: Value) -> Result<()> {
         if let Some(callback) = self.callbacks.get(method) {
             let result = match callback {
                 Callback::Sync(sync_callback) => {
@@ -285,22 +254,16 @@ impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
                         reason: e.to_string(),
                     })?
                 }
-                Callback::Async(async_callback) => async_callback(args).await.map_err(|e| {
-                    TransportError::CallbackExecutionFailed {
-                        method: method.to_string(),
-                        reason: e.to_string(),
-                    }
-                })?,
             };
             let response = ProtocolMessage(MessageType::CallResponse, method.to_string(), result);
-            self.send_message(&response).await?;
+            self.send_message(&response)?;
         } else {
             let error = ProtocolMessage(
                 MessageType::CallError,
                 method.to_string(),
                 Value::String(format!("Unknown callback method: {}", method)),
             );
-            self.send_message(&error).await?;
+            self.send_message(&error)?;
             return Err(TransportError::UnknownCallback {
                 method: method.to_string(),
             });
@@ -309,20 +272,20 @@ impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
     }
 
     /// Send a protocol message
-    async fn send_message(&mut self, message: &ProtocolMessage) -> Result<()> {
+    fn send_message(&mut self, message: &ProtocolMessage) -> Result<()> {
         let encoded = message.encode()?;
-        self.stdin.write_all(&encoded).await?;
-        self.stdin.flush().await?;
+        self.stdin.write_all(&encoded)?;
+        self.stdin.flush()?;
         Ok(())
     }
 
     /// Read a protocol message
-    async fn read_message(&mut self) -> Result<ProtocolMessage> {
+    fn read_message(&mut self) -> Result<ProtocolMessage> {
         let mut buffer = Vec::new();
         let mut temp_buf = [0u8; 1024];
 
         loop {
-            let bytes_read = self.stdout.read(&mut temp_buf).await?;
+            let bytes_read = self.stdout.read(&mut temp_buf)?;
             if bytes_read == 0 {
                 return Err(TransportError::TransportConnectionClosed);
             }
@@ -341,14 +304,14 @@ impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
     }
 
     /// Close the transport and terminate the process
-    pub async fn close(self) -> Result<()> {
+    pub fn close(mut self) -> Result<()> {
         let TsgoTransport {
             stdin, mut child, ..
         } = self;
 
         drop(stdin);
 
-        let _ = child.wait().await;
+        let _ = child.wait();
 
         Ok(())
     }
