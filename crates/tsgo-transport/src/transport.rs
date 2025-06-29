@@ -304,7 +304,7 @@ impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
     }
 
     /// Close the transport and terminate the process
-    pub fn close(mut self) -> Result<()> {
+    pub fn close(self) -> Result<()> {
         let TsgoTransport {
             stdin, mut child, ..
         } = self;

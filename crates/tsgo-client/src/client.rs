@@ -1,7 +1,9 @@
-//! High-level Tsgo Client
+//! High-level tsgo client that spawns a tsgo process in a background thread and
+//! provides a synchronous interface for sending requests and receiving responses.
 
 use std::sync::Arc;
 
+use crossbeam_channel::{Receiver, Sender, bounded, unbounded};
 use serde::Serialize;
 use serde_json::{Value, json};
 use tsgo_transport::{TransportError, TsgoTransport};
@@ -10,7 +12,7 @@ use tsgo_vfs::VirtualFileSystem;
 use crate::errors::{ClientError, Result};
 
 /// Options for [`Client::new`].  Mirrors the TypeScript `APIOptions` interface.
-pub struct ClientOptions<'t> {
+pub struct ClientOptions {
     /// Path to the `tsgo` binary.  Defaults to `"tsgo"` (must be in `$PATH`).
     pub tsgo_path: String,
     /// Working directory for the spawned process (`--cwd`).
@@ -19,10 +21,10 @@ pub struct ClientOptions<'t> {
     pub log_file: Option<String>,
     /// Optional virtual file system whose callbacks will be exposed to the
     /// tsgo server.
-    pub fs: Option<Arc<dyn VirtualFileSystem + Send + Sync + 't>>,
+    pub fs: Option<Arc<dyn VirtualFileSystem + Send + Sync + 'static>>,
 }
 
-impl<'t> Default for ClientOptions<'t> {
+impl Default for ClientOptions {
     fn default() -> Self {
         Self {
             tsgo_path: "tsgo".into(),
@@ -33,24 +35,38 @@ impl<'t> Default for ClientOptions<'t> {
     }
 }
 
-/// High-level asynchronous client that speaks the tsgo IPC protocol.
-pub struct Client<'t> {
-    transport: TsgoTransport<'t, ClientError>,
-    fs: Option<Arc<dyn VirtualFileSystem + Send + Sync + 't>>,
+/// Internal commands sent to the background worker thread.
+enum Command {
+    Json {
+        method: String,
+        payload: Value,
+        resp_tx: Sender<Result<Value>>,
+    },
+    Binary {
+        method: String,
+        data: Vec<u8>,
+        resp_tx: Sender<Result<Vec<u8>>>,
+    },
+    Shutdown,
 }
 
-impl<'t> Client<'t> {
-    /// Spawn a new `tsgo` process and establish the transport channel.
-    pub fn new(options: ClientOptions<'t>) -> Result<Self> {
-        let transport = TsgoTransport::new(&options.tsgo_path, options.cwd.as_deref())?;
+/// Cloneable handle that can be shared freely across threads/tasks.
+pub struct Client {
+    tx: Sender<Command>,
+    // hold join handle so that thread is joined when Client is dropped
+    _worker: std::thread::JoinHandle<()>,
+}
 
-        let mut client = Self {
-            transport,
-            fs: options.fs,
-        };
+impl Client {
+    /// Spawn the `tsgo` process in a background thread and return a handle.
+    pub fn new(options: ClientOptions) -> Result<Self> {
+        let mut transport = TsgoTransport::new(&options.tsgo_path, options.cwd.as_deref())?;
 
-        let callback_names = if let Some(ref fs_arc) = client.fs {
-            Self::register_fs_callbacks(&mut client.transport, Arc::clone(fs_arc));
+        if let Some(ref fs) = options.fs {
+            Self::register_fs_callbacks(&mut transport, Arc::clone(fs));
+        }
+
+        let callback_names = if options.fs.is_some() {
             vec![
                 "readFile".to_string(),
                 "fileExists".to_string(),
@@ -62,16 +78,95 @@ impl<'t> Client<'t> {
             vec![]
         };
 
-        client
-            .transport
-            .configure(options.log_file.as_deref(), &callback_names)?;
+        transport.configure(options.log_file.as_deref(), &callback_names)?;
 
-        Ok(client)
+        let (tx, rx): (Sender<Command>, Receiver<Command>) = unbounded();
+
+        let worker = std::thread::spawn(move || worker_loop(transport, rx));
+
+        Ok(Self {
+            tx,
+            _worker: worker,
+        })
+    }
+
+    /// Send JSON request and deserialize response.
+    pub fn request<P, R>(&self, method: &str, payload: P) -> Result<R>
+    where
+        P: Serialize,
+        R: serde::de::DeserializeOwned,
+    {
+        let value = serde_json::to_value(payload)?;
+        let (resp_tx, resp_rx) = bounded(1);
+        self.tx
+            .send(Command::Json {
+                method: method.to_string(),
+                payload: value,
+                resp_tx,
+            })
+            .map_err(|_| TransportError::TransportConnectionClosed)?;
+
+        let inner = resp_rx
+            .recv()
+            .map_err(|_| ClientError::Transport(TransportError::TransportConnectionClosed))?;
+        let raw = inner?;
+        let deserialized = serde_json::from_value(raw)?;
+        Ok(deserialized)
+    }
+
+    /// Convenience helper returning raw `serde_json::Value`.
+    pub fn request_value<P>(&self, method: &str, payload: P) -> Result<Value>
+    where
+        P: Serialize,
+    {
+        let value = serde_json::to_value(payload)?;
+        let (resp_tx, resp_rx) = bounded(1);
+        self.tx
+            .send(Command::Json {
+                method: method.to_string(),
+                payload: value,
+                resp_tx,
+            })
+            .map_err(|_| TransportError::TransportConnectionClosed)?;
+
+        resp_rx
+            .recv()
+            .map_err(|_| ClientError::Transport(TransportError::TransportConnectionClosed))?
+    }
+
+    /// Text echo helper.
+    pub fn echo(&self, message: &str) -> Result<String> {
+        let val = json!(message);
+        let raw: Value = self.request_value("echo", val)?;
+        Ok(serde_json::from_value(raw)?)
+    }
+
+    /// Binary echo helper.
+    pub fn echo_binary(&self, data: Vec<u8>) -> Result<Vec<u8>> {
+        let (resp_tx, resp_rx) = bounded(1);
+        self.tx
+            .send(Command::Binary {
+                method: "echo".into(),
+                data,
+                resp_tx,
+            })
+            .map_err(|_| TransportError::TransportConnectionClosed)?;
+
+        resp_rx
+            .recv()
+            .map_err(|_| ClientError::Transport(TransportError::TransportConnectionClosed))?
+    }
+
+    /// Clean shutdown, blocks until the worker thread exits.
+    pub fn close(self) -> Result<()> {
+        // ignore send error, worker may already have exited
+        let _ = self.tx.send(Command::Shutdown);
+        Ok(())
     }
 
     fn register_fs_callbacks(
-        transport: &mut TsgoTransport<'t, ClientError>,
-        fs: Arc<dyn VirtualFileSystem + Send + Sync + 't>,
+        transport: &mut TsgoTransport<'static, ClientError>,
+        fs: Arc<dyn VirtualFileSystem + Send + Sync + 'static>,
     ) {
         let fs_clone = Arc::clone(&fs);
         transport.register_callback("readFile".into(), move |args| {
@@ -83,7 +178,7 @@ impl<'t> Client<'t> {
                 })?;
             let result = fs_clone.read_file(path)?;
             Ok(match result {
-                Some(content) => Value::String(content),
+                Some(c) => Value::String(c),
                 None => Value::Null,
             })
         });
@@ -118,8 +213,7 @@ impl<'t> Client<'t> {
                     method: "realpath".into(),
                     reason: "Expected string argument for path".into(),
                 })?;
-            let real = fs_clone.realpath(path);
-            Ok(Value::String(real))
+            Ok(Value::String(fs_clone.realpath(path)))
         });
 
         let fs_entries = Arc::clone(&fs);
@@ -137,47 +231,36 @@ impl<'t> Client<'t> {
             })
         });
     }
+}
 
-    /// Send an arbitrary JSON request and deserialize the JSON response.
-    pub fn request<P, R>(&mut self, method: &str, payload: P) -> Result<R>
-    where
-        P: Serialize,
-        R: serde::de::DeserializeOwned,
-    {
-        let value = serde_json::to_value(payload)?;
-        let response_value = self.transport.request(method, value)?;
-        let response: R = serde_json::from_value(response_value)?;
-        Ok(response)
-    }
-
-    /// Convenience helper returning untyped JSON [`Value`].
-    pub fn request_value<P>(&mut self, method: &str, payload: P) -> Result<Value>
-    where
-        P: Serialize,
-    {
-        let value = serde_json::to_value(payload)?;
-        let response = self.transport.request(method, value)?;
-        Ok(response)
-    }
-
-    /// Simple text round-trip (useful for latency measurements / smoke tests).
-    pub fn echo(&mut self, message: &str) -> Result<String> {
-        let val = json!(message);
-        let response = self.transport.request("echo", val)?;
-        let response: String = serde_json::from_value(response)?;
-        Ok(response)
-    }
-
-    /// Binary echo variant.  The server treats the request payload and response
-    /// as opaque byte vectors.
-    pub fn echo_binary(&mut self, data: Vec<u8>) -> Result<Vec<u8>> {
-        let response = self.transport.request_binary("echo", data)?;
-        Ok(response)
-    }
-
-    /// Gracefully terminate the underlying process.
-    pub fn close(self) -> Result<()> {
-        self.transport.close()?;
-        Ok(())
+fn worker_loop(mut transport: TsgoTransport<'static, ClientError>, rx: Receiver<Command>) {
+    for cmd in rx.iter() {
+        match cmd {
+            Command::Json {
+                method,
+                payload,
+                resp_tx,
+            } => {
+                let result = transport
+                    .request(&method, payload)
+                    .map_err(ClientError::from);
+                // ignore send failure, caller may have been dropped
+                let _ = resp_tx.send(result);
+            }
+            Command::Binary {
+                method,
+                data,
+                resp_tx,
+            } => {
+                let result = transport
+                    .request_binary(&method, data)
+                    .map_err(ClientError::from);
+                let _ = resp_tx.send(result);
+            }
+            Command::Shutdown => {
+                let _ = transport.close();
+                break;
+            }
+        }
     }
 }

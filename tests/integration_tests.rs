@@ -152,7 +152,7 @@ fn test_transport_basic_functionality() -> Result<()> {
         "tsgo binary is not working properly"
     );
 
-    let mut client = Client::new(ClientOptions {
+    let client = Client::new(ClientOptions {
         tsgo_path: tsgo_path.clone(),
         cwd: Some(".".into()),
         log_file: None,
@@ -212,7 +212,7 @@ console.log(message);
     assert!(vfs.file_exists("/src/index.ts"));
     assert!(vfs.directory_exists("/src"));
 
-    let mut client = Client::new(ClientOptions {
+    let client = Client::new(ClientOptions {
         tsgo_path: tsgo_path.clone(),
         cwd: Some(".".into()),
         log_file: None,
@@ -384,7 +384,7 @@ const x: string = undefined;"#;
 fn test_error_scenarios() -> Result<()> {
     let tsgo_path = common::get_tsgo_binary_path().expect("tsgo binary not found");
 
-    let mut client = Client::new(ClientOptions {
+    let client = Client::new(ClientOptions {
         tsgo_path: tsgo_path.clone(),
         cwd: Some(".".into()),
         log_file: None,
@@ -449,7 +449,7 @@ fn test_tsgo_test_case_parametrized(#[case] test_file_name: &str) -> Result<()> 
 
     assert!(vfs.directory_exists("/"));
 
-    let mut client = Client::new(ClientOptions {
+    let client = Client::new(ClientOptions {
         tsgo_path: tsgo_path.clone(),
         cwd: Some(".".into()),
         log_file: None,
