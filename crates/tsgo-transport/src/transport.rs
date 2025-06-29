@@ -317,53 +317,6 @@ impl<'t, CallbackError: Error> TsgoTransport<'t, CallbackError> {
     }
 }
 
-/// High-level client configuration
-#[derive(Debug, Clone)]
-pub struct ClientOptions {
-    pub tsgo_path: String,
-    pub cwd: Option<String>,
-    pub log_file: Option<String>,
-}
-
-impl Default for ClientOptions {
-    fn default() -> Self {
-        Self {
-            tsgo_path: "tsgo".to_string(),
-            cwd: None,
-            log_file: None,
-        }
-    }
-}
-
-/// Protocol response types matching the TypeScript definitions
-#[derive(Debug, Deserialize)]
-pub struct ConfigResponse {
-    pub options: HashMap<String, Value>,
-    pub file_names: Vec<String>,
-}
-
-#[derive(Debug, Deserialize)]
-pub struct ProjectResponse {
-    pub id: String,
-    pub config_file_name: String,
-    pub compiler_options: HashMap<String, Value>,
-    pub root_files: Vec<String>,
-}
-
-#[derive(Debug, Deserialize)]
-pub struct SymbolResponse {
-    pub id: String,
-    pub name: String,
-    pub flags: u32,
-    pub check_flags: u32,
-}
-
-#[derive(Debug, Deserialize)]
-pub struct TypeResponse {
-    pub id: String,
-    pub flags: u32,
-}
-
 #[cfg(test)]
 mod tests {
     use std::fs;
@@ -551,21 +504,5 @@ mod tests {
         assert_eq!(encoded[9], 0xc4, "Payload should use binary format");
         assert_eq!(encoded[10], 0x06, "Payload length should be 6 for \"test\"");
         assert_eq!(&encoded[11..17], b"\"test\"");
-    }
-
-    #[test]
-    fn test_client_options_default() {
-        let options = ClientOptions::default();
-        assert_eq!(options.tsgo_path, "tsgo");
-        assert!(options.cwd.is_none());
-        assert!(options.log_file.is_none());
-    }
-
-    #[test]
-    fn test_message_type_serialization() {
-        let msg_type = MessageType::Request;
-        let serialized = to_vec(&msg_type).unwrap();
-        let deserialized: MessageType = from_slice(&serialized).unwrap();
-        assert_eq!(msg_type, deserialized);
     }
 }
