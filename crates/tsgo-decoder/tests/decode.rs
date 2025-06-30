@@ -75,7 +75,7 @@ fn test_decode_and_format(
         )
     });
 
-    let decoder = TsgoDecoder::new(binary_data)
+    let decoder = TsgoDecoder::new(&binary_data)
         .unwrap_or_else(|e| panic!("Failed to decode binary data for {}: {}", test_name, e));
 
     let formatted_output = format_encoded_source_file(&decoder);

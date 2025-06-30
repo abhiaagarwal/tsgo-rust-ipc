@@ -15,4 +15,7 @@ pub enum ClientError {
 
     #[error("Virtual file system error: {0}")]
     Vfs(#[from] tsgo_vfs::VfsError),
+
+    #[error("Decoder error: {0}")]
+    Decoder(#[from] tsgo_decoder::DecoderError),
 }

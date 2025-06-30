@@ -1,7 +1,7 @@
-use std::io::Cursor;
+use std::{borrow::Cow, io::Cursor};
 
 use byteorder::{LittleEndian, ReadBytesExt};
-use tsgo_syntax::SyntaxKind;
+use tsgo_syntax::{SyntaxKind, TokenFlags};
 
 use crate::{DecoderError, Result};
 
@@ -39,19 +39,75 @@ use constants::*;
 
 /// Represents a decoded AST node
 #[derive(Debug, Clone)]
-pub struct Node {
+pub struct Node<'a> {
     pub kind: SyntaxKind,
     pub pos: u32,
     pub end: u32,
     pub next_sibling: u32,
     pub parent: u32,
     pub data: u32,
-    pub text: Option<String>,
+    pub text: Option<Cow<'a, str>>,
     pub flags: Option<u32>,
     pub token: Option<SyntaxKind>,
-    pub template_flags: Option<u32>,
-    pub file_name: Option<String>,
-    pub raw_text: Option<String>,
+    pub template_flags: Option<TokenFlags>,
+    pub file_name: Option<Cow<'a, str>>,
+    pub raw_text: Option<Cow<'a, str>>,
+}
+
+pub struct StringTable<'a> {
+    entries: Vec<(usize, usize)>,
+    bytes: &'a [u8],
+}
+
+impl<'a> StringTable<'a> {
+    /// Create a new string table from the (start, end) offsets that are **relative** to the
+    /// beginning of the `bytes` slice that contains all string data. The offsets are given as
+    /// `u32` in the binary format; they are converted to `usize` here for easier slicing.
+    pub fn new(raw_entries: Vec<(u32, u32)>, bytes: &'a [u8]) -> Result<Self> {
+        let entries = raw_entries
+            .into_iter()
+            .enumerate()
+            .map(|(i, (s, e))| {
+                let s = s as usize;
+                let e = e as usize;
+
+                if e > bytes.len() {
+                    return Err(DecoderError::StringBoundsOutOfRange {
+                        string_index: i,
+                        start: s,
+                        end: e,
+                        data_size: bytes.len(),
+                    });
+                }
+
+                if s > e {
+                    return Err(DecoderError::StringBoundsInvalid {
+                        string_index: i,
+                        start: s,
+                        end: e,
+                    });
+                }
+
+                Ok((s, e))
+            })
+            .collect::<Result<Vec<(usize, usize)>>>()?;
+
+        Ok(Self { entries, bytes })
+    }
+
+    /// Lazily fetch the string at `index`. This returns a `Cow<str>` so that, in the common case
+    /// where the underlying bytes are valid UTF-8, no allocation is performed.
+    pub fn get(&self, index: usize) -> Option<Cow<'a, str>> {
+        self.entries.get(index).map(|&(start, end)| {
+            // SAFETY: bounds were already validated during construction of the table.
+            unsafe { String::from_utf8_lossy(self.bytes.get_unchecked(start..end)) }
+        })
+    }
+
+    #[inline]
+    pub fn len(&self) -> usize {
+        self.entries.len()
+    }
 }
 
 /// Header information from the binary format
@@ -65,19 +121,19 @@ pub struct Header {
 }
 
 /// Main decoder for the tsgo binary format
-pub struct TsgoDecoder {
-    data: Vec<u8>,
+pub struct TsgoDecoder<'a> {
+    data: &'a [u8],
     header: Header,
-    string_table: Vec<String>,
-    nodes: Vec<Node>,
+    string_table: StringTable<'a>,
+    nodes: Vec<Node<'a>>,
 }
 
-impl TsgoDecoder {
+impl<'a> TsgoDecoder<'a> {
     /// Create a new decoder from binary data
-    pub fn new(data: Vec<u8>) -> Result<Self> {
-        let header = Self::decode_header(&data)?;
-        let string_table = Self::decode_string_table(&data, &header)?;
-        let nodes = Self::decode_nodes(&data, &header, &string_table)?;
+    pub fn new(data: &'a [u8]) -> Result<Self> {
+        let header = Self::decode_header(data)?;
+        let string_table = Self::decode_string_table(data, &header)?;
+        let nodes = Self::decode_nodes(data, &header, &string_table)?;
 
         Ok(TsgoDecoder {
             data,
@@ -122,10 +178,9 @@ impl TsgoDecoder {
     }
 
     /// Decode the string table from binary data
-    fn decode_string_table(data: &[u8], header: &Header) -> Result<Vec<String>> {
+    fn decode_string_table(data: &'a [u8], header: &Header) -> Result<StringTable<'a>> {
         let string_offsets_start = header.string_offsets_offset as usize;
         let string_data_start = header.string_data_offset as usize;
-        let _extended_data_start = header.extended_data_offset as usize;
 
         if string_offsets_start >= data.len() {
             return Err(DecoderError::InvalidDataOffset {
@@ -142,53 +197,34 @@ impl TsgoDecoder {
 
         let mut cursor = Cursor::new(&data[string_offsets_start..string_data_start]);
         let num_strings = (string_data_start - string_offsets_start) / 8;
-        let strings: Vec<String> = (0..num_strings)
-            .map(|i| {
-                let start_offset = cursor.read_u32::<LittleEndian>()? as usize;
-                let end_offset = cursor.read_u32::<LittleEndian>()? as usize;
+        let strings: Vec<(u32, u32)> = (0..num_strings)
+            .map(|_i| {
+                let start_offset = cursor.read_u32::<LittleEndian>()?;
+                let end_offset = cursor.read_u32::<LittleEndian>()?;
 
-                let string_start = string_data_start + start_offset;
-                let string_end = string_data_start + end_offset;
-
-                if string_end > data.len() {
-                    return Err(DecoderError::StringBoundsOutOfRange {
-                        string_index: i,
-                        start: string_start,
-                        end: string_end,
-                        data_size: data.len(),
-                    });
-                }
-
-                if string_start > string_end {
-                    return Err(DecoderError::StringBoundsInvalid {
-                        string_index: i,
-                        start: string_start,
-                        end: string_end,
-                    });
-                }
-
-                let string_bytes = &data[string_start..string_end];
-                let string = String::from_utf8_lossy(string_bytes).to_string();
-                Ok(string)
+                Ok((start_offset, end_offset))
             })
-            .collect::<Result<Vec<String>>>()?;
+            .collect::<Result<Vec<(u32, u32)>>>()?;
 
-        Ok(strings)
+        StringTable::new(strings, &data[string_data_start..])
     }
 
     /// Decode all nodes from binary data
-    fn decode_nodes(data: &[u8], header: &Header, string_table: &[String]) -> Result<Vec<Node>> {
+    fn decode_nodes(
+        data: &[u8],
+        header: &Header,
+        string_table: &StringTable<'a>,
+    ) -> Result<Vec<Node<'a>>> {
         let nodes_start = header.nodes_offset as usize;
-        if nodes_start >= data.len() {
-            return Err(DecoderError::InvalidDataOffset {
+        let buffer = data
+            .get(nodes_start..)
+            .ok_or(DecoderError::InvalidDataOffset {
                 offset: nodes_start,
                 buffer_size: data.len(),
-            });
-        }
+            })?;
 
-        let nodes_data = &data[nodes_start..];
-        let mut cursor = Cursor::new(nodes_data);
-        let num_nodes = nodes_data.len() / NODE_SIZE;
+        let mut cursor = Cursor::new(buffer);
+        let num_nodes = buffer.len() / NODE_SIZE;
 
         let nodes: Vec<Node> = (0..num_nodes)
             .map(|_i| {
@@ -229,20 +265,16 @@ impl TsgoDecoder {
     fn decode_node_text(
         kind: &SyntaxKind,
         node_data: u32,
-        string_table: &[String],
+        string_table: &StringTable<'a>,
         data: &[u8],
         header: &Header,
-    ) -> Result<Option<String>> {
+    ) -> Result<Option<Cow<'a, str>>> {
         let data_type = node_data & NODE_DATA_TYPE_MASK;
 
         match data_type {
             NODE_DATA_TYPE_STRING => {
                 let string_index = (node_data & NODE_DATA_STRING_INDEX_MASK) as usize / 2;
-                if string_index < string_table.len() {
-                    Ok(Some(string_table[string_index].clone()))
-                } else {
-                    Ok(None)
-                }
+                Ok(string_table.get(string_index))
             }
             NODE_DATA_TYPE_EXTENDED_DATA => match kind {
                 SyntaxKind::SourceFile
@@ -255,12 +287,7 @@ impl TsgoDecoder {
                     if extended_data_offset + 4 <= data.len() {
                         let mut cursor = Cursor::new(&data[extended_data_offset..]);
                         let string_index = cursor.read_u32::<LittleEndian>()? as usize / 2;
-
-                        if string_index < string_table.len() {
-                            Ok(Some(string_table[string_index].clone()))
-                        } else {
-                            Ok(None)
-                        }
+                        Ok(string_table.get(string_index))
                     } else {
                         Ok(None)
                     }
@@ -274,36 +301,37 @@ impl TsgoDecoder {
     fn decode_extended_data(
         kind: &SyntaxKind,
         node_data: u32,
-        string_table: &[String],
+        string_table: &StringTable<'a>,
         data: &[u8],
         header: &Header,
     ) -> Result<(
         Option<u32>,
         Option<SyntaxKind>,
-        Option<u32>,
-        Option<String>,
-        Option<String>,
+        Option<TokenFlags>,
+        Option<Cow<'a, str>>,
+        Option<Cow<'a, str>>,
     )> {
         let data_type = node_data & NODE_DATA_TYPE_MASK;
 
-        // TODO(aagarwal): Make this more efficient
-        let mut flags = None;
-        let mut token = None;
-        let mut template_flags = None;
-        let mut file_name = None;
-        let mut raw_text = None;
+        let flags = if kind == &SyntaxKind::VariableDeclarationList {
+            Some((node_data & (1 << 24 | 1 << 25)) >> 24)
+        } else {
+            None
+        };
 
-        if kind == &SyntaxKind::VariableDeclarationList {
-            flags = Some((node_data & (1 << 24 | 1 << 25)) >> 24);
-        }
-
-        if kind == &SyntaxKind::ImportAttributes {
+        let token = if kind == &SyntaxKind::ImportAttributes {
             if (node_data & (1 << 25)) != 0 {
-                token = Some(SyntaxKind::AssertKeyword);
+                Some(SyntaxKind::AssertKeyword)
             } else {
-                token = Some(SyntaxKind::WithKeyword);
+                Some(SyntaxKind::WithKeyword)
             }
-        }
+        } else {
+            None
+        };
+
+        let mut template_flags: Option<TokenFlags> = None;
+        let mut file_name: Option<Cow<'a, str>> = None;
+        let mut raw_text: Option<Cow<'a, str>> = None;
 
         if data_type == NODE_DATA_TYPE_EXTENDED_DATA {
             let extended_data_offset = header.extended_data_offset as usize
@@ -317,12 +345,10 @@ impl TsgoDecoder {
                         let mut cursor = Cursor::new(&data[extended_data_offset..]);
                         cursor.set_position(4); // raw_text is at offset 4
                         let raw_text_index = cursor.read_u32::<LittleEndian>()? as usize / 2;
+                        raw_text = string_table.get(raw_text_index);
 
-                        if raw_text_index < string_table.len() {
-                            raw_text = Some(string_table[raw_text_index].clone());
-                        }
-
-                        template_flags = Some(cursor.read_u32::<LittleEndian>()?);
+                        let raw = cursor.read_u32::<LittleEndian>()?;
+                        template_flags = TokenFlags::from_bits(raw);
                     }
                 }
                 SyntaxKind::SourceFile => {
@@ -330,10 +356,7 @@ impl TsgoDecoder {
                         let mut cursor = Cursor::new(&data[extended_data_offset..]);
                         cursor.set_position(4); // file_name is at offset 4
                         let file_name_index = cursor.read_u32::<LittleEndian>()? as usize / 2;
-
-                        if file_name_index < string_table.len() {
-                            file_name = Some(string_table[file_name_index].clone());
-                        }
+                        file_name = string_table.get(file_name_index);
                     }
                 }
                 _ => {}
@@ -349,7 +372,7 @@ impl TsgoDecoder {
     }
 
     /// Get string table
-    pub fn string_table(&self) -> &[String] {
+    pub fn string_table(&self) -> &StringTable<'a> {
         &self.string_table
     }
 
@@ -360,6 +383,6 @@ impl TsgoDecoder {
 
     /// Get raw data (for debugging)
     pub fn data(&self) -> &[u8] {
-        &self.data
+        self.data
     }
 }

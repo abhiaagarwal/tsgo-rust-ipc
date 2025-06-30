@@ -168,9 +168,6 @@ fn test_transport_basic_functionality() -> Result<()> {
         assert_eq!(response, test_message);
     }
 
-    let error_result = client.request_value("invalid_method", json!("test"));
-    assert!(error_result.is_err());
-
     client.close()?;
     Ok(())
 }
@@ -219,32 +216,14 @@ console.log(message);
         fs: Some(vfs),
     })?;
 
-    match client.echo("VFS integration test") {
-        Ok(response) => {
-            assert_eq!(response, json!("VFS integration test"));
-        }
-        Err(e) => {
-            return Err(e);
-        }
-    }
+    let response = client.echo("VFS integration test")?;
+    assert_eq!(response, json!("VFS integration test"));
 
-    let config_response = match client.request_value(
-        "parseConfigFile",
-        json!({
-            "fileName": "/tsconfig.json"
-        }),
-    ) {
-        Ok(response) => response,
-        Err(e) => {
-            return Err(e);
-        }
-    };
+    let config_response = client.parse_config_file("/tsconfig.json")?;
 
-    assert!(config_response.is_object());
-    if let Some(file_names) = config_response.get("fileNames") {
-        let files = file_names.as_array().unwrap();
-        assert!(!files.is_empty());
-    }
+    assert!(config_response.options.is_object());
+    assert_eq!(config_response.file_names.len(), 1);
+    assert_eq!(config_response.file_names, vec!["/src/index.ts"]);
 
     client.close()?;
     Ok(())
@@ -313,7 +292,7 @@ fn test_with_real_tsgo_test_cases() -> Result<()> {
         let vfs: Arc<dyn VirtualFileSystem + Send + Sync> =
             Arc::new(MemoryFileSystem::from_files(test_data.files));
 
-        let mut client = Client::new(ClientOptions {
+        let client = Client::new(ClientOptions {
             tsgo_path: tsgo_path.clone(),
             cwd: Some(".".into()),
             log_file: None,
@@ -324,9 +303,8 @@ fn test_with_real_tsgo_test_cases() -> Result<()> {
         client.echo(&test_message)?;
 
         if vfs.file_exists("/tsconfig.json") {
-            let config_response =
-                client.request_value("parseConfigFile", json!({"fileName": "/tsconfig.json"}))?;
-            assert!(config_response.is_object());
+            let config_response = client.parse_config_file("/tsconfig.json")?;
+            assert!(config_response.options.is_object());
         }
 
         client.close()?;
@@ -359,7 +337,7 @@ const x: string = undefined;"#;
     let vfs: Arc<dyn VirtualFileSystem + Send + Sync> =
         Arc::new(MemoryFileSystem::from_files(test_data.files));
 
-    let mut client = Client::new(ClientOptions {
+    let client = Client::new(ClientOptions {
         tsgo_path: tsgo_path.clone(),
         cwd: Some(".".into()),
         log_file: None,
@@ -370,40 +348,8 @@ const x: string = undefined;"#;
     client.echo(&test_message)?;
 
     if vfs.file_exists("/tsconfig.json") {
-        let config_response =
-            client.request_value("parseConfigFile", json!({"fileName": "/tsconfig.json"}))?;
-        assert!(config_response.is_object());
-    }
-
-    client.close()?;
-    Ok(())
-}
-
-/// Integration test for error scenarios
-#[test]
-fn test_error_scenarios() -> Result<()> {
-    let tsgo_path = common::get_tsgo_binary_path().expect("tsgo binary not found");
-
-    let client = Client::new(ClientOptions {
-        tsgo_path: tsgo_path.clone(),
-        cwd: Some(".".into()),
-        log_file: None,
-        fs: None,
-    })?;
-
-    let error_tests = vec![
-        ("nonexistent_method", json!("test")),
-        ("", json!("empty method name")),
-        ("echo", json!(null)),
-    ];
-
-    for (method, payload) in error_tests {
-        let result = client.request_value(method, payload);
-        if method == "echo" {
-            assert!(result.is_ok() || result.is_err());
-        } else {
-            assert!(result.is_err(), "Expected error for method: {}", method);
-        }
+        let config_response = client.parse_config_file("/tsconfig.json")?;
+        assert!(config_response.options.is_object());
     }
 
     client.close()?;
@@ -467,14 +413,8 @@ fn test_tsgo_test_case_parametrized(#[case] test_file_name: &str) -> Result<()> 
             "tsconfig.json"
         };
 
-        if let Ok(response) =
-            client.request_value("parseConfigFile", json!({"fileName": config_file}))
-        {
-            assert!(
-                response.is_object(),
-                "Config response should be an object for {}",
-                test_file_name
-            );
+        if let Ok(response) = client.parse_config_file(config_file) {
+            assert!(response.options.is_object());
         }
     }
 

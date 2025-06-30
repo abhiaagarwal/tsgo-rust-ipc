@@ -9,7 +9,11 @@ use serde_json::{Value, json};
 use tsgo_transport::{TransportError, TsgoTransport};
 use tsgo_vfs::VirtualFileSystem;
 
-use crate::errors::{ClientError, Result};
+use crate::{
+    errors::{ClientError, Result},
+    proto::{ConfigResponse, ProjectResponse},
+    registry::{ObjectRegistry, Project},
+};
 
 /// Options for [`Client::new`].  Mirrors the TypeScript `APIOptions` interface.
 pub struct ClientOptions {
@@ -51,13 +55,13 @@ enum Command {
 }
 
 /// Cloneable handle that can be shared freely across threads/tasks.
-pub struct Client {
+pub(crate) struct TransportClient {
     tx: Sender<Command>,
     // hold join handle so that thread is joined when Client is dropped
     _worker: std::thread::JoinHandle<()>,
 }
 
-impl Client {
+impl TransportClient {
     /// Spawn the `tsgo` process in a background thread and return a handle.
     pub fn new(options: ClientOptions) -> Result<Self> {
         let mut transport = TsgoTransport::new(&options.tsgo_path, options.cwd.as_deref())?;
@@ -114,17 +118,17 @@ impl Client {
         Ok(deserialized)
     }
 
-    /// Convenience helper returning raw `serde_json::Value`.
-    pub fn request_value<P>(&self, method: &str, payload: P) -> Result<Value>
+    /// Send a request that expects binary data back.
+    pub fn request_binary<P>(&self, method: &str, payload: P) -> Result<Vec<u8>>
     where
         P: Serialize,
     {
-        let value = serde_json::to_value(payload)?;
+        let value = serde_json::to_string(&payload)?;
         let (resp_tx, resp_rx) = bounded(1);
         self.tx
-            .send(Command::Json {
+            .send(Command::Binary {
                 method: method.to_string(),
-                payload: value,
+                data: value.into_bytes(),
                 resp_tx,
             })
             .map_err(|_| TransportError::TransportConnectionClosed)?;
@@ -137,7 +141,7 @@ impl Client {
     /// Text echo helper.
     pub fn echo(&self, message: &str) -> Result<String> {
         let val = json!(message);
-        let raw: Value = self.request_value("echo", val)?;
+        let raw: Value = self.request("echo", val)?;
         Ok(serde_json::from_value(raw)?)
     }
 
@@ -261,6 +265,52 @@ fn worker_loop(mut transport: TsgoTransport<'static, ClientError>, rx: Receiver<
                 let _ = transport.close();
                 break;
             }
+        }
+    }
+}
+
+/// Public entry-point mirroring the TypeScript `API` class.
+pub struct Client {
+    inner: Arc<TransportClient>,
+    registry: Arc<ObjectRegistry>,
+}
+
+impl Client {
+    /// Spawn a `tsgo` child process and return a ready-to-use API client.
+    pub fn new(options: ClientOptions) -> Result<Self> {
+        let inner = Arc::new(TransportClient::new(options)?);
+        let registry = Arc::new(ObjectRegistry::new(Arc::clone(&inner)));
+        Ok(Self { inner, registry })
+    }
+
+    /// Parse a `tsconfig.json` (or similar) and return compiler options + root files.
+    pub fn parse_config_file(&self, file_name: &str) -> Result<ConfigResponse> {
+        let payload = json!({ "fileName": file_name });
+        self.inner.request("parseConfigFile", payload)
+    }
+
+    /// Load a project
+    pub fn load_project(&self, config_file_name: &str) -> Result<Arc<Project>> {
+        let payload = json!({ "configFileName": config_file_name });
+        let resp: ProjectResponse = self.inner.request("loadProject", payload)?;
+        Ok(self.registry.get_project_from_response(resp))
+    }
+
+    /// String echo (debug / round-trip latency measurement).
+    pub fn echo(&self, msg: &str) -> Result<String> {
+        self.inner.echo(msg)
+    }
+
+    /// Binary echo (round-trip for raw bytes).
+    pub fn echo_binary(&self, data: Vec<u8>) -> Result<Vec<u8>> {
+        self.inner.echo_binary(data)
+    }
+
+    /// Graceful shutdown.
+    pub fn close(self) -> Result<()> {
+        match Arc::try_unwrap(self.inner) {
+            Ok(inner) => inner.close(),
+            Err(_) => Ok(()),
         }
     }
 }

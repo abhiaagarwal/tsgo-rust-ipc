@@ -6,8 +6,7 @@ pub use tsgo_syntax as syntax;
 pub use tsgo_syntax::SyntaxKind;
 pub use tsgo_transport as transport;
 pub use tsgo_transport::{
-    ClientOptions, ConfigResponse, MessageType, ProjectResponse, ProtocolMessage,
-    Result as TransportResult, SymbolResponse, TransportError, TsgoTransport, TypeResponse,
+    MessageType, ProtocolMessage, Result as TransportResult, TransportError, TsgoTransport,
 };
 pub use tsgo_vfs as vfs;
 pub use tsgo_vfs::{
