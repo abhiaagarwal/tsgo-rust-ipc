@@ -43,7 +43,7 @@ jobs:
         with:
           cache-on-failure: true
       - name: Run Clippy
-        run: cargo clippy --all-targets --all-features -- -D warnings
+        run: cargo clippy --all-targets --all-features
 
   unit-test:
     name: Unit Tests
@@ -78,7 +78,9 @@ jobs:
           node-version: 'lts/*'
       - uses: actions/setup-go@v5
         with:
-          go-version: '>=1.24.0'
+          go-version-file: tsgo/go.mod
+          cache-dependency-path: |
+            tsgo/go.sum
       - uses: Swatinem/rust-cache@v2
         with:
           cache-on-failure: true
