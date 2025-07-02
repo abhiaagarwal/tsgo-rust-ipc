@@ -29,11 +29,11 @@ type TestSettings struct {
 
 // TestUnit mirrors the Rust type-runner TestUnit structure
 type TestUnit struct {
-	Path      string
-	Settings  TestSettings
-	FileNames []string
+	Path         string
+	Settings     TestSettings
+	FileNames    []string
 	FileContents []string
-	Symlinks  map[string]string
+	Symlinks     map[string]string
 }
 
 // FileReadError represents file reading errors
@@ -80,7 +80,7 @@ func decodeUTF16BE(data []byte) (string, error) {
 	if len(data)%2 != 0 {
 		return "", fmt.Errorf("invalid UTF-16 BE data length")
 	}
-	
+
 	u16s := make([]uint16, len(data)/2)
 	for i := 0; i < len(u16s); i++ {
 		u16s[i] = binary.BigEndian.Uint16(data[i*2:])
@@ -92,7 +92,7 @@ func decodeUTF16LE(data []byte) (string, error) {
 	if len(data)%2 != 0 {
 		return "", fmt.Errorf("invalid UTF-16 LE data length")
 	}
-	
+
 	u16s := make([]uint16, len(data)/2)
 	for i := 0; i < len(u16s); i++ {
 		u16s[i] = binary.LittleEndian.Uint16(data[i*2:])
@@ -116,7 +116,7 @@ func parseTestUnit(path, content string) (*TestUnit, error) {
 
 	for i, line := range lines {
 		line = strings.TrimRight(line, "\r")
-		
+
 		// Check for comment directives
 		if strings.HasPrefix(line, "//") {
 			rest := strings.TrimSpace(line[2:])
@@ -186,7 +186,7 @@ func parseTestUnit(path, content string) (*TestUnit, error) {
 // discoverTestFiles finds all TypeScript test files like type-runner's discover function
 func discoverTestFiles(repoPath string) ([]string, error) {
 	var testFiles []string
-	
+
 	testDirs := []string{
 		filepath.Join(repoPath, "_submodules", "TypeScript", "tests", "cases", "compiler"),
 		filepath.Join(repoPath, "_submodules", "TypeScript", "tests", "cases", "conformance"),
@@ -197,14 +197,14 @@ func discoverTestFiles(repoPath string) ([]string, error) {
 			if err != nil {
 				return err
 			}
-			
+
 			if !info.IsDir() && strings.HasSuffix(path, ".ts") {
 				// Skip problematic files like type-runner does
 				baseName := filepath.Base(path)
-				if baseName == "corrupted.ts" || 
-				   baseName == "TransportStream.ts" || 
-				   baseName == "checkJsFiles6.ts" || 
-				   baseName == "jsFileCompilationWithoutJsExtensions.ts" {
+				if baseName == "corrupted.ts" ||
+					baseName == "TransportStream.ts" ||
+					baseName == "checkJsFiles6.ts" ||
+					baseName == "jsFileCompilationWithoutJsExtensions.ts" {
 					return nil
 				}
 				testFiles = append(testFiles, path)
@@ -224,32 +224,32 @@ func discoverTestFiles(repoPath string) ([]string, error) {
 func formatEncodedSourceFile(encoded []byte) string {
 	var result strings.Builder
 	var getIndent func(parentIndex uint32) string
-	
+
 	offsetNodes := binary.LittleEndian.Uint32(encoded[encoder.HeaderOffsetNodes:])
 	offsetStringOffsets := binary.LittleEndian.Uint32(encoded[encoder.HeaderOffsetStringOffsets:])
 	offsetStrings := binary.LittleEndian.Uint32(encoded[encoder.HeaderOffsetStringData:])
-	
+
 	getIndent = func(parentIndex uint32) string {
 		if parentIndex == 0 {
 			return ""
 		}
 		return "  " + getIndent(binary.LittleEndian.Uint32(encoded[int(offsetNodes)+int(parentIndex)*encoder.NodeSize+encoder.NodeOffsetParent:]))
 	}
-	
+
 	j := 1
 	for i := int(offsetNodes) + encoder.NodeSize; i < len(encoded); i += encoder.NodeSize {
 		kind := binary.LittleEndian.Uint32(encoded[i+encoder.NodeOffsetKind:])
 		pos := binary.LittleEndian.Uint32(encoded[i+encoder.NodeOffsetPos:])
 		end := binary.LittleEndian.Uint32(encoded[i+encoder.NodeOffsetEnd:])
 		parentIndex := binary.LittleEndian.Uint32(encoded[i+encoder.NodeOffsetParent:])
-		
+
 		result.WriteString(getIndent(parentIndex))
 		if kind == encoder.SyntaxKindNodeList {
 			result.WriteString("NodeList")
 		} else {
 			result.WriteString(ast.Kind(kind).String())
 		}
-		
+
 		if ast.Kind(kind) == ast.KindIdentifier || ast.Kind(kind) == ast.KindStringLiteral {
 			stringIndex := binary.LittleEndian.Uint32(encoded[i+encoder.NodeOffsetData:]) & encoder.NodeDataStringIndexMask
 			strStart := binary.LittleEndian.Uint32(encoded[int(offsetStringOffsets+stringIndex*4):])
@@ -257,7 +257,7 @@ func formatEncodedSourceFile(encoded []byte) string {
 			str := string(encoded[offsetStrings+strStart : offsetStrings+strEnd])
 			result.WriteString(fmt.Sprintf(` "%s"`, str))
 		}
-		
+
 		fmt.Fprintf(&result, " [%d, %d), i=%d, next=%d", pos, end, j, encoded[i+encoder.NodeOffsetNext])
 		result.WriteString("\n")
 		j++
@@ -287,12 +287,26 @@ func main() {
 	}
 
 	repoPath := os.Args[1]
-	
+
+	// -----------------------------------------------------------------------------
 	// Create output directories
-	testDataDir := filepath.Join(repoPath, "..", "test_data")
+	//
+	// The Rust `tsgo-decoder` crate expects fixture files to live under:
+	//   crates/tsgo-decoder/tests/fixtures/
+	//     ├─ encoded/   *.bin  – binary-encoded AST payloads
+	//     └─ dumps/go/ *.txt  – pretty-printed reference dumps produced by Go
+	//
+	// `repoPath` points at the root of the local *tsgo* clone (the first CLI
+	// argument).  The workspace root is therefore the parent directory of
+	// `repoPath`.  We build the output paths relative to that directory so the
+	// script can be run from anywhere while still emitting the fixtures in the
+	// correct location for the Rust tests to discover them.
+	// -----------------------------------------------------------------------------
+	workspaceRoot := filepath.Clean(filepath.Join(repoPath, ".."))
+	testDataDir := filepath.Join(workspaceRoot, "crates", "tsgo-decoder", "tests", "fixtures")
 	encodedDir := filepath.Join(testDataDir, "encoded")
 	dumpsGoDir := filepath.Join(testDataDir, "dumps", "go")
-	
+
 	for _, dir := range []string{encodedDir, dumpsGoDir} {
 		if err := os.MkdirAll(dir, 0755); err != nil {
 			fmt.Fprintf(os.Stderr, "Failed to create directory %s: %v\n", dir, err)
@@ -341,7 +355,7 @@ func main() {
 		// Process each file in the unit
 		for i, fileName := range unit.FileNames {
 			fileContent := unit.FileContents[i]
-			
+
 			// Skip non-TypeScript files
 			if !strings.HasSuffix(fileName, ".ts") && !strings.HasSuffix(fileName, ".tsx") {
 				continue
@@ -358,13 +372,13 @@ func main() {
 				// For absolute paths or Windows drives, create a safe relative path
 				normalizedFileName = filepath.Base(normalizedFileName)
 			}
-			
+
 			// Create absolute path for the virtual file
 			absFileName, err := filepath.Abs(filepath.Join(filepath.Dir(testFile), normalizedFileName))
 			if err != nil {
 				absFileName = filepath.Join(filepath.Dir(testFile), normalizedFileName)
 			}
-			
+
 			// Parse and encode
 			sourceFile := parser.ParseSourceFile(ast.SourceFileParseOptions{
 				FileName: absFileName,
@@ -380,7 +394,7 @@ func main() {
 
 			// Generate output filename
 			outputName := fmt.Sprintf("%s__%s", sanitizeFileName(relPath[:len(relPath)-3]), sanitizeFileName(fileName))
-			
+
 			// Write binary
 			binPath := filepath.Join(encodedDir, outputName+".bin")
 			if err := os.WriteFile(binPath, encoded, 0644); err != nil {
@@ -407,8 +421,8 @@ func main() {
 	fmt.Printf("  Processed: %d files\n", processed)
 	fmt.Printf("  Skipped: %d files\n", skipped)
 	fmt.Printf("  Failed: %d files\n", failed)
-	
+
 	if failed > 0 {
 		os.Exit(1)
 	}
-} 
+}
