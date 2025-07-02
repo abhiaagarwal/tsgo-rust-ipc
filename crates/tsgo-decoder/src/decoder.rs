@@ -1,7 +1,7 @@
 use std::{borrow::Cow, io::Cursor};
 
 use byteorder::{LittleEndian, ReadBytesExt};
-use tsgo_syntax::{SyntaxKind, TokenFlags};
+use typescript_ast::{SyntaxKind, TokenFlags};
 
 use crate::{DecoderError, Result};
 

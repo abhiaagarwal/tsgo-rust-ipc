@@ -1,11 +1,11 @@
 [workspace]
 members = [
-    "crates/tsgo-syntax", 
     "crates/tsgo-decoder",
     "crates/tsgo-vfs",
     "crates/tsgo-transport",
     "crates/tsgo-client",
     "crates/tsgo-rust-ipc",
+    "crates/typescript-ast",
     "tests",
 ]
 resolver = "3"
@@ -31,14 +31,15 @@ tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
 byteorder = "1.5.0"
 dashmap = "6.1.0"
 async-trait = "0.1.88"
+bitflags = "2.4"
 
 rstest = "0.25.0"
 similar-asserts = "1.6"
 
-tsgo-syntax = { path = "crates/tsgo-syntax" }
 tsgo-decoder = { path = "crates/tsgo-decoder" }
 tsgo-vfs = { path = "crates/tsgo-vfs" }
 tsgo-transport = { path = "crates/tsgo-transport" }
+typescript-ast = { path = "crates/typescript-ast" }
 
 [profile.dev.package]
 similar.opt-level = 3

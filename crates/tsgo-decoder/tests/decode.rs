@@ -8,7 +8,7 @@ use tsgo_decoder::{
     Node, TsgoDecoder,
     constants::{NODE_OFFSET_NEXT, NODE_SIZE},
 };
-use tsgo_syntax::SyntaxKind;
+use typescript_ast::SyntaxKind;
 
 fn format_encoded_source_file(decoder: &TsgoDecoder) -> String {
     let mut result = String::new();
