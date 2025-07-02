@@ -1,0 +1,69 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Project Structure Guide
+
+## Overview
+This repository is a **Rust workspace** that implements an IPC client library for Microsoft's TypeScript-Go project (**tsgo**).  Most of the code lives under `crates/`, while the upstream `tsgo/` project is included as a *submodule* only for integration testing.
+
+```
+./                    ── workspace root (this repo)
+├─ Cargo.toml         ── workspace definition
+├─ crates/            ── first-party Rust crates (your code)
+├─ tests/             ── cross-crate integration tests (need `tsgo` binary)
+├─ type-runner/       ── secondary Rust workspace for type-checking benches
+├─ tsgo/              ── **third-party** TypeScript-Go implementation (do **not** modify)
+└─ scripts/           ── helper scripts (bench fixture generation, etc.)
+```
+
+## 1. Rust Workspace – `crates/`
+Each sub-directory inside `crates/` is an *independent* crate and a member of the top-level workspace declared in [Cargo.toml](mdc:Cargo.toml).
+
+| Crate | Path | Purpose |
+|-------|------|---------|
+| **tsgo-client** | [`crates/tsgo-client`](mdc:crates/tsgo-client) | High-level IPC client API exposed to users |
+| **tsgo-decoder** | [`crates/tsgo-decoder`](mdc:crates/tsgo-decoder) | Decodes binary AST buffers that come back from `tsgo` |
+| **tsgo-transport** | [`crates/tsgo-transport`](mdc:crates/tsgo-transport) | Transport layer abstraction (spawn process / send msgpack) |
+| **tsgo-vfs** | [`crates/tsgo-vfs`](mdc:crates/tsgo-vfs) | In-memory virtual file system used by the client |
+| **tsgo-rust-ipc** | [`crates/tsgo-rust-ipc`](mdc:crates/tsgo-rust-ipc) | Umbrella crate that re-exports the above pieces |
+| **typescript-ast** | [`crates/typescript-ast`](mdc:crates/typescript-ast) | Generated Rust representation of the TypeScript AST enums |
+
+### Decoder test fixtures
+`tsgo-decoder` ships ~13 k fixtures:
+- Encoded binary: [`tests/fixtures/encoded`](mdc:crates/tsgo-decoder/tests/fixtures/encoded)
+- Expected dump: [`tests/fixtures/dumps/go`](mdc:crates/tsgo-decoder/tests/fixtures/dumps/go)
+
+These files are large and checked in with **LF** endings (see `.gitattributes`).
+
+## 2. Cross-crate Tests – `tests/`
+- [`tests/integration_tests.rs`](mdc:tests/integration_tests.rs) spins up the `tsgo` binary and performs end-to-end requests.
+- Compilation of this crate is gated behind feature flags in CI so it is excluded on Windows & macOS.
+
+## 3. Third-party Submodule – `tsgo/`
+`tsgo/` mirrors the official Microsoft repo and is only required for:
+1. Building the **`tsgo` binary** (`npx hereby build`)
+2. Supplying fixtures / baseline files
+
+> 📢 **Never** edit code in `tsgo/`; upstream changes are pulled via `git submodule update`.
+
+## 4. Helper Scripts
+- [`scripts/generate-bench-fixtures/`](mdc:scripts/generate-bench-fixtures) – Go program to regenerate benchmark fixtures.
+
+## 5. Common Commands
+```bash
+# Build all first-party crates
+cargo build --workspace
+
+# Run *unit* tests (no tsgo)
+cargo test --workspace --exclude tsgo-rust-ipc-integration-tests
+
+# Run integration tests (requires tsgo binary)
+cd tsgo && npm ci && npx hereby build && cd ..
+TSGO_PATH=./tsgo/built/local/tsgo \
+  cargo test -p tsgo-rust-ipc-integration-tests
+```
+
+---
+Use this guide to quickly locate code and understand ownership boundaries between **your Rust crates** and the **upstream tsgo project**.
