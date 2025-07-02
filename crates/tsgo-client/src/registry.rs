@@ -4,7 +4,7 @@ use std::{
 };
 
 use serde_json::Value;
-use tsgo_decoder::TsgoDecoder;
+// use tsgo_decoder::TsgoDecoder;
 
 use crate::{
     client::TransportClient,
@@ -27,6 +27,7 @@ pub struct ObjectRegistry {
     projects: Mutex<HashMap<String, Weak<Project>>>,
 }
 
+#[allow(dead_code)]
 impl ObjectRegistry {
     pub(crate) fn new(client: Arc<TransportClient>) -> Self {
         Self {
@@ -290,6 +291,7 @@ impl Drop for Type {
     }
 }
 
+#[allow(dead_code)]
 pub struct Project {
     pub id: String,
     pub config_file_name: String,
@@ -307,7 +309,7 @@ impl Project {
         registry: Arc<ObjectRegistry>,
         resp: ProjectResponse,
     ) -> Self {
-        let project = Self {
+        Self {
             id: resp.id.clone(),
             config_file_name: resp.config_file_name.clone(),
             compiler_options: resp.compiler_options.clone(),
@@ -315,8 +317,7 @@ impl Project {
             client,
             registry,
             disposed: std::sync::atomic::AtomicBool::new(false),
-        };
-        project
+        }
     }
 
     fn load_data(&self, resp: ProjectResponse) {
