@@ -119,6 +119,7 @@ impl TransportClient {
     }
 
     /// Send a request that expects binary data back.
+    #[allow(dead_code)]
     pub fn request_binary<P>(&self, method: &str, payload: P) -> Result<Vec<u8>>
     where
         P: Serialize,

@@ -4,6 +4,7 @@ use dashmap::DashMap;
 
 use crate::{FileSystemEntries, Result, VirtualFileSystem};
 /// Virtual node in the memory file system
+#[allow(dead_code)]
 #[derive(Debug, Clone)]
 enum VfsNode {
     File { content: String },

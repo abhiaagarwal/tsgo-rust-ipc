@@ -104,9 +104,12 @@ impl<'a> StringTable<'a> {
         })
     }
 
-    #[inline]
     pub fn len(&self) -> usize {
         self.entries.len()
+    }
+
+    pub fn is_empty(&self) -> bool {
+        self.entries.is_empty()
     }
 }
 
@@ -298,6 +301,7 @@ impl<'a> TsgoDecoder<'a> {
         }
     }
 
+    #[allow(clippy::type_complexity)]
     fn decode_extended_data(
         kind: &SyntaxKind,
         node_data: u32,

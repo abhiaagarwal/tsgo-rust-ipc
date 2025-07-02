@@ -1,0 +1,117 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  merge_group:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+  RUST_BACKTRACE: 1
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  format:
+    name: Format
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@nightly
+        with:
+          components: rustfmt
+      - name: Check formatting
+        run: cargo +nightly fmt --all -- --check
+
+  clippy:
+    name: Clippy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy
+      - uses: Swatinem/rust-cache@v2
+        with:
+          cache-on-failure: true
+      - name: Run Clippy
+        run: cargo clippy --all-targets --all-features
+
+  unit-test:
+    name: Unit Tests
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      # windows is disabled until we can fix the line ending issues
+      # - name: Enable long paths on Windows and disable auto-crlf
+      #   if: runner.os == 'Windows'
+      #   run: |
+      #     git config --system core.longpaths true
+      #     git config --system core.autocrlf false
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          cache-on-failure: true
+      - name: Build workspace
+        run: cargo build --verbose --all-features --workspace --exclude tsgo-rust-ipc-integration-tests
+      - name: Run unit tests
+        run: cargo test --verbose --all-features --workspace --exclude tsgo-rust-ipc-integration-tests
+
+  integration-test:
+    name: Integration Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: tsgo/go.mod
+          cache-dependency-path: |
+            tsgo/go.sum
+      - uses: Swatinem/rust-cache@v2
+        with:
+          cache-on-failure: true
+
+      - name: Install Node.js dependencies for tsgo
+        working-directory: tsgo
+        run: npm ci
+
+      - name: Build tsgo binary
+        working-directory: tsgo
+        run: npx hereby build
+
+      - name: Verify tsgo binary
+        run: ./tsgo/built/local/tsgo --version
+
+      - name: Build integration tests
+        run: cargo build --verbose --all-features -p tsgo-rust-ipc-integration-tests
+
+      - name: Run integration tests
+        run: cargo test --verbose --all-features -p tsgo-rust-ipc-integration-tests
+        env:
+          TSGO_PATH: ./tsgo/built/local/tsgo
+
+  # security:
+  #   name: Security Audit
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: rustsec/audit-check@v2.0.0
+  #       with:
+  #         token: ${{ secrets.GITHUB_TOKEN }}
