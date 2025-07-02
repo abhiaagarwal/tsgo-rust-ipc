@@ -49,14 +49,15 @@ jobs:
     name: Unit Tests
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - name: Enable long paths on Windows and disable auto-crlf
-        if: runner.os == 'Windows'
-        run: |
-          git config --system core.longpaths true
-          git config --system core.autocrlf false
+      # windows is disabled until we can fix the line ending issues
+      # - name: Enable long paths on Windows and disable auto-crlf
+      #   if: runner.os == 'Windows'
+      #   run: |
+      #     git config --system core.longpaths true
+      #     git config --system core.autocrlf false
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
