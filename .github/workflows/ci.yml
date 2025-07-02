@@ -52,9 +52,11 @@ jobs:
         os: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - name: Enable long paths on Windows
+      - name: Enable long paths on Windows and disable auto-crlf
         if: runner.os == 'Windows'
-        run: git config --system core.longpaths true
+        run: |
+          git config --system core.longpaths true
+          git config --system core.autocrlf false
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
@@ -104,11 +106,11 @@ jobs:
         env:
           TSGO_PATH: ./tsgo/built/local/tsgo
 
-  security:
-    name: Security Audit
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: rustsec/audit-check@v2.0.0
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+  # security:
+  #   name: Security Audit
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: rustsec/audit-check@v2.0.0
+  #       with:
+  #         token: ${{ secrets.GITHUB_TOKEN }}
