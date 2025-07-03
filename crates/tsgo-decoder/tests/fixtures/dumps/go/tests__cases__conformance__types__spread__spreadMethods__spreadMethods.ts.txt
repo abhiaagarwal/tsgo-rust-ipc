@@ -1,5 +1,5 @@
 KindSourceFile [0, 644), i=1, next=0
-  NodeList [0, 636), i=2, next=0
+  NodeList [0, 636), i=2, next=217
     KindClassDeclaration [0, 65), i=3, next=18
       KindIdentifier "K" [5, 7), i=4, next=5
       NodeList [9, 62), i=5, next=0
@@ -214,3 +214,4 @@ KindSourceFile [0, 644), i=1, next=0
       KindPropertyAccessExpression [622, 635), i=214, next=0
         KindIdentifier "sso" [622, 633), i=215, next=216
         KindIdentifier "g" [634, 635), i=216, next=0
+  KindEndOfFile [636, 644), i=217, next=0
