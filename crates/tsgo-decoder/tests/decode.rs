@@ -5,10 +5,10 @@ use std::fs;
 use rstest::rstest;
 use similar_asserts::assert_eq;
 use tsgo_decoder::{
-    Node, TsgoDecoder,
+    Node, NodeKind, TsgoDecoder,
     constants::{NODE_OFFSET_NEXT, NODE_SIZE},
 };
-use typescript_ast::SyntaxKind;
+use typescript_ast_definitions::SyntaxKind;
 
 fn format_encoded_source_file(decoder: &TsgoDecoder) -> String {
     let mut result = String::new();
@@ -33,15 +33,19 @@ fn format_encoded_source_file(decoder: &TsgoDecoder) -> String {
 
         result.push_str(&indent);
 
-        if node.kind == SyntaxKind::NodeList {
-            result.push_str("NodeList");
-        } else {
-            result.push_str(&format!("Kind{}", node.kind));
+        match node.kind {
+            NodeKind::NodeList => {
+                result.push_str("NodeList");
+            }
+            NodeKind::SyntaxKind(kind) => {
+                result.push_str(&format!("Kind{}", kind));
+            }
         }
 
         if matches!(
             node.kind,
-            SyntaxKind::Identifier | SyntaxKind::StringLiteral
+            NodeKind::SyntaxKind(SyntaxKind::Identifier)
+                | NodeKind::SyntaxKind(SyntaxKind::StringLiteral)
         ) {
             if let Some(text) = &node.text {
                 result.push_str(&format!(" \"{}\"", text));

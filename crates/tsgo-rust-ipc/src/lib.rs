@@ -10,5 +10,5 @@ pub use tsgo_vfs as vfs;
 pub use tsgo_vfs::{
     MemoryFileSystem, RealFileSystem, Result as VfsResult, VfsError, VirtualFileSystem,
 };
-pub use typescript_ast as syntax;
-pub use typescript_ast::SyntaxKind;
+pub use typescript_ast_definitions as syntax;
+pub use typescript_ast_definitions::SyntaxKind;
