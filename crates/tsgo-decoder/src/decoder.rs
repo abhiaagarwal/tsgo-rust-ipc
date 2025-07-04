@@ -1,7 +1,7 @@
 use std::{borrow::Cow, io::Cursor};
 
 use byteorder::{LittleEndian, ReadBytesExt};
-use typescript_ast::{SyntaxKind, TokenFlags};
+use typescript_ast_definitions::{SyntaxKind, TokenFlags};
 
 use crate::{DecoderError, Result};
 
@@ -37,10 +37,16 @@ pub mod constants {
 
 use constants::*;
 
+#[derive(Debug, Clone, PartialEq)]
+pub enum NodeKind {
+    SyntaxKind(SyntaxKind),
+    NodeList,
+}
+
 /// Represents a decoded AST node
 #[derive(Debug, Clone)]
 pub struct Node<'a> {
-    pub kind: SyntaxKind,
+    pub kind: NodeKind,
     pub pos: u32,
     pub end: u32,
     pub next_sibling: u32,
@@ -232,7 +238,12 @@ impl<'a> TsgoDecoder<'a> {
         let nodes: Vec<Node> = (0..num_nodes)
             .map(|_i| {
                 let kind_raw = cursor.read_u32::<LittleEndian>()?;
-                let kind = SyntaxKind::from_repr(kind_raw).unwrap_or(SyntaxKind::Unknown);
+                let kind = match kind_raw {
+                    SYNTAX_KIND_NODE_LIST => NodeKind::NodeList,
+                    _ => NodeKind::SyntaxKind(
+                        SyntaxKind::from_repr(kind_raw as i16).unwrap_or(SyntaxKind::Unknown),
+                    ),
+                };
 
                 let pos = cursor.read_u32::<LittleEndian>()?;
                 let end = cursor.read_u32::<LittleEndian>()?;
@@ -266,7 +277,7 @@ impl<'a> TsgoDecoder<'a> {
     }
 
     fn decode_node_text(
-        kind: &SyntaxKind,
+        kind: &NodeKind,
         node_data: u32,
         string_table: &StringTable<'a>,
         data: &[u8],
@@ -280,10 +291,10 @@ impl<'a> TsgoDecoder<'a> {
                 Ok(string_table.get(string_index))
             }
             NODE_DATA_TYPE_EXTENDED_DATA => match kind {
-                SyntaxKind::SourceFile
-                | SyntaxKind::TemplateHead
-                | SyntaxKind::TemplateMiddle
-                | SyntaxKind::TemplateTail => {
+                NodeKind::SyntaxKind(SyntaxKind::SourceFile)
+                | NodeKind::SyntaxKind(SyntaxKind::TemplateHead)
+                | NodeKind::SyntaxKind(SyntaxKind::TemplateMiddle)
+                | NodeKind::SyntaxKind(SyntaxKind::TemplateTail) => {
                     let extended_data_offset = header.extended_data_offset as usize
                         + (node_data & NODE_EXTENDED_DATA_MASK) as usize;
 
@@ -303,7 +314,7 @@ impl<'a> TsgoDecoder<'a> {
 
     #[allow(clippy::type_complexity)]
     fn decode_extended_data(
-        kind: &SyntaxKind,
+        kind: &NodeKind,
         node_data: u32,
         string_table: &StringTable<'a>,
         data: &[u8],
@@ -317,13 +328,13 @@ impl<'a> TsgoDecoder<'a> {
     )> {
         let data_type = node_data & NODE_DATA_TYPE_MASK;
 
-        let flags = if kind == &SyntaxKind::VariableDeclarationList {
+        let flags = if kind == &NodeKind::SyntaxKind(SyntaxKind::VariableDeclarationList) {
             Some((node_data & (1 << 24 | 1 << 25)) >> 24)
         } else {
             None
         };
 
-        let token = if kind == &SyntaxKind::ImportAttributes {
+        let token = if kind == &NodeKind::SyntaxKind(SyntaxKind::ImportAttributes) {
             if (node_data & (1 << 25)) != 0 {
                 Some(SyntaxKind::AssertKeyword)
             } else {
@@ -342,9 +353,9 @@ impl<'a> TsgoDecoder<'a> {
                 + (node_data & NODE_EXTENDED_DATA_MASK) as usize;
 
             match kind {
-                SyntaxKind::TemplateHead
-                | SyntaxKind::TemplateMiddle
-                | SyntaxKind::TemplateTail => {
+                NodeKind::SyntaxKind(SyntaxKind::TemplateHead)
+                | NodeKind::SyntaxKind(SyntaxKind::TemplateMiddle)
+                | NodeKind::SyntaxKind(SyntaxKind::TemplateTail) => {
                     if extended_data_offset + 12 <= data.len() {
                         let mut cursor = Cursor::new(&data[extended_data_offset..]);
                         cursor.set_position(4); // raw_text is at offset 4
@@ -355,7 +366,7 @@ impl<'a> TsgoDecoder<'a> {
                         template_flags = TokenFlags::from_bits(raw);
                     }
                 }
-                SyntaxKind::SourceFile => {
+                NodeKind::SyntaxKind(SyntaxKind::SourceFile) => {
                     if extended_data_offset + 8 <= data.len() {
                         let mut cursor = Cursor::new(&data[extended_data_offset..]);
                         cursor.set_position(4); // file_name is at offset 4

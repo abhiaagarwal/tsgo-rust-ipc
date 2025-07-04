@@ -1,0 +1,391 @@
+package main
+
+import (
+	"fmt"
+	"go/ast"
+	"go/token"
+	"sort"
+	"strconv"
+	"strings"
+)
+
+// FlagInfo holds information about a flag constant
+type FlagInfo struct {
+	Name       string
+	Value      uint64
+	Expression string // For computed flags, store the original expression
+	Comment    string
+	IsComputed bool
+}
+
+// FlagsProcessor processes flag type definitions
+type FlagsProcessor struct {
+	flags map[string][]FlagInfo // Map of flag type to its constants
+}
+
+// NewFlagsProcessor creates a new flags processor
+func NewFlagsProcessor() *FlagsProcessor {
+	return &FlagsProcessor{
+		flags: make(map[string][]FlagInfo),
+	}
+}
+
+// Process extracts flag information from Go AST files
+func (p *FlagsProcessor) Process(files map[string]*ast.File) error {
+	// Look for files that contain flag definitions
+	for filename, file := range files {
+		if strings.Contains(filename, "flags.go") || strings.Contains(filename, "Flags") {
+			p.processFile(file)
+		}
+	}
+	return nil
+}
+
+// processFile processes a single file for flag definitions
+func (p *FlagsProcessor) processFile(file *ast.File) {
+	// First pass: find flag type declarations
+	flagTypes := make(map[string]bool)
+	ast.Inspect(file, func(n ast.Node) bool {
+		if typeSpec, ok := n.(*ast.TypeSpec); ok {
+			if strings.HasSuffix(typeSpec.Name.Name, "Flags") {
+				flagTypes[typeSpec.Name.Name] = true
+			}
+		}
+		return true
+	})
+
+	// Second pass: find constants for each flag type
+	ast.Inspect(file, func(n ast.Node) bool {
+		if genDecl, ok := n.(*ast.GenDecl); ok && genDecl.Tok == token.CONST {
+			p.processConstDecl(genDecl, flagTypes)
+		}
+		return true
+	})
+}
+
+// processConstDecl processes a const declaration for flag values
+func (p *FlagsProcessor) processConstDecl(decl *ast.GenDecl, flagTypes map[string]bool) {
+	var currentType string
+
+	for _, spec := range decl.Specs {
+		valueSpec, ok := spec.(*ast.ValueSpec)
+		if !ok {
+			continue
+		}
+
+		// Determine the type
+		if valueSpec.Type != nil {
+			if ident, ok := valueSpec.Type.(*ast.Ident); ok {
+				if flagTypes[ident.Name] {
+					currentType = ident.Name
+				}
+			}
+		}
+
+		if currentType == "" {
+			continue
+		}
+
+		// Process each constant
+		for i, name := range valueSpec.Names {
+			if !ast.IsExported(name.Name) {
+				continue
+			}
+
+			flag := FlagInfo{
+				Name: name.Name,
+			}
+
+			// Extract value and expression
+			if i < len(valueSpec.Values) {
+				flag.Value, flag.Expression, flag.IsComputed = p.extractValueAndExpression(valueSpec.Values[i])
+			}
+
+			// Extract comment
+			if valueSpec.Comment != nil {
+				flag.Comment = strings.TrimSpace(valueSpec.Comment.Text())
+			}
+
+			p.flags[currentType] = append(p.flags[currentType], flag)
+		}
+	}
+}
+
+// extractValueAndExpression extracts both the numeric value and the original expression
+func (p *FlagsProcessor) extractValueAndExpression(expr ast.Expr) (uint64, string, bool) {
+	exprStr := p.expressionToString(expr)
+	value := p.extractValue(expr)
+
+	// Check if this is a computed expression (contains operators like |, &, ^, or <<)
+	// Also treat identifier references (constant assignments) as computed
+	isComputed := strings.Contains(exprStr, "|") || strings.Contains(exprStr, "&") || strings.Contains(exprStr, "^") || strings.Contains(exprStr, "<<") || p.isIdentifierReference(expr)
+
+	return value, exprStr, isComputed
+}
+
+// isIdentifierReference checks if the expression is just an identifier (constant reference)
+func (p *FlagsProcessor) isIdentifierReference(expr ast.Expr) bool {
+	_, ok := expr.(*ast.Ident)
+	return ok
+}
+
+// expressionToString converts an AST expression to its string representation
+func (p *FlagsProcessor) expressionToString(expr ast.Expr) string {
+	switch e := expr.(type) {
+	case *ast.BasicLit:
+		return e.Value
+	case *ast.Ident:
+		return e.Name
+	case *ast.BinaryExpr:
+		left := p.expressionToString(e.X)
+		right := p.expressionToString(e.Y)
+		op := e.Op.String()
+		return fmt.Sprintf("%s %s %s", left, op, right)
+	case *ast.ParenExpr:
+		return fmt.Sprintf("(%s)", p.expressionToString(e.X))
+	case *ast.UnaryExpr:
+		return fmt.Sprintf("%s%s", e.Op.String(), p.expressionToString(e.X))
+	}
+	return ""
+}
+
+// extractValue extracts the numeric value from an expression (for ordering/reference only)
+func (p *FlagsProcessor) extractValue(expr ast.Expr) uint64 {
+	switch e := expr.(type) {
+	case *ast.BasicLit:
+		if e.Kind == token.INT {
+			val, _ := strconv.ParseUint(e.Value, 0, 64)
+			return val
+		}
+	case *ast.BinaryExpr:
+		if e.Op == token.SHL {
+			// Still calculate for ordering purposes, but we'll use the expression string for output
+			if left, ok := e.X.(*ast.BasicLit); ok && left.Value == "1" {
+				if right, ok := e.Y.(*ast.BasicLit); ok {
+					shift, _ := strconv.ParseUint(right.Value, 0, 64)
+					return 1 << shift
+				}
+			}
+		}
+	}
+	return 0
+}
+
+// GenerateRust generates Rust code for the flags
+func (p *FlagsProcessor) GenerateRust() string {
+	var output strings.Builder
+
+	output.WriteString("// Generated by ast-gen - DO NOT EDIT\n\n")
+	output.WriteString("use bitflags::bitflags;\n\n")
+
+	// Sort flag types for consistent output
+	var flagTypes []string
+	for flagType := range p.flags {
+		flagTypes = append(flagTypes, flagType)
+	}
+	sort.Strings(flagTypes)
+
+	// Generate each flag type
+	for _, flagType := range flagTypes {
+		p.generateFlagType(&output, flagType, p.flags[flagType])
+	}
+
+	return output.String()
+}
+
+// generateFlagType generates a Rust bitflags type
+func (p *FlagsProcessor) generateFlagType(output *strings.Builder, typeName string, flags []FlagInfo) {
+	rustName := strings.TrimSuffix(typeName, "Flags") + "Flags"
+
+	output.WriteString("bitflags! {\n")
+	fmt.Fprintf(output, "    #[derive(Debug, Clone, Copy, PartialEq, Eq)]\n")
+	fmt.Fprintf(output, "    pub struct %s: u32 {\n", rustName)
+
+	// Generate flag constants
+	for _, flag := range flags {
+		constName := toUpperSnakeCase(strings.TrimPrefix(flag.Name, rustName))
+
+		if flag.Comment != "" {
+			fmt.Fprintf(output, "        /// %s\n", flag.Comment)
+		}
+
+		if flag.IsComputed && flag.Expression != "" {
+			// Convert Go expression to Rust
+			rustExpr := p.convertExpressionToRust(flag.Expression, rustName)
+			fmt.Fprintf(output, "        const %s = (%s);\n", constName, rustExpr)
+		} else {
+			fmt.Fprintf(output, "        const %s = 0x%x;\n", constName, flag.Value)
+		}
+	}
+
+	output.WriteString("    }\n")
+	output.WriteString("}\n\n")
+}
+
+// convertExpressionToRust converts a Go flag expression to Rust syntax
+func (p *FlagsProcessor) convertExpressionToRust(expr, flagType string) string {
+	// For simple shift operations like "1 << 5", keep them as-is
+	if strings.Contains(expr, "<<") && !strings.Contains(expr, "|") && !strings.Contains(expr, "&") && !strings.Contains(expr, "^") {
+		return expr
+	}
+
+	// Convert Go's unary ^ (bitwise NOT) to Rust's ! (bitwise NOT)
+	// We need to be careful to only convert unary ^ and not binary ^ (XOR)
+	expr = p.convertUnaryBitwiseNot(expr)
+
+	// Convert flag names to Rust syntax
+	// First, handle the case where it's just a single identifier (constant reference)
+	if !strings.ContainsAny(expr, "|&^()! ") {
+		// Single identifier - check if it's a flag name
+		if strings.HasPrefix(expr, flagType) {
+			flagName := strings.TrimPrefix(expr, flagType)
+			constName := toUpperSnakeCase(flagName)
+			return "Self::" + constName + ".bits()"
+		}
+		return expr
+	}
+
+	// For complex expressions, replace flag type prefix with Self::
+	expr = strings.ReplaceAll(expr, flagType, "Self::")
+
+	// Now find and convert flag references that need .bits()
+	// Use regex to find Self::FLAGNAME patterns and convert them
+	expr = p.convertFlagReferences(expr)
+
+	return expr
+}
+
+// convertFlagReferences converts flag references to use .bits() when needed
+func (p *FlagsProcessor) convertFlagReferences(expr string) string {
+	result := ""
+	i := 0
+
+	for i < len(expr) {
+		// Look for "Self::" patterns
+		if i <= len(expr)-6 && expr[i:i+6] == "Self::" {
+			// Found Self::, now extract the identifier that follows
+			start := i + 6
+			end := start
+
+			// Find the end of the identifier (until we hit an operator or delimiter)
+			for end < len(expr) {
+				ch := expr[end]
+				if !((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z') || (ch >= '0' && ch <= '9') || ch == '_') {
+					break
+				}
+				end++
+			}
+
+			if end > start {
+				// Extract the flag name
+				flagName := expr[start:end]
+				constName := toUpperSnakeCase(flagName)
+
+				// Check if this needs .bits() (i.e., it's used in a complex expression)
+				needsBits := p.needsBitsMethod(expr, i, end)
+
+				result += "Self::" + constName
+				if needsBits {
+					result += ".bits()"
+				}
+				i = end
+			} else {
+				result += string(expr[i])
+				i++
+			}
+		} else {
+			result += string(expr[i])
+			i++
+		}
+	}
+
+	return result
+}
+
+// needsBitsMethod determines if a flag reference needs .bits() method
+func (p *FlagsProcessor) needsBitsMethod(expr string, start, end int) bool {
+	// Check if this flag is used in a context that requires .bits()
+	// Look for operators around this flag reference
+
+	// Check before the flag
+	for i := start - 1; i >= 0; i-- {
+		ch := expr[i]
+		if ch == ' ' {
+			continue
+		}
+		if ch == '|' || ch == '&' || ch == '^' || ch == '!' {
+			return true
+		}
+		break
+	}
+
+	// Check after the flag
+	for i := end; i < len(expr); i++ {
+		ch := expr[i]
+		if ch == ' ' {
+			continue
+		}
+		if ch == '|' || ch == '&' || ch == '^' {
+			return true
+		}
+		break
+	}
+
+	return false
+}
+
+// convertUnaryBitwiseNot converts Go's unary ^ operator to Rust's ! operator
+func (p *FlagsProcessor) convertUnaryBitwiseNot(expr string) string {
+	result := ""
+	i := 0
+	for i < len(expr) {
+		if i < len(expr) && expr[i] == '^' {
+			// Check if this is a unary ^ operator
+			// Unary ^ appears at the start or after operators/parentheses/whitespace
+			var prevChar byte = ' '
+			if i > 0 {
+				prevChar = expr[i-1]
+			}
+
+			// If the previous character suggests this could be unary
+			if prevChar == ' ' || prevChar == '(' || prevChar == '|' || prevChar == '&' || i == 0 {
+				// Look ahead to see if there's an operand (not another operator)
+				nextPos := i + 1
+				for nextPos < len(expr) && expr[nextPos] == ' ' {
+					nextPos++
+				}
+
+				if nextPos < len(expr) {
+					nextChar := expr[nextPos]
+					// If next character is an identifier, parenthesis, or number, this is likely unary
+					if (nextChar >= 'A' && nextChar <= 'Z') || (nextChar >= 'a' && nextChar <= 'z') ||
+						(nextChar >= '0' && nextChar <= '9') || nextChar == '(' {
+						result += "!"
+						i++
+						continue
+					}
+				}
+			}
+		}
+		result += string(expr[i])
+		i++
+	}
+	return result
+}
+
+// OutputFile returns the output file name
+func (p *FlagsProcessor) OutputFile() string {
+	return "flags.rs"
+}
+
+// toUpperSnakeCase converts PascalCase to UPPER_SNAKE_CASE
+func toUpperSnakeCase(s string) string {
+	var result []rune
+	for i, r := range s {
+		if i > 0 && 'A' <= r && r <= 'Z' {
+			result = append(result, '_')
+		}
+		result = append(result, r)
+	}
+	return strings.ToUpper(string(result))
+}
