@@ -241,7 +241,11 @@ impl<'a> TsgoDecoder<'a> {
                 let kind = match kind_raw {
                     SYNTAX_KIND_NODE_LIST => NodeKind::NodeList,
                     _ => NodeKind::SyntaxKind(
-                        SyntaxKind::from_repr(kind_raw as i16).unwrap_or(SyntaxKind::Unknown),
+                        SyntaxKind::from_repr(
+                            i16::try_from(kind_raw)
+                                .map_err(|_| DecoderError::UnknownSyntaxKind { kind: kind_raw })?,
+                        )
+                        .unwrap_or(SyntaxKind::Unknown),
                     ),
                 };
 
