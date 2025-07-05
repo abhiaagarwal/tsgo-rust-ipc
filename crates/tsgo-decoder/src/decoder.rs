@@ -240,13 +240,12 @@ impl<'a> TsgoDecoder<'a> {
                 let kind_raw = cursor.read_u32::<LittleEndian>()?;
                 let kind = match kind_raw {
                     SYNTAX_KIND_NODE_LIST => NodeKind::NodeList,
-                    _ => NodeKind::SyntaxKind(
-                        SyntaxKind::from_repr(
-                            i16::try_from(kind_raw)
-                                .map_err(|_| DecoderError::UnknownSyntaxKind { kind: kind_raw })?,
-                        )
-                        .unwrap_or(SyntaxKind::Unknown),
-                    ),
+                    _ => i16::try_from(kind_raw)
+                        .map(SyntaxKind::from_repr)
+                        .ok()
+                        .flatten()
+                        .map(NodeKind::SyntaxKind)
+                        .ok_or(DecoderError::UnknownSyntaxKind { kind: kind_raw })?,
                 };
 
                 let pos = cursor.read_u32::<LittleEndian>()?;
