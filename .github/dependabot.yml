@@ -3,10 +3,9 @@ updates:
   - package-ecosystem: "cargo"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "monday"
+      interval: "daily"
       time: "09:00"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 15
     reviewers:
       - "abhiaagarwal"
     labels:
@@ -15,14 +14,20 @@ updates:
     commit-message:
       prefix: "cargo"
       include: "scope"
+    groups:
+      rust-minor:
+        update-types:
+          - "minor"
+          - "patch"
+        patterns:
+          - "*"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "monday" 
+      interval: "daily"
       time: "09:00"
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 10
     reviewers:
       - "abhiaagarwal"
     labels:
@@ -30,4 +35,27 @@ updates:
       - "github-actions"
     commit-message:
       prefix: "ci"
+      include: "scope"
+    groups:
+      actions-minor:
+        update-types:
+          - "minor"
+          - "patch"
+        patterns:
+          - "*"
+
+  - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "09:00"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "abhiaagarwal"
+    labels:
+      - "dependencies"
+      - "submodule"
+      - "tsgo"
+    commit-message:
+      prefix: "submodule"
       include: "scope"
