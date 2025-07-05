@@ -76,25 +76,44 @@ jobs:
         with:
           submodules: recursive
       - uses: dtolnay/rust-toolchain@stable
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '24'
-          cache: 'npm'
-          cache-dependency-path: tsgo/package-lock.json
-      - uses: actions/setup-go@v5
-        with:
-          go-version-file: tsgo/go.mod
-          cache-dependency-path: |
-            tsgo/go.sum
       - uses: Swatinem/rust-cache@v2
         with:
           cache-on-failure: true
 
+      - name: Get tsgo submodule commit hash
+        id: tsgo-hash
+        run: echo "hash=$(git rev-parse HEAD:tsgo)" >> $GITHUB_OUTPUT
+
+      - name: Cache tsgo built directory
+        uses: actions/cache@v4
+        id: cache-tsgo
+        with:
+          path: tsgo/built/local/
+          key: tsgo-binary-${{ runner.os }}-${{ runner.arch }}-${{ steps.tsgo-hash.outputs.hash }}
+
+      - name: Setup Node.js
+        if: steps.cache-tsgo.outputs.cache-hit != 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: tsgo/package-lock.json
+
+      - name: Setup Go
+        if: steps.cache-tsgo.outputs.cache-hit != 'true'
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: tsgo/go.mod
+          cache-dependency-path: |
+            tsgo/go.sum
+
       - name: Install Node.js dependencies for tsgo
+        if: steps.cache-tsgo.outputs.cache-hit != 'true'
         working-directory: tsgo
         run: npm ci
 
       - name: Build tsgo binary
+        if: steps.cache-tsgo.outputs.cache-hit != 'true'
         working-directory: tsgo
         run: npx hereby build
 
