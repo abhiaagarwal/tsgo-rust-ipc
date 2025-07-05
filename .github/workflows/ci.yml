@@ -90,11 +90,24 @@ jobs:
         with:
           cache-on-failure: true
 
+      - name: Get tsgo submodule commit hash
+        id: tsgo-hash
+        run: echo "hash=$(git rev-parse HEAD:tsgo)" >> $GITHUB_OUTPUT
+
+      - name: Cache tsgo binary
+        uses: actions/cache@v4
+        id: cache-tsgo
+        with:
+          path: tsgo/built/local/tsgo
+          key: tsgo-binary-${{ runner.os }}-${{ runner.arch }}-${{ steps.tsgo-hash.outputs.hash }}
+
       - name: Install Node.js dependencies for tsgo
+        if: steps.cache-tsgo.outputs.cache-hit != 'true'
         working-directory: tsgo
         run: npm ci
 
       - name: Build tsgo binary
+        if: steps.cache-tsgo.outputs.cache-hit != 'true'
         working-directory: tsgo
         run: npx hereby build
 
