@@ -78,7 +78,9 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
       - uses: actions/setup-node@v4
         with:
-          node-version: 'lts/*'
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: tsgo/package-lock.json
       - uses: actions/setup-go@v5
         with:
           go-version-file: tsgo/go.mod
@@ -98,9 +100,6 @@ jobs:
 
       - name: Verify tsgo binary
         run: ./tsgo/built/local/tsgo --version
-
-      - name: Build integration tests
-        run: cargo build --verbose --all-features -p tsgo-rust-ipc-integration-tests
 
       - name: Run integration tests
         run: cargo test --verbose --all-features -p tsgo-rust-ipc-integration-tests
