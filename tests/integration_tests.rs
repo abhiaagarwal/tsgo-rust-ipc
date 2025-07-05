@@ -175,14 +175,6 @@ fn create_default_test_files() -> HashMap<String, String> {
     files
 }
 
-/// Verify that tsgo binary is working
-fn verify_tsgo_binary(tsgo_path: &str) -> bool {
-    std::process::Command::new(tsgo_path)
-        .arg("--version")
-        .output()
-        .map(|output| output.status.success())
-        .unwrap_or(false)
-}
 
 #[cfg(test)]
 mod api_tests {
@@ -445,7 +437,7 @@ mod transport_tests {
     fn test_basic_transport() -> Result<()> {
         let tsgo_path = common::get_tsgo_binary_path().expect("tsgo binary not found");
         assert!(
-            verify_tsgo_binary(&tsgo_path),
+            common::verify_tsgo_binary(&tsgo_path),
             "tsgo binary is not working properly"
         );
 
