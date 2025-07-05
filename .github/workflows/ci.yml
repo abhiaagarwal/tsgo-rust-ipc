@@ -84,11 +84,11 @@ jobs:
         id: tsgo-hash
         run: echo "hash=$(git rev-parse HEAD:tsgo)" >> $GITHUB_OUTPUT
 
-      - name: Cache tsgo binary
+      - name: Cache tsgo built directory
         uses: actions/cache@v4
         id: cache-tsgo
         with:
-          path: tsgo/built/local/tsgo
+          path: tsgo/built/local/
           key: tsgo-binary-${{ runner.os }}-${{ runner.arch }}-${{ steps.tsgo-hash.outputs.hash }}
 
       - name: Setup Node.js
