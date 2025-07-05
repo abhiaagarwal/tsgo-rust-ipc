@@ -240,7 +240,7 @@ impl<'a> TsgoDecoder<'a> {
                 let kind_raw = cursor.read_u32::<LittleEndian>()?;
                 let kind = match kind_raw {
                     SYNTAX_KIND_NODE_LIST => NodeKind::NodeList,
-                    _ => i16::try_from(kind_raw)
+                    _ => u16::try_from(kind_raw)
                         .map(SyntaxKind::from_repr)
                         .ok()
                         .flatten()
