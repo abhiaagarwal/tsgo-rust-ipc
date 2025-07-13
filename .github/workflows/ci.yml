@@ -63,8 +63,6 @@ jobs:
       - uses: Swatinem/rust-cache@v2
         with:
           cache-on-failure: true
-      - name: Build workspace
-        run: cargo build --verbose --all-features --workspace --exclude tsgo-rust-ipc-integration-tests
       - name: Run unit tests
         run: cargo test --verbose --all-features --workspace --exclude tsgo-rust-ipc-integration-tests
 
