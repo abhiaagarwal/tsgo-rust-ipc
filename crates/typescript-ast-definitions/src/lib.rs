@@ -1,8 +1,10 @@
+pub mod ast_traits;
 pub mod core;
 pub mod generated {
     use strum::EnumCount;
 
     pub mod flags;
+    pub mod nodes;
     pub mod syntax_kind;
 
     const _: () = {

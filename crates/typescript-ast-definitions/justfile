@@ -1,0 +1,3 @@
+generate-ast-definitions:
+    (cd scripts/ast-gen && go build -o ast-gen)
+    ./scripts/ast-gen/ast-gen ../../tsgo ./src/generated

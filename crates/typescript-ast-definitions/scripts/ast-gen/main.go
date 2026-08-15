@@ -33,16 +33,21 @@ func main() {
 	processors := []Processor{
 		NewFlagsProcessor(),
 		NewKindProcessor(),
+		NewNodeProcessor(),
 	}
 
 	// Parse all Go files in the AST directory
-	files, err := parseASTFiles(astPath)
+	fileSet, files, err := parseASTFiles(astPath)
 	if err != nil {
 		log.Fatalf("Failed to parse AST files: %v", err)
 	}
 
 	// Run each processor
 	for _, processor := range processors {
+		// Special handling for NodeProcessor which needs the fileSet
+		if nodeProcessor, ok := processor.(*NodeProcessor); ok {
+			nodeProcessor.fileSet = fileSet
+		}
 		if err := processor.Process(files); err != nil {
 			log.Fatalf("Failed to process: %v", err)
 		}
@@ -67,7 +72,8 @@ type Processor interface {
 }
 
 // parseASTFiles parses all Go files in the given directory
-func parseASTFiles(dir string) (map[string]*ast.File, error) {
+func parseASTFiles(dir string) (*token.FileSet, map[string]*ast.File, error) {
+	fset := token.NewFileSet()
 	files := make(map[string]*ast.File)
 
 	err := filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
@@ -76,7 +82,6 @@ func parseASTFiles(dir string) (map[string]*ast.File, error) {
 		}
 
 		if strings.HasSuffix(path, ".go") && !strings.HasSuffix(path, "_test.go") {
-			fset := token.NewFileSet()
 			file, err := parser.ParseFile(fset, path, nil, parser.ParseComments)
 			if err != nil {
 				return fmt.Errorf("failed to parse %s: %w", path, err)
@@ -87,5 +92,5 @@ func parseASTFiles(dir string) (map[string]*ast.File, error) {
 		return nil
 	})
 
-	return files, err
+	return fset, files, err
 }
